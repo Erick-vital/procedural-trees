@@ -1,0 +1,315 @@
+{
+  "version": "foliage-unit-0.1.0",
+  "spec": {
+    "version": "foliage-unit-0.1.0",
+    "seed": 17,
+    "support": {
+      "id": "rf1:virtual-00",
+      "parent_branch_id": "rf1:synthetic",
+      "parent_t": 0,
+      "terminal": true,
+      "region": "unit-study",
+      "points_m": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0.65
+        ]
+      ]
+    },
+    "parameters": {
+      "variant": "folded-hex",
+      "leaf_length_m": 0.18,
+      "width_ratio": 0.6,
+      "spacing_m": 0.09,
+      "azimuth_step_deg": 137.5,
+      "inclination_deg": 65,
+      "roll_deg": 8,
+      "fold_deg": 25,
+      "jitter_deg": 12,
+      "scale_jitter": 0.15
+    }
+  },
+  "spec_sha256": "34fc0117f73d95eeaaf7332c24e750d25b5004b0d3acf662f04c0b103e997ef9",
+  "placements": [
+    {
+      "id": "rf1:virtual-00:leaf:00",
+      "support_id": "rf1:virtual-00",
+      "parent_branch_id": "rf1:synthetic",
+      "support_t": 0.06923076923076922,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.045
+      ],
+      "axes": [
+        [
+          0.8776540857198611,
+          0.0521330349469871,
+          0.47645089199879864
+        ],
+        [
+          -0.10366627303848464,
+          0.9911842374306141,
+          0.08250521985548696
+        ],
+        [
+          -0.46794936654893016,
+          -0.12180293155876054,
+          0.8753213331172427
+        ]
+      ],
+      "length_m": 0.15582742755697573,
+      "width_ratio": 0.6,
+      "variant": "folded-hex",
+      "fold_deg": 25
+    },
+    {
+      "id": "rf1:virtual-00:leaf:01",
+      "support_id": "rf1:virtual-00",
+      "parent_branch_id": "rf1:synthetic",
+      "support_t": 0.2076923076923077,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.135
+      ],
+      "axes": [
+        [
+          -0.5950661849338524,
+          0.5411980467802421,
+          0.5941387966708798
+        ],
+        [
+          -0.5412337134556161,
+          -0.8163620831444205,
+          0.2015416002296952
+        ],
+        [
+          0.5941063061164342,
+          -0.20163735607608313,
+          0.7787040989151995
+        ]
+      ],
+      "length_m": 0.18000998387617195,
+      "width_ratio": 0.6,
+      "variant": "folded-hex",
+      "fold_deg": 25
+    },
+    {
+      "id": "rf1:virtual-00:leaf:02",
+      "support_id": "rf1:virtual-00",
+      "parent_branch_id": "rf1:synthetic",
+      "support_t": 0.3461538461538461,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.22499999999999998
+      ],
+      "axes": [
+        [
+          -0.03972939926973097,
+          -0.87186056560437,
+          0.4881400710633111
+        ],
+        [
+          0.9975673967610461,
+          -0.06261315451252851,
+          -0.03064117819829887
+        ],
+        [
+          0.057278824647996884,
+          0.4857352643426441,
+          0.8722272577837301
+        ]
+      ],
+      "length_m": 0.1869227027772082,
+      "width_ratio": 0.6,
+      "variant": "folded-hex",
+      "fold_deg": 25
+    },
+    {
+      "id": "rf1:virtual-00:leaf:03",
+      "support_id": "rf1:virtual-00",
+      "parent_branch_id": "rf1:synthetic",
+      "support_t": 0.4846153846153846,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.315
+      ],
+      "axes": [
+        [
+          0.45754081745203906,
+          0.7534925715195299,
+          0.4721285259653418
+        ],
+        [
+          -0.8415387537341207,
+          0.5384217145166371,
+          -0.04375595160189881
+        ],
+        [
+          -0.28717403491427074,
+          -0.3772943174788765,
+          0.8804431109783334
+        ]
+      ],
+      "length_m": 0.20059360227058218,
+      "width_ratio": 0.6,
+      "variant": "folded-hex",
+      "fold_deg": 25
+    },
+    {
+      "id": "rf1:virtual-00:leaf:04",
+      "support_id": "rf1:virtual-00",
+      "parent_branch_id": "rf1:synthetic",
+      "support_t": 0.623076923076923,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.40499999999999997
+      ],
+      "axes": [
+        [
+          -0.9531925537873659,
+          -0.11878178951073633,
+          0.27805546548296234
+        ],
+        [
+          0.1599127311159491,
+          -0.9785089959688276,
+          0.1301847273496975
+        ],
+        [
+          0.2566161994718141,
+          0.1685557216136671,
+          0.9517022091389397
+        ]
+      ],
+      "length_m": 0.18099744503019585,
+      "width_ratio": 0.6,
+      "variant": "folded-hex",
+      "fold_deg": 25
+    },
+    {
+      "id": "rf1:virtual-00:leaf:05",
+      "support_id": "rf1:virtual-00",
+      "parent_branch_id": "rf1:synthetic",
+      "support_t": 0.7615384615384615,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.495
+      ],
+      "axes": [
+        [
+          0.6622370126237975,
+          -0.6254570512328071,
+          0.4126083084164326
+        ],
+        [
+          0.5749008731649251,
+          0.7772921033647854,
+          0.25555033179582215
+        ],
+        [
+          -0.48055293688137535,
+          0.0679739884802242,
+          0.8743274053492635
+        ]
+      ],
+      "length_m": 0.1871532295685465,
+      "width_ratio": 0.6,
+      "variant": "folded-hex",
+      "fold_deg": 25
+    },
+    {
+      "id": "rf1:virtual-00:leaf:06",
+      "support_id": "rf1:virtual-00",
+      "parent_branch_id": "rf1:synthetic",
+      "support_t": 0.8999999999999999,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.585
+      ],
+      "axes": [
+        [
+          -0.27465878665658616,
+          0.9298554885171247,
+          0.2448087445066278
+        ],
+        [
+          -0.9216994786096687,
+          -0.3271317785212243,
+          0.208458318644772
+        ],
+        [
+          0.273920831706894,
+          -0.16838518330340138,
+          0.9468969363140233
+        ]
+      ],
+      "length_m": 0.19528705865853196,
+      "width_ratio": 0.6,
+      "variant": "folded-hex",
+      "fold_deg": 25
+    }
+  ],
+  "placements_sha256": "6f86c7758e7b394a88a6ccbfc97f65b4112bd9ba66918ffe0ec568783352fc93",
+  "metrics": {
+    "vertices": 42,
+    "triangles": 28,
+    "bounds_blender": [
+      [
+        -0.172525,
+        -0.162971,
+        0.045
+      ],
+      [
+        0.136763,
+        0.181589,
+        0.653935
+      ]
+    ],
+    "height_m": 0.608935,
+    "triangles_by_material": {
+      "RF1_Leaf": 28
+    },
+    "geometry_sha256": "3780bc55b38dbd6ab314d0913c67131b62e6dd66a61d2fba43dca00296559ad5"
+  },
+  "leaf_count": 7,
+  "triangles_per_leaf": 4,
+  "materials": 1,
+  "limits": {
+    "max_leaves": 32,
+    "max_triangles": 128
+  },
+  "material": {
+    "opaque": true,
+    "double_sided": true,
+    "alpha": 1,
+    "textures": false
+  },
+  "cameras_sha256": "add1724ab7c70da640267713a69d549958187bb729b0a70629f974d023d5e596",
+  "sources_sha256": {
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+    "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a"
+  },
+  "blender": "5.2.1 LTS",
+  "blender_build": "9e2066aef7ef",
+  "blender_python": "3.13.13 (main, Apr 25 2025, 12:39:20) [GCC 14.2.1 20250110 (Red Hat 14.2.1-11)]",
+  "files_sha256": {
+    "unit.glb": "f9e99c6a66f64ccb4f531a77be8becebebfd665311e9c9af36bcf9e234c05409",
+    "scene.blend": "5ed908c9cdac7bc8eacfc98224a499d91633ad3b73dffe5af6915bc509236ab6"
+  }
+}

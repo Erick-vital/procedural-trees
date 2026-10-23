@@ -1,0 +1,36 @@
+{
+  "version": "foliage-branch-0.2.0",
+  "base": {
+    "version": "foliage-branch-0.1.0",
+    "seed": 17,
+    "branch_id": "q3:primary:100",
+    "pattern": "longitudinal",
+    "support_count": 12,
+    "support_length_m": 0.55,
+    "support_roll_deg": 0,
+    "support_angle_deg": 50,
+    "leaves_per_m": 9,
+    "leaf": {
+      "variant": "folded-hex",
+      "leaf_length_m": 0.24,
+      "width_ratio": 0.6,
+      "azimuth_step_deg": 137.5,
+      "inclination_deg": 65,
+      "roll_deg": 8,
+      "fold_deg": 25,
+      "jitter_deg": 12,
+      "scale_jitter": 0.15
+    }
+  },
+  "twigs": {
+    "enabled": true,
+    "radius_m": 0.012,
+    "tip_radius_ratio": 0.25,
+    "root_overlap_m": 0.025,
+    "profile_sides": 3
+  },
+  "distribution": {
+    "mode": "target",
+    "influence_radius_m": 0.28
+  }
+}

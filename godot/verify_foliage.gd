@@ -1,0 +1,79 @@
+extends "res://verify_oak.gd"
+
+func visit_materials(node: Node) -> void:
+	if node is MeshInstance3D:
+		for surface in node.mesh.get_surface_count():
+			var mat = node.mesh.surface_get_material(surface)
+			check(mat is StandardMaterial3D, "Material importado inesperado")
+			if mat is StandardMaterial3D:
+				check(mat.cull_mode == BaseMaterial3D.CULL_DISABLED, "Reverso de hoja descartado")
+				check(mat.transparency == BaseMaterial3D.TRANSPARENCY_DISABLED, "Hoja no opaca")
+				check(mat.albedo_texture == null, "Textura inesperada")
+	for child in node.get_children():
+		visit_materials(child)
+
+func converted(values: Array) -> Vector3:
+	return Vector3(values[0], values[2], -values[1])
+
+func run() -> void:
+	var study := OS.get_environment("ARBOLES_FOLIAGE_STUDY")
+	var config = JSON.parse_string(FileAccess.get_file_as_string(study.path_join("godot-input.json")))
+	root.size = Vector2i(900, 900)
+	var camera := Camera3D.new()
+	root.add_child(camera)
+	camera.current = true
+	var light := DirectionalLight3D.new()
+	root.add_child(light)
+	light.rotation_degrees = Vector3(-35, -25, 0)
+	light.light_energy = 1.2
+	var environment := WorldEnvironment.new()
+	environment.environment = Environment.new()
+	environment.environment.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+	environment.environment.ambient_light_color = Color.WHITE
+	environment.environment.ambient_light_energy = .5
+	root.add_child(environment)
+	var reports := {}
+	for item in config:
+		triangles = 0
+		materials = {}
+		first = true
+		var packed = load("res://rf1/" + item.id + ".glb")
+		if not packed is PackedScene:
+			check(false, "GLB no importado: " + item.id)
+			continue
+		var asset = packed.instantiate()
+		root.add_child(asset)
+		visit(asset)
+		visit_materials(asset)
+		var manifest = JSON.parse_string(FileAccess.get_file_as_string(item.folder.path_join("manifest.json")))
+		var metrics = manifest.metrics
+		var low = metrics.bounds_blender[0]
+		var high = metrics.bounds_blender[1]
+		check(bounds.position.distance_to(Vector3(low[0], low[2], -high[1])) < .0001, item.id + ": orientación/origen")
+		check(bounds.end.distance_to(Vector3(high[0], high[2], -low[1])) < .0001, item.id + ": escala")
+		check(triangles == metrics.triangles, item.id + ": pérdida de triángulos")
+		check(materials.size() == 1 and int(materials.get("RF1_Leaf", -1)) == int(metrics.triangles), item.id + ": material")
+		var cameras = JSON.parse_string(FileAccess.get_file_as_string(item.folder.path_join("cameras.json")))
+		var rig := {}
+		for view in cameras:
+			var settings = cameras[view]
+			camera.projection = Camera3D.PROJECTION_ORTHOGONAL
+			camera.size = settings.ortho_scale
+			camera.position = converted(settings.location)
+			# Rotar los ejes de cámara completos conserva también el roll en cenitales.
+			var columns = settings.basis_columns
+			camera.basis = Basis(converted(columns[0]), converted(columns[1]), converted(columns[2]))
+			rig[view] = {"position": [camera.position.x, camera.position.y, camera.position.z], "size": camera.size}
+			if "--visual" in OS.get_cmdline_user_args() and item.capture:
+				for frame in range(8):
+					await process_frame
+					await RenderingServer.frame_post_draw
+				check(root.get_texture().get_image().save_png(item.folder.path_join("godot-" + view + ".png")) == OK, "Captura fallida")
+		reports[item.id] = {"triangles": triangles, "materials": materials,
+			"double_sided_opaque": true, "cameras": rig}
+		asset.free()
+	var file := FileAccess.open(study.path_join("godot-report.json"), FileAccess.WRITE)
+	file.store_string(JSON.stringify({"passed": not failed, "godot": Engine.get_version_info().string,
+		"renderer": "gl_compatibility", "light_rotation_deg": [-35, -25, 0],
+		"light_energy": 1.2, "ambient_energy": .5, "assets": reports}, "  ") + "\n")
+	quit(1 if failed else 0)

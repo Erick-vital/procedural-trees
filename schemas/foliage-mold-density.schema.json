@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "base",
+    "extra_leaf_count"
+  ],
+  "properties": {
+    "version": {
+      "const": "foliage-molds-0.1.2"
+    },
+    "base": {
+      "type": "object"
+    },
+    "extra_leaf_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 144
+    }
+  }
+}

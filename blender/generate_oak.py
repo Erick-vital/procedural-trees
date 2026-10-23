@@ -76,10 +76,11 @@ def material(name, color):
     return mat
 
 
-def mesh_report(mesh):
+def mesh_report(mesh, *, triangle_limit=10000):
     mesh.calc_loop_triangles()
     assert mesh.vertices and mesh.loop_triangles, 'Malla vacía'
-    assert len(mesh.loop_triangles) <= 10000, 'Presupuesto excedido'
+    assert type(triangle_limit) is int and 1 <= triangle_limit <= 12500, 'Límite de triángulos inválido'
+    assert len(mesh.loop_triangles) <= triangle_limit, 'Presupuesto excedido'
     assert all(math.isfinite(c) for v in mesh.vertices for c in v.co), 'Coordenadas no finitas'
     bad = [t for t in mesh.loop_triangles if t.area <= 1e-10]
     assert not bad, f'Triángulos degenerados: {len(bad)}; ejemplos ' + str([

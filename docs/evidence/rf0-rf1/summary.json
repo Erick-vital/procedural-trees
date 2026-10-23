@@ -1,0 +1,417 @@
+{
+  "version": "foliage-unit-0.1.0",
+  "reference_lock_sha256": "4c6184278af448ad80e292a2a0508f7d180e26323b31fb9403efbe67beff8863",
+  "sources_sha256": {
+    "scripts/verify_foliage_unit.py": "c1a63768a43c736173f3f3a0e473874a67fff8e7ba1f793e59a6beab6d712831",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+    "godot/verify_foliage.gd": "640b4d99ddc5e6d4c323d123524683ea59be3164eddff82d5fa9a326336f7dd6",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "presets/foliage-unit.json": "9f2fc84ea90fa48410f842acf07632e05f140bd2b6340abf14065d0ca4b8a2be"
+  },
+  "runner_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "wood_triangles": 5292,
+  "remaining_foliage_triangles": 4708,
+  "variants": {
+    "diamond": {
+      "leaves": 7,
+      "triangles_per_leaf": 2,
+      "triangles_per_unit": 14,
+      "max_leaves_per_tree": 2354,
+      "max_units_per_tree": 336
+    },
+    "hex": {
+      "leaves": 7,
+      "triangles_per_leaf": 4,
+      "triangles_per_unit": 28,
+      "max_leaves_per_tree": 1177,
+      "max_units_per_tree": 168
+    },
+    "folded-hex": {
+      "leaves": 7,
+      "triangles_per_leaf": 4,
+      "triangles_per_unit": 28,
+      "max_leaves_per_tree": 1177,
+      "max_units_per_tree": 168
+    }
+  },
+  "repeated_geometry_matches": true,
+  "same_cameras": true,
+  "control_checks": [
+    "length",
+    "width",
+    "spacing",
+    "azimuth",
+    "inclination",
+    "roll",
+    "fold",
+    "jitter",
+    "scale-jitter",
+    "seed"
+  ],
+  "visual_captures_generated": true,
+  "capture_visible_pixels": {
+    "diamond/front": 15525,
+    "diamond/side": 22150,
+    "diamond/top": 47670,
+    "diamond/below": 21929,
+    "diamond/perspective": 22171,
+    "diamond/reverse": 22171,
+    "hex/front": 19673,
+    "hex/side": 28062,
+    "hex/top": 58638,
+    "hex/below": 27808,
+    "hex/perspective": 28000,
+    "hex/reverse": 28000,
+    "folded-hex/front": 23519,
+    "folded-hex/side": 29321,
+    "folded-hex/top": 53155,
+    "folded-hex/below": 27616,
+    "folded-hex/perspective": 28057,
+    "folded-hex/reverse": 28058,
+    "control-length/front": 51629,
+    "control-length/side": 65671,
+    "control-length/top": 119622,
+    "control-length/below": 62021,
+    "control-length/perspective": 63269,
+    "control-length/reverse": 63271,
+    "control-spacing/front": 36451,
+    "control-spacing/side": 43025,
+    "control-spacing/top": 60707,
+    "control-spacing/below": 39303,
+    "control-spacing/perspective": 43146,
+    "control-spacing/reverse": 43146,
+    "control-inclination/front": 22706,
+    "control-inclination/side": 20006,
+    "control-inclination/top": 61714,
+    "control-inclination/below": 29013,
+    "control-inclination/perspective": 26087,
+    "control-inclination/reverse": 26087
+  },
+  "visual_acceptance": "pending",
+  "rf2_started": false,
+  "study": "/home/tao/repos/procedural/arboles/artifacts/foliage/rf0-rf1-acceptance",
+  "export_validation": {
+    "diamond": {
+      "triangles": 14,
+      "bounds_gltf": [
+        [
+          -0.17252542078495026,
+          0.04500000178813934,
+          -0.18158873915672302
+        ],
+        [
+          0.1367625743150711,
+          0.6328079700469971,
+          0.16297052800655365
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "bd737f9dedef4da76eb6845fe0f22979fe4714c83fbb3a37a317dcd817885d9c"
+    },
+    "hex": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.17252542078495026,
+          0.04500000178813934,
+          -0.18158873915672302
+        ],
+        [
+          0.1367625743150711,
+          0.6328079700469971,
+          0.16297052800655365
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "8929be0971cfa9e4c8fc3b757e6704d974259264cffedac438ba4d10644f041a"
+    },
+    "folded-hex": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.17252542078495026,
+          0.04500000178813934,
+          -0.18158873915672302
+        ],
+        [
+          0.1367625743150711,
+          0.6539350152015686,
+          0.16297052800655365
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "f9e99c6a66f64ccb4f531a77be8becebebfd665311e9c9af36bcf9e234c05409"
+    },
+    "repeat": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.17252542078495026,
+          0.04500000178813934,
+          -0.18158873915672302
+        ],
+        [
+          0.1367625743150711,
+          0.6539350152015686,
+          0.16297052800655365
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "f9e99c6a66f64ccb4f531a77be8becebebfd665311e9c9af36bcf9e234c05409"
+    },
+    "control-length": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.258788138628006,
+          0.04500000178813934,
+          -0.27238309383392334
+        ],
+        [
+          0.20514385402202606,
+          0.6884025931358337,
+          0.24445581436157227
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "c57b7bff67f71022608d988c934c4a9a32bc71e32efc7e05070b1bb9bd7321a6"
+    },
+    "control-width": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.17252542078495026,
+          0.04500000178813934,
+          -0.18158873915672302
+        ],
+        [
+          0.1367625743150711,
+          0.6683155298233032,
+          0.16297052800655365
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "ff2284132bcc8b0aaa34ae722888c5d2de0f04c1d236984d7fe36b4c405cafc7"
+    },
+    "control-spacing": {
+      "triangles": 40,
+      "bounds_gltf": [
+        [
+          -0.17252542078495026,
+          0.029999999329447746,
+          -0.18158873915672302
+        ],
+        [
+          0.14721262454986572,
+          0.6783397793769836,
+          0.16297052800655365
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "2848a55eb358f58a2855e751bc61d4868e92b2cf3f7cb138a2aeb1f7f04c0f46"
+    },
+    "control-azimuth": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.18928362429141998,
+          0.04500000178813934,
+          -0.16742408275604248
+        ],
+        [
+          0.17363765835762024,
+          0.6539350152015686,
+          0.17578399181365967
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "aaee4e5a890a092ccc2957de3ca53d953010e9f0e4a4de24861707cb058a493f"
+    },
+    "control-inclination": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.16426363587379456,
+          0.01381004974246025,
+          -0.16857664287090302
+        ],
+        [
+          0.15240545570850372,
+          0.5855265855789185,
+          0.1834326833486557
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "0b16c55eb9d07eb601215de24123f5b3907ce2db6980f929c2cf2080b2d28a2e"
+    },
+    "control-roll": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.17252542078495026,
+          0.04500000178813934,
+          -0.18158873915672302
+        ],
+        [
+          0.1367625743150711,
+          0.6662822365760803,
+          0.16297052800655365
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "33139b8ef1449d8c40ad07182d61ce65c014f320e7cb482d4ac6b9162a5c9f46"
+    },
+    "control-fold": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.17252542078495026,
+          0.04500000178813934,
+          -0.18158873915672302
+        ],
+        [
+          0.1367625743150711,
+          0.6672841906547546,
+          0.16297052800655365
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "ff235eb3b2ad60253d2597a423c5c24367ba163809d868df5297a5afbf90c78c"
+    },
+    "control-jitter": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.16154727339744568,
+          0.04500000178813934,
+          -0.17095939815044403
+        ],
+        [
+          0.14305473864078522,
+          0.6733416318893433,
+          0.1687648445367813
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "5a86e2d7568b63c180b652a2aa71d57b93897860934f24311cf65ec3383430cd"
+    },
+    "control-scale-jitter": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.171574667096138,
+          0.04500000178813934,
+          -0.16737398505210876
+        ],
+        [
+          0.15797774493694305,
+          0.6485387682914734,
+          0.15693490207195282
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "83e4e36a8408ab3e7639fcde398e8988bf9a3aee4eaccd8ade8be735a9fa5ebb"
+    },
+    "control-seed": {
+      "triangles": 28,
+      "bounds_gltf": [
+        [
+          -0.1504630595445633,
+          0.04500000178813934,
+          -0.18853791058063507
+        ],
+        [
+          0.1529725193977356,
+          0.6520525813102722,
+          0.16440191864967346
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "aac11eac1286464aea3dd7fa9414ba577712e5a21d0461b410b5f46f2abc1db1"
+    },
+    "maximum": {
+      "triangles": 128,
+      "bounds_gltf": [
+        [
+          -0.1798286885023117,
+          0.014999999664723873,
+          -0.1798286885023117
+        ],
+        [
+          0.18000000715255737,
+          0.9678213596343994,
+          0.17931506037712097
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "6d4b6ddfabdcf5616d06e7768c5a298e053501ab369983aa11531e8ff493dbd5"
+    },
+    "single-plane": {
+      "triangles": 2,
+      "bounds_gltf": [
+        [
+          0.0,
+          0.014999999664723873,
+          -0.05400000140070915
+        ],
+        [
+          0.18000000715255737,
+          0.014999999664723873,
+          0.05400000140070915
+        ]
+      ],
+      "normals_valid": true,
+      "opaque_double_sided": true,
+      "glb_sha256": "c234c824011ed9a960d52396080df4816ef12440a291055724286e1c35e8a6f0"
+    }
+  },
+  "godot": {
+    "ambient_energy": 0.5,
+    "godot": "4.7.2-stable (official)",
+    "light_energy": 1.2,
+    "light_rotation_deg": [
+      -35,
+      -25,
+      0
+    ],
+    "passed": true,
+    "renderer": "gl_compatibility",
+    "asset_triangles": {
+      "control-azimuth": 28,
+      "control-fold": 28,
+      "control-inclination": 28,
+      "control-jitter": 28,
+      "control-length": 28,
+      "control-roll": 28,
+      "control-scale-jitter": 28,
+      "control-seed": 28,
+      "control-spacing": 40,
+      "control-width": 28,
+      "diamond": 14,
+      "folded-hex": 28,
+      "hex": 28,
+      "maximum": 128,
+      "repeat": 28,
+      "single-plane": 2
+    }
+  },
+  "evidence_script_sha256": "7404f90b3942604cb6e3e3eee6889d4f2622a2740cab311fe6e04bc4f97a7ae4"
+}

@@ -55,3 +55,24 @@ class EvaluationTests(unittest.TestCase):
         self.spec['parameters']['height_m'] = 4
         with self.assertRaises(ValueError):
             validate_glb(self.path, self.spec)
+
+    def test_explicit_rf3_budget_preserves_historical_default(self):
+        self.write_glb()
+        raw = self.path.read_bytes()
+        length = struct.unpack_from('<I', raw, 12)[0]
+        doc = json.loads(raw[20:20+length])
+        original = raw[28+length:]
+        binary = original[:36]+original[36:]*10001
+        doc['accessors'][1]['count'] = 3*10001
+        doc['bufferViews'][1]['byteLength'] = 12*10001
+        doc['buffers'][0]['byteLength'] = len(binary)
+        encoded = json.dumps(doc).encode()
+        encoded += b' '*(-len(encoded) % 4)
+        chunks = struct.pack('<II', len(encoded), 0x4e4f534a)+encoded+struct.pack('<II', len(binary), 0x004e4942)+binary
+        self.path.write_bytes(struct.pack('<4sII', b'glTF', 2, 12+len(chunks))+chunks)
+        with self.assertRaises(ValueError):
+            validate_glb(self.path, self.spec)
+        self.assertEqual(validate_glb(self.path, self.spec, triangle_limit=12500)['triangles'], 10001)
+        for limit in (True, 12501, float('nan')):
+            with self.assertRaises(ValueError):
+                validate_glb(self.path, self.spec, triangle_limit=limit)

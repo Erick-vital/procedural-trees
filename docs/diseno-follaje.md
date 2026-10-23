@@ -1,12 +1,14 @@
 # Dirección de rediseño del follaje
 
-Fecha: 2026-10-22. Documento de fundamento; ninguna de las propuestas siguientes está implementada. Las fases y criterios se concretan en el [plan activo de rediseño](../plans/rediseno-follaje.md). El [plan v1](../plans/v1-generador-arboles.md) conserva el marco de infraestructura; no se inician F4–F6 ni se añaden especies por crear este diseño.
+Fecha de fundamento: 2026-10-22; avance actualizado el 2026-10-23. RF0/RF1 dieron paso a RF2: [ficha](follaje-rf0-rf1.md), [unidad](evidence/rf0-rf1/informe.md), [rama RF2](evidence/rf2/informe.md). Tras comparar addons se continuó con el generador propio. El usuario propuso moldes Q3 invisibles y aprobó la rama de 144 hojas. La [primera copa RF3](evidence/rediseno-follaje/rf3/informe.md) está implementada y verificada en Godot: mayor presencia y lectura distinta de masas cerradas, con aceptación artística de copa pendiente. Las fases y el alcance se concretan en el [plan activo](../plans/rediseno-follaje.md). El [plan v1](../plans/v1-generador-arboles.md) conserva la infraestructura; F4–F6 y especies adicionales siguen fuera de este ensayo.
 
 ## Decisión de partida
 
 El usuario considera casi iguales Q3 y la fusión parcial y propone cerrar esta familia como aprobada, conservándola para su estilo de masas poligonales. Se registra la aprobación del resultado mostrado: Q3 como referencia y la variante fusionada sobre los cuatro controles, sin atribuir superioridad a esta última ni aprobar un lote fusionado que no existe. Q3b sigue rechazada. La siguiente dirección es diseñar un follaje más controlable y con una estética diferente, preparado para admitir otras arquitecturas de árbol en el futuro.
 
 La evidencia acredita un límite práctico de las revisiones ensayadas, no un máximo demostrado de todo método basado en esferas. La fusión conserva las formas, tamaños y distribución Q3 de entrada; por construcción, hereda buena parte de su carácter visual. Más continuidad topológica no implica otra composición ni otro aspecto de superficie. Véase el [informe del ensayo](evidence/q3-fusion/informe.md).
+
+La [comparación posterior con Easy Tree y Sapling](evidence/comparacion-addons/informe.md) conduce a continuar con tres directrices: conservar de Q3 el control del volumen y la silueta; incorporar ramillas y conexiones visibles para sostener las hojas; evaluar la distribución por cuánto contribuye a formar la copa deseada. Las configuraciones ensayadas de los addons no alcanzan conjuntamente estos objetivos; siguen como referencias, sin atribuirles una incapacidad general.
 
 ## Qué debe poder controlar el nuevo sistema
 
@@ -39,15 +41,21 @@ El cambio estético buscado debe observarse también en el contorno y los huecos
 
 Separar perfil de arquitectura, distribución de follaje y representación. Como objetivos artísticos ilustrativos: copa ancha e irregular, copa organizada en pisos o conjuntos colgantes. No prometer distinguir especies cambiando solamente la hoja o el tamaño de los grupos sobre las mismas ramas.
 
-La madera aprobada se conserva para aislar el primer experimento de representación. Más adelante, una arquitectura distinta podrá requerir otras reglas de ramas, ramillas y disposición de hojas. Esto amplía el diseño futuro; la implementación vigente continúa limitada al roble.
+La madera Q3 base aprobada se conserva exactamente. La revisión de RF2 podrá añadir ramillas/conexiones visibles como geometría identificada por separado y contada en el mismo presupuesto total. Más adelante, una arquitectura distinta podrá requerir otras reglas de ramas y disposición de hojas; remodelar tronco o ramas Q3 queda fuera del alcance vigente, limitado al roble.
 
-## Siguiente experimento propuesto, todavía sin implementar
+## Secuencia propuesta y avance
 
 1. Elegir unas pocas referencias visuales coherentes y fijar cómo debe leerse el follaje de cerca y a una distancia representativa del juego. Las capturas previas a 101–108 m no cubren todos los usos posibles.
 2. Construir una sola ramilla y un grupo pequeño con hojas geométricas opacas. Variar parámetros explícitos de orientación, separación y tamaño; revisar varias vistas con cámara y luz fijas.
 3. Si ofrece una lectura claramente distinta y útil, repetir esa unidad sobre una rama aprobada. Comprobar que puede crear tanto zonas densas como huecos sin depender de objetos grandes cerrados.
 4. Solo después producir la copa de un roble, conservando inicialmente su madera. Evaluar silueta contra la intención artística acordada, no exigir una coincidencia del 98 % con Q3: el rediseño debe poder cambiar la forma visible.
 
-Comparar bajo condiciones reproducibles: claridad del cambio visual, control de parámetros, relación de soporte, huecos desde varios ángulos, facetas/normales, triángulos, materiales y exportación/importación Godot. El presupuesto actual de 10 000 triángulos/3 materiales se mantiene como punto de partida; cualquier cambio requerirá registrarse. Si se estudian tarjetas, medir también el coste de su cobertura de pantalla, sin inferirlo solo del número de triángulos.
+Comparar bajo condiciones reproducibles: claridad del cambio visual, control de parámetros, relación de soporte, huecos desde varios ángulos, facetas/normales, triángulos, materiales y exportación/importación Godot. El usuario eleva el presupuesto del rediseño a 12500 triángulos/3 materiales el 2026-10-23; los contratos históricos conservan 10000. Si se estudian tarjetas, medir también el coste de su cobertura de pantalla, sin inferirlo solo del número de triángulos.
 
-El siguiente entregable sería una prueba pequeña de unidad de follaje, no un generador multiespecie completo. No se decide todavía su representación definitiva ni se reemplaza la versión aprobada.
+La unidad RF1 se aplicó en RF2 sobre la primaria congelada y sus tres secundarias originales: hojas distintas de las masas, pero suspendidas y con escasa cobertura. La revisión 0.2.0 aísla conexiones visibles con hojas idénticas y luego dirige la distribución hacia una región Q3. Las conexiones se leen en detalle; el alcance .55/.8 m sigue sin formar el volumen buscado. El caso de doce soportes tiene una proyección presupuestaria viable, pero poca presencia a distancia. Se itera en la escala de rama antes de RF3; la representación definitiva sigue pendiente y la familia aprobada se conserva.
+
+Por propuesta del usuario se prueban las masas Q3 originales como moldes invisibles: muestreo de superficie por área, descarte de zonas interiores solapadas y conexiones hacia grupos situados cerca del contorno. Dos parejas aíslan tamaño de hoja: hexágonos .45/.8 m y rombos .8/1 m. El rombo de 1 m recupera 54–64 % de cobertura proyectada Q3 en seis vistas, con 96 hojas/384 triángulos añadidos; conserva más presencia, pero sus piezas se ven grandes y angulosas. La comparación entre parejas cambia varias variables y no atribuye la diferencia a una sola. Revisar forma/escala y continuidad antes de RF3; el volumen de una copa completa sigue sin probarse.
+
+El usuario expresa gusto por el resultado y pide más hojas. El ensayo aditivo 0.1.2 conserva las 96 originales, tamaño y conexiones, y compara 120/144/192. Con el nuevo techo, sus proyecciones 10044/10572/11628 son aritméticamente viables. La revisión Godot muestra más continuidad y mayor compactación con 192; el usuario aprueba la recomendación de 144 el 2026-10-23 como referencia de rama para RF3. Esa aprobación permite construir la copa, que requiere una revisión propia. [Comparación, aceptación y reproducción](evidence/rediseno-follaje/rf2-densidad/informe.md).
+
+RF3 aplica esa representación a toda la copa de viejo-09: 89 moldes con descarte global de interiores y reparto por área expuesta, 264 grupos/1584 hojas y 10572 triángulos. Madera Q3 y altura 9 m intactas. Los controles muestran que anchura y ocupación de una zona cambian con efectos registrados; las escalas de lectura mantienen presencia. La copa es un entregable real revisado en Godot, todavía pendiente de aprobación artística antes de contrastar otras edades/semillas en RF4. [Resultados y límites](evidence/rediseno-follaje/rf3/informe.md).

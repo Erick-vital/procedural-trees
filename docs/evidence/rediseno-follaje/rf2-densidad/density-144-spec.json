@@ -1,0 +1,17 @@
+{
+  "version": "foliage-molds-0.1.2",
+  "base": {
+    "version": "foliage-molds-0.1.1",
+    "seed": 17,
+    "group_count": 24,
+    "leaves_per_group": 4,
+    "leaf_length_m": 1.0,
+    "shell_depth_m": 0.08,
+    "surface_span_m": 0.55,
+    "twig_radius_m": 0.02,
+    "tip_radius_ratio": 0.25,
+    "connection_shape": "straight",
+    "variant": "diamond"
+  },
+  "extra_leaf_count": 48
+}

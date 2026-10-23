@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Unidad experimental de follaje RF1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "seed", "support", "parameters"],
+  "properties": {
+    "version": {"const": "foliage-unit-0.1.0"},
+    "seed": {"type": "integer", "minimum": 0, "maximum": 2147483646},
+    "support": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "parent_branch_id", "parent_t", "terminal", "region", "points_m"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-zA-Z0-9:_-]{1,80}$"},
+        "parent_branch_id": {"type": "string", "pattern": "^[a-zA-Z0-9:_-]{1,80}$"},
+        "parent_t": {"type": "number", "minimum": 0, "maximum": 1},
+        "terminal": {"type": "boolean"},
+        "region": {"enum": ["unit-study", "lower", "middle", "upper"]},
+        "points_m": {
+          "type": "array", "minItems": 2, "maxItems": 16,
+          "items": {"type": "array", "minItems": 3, "maxItems": 3,
+            "items": {"type": "number", "minimum": -30, "maximum": 30}}
+        }
+      }
+    },
+    "parameters": {
+      "type": "object", "additionalProperties": false,
+      "required": ["variant", "leaf_length_m", "width_ratio", "spacing_m", "azimuth_step_deg", "inclination_deg", "roll_deg", "fold_deg", "jitter_deg", "scale_jitter"],
+      "properties": {
+        "variant": {"enum": ["diamond", "hex", "folded-hex"]},
+        "leaf_length_m": {"type": "number", "minimum": 0.03, "maximum": 0.5},
+        "width_ratio": {"type": "number", "minimum": 0.2, "maximum": 1},
+        "spacing_m": {"type": "number", "minimum": 0.03, "maximum": 0.5},
+        "azimuth_step_deg": {"type": "number", "minimum": 0, "maximum": 360},
+        "inclination_deg": {"type": "number", "minimum": 15, "maximum": 150},
+        "roll_deg": {"type": "number", "minimum": -90, "maximum": 90},
+        "fold_deg": {"type": "number", "minimum": 0, "maximum": 55},
+        "jitter_deg": {"type": "number", "minimum": 0, "maximum": 25},
+        "scale_jitter": {"type": "number", "minimum": 0, "maximum": 0.3}
+      },
+      "allOf": [{"if": {"properties": {"variant": {"enum": ["diamond", "hex"]}}},
+        "then": {"properties": {"fold_deg": {"const": 0}}}}]
+    }
+  }
+}

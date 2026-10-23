@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "seed",
+    "group_count",
+    "leaves_per_group",
+    "leaf_length_m",
+    "shell_depth_m",
+    "surface_span_m",
+    "twig_radius_m",
+    "tip_radius_ratio",
+    "connection_shape",
+    "variant"
+  ],
+  "properties": {
+    "version": {
+      "const": "foliage-molds-0.1.1"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483646
+    },
+    "group_count": {
+      "type": "integer",
+      "minimum": 4,
+      "maximum": 24
+    },
+    "leaves_per_group": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8
+    },
+    "leaf_length_m": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 1
+    },
+    "shell_depth_m": {
+      "type": "number",
+      "minimum": 0.02,
+      "maximum": 0.3
+    },
+    "surface_span_m": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 0.8
+    },
+    "twig_radius_m": {
+      "type": "number",
+      "minimum": 0.008,
+      "maximum": 0.03
+    },
+    "tip_radius_ratio": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 0.5
+    },
+    "connection_shape": {
+      "enum": [
+        "elbow",
+        "straight"
+      ]
+    },
+    "variant": {
+      "enum": [
+        "folded-hex",
+        "diamond"
+      ]
+    }
+  }
+}

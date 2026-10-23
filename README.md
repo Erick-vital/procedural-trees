@@ -1,6 +1,6 @@
 # Robles procedurales
 
-Experimento Python/Blender → GLB → Godot. Estado: [ESTADO.md](ESTADO.md). Plan activo para la nueva familia: [rediseño de follaje](plans/rediseno-follaje.md), todavía sin implementar y revisado con el [análisis local de Easy Tree/Sapling](docs/evidence/addons-follaje/informe.md). Infraestructura y fases anteriores: [plan v1](plans/v1-generador-arboles.md).
+Experimento Python/Blender → GLB → Godot. Estado: [ESTADO.md](ESTADO.md). Plan activo: [rediseño de follaje](plans/rediseno-follaje.md). RF3 verificada: viejo-09 completo con 10572 triángulos, 1584 hojas y 9 m; aprobación artística de copa pendiente. Techo del rediseño: 12500 triángulos/árbol. Infraestructura y fases anteriores: [plan v1](plans/v1-generador-arboles.md).
 
 F0–F2 y Q1–Q3b implementadas y verificadas técnicamente: contrato validado, generador propio de Geometry Nodes, ejecutor con CLI/API local y lotes de 30 variantes exportadas, evaluadas e importadas en Godot. Q1 0.2.0 fue rechazada por su forma estrecha; Q1b 0.2.1 y la copa ajustada Q2 0.3.0 fueron aprobadas por el usuario. El usuario identifica **Q3 0.4.0 como última iteración buena y rechaza estéticamente Q3b 0.4.1**. El usuario acepta cerrar la familia actual de follaje como aprobada tras considerar casi iguales Q3 y los cuatro controles de fusión: [informe](docs/evidence/q3-fusion/informe.md). Para generar Q3 usar `presets/v0.4.0/`; los presets principales aún apuntan a Q3b y no se promueve el ensayo. La madera Q2 y las fuentes históricas se conservan exactamente. El foco vigente son los árboles: F3/bosque, mapa y terreno se difieren a otro proyecto; siguen pendientes F4–F6.
 
@@ -12,6 +12,7 @@ F0–F2 y Q1–Q3b implementadas y verificadas técnicamente: contrato validado,
 | Python de Blender | 3.13.13 |
 | Python de contratos/orquestación | 3.14.4 |
 | jsonschema | 4.19.2 |
+| Pillow (galerías y capturas) | 12.1.1 |
 | Godot | 4.7.2 stable official, `ed1daf0bf` |
 
 Los ejecutables locales por defecto están en `scripts/generate_f1.py` y `scripts/verify_f1.py`; pueden sustituirse con `BLENDER_BIN` y `GODOT_BIN`. Las pruebas rechazan otras versiones de Blender/Godot. No descargan herramientas ni modifican otros proyectos.
@@ -235,4 +236,97 @@ python3 scripts/fusion_evidence.py --study artifacts/q3-fusion/mis-controles --o
 
 Requiere el lote Q3 y sus cámaras históricas; `--base` y `--cameras-root` permiten indicar otra reconstrucción. Pillow 12.1.1 está instalado en el entorno usado para las galerías. Usar carpetas nuevas; cada subproceso de este ensayo tiene límite de 180 s. Las capturas necesitan sesión gráfica; `--visual` abre Godot brevemente.
 
-Resultados seleccionados: `artifacts/q3-fusion/acceptance/index.html`; modelos `<caso>/candidate/tree.glb`. Cuatro candidatos GLB válidos, ocho importaciones/capturas Godot, reproducción idéntica de Q3 y del ensayo sobre viejo-09, y entrada Q3 completa conservada en cada `.blend`. IoU mínima de silueta 98.33 % en cuatro vistas a 192×192 rayos; no mide naturalidad. [Informe](docs/evidence/q3-fusion/informe.md), [piloto en seis vistas](docs/evidence/q3-fusion/pilot-all-views.jpg) y [comparación Godot](docs/evidence/q3-fusion/controls-godot.jpg). El usuario considera Q3/fusión casi iguales y acepta cerrar esta familia como aprobada para su estilo. No se extiende la fusión al lote ni se atribuye superioridad. [Dirección de rediseño](docs/diseno-follaje.md), todavía sin implementar, para separar controles de copa, arquitectura y representación.
+Resultados seleccionados: `artifacts/q3-fusion/acceptance/index.html`; modelos `<caso>/candidate/tree.glb`. Cuatro candidatos GLB válidos, ocho importaciones/capturas Godot, reproducción idéntica de Q3 y del ensayo sobre viejo-09, y entrada Q3 completa conservada en cada `.blend`. IoU mínima de silueta 98.33 % en cuatro vistas a 192×192 rayos; no mide naturalidad. [Informe](docs/evidence/q3-fusion/informe.md), [piloto en seis vistas](docs/evidence/q3-fusion/pilot-all-views.jpg) y [comparación Godot](docs/evidence/q3-fusion/controls-godot.jpg). El usuario considera Q3/fusión casi iguales y acepta cerrar esta familia como aprobada para su estilo. No se extiende la fusión al lote ni se atribuye superioridad. [Dirección de rediseño](docs/diseno-follaje.md) y avance RF0/RF1 abajo.
+
+## Rediseño: referencia y unidad de hojas RF0/RF1
+
+[Ficha visual/contrato](docs/follaje-rf0-rf1.md) e [informe](docs/evidence/rf0-rf1/informe.md). RF0 congela viejo-09 Q3 y la primaria 100, con cámaras ortográficas compartidas y tomas al 50/25/10 % del cuadro. RF1 compara siete hojas sobre un portador virtual: rombo de 2 triángulos y hexágonos plano/plegado de 4, un material opaco de doble cara. Contrato experimental separado en `schemas/foliage-unit.schema.json`, preset en `presets/foliage-unit.json`; los generadores y presets históricos no cambian.
+
+```sh
+python3 scripts/verify_foliage_unit.py --output artifacts/foliage/otra-revision --visual
+python3 scripts/foliage_evidence.py --study artifacts/foliage/otra-revision --output artifacts/foliage/evidencia
+```
+
+Usar carpeta nueva. Cada subproceso tiene timeout de 120 s. `--visual` abre Godot y captura las unidades; sin él solo se verifican geometría/importación. El selector de evidencia requiere esas capturas y las referencias fotográficas indicadas en el informe. Se pueden sustituir rutas con BLENDER_BIN/GODOT_BIN.
+
+Resultado seleccionado: `artifacts/foliage/rf0-rf1-acceptance/index.html`, con modelos `<variante>/unit.glb`. Pasaron 24 pruebas y 16 GLB, repetición, diez controles aislados y límites de 32 hojas/128 triángulos. [Comparación Blender/Godot](docs/evidence/rf0-rf1/variants.jpg) y [controles](docs/evidence/rf0-rf1/controls.jpg). El usuario autorizó continuar con RF2 sobre el hexágono plegado; los límites de perfil y soporte se evalúan en esa escala. No se ha construido una copa nueva.
+
+## RF2: hojas sobre rama Q3
+
+La primaria 100 de RF0 y sus tres secundarias Q3 originales conservan los mismos polígonos y sombreado. El contrato `foliage-branch-0.1.0` separa cantidad de soportes, hojas por metro y tamaño; se comparan doce casos longitudinal/terminal × densidad × orientación. [Informe](docs/evidence/rf2/informe.md), [comparación](docs/evidence/rf2/comparison.jpg), [matriz](docs/evidence/rf2/matrix.jpg) y [diagnóstico de soportes](docs/evidence/rf2/supports.jpg).
+
+```sh
+python3 scripts/verify_foliage_branch.py --output artifacts/foliage/otra-rama-rf2 --visual
+python3 scripts/foliage_branch_evidence.py --study artifacts/foliage/otra-rama-rf2 --output artifacts/foliage/evidencia-rf2
+```
+
+Usar carpeta nueva. Cada proceso tiene límite de 120 s; las capturas Godot se dividen en lotes. Sin `--visual` se comprueba la importación pero no se generan las capturas necesarias para el segundo comando. Resultado seleccionado: `artifacts/foliage/rf2-acceptance-final/index.html`, modelos `<caso>/branch.glb`. Pasaron 30 pruebas y 19 GLB; las firmas exportadas de madera/normales y material de corteza coinciden con Q3.
+
+La lectura cambia respecto a las masas, pero los soportes invisibles dejan hojas suspendidas. Terminal concentra abanicos; longitudinal reparte mejor las hojas, sin resolver la conexión. Esta versión original se conserva sin madera visible; las líneas magenta son solo diagnóstico y no están en los modelos. La revisión siguiente añade ramillas como geometría separada.
+
+## Revisión RF2: ramillas y región objetivo
+
+`foliage-branch-0.2.0` conserva la madera Q3 base y separa ramillas nuevas y hojas. Compara una pareja con/sin conexiones con colocaciones idénticas; después selecciona recorridos hacia una región congelada desde Q3. [Contrato](docs/contrato-rf2-ramillas.md), [informe](docs/evidence/rediseno-follaje/rf2-ramillas/informe.md), [conexiones](docs/evidence/rediseno-follaje/rf2-ramillas/connection.jpg) y [distribución](docs/evidence/rediseno-follaje/rf2-ramillas/distribution.jpg).
+
+```sh
+python3 scripts/verify_foliage_twigs.py --output artifacts/rediseno-follaje/otra-rama --visual
+python3 scripts/foliage_twigs_evidence.py --study artifacts/rediseno-follaje/otra-rama --output artifacts/rediseno-follaje/evidencia
+```
+
+Usar carpeta nueva. Generación ≤120 s; Godot/verificación ≤180 s por proceso, capturas en lotes de tres. Sin `--visual` no se genera la evidencia gráfica del segundo comando. Galería seleccionada: `artifacts/rediseno-follaje/rf2-ramillas-final/index.html`, GLB en `<caso>/branch.glb`. Pasaron 37 pruebas, 13 GLB importados y 120 capturas Godot; base Q3 intacta y dos repeticiones idénticas.
+
+Las ramillas se leen en detalle, pero incluso a .8 m persiste poco volumen y el follaje pierde presencia a distancia. El caso dirigido de doce soportes añade 360 triángulos; su proyección aritmética al árbol da 9252, sin copa generada. Dieciséis soportes darían 10572, fuera del límite. RF2 sigue con salida artística pendiente; toca revisar organización/alcance por coste antes de RF3.
+
+## Ensayo RF2: masas Q3 como moldes invisibles
+
+`foliage-molds-0.1.1` extrae nueve masas Q3 originales de la rama congelada, muestrea su superficie por área y descarta muestras interiores entre ellas. Los moldes guían grupos de hojas conectados y quedan excluidos del GLB. [Contrato](docs/contrato-rf2-moldes.md), [informe](docs/evidence/rediseno-follaje/rf2-moldes/informe.md), [hexágonos](docs/evidence/rediseno-follaje/rf2-moldes/hexagons.jpg) y [rombos](docs/evidence/rediseno-follaje/rf2-moldes/diamonds.jpg).
+
+```sh
+python3 scripts/verify_foliage_molds.py --output artifacts/rediseno-follaje/otros-moldes --visual
+python3 scripts/foliage_molds_evidence.py --study artifacts/rediseno-follaje/otros-moldes --output artifacts/rediseno-follaje/evidencia-moldes
+```
+
+Usar carpeta nueva. Generación ≤120 s y verificación/capturas ≤180 s por proceso terminable. Sin `--visual` se verifica GLB/Godot, pero no se generan capturas para el segundo comando. Galería: `artifacts/rediseno-follaje/rf2-moldes-final/index.html`, modelos `<caso>/branch.glb`. Pasaron 43 pruebas, 11 GLB y 72 capturas Godot; base Q3 intacta y cuatro repeticiones idénticas.
+
+Hexágonos .45/.8 m: 48 hojas y 416 triángulos añadidos; rombos .8/1 m con conexiones rectas: 96 hojas y 384 añadidos. Cada pareja aísla tamaño; entre parejas cambian varias variables. El rombo de 1 m cubre 54–64 % de la proyección Q3 en seis vistas, frente a 4–6 % de la revisión previa; conserva más presencia a distancia, pero se ve grande y anguloso. Proyección presupuestaria 9516 por árbol, sin copa generada. Aprobación artística pendiente.
+
+## RF2: más hojas sobre las mismas conexiones
+
+El usuario solicita más volumen y eleva el techo del rediseño a 12500 triángulos/3 materiales por árbol. `foliage-molds-0.1.2` añade hojas al rombo de 1 m conservando todas las originales y la madera. [Comparación](docs/evidence/rediseno-follaje/rf2-densidad/density.jpg) e [informe](docs/evidence/rediseno-follaje/rf2-densidad/informe.md).
+
+```sh
+python3 scripts/verify_foliage_molds.py --density --output artifacts/rediseno-follaje/otra-densidad --visual
+python3 scripts/foliage_molds_evidence.py --study artifacts/rediseno-follaje/otra-densidad --output artifacts/rediseno-follaje/evidencia-densidad
+```
+
+Mismas condiciones y límites de ejecución del ensayo anterior, carpeta nueva. Galería: `artifacts/rediseno-follaje/rf2-densidad-01/index.html`, modelos `<caso>/branch.glb`. Pasaron 45 pruebas, nueve GLB y 60 capturas Godot; dos repeticiones y reconstrucción de 0.1.1 idénticas. 120/144/192 hojas proyectan 10044/10572/11628 triángulos por árbol, sin copa generada. El usuario aprueba 144 como referencia de rama para RF3 el 2026-10-23; [aceptación](docs/evidence/rediseno-follaje/rf2-densidad/aceptacion.json). Los contratos y presets históricos conservan su límite de 10000; integración normal del estilo pendiente de RF5.
+
+## RF3: primer árbol completo
+
+`foliage-canopy-0.1.0` conserva exactamente la madera Q3 de viejo-09, usa sus 89 moldes invisibles y reparte grupos por superficie expuesta de toda la copa. Continúa la regla RF2 de rombo nominal 1 m y seis hojas por conexión. [Contrato](docs/contrato-rf3-copa.md), [informe](docs/evidence/rediseno-follaje/rf3/informe.md), [Q3 frente al piloto](docs/evidence/rediseno-follaje/rf3/comparison.jpg) y [controles](docs/evidence/rediseno-follaje/rf3/controls.jpg).
+
+```sh
+python3 scripts/verify_foliage_canopy.py --output artifacts/rediseno-follaje/otra-copa --visual
+python3 scripts/foliage_canopy_evidence.py --study artifacts/rediseno-follaje/otra-copa --output artifacts/rediseno-follaje/evidencia-copa
+```
+
+Usar carpeta nueva, mismas versiones de Blender/Godot. Generación ≤120 s y capturas/verificaciones ≤180 s por proceso terminable, en lotes de dos escenas. Sin `--visual` solo se comprueban geometría/importación. La referencia RF0 y la aceptación RF2 deben conservar sus archivos y hashes.
+
+Galería: `artifacts/rediseno-follaje/rf3-acceptance-02/index.html`. Árbol: `pilot/tree.glb` y `pilot/tree.blend`. Piloto de 264 conexiones y 1584 hojas, 10572 triángulos/3 materiales, altura 9 m. Pasaron 51 pruebas, siete GLB y 60 capturas Godot; repetición idéntica y madera/normales/corteza coincidentes con el GLB Q3 original.
+
+Perfil ×1.12 cambia anchura con igual coste; ocupación este ×.4 abre esa zona y reduce a 9732 triángulos, conservando las otras regiones. Hojas .75 m conservan soportes/raíces/ejes. La copa mantiene presencia a distancia y lectura distinta de las masas; siguen láminas grandes y solapamientos en detalle. Aprobación artística pendiente antes de RF4. Los validadores usan 12500 explícitamente en RF3 y mantienen 10000 como valor histórico por defecto; el estilo aún no está integrado en la CLI/API normal.
+
+## Comparación de Easy Tree y Sapling con Q3
+
+Un adulto de 10 m y un viejo de 9 m por generador, máximo 10000 triángulos/3 materiales, paleta opaca y facetado comunes, cámaras compartidas en Godot. [Informe de resultados y esfuerzo](docs/evidence/comparacion-addons/informe.md), [comparación gráfica](docs/evidence/comparacion-addons/godot-perspective.jpg) y [madera](docs/evidence/comparacion-addons/wood-only.jpg).
+
+```sh
+python3 scripts/verify_addon_comparison.py --output artifacts/addon-comparison/otra-comparacion --visual
+python3 scripts/addon_comparison_evidence.py --study artifacts/addon-comparison/otra-comparacion --output artifacts/addon-comparison/evidencia
+```
+
+Requiere los addons locales Easy Tree 1.0.1 y Sapling 0.3.7 en `~/.config/blender/5.2/extensions/blender_org/`; no los instala ni modifica. El ensayo reproduce catorce configuraciones, con un rechazo esperado de Easy Tree viejo inicial por complejidad, y repite los cuatro candidatos seleccionados. Cada Blender/Godot tiene timeout de 120 s y las capturas se dividen en lotes. Sin `--visual` no se genera la evidencia gráfica para el segundo comando.
+
+Galería seleccionada: `artifacts/addon-comparison/acceptance-final/index.html`; GLB en `comparison/<generador>-<edad>/tree.glb`. Q3 usa copias facetadas de adulto-00/viejo-09 sin sobrescribir sus fuentes. Easy Tree adaptado: 7472/9022 triángulos, con hoja geométrica RF1 y cambios de resolución interna; Sapling ajustado: 7764/9048, con hoja hexagonal y controles nativos. Los seis modelos pasan GLB/Godot; hay 36 capturas, repeticiones idénticas y 30 pruebas existentes aprobadas.
+
+Sapling requirió menos intervención interna en esta comparación; Q3 conserva la copa más compacta y los addons muestran otra arquitectura y ocupación. No se declara ganador artístico ni se cambia el generador predeterminado. El ensayo no acredita generación durante el juego y no inicia RF3.

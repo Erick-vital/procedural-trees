@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-23",
+  "decision": "approved_by_user",
+  "scope": "RF2_branch",
+  "case": "leaves-144",
+  "version": "foliage-molds-0.1.2",
+  "case_directory": "/home/tao/repos/procedural/arboles/artifacts/rediseno-follaje/rf2-densidad-01/leaves-144",
+  "manifest_sha256": "d5630ab5f621f4f3a4ea354a772fbb2acaff40dc99ae17ea130419fa07b9d4f8",
+  "glb_sha256": "3e86715c1437d31af9420adb78f032b09c2fb4c0511910e86529455b365e2e81",
+  "spec_file_sha256": "171dec5a4840cec320e51da896a23ef1c86bc0185adc8771b0191f092bcfe724",
+  "tree_triangle_limit": 12500,
+  "next_phase": "RF3",
+  "rf3_started": false,
+  "notes": "Aprobación de la rama recomendada de 144 hojas; no implica aprobación de una copa completa ni del lote."
+}

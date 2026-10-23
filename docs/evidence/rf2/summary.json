@@ -1,0 +1,459 @@
+{
+  "version": "foliage-branch-0.1.0",
+  "sources_sha256": {
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+    "presets/foliage-branch.json": "174604fb4dfd1753feabb5c4820e3cc9bd0f15eed0ee16ad6dd56ce923e77f25",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "scripts/verify_foliage_branch.py": "1b37b23adb74a6da5fbae63eace63853e0306fc69fbed8f613d2228aa961105c",
+    "godot/verify_foliage_branch.gd": "22673f167c8d198f34ffe4411554ce7ae69cf29cb9effbab941c093f53b13b1b",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "src/treegen/evaluation.py": "3eb4c8a29be0479ceb89f80a2a2061d33ea19fb74d8a7220783ed83f2adbf086",
+    "src/treegen/foliage_branch_evaluation.py": "9b1c2e4e2155b8327ec753ecdc28d88b3c2f47bf2ea5f1040428ff61ada9cc77",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9"
+  },
+  "reference_sha256": "e26449fe719888833a90926794c44b3948497051c4eff8e5177f40069fccb657",
+  "runner_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "same_final_wood": true,
+  "same_cameras": true,
+  "repeat_matches": true,
+  "source_unchanged": true,
+  "matrix": {
+    "longitudinal-r0-low": {
+      "leaf_count": 48,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 528,
+        "triangles": 656,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.725945,
+            2.126421
+          ],
+          [
+            6.96173,
+            2.755548,
+            4.79721
+          ]
+        ],
+        "height_m": 2.6707889999999996,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192
+        },
+        "geometry_sha256": "d2e882c616738c714d7069652ea148454e959fed903166ef865c3ac62cf0be88"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.06242961063981056,
+        "mean": 0.19823531022605798,
+        "maximum": 0.3707664906978607
+      },
+      "max_support_attachment_error_m": 1.2129252354498021e-05
+    },
+    "longitudinal-r0-medium": {
+      "leaf_count": 64,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 624,
+        "triangles": 720,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.602265,
+            2.126421
+          ],
+          [
+            6.860924,
+            2.658191,
+            4.799037
+          ]
+        ],
+        "height_m": 2.672616,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 256
+        },
+        "geometry_sha256": "ebc01a4902cc2926c4ee42b9da8ffdc1d60a2629f75a5cf025c07ad447b0b19b"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.04196738824248314,
+        "mean": 0.17595595674356446,
+        "maximum": 0.3435543179512024
+      },
+      "max_support_attachment_error_m": 1.2129252354498021e-05
+    },
+    "longitudinal-r0-high": {
+      "leaf_count": 96,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 816,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.670959,
+            2.126421
+          ],
+          [
+            6.935448,
+            2.761237,
+            4.854918
+          ]
+        ],
+        "height_m": 2.7284969999999995,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 384
+        },
+        "geometry_sha256": "802393c4f36e98360bbdc8f92bbd5fd69b19a83f3a23ebfe6ce830aff5809147"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.03183354437351227,
+        "mean": 0.1982860795299833,
+        "maximum": 0.4117266833782196
+      },
+      "max_support_attachment_error_m": 1.2129252354498021e-05
+    },
+    "terminal-r0-low": {
+      "leaf_count": 48,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 528,
+        "triangles": 656,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.839781,
+            2.126421
+          ],
+          [
+            7.054513,
+            2.845155,
+            4.964437
+          ]
+        ],
+        "height_m": 2.838016,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192
+        },
+        "geometry_sha256": "64ff88b420f923f791a179f78b043126490369d24cf7617cfd8b8404c9a807a4"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.3422813415527344,
+        "mean": 0.4045500420033932,
+        "maximum": 0.4968049228191376
+      },
+      "max_support_attachment_error_m": 1.2129252354498021e-05
+    },
+    "terminal-r0-medium": {
+      "leaf_count": 64,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 624,
+        "triangles": 720,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.816925,
+            2.126421
+          ],
+          [
+            7.035883,
+            2.827164,
+            4.954021
+          ]
+        ],
+        "height_m": 2.8276,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 256
+        },
+        "geometry_sha256": "3e612cc331830c6d961220f517ae4625592139b8b1474c1d07c307851d95bd66"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.3422813415527344,
+        "mean": 0.40453965589404106,
+        "maximum": 0.4968049228191376
+      },
+      "max_support_attachment_error_m": 1.2129252354498021e-05
+    },
+    "terminal-r0-high": {
+      "leaf_count": 96,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 816,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.798764,
+            2.126421
+          ],
+          [
+            7.022047,
+            2.821637,
+            4.945687
+          ]
+        ],
+        "height_m": 2.8192660000000003,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 384
+        },
+        "geometry_sha256": "aa2a4c63acae22b1b265d9b38b8bfa44d20fd23f4f3e6a17bee86752ba0d7c2f"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.3422813415527344,
+        "mean": 0.4045315381760399,
+        "maximum": 0.4968049228191376
+      },
+      "max_support_attachment_error_m": 1.2129252354498021e-05
+    },
+    "longitudinal-r70-low": {
+      "leaf_count": 48,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 528,
+        "triangles": 656,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.859644,
+            2.126421
+          ],
+          [
+            6.968526,
+            2.782591,
+            4.996398
+          ]
+        ],
+        "height_m": 2.869977,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192
+        },
+        "geometry_sha256": "b9b04ece2e9340a81c624688dc05d6386c4aa4eb4f8e4c80f6c56cf9d5606e81"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.012447463348507881,
+        "mean": 0.18830397131387144,
+        "maximum": 0.3710186183452606
+      },
+      "max_support_attachment_error_m": 5.570264420384774e-06
+    },
+    "longitudinal-r70-medium": {
+      "leaf_count": 64,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 624,
+        "triangles": 720,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.738201,
+            2.126421
+          ],
+          [
+            6.953012,
+            2.767088,
+            4.867897
+          ]
+        ],
+        "height_m": 2.741476,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 256
+        },
+        "geometry_sha256": "9a7678ba331016b49f0ed4e13f75963e2a16ab9f87d9a3eadaac7aa1a208ceed"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.005449181422591209,
+        "mean": 0.16714061133097857,
+        "maximum": 0.34380465745925903
+      },
+      "max_support_attachment_error_m": 5.570264420384774e-06
+    },
+    "longitudinal-r70-high": {
+      "leaf_count": 96,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 816,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.863166,
+            2.126421
+          ],
+          [
+            6.987406,
+            2.827407,
+            5.004161
+          ]
+        ],
+        "height_m": 2.8777399999999997,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 384
+        },
+        "geometry_sha256": "bf2498d92d45896d61ef337b8acfc34911f042416463602c565427ac4bd87992"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.0035340304020792246,
+        "mean": 0.18831105580951166,
+        "maximum": 0.4119807183742523
+      },
+      "max_support_attachment_error_m": 5.570264420384774e-06
+    },
+    "terminal-r70-low": {
+      "leaf_count": 48,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 528,
+        "triangles": 656,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.97142,
+            2.126421
+          ],
+          [
+            7.104517,
+            2.88762,
+            5.115473
+          ]
+        ],
+        "height_m": 2.9890519999999996,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192
+        },
+        "geometry_sha256": "460280ad8301e30cadadfa0aeb23ac24fe9c66c2a7a8527452d34c3e8c163dbe"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.04764030873775482,
+        "mean": 0.38423906406387687,
+        "maximum": 0.49706196784973145
+      },
+      "max_support_attachment_error_m": 5.570264420384774e-06
+    },
+    "terminal-r70-medium": {
+      "leaf_count": 64,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 624,
+        "triangles": 720,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.948977,
+            2.126421
+          ],
+          [
+            7.10593,
+            2.920742,
+            5.091565
+          ]
+        ],
+        "height_m": 2.965144,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 256
+        },
+        "geometry_sha256": "0a37c043769e8117353f4cee50d51265b5f1afcacd4f59ed0ed9aae468a28e81"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.04764030873775482,
+        "mean": 0.3842263672268018,
+        "maximum": 0.49706196784973145
+      },
+      "max_support_attachment_error_m": 5.570264420384774e-06
+    },
+    "terminal-r70-high": {
+      "leaf_count": 96,
+      "support_count": 16,
+      "metrics": {
+        "vertices": 816,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.938509,
+            2.126421
+          ],
+          [
+            7.138839,
+            2.91249,
+            5.084424
+          ]
+        ],
+        "height_m": 2.958003,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 384
+        },
+        "geometry_sha256": "cc882945096f14dcf5dc93d8f2f955d4053eb95d52f12cdf01fd8d1f14bb4d3a"
+      },
+      "leaf_root_distance_to_wood_m": {
+        "minimum": 0.04764030873775482,
+        "mean": 0.38421642621203017,
+        "maximum": 0.49706196784973145
+      },
+      "max_support_attachment_error_m": 5.570264420384774e-06
+    }
+  },
+  "control_checks": [
+    "size",
+    "inclination",
+    "count",
+    "length",
+    "seed"
+  ],
+  "visual_captures_generated": true,
+  "visual_acceptance": "pending",
+  "rf3_started": false,
+  "study": "/home/tao/repos/procedural/arboles/artifacts/foliage/rf2-acceptance-final",
+  "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+  "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+  "godot": {
+    "ambient_energy": 0.5,
+    "godot": "4.7.2-stable (official)",
+    "light_energy": 1.2,
+    "light_rotation_deg": [
+      -35,
+      -25,
+      0
+    ],
+    "passed": true,
+    "renderer": "gl_compatibility",
+    "asset_triangles": {
+      "control-count": 784,
+      "control-inclination": 720,
+      "control-length": 656,
+      "control-seed": 720,
+      "control-size": 720,
+      "longitudinal-r0-high": 848,
+      "longitudinal-r0-low": 656,
+      "longitudinal-r0-medium": 720,
+      "longitudinal-r70-high": 848,
+      "longitudinal-r70-low": 656,
+      "longitudinal-r70-medium": 720,
+      "reference": 764,
+      "repeat": 720,
+      "terminal-r0-high": 848,
+      "terminal-r0-low": 656,
+      "terminal-r0-medium": 720,
+      "terminal-r70-high": 848,
+      "terminal-r70-low": 656,
+      "terminal-r70-medium": 720
+    }
+  },
+  "capture_count": 153,
+  "capture_min_visible_pixels": 17175
+}

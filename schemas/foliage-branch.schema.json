@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experimento RF2 sobre rama Q3 congelada",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "seed",
+    "branch_id",
+    "pattern",
+    "support_count",
+    "support_length_m",
+    "support_roll_deg",
+    "support_angle_deg",
+    "leaves_per_m",
+    "leaf"
+  ],
+  "properties": {
+    "version": {
+      "const": "foliage-branch-0.1.0"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483646
+    },
+    "branch_id": {
+      "const": "q3:primary:100"
+    },
+    "pattern": {
+      "enum": [
+        "longitudinal",
+        "terminal"
+      ]
+    },
+    "support_count": {
+      "type": "integer",
+      "minimum": 4,
+      "maximum": 24
+    },
+    "support_length_m": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 0.8
+    },
+    "support_roll_deg": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "support_angle_deg": {
+      "type": "number",
+      "minimum": 20,
+      "maximum": 80
+    },
+    "leaves_per_m": {
+      "type": "number",
+      "minimum": 5,
+      "maximum": 20
+    },
+    "leaf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "variant",
+        "leaf_length_m",
+        "width_ratio",
+        "azimuth_step_deg",
+        "inclination_deg",
+        "roll_deg",
+        "fold_deg",
+        "jitter_deg",
+        "scale_jitter"
+      ],
+      "properties": {
+        "variant": {
+          "enum": [
+            "diamond",
+            "hex",
+            "folded-hex"
+          ]
+        },
+        "leaf_length_m": {
+          "type": "number",
+          "minimum": 0.03,
+          "maximum": 0.5
+        },
+        "width_ratio": {
+          "type": "number",
+          "minimum": 0.2,
+          "maximum": 1
+        },
+        "azimuth_step_deg": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 360
+        },
+        "inclination_deg": {
+          "type": "number",
+          "minimum": 15,
+          "maximum": 150
+        },
+        "roll_deg": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "fold_deg": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 55
+        },
+        "jitter_deg": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "scale_jitter": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.3
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "variant": {
+                "enum": [
+                  "diamond",
+                  "hex"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fold_deg": {
+                "const": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

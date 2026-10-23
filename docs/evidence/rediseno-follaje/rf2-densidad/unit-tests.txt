@@ -1,0 +1,53 @@
+test_invalid (test_contracts.ContractsTest.test_invalid) ... ok
+test_presets (test_contracts.ContractsTest.test_presets) ... ok
+test_versioned_algorithms (test_contracts.ContractsTest.test_versioned_algorithms) ... ok
+test_bare_tree_and_invalid_basis (test_crown.CrownTests.test_bare_tree_and_invalid_basis) ... ok
+test_mass_size_variation_ignores_group_translation (test_crown.CrownTests.test_mass_size_variation_ignores_group_translation) ... ok
+test_overlapping_components_remain_separate_and_wood_hash_isolated (test_crown.CrownTests.test_overlapping_components_remain_separate_and_wood_hash_isolated) ... ok
+test_reject_invalid_numeric_geometry (test_evaluation.EvaluationTests.test_reject_invalid_numeric_geometry) ... ok
+test_reject_truncated_file_and_wrong_height (test_evaluation.EvaluationTests.test_reject_truncated_file_and_wrong_height) ... ok
+test_valid_export (test_evaluation.EvaluationTests.test_valid_export) ... ok
+test_api_async_and_invalid_input (test_execution.ExecutionTests.test_api_async_and_invalid_input) ... 127.0.0.1 - - [23/Oct/2026 00:10:33] "POST /jobs HTTP/1.1" 202 -
+127.0.0.1 - - [23/Oct/2026 00:10:33] "GET /jobs/e223b682-9f38-4581-86ec-c506e5c24efc HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 00:10:33] "POST /jobs HTTP/1.1" 400 -
+ok
+test_export_failure_not_completed (test_execution.ExecutionTests.test_export_failure_not_completed) ... ok
+test_invalid_file_records_failure (test_execution.ExecutionTests.test_invalid_file_records_failure) ... ok
+test_invalid_spec_records_failure (test_execution.ExecutionTests.test_invalid_spec_records_failure) ... ok
+test_timeout_kills_process_group (test_execution.ExecutionTests.test_timeout_kills_process_group) ... ok
+test_determinism_frames_and_insertion (test_foliage.FoliageTests.test_determinism_frames_and_insertion) ... ok
+test_invalid_and_bounded_work (test_foliage.FoliageTests.test_invalid_and_bounded_work) ... ok
+test_parameter_separation_and_seed (test_foliage.FoliageTests.test_parameter_separation_and_seed) ... ok
+test_transported_frame_crosses_axis_tie_without_flip (test_foliage.FoliageTests.test_transported_frame_crosses_axis_tie_without_flip) ... ok
+test_nested_supports_and_density_independence (test_foliage_branch.BranchFoliageTests.test_nested_supports_and_density_independence) ... ok
+test_reject_work_nonfinite_and_unknown_fields (test_foliage_branch.BranchFoliageTests.test_reject_work_nonfinite_and_unknown_fields) ... ok
+test_roots_on_path_and_frame_smoothness (test_foliage_branch.BranchFoliageTests.test_roots_on_path_and_frame_smoothness) ... ok
+test_terminal_same_size_orientation_and_count (test_foliage_branch.BranchFoliageTests.test_terminal_same_size_orientation_and_count) ... ok
+test_exported_wood_signature_and_normals (test_foliage_branch_export.BranchExportTests.test_exported_wood_signature_and_normals) ... ok
+test_reject_culling_and_inverted_normals (test_foliage_branch_export.BranchExportTests.test_reject_culling_and_inverted_normals) ... ok
+test_reject_backface_culling_transparency_normals_and_truncation (test_foliage_export.FoliageExportTests.test_reject_backface_culling_transparency_normals_and_truncation) ... ok
+test_single_plane_has_valid_normals_without_thickness (test_foliage_export.FoliageExportTests.test_single_plane_has_valid_normals_without_thickness) ... ok
+test_additions_preserve_every_surviving_leaf_and_connection (test_foliage_mold_density.MoldDensityTests.test_additions_preserve_every_surviving_leaf_and_connection) ... ok
+test_budget_ceiling_and_invalid_controls (test_foliage_mold_density.MoldDensityTests.test_budget_ceiling_and_invalid_controls) ... ok
+test_area_sampling_and_interior_rejection (test_foliage_molds.MoldFoliageTests.test_area_sampling_and_interior_rejection) ... ok
+test_connections_nested_seed_and_roots (test_foliage_molds.MoldFoliageTests.test_connections_nested_seed_and_roots) ... ok
+test_efficient_pair_closed_tubes_and_budget (test_foliage_molds.MoldFoliageTests.test_efficient_pair_closed_tubes_and_budget) ... ok
+test_reject_bad_work_and_geometry (test_foliage_molds.MoldFoliageTests.test_reject_bad_work_and_geometry) ... ok
+test_size_pair_keeps_supports_roots_axes_and_budget (test_foliage_molds.MoldFoliageTests.test_size_pair_keeps_supports_roots_axes_and_budget) ... ok
+test_mask_coverage_counts_pixels_without_intensity_weighting (test_foliage_molds_evaluation.MoldProjectionTests.test_mask_coverage_counts_pixels_without_intensity_weighting) ... ok
+test_directed_selection_repeat_nested_and_leaf_independent (test_foliage_twigs.TwigFoliageTests.test_directed_selection_repeat_nested_and_leaf_independent) ... ok
+test_guidance_changes_spatial_contribution (test_foliage_twigs.TwigFoliageTests.test_guidance_changes_spatial_contribution) ... ok
+test_pair_preserves_every_placement (test_foliage_twigs.TwigFoliageTests.test_pair_preserves_every_placement) ... ok
+test_reject_budget_invalid_numbers_and_unknown_fields (test_foliage_twigs.TwigFoliageTests.test_reject_budget_invalid_numbers_and_unknown_fields) ... ok
+test_tube_is_closed_outward_and_bounded (test_foliage_twigs.TwigFoliageTests.test_tube_is_closed_outward_and_bounded) ... ok
+test_reject_inverted_twig_normal (test_foliage_twigs_export.TwigExportTests.test_reject_inverted_twig_normal) ... ok
+test_separate_channels_and_matching_bark (test_foliage_twigs_export.TwigExportTests.test_separate_channels_and_matching_bark) ... ok
+test_accept_coherent_structure (test_quality.QualityTest.test_accept_coherent_structure) ... ok
+test_q1b_requires_three_secondary_branches (test_quality.QualityTest.test_q1b_requires_three_secondary_branches) ... ok
+test_reject_thickness_grouping_and_flatness (test_quality.QualityTest.test_reject_thickness_grouping_and_flatness) ... ok
+test_stable_streams (test_seeds.SeedsTest.test_stable_streams) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 1.997s
+
+OK

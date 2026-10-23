@@ -1,0 +1,16 @@
+{
+  "version": "foliage-canopy-0.1.0",
+  "seed": 17,
+  "group_count": 264,
+  "leaf_length_m": 1.0,
+  "shell_depth_m": 0.08,
+  "twig_radius_m": 0.02,
+  "tip_radius_ratio": 0.25,
+  "profile_width_scale": 1.0,
+  "region_weights": {
+    "north": 1.0,
+    "east": 0.4,
+    "south": 1.0,
+    "west": 1.0
+  }
+}

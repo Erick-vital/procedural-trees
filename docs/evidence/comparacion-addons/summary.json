@@ -1,0 +1,571 @@
+{
+  "version": "addon-comparison-0.1.0",
+  "study": "/home/tao/repos/procedural/arboles/artifacts/addon-comparison/acceptance-final",
+  "sources_sha256": {
+    "presets/addon-comparison.json": "4b1f6f9d0caad0b9fd689add5c34dbf76462df426a19ca53b968ee451eb54009",
+    "scripts/compare_addons.py": "16f4fb1b23bef4791d8e50b81e3c0f1d2cc4316c4fdb5037aa6320373057158e",
+    "scripts/verify_addon_comparison.py": "4ecc393d036511ddef3ba89ca1ee675933f3d0299d23603cc9c2ab2ed894cd5e",
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "godot/verify_addon_comparison.gd": "c6c11812c82b54f0ac9d426d4ed58dd858314a9a7cdb0e177d8c9660baa17ba2",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/evaluation.py": "3eb4c8a29be0479ceb89f80a2a2061d33ea19fb74d8a7220783ed83f2adbf086"
+  },
+  "runner_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "selected": {
+    "q3-adulto": {
+      "engine": "q3",
+      "age": "adulto",
+      "metrics": {
+        "vertices": 3708,
+        "triangles": 6984,
+        "bounds_blender": [
+          [
+            -6.379607,
+            -5.225266,
+            0.0
+          ],
+          [
+            6.891549,
+            5.998268,
+            10.000001
+          ]
+        ],
+        "height_m": 10.000001,
+        "triangles_by_material": {
+          "Oak_Leaves": 2620,
+          "Oak_Bark": 4364
+        },
+        "geometry_sha256": "08abafe744b483a8fa01acfcef3981254e560c3eff72b195847d7026cee82486"
+      },
+      "projected_height_fractions": {
+        "front": 0.5000000298023224,
+        "side": 0.5000000298023224,
+        "top": 0.5611767321825027,
+        "below": 0.5396363139152527,
+        "perspective": 0.5412842631340027,
+        "reverse": 0.5412843823432922
+      },
+      "presentation_smooth_faces_flattened": 1960,
+      "source_files_sha256": {
+        "tree.blend": "8ed47b3e50acb4234fc56a926e189c3e50b9ca8c401b21f1fe93c175248b13be",
+        "manifest.json": "170d0a6cb9d4c13aed91912cba1961c8891194474008aaa5e55591b52fc15ef7"
+      },
+      "generation_seconds": null,
+      "normalization": {
+        "basis": "wood_bounds",
+        "raw_bounds_blender": [
+          [
+            -5.801208,
+            -4.335878,
+            -0.005454
+          ],
+          [
+            5.883263,
+            5.510022,
+            12.465963
+          ]
+        ],
+        "scale": [
+          1,
+          1,
+          0.8018335045648782
+        ],
+        "translation": [
+          0,
+          0,
+          0.004373199933896846
+        ]
+      },
+      "attempt_id": null,
+      "repeat_matches": true
+    },
+    "easy-adulto": {
+      "engine": "easy",
+      "age": "adulto",
+      "metrics": {
+        "vertices": 6654,
+        "triangles": 7472,
+        "bounds_blender": [
+          [
+            -3.701429,
+            -2.9184,
+            0.0
+          ],
+          [
+            3.65046,
+            3.902652,
+            10.0
+          ]
+        ],
+        "height_m": 10.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5480,
+          "Oak_Leaves": 1992
+        },
+        "geometry_sha256": "97c458eb09058bcc9edcab09b331f8a379225383d51e9479df172254b4622f58"
+      },
+      "projected_height_fractions": {
+        "front": 0.5000000298023224,
+        "side": 0.4999999701976776,
+        "top": 0.3410525918006897,
+        "below": 0.5133046805858612,
+        "perspective": 0.5034953057765961,
+        "reverse": 0.5034953951835632
+      },
+      "presentation_smooth_faces_flattened": 0,
+      "source_files_sha256": {
+        "tree.blend": "4a07375057f5be647fe2f95b830fcc41bc4b315c774e0590c989157262ccaf43",
+        "manifest.json": "96ca355b81bd06fb8d55c30fcfa1f2d369b291a928c18100d362c6fd9beeb1ef"
+      },
+      "generation_seconds": 0.396,
+      "normalization": {
+        "type": "uniform_scale_and_base_translation",
+        "scale": 1.2663330450345236,
+        "original_z": [
+          -0.019999999552965164,
+          7.876816749572754
+        ],
+        "height_m": 10
+      },
+      "attempt_id": "easy-adulto-final",
+      "repeat_matches": true
+    },
+    "sapling-adulto": {
+      "engine": "sapling",
+      "age": "adulto",
+      "metrics": {
+        "vertices": 8590,
+        "triangles": 7764,
+        "bounds_blender": [
+          [
+            -5.19418,
+            -5.662877,
+            0.0
+          ],
+          [
+            5.998661,
+            6.220551,
+            10.0
+          ]
+        ],
+        "height_m": 10.0,
+        "triangles_by_material": {
+          "Oak_Bark": 3312,
+          "Oak_Leaves": 4452
+        },
+        "geometry_sha256": "7ff32df74ecd564ceeabe16418ce324e31e124a86bdd3002a78950fef7df3732"
+      },
+      "projected_height_fractions": {
+        "front": 0.5000000298023224,
+        "side": 0.4999999701976776,
+        "top": 0.5941714346408844,
+        "below": 0.5175981521606445,
+        "perspective": 0.5031449198722839,
+        "reverse": 0.5031449794769287
+      },
+      "presentation_smooth_faces_flattened": 0,
+      "source_files_sha256": {
+        "tree.blend": "790909948e7b97a662f8eb2f8ee7f56dac8a1c66ae0ac0c738cd0a94b9191a27",
+        "manifest.json": "3c9d5f8d71f2be88072f41f8bc035359d385006a8f61613933c503c832db75b1"
+      },
+      "generation_seconds": 0.467,
+      "normalization": {
+        "type": "uniform_scale_and_base_translation",
+        "scale": 0.8019395051814462,
+        "original_z": [
+          0.0,
+          12.469768524169922
+        ],
+        "height_m": 10
+      },
+      "attempt_id": "sapling-adulto-final",
+      "repeat_matches": true
+    },
+    "q3-viejo": {
+      "engine": "q3",
+      "age": "viejo",
+      "metrics": {
+        "vertices": 4524,
+        "triangles": 8512,
+        "bounds_blender": [
+          [
+            -5.255064,
+            -6.861468,
+            0.0
+          ],
+          [
+            7.188305,
+            6.291394,
+            9.000001
+          ]
+        ],
+        "height_m": 9.000001,
+        "triangles_by_material": {
+          "Oak_Leaves": 3220,
+          "Oak_Bark": 5292
+        },
+        "geometry_sha256": "f9a1821a6c00cdf74de2b150d07cb289a1bbd938b8c08e87b33574ba25e6b7b5"
+      },
+      "projected_height_fractions": {
+        "front": 0.5000000596046448,
+        "side": 0.5000000447034836,
+        "top": 0.7307145595550537,
+        "below": 0.5704247951507568,
+        "perspective": 0.5679219365119934,
+        "reverse": 0.5679219365119934
+      },
+      "presentation_smooth_faces_flattened": 2376,
+      "source_files_sha256": {
+        "tree.blend": "52229ad14106176720db2df4b7b098d50d9a792fd9bde2ad83c8b75b600daaf8",
+        "manifest.json": "e5e27b8312c3c74c2be003d6cdfe8654bdf3adb424d02c9fb277fbc7322fe82a"
+      },
+      "generation_seconds": null,
+      "normalization": {
+        "basis": "wood_bounds",
+        "raw_bounds_blender": [
+          [
+            -4.627171,
+            -6.016532,
+            -0.011635
+          ],
+          [
+            6.504336,
+            5.381452,
+            10.984015
+          ]
+        ],
+        "scale": [
+          1,
+          1,
+          0.8185054999022341
+        ],
+        "translation": [
+          0,
+          0,
+          0.009523311491362494
+        ]
+      },
+      "attempt_id": null,
+      "repeat_matches": true
+    },
+    "easy-viejo": {
+      "engine": "easy",
+      "age": "viejo",
+      "metrics": {
+        "vertices": 7766,
+        "triangles": 9022,
+        "bounds_blender": [
+          [
+            -4.20514,
+            -5.048956,
+            0.0
+          ],
+          [
+            3.954237,
+            4.966717,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 6826,
+          "Oak_Leaves": 2196
+        },
+        "geometry_sha256": "19a1767653a89e2a738b77b3214894a9c839a69f73aa6ff7647826411dcb221d"
+      },
+      "projected_height_fractions": {
+        "front": 0.5,
+        "side": 0.4999999850988388,
+        "top": 0.5564263164997101,
+        "below": 0.48089699447155,
+        "perspective": 0.5012817978858948,
+        "reverse": 0.5012817680835724
+      },
+      "presentation_smooth_faces_flattened": 0,
+      "source_files_sha256": {
+        "tree.blend": "1683ce4407b31f374b154a9dbe60abd1693297bc11a87abcea15c462abb57152",
+        "manifest.json": "ee8347540a1888654ce65fd5981bddc268f2f7b0b26635a439c2d8c232e85f71"
+      },
+      "generation_seconds": 0.447,
+      "normalization": {
+        "type": "uniform_scale_and_base_translation",
+        "scale": 1.1633986698972376,
+        "original_z": [
+          -0.15812107920646667,
+          7.577834129333496
+        ],
+        "height_m": 9
+      },
+      "attempt_id": "easy-viejo-final",
+      "repeat_matches": true
+    },
+    "sapling-viejo": {
+      "engine": "sapling",
+      "age": "viejo",
+      "metrics": {
+        "vertices": 10000,
+        "triangles": 9048,
+        "bounds_blender": [
+          [
+            -6.197659,
+            -5.795711,
+            0.0
+          ],
+          [
+            6.267755,
+            5.528768,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 3872,
+          "Oak_Leaves": 5176
+        },
+        "geometry_sha256": "36f3fd44adb3092bbaf23a10db480a9a920955f33617b135d498b31d5b1994b9"
+      },
+      "projected_height_fractions": {
+        "front": 0.5000000298023224,
+        "side": 0.4999999850988388,
+        "top": 0.6291376799345016,
+        "below": 0.5465612411499023,
+        "perspective": 0.5377737283706665,
+        "reverse": 0.5377737581729889
+      },
+      "presentation_smooth_faces_flattened": 0,
+      "source_files_sha256": {
+        "tree.blend": "c0985d440d383db7e71fd5356607f6b53616ba81a904c117407234c47124fbbb",
+        "manifest.json": "d2579f334bc406e1bfa6976500efa72420e796667885d071662b81088f8e2a12"
+      },
+      "generation_seconds": 0.448,
+      "normalization": {
+        "type": "uniform_scale_and_base_translation",
+        "scale": 0.752177376099174,
+        "original_z": [
+          -0.4905018210411072,
+          11.474761009216309
+        ],
+        "height_m": 9
+      },
+      "attempt_id": "sapling-viejo-final",
+      "repeat_matches": true
+    }
+  },
+  "repeat_checks": {
+    "easy-adulto-final": {
+      "geometry_sha256": "97c458eb09058bcc9edcab09b331f8a379225383d51e9479df172254b4622f58",
+      "native_geometry_sha256": "c49e9488499aa911be06eb74167b86de8c44d456d88559836d3d9174889c65e8"
+    },
+    "sapling-adulto-final": {
+      "geometry_sha256": "7ff32df74ecd564ceeabe16418ce324e31e124a86bdd3002a78950fef7df3732",
+      "native_geometry_sha256": "c5877659b18f7ee381b0f797356d70cd8f276d4499973c2808a04dba0bc7463a"
+    },
+    "easy-viejo-final": {
+      "geometry_sha256": "19a1767653a89e2a738b77b3214894a9c839a69f73aa6ff7647826411dcb221d",
+      "native_geometry_sha256": "253fbabe6ef7a26fd8f065c07230fe8bcec6507415a195e2275bdd25051b41a1"
+    },
+    "sapling-viejo-final": {
+      "geometry_sha256": "36f3fd44adb3092bbaf23a10db480a9a920955f33617b135d498b31d5b1994b9",
+      "native_geometry_sha256": "e2a06e35450b4789119755a4b58678f196145a759a190c238a4a6d60fd2d4ceb"
+    }
+  },
+  "q3_sources_sha256": {
+    "adulto": {
+      "tree.blend": "8ed47b3e50acb4234fc56a926e189c3e50b9ca8c401b21f1fe93c175248b13be",
+      "tree.glb": "605e7033b2b51b6531e6b9df5c5197b57fcd0d34189de424cb373a2c84abc8b8",
+      "manifest.json": "170d0a6cb9d4c13aed91912cba1961c8891194474008aaa5e55591b52fc15ef7"
+    },
+    "viejo": {
+      "tree.blend": "52229ad14106176720db2df4b7b098d50d9a792fd9bde2ad83c8b75b600daaf8",
+      "tree.glb": "f37632d345072c83b8c7a04b2162f25902ae180d134ac8d6d6fd14d035d1df23",
+      "manifest.json": "e5e27b8312c3c74c2be003d6cdfe8654bdf3adb424d02c9fb277fbc7322fe82a"
+    }
+  },
+  "q3_sources_unchanged": true,
+  "same_cameras_per_age": true,
+  "exports": {
+    "q3-adulto": {
+      "triangles": 6984,
+      "materials": {
+        "Oak_Leaves": 2620,
+        "Oak_Bark": 4364
+      },
+      "bounds_gltf": [
+        [
+          -6.379607200622559,
+          0.0,
+          -5.998267650604248
+        ],
+        [
+          6.891549110412598,
+          10.000000953674316,
+          5.225266456604004
+        ]
+      ],
+      "dimensions_m": [
+        13.271156311035156,
+        10.000000953674316,
+        11.223534107208252
+      ],
+      "geometry_sha256": "901d7b29a5fc80b89337755ef8e1c9eed498e304d6c04c440005156a8869e63a",
+      "glb_sha256": "eb18c7d212a878adac6158d4e482783c008c73def33fc9753abaece159ce1c0c",
+      "opaque_common_palette": true
+    },
+    "easy-adulto": {
+      "triangles": 7472,
+      "materials": {
+        "Oak_Bark": 5480,
+        "Oak_Leaves": 1992
+      },
+      "bounds_gltf": [
+        [
+          -3.7014293670654297,
+          0.0,
+          -3.902651786804199
+        ],
+        [
+          3.6504600048065186,
+          10.0,
+          2.9183995723724365
+        ]
+      ],
+      "dimensions_m": [
+        7.351889371871948,
+        10.0,
+        6.821051359176636
+      ],
+      "geometry_sha256": "cbdf3a4e548c966dc5a2a72f53915acaed3c580b6f5e406f6c68c18e2e00cf02",
+      "glb_sha256": "a3176c54b5fd609c6884a57af947af9dfa60cf6fefcff7658a17f8a059e9c372",
+      "opaque_common_palette": true
+    },
+    "sapling-adulto": {
+      "triangles": 7764,
+      "materials": {
+        "Oak_Bark": 3312,
+        "Oak_Leaves": 4452
+      },
+      "bounds_gltf": [
+        [
+          -5.194180488586426,
+          0.0,
+          -6.220551490783691
+        ],
+        [
+          5.998661041259766,
+          10.0,
+          5.662877082824707
+        ]
+      ],
+      "dimensions_m": [
+        11.192841529846191,
+        10.0,
+        11.883428573608398
+      ],
+      "geometry_sha256": "9a894dd9ccf0b867b339995d360453ed3b1a8073897171d1534ef2d418306f0a",
+      "glb_sha256": "bb6078cf58a1eb65a813636275768888e817cf540a62b944194e83b38f6856d1",
+      "opaque_common_palette": true
+    },
+    "q3-viejo": {
+      "triangles": 8512,
+      "materials": {
+        "Oak_Leaves": 3220,
+        "Oak_Bark": 5292
+      },
+      "bounds_gltf": [
+        [
+          -5.255064010620117,
+          0.0,
+          -6.291393756866455
+        ],
+        [
+          7.188305377960205,
+          9.000000953674316,
+          6.861468315124512
+        ]
+      ],
+      "dimensions_m": [
+        12.443369388580322,
+        9.000000953674316,
+        13.152862071990967
+      ],
+      "geometry_sha256": "179ecf247bf9fe6db5611c4d09d91ac98b71de258decb99becb7742511a1943f",
+      "glb_sha256": "d25b8aa327c21a099de57f93901539f541d8c67b5189350aed1f6431aea2721a",
+      "opaque_common_palette": true
+    },
+    "easy-viejo": {
+      "triangles": 9022,
+      "materials": {
+        "Oak_Bark": 6826,
+        "Oak_Leaves": 2196
+      },
+      "bounds_gltf": [
+        [
+          -4.205140113830566,
+          0.0,
+          -4.96671724319458
+        ],
+        [
+          3.9542369842529297,
+          9.0,
+          5.048956394195557
+        ]
+      ],
+      "dimensions_m": [
+        8.159377098083496,
+        9.0,
+        10.015673637390137
+      ],
+      "geometry_sha256": "b2a105b8b1b6fcc40310491a455d679d12b98427be47c46e7f32844656693974",
+      "glb_sha256": "d309061e40be036e856b51e45c622849efa1b6e0d857f6c1cf7f6a8009e9b0bf",
+      "opaque_common_palette": true
+    },
+    "sapling-viejo": {
+      "triangles": 9048,
+      "materials": {
+        "Oak_Bark": 3872,
+        "Oak_Leaves": 5176
+      },
+      "bounds_gltf": [
+        [
+          -6.197659492492676,
+          0.0,
+          -5.5287675857543945
+        ],
+        [
+          6.267755031585693,
+          9.0,
+          5.795710563659668
+        ]
+      ],
+      "dimensions_m": [
+        12.46541452407837,
+        9.0,
+        11.324478149414062
+      ],
+      "geometry_sha256": "1f2c90dc492690f237551e04138b72b53fdd26dcb5d10ce21f8445bdc652318f",
+      "glb_sha256": "e1be7ef0437df2b0433e6fd31c50f86954fbbe391360a588987be14709d57802",
+      "opaque_common_palette": true
+    }
+  },
+  "capture_count": 36,
+  "minimum_visible_pixels": 30665,
+  "godot": {
+    "ambient_energy": 0.5,
+    "godot": "4.7.2-stable (official)",
+    "light_energy": 1.2,
+    "light_rotation_deg": [
+      -35,
+      -25,
+      0
+    ],
+    "passed": true,
+    "renderer": "gl_compatibility"
+  },
+  "visual_acceptance": "pending",
+  "runtime_generation_tested": false,
+  "rf3_started": false
+}

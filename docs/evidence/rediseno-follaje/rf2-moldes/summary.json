@@ -1,0 +1,1596 @@
+{
+  "version": "foliage-molds-0.1.1",
+  "sources_sha256": {
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/foliage_molds_lab.py": "7855e70360b156890dcccadcb55e38d206570808f4fc97160b698a1c2a695c87",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "docs/contrato-rf2-moldes.md": "ab85634f587b62551be2d542e6399bb7c31e12fde5b089840d00dfd7f2113158",
+    "godot/verify_foliage_molds.gd": "debe809663c255cc1dd09f61a63996ea7d9e5b1cab16f9524f70ac374b7a6547",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "presets/foliage-molds.json": "5e08b402d90a3ba27cec63f79a7f90c56a4f36c167314abc97dd44e535d35d7d",
+    "presets/foliage-twigs.json": "5ad702ee03f6f4ad5c53cb0724c87c255341591868121bd2e407edda4f1e88c9",
+    "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+    "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+    "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+    "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+    "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+    "scripts/addon_comparison_evidence.py": "697f7c5a7f257eb8f90fc2254ef9d3482becc75e727d6cfeb4fa0a21192295c7",
+    "scripts/compare_addons.py": "16f4fb1b23bef4791d8e50b81e3c0f1d2cc4316c4fdb5037aa6320373057158e",
+    "scripts/diagnose_structure.py": "4a560741d20705a82fdfb3fbad09412c20933b19fcd69876205e904c40ac63d3",
+    "scripts/foliage_branch_evidence.py": "371bdb2caeaaaf9020f6d9c85370b111293a5554197cc8b5d0fb826caa044d0b",
+    "scripts/foliage_evidence.py": "7404f90b3942604cb6e3e3eee6889d4f2622a2740cab311fe6e04bc4f97a7ae4",
+    "scripts/foliage_molds_evidence.py": "0f7e3c666d6b2d528c8ec6bc425bd9fbf6bdf697ab84b41541b348075aa08a41",
+    "scripts/foliage_twigs_evidence.py": "db564c399d1d9bca58daa41f29730f48fdb0d8527e39444f897eb2f0f83584f8",
+    "scripts/fusion_evidence.py": "85c4b4c10edc4772d02b60480bab7affe36eb9a0431f8715d7bac74f794c9fb3",
+    "scripts/generate_f1.py": "d5cf8686667debd55853e756403ce8d08e1d91ef9bbb3ef7fad5b4bd417d5ad6",
+    "scripts/inspect_easy_tree.py": "1a7b771b2c13392c97d259518fe683ed08738326257e991329707c95de4aa889",
+    "scripts/make_gallery.py": "231756b3cf65b0da4f0ccbb01b6d54c312562b73b84a3910463fd1100b9ff38a",
+    "scripts/preview_fusion.py": "4f6eca670cd1a447c00a647211a24a4d11ebd3d577b4b2b0084b85944d4a90f6",
+    "scripts/q1_gallery.py": "cf85dac410fa08b99a0f24eb67a270754a53969ba471d03320fb531678ab515b",
+    "scripts/q1b_gallery.py": "6317ba6b5de149a077322b6f3a8ccab21be68e4bfc13e6e19db80fa9218abb2b",
+    "scripts/q2_gallery.py": "5ed4f4d8c553dbbc49a30563b160ab519816b5f08c336588ec720a78dbcd31c2",
+    "scripts/q3_gallery.py": "982f028008ead1040c33813fd4a9bc4e8b85c6093fda40da03452d6e24dcbba3",
+    "scripts/q3b_gallery.py": "b393ad195d50f1da35b2a7ebde24efc96bfff8fd25ade7aadac828bfd7981f17",
+    "scripts/review_tree_addons.py": "0645681d5eeeffcfba5dd342e7050b30d675a2bac60df929b0a5356975d1a782",
+    "scripts/verify_addon_comparison.py": "4ecc393d036511ddef3ba89ca1ee675933f3d0299d23603cc9c2ab2ed894cd5e",
+    "scripts/verify_api.py": "48b4dd5af68e06d50b0471a46309238ae58cdc22c665067d78cefcf115bff6ec",
+    "scripts/verify_f0.py": "334f15cd6bdbbd1b57c8795750bd36a2aed31b898016aea53f955a88ddc32783",
+    "scripts/verify_f1.py": "5e7663e303e222a8ca7b72bf2fb4948cea345dbeaf5142deedf177afa8b21740",
+    "scripts/verify_f2.py": "d40bf125303e10397ea69c2f10dd76238508074a60a05229ae43dc0d4a90e978",
+    "scripts/verify_foliage_branch.py": "1b37b23adb74a6da5fbae63eace63853e0306fc69fbed8f613d2228aa961105c",
+    "scripts/verify_foliage_molds.py": "852df84eaf22c2740c9412639c088549bd19864197ebf83b38a5a8c17fd895bb",
+    "scripts/verify_foliage_twigs.py": "bd43b2c9965d93110fe212e7430d2bf7206b3344c9fe47decbf6168c94d4c345",
+    "scripts/verify_foliage_unit.py": "c1a63768a43c736173f3f3a0e473874a67fff8e7ba1f793e59a6beab6d712831",
+    "scripts/verify_fusion.py": "fd976bfcce144a794b77917d83912529744dadd8037cae5dc462ed7b12a6161d",
+    "scripts/verify_q1.py": "d065b79c65734a0d7d0f0bee1f6276b6643a0b8af08e2591989c5c9652751d8c",
+    "scripts/verify_q1b.py": "9f1dcbc666d8fe3360b4e3d16c9745672b9bceb540ccdfa1fd9dcdb6db72131a",
+    "scripts/verify_q2.py": "a1e0a9b0d4b18a4883cfe5f175e7a32d6f9122b4057b90e61bdcd4fee0272ea7",
+    "scripts/verify_q3.py": "6d16dcb314474d1b382da505c37f55688d5a2c994731438ae37f5492c43e9c32",
+    "scripts/verify_q3b.py": "0ee804a5c9843cbd35f9f77879ec688f965ebac81a6a788b64993d2689c87611",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/cli.py": "4cc2629b17b99e90673bc469682889b4293dace9f251e9746ea74f1fd97807f9",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/evaluation.py": "3eb4c8a29be0479ceb89f80a2a2061d33ea19fb74d8a7220783ed83f2adbf086",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/foliage_branch_evaluation.py": "9b1c2e4e2155b8327ec753ecdc28d88b3c2f47bf2ea5f1040428ff61ada9cc77",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/foliage_twigs_evaluation.py": "db83e5972f3ea6c3eec90e52f5ffea1b4854315a8f964b787b819ae67984844d",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "876445d8b4a139a9e2c5c9d4f43257626c7fbd14932e1cc4acca5a6dd2e8c912",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "tests/test_contracts.py": "64678364f7e4c42ae0cc938c4be1bcab819e9db5d6432e98bfe244fa611dca26",
+    "tests/test_crown.py": "880b60f24af09db101e2954ae00770aff59a297fec778b0380c78edd3bbf0229",
+    "tests/test_evaluation.py": "64ea41eb72c6536d3d17b10000a93699f96fdac234630d65b67fe83d2c37d4a9",
+    "tests/test_execution.py": "f2a826dc5418125b24d3d903bc8d25fff1a3093c9f9122522279c805ee8a2e41",
+    "tests/test_foliage.py": "2947cb5ec6a07d74f9a7e8e2c2e658559740e46530db989386b5877c58a1dee2",
+    "tests/test_foliage_branch.py": "59b159f864ed74b0156bb25dd0a41c03d3060435857b67ec03dea2b661c33972",
+    "tests/test_foliage_branch_export.py": "f587ee6677578d494bac628cfc145cb618b2f56da32ccc1472fb3a589a396511",
+    "tests/test_foliage_export.py": "695c5331567bac99bfb5447618ece50ff9272a0be3e6e020fa976ed2fd918f03",
+    "tests/test_foliage_molds.py": "29b2cc10e7fdaf5b23763b57a80aa0c25c984f623487bbd052068a7e4d3f8c7d",
+    "tests/test_foliage_molds_evaluation.py": "a84f4953a9fdb23ceb3a2a54b4791ce52924b79dc2d79e640701fd1b64f16b96",
+    "tests/test_foliage_twigs.py": "d23a4834bb2c92a945295e0a50f9f6c8ae60ede5eafd35d5b1596aeed0e52f46",
+    "tests/test_foliage_twigs_export.py": "5b5d65757829cc820b534ca15e044fa68a5cbdb7d6b25e941a3d489a51400b7e",
+    "tests/test_quality.py": "f8ebba9d15a926a9d5824e891175a75d231a5fdce50308c8c4c552323d3faadd",
+    "tests/test_seeds.py": "788f1c884325c05ba14a88f2153fe6802206d79706e204043d907bdc6fe2dbf1"
+  },
+  "runner_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "reference_sha256": "e26449fe719888833a90926794c44b3948497051c4eff8e5177f40069fccb657",
+  "molds_file_sha256": "70dfd15c77e3acf078b48a2b817890568302fe24d38fc269d22d041e50b598de",
+  "same_final_q3_wood": true,
+  "source_unchanged": true,
+  "same_cameras": true,
+  "pair_same_supports_roots_axes_budget": true,
+  "repeats": [
+    "small",
+    "large",
+    "efficient-080",
+    "efficient-100"
+  ],
+  "seed_control": true,
+  "cases": {
+    "small": {
+      "metrics": {
+        "vertices": 672,
+        "triangles": 880,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.88534,
+            1.58456
+          ],
+          [
+            7.186646,
+            2.74915,
+            5.063581
+          ]
+        ],
+        "height_m": 3.4790210000000004,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 224
+        },
+        "geometry_sha256": "8007c89d7fc1682cace9b05661b8bcf3a232bf256122dd80af2f626264ec3c24"
+      },
+      "budget": {
+        "groups": 16,
+        "leaves": 48,
+        "twig_triangles": 224,
+        "leaf_triangles": 192,
+        "added_triangles": 416,
+        "repeated_11_tree_triangles": 9868
+      },
+      "leaf_count": 48,
+      "group_count": 16,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1071,
+        "interior_rejected": 977,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.424026147058612e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.6533671704670683,
+        "maximum": 2.273426047890519
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.0783036130014807,
+      "total_s": 1.5903091369982576,
+      "glb_bytes": 39444
+    },
+    "large": {
+      "metrics": {
+        "vertices": 672,
+        "triangles": 880,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.192304,
+            1.420939
+          ],
+          [
+            7.389696,
+            2.866027,
+            5.435235
+          ]
+        ],
+        "height_m": 4.014296,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 224
+        },
+        "geometry_sha256": "f666c4fb5078e4c16de5ba3cbfbeb8f16b4b94d1bfbb71c135dad6d9afca7d4b"
+      },
+      "budget": {
+        "groups": 16,
+        "leaves": 48,
+        "twig_triangles": 224,
+        "leaf_triangles": 192,
+        "added_triangles": 416,
+        "repeated_11_tree_triangles": 9868
+      },
+      "leaf_count": 48,
+      "group_count": 16,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1071,
+        "interior_rejected": 977,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.424026147058612e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.6533671704670683,
+        "maximum": 2.273426047890519
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.07546949599054642,
+      "total_s": 1.602171628997894,
+      "glb_bytes": 39204
+    },
+    "efficient-080": {
+      "metrics": {
+        "vertices": 768,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.178892,
+            1.346524
+          ],
+          [
+            7.399118,
+            2.765947,
+            5.2142
+          ]
+        ],
+        "height_m": 3.867676,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 192
+        },
+        "geometry_sha256": "c2ff34a5de3856a7af05e38e2d87c6e159f3ef1117e039a6395564da0c7e6a2b"
+      },
+      "budget": {
+        "groups": 24,
+        "leaves": 96,
+        "twig_triangles": 192,
+        "leaf_triangles": 192,
+        "added_triangles": 384,
+        "repeated_11_tree_triangles": 9516
+      },
+      "leaf_count": 96,
+      "group_count": 24,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1071,
+        "interior_rejected": 977,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.424026147058612e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.3787415530495586,
+        "maximum": 1.7363266398505934
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.08333866600878537,
+      "total_s": 1.6368743570055813,
+      "glb_bytes": 36036
+    },
+    "efficient-100": {
+      "metrics": {
+        "vertices": 768,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.359001,
+            1.166378
+          ],
+          [
+            7.542777,
+            2.861076,
+            5.41056
+          ]
+        ],
+        "height_m": 4.244182,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 192
+        },
+        "geometry_sha256": "04573aa3515751a7331672c35e945064b012439ab5736872bb44203465360e5d"
+      },
+      "budget": {
+        "groups": 24,
+        "leaves": 96,
+        "twig_triangles": 192,
+        "leaf_triangles": 192,
+        "added_triangles": 384,
+        "repeated_11_tree_triangles": 9516
+      },
+      "leaf_count": 96,
+      "group_count": 24,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1071,
+        "interior_rejected": 977,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.424026147058612e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.3787415530495586,
+        "maximum": 1.7363266398505934
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.08307990599132609,
+      "total_s": 1.5399158139916835,
+      "glb_bytes": 36084
+    },
+    "repeat-small": {
+      "metrics": {
+        "vertices": 672,
+        "triangles": 880,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.88534,
+            1.58456
+          ],
+          [
+            7.186646,
+            2.74915,
+            5.063581
+          ]
+        ],
+        "height_m": 3.4790210000000004,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 224
+        },
+        "geometry_sha256": "8007c89d7fc1682cace9b05661b8bcf3a232bf256122dd80af2f626264ec3c24"
+      },
+      "budget": {
+        "groups": 16,
+        "leaves": 48,
+        "twig_triangles": 224,
+        "leaf_triangles": 192,
+        "added_triangles": 416,
+        "repeated_11_tree_triangles": 9868
+      },
+      "leaf_count": 48,
+      "group_count": 16,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1071,
+        "interior_rejected": 977,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.424026147058612e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.6533671704670683,
+        "maximum": 2.273426047890519
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.07584587900782935,
+      "total_s": 0.18278649699641392,
+      "glb_bytes": 39444
+    },
+    "repeat-large": {
+      "metrics": {
+        "vertices": 672,
+        "triangles": 880,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.192304,
+            1.420939
+          ],
+          [
+            7.389696,
+            2.866027,
+            5.435235
+          ]
+        ],
+        "height_m": 4.014296,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 224
+        },
+        "geometry_sha256": "f666c4fb5078e4c16de5ba3cbfbeb8f16b4b94d1bfbb71c135dad6d9afca7d4b"
+      },
+      "budget": {
+        "groups": 16,
+        "leaves": 48,
+        "twig_triangles": 224,
+        "leaf_triangles": 192,
+        "added_triangles": 416,
+        "repeated_11_tree_triangles": 9868
+      },
+      "leaf_count": 48,
+      "group_count": 16,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1071,
+        "interior_rejected": 977,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.424026147058612e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.6533671704670683,
+        "maximum": 2.273426047890519
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.07633220500429161,
+      "total_s": 0.20270235199132003,
+      "glb_bytes": 39204
+    },
+    "repeat-efficient-080": {
+      "metrics": {
+        "vertices": 768,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.178892,
+            1.346524
+          ],
+          [
+            7.399118,
+            2.765947,
+            5.2142
+          ]
+        ],
+        "height_m": 3.867676,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 192
+        },
+        "geometry_sha256": "c2ff34a5de3856a7af05e38e2d87c6e159f3ef1117e039a6395564da0c7e6a2b"
+      },
+      "budget": {
+        "groups": 24,
+        "leaves": 96,
+        "twig_triangles": 192,
+        "leaf_triangles": 192,
+        "added_triangles": 384,
+        "repeated_11_tree_triangles": 9516
+      },
+      "leaf_count": 96,
+      "group_count": 24,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1071,
+        "interior_rejected": 977,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.424026147058612e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.3787415530495586,
+        "maximum": 1.7363266398505934
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.09190043399576098,
+      "total_s": 0.20056573300098535,
+      "glb_bytes": 36036
+    },
+    "repeat-efficient-100": {
+      "metrics": {
+        "vertices": 768,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.359001,
+            1.166378
+          ],
+          [
+            7.542777,
+            2.861076,
+            5.41056
+          ]
+        ],
+        "height_m": 4.244182,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 192
+        },
+        "geometry_sha256": "04573aa3515751a7331672c35e945064b012439ab5736872bb44203465360e5d"
+      },
+      "budget": {
+        "groups": 24,
+        "leaves": 96,
+        "twig_triangles": 192,
+        "leaf_triangles": 192,
+        "added_triangles": 384,
+        "repeated_11_tree_triangles": 9516
+      },
+      "leaf_count": 96,
+      "group_count": 24,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1071,
+        "interior_rejected": 977,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.424026147058612e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.3787415530495586,
+        "maximum": 1.7363266398505934
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.07562532900192309,
+      "total_s": 0.1741877219901653,
+      "glb_bytes": 36084
+    },
+    "control-seed": {
+      "metrics": {
+        "vertices": 768,
+        "triangles": 848,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.177287,
+            1.348016
+          ],
+          [
+            7.913147,
+            3.238621,
+            5.600091
+          ]
+        ],
+        "height_m": 4.252075,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 192
+        },
+        "geometry_sha256": "814ea1b88c360de5eb435715a14e8158ca7da600d3b62efd7c791bd487fc3756"
+      },
+      "budget": {
+        "groups": 24,
+        "leaves": 96,
+        "twig_triangles": 192,
+        "leaf_triangles": 192,
+        "added_triangles": 384,
+        "repeated_11_tree_triangles": 9516
+      },
+      "leaf_count": 96,
+      "group_count": 24,
+      "sampling": {
+        "attempts": 2048,
+        "accepted": 1112,
+        "interior_rejected": 936,
+        "guide_area_m2_with_overlaps": 127.69681575534833,
+        "failed_group_attempts": 0
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 2.4575624024691933e-07
+      },
+      "connection_lengths_m": {
+        "minimum": 0.31205012040935515,
+        "maximum": 1.7591455446108408
+      },
+      "molds_exported": false,
+      "generation_before_render_export_s": 0.08173834400076885,
+      "total_s": 0.18361077200097498,
+      "glb_bytes": 35700
+    }
+  },
+  "projected_foliage": {
+    "reference": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 11347,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 10530,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 14596,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 13731,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 11476,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 11477,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 65022,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 64141,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 64100,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 16413,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 4143,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 686,
+        "q3_coverage": 1.0,
+        "outside_q3_pixels": 0,
+        "iou": 1.0
+      }
+    },
+    "previous": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 568,
+        "q3_coverage": 0.050057283863576274,
+        "outside_q3_pixels": 0,
+        "iou": 0.050057283863576274
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 581,
+        "q3_coverage": 0.05517568850902184,
+        "outside_q3_pixels": 0,
+        "iou": 0.05517568850902184
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 622,
+        "q3_coverage": 0.042134831460674156,
+        "outside_q3_pixels": 7,
+        "iou": 0.04211463397931932
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 537,
+        "q3_coverage": 0.03910858641031243,
+        "outside_q3_pixels": 0,
+        "iou": 0.03910858641031243
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 584,
+        "q3_coverage": 0.050888811432554894,
+        "outside_q3_pixels": 0,
+        "iou": 0.050888811432554894
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 585,
+        "q3_coverage": 0.05097150823385902,
+        "outside_q3_pixels": 0,
+        "iou": 0.05097150823385902
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 3433,
+        "q3_coverage": 0.052797514687336594,
+        "outside_q3_pixels": 0,
+        "iou": 0.052797514687336594
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 3423,
+        "q3_coverage": 0.05336680126596093,
+        "outside_q3_pixels": 0,
+        "iou": 0.05336680126596093
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 4206,
+        "q3_coverage": 0.06561622464898596,
+        "outside_q3_pixels": 0,
+        "iou": 0.06561622464898596
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 750,
+        "q3_coverage": 0.04569548528605374,
+        "outside_q3_pixels": 0,
+        "iou": 0.04569548528605374
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 286,
+        "q3_coverage": 0.06903210234129857,
+        "outside_q3_pixels": 0,
+        "iou": 0.06903210234129857
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 95,
+        "q3_coverage": 0.13848396501457727,
+        "outside_q3_pixels": 0,
+        "iou": 0.13848396501457727
+      }
+    },
+    "small": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 1432,
+        "q3_coverage": 0.11959108134308628,
+        "outside_q3_pixels": 75,
+        "iou": 0.11880581334267204
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 1499,
+        "q3_coverage": 0.1349477682811016,
+        "outside_q3_pixels": 78,
+        "iou": 0.1339555052790347
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 1401,
+        "q3_coverage": 0.09345026034530009,
+        "outside_q3_pixels": 37,
+        "iou": 0.09321396842752683
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 1623,
+        "q3_coverage": 0.10836792658946909,
+        "outside_q3_pixels": 135,
+        "iou": 0.10731285157940286
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 1429,
+        "q3_coverage": 0.11781108400139421,
+        "outside_q3_pixels": 77,
+        "iou": 0.11702588072362156
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 1428,
+        "q3_coverage": 0.11771368824605734,
+        "outside_q3_pixels": 77,
+        "iou": 0.11692920200796261
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 3501,
+        "q3_coverage": 0.05384331457045308,
+        "outside_q3_pixels": 0,
+        "iou": 0.05384331457045308
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 8747,
+        "q3_coverage": 0.13637143168955895,
+        "outside_q3_pixels": 0,
+        "iou": 0.13637143168955895
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 7133,
+        "q3_coverage": 0.1112792511700468,
+        "outside_q3_pixels": 0,
+        "iou": 0.1112792511700468
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 1972,
+        "q3_coverage": 0.11490891366599647,
+        "outside_q3_pixels": 86,
+        "iou": 0.11430995817928359
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 601,
+        "q3_coverage": 0.13661597875935313,
+        "outside_q3_pixels": 35,
+        "iou": 0.13547151747247488
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 175,
+        "q3_coverage": 0.24052478134110788,
+        "outside_q3_pixels": 10,
+        "iou": 0.23706896551724138
+      }
+    },
+    "large": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 3801,
+        "q3_coverage": 0.2901207367586146,
+        "outside_q3_pixels": 509,
+        "iou": 0.27766531713900133
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 3673,
+        "q3_coverage": 0.3071225071225071,
+        "outside_q3_pixels": 439,
+        "iou": 0.2948308870453095
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 3586,
+        "q3_coverage": 0.2170457659632776,
+        "outside_q3_pixels": 418,
+        "iou": 0.21100306380711337
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 4355,
+        "q3_coverage": 0.2709198164736727,
+        "outside_q3_pixels": 635,
+        "iou": 0.2589447306139496
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 3813,
+        "q3_coverage": 0.2968804461484838,
+        "outside_q3_pixels": 406,
+        "iou": 0.28673623969028783
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 3813,
+        "q3_coverage": 0.29685457872266274,
+        "outside_q3_pixels": 406,
+        "iou": 0.2867121097365985
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 10434,
+        "q3_coverage": 0.16025345267755528,
+        "outside_q3_pixels": 14,
+        "iou": 0.16021895565532934
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 23624,
+        "q3_coverage": 0.3683135591899097,
+        "outside_q3_pixels": 0,
+        "iou": 0.3683135591899097
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 18083,
+        "q3_coverage": 0.2803120124804992,
+        "outside_q3_pixels": 115,
+        "iou": 0.2798100132367827
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 5371,
+        "q3_coverage": 0.28568817400840796,
+        "outside_q3_pixels": 682,
+        "iou": 0.27429072828312373
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 1487,
+        "q3_coverage": 0.3113685734974656,
+        "outside_q3_pixels": 197,
+        "iou": 0.29723502304147464
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 336,
+        "q3_coverage": 0.4227405247813411,
+        "outside_q3_pixels": 46,
+        "iou": 0.39617486338797814
+      }
+    },
+    "efficient-080": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 5213,
+        "q3_coverage": 0.42821891248788224,
+        "outside_q3_pixels": 354,
+        "iou": 0.4152636526792582
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 5457,
+        "q3_coverage": 0.49705603038936375,
+        "outside_q3_pixels": 223,
+        "iou": 0.48674788431135496
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 6171,
+        "q3_coverage": 0.4032611674431351,
+        "outside_q3_pixels": 285,
+        "iou": 0.3955379342786103
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 6526,
+        "q3_coverage": 0.4447600320442794,
+        "outside_q3_pixels": 419,
+        "iou": 0.43159010600706715
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 5970,
+        "q3_coverage": 0.49581735796444754,
+        "outside_q3_pixels": 280,
+        "iou": 0.4840081660428717
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 5970,
+        "q3_coverage": 0.49577415700967153,
+        "outside_q3_pixels": 280,
+        "iou": 0.48396699838394147
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 22749,
+        "q3_coverage": 0.34985081972255544,
+        "outside_q3_pixels": 1,
+        "iou": 0.3498454393060917
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 35014,
+        "q3_coverage": 0.5419778300930762,
+        "outside_q3_pixels": 251,
+        "iou": 0.539865200646043
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 32142,
+        "q3_coverage": 0.4981903276131045,
+        "outside_q3_pixels": 208,
+        "iou": 0.4965789637370156
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 7324,
+        "q3_coverage": 0.41588984341680374,
+        "outside_q3_pixels": 498,
+        "iou": 0.40364259949145526
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 2042,
+        "q3_coverage": 0.45763939174511226,
+        "outside_q3_pixels": 146,
+        "iou": 0.44206108650034975
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 449,
+        "q3_coverage": 0.6005830903790087,
+        "outside_q3_pixels": 37,
+        "iou": 0.5698478561549101
+      }
+    },
+    "efficient-100": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 7354,
+        "q3_coverage": 0.5746893452013748,
+        "outside_q3_pixels": 833,
+        "iou": 0.5353858784893267
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 7257,
+        "q3_coverage": 0.6341880341880342,
+        "outside_q3_pixels": 579,
+        "iou": 0.6011342155009451
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 8560,
+        "q3_coverage": 0.5415182241710057,
+        "outside_q3_pixels": 656,
+        "iou": 0.5182271177550485
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 8966,
+        "q3_coverage": 0.5861918287087612,
+        "outside_q3_pixels": 917,
+        "iou": 0.5494948115783724
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 8233,
+        "q3_coverage": 0.6414255838271175,
+        "outside_q3_pixels": 872,
+        "iou": 0.5961289277615808
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 8233,
+        "q3_coverage": 0.6413696959135663,
+        "outside_q3_pixels": 872,
+        "iou": 0.5960806543039923
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 33132,
+        "q3_coverage": 0.5088431607763526,
+        "outside_q3_pixels": 46,
+        "iou": 0.5084834327165427
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 44718,
+        "q3_coverage": 0.6906035141329259,
+        "outside_q3_pixels": 422,
+        "iou": 0.6860895559376113
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 39785,
+        "q3_coverage": 0.6132917316692668,
+        "outside_q3_pixels": 473,
+        "iou": 0.6087993433788116
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 10444,
+        "q3_coverage": 0.564857125449339,
+        "outside_q3_pixels": 1173,
+        "iou": 0.5271807119299443
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 2839,
+        "q3_coverage": 0.6084962587496983,
+        "outside_q3_pixels": 318,
+        "iou": 0.5651199282672047
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 566,
+        "q3_coverage": 0.7244897959183674,
+        "outside_q3_pixels": 69,
+        "iou": 0.6582781456953642
+      }
+    },
+    "repeat-small": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 1432,
+        "q3_coverage": 0.11959108134308628,
+        "outside_q3_pixels": 75,
+        "iou": 0.11880581334267204
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 1499,
+        "q3_coverage": 0.1349477682811016,
+        "outside_q3_pixels": 78,
+        "iou": 0.1339555052790347
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 1401,
+        "q3_coverage": 0.09345026034530009,
+        "outside_q3_pixels": 37,
+        "iou": 0.09321396842752683
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 1623,
+        "q3_coverage": 0.10836792658946909,
+        "outside_q3_pixels": 135,
+        "iou": 0.10731285157940286
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 1429,
+        "q3_coverage": 0.11781108400139421,
+        "outside_q3_pixels": 77,
+        "iou": 0.11702588072362156
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 1428,
+        "q3_coverage": 0.11771368824605734,
+        "outside_q3_pixels": 77,
+        "iou": 0.11692920200796261
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 3501,
+        "q3_coverage": 0.05384331457045308,
+        "outside_q3_pixels": 0,
+        "iou": 0.05384331457045308
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 8747,
+        "q3_coverage": 0.13637143168955895,
+        "outside_q3_pixels": 0,
+        "iou": 0.13637143168955895
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 7133,
+        "q3_coverage": 0.1112792511700468,
+        "outside_q3_pixels": 0,
+        "iou": 0.1112792511700468
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 1972,
+        "q3_coverage": 0.11490891366599647,
+        "outside_q3_pixels": 86,
+        "iou": 0.11430995817928359
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 601,
+        "q3_coverage": 0.13661597875935313,
+        "outside_q3_pixels": 35,
+        "iou": 0.13547151747247488
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 175,
+        "q3_coverage": 0.24052478134110788,
+        "outside_q3_pixels": 10,
+        "iou": 0.23706896551724138
+      }
+    },
+    "repeat-large": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 3801,
+        "q3_coverage": 0.2901207367586146,
+        "outside_q3_pixels": 509,
+        "iou": 0.27766531713900133
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 3673,
+        "q3_coverage": 0.3071225071225071,
+        "outside_q3_pixels": 439,
+        "iou": 0.2948308870453095
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 3586,
+        "q3_coverage": 0.2170457659632776,
+        "outside_q3_pixels": 418,
+        "iou": 0.21100306380711337
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 4355,
+        "q3_coverage": 0.2709198164736727,
+        "outside_q3_pixels": 635,
+        "iou": 0.2589447306139496
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 3813,
+        "q3_coverage": 0.2968804461484838,
+        "outside_q3_pixels": 406,
+        "iou": 0.28673623969028783
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 3813,
+        "q3_coverage": 0.29685457872266274,
+        "outside_q3_pixels": 406,
+        "iou": 0.2867121097365985
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 10434,
+        "q3_coverage": 0.16025345267755528,
+        "outside_q3_pixels": 14,
+        "iou": 0.16021895565532934
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 23624,
+        "q3_coverage": 0.3683135591899097,
+        "outside_q3_pixels": 0,
+        "iou": 0.3683135591899097
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 18083,
+        "q3_coverage": 0.2803120124804992,
+        "outside_q3_pixels": 115,
+        "iou": 0.2798100132367827
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 5371,
+        "q3_coverage": 0.28568817400840796,
+        "outside_q3_pixels": 682,
+        "iou": 0.27429072828312373
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 1487,
+        "q3_coverage": 0.3113685734974656,
+        "outside_q3_pixels": 197,
+        "iou": 0.29723502304147464
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 336,
+        "q3_coverage": 0.4227405247813411,
+        "outside_q3_pixels": 46,
+        "iou": 0.39617486338797814
+      }
+    },
+    "repeat-efficient-080": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 5213,
+        "q3_coverage": 0.42821891248788224,
+        "outside_q3_pixels": 354,
+        "iou": 0.4152636526792582
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 5457,
+        "q3_coverage": 0.49705603038936375,
+        "outside_q3_pixels": 223,
+        "iou": 0.48674788431135496
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 6171,
+        "q3_coverage": 0.4032611674431351,
+        "outside_q3_pixels": 285,
+        "iou": 0.3955379342786103
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 6526,
+        "q3_coverage": 0.4447600320442794,
+        "outside_q3_pixels": 419,
+        "iou": 0.43159010600706715
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 5970,
+        "q3_coverage": 0.49581735796444754,
+        "outside_q3_pixels": 280,
+        "iou": 0.4840081660428717
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 5970,
+        "q3_coverage": 0.49577415700967153,
+        "outside_q3_pixels": 280,
+        "iou": 0.48396699838394147
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 22749,
+        "q3_coverage": 0.34985081972255544,
+        "outside_q3_pixels": 1,
+        "iou": 0.3498454393060917
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 35014,
+        "q3_coverage": 0.5419778300930762,
+        "outside_q3_pixels": 251,
+        "iou": 0.539865200646043
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 32142,
+        "q3_coverage": 0.4981903276131045,
+        "outside_q3_pixels": 208,
+        "iou": 0.4965789637370156
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 7324,
+        "q3_coverage": 0.41588984341680374,
+        "outside_q3_pixels": 498,
+        "iou": 0.40364259949145526
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 2042,
+        "q3_coverage": 0.45763939174511226,
+        "outside_q3_pixels": 146,
+        "iou": 0.44206108650034975
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 449,
+        "q3_coverage": 0.6005830903790087,
+        "outside_q3_pixels": 37,
+        "iou": 0.5698478561549101
+      }
+    },
+    "repeat-efficient-100": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 7354,
+        "q3_coverage": 0.5746893452013748,
+        "outside_q3_pixels": 833,
+        "iou": 0.5353858784893267
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 7257,
+        "q3_coverage": 0.6341880341880342,
+        "outside_q3_pixels": 579,
+        "iou": 0.6011342155009451
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 8560,
+        "q3_coverage": 0.5415182241710057,
+        "outside_q3_pixels": 656,
+        "iou": 0.5182271177550485
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 8966,
+        "q3_coverage": 0.5861918287087612,
+        "outside_q3_pixels": 917,
+        "iou": 0.5494948115783724
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 8233,
+        "q3_coverage": 0.6414255838271175,
+        "outside_q3_pixels": 872,
+        "iou": 0.5961289277615808
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 8233,
+        "q3_coverage": 0.6413696959135663,
+        "outside_q3_pixels": 872,
+        "iou": 0.5960806543039923
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 33132,
+        "q3_coverage": 0.5088431607763526,
+        "outside_q3_pixels": 46,
+        "iou": 0.5084834327165427
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 44718,
+        "q3_coverage": 0.6906035141329259,
+        "outside_q3_pixels": 422,
+        "iou": 0.6860895559376113
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 39785,
+        "q3_coverage": 0.6132917316692668,
+        "outside_q3_pixels": 473,
+        "iou": 0.6087993433788116
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 10444,
+        "q3_coverage": 0.564857125449339,
+        "outside_q3_pixels": 1173,
+        "iou": 0.5271807119299443
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 2839,
+        "q3_coverage": 0.6084962587496983,
+        "outside_q3_pixels": 318,
+        "iou": 0.5651199282672047
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 566,
+        "q3_coverage": 0.7244897959183674,
+        "outside_q3_pixels": 69,
+        "iou": 0.6582781456953642
+      }
+    },
+    "control-seed": {
+      "front": {
+        "reference_pixels": 11347,
+        "candidate_pixels": 7749,
+        "q3_coverage": 0.5976910196527716,
+        "outside_q3_pixels": 967,
+        "iou": 0.5507552379405555
+      },
+      "side": {
+        "reference_pixels": 10530,
+        "candidate_pixels": 7497,
+        "q3_coverage": 0.6105413105413106,
+        "outside_q3_pixels": 1068,
+        "iou": 0.5543197102948785
+      },
+      "top": {
+        "reference_pixels": 14596,
+        "candidate_pixels": 10222,
+        "q3_coverage": 0.5822828172101946,
+        "outside_q3_pixels": 1723,
+        "iou": 0.5208039708315461
+      },
+      "below": {
+        "reference_pixels": 13731,
+        "candidate_pixels": 9081,
+        "q3_coverage": 0.5954409729808463,
+        "outside_q3_pixels": 905,
+        "iou": 0.5586225744739
+      },
+      "perspective": {
+        "reference_pixels": 11476,
+        "candidate_pixels": 7952,
+        "q3_coverage": 0.6210352039037992,
+        "outside_q3_pixels": 825,
+        "iou": 0.5793837899357775
+      },
+      "reverse": {
+        "reference_pixels": 11477,
+        "candidate_pixels": 7953,
+        "q3_coverage": 0.6210682234033283,
+        "outside_q3_pixels": 825,
+        "iou": 0.5794179808161275
+      },
+      "detail-top": {
+        "reference_pixels": 65022,
+        "candidate_pixels": 36409,
+        "q3_coverage": 0.5599489403586478,
+        "outside_q3_pixels": 0,
+        "iou": 0.5599489403586478
+      },
+      "detail-below": {
+        "reference_pixels": 64141,
+        "candidate_pixels": 38633,
+        "q3_coverage": 0.5982444926022357,
+        "outside_q3_pixels": 261,
+        "iou": 0.5958200055898885
+      },
+      "detail-perspective": {
+        "reference_pixels": 64100,
+        "candidate_pixels": 43757,
+        "q3_coverage": 0.6759126365054602,
+        "outside_q3_pixels": 431,
+        "iou": 0.6713982427050564
+      },
+      "near": {
+        "reference_pixels": 16413,
+        "candidate_pixels": 10852,
+        "q3_coverage": 0.5853287028574911,
+        "outside_q3_pixels": 1245,
+        "iou": 0.5440593498697475
+      },
+      "medium": {
+        "reference_pixels": 4143,
+        "candidate_pixels": 2919,
+        "q3_coverage": 0.6181510982379917,
+        "outside_q3_pixels": 358,
+        "iou": 0.568984670073317
+      },
+      "far": {
+        "reference_pixels": 686,
+        "candidate_pixels": 578,
+        "q3_coverage": 0.7201166180758017,
+        "outside_q3_pixels": 84,
+        "iou": 0.6415584415584416
+      }
+    }
+  },
+  "projection_resolution": 256,
+  "visual_captures_generated": true,
+  "visual_acceptance": "pending",
+  "rf3_started": false,
+  "study": "/home/tao/repos/procedural/arboles/artifacts/rediseno-follaje/rf2-moldes-final",
+  "evidence_script_sha256": "0f7e3c666d6b2d528c8ec6bc425bd9fbf6bdf697ab84b41541b348075aa08a41",
+  "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+  "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+  "godot": {
+    "ambient_energy": 0.5,
+    "godot": "4.7.2-stable (official)",
+    "light_energy": 1.2,
+    "light_rotation_deg": [
+      -35,
+      -25,
+      0
+    ],
+    "passed": true,
+    "renderer": "gl_compatibility",
+    "asset_triangles": {
+      "control-seed": 848,
+      "efficient-080": 848,
+      "efficient-100": 848,
+      "large": 880,
+      "previous": 824,
+      "reference": 764,
+      "repeat-efficient-080": 848,
+      "repeat-efficient-100": 848,
+      "repeat-large": 880,
+      "repeat-small": 880,
+      "small": 880
+    }
+  },
+  "capture_count": 72,
+  "capture_min_visible_pixels": 1678
+}

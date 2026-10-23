@@ -1,0 +1,3106 @@
+[
+  {
+    "id": "easy-adulto-initial",
+    "engine": "easy",
+    "age": "adulto",
+    "seed": 2000,
+    "controls": {
+      "Trunk Height": 5,
+      "Num Levels": 5,
+      "Branch Length": 8,
+      "Random Angle": 0.698,
+      "Thickness": 3,
+      "Min Height": 10,
+      "Season": 0.5
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 221556,
+      "triangles": 282312,
+      "bounds_blender": [
+        [
+          -7.152232646942139,
+          -5.676085472106934,
+          -0.019999999552965164
+        ],
+        [
+          6.406394004821777,
+          6.787269115447998,
+          18.552501678466797
+        ]
+      ],
+      "triangles_by_material": {
+        "Bark": 130104,
+        "Beech Leaves": 152208
+      },
+      "degenerate_triangles": 44073
+    },
+    "metrics": {
+      "vertices": 203397,
+      "triangles": 234601,
+      "bounds_blender": [
+        [
+          -3.8509795665740967,
+          -3.0561771392822266,
+          0.0
+        ],
+        [
+          3.449397563934326,
+          3.6544721126556396,
+          10.0
+        ]
+      ],
+      "triangles_by_material": {
+        "Oak_Bark": 119232,
+        "Oak_Leaves": 115369
+      },
+      "degenerate_triangles": 27
+    },
+    "within_budget": false,
+    "removed_degenerate_triangles": 47711,
+    "details": {
+      "starting_preset": "TALL",
+      "initial_group_inputs": {
+        "N Branches per Level": "Two Branches",
+        "Trunk Height": 2,
+        "Treetop Height": 2,
+        "Num Levels": 6,
+        "Branch Length": 6,
+        "Random Angle": 0.5199999809265137,
+        "Random Jitter": 0.17000000178813934,
+        "Gravity": 0.5,
+        "Thickness": 1.600000023841858,
+        "Bark Material": "<bpy_struct, Material(\"Bark\") at 0x7c2a75db95a0>",
+        "Seed": 0,
+        "Add Leaves": true,
+        "Leaf Type": "Beech",
+        "Season": 0.0,
+        "Min Height": 15,
+        "Leaf Density": 6.0,
+        "Leaf Min Scale": 0.699999988079071,
+        "Leaf Max Scale": 1.2000000476837158,
+        "Visible in Viewport": true,
+        "Custom Twig and  Leaf": false,
+        "Custom  Leaf": "None",
+        "Wind": false,
+        "Angle": 0.0,
+        "Speed": 0.5,
+        "Strength": 0.5,
+        "Shape": 2.0
+      },
+      "controls": {
+        "Trunk Height": 5,
+        "Num Levels": 5,
+        "Branch Length": 8,
+        "Random Angle": 0.698,
+        "Thickness": 3,
+        "Min Height": 10,
+        "Season": 0.5,
+        "Seed": 2000,
+        "Wind": false,
+        "Add Leaves": true
+      },
+      "graph_adaptations": [],
+      "native_leaf_materials": [
+        "Beech Leaves"
+      ],
+      "algorithm": "Geometry Nodes del asset Easy Tree instalado"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 0.538430426517868,
+      "original_z": [
+        -0.019999999552965164,
+        18.552501678466797
+      ],
+      "height_m": 10
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 3.544
+  },
+  {
+    "id": "easy-viejo-initial",
+    "engine": "easy",
+    "age": "viejo",
+    "seed": 3009,
+    "controls": {
+      "Trunk Height": 2,
+      "Treetop Height": 2,
+      "Num Levels": 6,
+      "Branch Length": 8,
+      "Random Angle": 0.488,
+      "Thickness": 2.9,
+      "Min Height": 10,
+      "Season": 0.5
+    },
+    "status": "failed",
+    "reason": "ValueError: Malla fuera del ensayo: 451700 v\u00e9rtices / 574760 tri\u00e1ngulos; m\u00e1ximo intermedio 300000"
+  },
+  {
+    "id": "sapling-adulto-initial",
+    "engine": "sapling",
+    "age": "adulto",
+    "seed": 2000,
+    "controls": {
+      "branches": [
+        0,
+        18,
+        6,
+        2
+      ],
+      "levels": 3,
+      "curveRes": [
+        6,
+        4,
+        3,
+        1
+      ],
+      "segSplits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseSplits": 0,
+      "bevelRes": 0,
+      "resU": 2,
+      "leaves": 32,
+      "scaleV": 0,
+      "ratio": 0.05,
+      "length": [
+        1,
+        0.55,
+        0.45,
+        0.45
+      ],
+      "downAngle": [
+        90,
+        60,
+        45,
+        45
+      ]
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 6464,
+      "triangles": 6592,
+      "bounds_blender": [
+        [
+          -5.239093780517578,
+          -4.739865303039551,
+          0.0
+        ],
+        [
+          5.124094009399414,
+          6.326625823974609,
+          13.377789497375488
+        ]
+      ],
+      "triangles_by_material": {
+        "Sapling_Bark": 3712,
+        "Sapling_Leaves": 2880
+      },
+      "degenerate_triangles": 0
+    },
+    "metrics": {
+      "vertices": 6464,
+      "triangles": 6592,
+      "bounds_blender": [
+        [
+          -3.916263,
+          -3.543086,
+          0.0
+        ],
+        [
+          3.830299,
+          4.729201,
+          10.0
+        ]
+      ],
+      "height_m": 10.0,
+      "triangles_by_material": {
+        "Oak_Bark": 3712,
+        "Oak_Leaves": 2880
+      },
+      "geometry_sha256": "843ac55e1599e16a490a4b0b5ed1485175cf5132212faa24d4c473b276ba8b40"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 0,
+    "details": {
+      "starting_preset": "small_maple",
+      "starting_preset_sha256": "d138680a6680fb447842c7a751b92080e7f64e9a53ebef200504152554ad8278",
+      "controls": {
+        "leafDownAngle": 45.0,
+        "handleType": "0",
+        "radiusTweak": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "useArm": false,
+        "rootFlare": 1.0,
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "leafRotateV": 0.0,
+        "leaves": 32,
+        "baseSplits": 0,
+        "rotate": [
+          99.5,
+          137.5,
+          137.5,
+          137.5
+        ],
+        "scale": 10,
+        "makeMesh": false,
+        "leafDownAngleV": 10.0,
+        "curve": [
+          0.0,
+          30.0,
+          0.0,
+          0.0
+        ],
+        "splitBias": 0.0,
+        "leafScale": 0.18000000715255737,
+        "levels": 3,
+        "leafScaleT": 0.3499999940395355,
+        "seed": 2000,
+        "autoTaper": true,
+        "pruneWidthPeak": 0.6000000238418579,
+        "branchDist": 1.25,
+        "prune": false,
+        "splitAngle": [
+          8.0,
+          18.0,
+          18.0,
+          0.0
+        ],
+        "shapeS": "7",
+        "useParentAngle": true,
+        "af1": 1.0,
+        "armAnim": false,
+        "resU": 2,
+        "ratioPower": 1.2000000476837158,
+        "scaleV": 0,
+        "splitHeight": 0.20000000298023224,
+        "leafRotate": 137.5,
+        "customShape": [
+          0.5,
+          1.0,
+          0.30000001192092896,
+          0.5
+        ],
+        "shape": "7",
+        "ratio": 0.05,
+        "rMode": "rotate",
+        "downAngle": [
+          90,
+          60,
+          45,
+          45
+        ],
+        "bevelRes": 0,
+        "showLeaves": true,
+        "wind": 1.0,
+        "loopFrames": 0,
+        "splitByLen": true,
+        "lengthV": [
+          0.0,
+          0.029999999329447746,
+          0.15000000596046448,
+          0.0
+        ],
+        "leafShape": "hex",
+        "downAngleV": [
+          0.0,
+          48.0,
+          10.0,
+          10.0
+        ],
+        "leafangle": -35.0,
+        "bevel": true,
+        "gustF": 0.07500000298023224,
+        "taper": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "previewArm": false,
+        "frameRate": 1.0,
+        "curveBack": [
+          0.0,
+          -30.0,
+          -20.0,
+          0.0
+        ],
+        "taperCrown": 0.20000000298023224,
+        "rotateV": [
+          15.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleV0": 0.20000000298023224,
+        "gust": 1.0,
+        "horzLeaves": true,
+        "attractUp": [
+          -0.5,
+          -0.699999988079071,
+          0.0,
+          0.0
+        ],
+        "splitAngleV": [
+          2.0,
+          5.0,
+          5.0,
+          0.0
+        ],
+        "pruneRatio": 1.0,
+        "curveV": [
+          10.0,
+          35.0,
+          35.0,
+          0.0
+        ],
+        "prunePowerHigh": 0.5,
+        "closeTip": false,
+        "leafScaleV": 0.20000000298023224,
+        "leafAnim": false,
+        "minRadius": 0.0020000000949949026,
+        "af3": 4.0,
+        "attractOut": [
+          0.0,
+          0.4000000059604645,
+          0.5,
+          0.0
+        ],
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "leafScaleX": 0.6499999761581421,
+        "length": [
+          1,
+          0.55,
+          0.45,
+          0.45
+        ],
+        "useOldDownAngle": false,
+        "armLevels": 2,
+        "boneStep": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pruneBase": 0.30000001192092896,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "prunePowerLow": 0.0010000000474974513,
+        "af2": 1.0,
+        "pruneWidth": 0.4000000059604645,
+        "nrings": 0,
+        "baseSize_s": 0.25,
+        "baseSize": 0.2800000011920929,
+        "leafDist": "6",
+        "scale0": 1.0
+      },
+      "changes_from_preset": {
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "scale": 10,
+        "seed": 2000,
+        "resU": 2,
+        "scaleV": 0,
+        "ratio": 0.05,
+        "downAngle": [
+          90,
+          60,
+          45,
+          45
+        ],
+        "bevelRes": 0,
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "length": [
+          1,
+          0.55,
+          0.45,
+          0.45
+        ],
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ]
+      },
+      "graph_adaptations": [],
+      "rna_type_adaptations": [],
+      "native_species_claim": false,
+      "algorithm": "Sapling instalado; preset de arce como base de copa ancha, no un roble bot\u00e1nico"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 0.7475076507940152,
+      "original_z": [
+        0.0,
+        13.377789497375488
+      ],
+      "height_m": 10
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.348
+  },
+  {
+    "id": "sapling-viejo-initial",
+    "engine": "sapling",
+    "age": "viejo",
+    "seed": 3009,
+    "controls": {
+      "branches": [
+        0,
+        22,
+        7,
+        2
+      ],
+      "levels": 3,
+      "curveRes": [
+        6,
+        4,
+        3,
+        1
+      ],
+      "segSplits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseSplits": 0,
+      "bevelRes": 0,
+      "resU": 2,
+      "leaves": 32,
+      "scaleV": 0,
+      "ratio": 0.08,
+      "length": [
+        1,
+        0.7,
+        0.45,
+        0.45
+      ],
+      "downAngle": [
+        90,
+        75,
+        50,
+        45
+      ]
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 9220,
+      "triangles": 9312,
+      "bounds_blender": [
+        [
+          -5.208862781524658,
+          -5.8914875984191895,
+          0.0
+        ],
+        [
+          5.816473484039307,
+          6.463644027709961,
+          12.696887016296387
+        ]
+      ],
+      "triangles_by_material": {
+        "Sapling_Bark": 5152,
+        "Sapling_Leaves": 4160
+      },
+      "degenerate_triangles": 0
+    },
+    "metrics": {
+      "vertices": 9220,
+      "triangles": 9312,
+      "bounds_blender": [
+        [
+          -3.692225,
+          -4.176094,
+          0.0
+        ],
+        [
+          4.122921,
+          4.581658,
+          9.0
+        ]
+      ],
+      "height_m": 9.0,
+      "triangles_by_material": {
+        "Oak_Bark": 5152,
+        "Oak_Leaves": 4160
+      },
+      "geometry_sha256": "6a708c8b540544aea0dc61a51ead92a6065eaa9e5bb1c031ce07bd7b8c5bdb5d"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 0,
+    "details": {
+      "starting_preset": "small_maple",
+      "starting_preset_sha256": "d138680a6680fb447842c7a751b92080e7f64e9a53ebef200504152554ad8278",
+      "controls": {
+        "leafDownAngle": 45.0,
+        "handleType": "0",
+        "radiusTweak": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "useArm": false,
+        "rootFlare": 1.0,
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "leafRotateV": 0.0,
+        "leaves": 32,
+        "baseSplits": 0,
+        "rotate": [
+          99.5,
+          137.5,
+          137.5,
+          137.5
+        ],
+        "scale": 9,
+        "makeMesh": false,
+        "leafDownAngleV": 10.0,
+        "curve": [
+          0.0,
+          30.0,
+          0.0,
+          0.0
+        ],
+        "splitBias": 0.0,
+        "leafScale": 0.18000000715255737,
+        "levels": 3,
+        "leafScaleT": 0.3499999940395355,
+        "seed": 3009,
+        "autoTaper": true,
+        "pruneWidthPeak": 0.6000000238418579,
+        "branchDist": 1.25,
+        "prune": false,
+        "splitAngle": [
+          8.0,
+          18.0,
+          18.0,
+          0.0
+        ],
+        "shapeS": "7",
+        "useParentAngle": true,
+        "af1": 1.0,
+        "armAnim": false,
+        "resU": 2,
+        "ratioPower": 1.2000000476837158,
+        "scaleV": 0,
+        "splitHeight": 0.20000000298023224,
+        "leafRotate": 137.5,
+        "customShape": [
+          0.5,
+          1.0,
+          0.30000001192092896,
+          0.5
+        ],
+        "shape": "7",
+        "ratio": 0.08,
+        "rMode": "rotate",
+        "downAngle": [
+          90,
+          75,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "showLeaves": true,
+        "wind": 1.0,
+        "loopFrames": 0,
+        "splitByLen": true,
+        "lengthV": [
+          0.0,
+          0.029999999329447746,
+          0.15000000596046448,
+          0.0
+        ],
+        "leafShape": "hex",
+        "downAngleV": [
+          0.0,
+          48.0,
+          10.0,
+          10.0
+        ],
+        "leafangle": -35.0,
+        "bevel": true,
+        "gustF": 0.07500000298023224,
+        "taper": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "previewArm": false,
+        "frameRate": 1.0,
+        "curveBack": [
+          0.0,
+          -30.0,
+          -20.0,
+          0.0
+        ],
+        "taperCrown": 0.20000000298023224,
+        "rotateV": [
+          15.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleV0": 0.20000000298023224,
+        "gust": 1.0,
+        "horzLeaves": true,
+        "attractUp": [
+          -0.5,
+          -0.699999988079071,
+          0.0,
+          0.0
+        ],
+        "splitAngleV": [
+          2.0,
+          5.0,
+          5.0,
+          0.0
+        ],
+        "pruneRatio": 1.0,
+        "curveV": [
+          10.0,
+          35.0,
+          35.0,
+          0.0
+        ],
+        "prunePowerHigh": 0.5,
+        "closeTip": false,
+        "leafScaleV": 0.20000000298023224,
+        "leafAnim": false,
+        "minRadius": 0.0020000000949949026,
+        "af3": 4.0,
+        "attractOut": [
+          0.0,
+          0.4000000059604645,
+          0.5,
+          0.0
+        ],
+        "branches": [
+          0,
+          22,
+          7,
+          2
+        ],
+        "leafScaleX": 0.6499999761581421,
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "useOldDownAngle": false,
+        "armLevels": 2,
+        "boneStep": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pruneBase": 0.30000001192092896,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "prunePowerLow": 0.0010000000474974513,
+        "af2": 1.0,
+        "pruneWidth": 0.4000000059604645,
+        "nrings": 0,
+        "baseSize_s": 0.25,
+        "baseSize": 0.2800000011920929,
+        "leafDist": "6",
+        "scale0": 1.0
+      },
+      "changes_from_preset": {
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "scale": 9,
+        "seed": 3009,
+        "resU": 2,
+        "scaleV": 0,
+        "ratio": 0.08,
+        "downAngle": [
+          90,
+          75,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "branches": [
+          0,
+          22,
+          7,
+          2
+        ],
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ]
+      },
+      "graph_adaptations": [],
+      "rna_type_adaptations": [],
+      "native_species_claim": false,
+      "algorithm": "Sapling instalado; preset de arce como base de copa ancha, no un roble bot\u00e1nico"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 0.7088351647493238,
+      "original_z": [
+        0.0,
+        12.696887016296387
+      ],
+      "height_m": 9
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.429
+  },
+  {
+    "id": "easy-adulto-bounded",
+    "engine": "easy",
+    "age": "adulto",
+    "seed": 2000,
+    "controls": {
+      "Trunk Height": 2,
+      "Num Levels": 3,
+      "Branch Length": 6,
+      "Random Angle": 0.7,
+      "Thickness": 2.4,
+      "Min Height": 3,
+      "Season": 0.5,
+      "Treetop Height": 2,
+      "Leaf Density": 2.0
+    },
+    "graph": {
+      "wood_profile": 6,
+      "Count": 3,
+      "X Divisions": 2,
+      "Y Divisions": 3
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 5154,
+      "triangles": 6868,
+      "bounds_blender": [
+        [
+          -2.869399309158325,
+          -2.225250720977783,
+          -0.019999999552965164
+        ],
+        [
+          2.8313863277435303,
+          2.7431740760803223,
+          7.844404697418213
+        ]
+      ],
+      "triangles_by_material": {
+        "Bark": 5476,
+        "Beech Leaves": 1392
+      },
+      "degenerate_triangles": 1048
+    },
+    "metrics": {
+      "vertices": 4783,
+      "triangles": 5801,
+      "bounds_blender": [
+        [
+          -3.648591,
+          -2.829522,
+          0.0
+        ],
+        [
+          3.600255,
+          3.488089,
+          10.0
+        ]
+      ],
+      "height_m": 10.0,
+      "triangles_by_material": {
+        "Oak_Bark": 4780,
+        "Oak_Leaves": 1021
+      },
+      "geometry_sha256": "f4e2e57aa38a6846c2bb688a651c3923e612152031ee32aac63ad3e77bed29ca"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 1067,
+    "details": {
+      "starting_preset": "TALL",
+      "initial_group_inputs": {
+        "N Branches per Level": "Two Branches",
+        "Trunk Height": 2,
+        "Treetop Height": 2,
+        "Num Levels": 6,
+        "Branch Length": 6,
+        "Random Angle": 0.5199999809265137,
+        "Random Jitter": 0.17000000178813934,
+        "Gravity": 0.5,
+        "Thickness": 1.600000023841858,
+        "Bark Material": "<bpy_struct, Material(\"Bark\") at 0x7af8cc5bb8a0>",
+        "Seed": 0,
+        "Add Leaves": true,
+        "Leaf Type": "Beech",
+        "Season": 0.0,
+        "Min Height": 15,
+        "Leaf Density": 6.0,
+        "Leaf Min Scale": 0.699999988079071,
+        "Leaf Max Scale": 1.2000000476837158,
+        "Visible in Viewport": true,
+        "Custom Twig and  Leaf": false,
+        "Custom  Leaf": "None",
+        "Wind": false,
+        "Angle": 0.0,
+        "Speed": 0.5,
+        "Strength": 0.5,
+        "Shape": 2.0
+      },
+      "controls": {
+        "Trunk Height": 2,
+        "Num Levels": 3,
+        "Branch Length": 6,
+        "Random Angle": 0.7,
+        "Thickness": 2.4,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Treetop Height": 2,
+        "Leaf Density": 2.0,
+        "Seed": 2000,
+        "Wind": false,
+        "Add Leaves": true
+      },
+      "graph_adaptations": [
+        "Resoluci\u00f3n del perfil de madera en el grupo cargado: 6",
+        "Entrada interna de ramilla Count=3",
+        "Entrada interna de ramilla X Divisions=2",
+        "Entrada interna de ramilla Y Divisions=3"
+      ],
+      "native_leaf_materials": [
+        "Beech Leaves"
+      ],
+      "algorithm": "Geometry Nodes del asset Easy Tree instalado"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 1.2715520608764328,
+      "original_z": [
+        -0.019999999552965164,
+        7.844404697418213
+      ],
+      "height_m": 10
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.339
+  },
+  {
+    "id": "easy-viejo-bounded",
+    "engine": "easy",
+    "age": "viejo",
+    "seed": 3009,
+    "controls": {
+      "Trunk Height": 1,
+      "Treetop Height": 2,
+      "Num Levels": 4,
+      "Branch Length": 6,
+      "Random Angle": 0.85,
+      "Thickness": 3.3,
+      "Min Height": 3,
+      "Season": 0.5,
+      "Leaf Density": 2.0
+    },
+    "graph": {
+      "wood_profile": 6,
+      "Count": 3,
+      "X Divisions": 2,
+      "Y Divisions": 3
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 10680,
+      "triangles": 14172,
+      "bounds_blender": [
+        [
+          -3.424288034439087,
+          -4.081789970397949,
+          -0.019999999552965164
+        ],
+        [
+          3.353191614151001,
+          3.9993956089019775,
+          7.24018669128418
+        ]
+      ],
+      "triangles_by_material": {
+        "Bark": 11256,
+        "Beech Leaves": 2916
+      },
+      "degenerate_triangles": 2209
+    },
+    "metrics": {
+      "vertices": 9874,
+      "triangles": 11908,
+      "bounds_blender": [
+        [
+          -4.244875907897949,
+          -5.059939861297607,
+          0.0
+        ],
+        [
+          4.156742095947266,
+          4.95780086517334,
+          9.0
+        ]
+      ],
+      "triangles_by_material": {
+        "Oak_Bark": 9798,
+        "Oak_Leaves": 2110
+      },
+      "degenerate_triangles": 0
+    },
+    "within_budget": false,
+    "removed_degenerate_triangles": 2264,
+    "details": {
+      "starting_preset": "LARGE",
+      "initial_group_inputs": {
+        "N Branches per Level": "Two Branches",
+        "Trunk Height": 2,
+        "Treetop Height": 2,
+        "Num Levels": 6,
+        "Branch Length": 6,
+        "Random Angle": 0.5199999809265137,
+        "Random Jitter": 0.17000000178813934,
+        "Gravity": 0.5,
+        "Thickness": 1.600000023841858,
+        "Bark Material": "<bpy_struct, Material(\"Bark\") at 0x7664ddfb15a0>",
+        "Seed": 0,
+        "Add Leaves": true,
+        "Leaf Type": "Beech",
+        "Season": 0.0,
+        "Min Height": 15,
+        "Leaf Density": 6.0,
+        "Leaf Min Scale": 0.699999988079071,
+        "Leaf Max Scale": 1.2000000476837158,
+        "Visible in Viewport": true,
+        "Custom Twig and  Leaf": false,
+        "Custom  Leaf": "None",
+        "Wind": false,
+        "Angle": 0.0,
+        "Speed": 0.5,
+        "Strength": 0.5,
+        "Shape": 2.0
+      },
+      "controls": {
+        "Trunk Height": 1,
+        "Treetop Height": 2,
+        "Num Levels": 4,
+        "Branch Length": 6,
+        "Random Angle": 0.85,
+        "Thickness": 3.3,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Leaf Density": 2.0,
+        "Seed": 3009,
+        "Wind": false,
+        "Add Leaves": true
+      },
+      "graph_adaptations": [
+        "Resoluci\u00f3n del perfil de madera en el grupo cargado: 6",
+        "Entrada interna de ramilla Count=3",
+        "Entrada interna de ramilla X Divisions=2",
+        "Entrada interna de ramilla Y Divisions=3"
+      ],
+      "native_leaf_materials": [
+        "Beech Leaves"
+      ],
+      "algorithm": "Geometry Nodes del asset Easy Tree instalado"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 1.2396375442188863,
+      "original_z": [
+        -0.019999999552965164,
+        7.24018669128418
+      ],
+      "height_m": 9
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.251
+  },
+  {
+    "id": "easy-adulto-geometric",
+    "engine": "easy",
+    "age": "adulto",
+    "seed": 2000,
+    "controls": {
+      "Trunk Height": 2,
+      "Num Levels": 3,
+      "Branch Length": 6,
+      "Random Angle": 0.7,
+      "Thickness": 2.4,
+      "Min Height": 3,
+      "Season": 0.5,
+      "Treetop Height": 2,
+      "Leaf Density": 2.0,
+      "Leaf Min Scale": 1.0,
+      "Leaf Max Scale": 1.6
+    },
+    "graph": {
+      "wood_profile": 6,
+      "Count": 3,
+      "X Divisions": 2,
+      "Y Divisions": 3,
+      "geometric_leaf": true,
+      "leaf_length": 0.35
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 5154,
+      "triangles": 6868,
+      "bounds_blender": [
+        [
+          -3.0055906772613525,
+          -2.3226938247680664,
+          -0.019999999552965164
+        ],
+        [
+          2.990964651107788,
+          2.9167375564575195,
+          8.002317428588867
+        ]
+      ],
+      "triangles_by_material": {
+        "Bark": 5476,
+        "Comparison_Leaves": 1392
+      },
+      "degenerate_triangles": 696
+    },
+    "metrics": {
+      "vertices": 5154,
+      "triangles": 6172,
+      "bounds_blender": [
+        [
+          -3.746537,
+          -2.89529,
+          0.0
+        ],
+        [
+          3.728305,
+          3.635779,
+          10.0
+        ]
+      ],
+      "height_m": 10.0,
+      "triangles_by_material": {
+        "Oak_Bark": 4780,
+        "Oak_Leaves": 1392
+      },
+      "geometry_sha256": "0edb4d94085d9b215d1bbb8ad032ada7af3e650e1876b553fb70dd3ceebf0839"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 696,
+    "details": {
+      "starting_preset": "TALL",
+      "initial_group_inputs": {
+        "N Branches per Level": "Two Branches",
+        "Trunk Height": 2,
+        "Treetop Height": 2,
+        "Num Levels": 6,
+        "Branch Length": 6,
+        "Random Angle": 0.5199999809265137,
+        "Random Jitter": 0.17000000178813934,
+        "Gravity": 0.5,
+        "Thickness": 1.600000023841858,
+        "Bark Material": "<bpy_struct, Material(\"Bark\") at 0x70f3365b38a0>",
+        "Seed": 0,
+        "Add Leaves": true,
+        "Leaf Type": "Beech",
+        "Season": 0.0,
+        "Min Height": 15,
+        "Leaf Density": 6.0,
+        "Leaf Min Scale": 0.699999988079071,
+        "Leaf Max Scale": 1.2000000476837158,
+        "Visible in Viewport": true,
+        "Custom Twig and  Leaf": false,
+        "Custom  Leaf": "None",
+        "Wind": false,
+        "Angle": 0.0,
+        "Speed": 0.5,
+        "Strength": 0.5,
+        "Shape": 2.0
+      },
+      "controls": {
+        "Trunk Height": 2,
+        "Num Levels": 3,
+        "Branch Length": 6,
+        "Random Angle": 0.7,
+        "Thickness": 2.4,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Treetop Height": 2,
+        "Leaf Density": 2.0,
+        "Leaf Min Scale": 1.0,
+        "Leaf Max Scale": 1.6,
+        "Seed": 2000,
+        "Wind": false,
+        "Add Leaves": true
+      },
+      "graph_adaptations": [
+        "Resoluci\u00f3n del perfil de madera en el grupo cargado: 6",
+        "Entrada interna de ramilla Count=3",
+        "Entrada interna de ramilla X Divisions=2",
+        "Entrada interna de ramilla Y Divisions=3",
+        "Sustituci\u00f3n en memoria de Make Leaf por hoja geom\u00e9trica opaca RF1; ramilla nativa conservada"
+      ],
+      "native_leaf_materials": [
+        "Comparison_Leaves"
+      ],
+      "algorithm": "Geometry Nodes del asset Easy Tree instalado"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 1.2465226026734582,
+      "original_z": [
+        -0.019999999552965164,
+        8.002317428588867
+      ],
+      "height_m": 10
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.352
+  },
+  {
+    "id": "sapling-adulto-canopy",
+    "engine": "sapling",
+    "age": "adulto",
+    "seed": 2000,
+    "controls": {
+      "branches": [
+        0,
+        18,
+        6,
+        2
+      ],
+      "levels": 3,
+      "curveRes": [
+        6,
+        4,
+        3,
+        1
+      ],
+      "segSplits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseSplits": 0,
+      "bevelRes": 0,
+      "resU": 2,
+      "leaves": 32,
+      "scaleV": 0,
+      "ratio": 0.05,
+      "length": [
+        1,
+        0.7,
+        0.45,
+        0.45
+      ],
+      "downAngle": [
+        90,
+        70,
+        50,
+        45
+      ],
+      "shape": "1",
+      "shapeS": "1",
+      "baseSize": 0.32,
+      "leafScale": 0.65,
+      "leafScaleT": 0.1,
+      "leafScaleX": 0.75
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 5482,
+      "triangles": 5692,
+      "bounds_blender": [
+        [
+          -6.402459144592285,
+          -7.072938919067383,
+          0.0
+        ],
+        [
+          7.458347797393799,
+          7.653549671173096,
+          12.46433162689209
+        ]
+      ],
+      "triangles_by_material": {
+        "Sapling_Bark": 3312,
+        "Sapling_Leaves": 2380
+      },
+      "degenerate_triangles": 0
+    },
+    "metrics": {
+      "vertices": 5482,
+      "triangles": 5692,
+      "bounds_blender": [
+        [
+          -5.136624,
+          -5.674543,
+          0.0
+        ],
+        [
+          5.983753,
+          6.140361,
+          10.0
+        ]
+      ],
+      "height_m": 10.0,
+      "triangles_by_material": {
+        "Oak_Bark": 3312,
+        "Oak_Leaves": 2380
+      },
+      "geometry_sha256": "77677539d4b77dd9aaa7d431eb7813e8b9c6811da9216c17f7fc9ffe9db8b54e"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 0,
+    "details": {
+      "starting_preset": "small_maple",
+      "starting_preset_sha256": "d138680a6680fb447842c7a751b92080e7f64e9a53ebef200504152554ad8278",
+      "controls": {
+        "leafDownAngle": 45.0,
+        "handleType": "0",
+        "radiusTweak": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "useArm": false,
+        "rootFlare": 1.0,
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "leafRotateV": 0.0,
+        "leaves": 32,
+        "baseSplits": 0,
+        "rotate": [
+          99.5,
+          137.5,
+          137.5,
+          137.5
+        ],
+        "scale": 10,
+        "makeMesh": false,
+        "leafDownAngleV": 10.0,
+        "curve": [
+          0.0,
+          30.0,
+          0.0,
+          0.0
+        ],
+        "splitBias": 0.0,
+        "leafScale": 0.65,
+        "levels": 3,
+        "leafScaleT": 0.1,
+        "seed": 2000,
+        "autoTaper": true,
+        "pruneWidthPeak": 0.6000000238418579,
+        "branchDist": 1.25,
+        "prune": false,
+        "splitAngle": [
+          8.0,
+          18.0,
+          18.0,
+          0.0
+        ],
+        "shapeS": "1",
+        "useParentAngle": true,
+        "af1": 1.0,
+        "armAnim": false,
+        "resU": 2,
+        "ratioPower": 1.2000000476837158,
+        "scaleV": 0,
+        "splitHeight": 0.20000000298023224,
+        "leafRotate": 137.5,
+        "customShape": [
+          0.5,
+          1.0,
+          0.30000001192092896,
+          0.5
+        ],
+        "shape": "1",
+        "ratio": 0.05,
+        "rMode": "rotate",
+        "downAngle": [
+          90,
+          70,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "showLeaves": true,
+        "wind": 1.0,
+        "loopFrames": 0,
+        "splitByLen": true,
+        "lengthV": [
+          0.0,
+          0.029999999329447746,
+          0.15000000596046448,
+          0.0
+        ],
+        "leafShape": "hex",
+        "downAngleV": [
+          0.0,
+          48.0,
+          10.0,
+          10.0
+        ],
+        "leafangle": -35.0,
+        "bevel": true,
+        "gustF": 0.07500000298023224,
+        "taper": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "previewArm": false,
+        "frameRate": 1.0,
+        "curveBack": [
+          0.0,
+          -30.0,
+          -20.0,
+          0.0
+        ],
+        "taperCrown": 0.20000000298023224,
+        "rotateV": [
+          15.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleV0": 0.20000000298023224,
+        "gust": 1.0,
+        "horzLeaves": true,
+        "attractUp": [
+          -0.5,
+          -0.699999988079071,
+          0.0,
+          0.0
+        ],
+        "splitAngleV": [
+          2.0,
+          5.0,
+          5.0,
+          0.0
+        ],
+        "pruneRatio": 1.0,
+        "curveV": [
+          10.0,
+          35.0,
+          35.0,
+          0.0
+        ],
+        "prunePowerHigh": 0.5,
+        "closeTip": false,
+        "leafScaleV": 0.20000000298023224,
+        "leafAnim": false,
+        "minRadius": 0.0020000000949949026,
+        "af3": 4.0,
+        "attractOut": [
+          0.0,
+          0.4000000059604645,
+          0.5,
+          0.0
+        ],
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "leafScaleX": 0.75,
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "useOldDownAngle": false,
+        "armLevels": 2,
+        "boneStep": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pruneBase": 0.30000001192092896,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "prunePowerLow": 0.0010000000474974513,
+        "af2": 1.0,
+        "pruneWidth": 0.4000000059604645,
+        "nrings": 0,
+        "baseSize_s": 0.25,
+        "baseSize": 0.32,
+        "leafDist": "6",
+        "scale0": 1.0
+      },
+      "changes_from_preset": {
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "scale": 10,
+        "leafScale": 0.65,
+        "leafScaleT": 0.1,
+        "seed": 2000,
+        "shapeS": "1",
+        "resU": 2,
+        "scaleV": 0,
+        "shape": "1",
+        "ratio": 0.05,
+        "downAngle": [
+          90,
+          70,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "leafScaleX": 0.75,
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "baseSize": 0.32
+      },
+      "graph_adaptations": [],
+      "rna_type_adaptations": [],
+      "native_species_claim": false,
+      "algorithm": "Sapling instalado; preset de arce como base de copa ancha, no un roble bot\u00e1nico"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 0.8022893083512608,
+      "original_z": [
+        0.0,
+        12.46433162689209
+      ],
+      "height_m": 10
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.319
+  },
+  {
+    "id": "easy-viejo-geometric",
+    "engine": "easy",
+    "age": "viejo",
+    "seed": 3009,
+    "controls": {
+      "Trunk Height": 1,
+      "Treetop Height": 2,
+      "Num Levels": 4,
+      "Branch Length": 6,
+      "Random Angle": 0.85,
+      "Thickness": 3.3,
+      "Min Height": 3,
+      "Season": 0.5,
+      "Leaf Density": 2.0,
+      "Leaf Min Scale": 1.0,
+      "Leaf Max Scale": 1.6
+    },
+    "graph": {
+      "wood_profile": 4,
+      "Count": 3,
+      "X Divisions": 2,
+      "Y Divisions": 3,
+      "geometric_leaf": true,
+      "leaf_length": 0.35
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 9566,
+      "triangles": 12040,
+      "bounds_blender": [
+        [
+          -3.5820658206939697,
+          -4.168685436248779,
+          -0.22912810742855072
+        ],
+        [
+          3.581791400909424,
+          4.187989234924316,
+          7.396937847137451
+        ]
+      ],
+      "triangles_by_material": {
+        "Bark": 9124,
+        "Comparison_Leaves": 2916
+      },
+      "degenerate_triangles": 1458
+    },
+    "metrics": {
+      "vertices": 9566,
+      "triangles": 10582,
+      "bounds_blender": [
+        [
+          -4.227421283721924,
+          -4.919727802276611,
+          0.0
+        ],
+        [
+          4.227097511291504,
+          4.942509651184082,
+          9.0
+        ]
+      ],
+      "triangles_by_material": {
+        "Oak_Bark": 7666,
+        "Oak_Leaves": 2916
+      },
+      "degenerate_triangles": 0
+    },
+    "within_budget": false,
+    "removed_degenerate_triangles": 1458,
+    "details": {
+      "starting_preset": "LARGE",
+      "initial_group_inputs": {
+        "N Branches per Level": "Two Branches",
+        "Trunk Height": 2,
+        "Treetop Height": 2,
+        "Num Levels": 6,
+        "Branch Length": 6,
+        "Random Angle": 0.5199999809265137,
+        "Random Jitter": 0.17000000178813934,
+        "Gravity": 0.5,
+        "Thickness": 1.600000023841858,
+        "Bark Material": "<bpy_struct, Material(\"Bark\") at 0x7ac2d61bd5a0>",
+        "Seed": 0,
+        "Add Leaves": true,
+        "Leaf Type": "Beech",
+        "Season": 0.0,
+        "Min Height": 15,
+        "Leaf Density": 6.0,
+        "Leaf Min Scale": 0.699999988079071,
+        "Leaf Max Scale": 1.2000000476837158,
+        "Visible in Viewport": true,
+        "Custom Twig and  Leaf": false,
+        "Custom  Leaf": "None",
+        "Wind": false,
+        "Angle": 0.0,
+        "Speed": 0.5,
+        "Strength": 0.5,
+        "Shape": 2.0
+      },
+      "controls": {
+        "Trunk Height": 1,
+        "Treetop Height": 2,
+        "Num Levels": 4,
+        "Branch Length": 6,
+        "Random Angle": 0.85,
+        "Thickness": 3.3,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Leaf Density": 2.0,
+        "Leaf Min Scale": 1.0,
+        "Leaf Max Scale": 1.6,
+        "Seed": 3009,
+        "Wind": false,
+        "Add Leaves": true
+      },
+      "graph_adaptations": [
+        "Resoluci\u00f3n del perfil de madera en el grupo cargado: 4",
+        "Entrada interna de ramilla Count=3",
+        "Entrada interna de ramilla X Divisions=2",
+        "Entrada interna de ramilla Y Divisions=3",
+        "Sustituci\u00f3n en memoria de Make Leaf por hoja geom\u00e9trica opaca RF1; ramilla nativa conservada"
+      ],
+      "native_leaf_materials": [
+        "Comparison_Leaves"
+      ],
+      "algorithm": "Geometry Nodes del asset Easy Tree instalado"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 1.1801628852437833,
+      "original_z": [
+        -0.22912810742855072,
+        7.396937847137451
+      ],
+      "height_m": 9
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.242
+  },
+  {
+    "id": "sapling-viejo-canopy",
+    "engine": "sapling",
+    "age": "viejo",
+    "seed": 3009,
+    "controls": {
+      "branches": [
+        0,
+        20,
+        6,
+        2
+      ],
+      "levels": 3,
+      "curveRes": [
+        6,
+        4,
+        3,
+        1
+      ],
+      "segSplits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseSplits": 0,
+      "bevelRes": 0,
+      "resU": 2,
+      "leaves": 32,
+      "scaleV": 0,
+      "ratio": 0.08,
+      "length": [
+        1,
+        0.9,
+        0.45,
+        0.45
+      ],
+      "downAngle": [
+        90,
+        80,
+        50,
+        45
+      ],
+      "shape": "1",
+      "shapeS": "1",
+      "baseSize": 0.32,
+      "leafScale": 0.75,
+      "leafScaleT": 0.1,
+      "leafScaleX": 0.75
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 6364,
+      "triangles": 6624,
+      "bounds_blender": [
+        [
+          -8.492962837219238,
+          -7.711666107177734,
+          -0.6391624212265015
+        ],
+        [
+          8.10428237915039,
+          7.279430866241455,
+          11.322941780090332
+        ]
+      ],
+      "triangles_by_material": {
+        "Sapling_Bark": 3872,
+        "Sapling_Leaves": 2752
+      },
+      "degenerate_triangles": 0
+    },
+    "metrics": {
+      "vertices": 6364,
+      "triangles": 6624,
+      "bounds_blender": [
+        [
+          -6.389901,
+          -5.802073,
+          0.0
+        ],
+        [
+          6.097467,
+          5.476869,
+          9.0
+        ]
+      ],
+      "height_m": 9.0,
+      "triangles_by_material": {
+        "Oak_Bark": 3872,
+        "Oak_Leaves": 2752
+      },
+      "geometry_sha256": "64d59dec9d39733d4e2db0992c06223b98840df6b124ec81bd28acc0ca22eac7"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 0,
+    "details": {
+      "starting_preset": "small_maple",
+      "starting_preset_sha256": "d138680a6680fb447842c7a751b92080e7f64e9a53ebef200504152554ad8278",
+      "controls": {
+        "leafDownAngle": 45.0,
+        "handleType": "0",
+        "radiusTweak": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "useArm": false,
+        "rootFlare": 1.0,
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "leafRotateV": 0.0,
+        "leaves": 32,
+        "baseSplits": 0,
+        "rotate": [
+          99.5,
+          137.5,
+          137.5,
+          137.5
+        ],
+        "scale": 9,
+        "makeMesh": false,
+        "leafDownAngleV": 10.0,
+        "curve": [
+          0.0,
+          30.0,
+          0.0,
+          0.0
+        ],
+        "splitBias": 0.0,
+        "leafScale": 0.75,
+        "levels": 3,
+        "leafScaleT": 0.1,
+        "seed": 3009,
+        "autoTaper": true,
+        "pruneWidthPeak": 0.6000000238418579,
+        "branchDist": 1.25,
+        "prune": false,
+        "splitAngle": [
+          8.0,
+          18.0,
+          18.0,
+          0.0
+        ],
+        "shapeS": "1",
+        "useParentAngle": true,
+        "af1": 1.0,
+        "armAnim": false,
+        "resU": 2,
+        "ratioPower": 1.2000000476837158,
+        "scaleV": 0,
+        "splitHeight": 0.20000000298023224,
+        "leafRotate": 137.5,
+        "customShape": [
+          0.5,
+          1.0,
+          0.30000001192092896,
+          0.5
+        ],
+        "shape": "1",
+        "ratio": 0.08,
+        "rMode": "rotate",
+        "downAngle": [
+          90,
+          80,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "showLeaves": true,
+        "wind": 1.0,
+        "loopFrames": 0,
+        "splitByLen": true,
+        "lengthV": [
+          0.0,
+          0.029999999329447746,
+          0.15000000596046448,
+          0.0
+        ],
+        "leafShape": "hex",
+        "downAngleV": [
+          0.0,
+          48.0,
+          10.0,
+          10.0
+        ],
+        "leafangle": -35.0,
+        "bevel": true,
+        "gustF": 0.07500000298023224,
+        "taper": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "previewArm": false,
+        "frameRate": 1.0,
+        "curveBack": [
+          0.0,
+          -30.0,
+          -20.0,
+          0.0
+        ],
+        "taperCrown": 0.20000000298023224,
+        "rotateV": [
+          15.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleV0": 0.20000000298023224,
+        "gust": 1.0,
+        "horzLeaves": true,
+        "attractUp": [
+          -0.5,
+          -0.699999988079071,
+          0.0,
+          0.0
+        ],
+        "splitAngleV": [
+          2.0,
+          5.0,
+          5.0,
+          0.0
+        ],
+        "pruneRatio": 1.0,
+        "curveV": [
+          10.0,
+          35.0,
+          35.0,
+          0.0
+        ],
+        "prunePowerHigh": 0.5,
+        "closeTip": false,
+        "leafScaleV": 0.20000000298023224,
+        "leafAnim": false,
+        "minRadius": 0.0020000000949949026,
+        "af3": 4.0,
+        "attractOut": [
+          0.0,
+          0.4000000059604645,
+          0.5,
+          0.0
+        ],
+        "branches": [
+          0,
+          20,
+          6,
+          2
+        ],
+        "leafScaleX": 0.75,
+        "length": [
+          1,
+          0.9,
+          0.45,
+          0.45
+        ],
+        "useOldDownAngle": false,
+        "armLevels": 2,
+        "boneStep": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pruneBase": 0.30000001192092896,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "prunePowerLow": 0.0010000000474974513,
+        "af2": 1.0,
+        "pruneWidth": 0.4000000059604645,
+        "nrings": 0,
+        "baseSize_s": 0.25,
+        "baseSize": 0.32,
+        "leafDist": "6",
+        "scale0": 1.0
+      },
+      "changes_from_preset": {
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "scale": 9,
+        "leafScale": 0.75,
+        "leafScaleT": 0.1,
+        "seed": 3009,
+        "shapeS": "1",
+        "resU": 2,
+        "scaleV": 0,
+        "shape": "1",
+        "ratio": 0.08,
+        "downAngle": [
+          90,
+          80,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "branches": [
+          0,
+          20,
+          6,
+          2
+        ],
+        "leafScaleX": 0.75,
+        "length": [
+          1,
+          0.9,
+          0.45,
+          0.45
+        ],
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "baseSize": 0.32
+      },
+      "graph_adaptations": [],
+      "rna_type_adaptations": [],
+      "native_species_claim": false,
+      "algorithm": "Sapling instalado; preset de arce como base de copa ancha, no un roble bot\u00e1nico"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 0.7523759907566469,
+      "original_z": [
+        -0.6391624212265015,
+        11.322941780090332
+      ],
+      "height_m": 9
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.34
+  },
+  {
+    "id": "easy-viejo-final",
+    "engine": "easy",
+    "age": "viejo",
+    "seed": 3009,
+    "controls": {
+      "Trunk Height": 1,
+      "Treetop Height": 2,
+      "Num Levels": 4,
+      "Branch Length": 6,
+      "Random Angle": 0.85,
+      "Thickness": 3.3,
+      "Min Height": 3,
+      "Season": 0.5,
+      "Leaf Density": 1.6,
+      "Leaf Min Scale": 1.0,
+      "Leaf Max Scale": 1.6
+    },
+    "graph": {
+      "wood_profile": 4,
+      "Count": 3,
+      "X Divisions": 2,
+      "Y Divisions": 3,
+      "geometric_leaf": true,
+      "leaf_length": 0.35
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 7766,
+      "triangles": 10120,
+      "bounds_blender": [
+        [
+          -3.6145308017730713,
+          -4.3398332595825195,
+          -0.15812107920646667
+        ],
+        [
+          3.398866653442383,
+          4.269144535064697,
+          7.577834129333496
+        ]
+      ],
+      "triangles_by_material": {
+        "Bark": 7924,
+        "Comparison_Leaves": 2196
+      },
+      "degenerate_triangles": 1098
+    },
+    "metrics": {
+      "vertices": 7766,
+      "triangles": 9022,
+      "bounds_blender": [
+        [
+          -4.20514,
+          -5.048956,
+          0.0
+        ],
+        [
+          3.954237,
+          4.966717,
+          9.0
+        ]
+      ],
+      "height_m": 9.0,
+      "triangles_by_material": {
+        "Oak_Bark": 6826,
+        "Oak_Leaves": 2196
+      },
+      "geometry_sha256": "19a1767653a89e2a738b77b3214894a9c839a69f73aa6ff7647826411dcb221d"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 1098,
+    "details": {
+      "starting_preset": "LARGE",
+      "initial_group_inputs": {
+        "N Branches per Level": "Two Branches",
+        "Trunk Height": 2,
+        "Treetop Height": 2,
+        "Num Levels": 6,
+        "Branch Length": 6,
+        "Random Angle": 0.5199999809265137,
+        "Random Jitter": 0.17000000178813934,
+        "Gravity": 0.5,
+        "Thickness": 1.600000023841858,
+        "Bark Material": "<bpy_struct, Material(\"Bark\") at 0x7706a07b55a0>",
+        "Seed": 0,
+        "Add Leaves": true,
+        "Leaf Type": "Beech",
+        "Season": 0.0,
+        "Min Height": 15,
+        "Leaf Density": 6.0,
+        "Leaf Min Scale": 0.699999988079071,
+        "Leaf Max Scale": 1.2000000476837158,
+        "Visible in Viewport": true,
+        "Custom Twig and  Leaf": false,
+        "Custom  Leaf": "None",
+        "Wind": false,
+        "Angle": 0.0,
+        "Speed": 0.5,
+        "Strength": 0.5,
+        "Shape": 2.0
+      },
+      "controls": {
+        "Trunk Height": 1,
+        "Treetop Height": 2,
+        "Num Levels": 4,
+        "Branch Length": 6,
+        "Random Angle": 0.85,
+        "Thickness": 3.3,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Leaf Density": 1.6,
+        "Leaf Min Scale": 1.0,
+        "Leaf Max Scale": 1.6,
+        "Seed": 3009,
+        "Wind": false,
+        "Add Leaves": true
+      },
+      "graph_adaptations": [
+        "Resoluci\u00f3n del perfil de madera en el grupo cargado: 4",
+        "Entrada interna de ramilla Count=3",
+        "Entrada interna de ramilla X Divisions=2",
+        "Entrada interna de ramilla Y Divisions=3",
+        "Sustituci\u00f3n en memoria de Make Leaf por hoja geom\u00e9trica opaca RF1; ramilla nativa conservada"
+      ],
+      "native_leaf_materials": [
+        "Comparison_Leaves"
+      ],
+      "algorithm": "Geometry Nodes del asset Easy Tree instalado"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 1.1633986698972376,
+      "original_z": [
+        -0.15812107920646667,
+        7.577834129333496
+      ],
+      "height_m": 9
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.447
+  },
+  {
+    "id": "easy-adulto-final",
+    "engine": "easy",
+    "age": "adulto",
+    "seed": 2000,
+    "controls": {
+      "Trunk Height": 2,
+      "Num Levels": 3,
+      "Branch Length": 6,
+      "Random Angle": 0.7,
+      "Thickness": 2.4,
+      "Min Height": 3,
+      "Season": 0.5,
+      "Treetop Height": 2,
+      "Leaf Density": 3.0,
+      "Leaf Min Scale": 1.0,
+      "Leaf Max Scale": 1.6
+    },
+    "graph": {
+      "wood_profile": 6,
+      "Count": 3,
+      "X Divisions": 2,
+      "Y Divisions": 3,
+      "geometric_leaf": true,
+      "leaf_length": 0.35
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 6654,
+      "triangles": 8468,
+      "bounds_blender": [
+        [
+          -2.9229509830474854,
+          -2.3046066761016846,
+          -0.019999999552965164
+        ],
+        [
+          2.8827013969421387,
+          3.081852674484253,
+          7.876816749572754
+        ]
+      ],
+      "triangles_by_material": {
+        "Bark": 6476,
+        "Comparison_Leaves": 1992
+      },
+      "degenerate_triangles": 996
+    },
+    "metrics": {
+      "vertices": 6654,
+      "triangles": 7472,
+      "bounds_blender": [
+        [
+          -3.701429,
+          -2.9184,
+          0.0
+        ],
+        [
+          3.65046,
+          3.902652,
+          10.0
+        ]
+      ],
+      "height_m": 10.0,
+      "triangles_by_material": {
+        "Oak_Bark": 5480,
+        "Oak_Leaves": 1992
+      },
+      "geometry_sha256": "97c458eb09058bcc9edcab09b331f8a379225383d51e9479df172254b4622f58"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 996,
+    "details": {
+      "starting_preset": "TALL",
+      "initial_group_inputs": {
+        "N Branches per Level": "Two Branches",
+        "Trunk Height": 2,
+        "Treetop Height": 2,
+        "Num Levels": 6,
+        "Branch Length": 6,
+        "Random Angle": 0.5199999809265137,
+        "Random Jitter": 0.17000000178813934,
+        "Gravity": 0.5,
+        "Thickness": 1.600000023841858,
+        "Bark Material": "<bpy_struct, Material(\"Bark\") at 0x722efffb15a0>",
+        "Seed": 0,
+        "Add Leaves": true,
+        "Leaf Type": "Beech",
+        "Season": 0.0,
+        "Min Height": 15,
+        "Leaf Density": 6.0,
+        "Leaf Min Scale": 0.699999988079071,
+        "Leaf Max Scale": 1.2000000476837158,
+        "Visible in Viewport": true,
+        "Custom Twig and  Leaf": false,
+        "Custom  Leaf": "None",
+        "Wind": false,
+        "Angle": 0.0,
+        "Speed": 0.5,
+        "Strength": 0.5,
+        "Shape": 2.0
+      },
+      "controls": {
+        "Trunk Height": 2,
+        "Num Levels": 3,
+        "Branch Length": 6,
+        "Random Angle": 0.7,
+        "Thickness": 2.4,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Treetop Height": 2,
+        "Leaf Density": 3.0,
+        "Leaf Min Scale": 1.0,
+        "Leaf Max Scale": 1.6,
+        "Seed": 2000,
+        "Wind": false,
+        "Add Leaves": true
+      },
+      "graph_adaptations": [
+        "Resoluci\u00f3n del perfil de madera en el grupo cargado: 6",
+        "Entrada interna de ramilla Count=3",
+        "Entrada interna de ramilla X Divisions=2",
+        "Entrada interna de ramilla Y Divisions=3",
+        "Sustituci\u00f3n en memoria de Make Leaf por hoja geom\u00e9trica opaca RF1; ramilla nativa conservada"
+      ],
+      "native_leaf_materials": [
+        "Comparison_Leaves"
+      ],
+      "algorithm": "Geometry Nodes del asset Easy Tree instalado"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 1.2663330450345236,
+      "original_z": [
+        -0.019999999552965164,
+        7.876816749572754
+      ],
+      "height_m": 10
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.396
+  },
+  {
+    "id": "sapling-adulto-final",
+    "engine": "sapling",
+    "age": "adulto",
+    "seed": 2000,
+    "controls": {
+      "branches": [
+        0,
+        18,
+        6,
+        2
+      ],
+      "levels": 3,
+      "curveRes": [
+        6,
+        4,
+        3,
+        1
+      ],
+      "segSplits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseSplits": 0,
+      "bevelRes": 0,
+      "resU": 2,
+      "leaves": 60,
+      "scaleV": 0,
+      "ratio": 0.05,
+      "length": [
+        1,
+        0.7,
+        0.45,
+        0.45
+      ],
+      "downAngle": [
+        90,
+        70,
+        50,
+        45
+      ],
+      "shape": "1",
+      "shapeS": "1",
+      "baseSize": 0.32,
+      "leafScale": 0.65,
+      "leafScaleT": 0.1,
+      "leafScaleX": 0.75
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 8590,
+      "triangles": 7764,
+      "bounds_blender": [
+        [
+          -6.477023124694824,
+          -7.061476707458496,
+          0.0
+        ],
+        [
+          7.480191230773926,
+          7.75688362121582,
+          12.469768524169922
+        ]
+      ],
+      "triangles_by_material": {
+        "Sapling_Bark": 3312,
+        "Sapling_Leaves": 4452
+      },
+      "degenerate_triangles": 0
+    },
+    "metrics": {
+      "vertices": 8590,
+      "triangles": 7764,
+      "bounds_blender": [
+        [
+          -5.19418,
+          -5.662877,
+          0.0
+        ],
+        [
+          5.998661,
+          6.220551,
+          10.0
+        ]
+      ],
+      "height_m": 10.0,
+      "triangles_by_material": {
+        "Oak_Bark": 3312,
+        "Oak_Leaves": 4452
+      },
+      "geometry_sha256": "7ff32df74ecd564ceeabe16418ce324e31e124a86bdd3002a78950fef7df3732"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 0,
+    "details": {
+      "starting_preset": "small_maple",
+      "starting_preset_sha256": "d138680a6680fb447842c7a751b92080e7f64e9a53ebef200504152554ad8278",
+      "controls": {
+        "leafDownAngle": 45.0,
+        "handleType": "0",
+        "radiusTweak": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "useArm": false,
+        "rootFlare": 1.0,
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "leafRotateV": 0.0,
+        "leaves": 60,
+        "baseSplits": 0,
+        "rotate": [
+          99.5,
+          137.5,
+          137.5,
+          137.5
+        ],
+        "scale": 10,
+        "makeMesh": false,
+        "leafDownAngleV": 10.0,
+        "curve": [
+          0.0,
+          30.0,
+          0.0,
+          0.0
+        ],
+        "splitBias": 0.0,
+        "leafScale": 0.65,
+        "levels": 3,
+        "leafScaleT": 0.1,
+        "seed": 2000,
+        "autoTaper": true,
+        "pruneWidthPeak": 0.6000000238418579,
+        "branchDist": 1.25,
+        "prune": false,
+        "splitAngle": [
+          8.0,
+          18.0,
+          18.0,
+          0.0
+        ],
+        "shapeS": "1",
+        "useParentAngle": true,
+        "af1": 1.0,
+        "armAnim": false,
+        "resU": 2,
+        "ratioPower": 1.2000000476837158,
+        "scaleV": 0,
+        "splitHeight": 0.20000000298023224,
+        "leafRotate": 137.5,
+        "customShape": [
+          0.5,
+          1.0,
+          0.30000001192092896,
+          0.5
+        ],
+        "shape": "1",
+        "ratio": 0.05,
+        "rMode": "rotate",
+        "downAngle": [
+          90,
+          70,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "showLeaves": true,
+        "wind": 1.0,
+        "loopFrames": 0,
+        "splitByLen": true,
+        "lengthV": [
+          0.0,
+          0.029999999329447746,
+          0.15000000596046448,
+          0.0
+        ],
+        "leafShape": "hex",
+        "downAngleV": [
+          0.0,
+          48.0,
+          10.0,
+          10.0
+        ],
+        "leafangle": -35.0,
+        "bevel": true,
+        "gustF": 0.07500000298023224,
+        "taper": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "previewArm": false,
+        "frameRate": 1.0,
+        "curveBack": [
+          0.0,
+          -30.0,
+          -20.0,
+          0.0
+        ],
+        "taperCrown": 0.20000000298023224,
+        "rotateV": [
+          15.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleV0": 0.20000000298023224,
+        "gust": 1.0,
+        "horzLeaves": true,
+        "attractUp": [
+          -0.5,
+          -0.699999988079071,
+          0.0,
+          0.0
+        ],
+        "splitAngleV": [
+          2.0,
+          5.0,
+          5.0,
+          0.0
+        ],
+        "pruneRatio": 1.0,
+        "curveV": [
+          10.0,
+          35.0,
+          35.0,
+          0.0
+        ],
+        "prunePowerHigh": 0.5,
+        "closeTip": false,
+        "leafScaleV": 0.20000000298023224,
+        "leafAnim": false,
+        "minRadius": 0.0020000000949949026,
+        "af3": 4.0,
+        "attractOut": [
+          0.0,
+          0.4000000059604645,
+          0.5,
+          0.0
+        ],
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "leafScaleX": 0.75,
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "useOldDownAngle": false,
+        "armLevels": 2,
+        "boneStep": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pruneBase": 0.30000001192092896,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "prunePowerLow": 0.0010000000474974513,
+        "af2": 1.0,
+        "pruneWidth": 0.4000000059604645,
+        "nrings": 0,
+        "baseSize_s": 0.25,
+        "baseSize": 0.32,
+        "leafDist": "6",
+        "scale0": 1.0
+      },
+      "changes_from_preset": {
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "leaves": 60,
+        "baseSplits": 0,
+        "scale": 10,
+        "leafScale": 0.65,
+        "leafScaleT": 0.1,
+        "seed": 2000,
+        "shapeS": "1",
+        "resU": 2,
+        "scaleV": 0,
+        "shape": "1",
+        "ratio": 0.05,
+        "downAngle": [
+          90,
+          70,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "leafScaleX": 0.75,
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "baseSize": 0.32
+      },
+      "graph_adaptations": [],
+      "rna_type_adaptations": [],
+      "native_species_claim": false,
+      "algorithm": "Sapling instalado; preset de arce como base de copa ancha, no un roble bot\u00e1nico"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 0.8019395051814462,
+      "original_z": [
+        0.0,
+        12.469768524169922
+      ],
+      "height_m": 10
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.467
+  },
+  {
+    "id": "sapling-viejo-final",
+    "engine": "sapling",
+    "age": "viejo",
+    "seed": 3009,
+    "controls": {
+      "branches": [
+        0,
+        20,
+        6,
+        2
+      ],
+      "levels": 3,
+      "curveRes": [
+        6,
+        4,
+        3,
+        1
+      ],
+      "segSplits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseSplits": 0,
+      "bevelRes": 0,
+      "resU": 2,
+      "leaves": 60,
+      "scaleV": 0,
+      "ratio": 0.08,
+      "length": [
+        1,
+        0.9,
+        0.45,
+        0.45
+      ],
+      "downAngle": [
+        90,
+        80,
+        50,
+        45
+      ],
+      "shape": "1",
+      "shapeS": "1",
+      "baseSize": 0.32,
+      "leafScale": 0.75,
+      "leafScaleT": 0.1,
+      "leafScaleX": 0.75
+    },
+    "status": "generated",
+    "raw": {
+      "vertices": 10000,
+      "triangles": 9048,
+      "bounds_blender": [
+        [
+          -8.239624977111816,
+          -7.705244541168213,
+          -0.4905018210411072
+        ],
+        [
+          8.332815170288086,
+          7.350350856781006,
+          11.474761009216309
+        ]
+      ],
+      "triangles_by_material": {
+        "Sapling_Bark": 3872,
+        "Sapling_Leaves": 5176
+      },
+      "degenerate_triangles": 0
+    },
+    "metrics": {
+      "vertices": 10000,
+      "triangles": 9048,
+      "bounds_blender": [
+        [
+          -6.197659,
+          -5.795711,
+          0.0
+        ],
+        [
+          6.267755,
+          5.528768,
+          9.0
+        ]
+      ],
+      "height_m": 9.0,
+      "triangles_by_material": {
+        "Oak_Bark": 3872,
+        "Oak_Leaves": 5176
+      },
+      "geometry_sha256": "36f3fd44adb3092bbaf23a10db480a9a920955f33617b135d498b31d5b1994b9"
+    },
+    "within_budget": true,
+    "removed_degenerate_triangles": 0,
+    "details": {
+      "starting_preset": "small_maple",
+      "starting_preset_sha256": "d138680a6680fb447842c7a751b92080e7f64e9a53ebef200504152554ad8278",
+      "controls": {
+        "leafDownAngle": 45.0,
+        "handleType": "0",
+        "radiusTweak": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "useArm": false,
+        "rootFlare": 1.0,
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "leafRotateV": 0.0,
+        "leaves": 60,
+        "baseSplits": 0,
+        "rotate": [
+          99.5,
+          137.5,
+          137.5,
+          137.5
+        ],
+        "scale": 9,
+        "makeMesh": false,
+        "leafDownAngleV": 10.0,
+        "curve": [
+          0.0,
+          30.0,
+          0.0,
+          0.0
+        ],
+        "splitBias": 0.0,
+        "leafScale": 0.75,
+        "levels": 3,
+        "leafScaleT": 0.1,
+        "seed": 3009,
+        "autoTaper": true,
+        "pruneWidthPeak": 0.6000000238418579,
+        "branchDist": 1.25,
+        "prune": false,
+        "splitAngle": [
+          8.0,
+          18.0,
+          18.0,
+          0.0
+        ],
+        "shapeS": "1",
+        "useParentAngle": true,
+        "af1": 1.0,
+        "armAnim": false,
+        "resU": 2,
+        "ratioPower": 1.2000000476837158,
+        "scaleV": 0,
+        "splitHeight": 0.20000000298023224,
+        "leafRotate": 137.5,
+        "customShape": [
+          0.5,
+          1.0,
+          0.30000001192092896,
+          0.5
+        ],
+        "shape": "1",
+        "ratio": 0.08,
+        "rMode": "rotate",
+        "downAngle": [
+          90,
+          80,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "showLeaves": true,
+        "wind": 1.0,
+        "loopFrames": 0,
+        "splitByLen": true,
+        "lengthV": [
+          0.0,
+          0.029999999329447746,
+          0.15000000596046448,
+          0.0
+        ],
+        "leafShape": "hex",
+        "downAngleV": [
+          0.0,
+          48.0,
+          10.0,
+          10.0
+        ],
+        "leafangle": -35.0,
+        "bevel": true,
+        "gustF": 0.07500000298023224,
+        "taper": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "previewArm": false,
+        "frameRate": 1.0,
+        "curveBack": [
+          0.0,
+          -30.0,
+          -20.0,
+          0.0
+        ],
+        "taperCrown": 0.20000000298023224,
+        "rotateV": [
+          15.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleV0": 0.20000000298023224,
+        "gust": 1.0,
+        "horzLeaves": true,
+        "attractUp": [
+          -0.5,
+          -0.699999988079071,
+          0.0,
+          0.0
+        ],
+        "splitAngleV": [
+          2.0,
+          5.0,
+          5.0,
+          0.0
+        ],
+        "pruneRatio": 1.0,
+        "curveV": [
+          10.0,
+          35.0,
+          35.0,
+          0.0
+        ],
+        "prunePowerHigh": 0.5,
+        "closeTip": false,
+        "leafScaleV": 0.20000000298023224,
+        "leafAnim": false,
+        "minRadius": 0.0020000000949949026,
+        "af3": 4.0,
+        "attractOut": [
+          0.0,
+          0.4000000059604645,
+          0.5,
+          0.0
+        ],
+        "branches": [
+          0,
+          20,
+          6,
+          2
+        ],
+        "leafScaleX": 0.75,
+        "length": [
+          1,
+          0.9,
+          0.45,
+          0.45
+        ],
+        "useOldDownAngle": false,
+        "armLevels": 2,
+        "boneStep": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pruneBase": 0.30000001192092896,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "prunePowerLow": 0.0010000000474974513,
+        "af2": 1.0,
+        "pruneWidth": 0.4000000059604645,
+        "nrings": 0,
+        "baseSize_s": 0.25,
+        "baseSize": 0.32,
+        "leafDist": "6",
+        "scale0": 1.0
+      },
+      "changes_from_preset": {
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "leaves": 60,
+        "baseSplits": 0,
+        "scale": 9,
+        "leafScale": 0.75,
+        "leafScaleT": 0.1,
+        "seed": 3009,
+        "shapeS": "1",
+        "resU": 2,
+        "scaleV": 0,
+        "shape": "1",
+        "ratio": 0.08,
+        "downAngle": [
+          90,
+          80,
+          50,
+          45
+        ],
+        "bevelRes": 0,
+        "branches": [
+          0,
+          20,
+          6,
+          2
+        ],
+        "leafScaleX": 0.75,
+        "length": [
+          1,
+          0.9,
+          0.45,
+          0.45
+        ],
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "baseSize": 0.32
+      },
+      "graph_adaptations": [],
+      "rna_type_adaptations": [],
+      "native_species_claim": false,
+      "algorithm": "Sapling instalado; preset de arce como base de copa ancha, no un roble bot\u00e1nico"
+    },
+    "normalization": {
+      "type": "uniform_scale_and_base_translation",
+      "scale": 0.752177376099174,
+      "original_z": [
+        -0.4905018210411072,
+        11.474761009216309
+      ],
+      "height_m": 9
+    },
+    "adapter_sources_sha256": {
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043"
+    },
+    "generation_seconds": 0.448
+  }
+]

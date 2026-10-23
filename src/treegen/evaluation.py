@@ -7,7 +7,9 @@ import struct
 import html
 
 
-def validate_glb(path, spec):
+def validate_glb(path, spec, *, triangle_limit=10000):
+    if type(triangle_limit) is not int or not 1 <= triangle_limit <= 12500:
+        raise ValueError('Límite de triángulos inválido')
     data = Path(path).read_bytes()
     if len(data) < 20 or struct.unpack_from('<4sII', data) != (b'glTF', 2, len(data)):
         raise ValueError('Cabecera GLB inválida')
@@ -62,7 +64,7 @@ def validate_glb(path, spec):
             if sum(x*x for x in cross) <= 4e-20:
                 raise ValueError('Triángulo degenerado en GLB')
             triangles.append((material, sorted(tuple(round(x, 6) for x in p) for p in (a, b, c))))
-    if not triangles or len(triangles) > 10000 or not 1 <= len(by_material) <= 3:
+    if not triangles or len(triangles) > triangle_limit or not 1 <= len(by_material) <= 3:
         raise ValueError('Presupuesto geométrico o materiales inválidos')
     bounds = [[fn(p[k] for p in points) for k in range(3)] for fn in (min, max)]
     dimensions = [bounds[1][k] - bounds[0][k] for k in range(3)]

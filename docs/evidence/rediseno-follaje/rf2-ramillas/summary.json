@@ -1,0 +1,1185 @@
+{
+  "version": "foliage-branch-0.2.0",
+  "sources_sha256": {
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "docs/contrato-rf2-ramillas.md": "175c5b331b1158e38149d5d9bd27ceee2c435c0835ba8806d0e11bb1686afba6",
+    "godot/verify_foliage_twigs.gd": "81075c2033ceac65864e27c617852cf3112d0cb4b9d2277337d426ae3a5197c4",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "presets/foliage-twigs.json": "5ad702ee03f6f4ad5c53cb0724c87c255341591868121bd2e407edda4f1e88c9",
+    "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+    "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+    "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+    "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+    "scripts/addon_comparison_evidence.py": "697f7c5a7f257eb8f90fc2254ef9d3482becc75e727d6cfeb4fa0a21192295c7",
+    "scripts/compare_addons.py": "16f4fb1b23bef4791d8e50b81e3c0f1d2cc4316c4fdb5037aa6320373057158e",
+    "scripts/diagnose_structure.py": "4a560741d20705a82fdfb3fbad09412c20933b19fcd69876205e904c40ac63d3",
+    "scripts/foliage_branch_evidence.py": "371bdb2caeaaaf9020f6d9c85370b111293a5554197cc8b5d0fb826caa044d0b",
+    "scripts/foliage_evidence.py": "7404f90b3942604cb6e3e3eee6889d4f2622a2740cab311fe6e04bc4f97a7ae4",
+    "scripts/foliage_twigs_evidence.py": "db564c399d1d9bca58daa41f29730f48fdb0d8527e39444f897eb2f0f83584f8",
+    "scripts/fusion_evidence.py": "85c4b4c10edc4772d02b60480bab7affe36eb9a0431f8715d7bac74f794c9fb3",
+    "scripts/generate_f1.py": "d5cf8686667debd55853e756403ce8d08e1d91ef9bbb3ef7fad5b4bd417d5ad6",
+    "scripts/inspect_easy_tree.py": "1a7b771b2c13392c97d259518fe683ed08738326257e991329707c95de4aa889",
+    "scripts/make_gallery.py": "231756b3cf65b0da4f0ccbb01b6d54c312562b73b84a3910463fd1100b9ff38a",
+    "scripts/preview_fusion.py": "4f6eca670cd1a447c00a647211a24a4d11ebd3d577b4b2b0084b85944d4a90f6",
+    "scripts/q1_gallery.py": "cf85dac410fa08b99a0f24eb67a270754a53969ba471d03320fb531678ab515b",
+    "scripts/q1b_gallery.py": "6317ba6b5de149a077322b6f3a8ccab21be68e4bfc13e6e19db80fa9218abb2b",
+    "scripts/q2_gallery.py": "5ed4f4d8c553dbbc49a30563b160ab519816b5f08c336588ec720a78dbcd31c2",
+    "scripts/q3_gallery.py": "982f028008ead1040c33813fd4a9bc4e8b85c6093fda40da03452d6e24dcbba3",
+    "scripts/q3b_gallery.py": "b393ad195d50f1da35b2a7ebde24efc96bfff8fd25ade7aadac828bfd7981f17",
+    "scripts/review_tree_addons.py": "0645681d5eeeffcfba5dd342e7050b30d675a2bac60df929b0a5356975d1a782",
+    "scripts/verify_addon_comparison.py": "4ecc393d036511ddef3ba89ca1ee675933f3d0299d23603cc9c2ab2ed894cd5e",
+    "scripts/verify_api.py": "48b4dd5af68e06d50b0471a46309238ae58cdc22c665067d78cefcf115bff6ec",
+    "scripts/verify_f0.py": "334f15cd6bdbbd1b57c8795750bd36a2aed31b898016aea53f955a88ddc32783",
+    "scripts/verify_f1.py": "5e7663e303e222a8ca7b72bf2fb4948cea345dbeaf5142deedf177afa8b21740",
+    "scripts/verify_f2.py": "d40bf125303e10397ea69c2f10dd76238508074a60a05229ae43dc0d4a90e978",
+    "scripts/verify_foliage_branch.py": "1b37b23adb74a6da5fbae63eace63853e0306fc69fbed8f613d2228aa961105c",
+    "scripts/verify_foliage_twigs.py": "bd43b2c9965d93110fe212e7430d2bf7206b3344c9fe47decbf6168c94d4c345",
+    "scripts/verify_foliage_unit.py": "c1a63768a43c736173f3f3a0e473874a67fff8e7ba1f793e59a6beab6d712831",
+    "scripts/verify_fusion.py": "fd976bfcce144a794b77917d83912529744dadd8037cae5dc462ed7b12a6161d",
+    "scripts/verify_q1.py": "d065b79c65734a0d7d0f0bee1f6276b6643a0b8af08e2591989c5c9652751d8c",
+    "scripts/verify_q1b.py": "9f1dcbc666d8fe3360b4e3d16c9745672b9bceb540ccdfa1fd9dcdb6db72131a",
+    "scripts/verify_q2.py": "a1e0a9b0d4b18a4883cfe5f175e7a32d6f9122b4057b90e61bdcd4fee0272ea7",
+    "scripts/verify_q3.py": "6d16dcb314474d1b382da505c37f55688d5a2c994731438ae37f5492c43e9c32",
+    "scripts/verify_q3b.py": "0ee804a5c9843cbd35f9f77879ec688f965ebac81a6a788b64993d2689c87611",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/cli.py": "4cc2629b17b99e90673bc469682889b4293dace9f251e9746ea74f1fd97807f9",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/evaluation.py": "3eb4c8a29be0479ceb89f80a2a2061d33ea19fb74d8a7220783ed83f2adbf086",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/foliage_branch_evaluation.py": "9b1c2e4e2155b8327ec753ecdc28d88b3c2f47bf2ea5f1040428ff61ada9cc77",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/foliage_twigs_evaluation.py": "db83e5972f3ea6c3eec90e52f5ffea1b4854315a8f964b787b819ae67984844d",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "876445d8b4a139a9e2c5c9d4f43257626c7fbd14932e1cc4acca5a6dd2e8c912",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "tests/test_contracts.py": "64678364f7e4c42ae0cc938c4be1bcab819e9db5d6432e98bfe244fa611dca26",
+    "tests/test_crown.py": "880b60f24af09db101e2954ae00770aff59a297fec778b0380c78edd3bbf0229",
+    "tests/test_evaluation.py": "64ea41eb72c6536d3d17b10000a93699f96fdac234630d65b67fe83d2c37d4a9",
+    "tests/test_execution.py": "f2a826dc5418125b24d3d903bc8d25fff1a3093c9f9122522279c805ee8a2e41",
+    "tests/test_foliage.py": "2947cb5ec6a07d74f9a7e8e2c2e658559740e46530db989386b5877c58a1dee2",
+    "tests/test_foliage_branch.py": "59b159f864ed74b0156bb25dd0a41c03d3060435857b67ec03dea2b661c33972",
+    "tests/test_foliage_branch_export.py": "f587ee6677578d494bac628cfc145cb618b2f56da32ccc1472fb3a589a396511",
+    "tests/test_foliage_export.py": "695c5331567bac99bfb5447618ece50ff9272a0be3e6e020fa976ed2fd918f03",
+    "tests/test_foliage_twigs.py": "d23a4834bb2c92a945295e0a50f9f6c8ae60ede5eafd35d5b1596aeed0e52f46",
+    "tests/test_foliage_twigs_export.py": "5b5d65757829cc820b534ca15e044fa68a5cbdb7d6b25e941a3d489a51400b7e",
+    "tests/test_quality.py": "f8ebba9d15a926a9d5824e891175a75d231a5fdce50308c8c4c552323d3faadd",
+    "tests/test_seeds.py": "788f1c884325c05ba14a88f2153fe6802206d79706e204043d907bdc6fe2dbf1"
+  },
+  "runner_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "reference_sha256": "e26449fe719888833a90926794c44b3948497051c4eff8e5177f40069fccb657",
+  "target_sha256": "6a0f8ca216dcaed40b00fa96b1a5394edbbeb5946feb3d1a825ae48107f9b306",
+  "reference_source_unchanged": true,
+  "same_final_q3_wood": true,
+  "same_cameras": true,
+  "pair_same_supports_and_leaves": true,
+  "repeat_matches": [
+    "with-twigs",
+    "directed-12"
+  ],
+  "controls_verified": [
+    "size",
+    "density",
+    "radius",
+    "seed",
+    "length",
+    "reach-same-count"
+  ],
+  "cases": {
+    "without-twigs": {
+      "metrics": {
+        "vertices": 624,
+        "triangles": 720,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.602265,
+            2.126421
+          ],
+          [
+            6.860924,
+            2.658191,
+            4.799037
+          ]
+        ],
+        "height_m": 2.672616,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 256
+        },
+        "geometry_sha256": "ebc01a4902cc2926c4ee42b9da8ffdc1d60a2629f75a5cf025c07ad447b0b19b"
+      },
+      "budget": {
+        "leaves": 64,
+        "twig_triangles": 0,
+        "leaf_triangles": 256,
+        "added_triangles": 256,
+        "repeated_11_tree_triangles": 8108
+      },
+      "leaf_count": 64,
+      "support_count": 16,
+      "distribution": {
+        "candidate_count": 16,
+        "target_cells": 152,
+        "selected_cells": 7,
+        "actual_leaf_center_cells_r028m": 6,
+        "actual_leaf_center_cell_ids": [
+          77,
+          91,
+          100,
+          118,
+          135,
+          141
+        ]
+      },
+      "contacts": {},
+      "max_insertion_error_m": 1.2129252354498021e-05,
+      "twigs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "generation_before_render_export_s": 0.32421645100112073,
+      "total_s": 1.9048442269995576,
+      "glb_bytes": 27040
+    },
+    "with-twigs": {
+      "metrics": {
+        "vertices": 768,
+        "triangles": 944,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.606864,
+            2.126421
+          ],
+          [
+            6.860924,
+            2.658191,
+            4.799037
+          ]
+        ],
+        "height_m": 2.672616,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 256,
+          "RF2_Twig": 224
+        },
+        "geometry_sha256": "dcfe8f64b5e0d81786e39d37b9c8b5d96d28434e69693895ceaecba423aa9c23"
+      },
+      "budget": {
+        "leaves": 64,
+        "twig_triangles": 224,
+        "leaf_triangles": 256,
+        "added_triangles": 480,
+        "repeated_11_tree_triangles": 10572
+      },
+      "leaf_count": 64,
+      "support_count": 16,
+      "distribution": {
+        "candidate_count": 16,
+        "target_cells": 152,
+        "selected_cells": 7,
+        "actual_leaf_center_cells_r028m": 6,
+        "actual_leaf_center_cell_ids": [
+          77,
+          91,
+          100,
+          118,
+          135,
+          141
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.002898653969168663,
+          "maximum": 0.03066730685532093
+        }
+      },
+      "max_insertion_error_m": 1.2129252354498021e-05,
+      "twigs_sha256": "44cf42859d4f851899791f90296ee35e975f0be52f904aad72baedc0655767c4",
+      "generation_before_render_export_s": 0.33431908799684606,
+      "total_s": 1.719512580006267,
+      "glb_bytes": 44336
+    },
+    "directed-16": {
+      "metrics": {
+        "vertices": 768,
+        "triangles": 944,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.66688,
+            2.126421
+          ],
+          [
+            6.525691,
+            2.683581,
+            4.991308
+          ]
+        ],
+        "height_m": 2.864887,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 256,
+          "RF2_Twig": 224
+        },
+        "geometry_sha256": "d4146ff6891ac1854e0fbb0e947cb197736b8f0dfc234a0d4d111ad1e5d9decc"
+      },
+      "budget": {
+        "leaves": 64,
+        "twig_triangles": 224,
+        "leaf_triangles": 256,
+        "added_triangles": 480,
+        "repeated_11_tree_triangles": 10572
+      },
+      "leaf_count": 64,
+      "support_count": 16,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 24,
+        "selected_cells": 15,
+        "actual_leaf_center_cells_r028m": 12,
+        "actual_leaf_center_cell_ids": [
+          52,
+          64,
+          77,
+          80,
+          92,
+          96,
+          105,
+          122,
+          125,
+          134,
+          135,
+          138
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.0028607456479221582,
+          "maximum": 0.01856180652976036
+        }
+      },
+      "max_insertion_error_m": 5.0011103667202406e-06,
+      "twigs_sha256": "d4dd9d037fc3fa29d038800b4b01ab8a7c66fec914b63ca5d45e8f99dbf9e936",
+      "generation_before_render_export_s": 0.7199669969995739,
+      "total_s": 2.2680918029946042,
+      "glb_bytes": 44388
+    },
+    "directed-12": {
+      "metrics": {
+        "vertices": 636,
+        "triangles": 824,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.66688,
+            2.126421
+          ],
+          [
+            6.525691,
+            2.683581,
+            4.991308
+          ]
+        ],
+        "height_m": 2.864887,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 168
+        },
+        "geometry_sha256": "c9c40daa4500aac446689d542b47e02e513050d983f783cea2af0c7a899720c6"
+      },
+      "budget": {
+        "leaves": 48,
+        "twig_triangles": 168,
+        "leaf_triangles": 192,
+        "added_triangles": 360,
+        "repeated_11_tree_triangles": 9252
+      },
+      "leaf_count": 48,
+      "support_count": 12,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 24,
+        "selected_cells": 14,
+        "actual_leaf_center_cells_r028m": 10,
+        "actual_leaf_center_cell_ids": [
+          52,
+          64,
+          77,
+          92,
+          96,
+          105,
+          122,
+          125,
+          135,
+          138
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.0028607456479221582,
+          "maximum": 0.01856180652976036
+        }
+      },
+      "max_insertion_error_m": 1.430511474609375e-06,
+      "twigs_sha256": "02fd2d91d0e508310efb66e7846c92344639088f1143b23b477ef1a130c95e02",
+      "generation_before_render_export_s": 0.6188077440019697,
+      "total_s": 2.030248972994741,
+      "glb_bytes": 36228
+    },
+    "control-size": {
+      "metrics": {
+        "vertices": 636,
+        "triangles": 824,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.734148,
+            2.126421
+          ],
+          [
+            6.590882,
+            2.766962,
+            5.051149
+          ]
+        ],
+        "height_m": 2.9247279999999996,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 168
+        },
+        "geometry_sha256": "5efef09a4540cb3ba7eb39ea8f80fae73b541e98b00a22179d9b600e206b80b4"
+      },
+      "budget": {
+        "leaves": 48,
+        "twig_triangles": 168,
+        "leaf_triangles": 192,
+        "added_triangles": 360,
+        "repeated_11_tree_triangles": 9252
+      },
+      "leaf_count": 48,
+      "support_count": 12,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 24,
+        "selected_cells": 14,
+        "actual_leaf_center_cells_r028m": 10,
+        "actual_leaf_center_cell_ids": [
+          52,
+          64,
+          77,
+          92,
+          96,
+          105,
+          122,
+          125,
+          135,
+          138
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.0028607456479221582,
+          "maximum": 0.01856180652976036
+        }
+      },
+      "max_insertion_error_m": 1.430511474609375e-06,
+      "twigs_sha256": "02fd2d91d0e508310efb66e7846c92344639088f1143b23b477ef1a130c95e02",
+      "generation_before_render_export_s": 0.6096245410008123,
+      "total_s": 2.030868324000039,
+      "glb_bytes": 36416
+    },
+    "control-density": {
+      "metrics": {
+        "vertices": 780,
+        "triangles": 920,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.682828,
+            2.126421
+          ],
+          [
+            6.528648,
+            2.757491,
+            4.9577
+          ]
+        ],
+        "height_m": 2.831279,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 288,
+          "RF2_Twig": 168
+        },
+        "geometry_sha256": "ea380ff92e2b0ba921941c0db4ea58c4eeadfc523a5cc9f8a6a1008af025b56a"
+      },
+      "budget": {
+        "leaves": 72,
+        "twig_triangles": 168,
+        "leaf_triangles": 288,
+        "added_triangles": 456,
+        "repeated_11_tree_triangles": 10308
+      },
+      "leaf_count": 72,
+      "support_count": 12,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 24,
+        "selected_cells": 14,
+        "actual_leaf_center_cells_r028m": 12,
+        "actual_leaf_center_cell_ids": [
+          52,
+          64,
+          77,
+          92,
+          96,
+          105,
+          117,
+          122,
+          125,
+          127,
+          135,
+          138
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.002283985959365964,
+          "maximum": 0.018919313326478004
+        }
+      },
+      "max_insertion_error_m": 1.430511474609375e-06,
+      "twigs_sha256": "02fd2d91d0e508310efb66e7846c92344639088f1143b23b477ef1a130c95e02",
+      "generation_before_render_export_s": 0.631123030994786,
+      "total_s": 2.0707804289995693,
+      "glb_bytes": 41844
+    },
+    "control-radius": {
+      "metrics": {
+        "vertices": 636,
+        "triangles": 824,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.66688,
+            2.126421
+          ],
+          [
+            6.525691,
+            2.683581,
+            4.991308
+          ]
+        ],
+        "height_m": 2.864887,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 168
+        },
+        "geometry_sha256": "c617d667ae4e25def414e9db923fa65045d4a88be3a69f1b96feb950fc528599"
+      },
+      "budget": {
+        "leaves": 48,
+        "twig_triangles": 168,
+        "leaf_triangles": 192,
+        "added_triangles": 360,
+        "repeated_11_tree_triangles": 9252
+      },
+      "leaf_count": 48,
+      "support_count": 12,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 24,
+        "selected_cells": 14,
+        "actual_leaf_center_cells_r028m": 10,
+        "actual_leaf_center_cell_ids": [
+          52,
+          64,
+          77,
+          92,
+          96,
+          105,
+          122,
+          125,
+          135,
+          138
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.004293734673410654,
+          "maximum": 0.027517639100551605
+        }
+      },
+      "max_insertion_error_m": 1.430511474609375e-06,
+      "twigs_sha256": "9872588966c65c055ff7dc2a9b76fb22265338cae7a5454fd9585009259def46",
+      "generation_before_render_export_s": 0.6171059300104389,
+      "total_s": 2.0410887690086383,
+      "glb_bytes": 35844
+    },
+    "control-seed": {
+      "metrics": {
+        "vertices": 636,
+        "triangles": 824,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.672938,
+            2.126421
+          ],
+          [
+            6.504336,
+            2.658696,
+            4.634132
+          ]
+        ],
+        "height_m": 2.507711,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 168
+        },
+        "geometry_sha256": "7b5fe94bfca3434de5286f7b5a52a558af7c59295c49fb08bb1b9f46728b5f6e"
+      },
+      "budget": {
+        "leaves": 48,
+        "twig_triangles": 168,
+        "leaf_triangles": 192,
+        "added_triangles": 360,
+        "repeated_11_tree_triangles": 9252
+      },
+      "leaf_count": 48,
+      "support_count": 12,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 23,
+        "selected_cells": 15,
+        "actual_leaf_center_cells_r028m": 10,
+        "actual_leaf_center_cell_ids": [
+          52,
+          64,
+          77,
+          92,
+          118,
+          122,
+          125,
+          127,
+          138,
+          141
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.0028540443163365126,
+          "maximum": 0.0172224473208189
+        }
+      },
+      "max_insertion_error_m": 6.878076419525314e-06,
+      "twigs_sha256": "e672d81824dd2aa2e9017925bcf1ee10b1059a3c1e07008a878ace9a942acd06",
+      "generation_before_render_export_s": 0.6122897910099709,
+      "total_s": 0.7180022290121997,
+      "glb_bytes": 35892
+    },
+    "control-length": {
+      "metrics": {
+        "vertices": 852,
+        "triangles": 968,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.823545,
+            2.126421
+          ],
+          [
+            6.688736,
+            2.628477,
+            4.634132
+          ]
+        ],
+        "height_m": 2.507711,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 336,
+          "RF2_Twig": 168
+        },
+        "geometry_sha256": "3e0018bdef89da007b397d86d323f16d76affb367d4708e4766050cf5febe17e"
+      },
+      "budget": {
+        "leaves": 84,
+        "twig_triangles": 168,
+        "leaf_triangles": 336,
+        "added_triangles": 504,
+        "repeated_11_tree_triangles": 10836
+      },
+      "leaf_count": 84,
+      "support_count": 12,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 33,
+        "selected_cells": 16,
+        "actual_leaf_center_cells_r028m": 15,
+        "actual_leaf_center_cell_ids": [
+          52,
+          63,
+          67,
+          77,
+          80,
+          96,
+          100,
+          103,
+          105,
+          107,
+          118,
+          121,
+          125,
+          134,
+          138
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.0019612100441008806,
+          "maximum": 0.021934283897280693
+        }
+      },
+      "max_insertion_error_m": 5.0011103667202406e-06,
+      "twigs_sha256": "bd58826fdf0defc5ff20fc99d4b9f523d0056de68c78bce4ed50486156f84d12",
+      "generation_before_render_export_s": 0.6334014739986742,
+      "total_s": 2.043642180011375,
+      "glb_bytes": 44196
+    },
+    "control-reach-same-count": {
+      "metrics": {
+        "vertices": 636,
+        "triangles": 824,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.760049,
+            2.126421
+          ],
+          [
+            6.666153,
+            2.548273,
+            4.634132
+          ]
+        ],
+        "height_m": 2.507711,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 168
+        },
+        "geometry_sha256": "dc318754f0acf5c8abc8e6e193044543d34389da0e1bed04ea6914829e79e71f"
+      },
+      "budget": {
+        "leaves": 48,
+        "twig_triangles": 168,
+        "leaf_triangles": 192,
+        "added_triangles": 360,
+        "repeated_11_tree_triangles": 9252
+      },
+      "leaf_count": 48,
+      "support_count": 12,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 33,
+        "selected_cells": 16,
+        "actual_leaf_center_cells_r028m": 13,
+        "actual_leaf_center_cell_ids": [
+          52,
+          63,
+          67,
+          80,
+          96,
+          100,
+          103,
+          105,
+          107,
+          118,
+          125,
+          134,
+          138
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.0027520423755049706,
+          "maximum": 0.021355414763092995
+        }
+      },
+      "max_insertion_error_m": 5.0011103667202406e-06,
+      "twigs_sha256": "bd58826fdf0defc5ff20fc99d4b9f523d0056de68c78bce4ed50486156f84d12",
+      "generation_before_render_export_s": 0.6213052039965987,
+      "total_s": 2.045055914000841,
+      "glb_bytes": 36180
+    },
+    "repeat-original": {
+      "metrics": {
+        "vertices": 768,
+        "triangles": 944,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.606864,
+            2.126421
+          ],
+          [
+            6.860924,
+            2.658191,
+            4.799037
+          ]
+        ],
+        "height_m": 2.672616,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 256,
+          "RF2_Twig": 224
+        },
+        "geometry_sha256": "dcfe8f64b5e0d81786e39d37b9c8b5d96d28434e69693895ceaecba423aa9c23"
+      },
+      "budget": {
+        "leaves": 64,
+        "twig_triangles": 224,
+        "leaf_triangles": 256,
+        "added_triangles": 480,
+        "repeated_11_tree_triangles": 10572
+      },
+      "leaf_count": 64,
+      "support_count": 16,
+      "distribution": {
+        "candidate_count": 16,
+        "target_cells": 152,
+        "selected_cells": 7,
+        "actual_leaf_center_cells_r028m": 6,
+        "actual_leaf_center_cell_ids": [
+          77,
+          91,
+          100,
+          118,
+          135,
+          141
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.002898653969168663,
+          "maximum": 0.03066730685532093
+        }
+      },
+      "max_insertion_error_m": 1.2129252354498021e-05,
+      "twigs_sha256": "44cf42859d4f851899791f90296ee35e975f0be52f904aad72baedc0655767c4",
+      "generation_before_render_export_s": 0.2934513720101677,
+      "total_s": 0.3971664860000601,
+      "glb_bytes": 44336
+    },
+    "repeat-directed": {
+      "metrics": {
+        "vertices": 636,
+        "triangles": 824,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.66688,
+            2.126421
+          ],
+          [
+            6.525691,
+            2.683581,
+            4.991308
+          ]
+        ],
+        "height_m": 2.864887,
+        "triangles_by_material": {
+          "Oak_Bark": 464,
+          "RF1_Leaf": 192,
+          "RF2_Twig": 168
+        },
+        "geometry_sha256": "c9c40daa4500aac446689d542b47e02e513050d983f783cea2af0c7a899720c6"
+      },
+      "budget": {
+        "leaves": 48,
+        "twig_triangles": 168,
+        "leaf_triangles": 192,
+        "added_triangles": 360,
+        "repeated_11_tree_triangles": 9252
+      },
+      "leaf_count": 48,
+      "support_count": 12,
+      "distribution": {
+        "candidate_count": 192,
+        "target_cells": 152,
+        "reachable_cells": 24,
+        "selected_cells": 14,
+        "actual_leaf_center_cells_r028m": 10,
+        "actual_leaf_center_cell_ids": [
+          52,
+          64,
+          77,
+          92,
+          96,
+          105,
+          122,
+          125,
+          135,
+          138
+        ]
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "leaf_root_surface_distance_m": {
+          "minimum": 0.0028607456479221582,
+          "maximum": 0.01856180652976036
+        }
+      },
+      "max_insertion_error_m": 1.430511474609375e-06,
+      "twigs_sha256": "02fd2d91d0e508310efb66e7846c92344639088f1143b23b477ef1a130c95e02",
+      "generation_before_render_export_s": 0.619008344001486,
+      "total_s": 0.7227149550017202,
+      "glb_bytes": 36228
+    }
+  },
+  "visual_captures_generated": true,
+  "visual_acceptance": "pending",
+  "rf3_started": false,
+  "study": "/home/tao/repos/procedural/arboles/artifacts/rediseno-follaje/rf2-ramillas-final",
+  "evidence_script_sha256": "db564c399d1d9bca58daa41f29730f48fdb0d8527e39444f897eb2f0f83584f8",
+  "exports": {
+    "reference": {
+      "triangles": 764,
+      "materials": {
+        "Oak_Bark": 464,
+        "Oak_Leaves": 300
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "Oak_Leaves": "adc88ac58c2cf964c0246575e5c6e82239195f2a342b78404719a3ee580f958c"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "Oak_Leaves": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64"
+      }
+    },
+    "without-twigs": {
+      "triangles": 720,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 256
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "cbade371fc2b6924f7d5b1ca20395b3b15e0a963a2f288677bfc567d86573b6f"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64"
+      }
+    },
+    "with-twigs": {
+      "triangles": 944,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 256,
+        "RF2_Twig": 224
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "cbade371fc2b6924f7d5b1ca20395b3b15e0a963a2f288677bfc567d86573b6f",
+        "RF2_Twig": "aed01728037cb5f9585b6c233b2c9539501f44ddff0e7dba8146383e380c02a5"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "directed-16": {
+      "triangles": 944,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 256,
+        "RF2_Twig": 224
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "e2a83fb9849729f7ea3684bee3ae6c36b81c5252a77134147fd37960de5a7609",
+        "RF2_Twig": "feb142590423c81cd6ddd4248cd3b39411b444507be27417e8a3ca0882e3891a"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "directed-12": {
+      "triangles": 824,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 192,
+        "RF2_Twig": 168
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "d82a0fa74f87812ed538184ed1bc681ab8796887a5616639b4676686ab55a94e",
+        "RF2_Twig": "f42f9a8e942bb4bb5acebed792dd9bcff7012771b9eecc4e122e6152b663dada"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "control-size": {
+      "triangles": 824,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 192,
+        "RF2_Twig": 168
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "55f5e35cf952ac6e1c30eb19009cb6c5438d2e5742cd6c9080a51ec70836659d",
+        "RF2_Twig": "f42f9a8e942bb4bb5acebed792dd9bcff7012771b9eecc4e122e6152b663dada"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "control-density": {
+      "triangles": 920,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 288,
+        "RF2_Twig": 168
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "47bd01087b080d4a77e5d224e0d87b6434383450375f85e2d759d558d2b8d54e",
+        "RF2_Twig": "f42f9a8e942bb4bb5acebed792dd9bcff7012771b9eecc4e122e6152b663dada"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "control-radius": {
+      "triangles": 824,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 192,
+        "RF2_Twig": 168
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "d82a0fa74f87812ed538184ed1bc681ab8796887a5616639b4676686ab55a94e",
+        "RF2_Twig": "b06dd2643c4ee549a7b1cd575e038e4089effc7c989848932f65b4445a815746"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "control-seed": {
+      "triangles": 824,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 192,
+        "RF2_Twig": 168
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "cfb5b457963632d5659bdf2dae56d4708568e9f4f7fef2cab05bac5ce1a03177",
+        "RF2_Twig": "be9620d2bd11d7111f9e759fc86edf2a357f901d0e2c1e9478105e8f2397f162"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "control-length": {
+      "triangles": 968,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 336,
+        "RF2_Twig": 168
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "da3558cd636a22c4d58faf86b1b8937fdc268ab6cf61826e19b75f34db2d16d8",
+        "RF2_Twig": "fbd9b66074fc2de3b94d4f9d7a9485e750dd8eace24a14618bbe0f15bd53a782"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "control-reach-same-count": {
+      "triangles": 824,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 192,
+        "RF2_Twig": 168
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "04682fa15e7e77acc119ce146b32ae002ce2094f2a7171ca6d57364228285a2d",
+        "RF2_Twig": "fbd9b66074fc2de3b94d4f9d7a9485e750dd8eace24a14618bbe0f15bd53a782"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "repeat-original": {
+      "triangles": 944,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 256,
+        "RF2_Twig": 224
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "cbade371fc2b6924f7d5b1ca20395b3b15e0a963a2f288677bfc567d86573b6f",
+        "RF2_Twig": "aed01728037cb5f9585b6c233b2c9539501f44ddff0e7dba8146383e380c02a5"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    },
+    "repeat-directed": {
+      "triangles": 824,
+      "materials": {
+        "Oak_Bark": 464,
+        "RF1_Leaf": 192,
+        "RF2_Twig": 168
+      },
+      "exported_wood_sha256": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+      "bark_material_sha256": "b141f173c8434fb1547408bcd849d1baa97ed2b04283deece8a6a524ff4d4053",
+      "channel_sha256": {
+        "Oak_Bark": "2b8baf8c105a3393a84af98f91127fe054ac939816bccc1da3a1da65937aa5c4",
+        "RF1_Leaf": "d82a0fa74f87812ed538184ed1bc681ab8796887a5616639b4676686ab55a94e",
+        "RF2_Twig": "f42f9a8e942bb4bb5acebed792dd9bcff7012771b9eecc4e122e6152b663dada"
+      },
+      "material_properties_sha256": {
+        "Oak_Bark": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4",
+        "RF1_Leaf": "0f512d88212347200bd2b845d17b76083ea06a9560041eb73a13530300732c64",
+        "RF2_Twig": "aa8f387ebe93062a936d6600b420f84d97bce41a8e2813bd1c5507116f09cef4"
+      }
+    }
+  },
+  "godot": {
+    "ambient_energy": 0.5,
+    "godot": "4.7.2-stable (official)",
+    "light_energy": 1.2,
+    "light_rotation_deg": [
+      -35,
+      -25,
+      0
+    ],
+    "passed": true,
+    "renderer": "gl_compatibility",
+    "asset_triangles": {
+      "control-density": 920,
+      "control-length": 968,
+      "control-radius": 824,
+      "control-reach-same-count": 824,
+      "control-seed": 824,
+      "control-size": 824,
+      "directed-12": 824,
+      "directed-16": 944,
+      "reference": 764,
+      "repeat-directed": 824,
+      "repeat-original": 944,
+      "with-twigs": 944,
+      "without-twigs": 720
+    }
+  },
+  "capture_count": 120,
+  "capture_min_visible_pixels": 1678
+}

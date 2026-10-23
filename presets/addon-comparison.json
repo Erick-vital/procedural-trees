@@ -1,0 +1,504 @@
+{
+  "version": "addon-comparison-0.1.0",
+  "references": {
+    "adulto": "adulto-00",
+    "viejo": "viejo-09"
+  },
+  "limits": {
+    "triangles": 10000,
+    "materials": 3,
+    "intermediate_triangles": 300000,
+    "timeout_seconds": 120
+  },
+  "attempts": [
+    {
+      "id": "easy-adulto-initial",
+      "engine": "easy",
+      "age": "adulto",
+      "seed": 2000,
+      "controls": {
+        "Trunk Height": 5,
+        "Num Levels": 5,
+        "Branch Length": 8,
+        "Random Angle": 0.698,
+        "Thickness": 3,
+        "Min Height": 10,
+        "Season": 0.5
+      }
+    },
+    {
+      "id": "easy-viejo-initial",
+      "engine": "easy",
+      "age": "viejo",
+      "seed": 3009,
+      "controls": {
+        "Trunk Height": 2,
+        "Treetop Height": 2,
+        "Num Levels": 6,
+        "Branch Length": 8,
+        "Random Angle": 0.488,
+        "Thickness": 2.9,
+        "Min Height": 10,
+        "Season": 0.5
+      }
+    },
+    {
+      "id": "sapling-adulto-initial",
+      "engine": "sapling",
+      "age": "adulto",
+      "seed": 2000,
+      "controls": {
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "levels": 3,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "bevelRes": 0,
+        "resU": 2,
+        "leaves": 32,
+        "scaleV": 0,
+        "ratio": 0.05,
+        "length": [
+          1,
+          0.55,
+          0.45,
+          0.45
+        ],
+        "downAngle": [
+          90,
+          60,
+          45,
+          45
+        ]
+      }
+    },
+    {
+      "id": "sapling-viejo-initial",
+      "engine": "sapling",
+      "age": "viejo",
+      "seed": 3009,
+      "controls": {
+        "branches": [
+          0,
+          22,
+          7,
+          2
+        ],
+        "levels": 3,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "bevelRes": 0,
+        "resU": 2,
+        "leaves": 32,
+        "scaleV": 0,
+        "ratio": 0.08,
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "downAngle": [
+          90,
+          75,
+          50,
+          45
+        ]
+      }
+    },
+    {
+      "id": "easy-adulto-bounded",
+      "engine": "easy",
+      "age": "adulto",
+      "seed": 2000,
+      "controls": {
+        "Trunk Height": 2,
+        "Num Levels": 3,
+        "Branch Length": 6,
+        "Random Angle": 0.7,
+        "Thickness": 2.4,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Treetop Height": 2,
+        "Leaf Density": 2.0
+      },
+      "graph": {
+        "wood_profile": 6,
+        "Count": 3,
+        "X Divisions": 2,
+        "Y Divisions": 3
+      }
+    },
+    {
+      "id": "easy-viejo-bounded",
+      "engine": "easy",
+      "age": "viejo",
+      "seed": 3009,
+      "controls": {
+        "Trunk Height": 1,
+        "Treetop Height": 2,
+        "Num Levels": 4,
+        "Branch Length": 6,
+        "Random Angle": 0.85,
+        "Thickness": 3.3,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Leaf Density": 2.0
+      },
+      "graph": {
+        "wood_profile": 6,
+        "Count": 3,
+        "X Divisions": 2,
+        "Y Divisions": 3
+      }
+    },
+    {
+      "id": "easy-adulto-geometric",
+      "engine": "easy",
+      "age": "adulto",
+      "seed": 2000,
+      "controls": {
+        "Trunk Height": 2,
+        "Num Levels": 3,
+        "Branch Length": 6,
+        "Random Angle": 0.7,
+        "Thickness": 2.4,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Treetop Height": 2,
+        "Leaf Density": 2.0,
+        "Leaf Min Scale": 1.0,
+        "Leaf Max Scale": 1.6
+      },
+      "graph": {
+        "wood_profile": 6,
+        "Count": 3,
+        "X Divisions": 2,
+        "Y Divisions": 3,
+        "geometric_leaf": true,
+        "leaf_length": 0.35
+      }
+    },
+    {
+      "id": "sapling-adulto-canopy",
+      "engine": "sapling",
+      "age": "adulto",
+      "seed": 2000,
+      "controls": {
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "levels": 3,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "bevelRes": 0,
+        "resU": 2,
+        "leaves": 32,
+        "scaleV": 0,
+        "ratio": 0.05,
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "downAngle": [
+          90,
+          70,
+          50,
+          45
+        ],
+        "shape": "1",
+        "shapeS": "1",
+        "baseSize": 0.32,
+        "leafScale": 0.65,
+        "leafScaleT": 0.1,
+        "leafScaleX": 0.75
+      }
+    },
+    {
+      "id": "easy-viejo-geometric",
+      "engine": "easy",
+      "age": "viejo",
+      "seed": 3009,
+      "controls": {
+        "Trunk Height": 1,
+        "Treetop Height": 2,
+        "Num Levels": 4,
+        "Branch Length": 6,
+        "Random Angle": 0.85,
+        "Thickness": 3.3,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Leaf Density": 2.0,
+        "Leaf Min Scale": 1.0,
+        "Leaf Max Scale": 1.6
+      },
+      "graph": {
+        "wood_profile": 4,
+        "Count": 3,
+        "X Divisions": 2,
+        "Y Divisions": 3,
+        "geometric_leaf": true,
+        "leaf_length": 0.35
+      }
+    },
+    {
+      "id": "sapling-viejo-canopy",
+      "engine": "sapling",
+      "age": "viejo",
+      "seed": 3009,
+      "controls": {
+        "branches": [
+          0,
+          20,
+          6,
+          2
+        ],
+        "levels": 3,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "bevelRes": 0,
+        "resU": 2,
+        "leaves": 32,
+        "scaleV": 0,
+        "ratio": 0.08,
+        "length": [
+          1,
+          0.9,
+          0.45,
+          0.45
+        ],
+        "downAngle": [
+          90,
+          80,
+          50,
+          45
+        ],
+        "shape": "1",
+        "shapeS": "1",
+        "baseSize": 0.32,
+        "leafScale": 0.75,
+        "leafScaleT": 0.1,
+        "leafScaleX": 0.75
+      }
+    },
+    {
+      "id": "easy-viejo-final",
+      "engine": "easy",
+      "age": "viejo",
+      "seed": 3009,
+      "controls": {
+        "Trunk Height": 1,
+        "Treetop Height": 2,
+        "Num Levels": 4,
+        "Branch Length": 6,
+        "Random Angle": 0.85,
+        "Thickness": 3.3,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Leaf Density": 1.6,
+        "Leaf Min Scale": 1.0,
+        "Leaf Max Scale": 1.6
+      },
+      "graph": {
+        "wood_profile": 4,
+        "Count": 3,
+        "X Divisions": 2,
+        "Y Divisions": 3,
+        "geometric_leaf": true,
+        "leaf_length": 0.35
+      }
+    },
+    {
+      "id": "easy-adulto-final",
+      "engine": "easy",
+      "age": "adulto",
+      "seed": 2000,
+      "controls": {
+        "Trunk Height": 2,
+        "Num Levels": 3,
+        "Branch Length": 6,
+        "Random Angle": 0.7,
+        "Thickness": 2.4,
+        "Min Height": 3,
+        "Season": 0.5,
+        "Treetop Height": 2,
+        "Leaf Density": 3.0,
+        "Leaf Min Scale": 1.0,
+        "Leaf Max Scale": 1.6
+      },
+      "graph": {
+        "wood_profile": 6,
+        "Count": 3,
+        "X Divisions": 2,
+        "Y Divisions": 3,
+        "geometric_leaf": true,
+        "leaf_length": 0.35
+      }
+    },
+    {
+      "id": "sapling-adulto-final",
+      "engine": "sapling",
+      "age": "adulto",
+      "seed": 2000,
+      "controls": {
+        "branches": [
+          0,
+          18,
+          6,
+          2
+        ],
+        "levels": 3,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "bevelRes": 0,
+        "resU": 2,
+        "leaves": 60,
+        "scaleV": 0,
+        "ratio": 0.05,
+        "length": [
+          1,
+          0.7,
+          0.45,
+          0.45
+        ],
+        "downAngle": [
+          90,
+          70,
+          50,
+          45
+        ],
+        "shape": "1",
+        "shapeS": "1",
+        "baseSize": 0.32,
+        "leafScale": 0.65,
+        "leafScaleT": 0.1,
+        "leafScaleX": 0.75
+      }
+    },
+    {
+      "id": "sapling-viejo-final",
+      "engine": "sapling",
+      "age": "viejo",
+      "seed": 3009,
+      "controls": {
+        "branches": [
+          0,
+          20,
+          6,
+          2
+        ],
+        "levels": 3,
+        "curveRes": [
+          6,
+          4,
+          3,
+          1
+        ],
+        "segSplits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "baseSplits": 0,
+        "bevelRes": 0,
+        "resU": 2,
+        "leaves": 60,
+        "scaleV": 0,
+        "ratio": 0.08,
+        "length": [
+          1,
+          0.9,
+          0.45,
+          0.45
+        ],
+        "downAngle": [
+          90,
+          80,
+          50,
+          45
+        ],
+        "shape": "1",
+        "shapeS": "1",
+        "baseSize": 0.32,
+        "leafScale": 0.75,
+        "leafScaleT": 0.1,
+        "leafScaleX": 0.75
+      }
+    }
+  ],
+  "selection": {
+    "adulto": {
+      "easy": "easy-adulto-final",
+      "sapling": "sapling-adulto-final"
+    },
+    "viejo": {
+      "easy": "easy-viejo-final",
+      "sapling": "sapling-viejo-final"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "versions": {
+    "easy_tree": "1.0.1",
+    "sapling_tree_gen": "0.3.7"
+  },
+  "sources_sha256": {
+    "easy_tree/__init__.py": "f6275e9ca8fc257bbef68abbe8ece03cd8c670600da65545628cc008969b82a6",
+    "easy_tree/assets/assets.blend": "7a9febfb39c78e80af2cb88424d1fd23dbd5c6b8a44626b41369efcc7941eeca",
+    "easy_tree/blender_manifest.toml": "9e4a5eb7c18050e47735e14bb2b31e84f876daca50714d2041813768c2a4cc25",
+    "easy_tree/operators.py": "b828cf473e03c2fa821e58ae35b58daed1fb497984ed6d9267e4f6b6dcf7bc75",
+    "easy_tree/panel.py": "78d4f55af644fccc947f82535c809d58c9b9c8b046b10e6ba17b19babf3cd90a",
+    "sapling_tree_gen/__init__.py": "1852fa3878b36744a0ef1a89020e7dd38c334961c56a268ac7f839a65a637353",
+    "sapling_tree_gen/blender_manifest.toml": "2cc070bcc1a0704f26da3c04c024a5cca578c4f622ff831414b881dfeb297d5a",
+    "sapling_tree_gen/presets/callistemon.py": "7a14c3d6577334cc1d868f4aa28040e4421900b83a06af8bca21d8009d5b9c12",
+    "sapling_tree_gen/presets/douglas_fir.py": "9a8cb6feeaee635abb3d1bca69a6ee891e3de3be0f8756517d0e8ff4d965dc68",
+    "sapling_tree_gen/presets/japanese_maple.py": "c0a2a0ac4257aeaacd572cadc7af76d3c4c4654070eb9118b786430d18d8fca2",
+    "sapling_tree_gen/presets/quaking_aspen.py": "0af1dfe9ddce50d3b04b2c26d9447a396a852a6731fb8839c1529133649c4a93",
+    "sapling_tree_gen/presets/small_maple.py": "d138680a6680fb447842c7a751b92080e7f64e9a53ebef200504152554ad8278",
+    "sapling_tree_gen/presets/small_pine.py": "a0931e7a8914f6acb6f7a423edbb8eef4183617cb3d364fdd2045eb473ae2dc0",
+    "sapling_tree_gen/presets/weeping_willow.py": "403159b3fb980d30df748e65b6c95dfd1e340969d3f26e20cf8defdc420aefa9",
+    "sapling_tree_gen/presets/white_birch.py": "e8a129041e0f75b6d5966e4a93450151f4ecc6287aa0005832f6a3115734a3fc",
+    "sapling_tree_gen/presets/willow.py": "cfaa9c0ff58a47c712148f1b98e748ce9c794f47c57fb5883a1e9c31f1c3a953",
+    "sapling_tree_gen/utils.py": "78639c81d742343b702ff5cdace8d9c482a94d9d9d00ad5cd3bb4ea1835bb01f"
+  },
+  "unchanged": true
+}
