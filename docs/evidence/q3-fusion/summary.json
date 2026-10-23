@@ -1,0 +1,824 @@
+{
+  "experiment": "q3-partial-fusion-0.2.1",
+  "reference_commit": "fbe87a4",
+  "reference_tag": "q3-referencia-0.4.0",
+  "cases": {
+    "viejo-09": {
+      "input_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 3009,
+        "parameters": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        }
+      },
+      "seeds": {
+        "structure": 669423365,
+        "foliage": 927115663
+      },
+      "input_masses": 89,
+      "output_components": 8,
+      "input_leaf_triangles": 3220,
+      "output_leaf_triangles": 3220,
+      "total_triangles": 8512,
+      "wood_geometry_sha256": "0b62852bca3a6daccd2566b472ecb146df2ec84683b8917a795009e9f3cd30f3",
+      "input_geometry_sha256": "f9a1821a6c00cdf74de2b150d07cb289a1bbd938b8c08e87b33574ba25e6b7b5",
+      "output_geometry_sha256": "a71fba650ba29b2e4053704bae7cc43ef8aaa5f2a6ede992082fc76f8526efa7",
+      "glb_sha256": "18bd636cd5d79351268496e554d57e98ce6bf83cbf9ad8a165bf2eab8fcbd8c5",
+      "silhouette": {
+        "front": {
+          "resolution": 192,
+          "iou": 0.9883214778638921,
+          "projected_area_ratio": 0.9893775228383259
+        },
+        "side": {
+          "resolution": 192,
+          "iou": 0.9877997914494265,
+          "projected_area_ratio": 0.9882144347100542
+        },
+        "top": {
+          "resolution": 192,
+          "iou": 0.9849908557734754,
+          "projected_area_ratio": 0.9854917050400555
+        },
+        "below": {
+          "resolution": 192,
+          "iou": 0.9848184163524509,
+          "projected_area_ratio": 0.9860007942811755
+        }
+      },
+      "fusion": {
+        "version": "q3-partial-fusion-0.2.1",
+        "settings": {
+          "voxel_scale_ratio": 0.09,
+          "smooth_iterations": 6,
+          "smooth_factor": 0.5,
+          "max_primary_subtrees_per_group": 3,
+          "cleanup_edge_voxel_ratio": 0.01,
+          "max_grid_cells_per_group": 2000000,
+          "max_total_grid_cells": 12000000
+        },
+        "voxel_size_m": 0.11699999999999999,
+        "groups": [
+          {
+            "primary_indices": [
+              0,
+              2,
+              9
+            ],
+            "input_triangles": 840,
+            "remeshed_triangles": 35896,
+            "output_triangles": 840,
+            "estimated_grid_cells": 342788
+          },
+          {
+            "primary_indices": [
+              1,
+              3,
+              10
+            ],
+            "input_triangles": 820,
+            "remeshed_triangles": 32820,
+            "output_triangles": 820,
+            "estimated_grid_cells": 354816
+          },
+          {
+            "primary_indices": [
+              4,
+              6,
+              8
+            ],
+            "input_triangles": 840,
+            "remeshed_triangles": 31032,
+            "output_triangles": 840,
+            "estimated_grid_cells": 302512
+          },
+          {
+            "primary_indices": [
+              5,
+              7
+            ],
+            "input_triangles": 560,
+            "remeshed_triangles": 24008,
+            "output_triangles": 560,
+            "estimated_grid_cells": 210800
+          }
+        ],
+        "trunk_leaf_triangles_unchanged": 160
+      },
+      "game_camera_distance_m": 101.09241,
+      "sources_sha256": {
+        "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+        "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+        "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+        "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4"
+      }
+    },
+    "viejo-00": {
+      "input_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 3000,
+        "parameters": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        }
+      },
+      "seeds": {
+        "structure": 1212972345,
+        "foliage": 1758731391
+      },
+      "input_masses": 89,
+      "output_components": 7,
+      "input_leaf_triangles": 3220,
+      "output_leaf_triangles": 3216,
+      "total_triangles": 8508,
+      "wood_geometry_sha256": "7bd39d82c2a6f972cb584e84c4dd4e7a0f5d69a43fc499f9f6fd961db49b7c31",
+      "input_geometry_sha256": "c4615111170f1b5f0276ab297e8791571a4faeaa7d569082c060c655ac53862d",
+      "output_geometry_sha256": "570459caf5e46601f244a22a98e402d808a37cac374675fef62e49b231f7dbc0",
+      "glb_sha256": "44f71b5dcab494776ac96f6a8de7cb7001da8cf4b43f3e4b41ed30f424a41546",
+      "silhouette": {
+        "front": {
+          "resolution": 192,
+          "iou": 0.9864591242723361,
+          "projected_area_ratio": 0.987213571338144
+        },
+        "side": {
+          "resolution": 192,
+          "iou": 0.9868330661781544,
+          "projected_area_ratio": 0.9870605748311004
+        },
+        "top": {
+          "resolution": 192,
+          "iou": 0.9840210212342874,
+          "projected_area_ratio": 0.9854310283561936
+        },
+        "below": {
+          "resolution": 192,
+          "iou": 0.9877834030376403,
+          "projected_area_ratio": 0.9901928374655647
+        }
+      },
+      "fusion": {
+        "version": "q3-partial-fusion-0.2.1",
+        "settings": {
+          "voxel_scale_ratio": 0.09,
+          "smooth_iterations": 6,
+          "smooth_factor": 0.5,
+          "max_primary_subtrees_per_group": 3,
+          "cleanup_edge_voxel_ratio": 0.01,
+          "max_grid_cells_per_group": 2000000,
+          "max_total_grid_cells": 12000000
+        },
+        "voxel_size_m": 0.11699999999999999,
+        "groups": [
+          {
+            "primary_indices": [
+              0,
+              2,
+              4
+            ],
+            "input_triangles": 840,
+            "remeshed_triangles": 35416,
+            "output_triangles": 838,
+            "estimated_grid_cells": 335104
+          },
+          {
+            "primary_indices": [
+              1,
+              3,
+              10
+            ],
+            "input_triangles": 860,
+            "remeshed_triangles": 38072,
+            "output_triangles": 858,
+            "estimated_grid_cells": 355904
+          },
+          {
+            "primary_indices": [
+              5,
+              7,
+              9
+            ],
+            "input_triangles": 800,
+            "remeshed_triangles": 25604,
+            "output_triangles": 800,
+            "estimated_grid_cells": 209040
+          },
+          {
+            "primary_indices": [
+              6,
+              8
+            ],
+            "input_triangles": 560,
+            "remeshed_triangles": 22608,
+            "output_triangles": 560,
+            "estimated_grid_cells": 201630
+          }
+        ],
+        "trunk_leaf_triangles_unchanged": 160
+      },
+      "game_camera_distance_m": 107.8228275,
+      "sources_sha256": {
+        "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+        "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+        "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+        "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4"
+      }
+    },
+    "viejo-03": {
+      "input_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 3003,
+        "parameters": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        }
+      },
+      "seeds": {
+        "structure": 552862479,
+        "foliage": 1971969871
+      },
+      "input_masses": 85,
+      "output_components": 6,
+      "input_leaf_triangles": 3140,
+      "output_leaf_triangles": 3140,
+      "total_triangles": 8432,
+      "wood_geometry_sha256": "2d1864168ba3c056ec36ad735edb4f451e6c46279eeb6b0378d9aaf2b0e54460",
+      "input_geometry_sha256": "22f1803019a0766dece332e40ca3697e31a5e2b50742346ada25190292130d93",
+      "output_geometry_sha256": "51dc8f7581ffc7c1dec63ea580c4c1eaf0303935de2c400b7389f8313da463e6",
+      "glb_sha256": "1b31da1e8a05a1881743cf63cf778bdaf31024258d7b3720cf73bf39d4d6aa29",
+      "silhouette": {
+        "front": {
+          "resolution": 192,
+          "iou": 0.9875919117647058,
+          "projected_area_ratio": 0.9875919117647058
+        },
+        "side": {
+          "resolution": 192,
+          "iou": 0.988277133825079,
+          "projected_area_ratio": 0.9898497231742683
+        },
+        "top": {
+          "resolution": 192,
+          "iou": 0.9869901278028622,
+          "projected_area_ratio": 0.9875985608206385
+        },
+        "below": {
+          "resolution": 192,
+          "iou": 0.9868580894533407,
+          "projected_area_ratio": 0.9877361617500828
+        }
+      },
+      "fusion": {
+        "version": "q3-partial-fusion-0.2.1",
+        "settings": {
+          "voxel_scale_ratio": 0.09,
+          "smooth_iterations": 6,
+          "smooth_factor": 0.5,
+          "max_primary_subtrees_per_group": 3,
+          "cleanup_edge_voxel_ratio": 0.01,
+          "max_grid_cells_per_group": 2000000,
+          "max_total_grid_cells": 12000000
+        },
+        "voxel_size_m": 0.11699999999999999,
+        "groups": [
+          {
+            "primary_indices": [
+              0,
+              2,
+              4
+            ],
+            "input_triangles": 820,
+            "remeshed_triangles": 33440,
+            "output_triangles": 820,
+            "estimated_grid_cells": 355656
+          },
+          {
+            "primary_indices": [
+              1,
+              3,
+              5
+            ],
+            "input_triangles": 840,
+            "remeshed_triangles": 28492,
+            "output_triangles": 840,
+            "estimated_grid_cells": 315684
+          },
+          {
+            "primary_indices": [
+              6,
+              8,
+              10
+            ],
+            "input_triangles": 780,
+            "remeshed_triangles": 27800,
+            "output_triangles": 780,
+            "estimated_grid_cells": 244800
+          },
+          {
+            "primary_indices": [
+              7,
+              9
+            ],
+            "input_triangles": 540,
+            "remeshed_triangles": 19992,
+            "output_triangles": 540,
+            "estimated_grid_cells": 170982
+          }
+        ],
+        "trunk_leaf_triangles_unchanged": 160
+      },
+      "game_camera_distance_m": 108.01347750000001,
+      "sources_sha256": {
+        "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+        "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+        "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+        "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4"
+      }
+    },
+    "adulto-00": {
+      "input_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 2000,
+        "parameters": {
+          "height_m": 10,
+          "base_radius_m": 0.5,
+          "curvature": 0.12,
+          "primary_branches": 9,
+          "max_depth": 2,
+          "branch_length_ratio": 0.5,
+          "inclination_deg": 65,
+          "asymmetry": 0.6,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.15
+        }
+      },
+      "seeds": {
+        "structure": 1115109329,
+        "foliage": 1342203788
+      },
+      "input_masses": 71,
+      "output_components": 7,
+      "input_leaf_triangles": 2620,
+      "output_leaf_triangles": 2618,
+      "total_triangles": 6982,
+      "wood_geometry_sha256": "5ec6e029e3223452fe1af6bf9817ba594a8a1b55a11fc3718f0e089e8e7c3352",
+      "input_geometry_sha256": "08abafe744b483a8fa01acfcef3981254e560c3eff72b195847d7026cee82486",
+      "output_geometry_sha256": "f58147bf6c21936684ced6abd72e1328b32cda1f3a6c4feab22c15df0c0f2166",
+      "glb_sha256": "7930f00c988f78be1a015919552ff2db0877c6e01fd454593bf3b0d0007dac54",
+      "silhouette": {
+        "front": {
+          "resolution": 192,
+          "iou": 0.9833152762730227,
+          "projected_area_ratio": 0.9837451235370611
+        },
+        "side": {
+          "resolution": 192,
+          "iou": 0.9857449224170556,
+          "projected_area_ratio": 0.9875
+        },
+        "top": {
+          "resolution": 192,
+          "iou": 0.983838089691322,
+          "projected_area_ratio": 0.9851387775916077
+        },
+        "below": {
+          "resolution": 192,
+          "iou": 0.9884564306875064,
+          "projected_area_ratio": 0.9894726083401472
+        }
+      },
+      "fusion": {
+        "version": "q3-partial-fusion-0.2.1",
+        "settings": {
+          "voxel_scale_ratio": 0.09,
+          "smooth_iterations": 6,
+          "smooth_factor": 0.5,
+          "max_primary_subtrees_per_group": 3,
+          "cleanup_edge_voxel_ratio": 0.01,
+          "max_grid_cells_per_group": 2000000,
+          "max_total_grid_cells": 12000000
+        },
+        "voxel_size_m": 0.1035,
+        "groups": [
+          {
+            "primary_indices": [
+              0,
+              2,
+              7
+            ],
+            "input_triangles": 860,
+            "remeshed_triangles": 46888,
+            "output_triangles": 860,
+            "estimated_grid_cells": 626808
+          },
+          {
+            "primary_indices": [
+              1,
+              3,
+              8
+            ],
+            "input_triangles": 800,
+            "remeshed_triangles": 44276,
+            "output_triangles": 800,
+            "estimated_grid_cells": 510340
+          },
+          {
+            "primary_indices": [
+              4,
+              6,
+              5
+            ],
+            "input_triangles": 800,
+            "remeshed_triangles": 48432,
+            "output_triangles": 798,
+            "estimated_grid_cells": 644100
+          }
+        ],
+        "trunk_leaf_triangles_unchanged": 160
+      },
+      "game_camera_distance_m": 103.60340250000002,
+      "sources_sha256": {
+        "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+        "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+        "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+        "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4"
+      }
+    }
+  },
+  "q3_reproduced": true,
+  "fusion_reproduced": true,
+  "godot": {
+    "assets": {
+      "adulto-00-base": {
+        "cameras": {
+          "game": {
+            "fov": 39.5977516174316,
+            "position": [
+              58.4041137695312,
+              34.107780456543,
+              80.0861053466797
+            ],
+            "rotation": [
+              -0.284787863492966,
+              0.625485002994537,
+              0.0
+            ]
+          },
+          "perspective": {
+            "fov": 39.5977516174316,
+            "position": [
+              19.5937404632568,
+              14.7025928497314,
+              26.3486633300781
+            ],
+            "rotation": [
+              -0.284787863492966,
+              0.625485002994537,
+              0.0
+            ]
+          }
+        },
+        "height_m": 10.0000009536743,
+        "materials": {
+          "Oak_Bark": 4364,
+          "Oak_Leaves": 2620
+        },
+        "triangles": 6984
+      },
+      "adulto-00-fused": {
+        "cameras": {
+          "game": {
+            "fov": 39.5977516174316,
+            "position": [
+              58.4041137695312,
+              34.107780456543,
+              80.0861053466797
+            ],
+            "rotation": [
+              -0.284787863492966,
+              0.625485002994537,
+              0.0
+            ]
+          },
+          "perspective": {
+            "fov": 39.5977516174316,
+            "position": [
+              19.5937404632568,
+              14.7025928497314,
+              26.3486633300781
+            ],
+            "rotation": [
+              -0.284787863492966,
+              0.625485002994537,
+              0.0
+            ]
+          }
+        },
+        "height_m": 10.0,
+        "materials": {
+          "Oak_Bark": 4364,
+          "Oak_Leaves": 2618
+        },
+        "triangles": 6982
+      },
+      "viejo-00-base": {
+        "cameras": {
+          "game": {
+            "fov": 39.5977516174316,
+            "position": [
+              61.2163963317871,
+              34.7932434082031,
+              84.0742263793945
+            ],
+            "rotation": [
+              -0.284787863492966,
+              0.625485002994537,
+              0.0
+            ]
+          },
+          "perspective": {
+            "fov": 39.5977516174316,
+            "position": [
+              20.825403213501,
+              14.5977478027344,
+              28.1482334136963
+            ],
+            "rotation": [
+              -0.28478792309761,
+              0.625485062599182,
+              0.0
+            ]
+          }
+        },
+        "height_m": 9.00000095367432,
+        "materials": {
+          "Oak_Bark": 5292,
+          "Oak_Leaves": 3220
+        },
+        "triangles": 8512
+      },
+      "viejo-00-fused": {
+        "cameras": {
+          "game": {
+            "fov": 39.5977516174316,
+            "position": [
+              61.2163963317871,
+              34.7932434082031,
+              84.0742263793945
+            ],
+            "rotation": [
+              -0.284787863492966,
+              0.625485002994537,
+              0.0
+            ]
+          },
+          "perspective": {
+            "fov": 39.5977516174316,
+            "position": [
+              20.825403213501,
+              14.5977478027344,
+              28.1482334136963
+            ],
+            "rotation": [
+              -0.28478792309761,
+              0.625485062599182,
+              0.0
+            ]
+          }
+        },
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 5292,
+          "Oak_Leaves": 3216
+        },
+        "triangles": 8508
+      },
+      "viejo-03-base": {
+        "cameras": {
+          "game": {
+            "fov": 39.5977516174316,
+            "position": [
+              60.8140411376953,
+              34.8468055725098,
+              84.151008605957
+            ],
+            "rotation": [
+              -0.284787863492966,
+              0.625485002994537,
+              0.0
+            ]
+          },
+          "perspective": {
+            "fov": 39.5977516174316,
+            "position": [
+              20.3516330718994,
+              14.6156024932861,
+              28.1261310577393
+            ],
+            "rotation": [
+              -0.284787893295288,
+              0.625485062599182,
+              0.0
+            ]
+          }
+        },
+        "height_m": 9.00000095367432,
+        "materials": {
+          "Oak_Bark": 5292,
+          "Oak_Leaves": 3140
+        },
+        "triangles": 8432
+      },
+      "viejo-03-fused": {
+        "cameras": {
+          "game": {
+            "fov": 39.5977516174316,
+            "position": [
+              60.8140411376953,
+              34.8468055725098,
+              84.151008605957
+            ],
+            "rotation": [
+              -0.284787863492966,
+              0.625485002994537,
+              0.0
+            ]
+          },
+          "perspective": {
+            "fov": 39.5977516174316,
+            "position": [
+              20.3516330718994,
+              14.6156024932861,
+              28.1261310577393
+            ],
+            "rotation": [
+              -0.284787893295288,
+              0.625485062599182,
+              0.0
+            ]
+          }
+        },
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 5292,
+          "Oak_Leaves": 3140
+        },
+        "triangles": 8432
+      },
+      "viejo-09-base": {
+        "cameras": {
+          "game": {
+            "fov": 39.5977516174316,
+            "position": [
+              57.9504814147949,
+              32.9023056030273,
+              78.967643737793
+            ],
+            "rotation": [
+              -0.284787893295288,
+              0.625485002994537,
+              0.0
+            ]
+          },
+          "perspective": {
+            "fov": 39.5977516174316,
+            "position": [
+              20.0807399749756,
+              13.967435836792,
+              26.5326137542725
+            ],
+            "rotation": [
+              -0.284787893295288,
+              0.625485002994537,
+              0.0
+            ]
+          }
+        },
+        "height_m": 9.00000095367432,
+        "materials": {
+          "Oak_Bark": 5292,
+          "Oak_Leaves": 3220
+        },
+        "triangles": 8512
+      },
+      "viejo-09-fused": {
+        "cameras": {
+          "game": {
+            "fov": 39.5977516174316,
+            "position": [
+              57.9504814147949,
+              32.9023056030273,
+              78.967643737793
+            ],
+            "rotation": [
+              -0.284787893295288,
+              0.625485002994537,
+              0.0
+            ]
+          },
+          "perspective": {
+            "fov": 39.5977516174316,
+            "position": [
+              20.0807399749756,
+              13.967435836792,
+              26.5326137542725
+            ],
+            "rotation": [
+              -0.284787893295288,
+              0.625485002994537,
+              0.0
+            ]
+          }
+        },
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 5292,
+          "Oak_Leaves": 3220
+        },
+        "triangles": 8512
+      }
+    },
+    "godot": "4.7.2-stable (official)",
+    "passed": true
+  },
+  "godot_same_cameras_per_pair": true,
+  "saved_meshes": {
+    "viejo-09": {
+      "saved_mesh_matches_manifest": true,
+      "wood_surface_unchanged": true,
+      "input_q3_mesh_and_attributes_unchanged": true,
+      "input_sha256": "d1eec074f7fa4c0af3afdbfb3f9754a8ce79502346fd97b35f971f51e4c71694",
+      "parameters_seeds_normalization_structure_unchanged": true,
+      "source_files_unchanged": true,
+      "frozen_cameras_match": true
+    },
+    "viejo-00": {
+      "saved_mesh_matches_manifest": true,
+      "wood_surface_unchanged": true,
+      "input_q3_mesh_and_attributes_unchanged": true,
+      "input_sha256": "6044677c35ed06e1b9d2a4a0f6e64fb7f98914b7f7eeb39e1e680e6ef5ac88b6",
+      "parameters_seeds_normalization_structure_unchanged": true,
+      "source_files_unchanged": true,
+      "frozen_cameras_match": true
+    },
+    "viejo-03": {
+      "saved_mesh_matches_manifest": true,
+      "wood_surface_unchanged": true,
+      "input_q3_mesh_and_attributes_unchanged": true,
+      "input_sha256": "08ce306d7e1a25f96cfbb152e7ef53255970333cb06e1b2fcb3959bef5addd50",
+      "parameters_seeds_normalization_structure_unchanged": true,
+      "source_files_unchanged": true,
+      "frozen_cameras_match": true
+    },
+    "adulto-00": {
+      "saved_mesh_matches_manifest": true,
+      "wood_surface_unchanged": true,
+      "input_q3_mesh_and_attributes_unchanged": true,
+      "input_sha256": "068f092dbd3af5224e9c661965c0cce40b9ef1fa8538f8a6ed9b17ebcbe3a598",
+      "parameters_seeds_normalization_structure_unchanged": true,
+      "source_files_unchanged": true,
+      "frozen_cameras_match": true
+    }
+  },
+  "godot_visual_captures_generated": true,
+  "user_visual_acceptance": "pending",
+  "full_batch_generated": false,
+  "verification_sources_sha256": {
+    "scripts/verify_fusion.py": "fd976bfcce144a794b77917d83912529744dadd8037cae5dc462ed7b12a6161d",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "godot/verify_fusion.gd": "ccf532928646c62bf8565e1c1fc77547d506869296db8941c5fb0de94234d86a"
+  }
+}

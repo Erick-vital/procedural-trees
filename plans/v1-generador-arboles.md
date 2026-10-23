@@ -2,7 +2,7 @@
 
 Fecha: 2026-10-22  
 Revisión: foco en assets de árboles; arquitectura híbrida con Geometry Nodes, automatización con `bpy` y reglas espaciales en Python.  
-Estado: F0–F2 verificadas; Q1 0.2.0 rechazada estéticamente por el usuario. Q1b 0.2.1 y copa ajustada Q2 0.3.0 aprobadas por el usuario. En la revisión posterior, el usuario identifica Q3 0.4.0 como última iteración buena y rechaza estéticamente Q3b 0.4.1, que permanece verificada técnicamente. Se discuten alternativas de follaje sin autorizar una nueva implementación. F4–F6 pendientes; F3 diferida fuera del alcance activo. Informes [F0](../docs/evidence/f0/informe.md), [F1](../docs/evidence/f1/informe.md), [F2](../docs/evidence/f2/informe.md) y [Q3b](../docs/evidence/q3b/informe.md).
+Estado: F0–F2 verificadas; Q1 0.2.0 rechazada estéticamente por el usuario. Q1b 0.2.1 y copa ajustada Q2 0.3.0 aprobadas por el usuario. El usuario identifica Q3 0.4.0 como última iteración buena y rechaza estéticamente Q3b 0.4.1, que permanece verificada técnicamente. Autoriza una prueba acotada de fusión parcial desde Q3, descrita abajo. F4–F6 pendientes; F3 diferida fuera del alcance activo. Informes [F0](../docs/evidence/f0/informe.md), [F1](../docs/evidence/f1/informe.md), [F2](../docs/evidence/f2/informe.md) y [Q3b](../docs/evidence/q3b/informe.md).
 
 ## Cambio de alcance vigente — 2026-10-22
 
@@ -79,6 +79,19 @@ Implementar grupos con escala/cantidad derivadas del radio nativo de cada rama y
 Q3b conserva la madera completa Q2/Q3 y las seis formas Q3. Los radios reales modulan tamaño/cantidad y posición; varían espesor vertical y margen superior. Una secundaria por primaria queda sin hojas; con poca densidad, los grupos se desplazan hacia las puntas y su escala baja un 10 %. Máximos 1/3/2 masas por tronco/primaria/secundaria y dos secundarias foliadas por padre: hasta 85 masas y límite derivado de 8956 triángulos/dos materiales.
 
 Pasaron dieciocho pruebas, repetición, diez parámetros y seis extremos (máximo observado 8116 triángulos). Los treinta modelos son válidos/distintos e importados/capturados en Godot. Los treinta muestran mayor dispersión vertical de grupos y más madera visible en la vista inferior medida; la correlación entre radio de primaria y volumen sumado de follaje es 0.832–0.995. Son diagnósticos reproducibles con límites de vista/resolución, no aceptación estética ni mejora de FPS. El agente revisó comparaciones y galerías; el usuario aún debe valorar Q3b. Véase el [informe Q3b](../docs/evidence/q3b/informe.md).
+
+### Ensayo de fusión parcial desde Q3 — autorizado el 2026-10-22
+
+El usuario rechaza Q3b y autoriza conservar el estado actual en Git antes de experimentar. Commit inicial `fbe87a4`, con fuentes históricas y evidencia seleccionada; `.gitignore` excluye resultados regenerables y configuración privada. Q3 sigue siendo la referencia visual; este ensayo no promueve Q3b ni inicia F4–F6.
+
+1. Congelar la referencia Q3 con hashes de malla, archivos, especificación, semillas, cámaras e iluminación. Mantener sus fuentes y resultados originales intactos.
+2. Probar primero `viejo-09`, sin cambiar madera, densidad, distribución ni tamaños de las masas de entrada. Cambiar solo la representación superficial: unión por vóxeles de grupos de hasta tres subárboles vecinos, suavizado acotado y reducción de caras dentro del presupuesto original. Conservar separaciones entre grupos y follaje del tronco. El primer piloto por primaria produjo un cambio visual pequeño; la agrupación vecina se evalúa sobre el mismo caso antes de ampliar controles.
+3. Revisar frente, perfil, arriba, abajo y perspectiva, incluyendo una toma distante con focal de 50 mm. Usar las cámaras históricas Q3 para las cuatro vistas existentes; congelar también las nuevas tomas antes de fusionar. Medir silueta con máscaras de rayos y comprobar madera idéntica y GLB válido, sin confundir esas métricas con aceptación estética.
+4. Solo si el piloto promete visualmente, comprobar `viejo-00`, `viejo-03` y `adulto-00` con la misma regla. No extender al lote de treinta ni sustituir el generador principal en esta prueba.
+
+El ensayo se ejecuta como posprocesado explícito `q3-partial-fusion-0.2.1`, separado del generador Q3. La especificación conservada describe la entrada Q3; el manifiesto del candidato registra además versión, configuración y procedencia del posprocesado. No se amplía el contrato de producción para un experimento todavía sin aceptación.
+
+Resultado: piloto y tres controles completados, con revisión de capturas Blender/Godot. Madera y sombreado idénticos, entradas Q3 conservadas y cuatro GLB válidos; ocho bases/candidatos importados en Godot. Reproducción idéntica de Q3 y fusión sobre viejo-09. IoU mínima de silueta 98.33 % en cuatro vistas. El cambio visual es moderado y todavía conserva piezas reconocibles; queda pendiente la valoración del usuario, sin extensión al lote ni promoción. [Informe y reproducción](../docs/evidence/q3-fusion/informe.md).
 
 ## 1. Objetivo y demostración final
 

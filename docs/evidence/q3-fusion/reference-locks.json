@@ -1,0 +1,958 @@
+{
+  "viejo-09": {
+    "source_files_sha256": {
+      "manifest.json": "e5e27b8312c3c74c2be003d6cdfe8654bdf3adb424d02c9fb277fbc7322fe82a",
+      "tree.blend": "52229ad14106176720db2df4b7b098d50d9a792fd9bde2ad83c8b75b600daaf8",
+      "tree.glb": "f37632d345072c83b8c7a04b2162f25902ae180d134ac8d6d6fd14d035d1df23"
+    },
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3009,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    },
+    "seeds": {
+      "structure": 669423365,
+      "foliage": 927115663
+    },
+    "framing": {
+      "center": [
+        1.14587,
+        -0.3150989999999996,
+        4.5000005
+      ],
+      "span": 13.478988000000001
+    },
+    "cameras": {
+      "perspective": {
+        "type": "PERSP",
+        "location": [
+          19.135129928588867,
+          -25.22330665588379,
+          18.337892532348633
+        ],
+        "rotation_euler": [
+          1.147628664970398,
+          8.242239601941037e-08,
+          0.6254850029945374
+        ],
+        "ortho_scale": 16.174785614013672,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "front": {
+        "type": "ORTHO",
+        "location": [
+          1.1458699703216553,
+          -34.01256561279297,
+          4.500000476837158
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 16.174785614013672,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "side": {
+        "type": "ORTHO",
+        "location": [
+          34.84333801269531,
+          -0.31509900093078613,
+          4.500000476837158
+        ],
+        "rotation_euler": [
+          1.5707963705062866,
+          -0.0,
+          1.5707963705062866
+        ],
+        "ortho_scale": 16.174785614013672,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "top": {
+        "type": "ORTHO",
+        "location": [
+          1.1458699703216553,
+          -0.31509900093078613,
+          38.19746780395508
+        ],
+        "rotation_euler": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 16.174785614013672,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "below": {
+        "type": "ORTHO",
+        "location": [
+          20.080739974975586,
+          -26.53261375427246,
+          -4.967434406280518
+        ],
+        "rotation_euler": [
+          1.8555842638015747,
+          3.227996003829503e-08,
+          0.6254851222038269
+        ],
+        "ortho_scale": 16.174785614013672,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "game": {
+        "type": "PERSP",
+        "location": [
+          57.95048141479492,
+          -78.96764373779297,
+          32.902305603027344
+        ],
+        "rotation_euler": [
+          1.2860084772109985,
+          1.969597107631671e-08,
+          0.6254850029945374
+        ],
+        "lens_mm": 50.0,
+        "ortho_scale": 16.174785614013672,
+        "resolution": [
+          900,
+          900
+        ]
+      }
+    },
+    "lighting": {
+      "engine": "BLENDER_WORKBENCH",
+      "shading": {
+        "light": "STUDIO",
+        "studio_light": "Default",
+        "studiolight_rotate_z": 0.5,
+        "color_type": "MATERIAL",
+        "show_shadows": true,
+        "show_cavity": true,
+        "cavity_type": "BOTH",
+        "background_type": "WORLD",
+        "curvature_ridge_factor": 0.0,
+        "curvature_valley_factor": 0.0,
+        "cavity_ridge_factor": 1.0,
+        "cavity_valley_factor": 1.0
+      },
+      "world_color": [
+        0.09000000357627869,
+        0.10999999940395355,
+        0.14000000059604645
+      ],
+      "view_transform": "AgX",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0,
+      "materials": {
+        "Oak_Leaves": [
+          0.23000000417232513,
+          0.4300000071525574,
+          0.06499999761581421,
+          1.0
+        ],
+        "Oak_Bark": [
+          0.23999999463558197,
+          0.10499999672174454,
+          0.04500000178813934,
+          1.0
+        ]
+      }
+    },
+    "materials_source": "Q3 guardada, sin cambios",
+    "historical_cameras_sha256": "78efafd6dae800d6a7d88a1c8c5294439061bb9951de9bdbd0aef104de24c787",
+    "generator_sources_sha256": {
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e"
+    },
+    "input_geometry_sha256": "f9a1821a6c00cdf74de2b150d07cb289a1bbd938b8c08e87b33574ba25e6b7b5",
+    "input_foliage_checks": {
+      "mass_count": 89,
+      "triangles_expected": 3220,
+      "counts_by_level": {
+        "trunk": 2,
+        "primary": 30,
+        "secondary": 57
+      },
+      "counts_by_role": {
+        "dominant": 11,
+        "medium": 46,
+        "small": 32
+      },
+      "families": {
+        "0": 7,
+        "1": 10,
+        "2": 4,
+        "3": 3,
+        "4": 38,
+        "5": 27
+      },
+      "high_detail_masses": 24,
+      "branch_count_histogram": {
+        "trunk": {
+          "2": 1
+        },
+        "primary": {
+          "2": 3,
+          "3": 8
+        },
+        "secondary": {
+          "1": 9,
+          "2": 24
+        }
+      }
+    }
+  },
+  "viejo-00": {
+    "source_files_sha256": {
+      "manifest.json": "d19e9465f35a68f40c760bb68652227691faea9cdb49114aa9385cb0db70786e",
+      "tree.blend": "52ed7dcc134c28e167a1ab0ecc7a342346a4226ec86bbecb046cdbf80f935981",
+      "tree.glb": "7ef2bec1e6d8233fb5879bb65f0a123a31c875dea740ce58449f028ff20d6d9d"
+    },
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3000,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    },
+    "seeds": {
+      "structure": 1212972345,
+      "foliage": 1758731391
+    },
+    "framing": {
+      "center": [
+        0.6299079999999999,
+        -0.18523949999999978,
+        4.5000005
+      ],
+      "span": 14.376377
+    },
+    "cameras": {
+      "perspective": {
+        "type": "PERSP",
+        "location": [
+          19.816837310791016,
+          -26.751760482788086,
+          19.259178161621094
+        ],
+        "rotation_euler": [
+          1.1476285457611084,
+          1.4059821751288837e-08,
+          0.6254849433898926
+        ],
+        "ortho_scale": 17.251651763916016,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "front": {
+        "type": "ORTHO",
+        "location": [
+          0.62990802526474,
+          -36.12617874145508,
+          4.500000476837158
+        ],
+        "rotation_euler": [
+          1.570796251296997,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 17.251651763916016,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "side": {
+        "type": "ORTHO",
+        "location": [
+          36.57085037231445,
+          -0.1852394938468933,
+          4.500000476837158
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -5.960463766996327e-08,
+          1.5707963705062866
+        ],
+        "ortho_scale": 17.251651763916016,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "top": {
+        "type": "ORTHO",
+        "location": [
+          0.62990802526474,
+          -0.1852394938468933,
+          40.440940856933594
+        ],
+        "rotation_euler": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 17.251651763916016,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "below": {
+        "type": "ORTHO",
+        "location": [
+          20.825403213500977,
+          -28.14823341369629,
+          -5.597747325897217
+        ],
+        "rotation_euler": [
+          1.8555841445922852,
+          -1.4777535639609596e-08,
+          0.6254850625991821
+        ],
+        "ortho_scale": 17.251651763916016,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "game": {
+        "type": "PERSP",
+        "location": [
+          61.21639633178711,
+          -84.07422637939453,
+          34.793243408203125
+        ],
+        "rotation_euler": [
+          1.286008596420288,
+          1.3037237067692331e-08,
+          0.6254850029945374
+        ],
+        "lens_mm": 50.0,
+        "ortho_scale": 17.251651763916016,
+        "resolution": [
+          900,
+          900
+        ]
+      }
+    },
+    "lighting": {
+      "engine": "BLENDER_WORKBENCH",
+      "shading": {
+        "light": "STUDIO",
+        "studio_light": "Default",
+        "studiolight_rotate_z": 0.5,
+        "color_type": "MATERIAL",
+        "show_shadows": true,
+        "show_cavity": true,
+        "cavity_type": "BOTH",
+        "background_type": "WORLD",
+        "curvature_ridge_factor": 0.0,
+        "curvature_valley_factor": 0.0,
+        "cavity_ridge_factor": 1.0,
+        "cavity_valley_factor": 1.0
+      },
+      "world_color": [
+        0.09000000357627869,
+        0.10999999940395355,
+        0.14000000059604645
+      ],
+      "view_transform": "AgX",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0,
+      "materials": {
+        "Oak_Leaves": [
+          0.23000000417232513,
+          0.4300000071525574,
+          0.06499999761581421,
+          1.0
+        ],
+        "Oak_Bark": [
+          0.23999999463558197,
+          0.10499999672174454,
+          0.04500000178813934,
+          1.0
+        ]
+      }
+    },
+    "materials_source": "Q3 guardada, sin cambios",
+    "historical_cameras_sha256": "f31086118e4bb00234fcd1feda39462c8ea970e7441010845092329f101768d1",
+    "generator_sources_sha256": {
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e"
+    },
+    "input_geometry_sha256": "c4615111170f1b5f0276ab297e8791571a4faeaa7d569082c060c655ac53862d",
+    "input_foliage_checks": {
+      "mass_count": 89,
+      "triangles_expected": 3220,
+      "counts_by_level": {
+        "trunk": 2,
+        "primary": 29,
+        "secondary": 58
+      },
+      "counts_by_role": {
+        "dominant": 11,
+        "medium": 46,
+        "small": 32
+      },
+      "families": {
+        "0": 5,
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 32,
+        "5": 33
+      },
+      "high_detail_masses": 24,
+      "branch_count_histogram": {
+        "trunk": {
+          "2": 1
+        },
+        "primary": {
+          "2": 4,
+          "3": 7
+        },
+        "secondary": {
+          "1": 8,
+          "2": 25
+        }
+      }
+    }
+  },
+  "viejo-03": {
+    "source_files_sha256": {
+      "manifest.json": "d5e33ec42ea5a450bb43c7e0922ebc37a879baa0dc1daa1b185f13992069a38e",
+      "tree.blend": "fd2ba8a6f90a0556501b886e3140ba6a946fb898945cfb3164a99482317f738e",
+      "tree.glb": "f37d57f9b4da391041d146bef84b76546f08208c8ff88514c2a4b6274cbeef62"
+    },
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3003,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    },
+    "seeds": {
+      "structure": 552862479,
+      "foliage": 1971969871
+    },
+    "framing": {
+      "center": [
+        0.12042850000000005,
+        -0.11369350000000011,
+        4.5000005
+      ],
+      "span": 14.401797
+    },
+    "cameras": {
+      "perspective": {
+        "type": "PERSP",
+        "location": [
+          19.341283798217773,
+          -26.72718620300293,
+          19.285274505615234
+        ],
+        "rotation_euler": [
+          1.1476285457611084,
+          -6.045119249620257e-08,
+          0.6254849433898926
+        ],
+        "ortho_scale": 17.282155990600586,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "front": {
+        "type": "ORTHO",
+        "location": [
+          0.12042850255966187,
+          -36.118186950683594,
+          4.500000476837158
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 17.282155990600586,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "side": {
+        "type": "ORTHO",
+        "location": [
+          36.12492370605469,
+          -0.11369349807500839,
+          4.500000476837158
+        ],
+        "rotation_euler": [
+          1.5707963705062866,
+          -0.0,
+          1.5707963705062866
+        ],
+        "ortho_scale": 17.282155990600586,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "top": {
+        "type": "ORTHO",
+        "location": [
+          0.12042850255966187,
+          -0.11369349807500839,
+          40.504493713378906
+        ],
+        "rotation_euler": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 17.282155990600586,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "below": {
+        "type": "ORTHO",
+        "location": [
+          20.351633071899414,
+          -28.126131057739258,
+          -5.615602016448975
+        ],
+        "rotation_euler": [
+          1.8555841445922852,
+          7.696542070334544e-08,
+          0.6254850625991821
+        ],
+        "ortho_scale": 17.282155990600586,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "game": {
+        "type": "PERSP",
+        "location": [
+          60.81404113769531,
+          -84.15100860595703,
+          34.846805572509766
+        ],
+        "rotation_euler": [
+          1.286008596420288,
+          -9.656584865069817e-09,
+          0.6254850029945374
+        ],
+        "lens_mm": 50.0,
+        "ortho_scale": 17.282155990600586,
+        "resolution": [
+          900,
+          900
+        ]
+      }
+    },
+    "lighting": {
+      "engine": "BLENDER_WORKBENCH",
+      "shading": {
+        "light": "STUDIO",
+        "studio_light": "Default",
+        "studiolight_rotate_z": 0.5,
+        "color_type": "MATERIAL",
+        "show_shadows": true,
+        "show_cavity": true,
+        "cavity_type": "BOTH",
+        "background_type": "WORLD",
+        "curvature_ridge_factor": 0.0,
+        "curvature_valley_factor": 0.0,
+        "cavity_ridge_factor": 1.0,
+        "cavity_valley_factor": 1.0
+      },
+      "world_color": [
+        0.09000000357627869,
+        0.10999999940395355,
+        0.14000000059604645
+      ],
+      "view_transform": "AgX",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0,
+      "materials": {
+        "Oak_Leaves": [
+          0.23000000417232513,
+          0.4300000071525574,
+          0.06499999761581421,
+          1.0
+        ],
+        "Oak_Bark": [
+          0.23999999463558197,
+          0.10499999672174454,
+          0.04500000178813934,
+          1.0
+        ]
+      }
+    },
+    "materials_source": "Q3 guardada, sin cambios",
+    "historical_cameras_sha256": "594a4bc3f783efb1cd6da1bd7433363298bc338580e49fc2918f18f024dfbc0f",
+    "generator_sources_sha256": {
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a"
+    },
+    "input_geometry_sha256": "22f1803019a0766dece332e40ca3697e31a5e2b50742346ada25190292130d93",
+    "input_foliage_checks": {
+      "mass_count": 85,
+      "triangles_expected": 3140,
+      "counts_by_level": {
+        "trunk": 2,
+        "primary": 30,
+        "secondary": 53
+      },
+      "counts_by_role": {
+        "dominant": 11,
+        "medium": 46,
+        "small": 28
+      },
+      "families": {
+        "0": 3,
+        "1": 10,
+        "2": 3,
+        "3": 8,
+        "4": 29,
+        "5": 32
+      },
+      "high_detail_masses": 24,
+      "branch_count_histogram": {
+        "trunk": {
+          "2": 1
+        },
+        "primary": {
+          "2": 3,
+          "3": 8
+        },
+        "secondary": {
+          "1": 13,
+          "2": 20
+        }
+      }
+    }
+  },
+  "adulto-00": {
+    "source_files_sha256": {
+      "manifest.json": "170d0a6cb9d4c13aed91912cba1961c8891194474008aaa5e55591b52fc15ef7",
+      "tree.blend": "8ed47b3e50acb4234fc56a926e189c3e50b9ca8c401b21f1fe93c175248b13be",
+      "tree.glb": "605e7033b2b51b6531e6b9df5c5197b57fcd0d34189de424cb373a2c84abc8b8"
+    },
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2000,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    },
+    "seeds": {
+      "structure": 1115109329,
+      "foliage": 1342203788
+    },
+    "framing": {
+      "center": [
+        0.1885555000000001,
+        0.520057,
+        5.0000005
+      ],
+      "span": 13.813787000000001
+    },
+    "cameras": {
+      "perspective": {
+        "type": "PERSP",
+        "location": [
+          18.624643325805664,
+          -25.0068359375,
+          19.181608200073242
+        ],
+        "rotation_euler": [
+          1.147628664970398,
+          2.7821108972148068e-08,
+          0.6254850625991821
+        ],
+        "ortho_scale": 16.5765438079834,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "front": {
+        "type": "ORTHO",
+        "location": [
+          0.1885554939508438,
+          -34.01441192626953,
+          5.000000476837158
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 16.5765438079834,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "side": {
+        "type": "ORTHO",
+        "location": [
+          34.723026275634766,
+          0.5200570225715637,
+          5.000000476837158
+        ],
+        "rotation_euler": [
+          1.5707963705062866,
+          -0.0,
+          1.5707963705062866
+        ],
+        "ortho_scale": 16.5765438079834,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "top": {
+        "type": "ORTHO",
+        "location": [
+          0.1885554939508438,
+          0.5200570225715637,
+          39.53446960449219
+        ],
+        "rotation_euler": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 16.5765438079834,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "below": {
+        "type": "ORTHO",
+        "location": [
+          19.593740463256836,
+          -26.348663330078125,
+          -4.702592372894287
+        ],
+        "rotation_euler": [
+          1.8555841445922852,
+          2.026609102756538e-08,
+          0.6254850625991821
+        ],
+        "ortho_scale": 16.5765438079834,
+        "lens_mm": 50.0,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "game": {
+        "type": "PERSP",
+        "location": [
+          58.40411376953125,
+          -80.08610534667969,
+          34.10778045654297
+        ],
+        "rotation_euler": [
+          1.286008596420288,
+          -3.965517691995046e-09,
+          0.6254850625991821
+        ],
+        "lens_mm": 50.0,
+        "ortho_scale": 16.5765438079834,
+        "resolution": [
+          900,
+          900
+        ]
+      }
+    },
+    "lighting": {
+      "engine": "BLENDER_WORKBENCH",
+      "shading": {
+        "light": "STUDIO",
+        "studio_light": "Default",
+        "studiolight_rotate_z": 0.5,
+        "color_type": "MATERIAL",
+        "show_shadows": true,
+        "show_cavity": true,
+        "cavity_type": "BOTH",
+        "background_type": "WORLD",
+        "curvature_ridge_factor": 0.0,
+        "curvature_valley_factor": 0.0,
+        "cavity_ridge_factor": 1.0,
+        "cavity_valley_factor": 1.0
+      },
+      "world_color": [
+        0.09000000357627869,
+        0.10999999940395355,
+        0.14000000059604645
+      ],
+      "view_transform": "AgX",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0,
+      "materials": {
+        "Oak_Leaves": [
+          0.23000000417232513,
+          0.4300000071525574,
+          0.06499999761581421,
+          1.0
+        ],
+        "Oak_Bark": [
+          0.23999999463558197,
+          0.10499999672174454,
+          0.04500000178813934,
+          1.0
+        ]
+      }
+    },
+    "materials_source": "Q3 guardada, sin cambios",
+    "historical_cameras_sha256": "a580492fb135c4672d6be1191a7f4e6d40861c5c40b05ba7b79bc2b1f7d51b39",
+    "generator_sources_sha256": {
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e"
+    },
+    "input_geometry_sha256": "08abafe744b483a8fa01acfcef3981254e560c3eff72b195847d7026cee82486",
+    "input_foliage_checks": {
+      "mass_count": 71,
+      "triangles_expected": 2620,
+      "counts_by_level": {
+        "trunk": 2,
+        "primary": 23,
+        "secondary": 46
+      },
+      "counts_by_role": {
+        "dominant": 9,
+        "medium": 38,
+        "small": 24
+      },
+      "families": {
+        "0": 6,
+        "1": 5,
+        "2": 7,
+        "3": 2,
+        "4": 27,
+        "5": 24
+      },
+      "high_detail_masses": 20,
+      "branch_count_histogram": {
+        "trunk": {
+          "2": 1
+        },
+        "primary": {
+          "2": 4,
+          "3": 5
+        },
+        "secondary": {
+          "1": 8,
+          "2": 19
+        }
+      }
+    }
+  }
+}

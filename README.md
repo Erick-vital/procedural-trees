@@ -2,7 +2,7 @@
 
 Experimento Python/Blender → GLB → Godot. Estado y alcance: [ESTADO.md](ESTADO.md) y [plan v1](plans/v1-generador-arboles.md).
 
-F0–F2 y Q1–Q3b implementadas y verificadas técnicamente: contrato validado, generador propio de Geometry Nodes, ejecutor con CLI/API local y lotes de 30 variantes exportadas, evaluadas e importadas en Godot. Q1 0.2.0 fue rechazada por su forma estrecha; Q1b 0.2.1 y la copa ajustada Q2 0.3.0 fueron aprobadas por el usuario. Q3 0.4.0 aportó volumen, pero el usuario pidió abrir la copa y mostrar más estructura. La revisión Q3b 0.4.1 liga el follaje al grosor de rama y escalona sus grupos; su valoración estética está pendiente. La madera Q2 se conserva exactamente y las versiones anteriores quedan reconstruibles. El foco vigente son los árboles: F3/bosque, mapa y terreno se difieren a otro proyecto; siguen pendientes los experimentos de IA y simplificación de F4–F6.
+F0–F2 y Q1–Q3b implementadas y verificadas técnicamente: contrato validado, generador propio de Geometry Nodes, ejecutor con CLI/API local y lotes de 30 variantes exportadas, evaluadas e importadas en Godot. Q1 0.2.0 fue rechazada por su forma estrecha; Q1b 0.2.1 y la copa ajustada Q2 0.3.0 fueron aprobadas por el usuario. El usuario identifica **Q3 0.4.0 como última iteración buena y rechaza estéticamente Q3b 0.4.1**. El ensayo de fusión parcial desde Q3 tiene cuatro controles verificados y capturas comparables, con valoración estética pendiente: [informe](docs/evidence/q3-fusion/informe.md). Para generar Q3 usar `presets/v0.4.0/`; los presets principales aún apuntan a Q3b y no se promueve el ensayo. La madera Q2 y las fuentes históricas se conservan exactamente. El foco vigente son los árboles: F3/bosque, mapa y terreno se difieren a otro proyecto; siguen pendientes F4–F6.
 
 ## Entorno fijado
 
@@ -195,7 +195,7 @@ Pasaron dieciocho pruebas unitarias y los treinta modelos son válidos, distinto
 
 [Informe Q3](docs/evidence/q3/informe.md), [comparación frontal Q2/Q3](docs/evidence/q3/comparison-front.jpg), [vista superior](docs/evidence/q3/comparison-top.jpg), [familias de formas](docs/evidence/q3/shape-families.jpg) y [galería Godot](docs/evidence/q3/gallery-godot.jpg). Resultados completos: `artifacts/q3/acceptance/`; comparación en `comparison/index.html`, modelos en `lote/` e importados en `godot/q3/`.
 
-Q3 queda pendiente de valoración estética del usuario. La fusión parcial de masas permanece como posible ensayo posterior; F4–F6 no forman parte de esta implementación.
+El usuario identifica posteriormente Q3 como última iteración buena y rechaza la apertura Q3b. Q3 queda como referencia del ensayo de fusión parcial descrito abajo; F4–F6 siguen pendientes.
 
 ## Q3b: copa abierta y grupos según grosor
 
@@ -219,4 +219,20 @@ python3 scripts/make_gallery.py artifacts/mi-aceptacion-q3b/lote --godot
 
 Pasaron dieciocho pruebas y treinta modelos válidos/distintos e importados/capturados en Godot. Los treinta conservan la madera completa Q2/Q3 y muestran mayor dispersión vertical de grupos y más madera visible en la vista inferior medida; no se afirma mejora en todos los ángulos. Jóvenes: 2604 triángulos/13 masas; adultos: 5784–5924/32–33; viejos: 7032–7212/39–42. Máximo de extremos: 8116 triángulos/dos materiales. No se declara mejora de FPS ni aceptación estética.
 
-[Informe Q3b](docs/evidence/q3b/informe.md), [comparación frontal](docs/evidence/q3b/comparison-front.jpg), [desde abajo](docs/evidence/q3b/comparison-below.jpg), [vista superior](docs/evidence/q3b/comparison-top.jpg) y [galería Godot](docs/evidence/q3b/gallery-godot.jpg). Lote final: `artifacts/q3b/acceptance-final/`; comparación en `comparison/index.html`, modelos en `lote/` e importados en `godot/q3b/`. Siguiente paso: valoración visual del usuario; F4–F6 siguen pendientes.
+[Informe Q3b](docs/evidence/q3b/informe.md), [comparación frontal](docs/evidence/q3b/comparison-front.jpg), [desde abajo](docs/evidence/q3b/comparison-below.jpg), [vista superior](docs/evidence/q3b/comparison-top.jpg) y [galería Godot](docs/evidence/q3b/gallery-godot.jpg). Lote final: `artifacts/q3b/acceptance-final/`; comparación en `comparison/index.html`, modelos en `lote/` e importados en `godot/q3b/`. El usuario rechazó posteriormente su resultado estético; las verificaciones técnicas se conservan como evidencia histórica.
+
+## Ensayo de fusión parcial desde Q3
+
+Referencia en Git: commit inicial `fbe87a4`, etiqueta `q3-referencia-0.4.0`. Se probó primero `viejo-09` y, tras revisar el piloto, `viejo-00`, `viejo-03` y `adulto-00`. El posprocesado `q3-partial-fusion-0.2.1` fusiona superficies por grupos de hasta tres subárboles vecinos. Conserva exactamente madera y sombreado, masas Q3 de entrada, parámetros, semillas, cámaras y materiales. Los generadores históricos y presets no cambian.
+
+```sh
+python3 scripts/preview_fusion.py --output artifacts/q3-fusion/mi-piloto
+# Revisar el piloto antes de ampliar los controles.
+python3 scripts/preview_fusion.py --output artifacts/q3-fusion/mis-controles --cases viejo-09 viejo-00 viejo-03 adulto-00
+python3 scripts/verify_fusion.py --study artifacts/q3-fusion/mis-controles --visual
+python3 scripts/fusion_evidence.py --study artifacts/q3-fusion/mis-controles --output artifacts/q3-fusion/mi-evidencia
+```
+
+Requiere el lote Q3 y sus cámaras históricas; `--base` y `--cameras-root` permiten indicar otra reconstrucción. Pillow 12.1.1 está instalado en el entorno usado para las galerías. Usar carpetas nuevas; cada subproceso de este ensayo tiene límite de 180 s. Las capturas necesitan sesión gráfica; `--visual` abre Godot brevemente.
+
+Resultados seleccionados: `artifacts/q3-fusion/acceptance/index.html`; modelos `<caso>/candidate/tree.glb`. Cuatro candidatos GLB válidos, ocho importaciones/capturas Godot, reproducción idéntica de Q3 y del ensayo sobre viejo-09, y entrada Q3 completa conservada en cada `.blend`. IoU mínima de silueta 98.33 % en cuatro vistas a 192×192 rayos; no mide naturalidad. [Informe](docs/evidence/q3-fusion/informe.md), [piloto en seis vistas](docs/evidence/q3-fusion/pilot-all-views.jpg) y [comparación Godot](docs/evidence/q3-fusion/controls-godot.jpg). Mejora visual moderada; valoración del usuario pendiente. No se extiende al lote ni se sustituye Q3.
