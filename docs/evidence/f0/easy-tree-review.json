@@ -1,0 +1,158 @@
+{
+  "blender": "5.2.1 LTS",
+  "asset_sha256": "2feadafedf3df99133a0e2841d8a86893dc2c19d3c794d52d9a18a91f2ee5b66",
+  "groups": {
+    "Add Branches": 64,
+    "Instance onto Tree": 19,
+    "Make Branch": 25,
+    "Make Leaf": 33,
+    "Make Tree Skeleton": 94,
+    "Make Twig & Leaf": 22,
+    "Random Deviation from Vector": 14,
+    "Random Offset": 8,
+    "Season": 21,
+    "Simple Tree Generator": 16,
+    "Strict Random Devation": 9,
+    "Tree Factor": 5,
+    "Tree Height": 12,
+    "Tree to Mesh": 39,
+    "Tree to Mesh and Leaves": 29,
+    "Wind": 45
+  },
+  "inputs": [
+    {
+      "name": "N Branches per Level",
+      "identifier": "Socket_25",
+      "type": "NodeSocketMenu"
+    },
+    {
+      "name": "Trunk Height",
+      "identifier": "Socket_40",
+      "type": "NodeSocketInt"
+    },
+    {
+      "name": "Treetop Height",
+      "identifier": "Socket_26",
+      "type": "NodeSocketInt"
+    },
+    {
+      "name": "Num Levels",
+      "identifier": "Socket_27",
+      "type": "NodeSocketInt"
+    },
+    {
+      "name": "Branch Length",
+      "identifier": "Socket_28",
+      "type": "NodeSocketInt"
+    },
+    {
+      "name": "Random Angle",
+      "identifier": "Socket_29",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Random Jitter",
+      "identifier": "Socket_30",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Gravity",
+      "identifier": "Socket_31",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Thickness",
+      "identifier": "Socket_32",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Bark Material",
+      "identifier": "Socket_8",
+      "type": "NodeSocketMaterial"
+    },
+    {
+      "name": "Seed",
+      "identifier": "Socket_16",
+      "type": "NodeSocketInt"
+    },
+    {
+      "name": "Add Leaves",
+      "identifier": "Socket_19",
+      "type": "NodeSocketBool"
+    },
+    {
+      "name": "Leaf Type",
+      "identifier": "Socket_11",
+      "type": "NodeSocketMenu"
+    },
+    {
+      "name": "Season",
+      "identifier": "Socket_17",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Min Height",
+      "identifier": "Socket_12",
+      "type": "NodeSocketInt"
+    },
+    {
+      "name": "Leaf Density",
+      "identifier": "Socket_13",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Leaf Min Scale",
+      "identifier": "Socket_14",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Leaf Max Scale",
+      "identifier": "Socket_15",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Visible in Viewport",
+      "identifier": "Socket_39",
+      "type": "NodeSocketBool"
+    },
+    {
+      "name": "Custom Twig and  Leaf",
+      "identifier": "Socket_23",
+      "type": "NodeSocketBool"
+    },
+    {
+      "name": "Custom  Leaf",
+      "identifier": "Socket_24",
+      "type": "NodeSocketObject"
+    },
+    {
+      "name": "Wind",
+      "identifier": "Socket_34",
+      "type": "NodeSocketBool"
+    },
+    {
+      "name": "Angle",
+      "identifier": "Socket_35",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Speed",
+      "identifier": "Socket_36",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Strength",
+      "identifier": "Socket_37",
+      "type": "NodeSocketFloat"
+    },
+    {
+      "name": "Shape",
+      "identifier": "Socket_38",
+      "type": "NodeSocketFloat"
+    }
+  ],
+  "loaded": true,
+  "full_generation_tested": false,
+  "legacy_modifier_assignment_supported": false,
+  "legacy_error": "bpy_struct[key] = val: id properties not supported for this type"
+}

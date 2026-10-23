@@ -1,0 +1,82 @@
+{
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "presets_sha256": {
+    "joven": "5fe7339318afbaac837a8cf927d87bc1fadcadc0bfcafa2e368ba9ccb57663c9",
+    "adulto": "2d9c3f756224c6887cd6ffafb35cf4f36b1db27918b405bfb07a3dc10292dd24"
+  },
+  "blender": {
+    "probe_version": "1",
+    "seed": 0,
+    "blender": "5.2.1 LTS",
+    "blender_build_hash": "9e2066aef7ef",
+    "python": "3.13.13 (main, Apr 25 2025, 12:39:20) [GCC 14.2.1 20250110 (Red Hat 14.2.1-11)]",
+    "source_sha256": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "socket_mapping": {
+      "Radius": "Socket_2"
+    },
+    "vertices": 36,
+    "triangles": 64,
+    "triangles_by_material": {
+      "Probe_Foliage": 20,
+      "Probe_Bark": 44
+    },
+    "bounds_blender": [
+      [
+        -0.186655,
+        -0.310384,
+        -0.01194
+      ],
+      [
+        0.886655,
+        0.710384,
+        2.6
+      ]
+    ],
+    "geometry_sha256": "18fba6eb8ba16e4c935c941ef1bdc46488b00a22853c4ec336a2415cfb5086fa",
+    "glb_sha256": "f04c9031880342dcc3532b1ed89dc2e1a270fc66448892d489feb8eb74f1416f",
+    "units": "meters",
+    "axis_conversion": "(x,y,z) Blender -> (x,z,-y) Godot",
+    "nodes": [
+      "NodeGroupInput",
+      "NodeGroupOutput",
+      "GeometryNodeCurvePrimitiveCircle",
+      "GeometryNodeCurveToMesh",
+      "GeometryNodeSetMaterial",
+      "GeometryNodeMeshIcoSphere",
+      "GeometryNodeSetMaterial",
+      "GeometryNodeMeshLine",
+      "GeometryNodeInstanceOnPoints",
+      "GeometryNodeRealizeInstances",
+      "GeometryNodeJoinGeometry"
+    ]
+  },
+  "godot": {
+    "bounds_max": [
+      0.88665497303009,
+      2.59999990463257,
+      0.310384035110474
+    ],
+    "bounds_min": [
+      -0.186655014753342,
+      -0.0119404466822743,
+      -0.710384011268616
+    ],
+    "godot": "4.7.2-stable (official)",
+    "passed": true,
+    "triangles": 64,
+    "triangles_by_material": {
+      "Probe_Bark": 44,
+      "Probe_Foliage": 20
+    }
+  },
+  "repeated_geometry_matches": true,
+  "visual_capture_generated": true,
+  "sources_sha256": {
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "godot/verify_probe.gd": "6306a877341815adfdcddf6c8ef37f5b85de675d506209c3b1b365b571c7c4a4",
+    "schemas/tree-spec.schema.json": "7c2e7309c45dd298dddbd9769dd0ba661d8d3cbdb3eee03677e340dd136638b9",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "scripts/verify_f0.py": "334f15cd6bdbbd1b57c8795750bd36a2aed31b898016aea53f955a88ddc32783",
+    "requirements.txt": "49026b67905a6c42bd426e6f8b3d2d08dc24ec6fe51cb2f706aea0a3fb5f8e08"
+  }
+}

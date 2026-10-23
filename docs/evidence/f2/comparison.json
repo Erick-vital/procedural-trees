@@ -1,0 +1,64 @@
+{
+  "left": "/home/tao/repos/procedural/arboles/artifacts/f2/lote-final/adulto-00",
+  "right": "/home/tao/repos/procedural/arboles/artifacts/f2/verification-final/repeat",
+  "same_spec": true,
+  "same_environment": true,
+  "same_sources": true,
+  "same_cameras": true,
+  "same_geometry": true,
+  "triangle_delta": 0,
+  "metrics": [
+    {
+      "triangles": 4768,
+      "materials": {
+        "Oak_Leaves": 2240,
+        "Oak_Bark": 2528
+      },
+      "bounds_gltf": [
+        [
+          -7.279782772064209,
+          0.0,
+          -7.4562177658081055
+        ],
+        [
+          5.768888473510742,
+          10.0,
+          7.3358283042907715
+        ]
+      ],
+      "dimensions_m": [
+        13.048671245574951,
+        10.0,
+        14.792046070098877
+      ],
+      "geometry_sha256": "95273d28e4ee4a41abe8deeb5c75e35df4428034624cdc30616d04a57a772e75",
+      "glb_sha256": "7c2d1e5ef2b36d8f63a8036859486c2f15dd4f5092defe70dc6cb5649c37ff6c"
+    },
+    {
+      "triangles": 4768,
+      "materials": {
+        "Oak_Leaves": 2240,
+        "Oak_Bark": 2528
+      },
+      "bounds_gltf": [
+        [
+          -7.279782772064209,
+          0.0,
+          -7.4562177658081055
+        ],
+        [
+          5.768888473510742,
+          10.0,
+          7.3358283042907715
+        ]
+      ],
+      "dimensions_m": [
+        13.048671245574951,
+        10.0,
+        14.792046070098877
+      ],
+      "geometry_sha256": "95273d28e4ee4a41abe8deeb5c75e35df4428034624cdc30616d04a57a772e75",
+      "glb_sha256": "7c2d1e5ef2b36d8f63a8036859486c2f15dd4f5092defe70dc6cb5649c37ff6c"
+    }
+  ]
+}

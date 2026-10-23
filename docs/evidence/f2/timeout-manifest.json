@@ -1,0 +1,31 @@
+{
+  "manifest_version": "1.0",
+  "job_id": "96684e05-f7e5-4f5a-af1a-fc3359ffe61d",
+  "status": "failed",
+  "started_at": "2026-10-22T18:55:33.848780+00:00",
+  "spec": {
+    "schema_version": "1.0",
+    "algorithm": "oak_geometry_nodes",
+    "algorithm_version": "0.1.0",
+    "seed": 29,
+    "parameters": {
+      "height_m": 10,
+      "base_radius_m": 0.5,
+      "curvature": 0.12,
+      "primary_branches": 9,
+      "max_depth": 2,
+      "branch_length_ratio": 0.5,
+      "inclination_deg": 65,
+      "asymmetry": 0.6,
+      "foliage_density": 1,
+      "foliage_scale_m": 1.5
+    }
+  },
+  "spec_sha256": "2d9c3f756224c6887cd6ffafb35cf4f36b1db27918b405bfb07a3dc10292dd24",
+  "finished_at": "2026-10-22T18:57:33.872202+00:00",
+  "duration_seconds": 120.023,
+  "error": {
+    "type": "TimeoutError",
+    "message": "Blender excedi\u00f3 120 s; proceso y descendientes terminados"
+  }
+}

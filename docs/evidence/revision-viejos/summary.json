@@ -1,0 +1,366 @@
+{
+  "blender": "5.2.1 LTS",
+  "blender_build": "9e2066aef7ef",
+  "script_sha256": "203a877780a588fd5a942dd8dd0555421fb00f509fd7fb74e8f050a06e5438fa",
+  "graph_helper_sha256": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+  "full_diagnosis_path": "artifacts/diagnosis-viejos-final/diagnosis.json",
+  "user_rejected_cases": [
+    "viejo-00",
+    "viejo-03",
+    "viejo-09"
+  ],
+  "cases": [
+    {
+      "id": "viejo-00",
+      "seed": 3000,
+      "blend_sha256": "e92154295a203082ca31731fa70b199ffaae5d425130d0194251a78c39df908a",
+      "manifest_sha256": "4b3ddf1ecb521b1778f6dd8bbed22dc04273d59572caba71b43cadec43b875ac",
+      "seeds": {
+        "structure": 1212972345,
+        "foliage": 1758731391
+      },
+      "geometry_sha256": "ef79f56f0ea47e0474b24dffd4f77a4b6e17764f6d49cb6e7eaf1daf750e2ea0",
+      "raw_bounds_z": [
+        -0.011635133065283298,
+        11.673404693603516
+      ],
+      "final_z_scale": 0.7702156033271941,
+      "summary": {
+        "primary_inclinations_raw_deg": [
+          73.61634691319195,
+          73.61634335355652,
+          73.61634335355652,
+          73.61634335355652,
+          73.61634691319195,
+          73.61634335355652,
+          73.61634335355652,
+          73.61634513337424,
+          73.61633979392101,
+          73.61634335355652,
+          73.61634335355652
+        ],
+        "primary_azimuth_min_gap_deg": 0.41604936752912636,
+        "primary_azimuth_max_gap_deg": 93.2911268505801,
+        "primary_radius_larger_than_parent": 5,
+        "secondary_radius_larger_than_parent": 11,
+        "secondary_sibling_direction_angles_deg": [
+          7.754606199495915,
+          13.40002183075756,
+          90.65791364675083,
+          86.92768239272557,
+          44.31244628066225,
+          54.104595242566525,
+          30.699091777321634,
+          58.887912947083095,
+          65.66683114063633,
+          38.91711561099064,
+          91.03602982770997
+        ]
+      },
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.6
+      },
+      "ranges": {
+        "primary_inclination_final_deg": [
+          77.24066777002902,
+          77.24067302237026
+        ],
+        "primary_radius_ratio_to_parent": [
+          0.6495514577027767,
+          1.6406248666037513
+        ],
+        "secondary_radius_ratio_to_parent": [
+          0.6451278496579226,
+          1.3005936891094847
+        ]
+      }
+    },
+    {
+      "id": "viejo-03",
+      "seed": 3003,
+      "blend_sha256": "505239d0c6e7be32cde6edba126c21c254d59bbef50e445601a625e5c84411aa",
+      "manifest_sha256": "a57db359db89dee0e4506b4a05ce5e20ef2390e7e96a7b46208160b2f0d8b9e3",
+      "seeds": {
+        "structure": 552862479,
+        "foliage": 1971969871
+      },
+      "geometry_sha256": "79699105a4e10d077402827cc080b6b6ada74bbfb99c0edf3616ff66aef84c71",
+      "raw_bounds_z": [
+        -0.011635133065283298,
+        10.808494567871094
+      ],
+      "final_z_scale": 0.8317830052648202,
+      "summary": {
+        "primary_inclinations_raw_deg": [
+          73.61634335355652,
+          73.61634691319195,
+          73.61634691319195,
+          73.61634869300964,
+          73.61634691319195,
+          73.61634513337424,
+          73.61634869300964,
+          73.61634157373878,
+          73.61634513337424,
+          73.61634157373878,
+          73.61634691319195
+        ],
+        "primary_azimuth_min_gap_deg": 5.231660776880176,
+        "primary_azimuth_max_gap_deg": 91.95591043502412,
+        "primary_radius_larger_than_parent": 5,
+        "secondary_radius_larger_than_parent": 11,
+        "secondary_sibling_direction_angles_deg": [
+          97.6297244912734,
+          75.31214106938522,
+          83.58519779659954,
+          96.94558251380072,
+          5.589712305512455,
+          18.540024736436457,
+          55.69972971687213,
+          99.68271684421227,
+          59.24435177507356,
+          76.83366731112474,
+          43.053689784328796
+        ]
+      },
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.6
+      },
+      "ranges": {
+        "primary_inclination_final_deg": [
+          76.25806366272117,
+          76.2580698152496
+        ],
+        "primary_radius_ratio_to_parent": [
+          0.6495514577027767,
+          1.6406248666037513
+        ],
+        "secondary_radius_ratio_to_parent": [
+          0.6451278139438452,
+          1.3005935395896406
+        ]
+      }
+    },
+    {
+      "id": "viejo-09",
+      "seed": 3009,
+      "blend_sha256": "9bd766311fdc85a2119ca69ceced3df2538d4cb768d805503e1f13ac711353f1",
+      "manifest_sha256": "c5f6355b8edef70394c43b71cb01f999f54712599c84fac9056f5dfe663d1bb6",
+      "seeds": {
+        "structure": 669423365,
+        "foliage": 927115663
+      },
+      "geometry_sha256": "97795a3a0fc2fdba372d118b801db6baf81ca9ee8b3865e5b23eab99b062982b",
+      "raw_bounds_z": [
+        -0.011635133065283298,
+        11.54737663269043
+      ],
+      "final_z_scale": 0.7786132744204878,
+      "summary": {
+        "primary_inclinations_raw_deg": [
+          73.61634513337424,
+          73.61634691319195,
+          73.61634691319195,
+          73.61634335355652,
+          73.61634691319195,
+          73.61634335355652,
+          73.61634335355652,
+          73.61634335355652,
+          73.61634513337424,
+          73.61634513337424,
+          73.61634869300964
+        ],
+        "primary_azimuth_min_gap_deg": 0.38728634897421443,
+        "primary_azimuth_max_gap_deg": 120.45190755617756,
+        "primary_radius_larger_than_parent": 5,
+        "secondary_radius_larger_than_parent": 11,
+        "secondary_sibling_direction_angles_deg": [
+          67.88082297581256,
+          98.22112354399569,
+          81.85501038717098,
+          34.43370481303668,
+          72.12295567211,
+          99.35379141220446,
+          68.93665863323969,
+          92.61929984591184,
+          99.63944563795668,
+          86.8418139125215,
+          8.306890948758932
+        ]
+      },
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.6
+      },
+      "ranges": {
+        "primary_inclination_final_deg": [
+          77.10618159721896,
+          77.10618510065162
+        ],
+        "primary_radius_ratio_to_parent": [
+          0.6495514577027767,
+          1.6406248666037513
+        ],
+        "secondary_radius_ratio_to_parent": [
+          0.6451278708117304,
+          1.3005936140327305
+        ]
+      }
+    },
+    {
+      "id": "adulto-00",
+      "seed": 2000,
+      "blend_sha256": "ec35e74ec2e193740e8af00b7518ab42a68e8391b5fb933681831dc8e0c835dc",
+      "manifest_sha256": "b624a241db4b24c0116ee154f07885b08a7afbec6292876adc2f9a43b8d6be0d",
+      "seeds": {
+        "structure": 1115109329,
+        "foliage": 1342203788
+      },
+      "geometry_sha256": "c06097ddc601929184aa41886e1236c33c9136a1764f3f371bd63e758c43c9d1",
+      "raw_bounds_z": [
+        -0.005454221274703741,
+        13.168705940246582
+      ],
+      "final_z_scale": 0.7590616690092866,
+      "summary": {
+        "primary_inclinations_raw_deg": [
+          67.21909453270366,
+          67.21909453270366,
+          67.2190982367419,
+          67.21909453270366,
+          67.2190982367419,
+          67.21909453270366,
+          67.2190963847228,
+          67.219100088761,
+          67.2190982367419
+        ],
+        "primary_azimuth_min_gap_deg": 3.675806589952316,
+        "primary_azimuth_max_gap_deg": 99.32982585170191,
+        "primary_radius_larger_than_parent": 4,
+        "secondary_radius_larger_than_parent": 9,
+        "secondary_sibling_direction_angles_deg": [
+          88.2673963544324,
+          23.625216399330252,
+          98.47189171066712,
+          36.42217357796448,
+          42.03237104161092,
+          87.0316714793679,
+          40.35938458075419,
+          100.15526884226065,
+          78.42862596914327
+        ]
+      },
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 1,
+        "foliage_scale_m": 1.5
+      },
+      "ranges": {
+        "primary_inclination_final_deg": [
+          72.3186268188699,
+          72.31863219550236
+        ],
+        "primary_radius_ratio_to_parent": [
+          0.6495514086258859,
+          1.6406245500573566
+        ],
+        "secondary_radius_ratio_to_parent": [
+          0.645127833900026,
+          1.3005936655239572
+        ]
+      }
+    },
+    {
+      "id": "joven-00",
+      "seed": 1000,
+      "blend_sha256": "55ec3aacff3aa930901be1828c9714009669192e8e399a7852e7b7802b5eef4d",
+      "manifest_sha256": "173075f7c54af255f485107b75c53f35a40fa205781d3d47f2991f6bf91c132e",
+      "seeds": {
+        "structure": 275827073,
+        "foliage": 130045822
+      },
+      "geometry_sha256": "d47b6223f61ca026198496e14aad3a6b49391ce3ac3a909e32a5cc0e6b2a66f6",
+      "raw_bounds_z": [
+        -0.0006545357755385339,
+        4.780825614929199
+      ],
+      "final_z_scale": 0.8365610384078336,
+      "summary": {
+        "primary_inclinations_raw_deg": [
+          39.42994884934971,
+          39.42994884934971,
+          39.42994884934971,
+          39.42995422631357
+        ],
+        "primary_azimuth_min_gap_deg": 9.289708476637657,
+        "primary_azimuth_max_gap_deg": 153.09959517778012,
+        "primary_radius_larger_than_parent": 2,
+        "secondary_radius_larger_than_parent": 4,
+        "secondary_sibling_direction_angles_deg": [
+          13.105415740191653,
+          93.1460823957682,
+          17.446716731584157,
+          29.7536958554477
+        ]
+      },
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.6
+      },
+      "ranges": {
+        "primary_inclination_final_deg": [
+          44.50692735202481,
+          44.50693222380282
+        ],
+        "primary_radius_ratio_to_parent": [
+          0.6495514691241671,
+          1.6406247012131505
+        ],
+        "secondary_radius_ratio_to_parent": [
+          0.6451280572212194,
+          1.3005940669197171
+        ]
+      }
+    }
+  ]
+}

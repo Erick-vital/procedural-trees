@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "stderr": "ERROR: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n",
+  "manifest": {
+    "manifest_version": "1.0",
+    "job_id": "f1c10671-db96-48db-8cab-9427076af317",
+    "status": "failed",
+    "started_at": "2026-10-22T19:02:17.425693+00:00",
+    "finished_at": "2026-10-22T19:02:17.425886+00:00",
+    "duration_seconds": 0.0,
+    "error": {
+      "type": "JSONDecodeError",
+      "message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    }
+  }
+}

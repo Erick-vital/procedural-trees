@@ -1,0 +1,20 @@
+# Resultados regenerables y cachés locales; evidencia seleccionada en docs/evidence/.
+/artifacts/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+/godot/.godot/
+/godot/**/*.glb
+/godot/**/*.glb.import
+*.blend1
+*.blend2
+
+# Configuración privada y credenciales locales.
+.env
+.env.*
+!.env.example
+/.aws/
+/.codex/
+/.agents/
+.DS_Store

@@ -1,0 +1,632 @@
+[
+  {
+    "id": "joven-00",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1000,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-01",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1001,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-02",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1002,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-03",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1003,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-04",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1004,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-05",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1005,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-06",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1006,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-07",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1007,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-08",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1008,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "joven-09",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 1009,
+      "parameters": {
+        "height_m": 4,
+        "base_radius_m": 0.12,
+        "curvature": 0.06,
+        "primary_branches": 4,
+        "max_depth": 2,
+        "branch_length_ratio": 0.3,
+        "inclination_deg": 35,
+        "asymmetry": 0.15,
+        "foliage_density": 0.5,
+        "foliage_scale_m": 0.45
+      }
+    }
+  },
+  {
+    "id": "adulto-00",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2000,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-01",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2001,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-02",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2002,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-03",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2003,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-04",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2004,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-05",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2005,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-06",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2006,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-07",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2007,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-08",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2008,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "adulto-09",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 2009,
+      "parameters": {
+        "height_m": 10,
+        "base_radius_m": 0.5,
+        "curvature": 0.12,
+        "primary_branches": 9,
+        "max_depth": 2,
+        "branch_length_ratio": 0.5,
+        "inclination_deg": 65,
+        "asymmetry": 0.6,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.15
+      }
+    }
+  },
+  {
+    "id": "viejo-00",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3000,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-01",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3001,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-02",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3002,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-03",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3003,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-04",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3004,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-05",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3005,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-06",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3006,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-07",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3007,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-08",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3008,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  },
+  {
+    "id": "viejo-09",
+    "spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3009,
+      "parameters": {
+        "height_m": 9,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 1.3
+      }
+    }
+  }
+]

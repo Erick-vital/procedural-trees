@@ -1,0 +1,668 @@
+{
+  "stage": "Q2",
+  "algorithm_version": "0.3.0",
+  "technical_passed": true,
+  "user_visual_acceptance": "accepted",
+  "base_version": "0.2.1",
+  "base_reproduced": true,
+  "same_native_structure": true,
+  "same_wood_xy": true,
+  "repeated_geometry": true,
+  "foliage_changes_preserve_wood": {
+    "seed": true,
+    "density-zero": true,
+    "scale": true,
+    "density-full": true
+  },
+  "shared_cameras": {
+    "viejo-00": true,
+    "viejo-03": true,
+    "viejo-09": true,
+    "adulto-00": true,
+    "joven-00": true
+  },
+  "visual_captures_generated": true,
+  "unit_tests": 17,
+  "valid_unique_assets": 30,
+  "godot_assets": 30,
+  "max_final_inclination_change_deg": {
+    "joven-00": 2.8560597242240675,
+    "joven-01": 2.6667879230248914,
+    "joven-02": 3.3549882506990585,
+    "joven-03": 2.892267352621616,
+    "joven-04": 2.8538803352868953,
+    "joven-05": 2.0153859782849466,
+    "joven-06": 3.392294017272228,
+    "joven-07": 2.8737845855632926,
+    "joven-08": 3.0488372627193883,
+    "joven-09": 2.69776428665935,
+    "adulto-00": 3.2762634482630446,
+    "adulto-01": 3.2235674951855415,
+    "adulto-02": 3.0874131633377857,
+    "adulto-03": 3.0000368493101703,
+    "adulto-04": 2.7962373585749773,
+    "adulto-05": 2.355994779240021,
+    "adulto-06": 2.6524736990650695,
+    "adulto-07": 3.266263978781609,
+    "adulto-08": 2.9549765383750994,
+    "adulto-09": 3.078756693662342,
+    "viejo-00": 3.9699688919956344,
+    "viejo-01": 3.0291958273309803,
+    "viejo-02": 3.3953495092076906,
+    "viejo-03": 3.2987191787930144,
+    "viejo-04": 2.8969014452292825,
+    "viejo-05": 3.040366378907173,
+    "viejo-06": 4.050809367245115,
+    "viejo-07": 3.307439272347068,
+    "viejo-08": 2.927138605466453,
+    "viejo-09": 4.030206887203249
+  },
+  "edges": {
+    "minimum": {
+      "triangles": 328,
+      "height_m": 2.0,
+      "leaf_mass_count": 0,
+      "geometry_sha256": "41ddf7a2f190c696200f9ae0714ea5ddb0f4e51c418e0971fdc0a74779cda774"
+    },
+    "maximum": {
+      "triangles": 9676,
+      "height_m": 20.0,
+      "leaf_mass_count": 196,
+      "geometry_sha256": "7bc49683daec861fecfea797878e1f743002faef371dbaee6c5cceae715798f0"
+    },
+    "thin-many": {
+      "triangles": 5756,
+      "height_m": 2.0,
+      "leaf_mass_count": 0,
+      "geometry_sha256": "677f89b38a568b3cf7faba619cf340000c9e00ef5958726f71bb435ada20680d"
+    },
+    "bare-depth1": {
+      "triangles": 1448,
+      "height_m": 10.000001,
+      "leaf_mass_count": 0,
+      "geometry_sha256": "2ab7a51a842d8ebbf88834d3e85e96dc8920644031fe2f03b903b8867142c74b"
+    },
+    "one-primary-depth2": {
+      "triangles": 952,
+      "height_m": 10.000001,
+      "leaf_mass_count": 15,
+      "geometry_sha256": "5f3f708d9c498b51c4045b10b20687fc6cef33b256904263ab797ded6134c3f8"
+    },
+    "short-big-crown": {
+      "triangles": 7324,
+      "height_m": 2.0,
+      "leaf_mass_count": 148,
+      "geometry_sha256": "11d3cefb8d146d68141f9936b52fb21ce282a43fc7e172a58522f883a71b29f0"
+    }
+  },
+  "focus": {
+    "viejo-00": {
+      "same_native_structure": true,
+      "same_wood_xy": true,
+      "base": {
+        "wood_geometry_sha256": "7708b51425917b56f3d19f717b9c25d1379d14423f8374fedb1ae3a535d78100",
+        "wood_xy_sha256": "aa74d1d8114c6b4916fbee87b31523eb1d6b28edd5a9720fde32ebf121d04a49",
+        "wood_bounds_blender": [
+          [
+            -4.4910173416137695,
+            -6.368941307067871,
+            0.0
+          ],
+          [
+            5.583032131195068,
+            5.924636363983154,
+            7.834339618682861
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 2700,
+        "leaf_mass_count": 135,
+        "center_height_bins": [
+          0,
+          10,
+          48,
+          60,
+          17
+        ],
+        "center_azimuth_sectors": [
+          23,
+          16,
+          16,
+          20,
+          13,
+          15,
+          16,
+          16
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -5.971011161804199,
+            -7.815450668334961,
+            2.4191977977752686
+          ],
+          [
+            7.461960315704346,
+            7.390042781829834,
+            9.000000953674316
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "7bd39d82c2a6f972cb584e84c4dd4e7a0f5d69a43fc499f9f6fd961db49b7c31",
+        "wood_xy_sha256": "aa74d1d8114c6b4916fbee87b31523eb1d6b28edd5a9720fde32ebf121d04a49",
+        "wood_bounds_blender": [
+          [
+            -4.4910173416137695,
+            -6.368941307067871,
+            0.0
+          ],
+          [
+            5.583032131195068,
+            5.924636363983154,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 2700,
+        "leaf_mass_count": 135,
+        "center_height_bins": [
+          0,
+          7,
+          46,
+          45,
+          37
+        ],
+        "center_azimuth_sectors": [
+          21,
+          18,
+          16,
+          20,
+          12,
+          17,
+          16,
+          15
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -5.583145618438721,
+            -7.373427867889404,
+            2.0236003398895264
+          ],
+          [
+            6.892691135406494,
+            7.002948760986328,
+            9.0
+          ]
+        ]
+      },
+      "base_wood_height_m": 7.834339618682861,
+      "max_anchor_center_distance_m": 0.7959915263374874,
+      "effective_foliage_scale_m": 1.3,
+      "base_manifest_sha256": "820cb2914b05e4083540abc3d3f0cb5ac5485d9940c3501af782c5094dea3def",
+      "candidate_manifest_sha256": "8a5aa49442164fe98d64e5f25dba251ac4d6b864889a6b7b4a7e544853815999"
+    },
+    "viejo-03": {
+      "same_native_structure": true,
+      "same_wood_xy": true,
+      "base": {
+        "wood_geometry_sha256": "03f0bf262db24c3a9ebe90043d5b844e085bfb4dad31d3c38dc06953efa3fcd1",
+        "wood_xy_sha256": "4c02d1d67329804e8a86c138b30d691c3db1f5070b8f3c79a98dee42ef6451bb",
+        "wood_bounds_blender": [
+          [
+            -6.196290016174316,
+            -5.185175895690918,
+            0.0
+          ],
+          [
+            6.062685012817383,
+            4.709830284118652,
+            8.02057933807373
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 2700,
+        "leaf_mass_count": 135,
+        "center_height_bins": [
+          0,
+          8,
+          45,
+          63,
+          19
+        ],
+        "center_azimuth_sectors": [
+          22,
+          18,
+          17,
+          18,
+          15,
+          12,
+          17,
+          16
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -7.798621654510498,
+            -6.902493476867676,
+            2.006751537322998
+          ],
+          [
+            7.693346977233887,
+            6.317020416259766,
+            9.0
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "2d1864168ba3c056ec36ad735edb4f451e6c46279eeb6b0378d9aaf2b0e54460",
+        "wood_xy_sha256": "4c02d1d67329804e8a86c138b30d691c3db1f5070b8f3c79a98dee42ef6451bb",
+        "wood_bounds_blender": [
+          [
+            -6.196290016174316,
+            -5.185175895690918,
+            0.0
+          ],
+          [
+            6.062685012817383,
+            4.709830284118652,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 2700,
+        "leaf_mass_count": 135,
+        "center_height_bins": [
+          0,
+          8,
+          39,
+          56,
+          32
+        ],
+        "center_azimuth_sectors": [
+          24,
+          17,
+          18,
+          16,
+          15,
+          10,
+          19,
+          16
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -7.080470085144043,
+            -6.140231132507324,
+            1.7546360492706299
+          ],
+          [
+            7.140068531036377,
+            5.8755388259887695,
+            9.0
+          ]
+        ]
+      },
+      "base_wood_height_m": 8.02057933807373,
+      "max_anchor_center_distance_m": 0.8421367156004409,
+      "effective_foliage_scale_m": 1.3,
+      "base_manifest_sha256": "8e4ca703207056c60070f5c63e8c62ee2a7ef94abc7ace707499c19db7e4f6c5",
+      "candidate_manifest_sha256": "c0704b83729141ffb2919a68c537fce4b9290a390b0c7f7771cb1c4a832ad39d"
+    },
+    "viejo-09": {
+      "same_native_structure": true,
+      "same_wood_xy": true,
+      "base": {
+        "wood_geometry_sha256": "e3fccc7b05b604c03514227245faa6fc903d39591d517782dcbb38bc81dd48ee",
+        "wood_xy_sha256": "702834bfbdbdde4c6f0b39dfd32792f4545ce82933e3ab4d46da7d5b58dee4fd",
+        "wood_bounds_blender": [
+          [
+            -4.627171039581299,
+            -6.0165324211120605,
+            0.0
+          ],
+          [
+            6.504335880279541,
+            5.381451606750488,
+            7.817055702209473
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 2700,
+        "leaf_mass_count": 135,
+        "center_height_bins": [
+          0,
+          4,
+          52,
+          61,
+          18
+        ],
+        "center_azimuth_sectors": [
+          20,
+          18,
+          20,
+          13,
+          16,
+          14,
+          16,
+          18
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -6.669034957885742,
+            -7.702993869781494,
+            2.5219509601593018
+          ],
+          [
+            8.226749420166016,
+            7.149901866912842,
+            9.0
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "0b62852bca3a6daccd2566b472ecb146df2ec84683b8917a795009e9f3cd30f3",
+        "wood_xy_sha256": "702834bfbdbdde4c6f0b39dfd32792f4545ce82933e3ab4d46da7d5b58dee4fd",
+        "wood_bounds_blender": [
+          [
+            -4.627171039581299,
+            -6.0165324211120605,
+            0.0
+          ],
+          [
+            6.504335880279541,
+            5.381451606750488,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 2700,
+        "leaf_mass_count": 135,
+        "center_height_bins": [
+          0,
+          4,
+          51,
+          47,
+          33
+        ],
+        "center_azimuth_sectors": [
+          18,
+          18,
+          20,
+          17,
+          15,
+          14,
+          17,
+          16
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -5.593624114990234,
+            -6.922018051147461,
+            2.0425186157226562
+          ],
+          [
+            7.885364055633545,
+            6.2918195724487305,
+            9.0
+          ]
+        ]
+      },
+      "base_wood_height_m": 7.817055702209473,
+      "max_anchor_center_distance_m": 0.7856114378767308,
+      "effective_foliage_scale_m": 1.3,
+      "base_manifest_sha256": "793d8660e272132bbc2983f240167edaffda0cdc9419387619fff3aaf6abf19d",
+      "candidate_manifest_sha256": "f785eef7291d55813312b2c3dc32a32afd994117e0ef0811b0d50b0a795aee79"
+    },
+    "adulto-00": {
+      "same_native_structure": true,
+      "same_wood_xy": true,
+      "base": {
+        "wood_geometry_sha256": "63d66138fd4bf79e0069bfd388e8a6a15d2a1da4a7e52ab9e5a6c20e27241996",
+        "wood_xy_sha256": "6ce5248f66234be7554905b41701ad9ec40cd1ef70fb0905650d4b0d0724412c",
+        "wood_bounds_blender": [
+          [
+            -5.801208019256592,
+            -4.335878372192383,
+            0.0
+          ],
+          [
+            5.883262634277344,
+            5.510021686553955,
+            8.918473243713379
+          ]
+        ],
+        "wood_triangles": 4364,
+        "leaf_triangles": 2960,
+        "leaf_mass_count": 148,
+        "center_height_bins": [
+          0,
+          3,
+          50,
+          63,
+          32
+        ],
+        "center_azimuth_sectors": [
+          18,
+          20,
+          16,
+          17,
+          19,
+          16,
+          22,
+          20
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -7.5659661293029785,
+            -6.158077239990234,
+            3.0351908206939697
+          ],
+          [
+            7.808568477630615,
+            7.463013648986816,
+            10.0
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "5ec6e029e3223452fe1af6bf9817ba594a8a1b55a11fc3718f0e089e8e7c3352",
+        "wood_xy_sha256": "6ce5248f66234be7554905b41701ad9ec40cd1ef70fb0905650d4b0d0724412c",
+        "wood_bounds_blender": [
+          [
+            -5.801208019256592,
+            -4.335878372192383,
+            0.0
+          ],
+          [
+            5.883262634277344,
+            5.510021686553955,
+            10.0
+          ]
+        ],
+        "wood_triangles": 4364,
+        "leaf_triangles": 2220,
+        "leaf_mass_count": 111,
+        "center_height_bins": [
+          0,
+          4,
+          34,
+          41,
+          32
+        ],
+        "center_azimuth_sectors": [
+          14,
+          15,
+          11,
+          12,
+          13,
+          14,
+          17,
+          15
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -6.718337535858154,
+            -5.2094316482543945,
+            2.428295373916626
+          ],
+          [
+            7.095448970794678,
+            6.265379905700684,
+            10.0
+          ]
+        ]
+      },
+      "base_wood_height_m": 8.918473243713379,
+      "max_anchor_center_distance_m": 0.8281135018155225,
+      "effective_foliage_scale_m": 1.15,
+      "base_manifest_sha256": "ca36e7c9b78e94693b676cd69b4cb9f01ab54af8205d01726aefbe51f6398a84",
+      "candidate_manifest_sha256": "9de3b5c11d96519cf0f7c1335b535eae506398b8162bf12c052fad3077ae9bde"
+    },
+    "joven-00": {
+      "same_native_structure": true,
+      "same_wood_xy": true,
+      "base": {
+        "wood_geometry_sha256": "1a88cf5941ee52dca0480336918adefdc8dbf7484ed86eebb107ad9d24ba9a53",
+        "wood_xy_sha256": "69b675db4fc59f0a08948ee089ee6d7919411704ae0375ac006eed3831b89b38",
+        "wood_bounds_blender": [
+          [
+            -0.5618517398834229,
+            -0.7351799607276917,
+            0.0
+          ],
+          [
+            0.860201358795166,
+            0.7920286655426025,
+            3.6191763877868652
+          ]
+        ],
+        "wood_triangles": 2044,
+        "leaf_triangles": 680,
+        "leaf_mass_count": 34,
+        "center_height_bins": [
+          0,
+          0,
+          8,
+          17,
+          9
+        ],
+        "center_azimuth_sectors": [
+          4,
+          4,
+          2,
+          6,
+          5,
+          5,
+          6,
+          2
+        ],
+        "occupied_height_bins": 3,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -1.2782111167907715,
+            -1.3029868602752686,
+            1.6158220767974854
+          ],
+          [
+            1.4477826356887817,
+            1.3664706945419312,
+            3.999999761581421
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "4b435f40a7ab9b12caf4510887bce15c903f431fb2a770c39e0d2663d9aff5df",
+        "wood_xy_sha256": "69b675db4fc59f0a08948ee089ee6d7919411704ae0375ac006eed3831b89b38",
+        "wood_bounds_blender": [
+          [
+            -0.5618517398834229,
+            -0.7351799607276917,
+            0.0
+          ],
+          [
+            0.860201358795166,
+            0.7920286655426025,
+            3.999999761581421
+          ]
+        ],
+        "wood_triangles": 2044,
+        "leaf_triangles": 680,
+        "leaf_mass_count": 34,
+        "center_height_bins": [
+          0,
+          1,
+          8,
+          12,
+          13
+        ],
+        "center_azimuth_sectors": [
+          3,
+          5,
+          3,
+          5,
+          3,
+          6,
+          4,
+          5
+        ],
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -0.9677712917327881,
+            -1.218232274055481,
+            1.2818005084991455
+          ],
+          [
+            1.1655728816986084,
+            1.1960800886154175,
+            4.0
+          ]
+        ]
+      },
+      "base_wood_height_m": 3.6191763877868652,
+      "max_anchor_center_distance_m": 0.23856512245903438,
+      "effective_foliage_scale_m": 0.45,
+      "base_manifest_sha256": "733807eefe5c5c821a8a17fcb0a8c27c54084d91740671dae77bf9c650aee8b8",
+      "candidate_manifest_sha256": "ab32c85391d884d74629131b310c8f6116d0571466b3cc8d267a99eaad4aa1fe"
+    }
+  },
+  "parameter_effects": {
+    "height_m": "aa0f925bfe509e52fda4ea745ea81e052893306f4f42325fec3831c8eccae393",
+    "base_radius_m": "bf26b9d127d036f2e88a881a38f2626339404b5abaa3bc3bf9c9291e0c244ed9",
+    "curvature": "4baf4be85657f961daaa2eee79b335569260ed675282878fbfac12f9530f896c",
+    "primary_branches": "51d706d8e0ebe53d8b2864ae9c37d8135fddd90defb614234e2d6aa21cc57584",
+    "max_depth": "75f3b676cea3edf9fc9eb740b50144eb258b16c84538b198613289204e026fb2",
+    "branch_length_ratio": "b01445404ca61bd74a9b15b44e68809e24a6e9a1faa7597edf6464fec52a2e50",
+    "inclination_deg": "748dca748e3541e7f0298079bbc196c940149200f7ee69e22afba313831411f0",
+    "asymmetry": "4ee05b9d7ecce0d5732946f3b568f83921a83d728d0f2d31d38694d983b4f6a9",
+    "foliage_density": "37b1c7644bdd6a3660abd0b16b7bea4d172534893ef6bfb60d26dfd3aef1477b",
+    "foliage_scale_m": "5cf604af932c09a5a4591cca3e6c251533f8166342d8b50c0c6991b2a077e9a9"
+  },
+  "source_summary_sha256": "14b002f5ef5683da2b6093b01c1f804591f25e1a5d4865eb44cb3afe6dbb23fc",
+  "user_visual_acceptance_details": {
+    "date": "2026-10-22",
+    "scope": "Copa ajustada Q2 0.3.0: tercera columna y presets q2-cases.json",
+    "source": "Aprobaci\u00f3n expl\u00edcita del usuario en esta conversaci\u00f3n",
+    "remaining_feedback": "Grupos de follaje demasiado similares; solicita propuestas de refinamiento",
+    "excludes": [
+      "Aprobaci\u00f3n est\u00e9tica general de los extremos",
+      "Nuevos cambios geom\u00e9tricos de follaje"
+    ]
+  }
+}

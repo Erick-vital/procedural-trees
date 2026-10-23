@@ -1,0 +1,23 @@
+test_invalid (test_contracts.ContractsTest.test_invalid) ... ok
+test_presets (test_contracts.ContractsTest.test_presets) ... ok
+test_versioned_algorithms (test_contracts.ContractsTest.test_versioned_algorithms) ... ok
+test_reject_invalid_numeric_geometry (test_evaluation.EvaluationTests.test_reject_invalid_numeric_geometry) ... ok
+test_reject_truncated_file_and_wrong_height (test_evaluation.EvaluationTests.test_reject_truncated_file_and_wrong_height) ... ok
+test_valid_export (test_evaluation.EvaluationTests.test_valid_export) ... ok
+test_api_async_and_invalid_input (test_execution.ExecutionTests.test_api_async_and_invalid_input) ... 127.0.0.1 - - [22/Oct/2026 15:49:46] "POST /jobs HTTP/1.1" 202 -
+127.0.0.1 - - [22/Oct/2026 15:49:46] "GET /jobs/5b3063b6-1464-41c6-b0c9-b7c30fb93243 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 15:49:46] "POST /jobs HTTP/1.1" 400 -
+ok
+test_export_failure_not_completed (test_execution.ExecutionTests.test_export_failure_not_completed) ... ok
+test_invalid_file_records_failure (test_execution.ExecutionTests.test_invalid_file_records_failure) ... ok
+test_invalid_spec_records_failure (test_execution.ExecutionTests.test_invalid_spec_records_failure) ... ok
+test_timeout_kills_process_group (test_execution.ExecutionTests.test_timeout_kills_process_group) ... ok
+test_accept_coherent_structure (test_quality.QualityTest.test_accept_coherent_structure) ... ok
+test_q1b_requires_three_secondary_branches (test_quality.QualityTest.test_q1b_requires_three_secondary_branches) ... ok
+test_reject_thickness_grouping_and_flatness (test_quality.QualityTest.test_reject_thickness_grouping_and_flatness) ... ok
+test_stable_streams (test_seeds.SeedsTest.test_stable_streams) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.535s
+
+OK

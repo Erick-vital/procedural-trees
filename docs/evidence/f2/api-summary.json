@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "accepted_http": 202,
+  "post_latency_seconds": 0.006406121996406,
+  "completed": {
+    "job_id": "e481b293-11f2-4048-a8e2-0113ccd7c886",
+    "status": "completed",
+    "result": "/jobs/e481b293-11f2-4048-a8e2-0113ccd7c886/manifest.json"
+  },
+  "failure": {
+    "job_id": "8290f9f4-4de3-4746-adaa-cc4fcc12ec30",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: '/no-existe/blender'"
+  },
+  "invalid_http": 400
+}

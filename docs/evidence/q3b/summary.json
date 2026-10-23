@@ -1,0 +1,3404 @@
+{
+  "stage": "Q3b",
+  "algorithm_version": "0.4.1",
+  "technical_passed": true,
+  "user_visual_acceptance": "pending",
+  "base_version": "0.4.0",
+  "same_final_wood": true,
+  "same_parameters_and_seeds": true,
+  "base_reproduced": true,
+  "repeated_geometry": true,
+  "foliage_changes_preserve_wood": {
+    "seed": true,
+    "density-zero": true,
+    "density-full": true,
+    "scale": true
+  },
+  "parameter_effects": {
+    "height_m": "603c7c6f7d26ccd73ce3da7459fa6d5425b52177babfe7c5a69cd806cb2c6eaa",
+    "base_radius_m": "f7890e028b258887d67a74d0e0157d91a4647c57af6687b2fe46fd0dc3100c60",
+    "curvature": "f3a79b4a87edcdde2dcdec13d1482681a8f9c1b0c53af6b436c14808e2072cc3",
+    "primary_branches": "aee138edf6972a0bd7969641b57be76135ade0b95e24e09f67042c531be88544",
+    "max_depth": "a46e81d9390ffa0fcbd814a9f68e7470466c1ae2006923d5a6685660dd2afbbf",
+    "branch_length_ratio": "471373c220ecd6c8d71a055bb3befd2be4d236ee93ced7ff2443c0668e221150",
+    "inclination_deg": "82b640df195475f8435a0b89067fe4528af130620cdde429dc24b50af1d41b72",
+    "asymmetry": "c33dc5f55794eae13079a7301f210c428419bd09a8737adef91ec4f7ed11d2b5",
+    "foliage_density": "32379105cb320893e21cf63276f9935c44a52e40453d9283e0ea7a6f6bfd2076",
+    "foliage_scale_m": "8e966ab92d09835e8f9506342fc595f9f0c2bb4137f65d5a3d024b83917e27ea"
+  },
+  "shared_cameras": {
+    "viejo-00": true,
+    "viejo-03": true,
+    "viejo-09": true,
+    "adulto-00": true,
+    "joven-00": true
+  },
+  "date": "2026-10-22",
+  "unit_tests_passed": 18,
+  "unique_geometries": 30,
+  "godot_passed": true,
+  "godot_assets": 30,
+  "visual_captures_generated": true,
+  "agent_visual_review_completed": true,
+  "groups": {
+    "joven": {
+      "cases": 10,
+      "triangles_range": [
+        2604,
+        2604
+      ],
+      "mass_count_range": [
+        13,
+        13
+      ],
+      "radius_volume_correlation_range": [
+        0.8627922272532902,
+        0.9950986622101577
+      ],
+      "higher_top_std_cases": 10,
+      "more_crown_wood_below_cases": 10
+    },
+    "adulto": {
+      "cases": 10,
+      "triangles_range": [
+        5784,
+        5924
+      ],
+      "mass_count_range": [
+        32,
+        33
+      ],
+      "radius_volume_correlation_range": [
+        0.877892232424485,
+        0.9661165121418506
+      ],
+      "higher_top_std_cases": 10,
+      "more_crown_wood_below_cases": 10
+    },
+    "viejo": {
+      "cases": 10,
+      "triangles_range": [
+        7032,
+        7212
+      ],
+      "mass_count_range": [
+        39,
+        42
+      ],
+      "radius_volume_correlation_range": [
+        0.831990490940011,
+        0.9660400388463207
+      ],
+      "higher_top_std_cases": 10,
+      "more_crown_wood_below_cases": 10
+    }
+  },
+  "edges": {
+    "minimum": {
+      "triangles": 328,
+      "mass_count": 0
+    },
+    "maximum": {
+      "triangles": 8116,
+      "mass_count": 55
+    },
+    "thin-many": {
+      "triangles": 5756,
+      "mass_count": 0
+    },
+    "bare-depth1": {
+      "triangles": 1448,
+      "mass_count": 0
+    },
+    "one-primary-depth2": {
+      "triangles": 952,
+      "mass_count": 6
+    },
+    "short-big-crown": {
+      "triangles": 6144,
+      "mass_count": 41
+    }
+  },
+  "focus": {
+    "viejo-00": {
+      "same_final_wood": true,
+      "same_normalization": true,
+      "same_native_structure": true,
+      "same_parameters_and_seeds": true,
+      "base": {
+        "wood_geometry_sha256": "7bd39d82c2a6f972cb584e84c4dd4e7a0f5d69a43fc499f9f6fd961db49b7c31",
+        "wood_xy_sha256": "aa74d1d8114c6b4916fbee87b31523eb1d6b28edd5a9720fde32ebf121d04a49",
+        "wood_bounds_blender": [
+          [
+            -4.4910173416137695,
+            -6.368941307067871,
+            0.0
+          ],
+          [
+            5.583032131195068,
+            5.924636363983154,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 3220,
+        "leaf_mass_count": 89,
+        "center_height_bins": [
+          0,
+          6,
+          30,
+          33,
+          20
+        ],
+        "center_azimuth_sectors": [
+          11,
+          12,
+          11,
+          14,
+          8,
+          11,
+          10,
+          12
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 2.0898911319015343,
+          "maximum_m": 7.714410690774148,
+          "mean_m": 3.810875921694951,
+          "coefficient_of_variation": 0.36302545931947083
+        },
+        "mass_triangle_histogram": {
+          "20": 65,
+          "80": 24
+        },
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -5.632875442504883,
+            -7.067147254943848,
+            1.5086852312088013
+          ],
+          [
+            6.721519947052002,
+            6.93427038192749,
+            9.000000953674316
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "7bd39d82c2a6f972cb584e84c4dd4e7a0f5d69a43fc499f9f6fd961db49b7c31",
+        "wood_xy_sha256": "aa74d1d8114c6b4916fbee87b31523eb1d6b28edd5a9720fde32ebf121d04a49",
+        "wood_bounds_blender": [
+          [
+            -4.4910173416137695,
+            -6.368941307067871,
+            0.0
+          ],
+          [
+            5.583032131195068,
+            5.924636363983154,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 1820,
+        "leaf_mass_count": 40,
+        "center_height_bins": [
+          0,
+          6,
+          13,
+          12,
+          9
+        ],
+        "center_azimuth_sectors": [
+          7,
+          7,
+          5,
+          6,
+          3,
+          5,
+          4,
+          3
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 1.7219030366806212,
+          "maximum_m": 6.9856223204536025,
+          "mean_m": 3.369657968121725,
+          "coefficient_of_variation": 0.39597035701977895
+        },
+        "mass_triangle_histogram": {
+          "20": 23,
+          "80": 17
+        },
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -4.818889617919922,
+            -6.4461798667907715,
+            1.7104096412658691
+          ],
+          [
+            6.704435348510742,
+            6.256307601928711,
+            8.85628890991211
+          ]
+        ]
+      },
+      "foliage_checks": {
+        "mass_count": 40,
+        "triangles_expected": 1820,
+        "counts_by_level": {
+          "trunk": 1,
+          "primary": 17,
+          "secondary": 22
+        },
+        "counts_by_role": {
+          "dominant": 11,
+          "medium": 28,
+          "small": 1
+        },
+        "families": {
+          "0": 3,
+          "1": 7,
+          "2": 5,
+          "3": 2,
+          "4": 13,
+          "5": 10
+        },
+        "high_detail_masses": 17,
+        "branch_count_histogram": {
+          "trunk": {
+            "1": 1
+          },
+          "primary": {
+            "1": 6,
+            "2": 4,
+            "3": 1
+          },
+          "secondary": {
+            "1": 22
+          }
+        },
+        "branches": [
+          {
+            "level": 0,
+            "branch": 0,
+            "radius_m": 0.800000011920929,
+            "parent_radius_m": 0.800000011920929,
+            "support": 1.0,
+            "masses": 1,
+            "scale_product_sum_m3": 0.32071540141328453
+          },
+          {
+            "level": 1,
+            "branch": 100,
+            "radius_m": 0.44518300890922546,
+            "parent_radius_m": 0.44518300890922546,
+            "support": 0.9488667845726013,
+            "masses": 3,
+            "scale_product_sum_m3": 6.400001717263161
+          },
+          {
+            "level": 1,
+            "branch": 101,
+            "radius_m": 0.4117533266544342,
+            "parent_radius_m": 0.4117533266544342,
+            "support": 0.858025312423706,
+            "masses": 2,
+            "scale_product_sum_m3": 6.301014290727389
+          },
+          {
+            "level": 1,
+            "branch": 102,
+            "radius_m": 0.34357303380966187,
+            "parent_radius_m": 0.34357303380966187,
+            "support": 0.6727527379989624,
+            "masses": 2,
+            "scale_product_sum_m3": 4.140422881415999
+          },
+          {
+            "level": 1,
+            "branch": 103,
+            "radius_m": 0.3649347722530365,
+            "parent_radius_m": 0.3649347722530365,
+            "support": 0.730800986289978,
+            "masses": 2,
+            "scale_product_sum_m3": 4.9357539215070005
+          },
+          {
+            "level": 1,
+            "branch": 104,
+            "radius_m": 0.3254774212837219,
+            "parent_radius_m": 0.3254774212837219,
+            "support": 0.6235799193382263,
+            "masses": 2,
+            "scale_product_sum_m3": 4.730770964028903
+          },
+          {
+            "level": 1,
+            "branch": 105,
+            "radius_m": 0.2666958272457123,
+            "parent_radius_m": 0.2666958272457123,
+            "support": 0.4638473689556122,
+            "masses": 1,
+            "scale_product_sum_m3": 2.2473641114256715
+          },
+          {
+            "level": 1,
+            "branch": 106,
+            "radius_m": 0.2376193255186081,
+            "parent_radius_m": 0.2376193255186081,
+            "support": 0.3848351240158081,
+            "masses": 1,
+            "scale_product_sum_m3": 2.6205737394626465
+          },
+          {
+            "level": 1,
+            "branch": 107,
+            "radius_m": 0.21998538076877594,
+            "parent_radius_m": 0.21998538076877594,
+            "support": 0.3369167447090149,
+            "masses": 1,
+            "scale_product_sum_m3": 2.671182621214799
+          },
+          {
+            "level": 1,
+            "branch": 108,
+            "radius_m": 0.20041118562221527,
+            "parent_radius_m": 0.20041118562221527,
+            "support": 0.2837260067462921,
+            "masses": 1,
+            "scale_product_sum_m3": 1.5609276468995346
+          },
+          {
+            "level": 1,
+            "branch": 109,
+            "radius_m": 0.14735928177833557,
+            "parent_radius_m": 0.14735928177833557,
+            "support": 0.13956324756145477,
+            "masses": 1,
+            "scale_product_sum_m3": 1.764494668329344
+          },
+          {
+            "level": 1,
+            "branch": 110,
+            "radius_m": 0.1307409703731537,
+            "parent_radius_m": 0.1307409703731537,
+            "support": 0.09440480172634125,
+            "masses": 1,
+            "scale_product_sum_m3": 1.4025187033966309
+          },
+          {
+            "level": 2,
+            "branch": 200,
+            "radius_m": 0.19081465899944305,
+            "parent_radius_m": 0.44518300890922546,
+            "support": 0.9488667845726013,
+            "masses": 1,
+            "scale_product_sum_m3": 0.6381275255372962
+          },
+          {
+            "level": 2,
+            "branch": 202,
+            "radius_m": 0.05672681704163551,
+            "parent_radius_m": 0.44518300890922546,
+            "support": 0.9488667845726013,
+            "masses": 1,
+            "scale_product_sum_m3": 0.4312434418786716
+          },
+          {
+            "level": 2,
+            "branch": 203,
+            "radius_m": 0.18547676503658295,
+            "parent_radius_m": 0.4117533266544342,
+            "support": 0.858025312423706,
+            "masses": 1,
+            "scale_product_sum_m3": 0.8214338499599005
+          },
+          {
+            "level": 2,
+            "branch": 205,
+            "radius_m": 0.05462959036231041,
+            "parent_radius_m": 0.4117533266544342,
+            "support": 0.858025312423706,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3696746365801632
+          },
+          {
+            "level": 2,
+            "branch": 206,
+            "radius_m": 0.13495735824108124,
+            "parent_radius_m": 0.34357303380966187,
+            "support": 0.6727527379989624,
+            "masses": 1,
+            "scale_product_sum_m3": 0.4724589363144314
+          },
+          {
+            "level": 2,
+            "branch": 208,
+            "radius_m": 0.05250560864806175,
+            "parent_radius_m": 0.34357303380966187,
+            "support": 0.6727527379989624,
+            "masses": 1,
+            "scale_product_sum_m3": 0.4241979305257876
+          },
+          {
+            "level": 2,
+            "branch": 209,
+            "radius_m": 0.14117957651615143,
+            "parent_radius_m": 0.3649347722530365,
+            "support": 0.730800986289978,
+            "masses": 1,
+            "scale_product_sum_m3": 0.6411827940286844
+          },
+          {
+            "level": 2,
+            "branch": 211,
+            "radius_m": 0.046374961733818054,
+            "parent_radius_m": 0.3649347722530365,
+            "support": 0.730800986289978,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3249045466233851
+          },
+          {
+            "level": 2,
+            "branch": 212,
+            "radius_m": 0.14263451099395752,
+            "parent_radius_m": 0.3254774212837219,
+            "support": 0.6235799193382263,
+            "masses": 1,
+            "scale_product_sum_m3": 0.635526890966146
+          },
+          {
+            "level": 2,
+            "branch": 214,
+            "radius_m": 0.04981048405170441,
+            "parent_radius_m": 0.3254774212837219,
+            "support": 0.6235799193382263,
+            "masses": 1,
+            "scale_product_sum_m3": 0.34290310685832937
+          },
+          {
+            "level": 2,
+            "branch": 215,
+            "radius_m": 0.1160363256931305,
+            "parent_radius_m": 0.2666958272457123,
+            "support": 0.4638473689556122,
+            "masses": 1,
+            "scale_product_sum_m3": 0.6656890096446697
+          },
+          {
+            "level": 2,
+            "branch": 217,
+            "radius_m": 0.03407292068004608,
+            "parent_radius_m": 0.2666958272457123,
+            "support": 0.4638473689556122,
+            "masses": 1,
+            "scale_product_sum_m3": 0.36137156887719624
+          },
+          {
+            "level": 2,
+            "branch": 218,
+            "radius_m": 0.09411901235580444,
+            "parent_radius_m": 0.2376193255186081,
+            "support": 0.3848351240158081,
+            "masses": 1,
+            "scale_product_sum_m3": 0.472879478734579
+          },
+          {
+            "level": 2,
+            "branch": 220,
+            "radius_m": 0.031131012365221977,
+            "parent_radius_m": 0.2376193255186081,
+            "support": 0.3848351240158081,
+            "masses": 1,
+            "scale_product_sum_m3": 0.32361240219017806
+          },
+          {
+            "level": 2,
+            "branch": 221,
+            "radius_m": 0.09574910998344421,
+            "parent_radius_m": 0.21998538076877594,
+            "support": 0.3369167447090149,
+            "masses": 1,
+            "scale_product_sum_m3": 0.5629869607307942
+          },
+          {
+            "level": 2,
+            "branch": 223,
+            "radius_m": 0.030708856880664825,
+            "parent_radius_m": 0.21998538076877594,
+            "support": 0.3369167447090149,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3574260029657585
+          },
+          {
+            "level": 2,
+            "branch": 224,
+            "radius_m": 0.08421194553375244,
+            "parent_radius_m": 0.20041118562221527,
+            "support": 0.2837260067462921,
+            "masses": 1,
+            "scale_product_sum_m3": 0.46305789287040944
+          },
+          {
+            "level": 2,
+            "branch": 226,
+            "radius_m": 0.028407055884599686,
+            "parent_radius_m": 0.20041118562221527,
+            "support": 0.2837260067462921,
+            "masses": 1,
+            "scale_product_sum_m3": 0.21227018724465777
+          },
+          {
+            "level": 2,
+            "branch": 227,
+            "radius_m": 0.05940479412674904,
+            "parent_radius_m": 0.14735928177833557,
+            "support": 0.13956324756145477,
+            "masses": 1,
+            "scale_product_sum_m3": 0.34119761034759055
+          },
+          {
+            "level": 2,
+            "branch": 229,
+            "radius_m": 0.02186770737171173,
+            "parent_radius_m": 0.14735928177833557,
+            "support": 0.13956324756145477,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3064606824202948
+          },
+          {
+            "level": 2,
+            "branch": 230,
+            "radius_m": 0.057235028594732285,
+            "parent_radius_m": 0.1307409703731537,
+            "support": 0.09440480172634125,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3054070145117511
+          },
+          {
+            "level": 2,
+            "branch": 232,
+            "radius_m": 0.01923743635416031,
+            "parent_radius_m": 0.1307409703731537,
+            "support": 0.09440480172634125,
+            "masses": 1,
+            "scale_product_sum_m3": 0.16477230546863714
+          }
+        ]
+      },
+      "distribution": {
+        "candidate": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 4.529481887817383,
+              "bottom_m": 1.7104096412658691,
+              "summed_mass_volume_m3": 25.22838829748798
+            },
+            {
+              "primary_index": 1,
+              "top_m": 5.103759765625,
+              "bottom_m": 2.0996503829956055,
+              "summed_mass_volume_m3": 25.81209092474698
+            },
+            {
+              "primary_index": 2,
+              "top_m": 5.809885025024414,
+              "bottom_m": 2.6693058013916016,
+              "summed_mass_volume_m3": 16.9064942781503
+            },
+            {
+              "primary_index": 3,
+              "top_m": 6.103592395782471,
+              "bottom_m": 2.943199872970581,
+              "summed_mass_volume_m3": 19.957527632975445
+            },
+            {
+              "primary_index": 4,
+              "top_m": 6.398479461669922,
+              "bottom_m": 3.225327968597412,
+              "summed_mass_volume_m3": 19.393417463385656
+            },
+            {
+              "primary_index": 5,
+              "top_m": 7.490829944610596,
+              "bottom_m": 4.394929885864258,
+              "summed_mass_volume_m3": 10.867724303975896
+            },
+            {
+              "primary_index": 6,
+              "top_m": 7.822350978851318,
+              "bottom_m": 4.846914291381836,
+              "summed_mass_volume_m3": 11.643652375212696
+            },
+            {
+              "primary_index": 7,
+              "top_m": 8.253151893615723,
+              "bottom_m": 5.398301601409912,
+              "summed_mass_volume_m3": 11.623561573505867
+            },
+            {
+              "primary_index": 8,
+              "top_m": 8.385626792907715,
+              "bottom_m": 5.803806304931641,
+              "summed_mass_volume_m3": 7.0679415053067105
+            },
+            {
+              "primary_index": 9,
+              "top_m": 8.714654922485352,
+              "bottom_m": 6.167566776275635,
+              "summed_mass_volume_m3": 7.931641490858358
+            },
+            {
+              "primary_index": 10,
+              "top_m": 8.85628890991211,
+              "bottom_m": 6.093260288238525,
+              "summed_mass_volume_m3": 6.042875128458642
+            }
+          ],
+          "top_range_over_height": 0.48075633578830296,
+          "top_std_over_height": 0.16085626129723557,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 129,
+              "leaf_pixels": 2271,
+              "internal_empty_pixels": 291,
+              "envelope_pixels": 2720,
+              "internal_empty_fraction": 0.10698529411764705,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 60,
+              "leaf_pixels": 2341,
+              "internal_empty_pixels": 368,
+              "envelope_pixels": 2873,
+              "internal_empty_fraction": 0.1280891054646711,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 40,
+              "leaf_pixels": 2655,
+              "internal_empty_pixels": 225,
+              "envelope_pixels": 3061,
+              "internal_empty_fraction": 0.07350539039529566,
+              "resolution": 128
+            }
+          },
+          "radius_volume_correlation": 0.9660400388463207,
+          "bare_secondary_branches": 11
+        },
+        "base": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 5.227492809295654,
+              "bottom_m": 1.5086852312088013,
+              "summed_mass_volume_m3": 50.143681427822834
+            },
+            {
+              "primary_index": 1,
+              "top_m": 5.799412727355957,
+              "bottom_m": 2.2343573570251465,
+              "summed_mass_volume_m3": 49.48635102833699
+            },
+            {
+              "primary_index": 2,
+              "top_m": 6.551206111907959,
+              "bottom_m": 2.3964273929595947,
+              "summed_mass_volume_m3": 53.17398304278807
+            },
+            {
+              "primary_index": 3,
+              "top_m": 6.693802356719971,
+              "bottom_m": 2.739767074584961,
+              "summed_mass_volume_m3": 44.95564392093729
+            },
+            {
+              "primary_index": 4,
+              "top_m": 7.312563896179199,
+              "bottom_m": 3.0102148056030273,
+              "summed_mass_volume_m3": 46.0326428427943
+            },
+            {
+              "primary_index": 5,
+              "top_m": 8.195576667785645,
+              "bottom_m": 3.636840581893921,
+              "summed_mass_volume_m3": 46.77308406116936
+            },
+            {
+              "primary_index": 6,
+              "top_m": 8.62543773651123,
+              "bottom_m": 4.315236568450928,
+              "summed_mass_volume_m3": 39.709085019213184
+            },
+            {
+              "primary_index": 7,
+              "top_m": 9.0,
+              "bottom_m": 4.40943717956543,
+              "summed_mass_volume_m3": 44.02835299320092
+            },
+            {
+              "primary_index": 8,
+              "top_m": 9.000000953674316,
+              "bottom_m": 4.994846820831299,
+              "summed_mass_volume_m3": 37.262380971515086
+            },
+            {
+              "primary_index": 9,
+              "top_m": 9.0,
+              "bottom_m": 5.296609878540039,
+              "summed_mass_volume_m3": 43.34695308493489
+            },
+            {
+              "primary_index": 10,
+              "top_m": 9.0,
+              "bottom_m": 5.537166595458984,
+              "summed_mass_volume_m3": 45.83523455493681
+            }
+          ],
+          "top_range_over_height": 0.41916757159762913,
+          "top_std_over_height": 0.15005401349429154,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 0,
+              "leaf_pixels": 3113,
+              "internal_empty_pixels": 121,
+              "envelope_pixels": 3279,
+              "internal_empty_fraction": 0.03690149435803599,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 20,
+              "leaf_pixels": 3524,
+              "internal_empty_pixels": 202,
+              "envelope_pixels": 3912,
+              "internal_empty_fraction": 0.0516359918200409,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 6,
+              "leaf_pixels": 3673,
+              "internal_empty_pixels": 76,
+              "envelope_pixels": 3962,
+              "internal_empty_fraction": 0.019182231196365473,
+              "resolution": 128
+            }
+          }
+        }
+      },
+      "prototypes": [
+        {
+          "family": 0,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.06531327557030298,
+          "geometry_sha256": "6bd080005f01017b424a9fa217bec008dce41f40b1a966117131fb860ee3a489"
+        },
+        {
+          "family": 1,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07567823962656169,
+          "geometry_sha256": "4377d2bee93bfaeb9bd3ebc5ca34261c450d8f3545803f346d565d7a4647fe68"
+        },
+        {
+          "family": 2,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.1251195826280386,
+          "geometry_sha256": "b2812ecc8812818d5b79b808a6dd3ac62aeb146f68a84be64a0c71797c49c145"
+        },
+        {
+          "family": 3,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07220183022948232,
+          "geometry_sha256": "2eeb2f2bbf07111964bc5bf2fbae2059a44e0fbc268b45cdff1cd8c45e7f0580"
+        },
+        {
+          "family": 4,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.0661481475958433,
+          "geometry_sha256": "6c194577ff91da85a7c3b7a2f55e54d16bfeb219d8ba8e0ae0a841b793e7de2e"
+        },
+        {
+          "family": 5,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.06831454287729813,
+          "geometry_sha256": "531be0e059f4e6b82e91eb5e682c376b27225a13943b4da273286bb22c4dfb54"
+        }
+      ],
+      "shared_framing": {
+        "center": [
+          0.5443224999999998,
+          -0.06643850000000029,
+          4.5000005
+        ],
+        "span": 14.001417
+      },
+      "base_manifest_sha256": "d19e9465f35a68f40c760bb68652227691faea9cdb49114aa9385cb0db70786e",
+      "candidate_manifest_sha256": "5ecf9310d0272b7c1d5b13b2f52fde0c984dfe20caf907a4fe499af9d3bef1c0"
+    },
+    "viejo-03": {
+      "same_final_wood": true,
+      "same_normalization": true,
+      "same_native_structure": true,
+      "same_parameters_and_seeds": true,
+      "base": {
+        "wood_geometry_sha256": "2d1864168ba3c056ec36ad735edb4f451e6c46279eeb6b0378d9aaf2b0e54460",
+        "wood_xy_sha256": "4c02d1d67329804e8a86c138b30d691c3db1f5070b8f3c79a98dee42ef6451bb",
+        "wood_bounds_blender": [
+          [
+            -6.196290016174316,
+            -5.185175895690918,
+            0.0
+          ],
+          [
+            6.062685012817383,
+            4.709830284118652,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 3140,
+        "leaf_mass_count": 85,
+        "center_height_bins": [
+          0,
+          7,
+          26,
+          34,
+          18
+        ],
+        "center_azimuth_sectors": [
+          16,
+          10,
+          11,
+          12,
+          9,
+          8,
+          10,
+          9
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 2.1898982362134216,
+          "maximum_m": 7.65925123663962,
+          "mean_m": 3.923861015103242,
+          "coefficient_of_variation": 0.34377205839685215
+        },
+        "mass_triangle_histogram": {
+          "20": 61,
+          "80": 24
+        },
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -6.649187088012695,
+            -6.26108980178833,
+            1.3918265104293823
+          ],
+          [
+            7.321327209472656,
+            6.033702850341797,
+            9.000000953674316
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "2d1864168ba3c056ec36ad735edb4f451e6c46279eeb6b0378d9aaf2b0e54460",
+        "wood_xy_sha256": "4c02d1d67329804e8a86c138b30d691c3db1f5070b8f3c79a98dee42ef6451bb",
+        "wood_bounds_blender": [
+          [
+            -6.196290016174316,
+            -5.185175895690918,
+            0.0
+          ],
+          [
+            6.062685012817383,
+            4.709830284118652,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 1760,
+        "leaf_mass_count": 40,
+        "center_height_bins": [
+          0,
+          6,
+          12,
+          13,
+          9
+        ],
+        "center_azimuth_sectors": [
+          7,
+          5,
+          5,
+          7,
+          5,
+          3,
+          4,
+          4
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 1.7048851336711632,
+          "maximum_m": 5.911162861894791,
+          "mean_m": 3.2515615143340453,
+          "coefficient_of_variation": 0.3803520354185428
+        },
+        "mass_triangle_histogram": {
+          "20": 24,
+          "80": 16
+        },
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -6.364969253540039,
+            -5.563159942626953,
+            1.4939738512039185
+          ],
+          [
+            6.469065189361572,
+            5.261448860168457,
+            8.862781524658203
+          ]
+        ]
+      },
+      "foliage_checks": {
+        "mass_count": 40,
+        "triangles_expected": 1760,
+        "counts_by_level": {
+          "trunk": 1,
+          "primary": 16,
+          "secondary": 23
+        },
+        "counts_by_role": {
+          "dominant": 11,
+          "medium": 27,
+          "small": 2
+        },
+        "families": {
+          "0": 1,
+          "1": 6,
+          "2": 3,
+          "3": 6,
+          "4": 14,
+          "5": 10
+        },
+        "high_detail_masses": 16,
+        "branch_count_histogram": {
+          "trunk": {
+            "1": 1
+          },
+          "primary": {
+            "1": 7,
+            "2": 3,
+            "3": 1
+          },
+          "secondary": {
+            "1": 21,
+            "2": 1
+          }
+        },
+        "branches": [
+          {
+            "level": 0,
+            "branch": 0,
+            "radius_m": 0.800000011920929,
+            "parent_radius_m": 0.800000011920929,
+            "support": 1.0,
+            "masses": 1,
+            "scale_product_sum_m3": 0.258396009494539
+          },
+          {
+            "level": 1,
+            "branch": 100,
+            "radius_m": 0.46157997846603394,
+            "parent_radius_m": 0.46157997846603394,
+            "support": 0.9934238791465759,
+            "masses": 3,
+            "scale_product_sum_m3": 5.8281665320314975
+          },
+          {
+            "level": 1,
+            "branch": 101,
+            "radius_m": 0.39460885524749756,
+            "parent_radius_m": 0.39460885524749756,
+            "support": 0.8114370703697205,
+            "masses": 2,
+            "scale_product_sum_m3": 5.05083082068733
+          },
+          {
+            "level": 1,
+            "branch": 102,
+            "radius_m": 0.36021652817726135,
+            "parent_radius_m": 0.36021652817726135,
+            "support": 0.7179796695709229,
+            "masses": 2,
+            "scale_product_sum_m3": 5.485520508822963
+          },
+          {
+            "level": 1,
+            "branch": 103,
+            "radius_m": 0.3149707019329071,
+            "parent_radius_m": 0.3149707019329071,
+            "support": 0.5950290560722351,
+            "masses": 2,
+            "scale_product_sum_m3": 4.147870228631381
+          },
+          {
+            "level": 1,
+            "branch": 104,
+            "radius_m": 0.28746554255485535,
+            "parent_radius_m": 0.28746554255485535,
+            "support": 0.5202867984771729,
+            "masses": 1,
+            "scale_product_sum_m3": 1.9835797485351674
+          },
+          {
+            "level": 1,
+            "branch": 105,
+            "radius_m": 0.273375928401947,
+            "parent_radius_m": 0.273375928401947,
+            "support": 0.4819997549057007,
+            "masses": 1,
+            "scale_product_sum_m3": 2.5254414289503657
+          },
+          {
+            "level": 1,
+            "branch": 106,
+            "radius_m": 0.2582143545150757,
+            "parent_radius_m": 0.2582143545150757,
+            "support": 0.44079986214637756,
+            "masses": 1,
+            "scale_product_sum_m3": 2.6496275784743566
+          },
+          {
+            "level": 1,
+            "branch": 107,
+            "radius_m": 0.2114563286304474,
+            "parent_radius_m": 0.2114563286304474,
+            "support": 0.31373998522758484,
+            "masses": 1,
+            "scale_product_sum_m3": 2.6272102157070605
+          },
+          {
+            "level": 1,
+            "branch": 108,
+            "radius_m": 0.1860126256942749,
+            "parent_radius_m": 0.1860126256942749,
+            "support": 0.24459952116012573,
+            "masses": 1,
+            "scale_product_sum_m3": 2.5805146459701556
+          },
+          {
+            "level": 1,
+            "branch": 109,
+            "radius_m": 0.15481352806091309,
+            "parent_radius_m": 0.15481352806091309,
+            "support": 0.15981937944889069,
+            "masses": 1,
+            "scale_product_sum_m3": 1.6569506639815137
+          },
+          {
+            "level": 1,
+            "branch": 110,
+            "radius_m": 0.12255793809890747,
+            "parent_radius_m": 0.12255793809890747,
+            "support": 0.07216831296682358,
+            "masses": 1,
+            "scale_product_sum_m3": 1.468571977675505
+          },
+          {
+            "level": 2,
+            "branch": 200,
+            "radius_m": 0.2066686451435089,
+            "parent_radius_m": 0.46157997846603394,
+            "support": 0.9934238791465759,
+            "masses": 2,
+            "scale_product_sum_m3": 0.8585870227093555
+          },
+          {
+            "level": 2,
+            "branch": 202,
+            "radius_m": 0.0623503103852272,
+            "parent_radius_m": 0.46157997846603394,
+            "support": 0.9934238791465759,
+            "masses": 1,
+            "scale_product_sum_m3": 0.46963624723351793
+          },
+          {
+            "level": 2,
+            "branch": 203,
+            "radius_m": 0.14852651953697205,
+            "parent_radius_m": 0.39460885524749756,
+            "support": 0.8114370703697205,
+            "masses": 1,
+            "scale_product_sum_m3": 0.7931179573867956
+          },
+          {
+            "level": 2,
+            "branch": 205,
+            "radius_m": 0.05396908521652222,
+            "parent_radius_m": 0.39460885524749756,
+            "support": 0.8114370703697205,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3588006758810134
+          },
+          {
+            "level": 2,
+            "branch": 206,
+            "radius_m": 0.1565849781036377,
+            "parent_radius_m": 0.36021652817726135,
+            "support": 0.7179796695709229,
+            "masses": 1,
+            "scale_product_sum_m3": 0.5668864394408913
+          },
+          {
+            "level": 2,
+            "branch": 208,
+            "radius_m": 0.05030134320259094,
+            "parent_radius_m": 0.36021652817726135,
+            "support": 0.7179796695709229,
+            "masses": 1,
+            "scale_product_sum_m3": 0.5250951324798735
+          },
+          {
+            "level": 2,
+            "branch": 209,
+            "radius_m": 0.1294565200805664,
+            "parent_radius_m": 0.3149707019329071,
+            "support": 0.5950290560722351,
+            "masses": 1,
+            "scale_product_sum_m3": 0.44017195873991766
+          },
+          {
+            "level": 2,
+            "branch": 211,
+            "radius_m": 0.04252362251281738,
+            "parent_radius_m": 0.3149707019329071,
+            "support": 0.5950290560722351,
+            "masses": 1,
+            "scale_product_sum_m3": 0.2658871549388702
+          },
+          {
+            "level": 2,
+            "branch": 212,
+            "radius_m": 0.12079982459545135,
+            "parent_radius_m": 0.28746554255485535,
+            "support": 0.5202867984771729,
+            "masses": 1,
+            "scale_product_sum_m3": 0.4215490147716179
+          },
+          {
+            "level": 2,
+            "branch": 214,
+            "radius_m": 0.03694795072078705,
+            "parent_radius_m": 0.28746554255485535,
+            "support": 0.5202867984771729,
+            "masses": 1,
+            "scale_product_sum_m3": 0.28033915752169747
+          },
+          {
+            "level": 2,
+            "branch": 215,
+            "radius_m": 0.1141076609492302,
+            "parent_radius_m": 0.273375928401947,
+            "support": 0.4819997549057007,
+            "masses": 1,
+            "scale_product_sum_m3": 0.4505155756389174
+          },
+          {
+            "level": 2,
+            "branch": 217,
+            "radius_m": 0.038979172706604004,
+            "parent_radius_m": 0.273375928401947,
+            "support": 0.4819997549057007,
+            "masses": 1,
+            "scale_product_sum_m3": 0.29415813269773944
+          },
+          {
+            "level": 2,
+            "branch": 218,
+            "radius_m": 0.09971616417169571,
+            "parent_radius_m": 0.2582143545150757,
+            "support": 0.44079986214637756,
+            "masses": 1,
+            "scale_product_sum_m3": 0.41863119575607854
+          },
+          {
+            "level": 2,
+            "branch": 220,
+            "radius_m": 0.038286130875349045,
+            "parent_radius_m": 0.2582143545150757,
+            "support": 0.44079986214637756,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3245979462690143
+          },
+          {
+            "level": 2,
+            "branch": 221,
+            "radius_m": 0.09528642147779465,
+            "parent_radius_m": 0.2114563286304474,
+            "support": 0.31373998522758484,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3631817663053242
+          },
+          {
+            "level": 2,
+            "branch": 223,
+            "radius_m": 0.02911093831062317,
+            "parent_radius_m": 0.2114563286304474,
+            "support": 0.31373998522758484,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3553649786405037
+          },
+          {
+            "level": 2,
+            "branch": 224,
+            "radius_m": 0.07083820551633835,
+            "parent_radius_m": 0.1860126256942749,
+            "support": 0.24459952116012573,
+            "masses": 1,
+            "scale_product_sum_m3": 0.4229310716636644
+          },
+          {
+            "level": 2,
+            "branch": 226,
+            "radius_m": 0.025048166513442993,
+            "parent_radius_m": 0.1860126256942749,
+            "support": 0.24459952116012573,
+            "masses": 1,
+            "scale_product_sum_m3": 0.2608355219792826
+          },
+          {
+            "level": 2,
+            "branch": 227,
+            "radius_m": 0.0660233274102211,
+            "parent_radius_m": 0.15481352806091309,
+            "support": 0.15981937944889069,
+            "masses": 1,
+            "scale_product_sum_m3": 0.42472571008374976
+          },
+          {
+            "level": 2,
+            "branch": 229,
+            "radius_m": 0.023249167948961258,
+            "parent_radius_m": 0.15481352806091309,
+            "support": 0.15981937944889069,
+            "masses": 1,
+            "scale_product_sum_m3": 0.19794639793104746
+          },
+          {
+            "level": 2,
+            "branch": 230,
+            "radius_m": 0.05461866781115532,
+            "parent_radius_m": 0.12255793809890747,
+            "support": 0.07216831296682358,
+            "masses": 1,
+            "scale_product_sum_m3": 0.4224396537053059
+          },
+          {
+            "level": 2,
+            "branch": 232,
+            "radius_m": 0.015704531222581863,
+            "parent_radius_m": 0.12255793809890747,
+            "support": 0.07216831296682358,
+            "masses": 1,
+            "scale_product_sum_m3": 0.1506887837203813
+          }
+        ]
+      },
+      "distribution": {
+        "candidate": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 4.351582050323486,
+              "bottom_m": 1.4939738512039185,
+              "summed_mass_volume_m3": 24.29049529254068
+            },
+            {
+              "primary_index": 1,
+              "top_m": 5.15597677230835,
+              "bottom_m": 2.3480145931243896,
+              "summed_mass_volume_m3": 19.907540240269253
+            },
+            {
+              "primary_index": 2,
+              "top_m": 5.6730780601501465,
+              "bottom_m": 2.305359363555908,
+              "summed_mass_volume_m3": 22.477010776188155
+            },
+            {
+              "primary_index": 3,
+              "top_m": 6.142302989959717,
+              "bottom_m": 2.9160232543945312,
+              "summed_mass_volume_m3": 17.600951387818593
+            },
+            {
+              "primary_index": 4,
+              "top_m": 6.62986946105957,
+              "bottom_m": 4.165566921234131,
+              "summed_mass_volume_m3": 9.334263314822843
+            },
+            {
+              "primary_index": 5,
+              "top_m": 7.0481038093566895,
+              "bottom_m": 4.521765232086182,
+              "summed_mass_volume_m3": 10.909998808269544
+            },
+            {
+              "primary_index": 6,
+              "top_m": 7.421396255493164,
+              "bottom_m": 4.638912200927734,
+              "summed_mass_volume_m3": 11.35828301589936
+            },
+            {
+              "primary_index": 7,
+              "top_m": 8.34726333618164,
+              "bottom_m": 5.1682820320129395,
+              "summed_mass_volume_m3": 10.647426931662872
+            },
+            {
+              "primary_index": 8,
+              "top_m": 8.460481643676758,
+              "bottom_m": 5.425716876983643,
+              "summed_mass_volume_m3": 11.559846168556154
+            },
+            {
+              "primary_index": 9,
+              "top_m": 8.583568572998047,
+              "bottom_m": 6.334389686584473,
+              "summed_mass_volume_m3": 7.144257655231438
+            },
+            {
+              "primary_index": 10,
+              "top_m": 8.862781524658203,
+              "bottom_m": 6.402200698852539,
+              "summed_mass_volume_m3": 6.362218478359864
+            }
+          ],
+          "top_range_over_height": 0.5012443860371908,
+          "top_std_over_height": 0.1611687141700198,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 157,
+              "leaf_pixels": 2588,
+              "internal_empty_pixels": 222,
+              "envelope_pixels": 3072,
+              "internal_empty_fraction": 0.072265625,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 160,
+              "leaf_pixels": 2472,
+              "internal_empty_pixels": 152,
+              "envelope_pixels": 2916,
+              "internal_empty_fraction": 0.05212620027434842,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 191,
+              "leaf_pixels": 2614,
+              "internal_empty_pixels": 278,
+              "envelope_pixels": 3249,
+              "internal_empty_fraction": 0.0855647891658972,
+              "resolution": 128
+            }
+          },
+          "radius_volume_correlation": 0.914049337456245,
+          "bare_secondary_branches": 11
+        },
+        "base": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 5.03794527053833,
+              "bottom_m": 1.3918265104293823,
+              "summed_mass_volume_m3": 42.49342901391598
+            },
+            {
+              "primary_index": 1,
+              "top_m": 6.015075206756592,
+              "bottom_m": 2.169389247894287,
+              "summed_mass_volume_m3": 44.24367890485155
+            },
+            {
+              "primary_index": 2,
+              "top_m": 6.355282783508301,
+              "bottom_m": 2.2217917442321777,
+              "summed_mass_volume_m3": 45.608366273724336
+            },
+            {
+              "primary_index": 3,
+              "top_m": 7.135421276092529,
+              "bottom_m": 3.027402400970459,
+              "summed_mass_volume_m3": 43.66600360279457
+            },
+            {
+              "primary_index": 4,
+              "top_m": 7.360530376434326,
+              "bottom_m": 3.3188161849975586,
+              "summed_mass_volume_m3": 49.1628987143049
+            },
+            {
+              "primary_index": 5,
+              "top_m": 7.720287322998047,
+              "bottom_m": 3.5805253982543945,
+              "summed_mass_volume_m3": 44.61646439497417
+            },
+            {
+              "primary_index": 6,
+              "top_m": 7.97054386138916,
+              "bottom_m": 4.154201030731201,
+              "summed_mass_volume_m3": 42.632480207437766
+            },
+            {
+              "primary_index": 7,
+              "top_m": 8.603792190551758,
+              "bottom_m": 4.348044395446777,
+              "summed_mass_volume_m3": 50.364619000790604
+            },
+            {
+              "primary_index": 8,
+              "top_m": 9.000000953674316,
+              "bottom_m": 5.259668827056885,
+              "summed_mass_volume_m3": 43.04526161980417
+            },
+            {
+              "primary_index": 9,
+              "top_m": 9.0,
+              "bottom_m": 5.110747337341309,
+              "summed_mass_volume_m3": 52.99217487238153
+            },
+            {
+              "primary_index": 10,
+              "top_m": 9.0,
+              "bottom_m": 5.6467604637146,
+              "summed_mass_volume_m3": 42.40143151918164
+            }
+          ],
+          "top_range_over_height": 0.4402284092373318,
+          "top_std_over_height": 0.14183089005606597,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 36,
+              "leaf_pixels": 3495,
+              "internal_empty_pixels": 190,
+              "envelope_pixels": 3839,
+              "internal_empty_fraction": 0.04949205522271425,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 13,
+              "leaf_pixels": 3547,
+              "internal_empty_pixels": 78,
+              "envelope_pixels": 3803,
+              "internal_empty_fraction": 0.020510123586642125,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 34,
+              "leaf_pixels": 4028,
+              "internal_empty_pixels": 194,
+              "envelope_pixels": 4454,
+              "internal_empty_fraction": 0.04355635383924562,
+              "resolution": 128
+            }
+          }
+        }
+      },
+      "prototypes": [
+        {
+          "family": 0,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07022006658789112,
+          "geometry_sha256": "12132668d7e940979dccbd86fbd77bd8c73816e16b2bfc0aa6ac11072fd7954a"
+        },
+        {
+          "family": 1,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.06742126426686086,
+          "geometry_sha256": "8dd2f4138cf4290bcfe1778f0231ce61192fcef85161f5f35b76c6706f738f0c"
+        },
+        {
+          "family": 2,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.11611386071708801,
+          "geometry_sha256": "4ae6a8014d1d19d5e7554c712ddd1cb49c04fabe6489086128501aef5a395b8b"
+        },
+        {
+          "family": 3,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.06607747803280509,
+          "geometry_sha256": "9451cd2c593bce92feee0a6cbccef49db105afdf40f0ed69bc9374c5adb53abc"
+        },
+        {
+          "family": 4,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.06644182660029953,
+          "geometry_sha256": "020604ab390ec360db90b7e27d8351e71ca9c1480970a2355806b5d20e9d4d79"
+        },
+        {
+          "family": 5,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.07210680417171453,
+          "geometry_sha256": "00bf15bba2cf82df221ea8c5280168359cfcb8d5a63438b09c8ccb1c9274601d"
+        }
+      ],
+      "shared_framing": {
+        "center": [
+          0.33606999999999987,
+          -0.11369350000000011,
+          4.5000005
+        ],
+        "span": 13.970514000000001
+      },
+      "base_manifest_sha256": "d5e33ec42ea5a450bb43c7e0922ebc37a879baa0dc1daa1b185f13992069a38e",
+      "candidate_manifest_sha256": "50f030ffb81406839872fd107633cb7cc21ed023b491faab4f90bdbce5157236"
+    },
+    "viejo-09": {
+      "same_final_wood": true,
+      "same_normalization": true,
+      "same_native_structure": true,
+      "same_parameters_and_seeds": true,
+      "base": {
+        "wood_geometry_sha256": "0b62852bca3a6daccd2566b472ecb146df2ec84683b8917a795009e9f3cd30f3",
+        "wood_xy_sha256": "702834bfbdbdde4c6f0b39dfd32792f4545ce82933e3ab4d46da7d5b58dee4fd",
+        "wood_bounds_blender": [
+          [
+            -4.627171039581299,
+            -6.0165324211120605,
+            0.0
+          ],
+          [
+            6.504335880279541,
+            5.381451606750488,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 3220,
+        "leaf_mass_count": 89,
+        "center_height_bins": [
+          0,
+          4,
+          36,
+          29,
+          20
+        ],
+        "center_azimuth_sectors": [
+          12,
+          13,
+          13,
+          10,
+          9,
+          12,
+          10,
+          10
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 2.170340721957064,
+          "maximum_m": 7.197819598732284,
+          "mean_m": 3.8079042897144086,
+          "coefficient_of_variation": 0.3481511227749957
+        },
+        "mass_triangle_histogram": {
+          "20": 65,
+          "80": 24
+        },
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -5.255064010620117,
+            -6.861468315124512,
+            1.4654695987701416
+          ],
+          [
+            7.188305377960205,
+            6.291393756866455,
+            9.000000953674316
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "0b62852bca3a6daccd2566b472ecb146df2ec84683b8917a795009e9f3cd30f3",
+        "wood_xy_sha256": "702834bfbdbdde4c6f0b39dfd32792f4545ce82933e3ab4d46da7d5b58dee4fd",
+        "wood_bounds_blender": [
+          [
+            -4.627171039581299,
+            -6.0165324211120605,
+            0.0
+          ],
+          [
+            6.504335880279541,
+            5.381451606750488,
+            9.0
+          ]
+        ],
+        "wood_triangles": 5292,
+        "leaf_triangles": 1900,
+        "leaf_mass_count": 41,
+        "center_height_bins": [
+          0,
+          5,
+          16,
+          12,
+          8
+        ],
+        "center_azimuth_sectors": [
+          7,
+          8,
+          4,
+          4,
+          4,
+          5,
+          5,
+          4
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 1.801991539205905,
+          "maximum_m": 5.963113998034352,
+          "mean_m": 3.274933502461113,
+          "coefficient_of_variation": 0.3780296905412983
+        },
+        "mass_triangle_histogram": {
+          "20": 23,
+          "80": 18
+        },
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -4.912966251373291,
+            -6.387866020202637,
+            1.7929527759552002
+          ],
+          [
+            6.742230415344238,
+            5.85964822769165,
+            8.841297149658203
+          ]
+        ]
+      },
+      "foliage_checks": {
+        "mass_count": 41,
+        "triangles_expected": 1900,
+        "counts_by_level": {
+          "trunk": 1,
+          "primary": 18,
+          "secondary": 22
+        },
+        "counts_by_role": {
+          "dominant": 11,
+          "medium": 29,
+          "small": 1
+        },
+        "families": {
+          "0": 5,
+          "1": 8,
+          "2": 3,
+          "3": 2,
+          "4": 14,
+          "5": 9
+        },
+        "high_detail_masses": 18,
+        "branch_count_histogram": {
+          "trunk": {
+            "1": 1
+          },
+          "primary": {
+            "1": 5,
+            "2": 5,
+            "3": 1
+          },
+          "secondary": {
+            "1": 22
+          }
+        },
+        "branches": [
+          {
+            "level": 0,
+            "branch": 0,
+            "radius_m": 0.800000011920929,
+            "parent_radius_m": 0.800000011920929,
+            "support": 1.0,
+            "masses": 1,
+            "scale_product_sum_m3": 0.2753565806033306
+          },
+          {
+            "level": 1,
+            "branch": 100,
+            "radius_m": 0.43446582555770874,
+            "parent_radius_m": 0.43446582555770874,
+            "support": 0.919744074344635,
+            "masses": 3,
+            "scale_product_sum_m3": 5.164966860529063
+          },
+          {
+            "level": 1,
+            "branch": 101,
+            "radius_m": 0.3873763978481293,
+            "parent_radius_m": 0.3873763978481293,
+            "support": 0.7917836904525757,
+            "masses": 2,
+            "scale_product_sum_m3": 4.028867212302572
+          },
+          {
+            "level": 1,
+            "branch": 102,
+            "radius_m": 0.3584706485271454,
+            "parent_radius_m": 0.3584706485271454,
+            "support": 0.7132354378700256,
+            "masses": 2,
+            "scale_product_sum_m3": 5.178553447131799
+          },
+          {
+            "level": 1,
+            "branch": 103,
+            "radius_m": 0.3577255308628082,
+            "parent_radius_m": 0.3577255308628082,
+            "support": 0.7112106680870056,
+            "masses": 2,
+            "scale_product_sum_m3": 5.3301899152517835
+          },
+          {
+            "level": 1,
+            "branch": 104,
+            "radius_m": 0.3174258768558502,
+            "parent_radius_m": 0.3174258768558502,
+            "support": 0.6017007231712341,
+            "masses": 2,
+            "scale_product_sum_m3": 3.1539942311544844
+          },
+          {
+            "level": 1,
+            "branch": 105,
+            "radius_m": 0.29997482895851135,
+            "parent_radius_m": 0.29997482895851135,
+            "support": 0.5542793869972229,
+            "masses": 2,
+            "scale_product_sum_m3": 3.566378366663413
+          },
+          {
+            "level": 1,
+            "branch": 106,
+            "radius_m": 0.23897093534469604,
+            "parent_radius_m": 0.23897093534469604,
+            "support": 0.3885079324245453,
+            "masses": 1,
+            "scale_product_sum_m3": 1.9210445518985437
+          },
+          {
+            "level": 1,
+            "branch": 107,
+            "radius_m": 0.21353885531425476,
+            "parent_radius_m": 0.21353885531425476,
+            "support": 0.31939905881881714,
+            "masses": 1,
+            "scale_product_sum_m3": 1.7730143896671777
+          },
+          {
+            "level": 1,
+            "branch": 108,
+            "radius_m": 0.19756659865379333,
+            "parent_radius_m": 0.19756659865379333,
+            "support": 0.2759961783885956,
+            "masses": 1,
+            "scale_product_sum_m3": 1.224731916318286
+          },
+          {
+            "level": 1,
+            "branch": 109,
+            "radius_m": 0.15827150642871857,
+            "parent_radius_m": 0.15827150642871857,
+            "support": 0.16921605169773102,
+            "masses": 1,
+            "scale_product_sum_m3": 1.2455838146095486
+          },
+          {
+            "level": 1,
+            "branch": 110,
+            "radius_m": 0.11901076883077621,
+            "parent_radius_m": 0.11901076883077621,
+            "support": 0.06252927333116531,
+            "masses": 1,
+            "scale_product_sum_m3": 1.2617756491761882
+          },
+          {
+            "level": 2,
+            "branch": 200,
+            "radius_m": 0.18079118430614471,
+            "parent_radius_m": 0.43446582555770874,
+            "support": 0.919744074344635,
+            "masses": 1,
+            "scale_product_sum_m3": 0.714491864582996
+          },
+          {
+            "level": 2,
+            "branch": 202,
+            "radius_m": 0.05833878368139267,
+            "parent_radius_m": 0.43446582555770874,
+            "support": 0.919744074344635,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3223739725721684
+          },
+          {
+            "level": 2,
+            "branch": 203,
+            "radius_m": 0.1703561693429947,
+            "parent_radius_m": 0.3873763978481293,
+            "support": 0.7917836904525757,
+            "masses": 1,
+            "scale_product_sum_m3": 0.6257553966210959
+          },
+          {
+            "level": 2,
+            "branch": 205,
+            "radius_m": 0.05928932875394821,
+            "parent_radius_m": 0.3873763978481293,
+            "support": 0.7917836904525757,
+            "masses": 1,
+            "scale_product_sum_m3": 0.6024832559427579
+          },
+          {
+            "level": 2,
+            "branch": 206,
+            "radius_m": 0.14179475605487823,
+            "parent_radius_m": 0.3584706485271454,
+            "support": 0.7132354378700256,
+            "masses": 1,
+            "scale_product_sum_m3": 0.6199163291708785
+          },
+          {
+            "level": 2,
+            "branch": 208,
+            "radius_m": 0.05384887382388115,
+            "parent_radius_m": 0.3584706485271454,
+            "support": 0.7132354378700256,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3935691149891526
+          },
+          {
+            "level": 2,
+            "branch": 209,
+            "radius_m": 0.15103667974472046,
+            "parent_radius_m": 0.3577255308628082,
+            "support": 0.7112106680870056,
+            "masses": 1,
+            "scale_product_sum_m3": 0.6148123068517188
+          },
+          {
+            "level": 2,
+            "branch": 211,
+            "radius_m": 0.05158354714512825,
+            "parent_radius_m": 0.3577255308628082,
+            "support": 0.7112106680870056,
+            "masses": 1,
+            "scale_product_sum_m3": 0.41913807123040514
+          },
+          {
+            "level": 2,
+            "branch": 212,
+            "radius_m": 0.1251712590456009,
+            "parent_radius_m": 0.3174258768558502,
+            "support": 0.6017007231712341,
+            "masses": 1,
+            "scale_product_sum_m3": 0.5151469606754541
+          },
+          {
+            "level": 2,
+            "branch": 214,
+            "radius_m": 0.047573596239089966,
+            "parent_radius_m": 0.3174258768558502,
+            "support": 0.6017007231712341,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3795913749819758
+          },
+          {
+            "level": 2,
+            "branch": 215,
+            "radius_m": 0.12363319844007492,
+            "parent_radius_m": 0.29997482895851135,
+            "support": 0.5542793869972229,
+            "masses": 1,
+            "scale_product_sum_m3": 0.4872058519579139
+          },
+          {
+            "level": 2,
+            "branch": 217,
+            "radius_m": 0.04294103756546974,
+            "parent_radius_m": 0.29997482895851135,
+            "support": 0.5542793869972229,
+            "masses": 1,
+            "scale_product_sum_m3": 0.32598367496509373
+          },
+          {
+            "level": 2,
+            "branch": 218,
+            "radius_m": 0.10301379859447479,
+            "parent_radius_m": 0.23897093534469604,
+            "support": 0.3885079324245453,
+            "masses": 1,
+            "scale_product_sum_m3": 0.35433127855420227
+          },
+          {
+            "level": 2,
+            "branch": 220,
+            "radius_m": 0.030860871076583862,
+            "parent_radius_m": 0.23897093534469604,
+            "support": 0.3885079324245453,
+            "masses": 1,
+            "scale_product_sum_m3": 0.23054141125701672
+          },
+          {
+            "level": 2,
+            "branch": 221,
+            "radius_m": 0.08101047575473785,
+            "parent_radius_m": 0.21353885531425476,
+            "support": 0.31939905881881714,
+            "masses": 1,
+            "scale_product_sum_m3": 0.5554165722027078
+          },
+          {
+            "level": 2,
+            "branch": 223,
+            "radius_m": 0.02926575392484665,
+            "parent_radius_m": 0.21353885531425476,
+            "support": 0.31939905881881714,
+            "masses": 1,
+            "scale_product_sum_m3": 0.23985461144319845
+          },
+          {
+            "level": 2,
+            "branch": 224,
+            "radius_m": 0.08548413962125778,
+            "parent_radius_m": 0.19756659865379333,
+            "support": 0.2759961783885956,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3346778304718082
+          },
+          {
+            "level": 2,
+            "branch": 226,
+            "radius_m": 0.030155224725604057,
+            "parent_radius_m": 0.19756659865379333,
+            "support": 0.2759961783885956,
+            "masses": 1,
+            "scale_product_sum_m3": 0.33024404729581386
+          },
+          {
+            "level": 2,
+            "branch": 227,
+            "radius_m": 0.06450394541025162,
+            "parent_radius_m": 0.15827150642871857,
+            "support": 0.16921605169773102,
+            "masses": 1,
+            "scale_product_sum_m3": 0.2998065668575315
+          },
+          {
+            "level": 2,
+            "branch": 229,
+            "radius_m": 0.020850950852036476,
+            "parent_radius_m": 0.15827150642871857,
+            "support": 0.16921605169773102,
+            "masses": 1,
+            "scale_product_sum_m3": 0.22212600254196277
+          },
+          {
+            "level": 2,
+            "branch": 230,
+            "radius_m": 0.051897045224905014,
+            "parent_radius_m": 0.11901076883077621,
+            "support": 0.06252927333116531,
+            "masses": 1,
+            "scale_product_sum_m3": 0.26608046346549824
+          },
+          {
+            "level": 2,
+            "branch": 232,
+            "radius_m": 0.015953322872519493,
+            "parent_radius_m": 0.11901076883077621,
+            "support": 0.06252927333116531,
+            "masses": 1,
+            "scale_product_sum_m3": 0.19628834970850456
+          }
+        ]
+      },
+      "distribution": {
+        "candidate": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 4.527122497558594,
+              "bottom_m": 1.7929527759552002,
+              "summed_mass_volume_m3": 20.24148789096701
+            },
+            {
+              "primary_index": 1,
+              "top_m": 5.2758097648620605,
+              "bottom_m": 2.45255184173584,
+              "summed_mass_volume_m3": 17.80612397309172
+            },
+            {
+              "primary_index": 2,
+              "top_m": 5.695115566253662,
+              "bottom_m": 2.681717872619629,
+              "summed_mass_volume_m3": 20.95691351734907
+            },
+            {
+              "primary_index": 3,
+              "top_m": 5.965595245361328,
+              "bottom_m": 2.8657054901123047,
+              "summed_mass_volume_m3": 22.217425028760772
+            },
+            {
+              "primary_index": 4,
+              "top_m": 6.520771503448486,
+              "bottom_m": 3.9836668968200684,
+              "summed_mass_volume_m3": 13.570188261490935
+            },
+            {
+              "primary_index": 5,
+              "top_m": 6.900966644287109,
+              "bottom_m": 3.86936616897583,
+              "summed_mass_volume_m3": 14.698620740765667
+            },
+            {
+              "primary_index": 6,
+              "top_m": 7.72587776184082,
+              "bottom_m": 4.989063262939453,
+              "summed_mass_volume_m3": 8.64628516138085
+            },
+            {
+              "primary_index": 7,
+              "top_m": 8.004911422729492,
+              "bottom_m": 5.432868957519531,
+              "summed_mass_volume_m3": 8.514946637539348
+            },
+            {
+              "primary_index": 8,
+              "top_m": 8.400107383728027,
+              "bottom_m": 6.05736780166626,
+              "summed_mass_volume_m3": 6.20765441461117
+            },
+            {
+              "primary_index": 9,
+              "top_m": 8.544792175292969,
+              "bottom_m": 6.744386196136475,
+              "summed_mass_volume_m3": 6.084934543284665
+            },
+            {
+              "primary_index": 10,
+              "top_m": 8.841297149658203,
+              "bottom_m": 6.843285083770752,
+              "summed_mass_volume_m3": 5.547937393280638
+            }
+          ],
+          "top_range_over_height": 0.4793527391221788,
+          "top_std_over_height": 0.15476521421367734,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 61,
+              "leaf_pixels": 2678,
+              "internal_empty_pixels": 390,
+              "envelope_pixels": 3217,
+              "internal_empty_fraction": 0.12123096052222568,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 161,
+              "leaf_pixels": 2767,
+              "internal_empty_pixels": 230,
+              "envelope_pixels": 3228,
+              "internal_empty_fraction": 0.07125154894671623,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 99,
+              "leaf_pixels": 2640,
+              "internal_empty_pixels": 260,
+              "envelope_pixels": 3160,
+              "internal_empty_fraction": 0.08227848101265822,
+              "resolution": 128
+            }
+          },
+          "radius_volume_correlation": 0.9337921507842962,
+          "bare_secondary_branches": 11
+        },
+        "base": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 5.324618339538574,
+              "bottom_m": 1.4654695987701416,
+              "summed_mass_volume_m3": 46.643177502560626
+            },
+            {
+              "primary_index": 1,
+              "top_m": 5.81129789352417,
+              "bottom_m": 2.2158308029174805,
+              "summed_mass_volume_m3": 40.478956078198586
+            },
+            {
+              "primary_index": 2,
+              "top_m": 6.375610828399658,
+              "bottom_m": 2.038045644760132,
+              "summed_mass_volume_m3": 44.334551771677376
+            },
+            {
+              "primary_index": 3,
+              "top_m": 6.419058799743652,
+              "bottom_m": 2.9612367153167725,
+              "summed_mass_volume_m3": 47.65693166667673
+            },
+            {
+              "primary_index": 4,
+              "top_m": 6.786458492279053,
+              "bottom_m": 3.134425163269043,
+              "summed_mass_volume_m3": 43.47687997628358
+            },
+            {
+              "primary_index": 5,
+              "top_m": 7.673205375671387,
+              "bottom_m": 3.6312451362609863,
+              "summed_mass_volume_m3": 41.133449651029274
+            },
+            {
+              "primary_index": 6,
+              "top_m": 8.371023178100586,
+              "bottom_m": 4.098862648010254,
+              "summed_mass_volume_m3": 43.14763184144249
+            },
+            {
+              "primary_index": 7,
+              "top_m": 8.739056587219238,
+              "bottom_m": 4.534498691558838,
+              "summed_mass_volume_m3": 49.730171571321954
+            },
+            {
+              "primary_index": 8,
+              "top_m": 8.970479965209961,
+              "bottom_m": 4.7531328201293945,
+              "summed_mass_volume_m3": 44.10329950450341
+            },
+            {
+              "primary_index": 9,
+              "top_m": 9.0,
+              "bottom_m": 5.248520851135254,
+              "summed_mass_volume_m3": 44.817730421445354
+            },
+            {
+              "primary_index": 10,
+              "top_m": 9.000000953674316,
+              "bottom_m": 5.994026184082031,
+              "summed_mass_volume_m3": 38.38127961319939
+            }
+          ],
+          "top_range_over_height": 0.4083758460150825,
+          "top_std_over_height": 0.14798309569524623,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 25,
+              "leaf_pixels": 3709,
+              "internal_empty_pixels": 341,
+              "envelope_pixels": 4199,
+              "internal_empty_fraction": 0.08120981185996666,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 95,
+              "leaf_pixels": 3939,
+              "internal_empty_pixels": 151,
+              "envelope_pixels": 4276,
+              "internal_empty_fraction": 0.0353133769878391,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 86,
+              "leaf_pixels": 4054,
+              "internal_empty_pixels": 185,
+              "envelope_pixels": 4521,
+              "internal_empty_fraction": 0.0409201504092015,
+              "resolution": 128
+            }
+          }
+        }
+      },
+      "prototypes": [
+        {
+          "family": 0,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07371401842011398,
+          "geometry_sha256": "08bfcfb9ec896cead3eb147c64d35d51ce942c416cb6945e8633c5b0d3a2d103"
+        },
+        {
+          "family": 1,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07307354257976195,
+          "geometry_sha256": "41bb5ce11a7fe61a9e7d61d041f6315db85a49fb0e3ac4f8be3db77ad025cd2b"
+        },
+        {
+          "family": 2,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.12580226181807486,
+          "geometry_sha256": "55b57fe06735fd0ba0c978e94a52053a312d88e6acbfa4a49e0bd946f2757b24"
+        },
+        {
+          "family": 3,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07217590477771754,
+          "geometry_sha256": "7f6d5267caa835244d3b3e09c50a1d15a767bf00172fa4688d83888b12ec347b"
+        },
+        {
+          "family": 4,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.06183948478165594,
+          "geometry_sha256": "50156cb7560074b9cb7b4a1b40d86c33312a3148cfdc8d70bf683882efb7d4b2"
+        },
+        {
+          "family": 5,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.06968652500502452,
+          "geometry_sha256": "ee07cf891a9eb33a82119ce3eb8bc4e27dfecddc6c16fbc231f166e354e20ad3"
+        }
+      ],
+      "shared_framing": {
+        "center": [
+          0.9666204999999999,
+          -0.285037,
+          4.5000005
+        ],
+        "span": 13.152862
+      },
+      "base_manifest_sha256": "e5e27b8312c3c74c2be003d6cdfe8654bdf3adb424d02c9fb277fbc7322fe82a",
+      "candidate_manifest_sha256": "de3411e91e18e311d9fd89cbcacc4c3edabe7f9ee6601a86d9589d9285009e42"
+    },
+    "adulto-00": {
+      "same_final_wood": true,
+      "same_normalization": true,
+      "same_native_structure": true,
+      "same_parameters_and_seeds": true,
+      "base": {
+        "wood_geometry_sha256": "5ec6e029e3223452fe1af6bf9817ba594a8a1b55a11fc3718f0e089e8e7c3352",
+        "wood_xy_sha256": "6ce5248f66234be7554905b41701ad9ec40cd1ef70fb0905650d4b0d0724412c",
+        "wood_bounds_blender": [
+          [
+            -5.801208019256592,
+            -4.335878372192383,
+            0.0
+          ],
+          [
+            5.883262634277344,
+            5.510021686553955,
+            10.0
+          ]
+        ],
+        "wood_triangles": 4364,
+        "leaf_triangles": 2620,
+        "leaf_mass_count": 71,
+        "center_height_bins": [
+          0,
+          4,
+          23,
+          27,
+          17
+        ],
+        "center_azimuth_sectors": [
+          10,
+          9,
+          7,
+          9,
+          9,
+          8,
+          8,
+          11
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 1.9019477413113373,
+          "maximum_m": 6.584426267621792,
+          "mean_m": 3.4267297997410116,
+          "coefficient_of_variation": 0.3492328725417237
+        },
+        "mass_triangle_histogram": {
+          "20": 51,
+          "80": 20
+        },
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -6.379607200622559,
+            -5.225266456604004,
+            2.1957311630249023
+          ],
+          [
+            6.891549110412598,
+            5.998267650604248,
+            10.000000953674316
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "5ec6e029e3223452fe1af6bf9817ba594a8a1b55a11fc3718f0e089e8e7c3352",
+        "wood_xy_sha256": "6ce5248f66234be7554905b41701ad9ec40cd1ef70fb0905650d4b0d0724412c",
+        "wood_bounds_blender": [
+          [
+            -5.801208019256592,
+            -4.335878372192383,
+            0.0
+          ],
+          [
+            5.883262634277344,
+            5.510021686553955,
+            10.0
+          ]
+        ],
+        "wood_triangles": 4364,
+        "leaf_triangles": 1500,
+        "leaf_mass_count": 33,
+        "center_height_bins": [
+          0,
+          5,
+          10,
+          10,
+          8
+        ],
+        "center_azimuth_sectors": [
+          5,
+          3,
+          4,
+          5,
+          5,
+          3,
+          3,
+          5
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 1.7354437881023346,
+          "maximum_m": 5.331463746422139,
+          "mean_m": 2.895183288274428,
+          "coefficient_of_variation": 0.3655923548380592
+        },
+        "mass_triangle_histogram": {
+          "20": 19,
+          "80": 14
+        },
+        "occupied_height_bins": 4,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -6.166683197021484,
+            -4.620932102203369,
+            2.188336133956909
+          ],
+          [
+            6.305760860443115,
+            5.682816028594971,
+            9.914981842041016
+          ]
+        ]
+      },
+      "foliage_checks": {
+        "mass_count": 33,
+        "triangles_expected": 1500,
+        "counts_by_level": {
+          "trunk": 1,
+          "primary": 14,
+          "secondary": 18
+        },
+        "counts_by_role": {
+          "dominant": 9,
+          "medium": 23,
+          "small": 1
+        },
+        "families": {
+          "0": 4,
+          "1": 3,
+          "2": 5,
+          "3": 2,
+          "4": 9,
+          "5": 10
+        },
+        "high_detail_masses": 14,
+        "branch_count_histogram": {
+          "trunk": {
+            "1": 1
+          },
+          "primary": {
+            "1": 5,
+            "2": 3,
+            "3": 1
+          },
+          "secondary": {
+            "1": 18
+          }
+        },
+        "branches": [
+          {
+            "level": 0,
+            "branch": 0,
+            "radius_m": 0.5,
+            "parent_radius_m": 0.5,
+            "support": 1.0,
+            "masses": 1,
+            "scale_product_sum_m3": 0.16321945071196306
+          },
+          {
+            "level": 1,
+            "branch": 100,
+            "radius_m": 0.2857975661754608,
+            "parent_radius_m": 0.2857975661754608,
+            "support": 0.9817284941673279,
+            "masses": 3,
+            "scale_product_sum_m3": 3.86355106843172
+          },
+          {
+            "level": 1,
+            "branch": 101,
+            "radius_m": 0.24652180075645447,
+            "parent_radius_m": 0.24652180075645447,
+            "support": 0.8109643459320068,
+            "masses": 2,
+            "scale_product_sum_m3": 3.6408762833442863
+          },
+          {
+            "level": 1,
+            "branch": 102,
+            "radius_m": 0.2348601520061493,
+            "parent_radius_m": 0.2348601520061493,
+            "support": 0.7602615356445312,
+            "masses": 2,
+            "scale_product_sum_m3": 2.860069812027339
+          },
+          {
+            "level": 1,
+            "branch": 103,
+            "radius_m": 0.21214038133621216,
+            "parent_radius_m": 0.21214038133621216,
+            "support": 0.6614798903465271,
+            "masses": 2,
+            "scale_product_sum_m3": 3.06687821652591
+          },
+          {
+            "level": 1,
+            "branch": 104,
+            "radius_m": 0.16953416168689728,
+            "parent_radius_m": 0.16953416168689728,
+            "support": 0.4762354791164398,
+            "masses": 1,
+            "scale_product_sum_m3": 1.1620571595293157
+          },
+          {
+            "level": 1,
+            "branch": 105,
+            "radius_m": 0.1588791161775589,
+            "parent_radius_m": 0.1588791161775589,
+            "support": 0.4299091696739197,
+            "masses": 1,
+            "scale_product_sum_m3": 1.7845884464211546
+          },
+          {
+            "level": 1,
+            "branch": 106,
+            "radius_m": 0.12710930407047272,
+            "parent_radius_m": 0.12710930407047272,
+            "support": 0.2917795777320862,
+            "masses": 1,
+            "scale_product_sum_m3": 1.235130624652351
+          },
+          {
+            "level": 1,
+            "branch": 107,
+            "radius_m": 0.10498182475566864,
+            "parent_radius_m": 0.10498182475566864,
+            "support": 0.19557315111160278,
+            "masses": 1,
+            "scale_product_sum_m3": 1.0295661956417523
+          },
+          {
+            "level": 1,
+            "branch": 108,
+            "radius_m": 0.07250867784023285,
+            "parent_radius_m": 0.07250867784023285,
+            "support": 0.05438556149601936,
+            "masses": 1,
+            "scale_product_sum_m3": 0.7662307873046981
+          },
+          {
+            "level": 2,
+            "branch": 200,
+            "radius_m": 0.12652911245822906,
+            "parent_radius_m": 0.2857975661754608,
+            "support": 0.9817284941673279,
+            "masses": 1,
+            "scale_product_sum_m3": 0.5699957688684776
+          },
+          {
+            "level": 2,
+            "branch": 202,
+            "radius_m": 0.04278796911239624,
+            "parent_radius_m": 0.2857975661754608,
+            "support": 0.9817284941673279,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3643169219893917
+          },
+          {
+            "level": 2,
+            "branch": 203,
+            "radius_m": 0.11074655503034592,
+            "parent_radius_m": 0.24652180075645447,
+            "support": 0.8109643459320068,
+            "masses": 1,
+            "scale_product_sum_m3": 0.41082557667374175
+          },
+          {
+            "level": 2,
+            "branch": 205,
+            "radius_m": 0.03696252033114433,
+            "parent_radius_m": 0.24652180075645447,
+            "support": 0.8109643459320068,
+            "masses": 1,
+            "scale_product_sum_m3": 0.2649197950571914
+          },
+          {
+            "level": 2,
+            "branch": 206,
+            "radius_m": 0.09810498356819153,
+            "parent_radius_m": 0.2348601520061493,
+            "support": 0.7602615356445312,
+            "masses": 1,
+            "scale_product_sum_m3": 0.2669431915871166
+          },
+          {
+            "level": 2,
+            "branch": 208,
+            "radius_m": 0.030028853565454483,
+            "parent_radius_m": 0.2348601520061493,
+            "support": 0.7602615356445312,
+            "masses": 1,
+            "scale_product_sum_m3": 0.37786211563475547
+          },
+          {
+            "level": 2,
+            "branch": 209,
+            "radius_m": 0.08273684978485107,
+            "parent_radius_m": 0.21214038133621216,
+            "support": 0.6614798903465271,
+            "masses": 1,
+            "scale_product_sum_m3": 0.3849720550647589
+          },
+          {
+            "level": 2,
+            "branch": 211,
+            "radius_m": 0.027813056483864784,
+            "parent_radius_m": 0.21214038133621216,
+            "support": 0.6614798903465271,
+            "masses": 1,
+            "scale_product_sum_m3": 0.23111973820494253
+          },
+          {
+            "level": 2,
+            "branch": 212,
+            "radius_m": 0.07115744054317474,
+            "parent_radius_m": 0.16953416168689728,
+            "support": 0.4762354791164398,
+            "masses": 1,
+            "scale_product_sum_m3": 0.31907278521701365
+          },
+          {
+            "level": 2,
+            "branch": 214,
+            "radius_m": 0.02213248237967491,
+            "parent_radius_m": 0.16953416168689728,
+            "support": 0.4762354791164398,
+            "masses": 1,
+            "scale_product_sum_m3": 0.240920572551536
+          },
+          {
+            "level": 2,
+            "branch": 215,
+            "radius_m": 0.06755586713552475,
+            "parent_radius_m": 0.1588791161775589,
+            "support": 0.4299091696739197,
+            "masses": 1,
+            "scale_product_sum_m3": 0.27029869720582433
+          },
+          {
+            "level": 2,
+            "branch": 217,
+            "radius_m": 0.02140004001557827,
+            "parent_radius_m": 0.1588791161775589,
+            "support": 0.4299091696739197,
+            "masses": 1,
+            "scale_product_sum_m3": 0.211430424479675
+          },
+          {
+            "level": 2,
+            "branch": 218,
+            "radius_m": 0.05313783884048462,
+            "parent_radius_m": 0.12710930407047272,
+            "support": 0.2917795777320862,
+            "masses": 1,
+            "scale_product_sum_m3": 0.36059016860637383
+          },
+          {
+            "level": 2,
+            "branch": 220,
+            "radius_m": 0.017681153491139412,
+            "parent_radius_m": 0.12710930407047272,
+            "support": 0.2917795777320862,
+            "masses": 1,
+            "scale_product_sum_m3": 0.21631502931234772
+          },
+          {
+            "level": 2,
+            "branch": 221,
+            "radius_m": 0.04068601503968239,
+            "parent_radius_m": 0.10498182475566864,
+            "support": 0.19557315111160278,
+            "masses": 1,
+            "scale_product_sum_m3": 0.17319994766454322
+          },
+          {
+            "level": 2,
+            "branch": 223,
+            "radius_m": 0.013790185563266277,
+            "parent_radius_m": 0.10498182475566864,
+            "support": 0.19557315111160278,
+            "masses": 1,
+            "scale_product_sum_m3": 0.20340703281103742
+          },
+          {
+            "level": 2,
+            "branch": 224,
+            "radius_m": 0.0294701736420393,
+            "parent_radius_m": 0.07250867784023285,
+            "support": 0.05438556149601936,
+            "masses": 1,
+            "scale_product_sum_m3": 0.17098108349760086
+          },
+          {
+            "level": 2,
+            "branch": 226,
+            "radius_m": 0.010696910321712494,
+            "parent_radius_m": 0.07250867784023285,
+            "support": 0.05438556149601936,
+            "masses": 1,
+            "scale_product_sum_m3": 0.19470270306667364
+          }
+        ]
+      },
+      "distribution": {
+        "candidate": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 5.086764812469482,
+              "bottom_m": 2.188336133956909,
+              "summed_mass_volume_m3": 15.575011105441567
+            },
+            {
+              "primary_index": 1,
+              "top_m": 6.0307817459106445,
+              "bottom_m": 2.6583645343780518,
+              "summed_mass_volume_m3": 15.330693287594235
+            },
+            {
+              "primary_index": 2,
+              "top_m": 6.811091423034668,
+              "bottom_m": 3.449769973754883,
+              "summed_mass_volume_m3": 11.625311806691267
+            },
+            {
+              "primary_index": 3,
+              "top_m": 7.294846534729004,
+              "bottom_m": 3.9178433418273926,
+              "summed_mass_volume_m3": 13.018099843602007
+            },
+            {
+              "primary_index": 4,
+              "top_m": 8.26661205291748,
+              "bottom_m": 5.694231986999512,
+              "summed_mass_volume_m3": 5.474006047834943
+            },
+            {
+              "primary_index": 5,
+              "top_m": 8.619535446166992,
+              "bottom_m": 5.8401665687561035,
+              "summed_mass_volume_m3": 7.99511500603209
+            },
+            {
+              "primary_index": 6,
+              "top_m": 9.328574180603027,
+              "bottom_m": 6.64267635345459,
+              "summed_mass_volume_m3": 5.6043356515777605
+            },
+            {
+              "primary_index": 7,
+              "top_m": 9.7921142578125,
+              "bottom_m": 7.569740295410156,
+              "summed_mass_volume_m3": 4.435962182236835
+            },
+            {
+              "primary_index": 8,
+              "top_m": 9.914981842041016,
+              "bottom_m": 7.63053560256958,
+              "summed_mass_volume_m3": 3.7789423694703146
+            }
+          ],
+          "top_range_over_height": 0.4828217029571533,
+          "top_std_over_height": 0.16087670126073247,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 199,
+              "leaf_pixels": 2426,
+              "internal_empty_pixels": 627,
+              "envelope_pixels": 3307,
+              "internal_empty_fraction": 0.18959782280012097,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 134,
+              "leaf_pixels": 2341,
+              "internal_empty_pixels": 627,
+              "envelope_pixels": 3178,
+              "internal_empty_fraction": 0.197293895531781,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 193,
+              "leaf_pixels": 2365,
+              "internal_empty_pixels": 814,
+              "envelope_pixels": 3479,
+              "internal_empty_fraction": 0.23397528025294625,
+              "resolution": 128
+            }
+          },
+          "radius_volume_correlation": 0.9442333168183721,
+          "bare_secondary_branches": 9
+        },
+        "base": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 5.854417324066162,
+              "bottom_m": 2.1957311630249023,
+              "summed_mass_volume_m3": 28.468280492428068
+            },
+            {
+              "primary_index": 1,
+              "top_m": 7.002418518066406,
+              "bottom_m": 2.514697790145874,
+              "summed_mass_volume_m3": 31.819371719830087
+            },
+            {
+              "primary_index": 2,
+              "top_m": 7.369197845458984,
+              "bottom_m": 3.3286805152893066,
+              "summed_mass_volume_m3": 32.92899548913859
+            },
+            {
+              "primary_index": 3,
+              "top_m": 8.254907608032227,
+              "bottom_m": 4.016099452972412,
+              "summed_mass_volume_m3": 30.71278311407271
+            },
+            {
+              "primary_index": 4,
+              "top_m": 8.77816390991211,
+              "bottom_m": 4.849047660827637,
+              "summed_mass_volume_m3": 31.816102907260454
+            },
+            {
+              "primary_index": 5,
+              "top_m": 9.317816734313965,
+              "bottom_m": 4.592660427093506,
+              "summed_mass_volume_m3": 36.78895718351123
+            },
+            {
+              "primary_index": 6,
+              "top_m": 9.827539443969727,
+              "bottom_m": 5.69540548324585,
+              "summed_mass_volume_m3": 32.28020925570551
+            },
+            {
+              "primary_index": 7,
+              "top_m": 10.000000953674316,
+              "bottom_m": 6.117264747619629,
+              "summed_mass_volume_m3": 26.13183627771045
+            },
+            {
+              "primary_index": 8,
+              "top_m": 10.0,
+              "bottom_m": 6.857638359069824,
+              "summed_mass_volume_m3": 28.95768350968198
+            }
+          ],
+          "top_range_over_height": 0.41455836296081544,
+          "top_std_over_height": 0.1397942568801929,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 77,
+              "leaf_pixels": 3752,
+              "internal_empty_pixels": 195,
+              "envelope_pixels": 4088,
+              "internal_empty_fraction": 0.047700587084148725,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 22,
+              "leaf_pixels": 3926,
+              "internal_empty_pixels": 88,
+              "envelope_pixels": 4122,
+              "internal_empty_fraction": 0.021348859776807377,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 69,
+              "leaf_pixels": 4226,
+              "internal_empty_pixels": 240,
+              "envelope_pixels": 4665,
+              "internal_empty_fraction": 0.05144694533762058,
+              "resolution": 128
+            }
+          }
+        }
+      },
+      "prototypes": [
+        {
+          "family": 0,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07216502155783794,
+          "geometry_sha256": "1fc7f0c18e04589bee93ae179d542dd22b5eadf28392b2a0c1aee80dc42d047c"
+        },
+        {
+          "family": 1,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07498268721526134,
+          "geometry_sha256": "92d17adde15ec8b508aa461899b51c101078aa9c534d16c34c7b583e6540120d"
+        },
+        {
+          "family": 2,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.11934365728674418,
+          "geometry_sha256": "387ef29234724b210167481d83362b621861aea410813a47f27b28035c985fc2"
+        },
+        {
+          "family": 3,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07666286654326214,
+          "geometry_sha256": "c7d0ce6de67b96f1b649a4844c66a3ce358cce78b7af618e944d569febe625cf"
+        },
+        {
+          "family": 4,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.059785072430389254,
+          "geometry_sha256": "ba18b462a1f416ee19d6a1b090544ddbee84124823874d00679507b59e3b2520"
+        },
+        {
+          "family": 5,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.07163724209767697,
+          "geometry_sha256": "08569c60609a3481eced5cf43071bbb2d503c551826416c84abfa3f5699f4135"
+        }
+      ],
+      "shared_framing": {
+        "center": [
+          0.25597100000000017,
+          0.386501,
+          5.0000005
+        ],
+        "span": 13.271156000000001
+      },
+      "base_manifest_sha256": "170d0a6cb9d4c13aed91912cba1961c8891194474008aaa5e55591b52fc15ef7",
+      "candidate_manifest_sha256": "d6614f71ddfb68953fee2cc2901fc823b14e3e62b05f863740d93a7c3917a278"
+    },
+    "joven-00": {
+      "same_final_wood": true,
+      "same_normalization": true,
+      "same_native_structure": true,
+      "same_parameters_and_seeds": true,
+      "base": {
+        "wood_geometry_sha256": "4b435f40a7ab9b12caf4510887bce15c903f431fb2a770c39e0d2663d9aff5df",
+        "wood_xy_sha256": "69b675db4fc59f0a08948ee089ee6d7919411704ae0375ac006eed3831b89b38",
+        "wood_bounds_blender": [
+          [
+            -0.5618517398834229,
+            -0.7351799607276917,
+            0.0
+          ],
+          [
+            0.860201358795166,
+            0.7920286655426025,
+            3.999999761581421
+          ]
+        ],
+        "wood_triangles": 2044,
+        "leaf_triangles": 640,
+        "leaf_mass_count": 17,
+        "center_height_bins": [
+          0,
+          0,
+          3,
+          6,
+          8
+        ],
+        "center_azimuth_sectors": [
+          3,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          4
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 1.1901874201047598,
+          "maximum_m": 2.583632973288329,
+          "mean_m": 1.5750593231659664,
+          "coefficient_of_variation": 0.26334492602129744
+        },
+        "mass_triangle_histogram": {
+          "20": 12,
+          "80": 5
+        },
+        "occupied_height_bins": 3,
+        "occupied_azimuth_sectors": 8,
+        "leaf_bounds_blender": [
+          [
+            -1.153219223022461,
+            -1.4590449333190918,
+            1.6596702337265015
+          ],
+          [
+            1.5309839248657227,
+            1.5859744548797607,
+            4.0
+          ]
+        ]
+      },
+      "candidate": {
+        "wood_geometry_sha256": "4b435f40a7ab9b12caf4510887bce15c903f431fb2a770c39e0d2663d9aff5df",
+        "wood_xy_sha256": "69b675db4fc59f0a08948ee089ee6d7919411704ae0375ac006eed3831b89b38",
+        "wood_bounds_blender": [
+          [
+            -0.5618517398834229,
+            -0.7351799607276917,
+            0.0
+          ],
+          [
+            0.860201358795166,
+            0.7920286655426025,
+            3.999999761581421
+          ]
+        ],
+        "wood_triangles": 2044,
+        "leaf_triangles": 560,
+        "leaf_mass_count": 13,
+        "center_height_bins": [
+          0,
+          0,
+          2,
+          5,
+          6
+        ],
+        "center_azimuth_sectors": [
+          2,
+          1,
+          2,
+          1,
+          0,
+          3,
+          0,
+          4
+        ],
+        "mass_bbox_diagonal": {
+          "minimum_m": 0.5664196659221157,
+          "maximum_m": 2.0899261836497685,
+          "mean_m": 0.9797461486583129,
+          "coefficient_of_variation": 0.44206812751299457
+        },
+        "mass_triangle_histogram": {
+          "20": 8,
+          "80": 5
+        },
+        "occupied_height_bins": 3,
+        "occupied_azimuth_sectors": 6,
+        "leaf_bounds_blender": [
+          [
+            -0.962308406829834,
+            -1.202751636505127,
+            1.7106757164001465
+          ],
+          [
+            1.2963690757751465,
+            1.4152352809906006,
+            3.980806827545166
+          ]
+        ]
+      },
+      "foliage_checks": {
+        "mass_count": 13,
+        "triangles_expected": 560,
+        "counts_by_level": {
+          "trunk": 1,
+          "primary": 4,
+          "secondary": 8
+        },
+        "counts_by_role": {
+          "dominant": 4,
+          "medium": 9,
+          "small": 0
+        },
+        "families": {
+          "0": 3,
+          "1": 2,
+          "4": 2,
+          "5": 6
+        },
+        "high_detail_masses": 5,
+        "branch_count_histogram": {
+          "trunk": {
+            "1": 1
+          },
+          "primary": {
+            "1": 4
+          },
+          "secondary": {
+            "1": 8
+          }
+        },
+        "branches": [
+          {
+            "level": 0,
+            "branch": 0,
+            "radius_m": 0.11999999731779099,
+            "parent_radius_m": 0.11999999731779099,
+            "support": 1.0,
+            "masses": 1,
+            "scale_product_sum_m3": 0.009000186209600393
+          },
+          {
+            "level": 1,
+            "branch": 100,
+            "radius_m": 0.0661851242184639,
+            "parent_radius_m": 0.0661851242184639,
+            "support": 0.9381362795829773,
+            "masses": 1,
+            "scale_product_sum_m3": 0.16964193322815466
+          },
+          {
+            "level": 1,
+            "branch": 101,
+            "radius_m": 0.050825681537389755,
+            "parent_radius_m": 0.050825681537389755,
+            "support": 0.6598855257034302,
+            "masses": 1,
+            "scale_product_sum_m3": 0.06554465730307574
+          },
+          {
+            "level": 1,
+            "branch": 102,
+            "radius_m": 0.03423069417476654,
+            "parent_radius_m": 0.03423069417476654,
+            "support": 0.3592517077922821,
+            "masses": 1,
+            "scale_product_sum_m3": 0.05659702123315696
+          },
+          {
+            "level": 1,
+            "branch": 103,
+            "radius_m": 0.01762550137937069,
+            "parent_radius_m": 0.01762550137937069,
+            "support": 0.05843300744891167,
+            "masses": 1,
+            "scale_product_sum_m3": 0.059482466183014275
+          },
+          {
+            "level": 2,
+            "branch": 200,
+            "radius_m": 0.02936648577451706,
+            "parent_radius_m": 0.0661851242184639,
+            "support": 0.9381362795829773,
+            "masses": 1,
+            "scale_product_sum_m3": 0.017476105974740117
+          },
+          {
+            "level": 2,
+            "branch": 202,
+            "radius_m": 0.00923991110175848,
+            "parent_radius_m": 0.0661851242184639,
+            "support": 0.9381362795829773,
+            "masses": 1,
+            "scale_product_sum_m3": 0.013640260554565374
+          },
+          {
+            "level": 2,
+            "branch": 203,
+            "radius_m": 0.021605458110570908,
+            "parent_radius_m": 0.050825681537389755,
+            "support": 0.6598855257034302,
+            "masses": 1,
+            "scale_product_sum_m3": 0.019801024459284642
+          },
+          {
+            "level": 2,
+            "branch": 205,
+            "radius_m": 0.006455791648477316,
+            "parent_radius_m": 0.050825681537389755,
+            "support": 0.6598855257034302,
+            "masses": 1,
+            "scale_product_sum_m3": 0.00911752839366851
+          },
+          {
+            "level": 2,
+            "branch": 206,
+            "radius_m": 0.013485901057720184,
+            "parent_radius_m": 0.03423069417476654,
+            "support": 0.3592517077922821,
+            "masses": 1,
+            "scale_product_sum_m3": 0.015555329843904073
+          },
+          {
+            "level": 2,
+            "branch": 208,
+            "radius_m": 0.005016641225665808,
+            "parent_radius_m": 0.03423069417476654,
+            "support": 0.3592517077922821,
+            "masses": 1,
+            "scale_product_sum_m3": 0.005981168065676733
+          },
+          {
+            "level": 2,
+            "branch": 209,
+            "radius_m": 0.00677500432357192,
+            "parent_radius_m": 0.01762550137937069,
+            "support": 0.05843300744891167,
+            "masses": 1,
+            "scale_product_sum_m3": 0.008529046030331944
+          },
+          {
+            "level": 2,
+            "branch": 211,
+            "radius_m": 0.002521601039916277,
+            "parent_radius_m": 0.01762550137937069,
+            "support": 0.05843300744891167,
+            "masses": 1,
+            "scale_product_sum_m3": 0.0057730667733921
+          }
+        ]
+      },
+      "distribution": {
+        "candidate": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 2.6868770122528076,
+              "bottom_m": 1.7106757164001465,
+              "summed_mass_volume_m3": 0.6263545888984178
+            },
+            {
+              "primary_index": 1,
+              "top_m": 3.165837049484253,
+              "bottom_m": 2.441404104232788,
+              "summed_mass_volume_m3": 0.3059836991948834
+            },
+            {
+              "primary_index": 2,
+              "top_m": 3.659183979034424,
+              "bottom_m": 2.8898887634277344,
+              "summed_mass_volume_m3": 0.25736329553910764
+            },
+            {
+              "primary_index": 3,
+              "top_m": 3.980806827545166,
+              "bottom_m": 3.053921699523926,
+              "summed_mass_volume_m3": 0.22794134868191426
+            }
+          ],
+          "top_range_over_height": 0.3234824538230896,
+          "top_std_over_height": 0.1227937503269063,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 173,
+              "leaf_pixels": 1381,
+              "internal_empty_pixels": 327,
+              "envelope_pixels": 1822,
+              "internal_empty_fraction": 0.17947310647639955,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 172,
+              "leaf_pixels": 1150,
+              "internal_empty_pixels": 562,
+              "envelope_pixels": 1839,
+              "internal_empty_fraction": 0.3056008700380642,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 155,
+              "leaf_pixels": 1265,
+              "internal_empty_pixels": 287,
+              "envelope_pixels": 1710,
+              "internal_empty_fraction": 0.16783625730994153,
+              "resolution": 128
+            }
+          },
+          "radius_volume_correlation": 0.8627922272532902,
+          "bare_secondary_branches": 4
+        },
+        "base": {
+          "primary_subtrees": [
+            {
+              "primary_index": 0,
+              "top_m": 2.965993642807007,
+              "bottom_m": 1.6596702337265015,
+              "summed_mass_volume_m3": 1.610768054088415
+            },
+            {
+              "primary_index": 1,
+              "top_m": 3.2936325073242188,
+              "bottom_m": 2.3305282592773438,
+              "summed_mass_volume_m3": 1.311080183188172
+            },
+            {
+              "primary_index": 2,
+              "top_m": 3.871962070465088,
+              "bottom_m": 2.757880926132202,
+              "summed_mass_volume_m3": 1.3880729357124437
+            },
+            {
+              "primary_index": 3,
+              "top_m": 4.0,
+              "bottom_m": 2.895113945007324,
+              "summed_mass_volume_m3": 1.5299934744719696
+            }
+          ],
+          "top_range_over_height": 0.2585015892982483,
+          "top_std_over_height": 0.10545861514050253,
+          "visibility": {
+            "front": {
+              "crown_wood_pixels": 164,
+              "leaf_pixels": 2456,
+              "internal_empty_pixels": 191,
+              "envelope_pixels": 2757,
+              "internal_empty_fraction": 0.06927820094305405,
+              "resolution": 128
+            },
+            "below": {
+              "crown_wood_pixels": 167,
+              "leaf_pixels": 2087,
+              "internal_empty_pixels": 531,
+              "envelope_pixels": 2745,
+              "internal_empty_fraction": 0.19344262295081968,
+              "resolution": 128
+            },
+            "below-front": {
+              "crown_wood_pixels": 149,
+              "leaf_pixels": 2441,
+              "internal_empty_pixels": 216,
+              "envelope_pixels": 2832,
+              "internal_empty_fraction": 0.07627118644067797,
+              "resolution": 128
+            }
+          }
+        }
+      },
+      "prototypes": [
+        {
+          "family": 0,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.06899505221136931,
+          "geometry_sha256": "1b0583e829ca47ad6fdc8682c0ab02297e3c8c3b0b16d485358262c33dc94f81"
+        },
+        {
+          "family": 1,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07593189202362052,
+          "geometry_sha256": "03aa2d3016df7fb9aa49d0d54cb4a4d704969ba85fad7eb4f9f4922e383270f7"
+        },
+        {
+          "family": 2,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.11591963066516663,
+          "geometry_sha256": "2f3d0e709b7cde52c637eb9cfe44395085b354769f2e144d7d5e0b05185e550f"
+        },
+        {
+          "family": 3,
+          "vertices": 42,
+          "triangles": 80,
+          "non_affine_rms_unit": 0.07120763777039142,
+          "geometry_sha256": "e42bfd8fb109007ca28246ce220e0b57d73567334893741af2afa11f2437c3e8"
+        },
+        {
+          "family": 4,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.06638360357094591,
+          "geometry_sha256": "00328545762a5f484ab31b6204110bef02def11f011a830fe897800baa9b9c61"
+        },
+        {
+          "family": 5,
+          "vertices": 12,
+          "triangles": 20,
+          "non_affine_rms_unit": 0.06432915074918792,
+          "geometry_sha256": "f8418a3bcf7121d10a5e70974760fa042ef03cbf63bad6dd267537f03113aaa8"
+        }
+      ],
+      "shared_framing": {
+        "center": [
+          0.18888249999999995,
+          0.06346450000000003,
+          2.0
+        ],
+        "span": 4.0
+      },
+      "base_manifest_sha256": "51ea9d63102f2f8e91d6529af316207454d6dca8c8bed183a653b0c1f13e44ec",
+      "candidate_manifest_sha256": "15bb49ec77f9ca1876fe7f51511c11ffc35028b7cb19bf9047f1b0f3b1209ae2"
+    }
+  },
+  "provenance": {
+    "full_summary": "artifacts/q3b/acceptance-final/summary.json",
+    "full_summary_sha256": "a4d5ef6c2e0da1ed9c9e0a0cf2d5840e645c71ff54f482813ac7d71d82f2590a",
+    "base": "artifacts/q3/acceptance/lote/",
+    "candidate": "artifacts/q3b/acceptance-final/lote/",
+    "case_specs": "presets/q3b-cases.json",
+    "case_specs_sha256": "5eddd94d3e021296965d92ca215b3ffce4b8e55c63c846a63c4f1c1edf6566d1",
+    "evaluation_sources_sha256": {
+      "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+      "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+      "scripts/verify_q3b.py": "0ee804a5c9843cbd35f9f77879ec688f965ebac81a6a788b64993d2689c87611",
+      "scripts/q3b_gallery.py": "b393ad195d50f1da35b2a7ebde24efc96bfff8fd25ade7aadac828bfd7981f17"
+    }
+  }
+}

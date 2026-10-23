@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "algorithm": "oak_geometry_nodes",
+  "algorithm_version": "0.4.1",
+  "seed": 73,
+  "parameters": {
+    "height_m": 9,
+    "base_radius_m": 0.8,
+    "curvature": 0.16,
+    "primary_branches": 11,
+    "max_depth": 2,
+    "branch_length_ratio": 0.55,
+    "inclination_deg": 72,
+    "asymmetry": 0.85,
+    "foliage_density": 0.75,
+    "foliage_scale_m": 1.3
+  }
+}

@@ -1,0 +1,536 @@
+{
+  "passed": true,
+  "algorithm_version": "0.2.0",
+  "stage": "Q1",
+  "cases": {
+    "joven-00": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6609594410191376,
+      "max_secondary_radius_ratio": 0.5885068905568723,
+      "primary_inclination_range_deg": 14.557452971294149,
+      "primary_azimuth_min_gap_deg": 87.57732285198662,
+      "primary_azimuth_max_gap_deg": 92.23558503765003,
+      "z_scale": 0.8398868342279543
+    },
+    "joven-01": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6959706462130493,
+      "max_secondary_radius_ratio": 0.5971573579891618,
+      "primary_inclination_range_deg": 12.533844191667113,
+      "primary_azimuth_min_gap_deg": 88.25735501193228,
+      "primary_azimuth_max_gap_deg": 92.37195936323496,
+      "z_scale": 0.8477409148202485
+    },
+    "joven-02": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6233846665615772,
+      "max_secondary_radius_ratio": 0.5984997895397095,
+      "primary_inclination_range_deg": 10.344986426561457,
+      "primary_azimuth_min_gap_deg": 88.68578557126062,
+      "primary_azimuth_max_gap_deg": 91.24976935595214,
+      "z_scale": 0.8177827233621143
+    },
+    "joven-03": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6565292658098552,
+      "max_secondary_radius_ratio": 0.5819152773370109,
+      "primary_inclination_range_deg": 11.458777888854753,
+      "primary_azimuth_min_gap_deg": 87.97561262150072,
+      "primary_azimuth_max_gap_deg": 92.08756499273832,
+      "z_scale": 0.8314105581721443
+    },
+    "joven-04": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6278615967913065,
+      "max_secondary_radius_ratio": 0.5830684283915816,
+      "primary_inclination_range_deg": 12.268112109691089,
+      "primary_azimuth_min_gap_deg": 88.38654237365665,
+      "primary_azimuth_max_gap_deg": 91.52720246040062,
+      "z_scale": 0.8475205393449002
+    },
+    "joven-05": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6927117041310175,
+      "max_secondary_radius_ratio": 0.5939264857412934,
+      "primary_inclination_range_deg": 11.751181626985481,
+      "primary_azimuth_min_gap_deg": 87.51053152123632,
+      "primary_azimuth_max_gap_deg": 91.65458231259862,
+      "z_scale": 0.8609904358644571
+    },
+    "joven-06": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6975009351791832,
+      "max_secondary_radius_ratio": 0.5979176326785159,
+      "primary_inclination_range_deg": 16.69276137465969,
+      "primary_azimuth_min_gap_deg": 86.37140012778497,
+      "primary_azimuth_max_gap_deg": 93.4170759324264,
+      "z_scale": 0.8259155921888025
+    },
+    "joven-07": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6594944072215255,
+      "max_secondary_radius_ratio": 0.5888104428661338,
+      "primary_inclination_range_deg": 14.689473832120157,
+      "primary_azimuth_min_gap_deg": 88.20397338235756,
+      "primary_azimuth_max_gap_deg": 92.43090952748344,
+      "z_scale": 0.843328614924079
+    },
+    "joven-08": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6923522856892725,
+      "max_secondary_radius_ratio": 0.595341065040182,
+      "primary_inclination_range_deg": 10.221618871779098,
+      "primary_azimuth_min_gap_deg": 87.2774970522837,
+      "primary_azimuth_max_gap_deg": 93.96102220784311,
+      "z_scale": 0.8290716475335506
+    },
+    "joven-09": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 0.6948757566953802,
+      "max_secondary_radius_ratio": 0.5991326362056787,
+      "primary_inclination_range_deg": 12.817718409857523,
+      "primary_azimuth_min_gap_deg": 88.51372979752887,
+      "primary_azimuth_max_gap_deg": 91.88176793864622,
+      "z_scale": 0.8519431832069666
+    },
+    "adulto-00": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6947670602223939,
+      "max_secondary_radius_ratio": 0.5956390096685011,
+      "primary_inclination_range_deg": 33.76937486018805,
+      "primary_azimuth_min_gap_deg": 35.83264501764455,
+      "primary_azimuth_max_gap_deg": 43.60979537763086,
+      "z_scale": 0.7715222080235128
+    },
+    "adulto-01": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6660136407090581,
+      "max_secondary_radius_ratio": 0.5790043526560357,
+      "primary_inclination_range_deg": 27.768510439590706,
+      "primary_azimuth_min_gap_deg": 35.89761674548281,
+      "primary_azimuth_max_gap_deg": 43.82319258560358,
+      "z_scale": 0.7629330239704932
+    },
+    "adulto-02": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6772032073511902,
+      "max_secondary_radius_ratio": 0.597529026764253,
+      "primary_inclination_range_deg": 35.29616352494001,
+      "primary_azimuth_min_gap_deg": 35.53658533527539,
+      "primary_azimuth_max_gap_deg": 44.81979598550075,
+      "z_scale": 0.7576342739594003
+    },
+    "adulto-03": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6832593800196148,
+      "max_secondary_radius_ratio": 0.5959679883927246,
+      "primary_inclination_range_deg": 30.299969794228616,
+      "primary_azimuth_min_gap_deg": 32.93109014371774,
+      "primary_azimuth_max_gap_deg": 46.512467084152036,
+      "z_scale": 0.7635654205159452
+    },
+    "adulto-04": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6990603389499207,
+      "max_secondary_radius_ratio": 0.5997977229769095,
+      "primary_inclination_range_deg": 25.60772884003506,
+      "primary_azimuth_min_gap_deg": 33.68608483428602,
+      "primary_azimuth_max_gap_deg": 46.56244589393157,
+      "z_scale": 0.7478046286941537
+    },
+    "adulto-05": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6958657880967095,
+      "max_secondary_radius_ratio": 0.5965549488781507,
+      "primary_inclination_range_deg": 27.235408298804998,
+      "primary_azimuth_min_gap_deg": 36.509484412613965,
+      "primary_azimuth_max_gap_deg": 42.80718049918764,
+      "z_scale": 0.7727472547233434
+    },
+    "adulto-06": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6953158382953626,
+      "max_secondary_radius_ratio": 0.5960964071665793,
+      "primary_inclination_range_deg": 31.564324208416725,
+      "primary_azimuth_min_gap_deg": 35.25362377909494,
+      "primary_azimuth_max_gap_deg": 45.15894300733237,
+      "z_scale": 0.7776382047937468
+    },
+    "adulto-07": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6973845477466583,
+      "max_secondary_radius_ratio": 0.5978205027627563,
+      "primary_inclination_range_deg": 24.156016236740044,
+      "primary_azimuth_min_gap_deg": 34.821008004017386,
+      "primary_azimuth_max_gap_deg": 45.23508707033979,
+      "z_scale": 0.7442915256926929
+    },
+    "adulto-08": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6842155291475109,
+      "max_secondary_radius_ratio": 0.5868449154775764,
+      "primary_inclination_range_deg": 27.086112194962496,
+      "primary_azimuth_min_gap_deg": 34.688947088223074,
+      "primary_azimuth_max_gap_deg": 43.22780627770942,
+      "z_scale": 0.7490480689720099
+    },
+    "adulto-09": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 0.6981283866576915,
+      "max_secondary_radius_ratio": 0.5996468842329205,
+      "primary_inclination_range_deg": 28.733031533744757,
+      "primary_azimuth_min_gap_deg": 33.96143161111861,
+      "primary_azimuth_max_gap_deg": 44.06721884980442,
+      "z_scale": 0.7692869687067768
+    },
+    "viejo-00": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6984562891587535,
+      "max_secondary_radius_ratio": 0.5995338078939783,
+      "primary_inclination_range_deg": 28.935330908984007,
+      "primary_azimuth_min_gap_deg": 26.030447633213214,
+      "primary_azimuth_max_gap_deg": 39.99562137675507,
+      "z_scale": 0.7142505359627349
+    },
+    "viejo-01": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6933908804311402,
+      "max_secondary_radius_ratio": 0.5966281533567598,
+      "primary_inclination_range_deg": 25.241294281830456,
+      "primary_azimuth_min_gap_deg": 27.028685259421337,
+      "primary_azimuth_max_gap_deg": 37.65433329323196,
+      "z_scale": 0.7350034805363715
+    },
+    "viejo-02": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6961992202074686,
+      "max_secondary_radius_ratio": 0.599125915652596,
+      "primary_inclination_range_deg": 29.471772086121444,
+      "primary_azimuth_min_gap_deg": 26.71971555371732,
+      "primary_azimuth_max_gap_deg": 38.44363897417071,
+      "z_scale": 0.7392670504180637
+    },
+    "viejo-03": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6924556026698225,
+      "max_secondary_radius_ratio": 0.5974221184171329,
+      "primary_inclination_range_deg": 31.313101765905206,
+      "primary_azimuth_min_gap_deg": 27.15717303102997,
+      "primary_azimuth_max_gap_deg": 39.23553244766438,
+      "z_scale": 0.7478682176554579
+    },
+    "viejo-04": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.699592458953063,
+      "max_secondary_radius_ratio": 0.5996605448577194,
+      "primary_inclination_range_deg": 28.749671957172758,
+      "primary_azimuth_min_gap_deg": 25.90902591861817,
+      "primary_azimuth_max_gap_deg": 40.107676249100166,
+      "z_scale": 0.7720172590770837
+    },
+    "viejo-05": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6974550754785123,
+      "max_secondary_radius_ratio": 0.5963901688070746,
+      "primary_inclination_range_deg": 28.426431405381287,
+      "primary_azimuth_min_gap_deg": 29.43270955348388,
+      "primary_azimuth_max_gap_deg": 41.33460925861913,
+      "z_scale": 0.7470027472413551
+    },
+    "viejo-06": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6969803444312149,
+      "max_secondary_radius_ratio": 0.5974835602206607,
+      "primary_inclination_range_deg": 30.374971354787817,
+      "primary_azimuth_min_gap_deg": 25.638728443937524,
+      "primary_azimuth_max_gap_deg": 39.21594194516334,
+      "z_scale": 0.7265452753203412
+    },
+    "viejo-07": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6999359738139002,
+      "max_secondary_radius_ratio": 0.599946871152721,
+      "primary_inclination_range_deg": 28.256736733223903,
+      "primary_azimuth_min_gap_deg": 26.679946448095848,
+      "primary_azimuth_max_gap_deg": 41.342149756238285,
+      "z_scale": 0.7447124442231765
+    },
+    "viejo-08": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6968070802732512,
+      "max_secondary_radius_ratio": 0.5973392836391124,
+      "primary_inclination_range_deg": 30.4386737566478,
+      "primary_azimuth_min_gap_deg": 27.852569548471322,
+      "primary_azimuth_max_gap_deg": 39.095839916749924,
+      "z_scale": 0.7630845184615063
+    },
+    "viejo-09": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 0.6995132118314816,
+      "max_secondary_radius_ratio": 0.5995946021672393,
+      "primary_inclination_range_deg": 30.75448838938052,
+      "primary_azimuth_min_gap_deg": 26.534479635816723,
+      "primary_azimuth_max_gap_deg": 38.27680942117635,
+      "z_scale": 0.7438862139528246
+    }
+  },
+  "base_measures": {
+    "viejo-00": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 1.6406248666037513,
+      "max_secondary_radius_ratio": 1.3005936891094847,
+      "primary_inclination_range_deg": 5.2523412392702085e-06,
+      "primary_azimuth_min_gap_deg": 0.41604936752912636,
+      "primary_azimuth_max_gap_deg": 93.2911268505801,
+      "z_scale": 0.7702156033271941
+    },
+    "viejo-03": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 1.6406248666037513,
+      "max_secondary_radius_ratio": 1.3005935395896406,
+      "primary_inclination_range_deg": 6.1525284280605774e-06,
+      "primary_azimuth_min_gap_deg": 5.231660776880176,
+      "primary_azimuth_max_gap_deg": 91.95591043502412,
+      "z_scale": 0.8317830052648202
+    },
+    "viejo-09": {
+      "primary_count": 11,
+      "secondary_count": 22,
+      "max_primary_radius_ratio": 1.6406248666037513,
+      "max_secondary_radius_ratio": 1.3005936140327305,
+      "primary_inclination_range_deg": 3.503432651541516e-06,
+      "primary_azimuth_min_gap_deg": 0.38728634897421443,
+      "primary_azimuth_max_gap_deg": 120.45190755617756,
+      "z_scale": 0.7786132744204878
+    },
+    "adulto-00": {
+      "primary_count": 9,
+      "secondary_count": 18,
+      "max_primary_radius_ratio": 1.6406245500573566,
+      "max_secondary_radius_ratio": 1.3005936655239572,
+      "primary_inclination_range_deg": 5.376632458364838e-06,
+      "primary_azimuth_min_gap_deg": 3.675806589952316,
+      "primary_azimuth_max_gap_deg": 99.32982585170191,
+      "z_scale": 0.7590616690092866
+    },
+    "joven-00": {
+      "primary_count": 4,
+      "secondary_count": 8,
+      "max_primary_radius_ratio": 1.6406247012131505,
+      "max_secondary_radius_ratio": 1.3005940669197171,
+      "primary_inclination_range_deg": 4.871778010340222e-06,
+      "primary_azimuth_min_gap_deg": 9.289708476637657,
+      "primary_azimuth_max_gap_deg": 153.09959517778012,
+      "z_scale": 0.8365610384078336
+    }
+  },
+  "same_seeds_and_parameters": true,
+  "legacy_geometry_reproduced": true,
+  "repeated_geometry": true,
+  "parameter_effects": {
+    "height_m": "331ed43ab045dd12466096d285c94b2c88a2fa2d745094594bad58b3f7225e12",
+    "base_radius_m": "bcdc1d4f997fb8fffb16609b98f81719f3cdcfedbfca4829ca910a96b9379bf6",
+    "curvature": "b1ec91b0ccc2713b621ffdc4892df339bfdf328d218359fc89731a351756a57c",
+    "primary_branches": "b3bb84fb41ae07c338b1411313fe08b2a7ba1ecefc71d5d56720214647078396",
+    "max_depth": "11bcf2cabde9ed11ac014e88fd4b06bb8214fcf247e15ff53b4a105010e62b5e",
+    "branch_length_ratio": "66bc885d1b69e373640c3153bbbeea9e10300af05321fbd2b4d66ebe3e85b621",
+    "inclination_deg": "382dfc0a8b2afa6788a54a58de56a8e9ba496e8a43cb9dd2ea3bd3f16cda5d1a",
+    "asymmetry": "a2b50ebe991b89e36d9d88b8bc6cc340570195f3900df8836a07cd311a2b29ab",
+    "foliage_density": "30f9e418ada81cd3a9137efc9b7c1c8fdc8a64630be83c93ef67e2d5811eaa6d",
+    "foliage_scale_m": "874a1de454f6a5e5463d459e5a39a0111d688c2b31eef863d013d4a596473ffb"
+  },
+  "foliage_seed_preserves_curves": true,
+  "visual_captures_generated": true,
+  "shared_cameras": {
+    "viejo-00": true,
+    "viejo-03": true,
+    "viejo-09": true,
+    "adulto-00": true,
+    "joven-00": true
+  },
+  "edge_structure": {
+    "minimum": {
+      "primary_count": 1,
+      "secondary_count": 0,
+      "max_primary_radius_ratio": 0.685122505515175,
+      "max_secondary_radius_ratio": 0,
+      "primary_inclination_range_deg": 0.0,
+      "primary_azimuth_min_gap_deg": 360.0,
+      "primary_azimuth_max_gap_deg": 360.0,
+      "z_scale": 1.0
+    },
+    "maximum": {
+      "primary_count": 12,
+      "secondary_count": 24,
+      "max_primary_radius_ratio": 0.6958373003416788,
+      "max_secondary_radius_ratio": 0.5965309833913333,
+      "primary_inclination_range_deg": 27.348621398518887,
+      "primary_azimuth_min_gap_deg": 21.69293625576165,
+      "primary_azimuth_max_gap_deg": 37.29734245456547,
+      "z_scale": 0.7325584033047224
+    },
+    "thin-many": {
+      "primary_count": 12,
+      "secondary_count": 24,
+      "max_primary_radius_ratio": 0.6958371839554666,
+      "max_secondary_radius_ratio": 0.5965299683671534,
+      "primary_inclination_range_deg": 27.56619783492081,
+      "primary_azimuth_min_gap_deg": 25.015770936590627,
+      "primary_azimuth_max_gap_deg": 34.378416159182336,
+      "z_scale": 0.9993369607919673
+    },
+    "bare-depth1": {
+      "primary_count": 9,
+      "secondary_count": 0,
+      "max_primary_radius_ratio": 0.6958372788982564,
+      "max_secondary_radius_ratio": 0,
+      "primary_inclination_range_deg": 30.83169023265385,
+      "primary_azimuth_min_gap_deg": 33.35435759178441,
+      "primary_azimuth_max_gap_deg": 45.29345091041142,
+      "z_scale": 0.8716518426529967
+    }
+  },
+  "unit_tests_passed": 14,
+  "unique_geometries": 30,
+  "godot_imported": 30,
+  "native_total_curve_length_m": {
+    "viejo-00": {
+      "base": 122.33820561964652,
+      "candidate": 80.15654520844708
+    },
+    "viejo-03": {
+      "base": 117.72338976576056,
+      "candidate": 76.98116404072944
+    },
+    "viejo-09": {
+      "base": 121.68383828539419,
+      "candidate": 79.62344588403185
+    },
+    "adulto-00": {
+      "base": 104.89418177556487,
+      "candidate": 71.65680863587326
+    },
+    "joven-00": {
+      "base": 13.841950719703007,
+      "candidate": 10.839347877069397
+    }
+  },
+  "batch_cases_sha256": "4b9a92ff64cb70a2502e88d005fc093b2f9008fa5b919ad586ed22fa93bc9ca8",
+  "edge_metrics": {
+    "minimum": {
+      "triangles": 328,
+      "height_m": 2.0,
+      "triangles_by_material": {
+        "Oak_Bark": 328
+      }
+    },
+    "maximum": {
+      "triangles": 7420,
+      "height_m": 20.000002,
+      "triangles_by_material": {
+        "Oak_Leaves": 2960,
+        "Oak_Bark": 4460
+      }
+    },
+    "thin-many": {
+      "triangles": 4460,
+      "height_m": 2.0,
+      "triangles_by_material": {
+        "Oak_Bark": 4460
+      }
+    },
+    "bare-depth1": {
+      "triangles": 1448,
+      "height_m": 10.0,
+      "triangles_by_material": {
+        "Oak_Bark": 1448
+      }
+    }
+  },
+  "geometry_hashes": {
+    "joven-00": "2185b22903ad9ee7f1d021b662b090131560d3682e45afe3fc711ebf09d65d17",
+    "joven-01": "d5bad733a8921b6d807cc90a6af9657ebc87c75dd55ddcb5bbac479a819335e9",
+    "joven-02": "5ce46ee33340ae93a09c15e3ae2c9a169464381f8791e9ca51afe538fd3eacc6",
+    "joven-03": "bfc4819ba9ef75cf5fb9da38ed12f0750cdd458bab9a529b2c940220734bc874",
+    "joven-04": "783ba7a6f65bd6e9182b3ad411523dacb449647e8ab94cb26e3942c297ce1795",
+    "joven-05": "21ab714a2275da4cf214d2d8e36087bbd66125ccd0ec48ce95b0a9b01fb24206",
+    "joven-06": "9c22b0119eba2b67dfb443616297587619305a1b3ba1f0d9ff4b959b56b32541",
+    "joven-07": "b6cf55b29148bb7e71cef4fda89ffd4075d437f7af31438f0cf767fe5f97918c",
+    "joven-08": "801118b992c45619a00b45161ce777b08ed5be60f8bb0a4582caf459976c5113",
+    "joven-09": "33236d26f74c74cbf5b525450cb1412c93e60fcbc4bc9c9e292ca27feb6fa383",
+    "adulto-00": "5dee5ddb29000f6c1ef2ce36f1c202d26d2018f9469a916e68fc2c2b93102803",
+    "adulto-01": "db4ad90e2c243974e2dbf7778a8ae4b6f3c0b90d4b999f082994bbf0a8614288",
+    "adulto-02": "f372c69b87c3e8bb0e04eef46ea7cca8398677cbb2726a241a12dfdd6ae97a2c",
+    "adulto-03": "398ab17a0f28c0cc616638b11c19622879cf53bda65afbb32c48a8b7e447ea41",
+    "adulto-04": "e797864608c8b69fe16dfb8140e4c0491b0f3c12011f139fc140c11f19cae0a7",
+    "adulto-05": "eb56b40d1291d345d7cef0981d993fd341b0e39aaae5512a9e1166d28cdc571a",
+    "adulto-06": "b09ef671a9e78e71d973adb396dd65e09db5615537caa55d2c348d73c45129e2",
+    "adulto-07": "a467d71f1b93cf2c7b790ae35b2898bb4d6f0c4ebcd98fcbde50c88896a9c0f7",
+    "adulto-08": "b42e4400d7f0cb99015a6c97d855f85a6b8755fbd0878beb80414f52d591ad9c",
+    "adulto-09": "b7f708f3b87708a3a4da74e8f868b2cb1fc0921968557276b121f195e54f5ea6",
+    "viejo-00": "3e2c0fad50232a9027f6d2cf0c300cca68b3780cac513baa14b724d96280c44d",
+    "viejo-01": "f1b6923dd4f17d5bc19a6339c9ad8afe973cc7739b7d5250311a28c2df3243cd",
+    "viejo-02": "72d1f33fc4079ae7215dafb6ea9e08edf36e9d24ebd5e602e2fbc949cd011489",
+    "viejo-03": "36e0f654362f9d6a54a1e3f98b366e56b28214f7cc1c32870985a77f258619b5",
+    "viejo-04": "f46d862a8597d639ff82ce65d6d7cd929a3839d223cf61d841584eb8169a3528",
+    "viejo-05": "e844d6f757e8a91b57b2d3bc1258ed1c3f1d98a3d029bc3bfd8bd062055341b8",
+    "viejo-06": "0e8f777c90b06df02def73feca6055bd714c62782325eb64fe81188acd894df6",
+    "viejo-07": "a011a85aa008c6cbe7dd8f57b183687f7454cea186b9fde7489272d80405e7f5",
+    "viejo-08": "0691205eda42926ba4c5676af4a31af747b92c60ebad27d67e36c55d8c85399f",
+    "viejo-09": "334cd5a581cefd7a201da89ec8efb505c87e72886c61be20e278f9563dff015b"
+  },
+  "sources_sha256": {
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/generate_oak.py": "b9aae8fc8d63be8c5b8a57ebc0866049eb62a04c9faba01673af7686d6618c59",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/cli.py": "4cc2629b17b99e90673bc469682889b4293dace9f251e9746ea74f1fd97807f9",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/evaluation.py": "3eb4c8a29be0479ceb89f80a2a2061d33ea19fb74d8a7220783ed83f2adbf086",
+    "src/treegen/quality.py": "4afcef6b34f1da9e1f204996974a725f4fb329a935cf1373c5263683cd561ee6",
+    "src/treegen/runner.py": "876445d8b4a139a9e2c5c9d4f43257626c7fbd14932e1cc4acca5a6dd2e8c912",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "schemas/tree-spec.schema.json": "eebdf4f19f5e9aff22e5697e7958f7a707a52902ae5599c84b8e5092272f886c"
+  },
+  "verification_scripts_sha256": {
+    "scripts/verify_q1.py": "214503ff92c9a88b4aebc1a24aff973600042c1cda76eb4af26d2330e9565093",
+    "scripts/diagnose_structure.py": "dc338aae0146771a882149ea2f48d4edbd67f1afaeb08c5f216c626c5e27606d",
+    "blender/render_comparison.py": "b948d24123713f900318b77e89cced0d7b026bc1883a8dee65532b9a91271d86",
+    "scripts/q1_gallery.py": "cf85dac410fa08b99a0f24eb67a270754a53969ba471d03320fb531678ab515b",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0"
+  }
+}

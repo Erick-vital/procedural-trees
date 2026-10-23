@@ -1,0 +1,680 @@
+{
+  "status": "completed",
+  "cameras": {
+    "perspective": {
+      "type": "PERSP",
+      "location": [
+        17.260351181030273,
+        -22.89664077758789,
+        17.07362937927246
+      ],
+      "rotation_euler": [
+        1.147628664970398,
+        -2.9651729960278317e-09,
+        0.6254851222038269
+      ],
+      "ortho_scale": 14.697017669677734,
+      "lens_mm": 50.0,
+      "resolution": [
+        900,
+        900
+      ]
+    },
+    "front": {
+      "type": "ORTHO",
+      "location": [
+        0.9146320819854736,
+        -30.88289451599121,
+        4.5
+      ],
+      "rotation_euler": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 14.697017669677734,
+      "lens_mm": 50.0,
+      "resolution": [
+        900,
+        900
+      ]
+    },
+    "side": {
+      "type": "ORTHO",
+      "location": [
+        31.533418655395508,
+        -0.26410889625549316,
+        4.5
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        1.5707963705062866
+      ],
+      "ortho_scale": 14.697017669677734,
+      "lens_mm": 50.0,
+      "resolution": [
+        900,
+        900
+      ]
+    },
+    "top": {
+      "type": "ORTHO",
+      "location": [
+        0.9146320819854736,
+        -0.26410889625549316,
+        35.1187858581543
+      ],
+      "rotation_euler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 14.697017669677734,
+      "lens_mm": 50.0,
+      "resolution": [
+        900,
+        900
+      ]
+    }
+  },
+  "spec": {
+    "schema_version": "1.0",
+    "algorithm": "oak_geometry_nodes",
+    "algorithm_version": "0.4.1",
+    "seed": 3009,
+    "parameters": {
+      "height_m": 9,
+      "base_radius_m": 0.8,
+      "curvature": 0.16,
+      "primary_branches": 11,
+      "max_depth": 2,
+      "branch_length_ratio": 0.55,
+      "inclination_deg": 72,
+      "asymmetry": 0.85,
+      "foliage_density": 0.75,
+      "foliage_scale_m": 1.3
+    }
+  },
+  "spec_sha256": "7310143554a60d52aa72d57b99a65f0a27b1469acc7e3b821fd0c959ec098c68",
+  "seeds": {
+    "structure": 669423365,
+    "foliage": 927115663
+  },
+  "socket_values": {
+    "Height": 9,
+    "Base Radius": 0.8,
+    "Curvature": 0.16,
+    "Primary Count": 11,
+    "Depth": 2,
+    "Branch Ratio": 0.55,
+    "Inclination": 72,
+    "Asymmetry": 0.85,
+    "Density": 0.75,
+    "Foliage Scale": 1.3,
+    "Structure Seed": 669423365,
+    "Foliage Seed": 927115663,
+    "Profile Resolution": 8
+  },
+  "socket_mapping": {
+    "Height": "Socket_0",
+    "Base Radius": "Socket_1",
+    "Curvature": "Socket_2",
+    "Primary Count": "Socket_3",
+    "Depth": "Socket_4",
+    "Branch Ratio": "Socket_5",
+    "Inclination": "Socket_6",
+    "Asymmetry": "Socket_7",
+    "Density": "Socket_8",
+    "Foliage Scale": "Socket_9",
+    "Structure Seed": "Socket_10",
+    "Foliage Seed": "Socket_11",
+    "Profile Resolution": "Socket_12"
+  },
+  "algorithm_version": "0.4.1",
+  "node_groups": {
+    "Oak_Foliage_v0.4.1": 276,
+    "Oak_FoliageShape_0_v0.4.0": 45,
+    "Oak_FoliageShape_1_v0.4.0": 45,
+    "Oak_FoliageShape_2_v0.4.0": 45,
+    "Oak_FoliageShape_3_v0.4.0": 45,
+    "Oak_FoliageShape_4_v0.4.0": 45,
+    "Oak_FoliageShape_5_v0.4.0": 45,
+    "Oak_Generator_v0.4.1": 39,
+    "Oak_Structure_v0.2.1": 201,
+    "Oak_Volume_v0.1.0": 6
+  },
+  "blender": "5.2.1 LTS",
+  "blender_build": "9e2066aef7ef",
+  "runner_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "jsonschema_version": "4.19.2",
+  "blender_python": "3.13.13 (main, Apr 25 2025, 12:39:20) [GCC 14.2.1 20250110 (Red Hat 14.2.1-11)]",
+  "metrics": {
+    "vertices": 3768,
+    "triangles": 7192,
+    "bounds_blender": [
+      [
+        -4.912966,
+        -6.387866,
+        0.0
+      ],
+      [
+        6.74223,
+        5.859648,
+        9.0
+      ]
+    ],
+    "height_m": 9.0,
+    "triangles_by_material": {
+      "Oak_Leaves": 1900,
+      "Oak_Bark": 5292
+    },
+    "geometry_sha256": "c260ab793c7a7c04e84d95d5f16359a591e3d3c6990082b437cf46b7988cd32d"
+  },
+  "structure_checks": {
+    "curves": 45,
+    "primary_branches": 11,
+    "secondary_branches": 33,
+    "samples_per_curve": 64,
+    "max_attachment_error_m": 9.848303581391754e-07,
+    "structure_sha256": "61042933f38361a89949a7010062f641a7cfa09e9f12affeb9f0b26672397b3e"
+  },
+  "crown_checks": {
+    "wood_geometry_sha256": "0b62852bca3a6daccd2566b472ecb146df2ec84683b8917a795009e9f3cd30f3",
+    "wood_xy_sha256": "702834bfbdbdde4c6f0b39dfd32792f4545ce82933e3ab4d46da7d5b58dee4fd",
+    "wood_bounds_blender": [
+      [
+        -4.627171039581299,
+        -6.0165324211120605,
+        0.0
+      ],
+      [
+        6.504335880279541,
+        5.381451606750488,
+        9.0
+      ]
+    ],
+    "wood_triangles": 5292,
+    "leaf_triangles": 1900,
+    "leaf_mass_count": 41,
+    "center_height_bins": [
+      0,
+      5,
+      16,
+      12,
+      8
+    ],
+    "center_azimuth_sectors": [
+      7,
+      8,
+      4,
+      4,
+      4,
+      5,
+      5,
+      4
+    ],
+    "mass_bbox_diagonal": {
+      "minimum_m": 1.801991539205905,
+      "maximum_m": 5.963113998034352,
+      "mean_m": 3.274933502461113,
+      "coefficient_of_variation": 0.3780296905412983
+    },
+    "mass_triangle_histogram": {
+      "20": 23,
+      "80": 18
+    },
+    "occupied_height_bins": 4,
+    "occupied_azimuth_sectors": 8,
+    "leaf_bounds_blender": [
+      [
+        -4.912966251373291,
+        -6.387866020202637,
+        1.7929527759552002
+      ],
+      [
+        6.742230415344238,
+        5.85964822769165,
+        8.841297149658203
+      ]
+    ]
+  },
+  "normalization": {
+    "basis": "wood_bounds",
+    "raw_bounds_blender": [
+      [
+        -4.627171,
+        -6.016532,
+        -0.011635
+      ],
+      [
+        6.504336,
+        5.381452,
+        10.984015
+      ]
+    ],
+    "scale": [
+      1,
+      1,
+      0.8185054999022341
+    ],
+    "translation": [
+      0,
+      0,
+      0.009523311491362494
+    ]
+  },
+  "foliage_checks": {
+    "mass_count": 41,
+    "triangles_expected": 1900,
+    "counts_by_level": {
+      "trunk": 1,
+      "primary": 18,
+      "secondary": 22
+    },
+    "counts_by_role": {
+      "dominant": 11,
+      "medium": 29,
+      "small": 1
+    },
+    "families": {
+      "0": 5,
+      "1": 8,
+      "2": 3,
+      "3": 2,
+      "4": 14,
+      "5": 9
+    },
+    "high_detail_masses": 18,
+    "branch_count_histogram": {
+      "trunk": {
+        "1": 1
+      },
+      "primary": {
+        "1": 5,
+        "2": 5,
+        "3": 1
+      },
+      "secondary": {
+        "1": 22
+      }
+    },
+    "branches": [
+      {
+        "level": 0,
+        "branch": 0,
+        "radius_m": 0.800000011920929,
+        "parent_radius_m": 0.800000011920929,
+        "support": 1.0,
+        "masses": 1,
+        "scale_product_sum_m3": 0.2753565806033306
+      },
+      {
+        "level": 1,
+        "branch": 100,
+        "radius_m": 0.43446582555770874,
+        "parent_radius_m": 0.43446582555770874,
+        "support": 0.919744074344635,
+        "masses": 3,
+        "scale_product_sum_m3": 5.164966860529063
+      },
+      {
+        "level": 1,
+        "branch": 101,
+        "radius_m": 0.3873763978481293,
+        "parent_radius_m": 0.3873763978481293,
+        "support": 0.7917836904525757,
+        "masses": 2,
+        "scale_product_sum_m3": 4.028867212302572
+      },
+      {
+        "level": 1,
+        "branch": 102,
+        "radius_m": 0.3584706485271454,
+        "parent_radius_m": 0.3584706485271454,
+        "support": 0.7132354378700256,
+        "masses": 2,
+        "scale_product_sum_m3": 5.178553447131799
+      },
+      {
+        "level": 1,
+        "branch": 103,
+        "radius_m": 0.3577255308628082,
+        "parent_radius_m": 0.3577255308628082,
+        "support": 0.7112106680870056,
+        "masses": 2,
+        "scale_product_sum_m3": 5.3301899152517835
+      },
+      {
+        "level": 1,
+        "branch": 104,
+        "radius_m": 0.3174258768558502,
+        "parent_radius_m": 0.3174258768558502,
+        "support": 0.6017007231712341,
+        "masses": 2,
+        "scale_product_sum_m3": 3.1539942311544844
+      },
+      {
+        "level": 1,
+        "branch": 105,
+        "radius_m": 0.29997482895851135,
+        "parent_radius_m": 0.29997482895851135,
+        "support": 0.5542793869972229,
+        "masses": 2,
+        "scale_product_sum_m3": 3.566378366663413
+      },
+      {
+        "level": 1,
+        "branch": 106,
+        "radius_m": 0.23897093534469604,
+        "parent_radius_m": 0.23897093534469604,
+        "support": 0.3885079324245453,
+        "masses": 1,
+        "scale_product_sum_m3": 1.9210445518985437
+      },
+      {
+        "level": 1,
+        "branch": 107,
+        "radius_m": 0.21353885531425476,
+        "parent_radius_m": 0.21353885531425476,
+        "support": 0.31939905881881714,
+        "masses": 1,
+        "scale_product_sum_m3": 1.7730143896671777
+      },
+      {
+        "level": 1,
+        "branch": 108,
+        "radius_m": 0.19756659865379333,
+        "parent_radius_m": 0.19756659865379333,
+        "support": 0.2759961783885956,
+        "masses": 1,
+        "scale_product_sum_m3": 1.224731916318286
+      },
+      {
+        "level": 1,
+        "branch": 109,
+        "radius_m": 0.15827150642871857,
+        "parent_radius_m": 0.15827150642871857,
+        "support": 0.16921605169773102,
+        "masses": 1,
+        "scale_product_sum_m3": 1.2455838146095486
+      },
+      {
+        "level": 1,
+        "branch": 110,
+        "radius_m": 0.11901076883077621,
+        "parent_radius_m": 0.11901076883077621,
+        "support": 0.06252927333116531,
+        "masses": 1,
+        "scale_product_sum_m3": 1.2617756491761882
+      },
+      {
+        "level": 2,
+        "branch": 200,
+        "radius_m": 0.18079118430614471,
+        "parent_radius_m": 0.43446582555770874,
+        "support": 0.919744074344635,
+        "masses": 1,
+        "scale_product_sum_m3": 0.714491864582996
+      },
+      {
+        "level": 2,
+        "branch": 202,
+        "radius_m": 0.05833878368139267,
+        "parent_radius_m": 0.43446582555770874,
+        "support": 0.919744074344635,
+        "masses": 1,
+        "scale_product_sum_m3": 0.3223739725721684
+      },
+      {
+        "level": 2,
+        "branch": 203,
+        "radius_m": 0.1703561693429947,
+        "parent_radius_m": 0.3873763978481293,
+        "support": 0.7917836904525757,
+        "masses": 1,
+        "scale_product_sum_m3": 0.6257553966210959
+      },
+      {
+        "level": 2,
+        "branch": 205,
+        "radius_m": 0.05928932875394821,
+        "parent_radius_m": 0.3873763978481293,
+        "support": 0.7917836904525757,
+        "masses": 1,
+        "scale_product_sum_m3": 0.6024832559427579
+      },
+      {
+        "level": 2,
+        "branch": 206,
+        "radius_m": 0.14179475605487823,
+        "parent_radius_m": 0.3584706485271454,
+        "support": 0.7132354378700256,
+        "masses": 1,
+        "scale_product_sum_m3": 0.6199163291708785
+      },
+      {
+        "level": 2,
+        "branch": 208,
+        "radius_m": 0.05384887382388115,
+        "parent_radius_m": 0.3584706485271454,
+        "support": 0.7132354378700256,
+        "masses": 1,
+        "scale_product_sum_m3": 0.3935691149891526
+      },
+      {
+        "level": 2,
+        "branch": 209,
+        "radius_m": 0.15103667974472046,
+        "parent_radius_m": 0.3577255308628082,
+        "support": 0.7112106680870056,
+        "masses": 1,
+        "scale_product_sum_m3": 0.6148123068517188
+      },
+      {
+        "level": 2,
+        "branch": 211,
+        "radius_m": 0.05158354714512825,
+        "parent_radius_m": 0.3577255308628082,
+        "support": 0.7112106680870056,
+        "masses": 1,
+        "scale_product_sum_m3": 0.41913807123040514
+      },
+      {
+        "level": 2,
+        "branch": 212,
+        "radius_m": 0.1251712590456009,
+        "parent_radius_m": 0.3174258768558502,
+        "support": 0.6017007231712341,
+        "masses": 1,
+        "scale_product_sum_m3": 0.5151469606754541
+      },
+      {
+        "level": 2,
+        "branch": 214,
+        "radius_m": 0.047573596239089966,
+        "parent_radius_m": 0.3174258768558502,
+        "support": 0.6017007231712341,
+        "masses": 1,
+        "scale_product_sum_m3": 0.3795913749819758
+      },
+      {
+        "level": 2,
+        "branch": 215,
+        "radius_m": 0.12363319844007492,
+        "parent_radius_m": 0.29997482895851135,
+        "support": 0.5542793869972229,
+        "masses": 1,
+        "scale_product_sum_m3": 0.4872058519579139
+      },
+      {
+        "level": 2,
+        "branch": 217,
+        "radius_m": 0.04294103756546974,
+        "parent_radius_m": 0.29997482895851135,
+        "support": 0.5542793869972229,
+        "masses": 1,
+        "scale_product_sum_m3": 0.32598367496509373
+      },
+      {
+        "level": 2,
+        "branch": 218,
+        "radius_m": 0.10301379859447479,
+        "parent_radius_m": 0.23897093534469604,
+        "support": 0.3885079324245453,
+        "masses": 1,
+        "scale_product_sum_m3": 0.35433127855420227
+      },
+      {
+        "level": 2,
+        "branch": 220,
+        "radius_m": 0.030860871076583862,
+        "parent_radius_m": 0.23897093534469604,
+        "support": 0.3885079324245453,
+        "masses": 1,
+        "scale_product_sum_m3": 0.23054141125701672
+      },
+      {
+        "level": 2,
+        "branch": 221,
+        "radius_m": 0.08101047575473785,
+        "parent_radius_m": 0.21353885531425476,
+        "support": 0.31939905881881714,
+        "masses": 1,
+        "scale_product_sum_m3": 0.5554165722027078
+      },
+      {
+        "level": 2,
+        "branch": 223,
+        "radius_m": 0.02926575392484665,
+        "parent_radius_m": 0.21353885531425476,
+        "support": 0.31939905881881714,
+        "masses": 1,
+        "scale_product_sum_m3": 0.23985461144319845
+      },
+      {
+        "level": 2,
+        "branch": 224,
+        "radius_m": 0.08548413962125778,
+        "parent_radius_m": 0.19756659865379333,
+        "support": 0.2759961783885956,
+        "masses": 1,
+        "scale_product_sum_m3": 0.3346778304718082
+      },
+      {
+        "level": 2,
+        "branch": 226,
+        "radius_m": 0.030155224725604057,
+        "parent_radius_m": 0.19756659865379333,
+        "support": 0.2759961783885956,
+        "masses": 1,
+        "scale_product_sum_m3": 0.33024404729581386
+      },
+      {
+        "level": 2,
+        "branch": 227,
+        "radius_m": 0.06450394541025162,
+        "parent_radius_m": 0.15827150642871857,
+        "support": 0.16921605169773102,
+        "masses": 1,
+        "scale_product_sum_m3": 0.2998065668575315
+      },
+      {
+        "level": 2,
+        "branch": 229,
+        "radius_m": 0.020850950852036476,
+        "parent_radius_m": 0.15827150642871857,
+        "support": 0.16921605169773102,
+        "masses": 1,
+        "scale_product_sum_m3": 0.22212600254196277
+      },
+      {
+        "level": 2,
+        "branch": 230,
+        "radius_m": 0.051897045224905014,
+        "parent_radius_m": 0.11901076883077621,
+        "support": 0.06252927333116531,
+        "masses": 1,
+        "scale_product_sum_m3": 0.26608046346549824
+      },
+      {
+        "level": 2,
+        "branch": 232,
+        "radius_m": 0.015953322872519493,
+        "parent_radius_m": 0.11901076883077621,
+        "support": 0.06252927333116531,
+        "masses": 1,
+        "scale_product_sum_m3": 0.19628834970850456
+      }
+    ]
+  },
+  "parameter_effect_checks": {},
+  "sources_sha256": {
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/generate_oak.py": "970c0e0eab97d7d4698209f1a4dcddacc10b2fea43a09c6d887fd3c5a37c4e8a",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/cli.py": "4cc2629b17b99e90673bc469682889b4293dace9f251e9746ea74f1fd97807f9",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/evaluation.py": "3eb4c8a29be0479ceb89f80a2a2061d33ea19fb74d8a7220783ed83f2adbf086",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "876445d8b4a139a9e2c5c9d4f43257626c7fbd14932e1cc4acca5a6dd2e8c912",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70"
+  },
+  "glb_sha256": "d4aeec7bbbb2f87a24e286c77dcc25fa96f95fd016ad9dd8e4323aaed02172ec",
+  "manifest_version": "1.0",
+  "job_id": "14863ed1-28c7-4423-bee5-38aeb2af9ef6",
+  "started_at": "2026-10-23T00:46:35.356116+00:00",
+  "required_views": [
+    "front",
+    "side",
+    "top",
+    "perspective"
+  ],
+  "adapter_version": "1.0",
+  "duration_seconds": 2.069,
+  "finished_at": "2026-10-23T00:46:37.425368+00:00",
+  "export_validation": {
+    "triangles": 7192,
+    "materials": {
+      "Oak_Leaves": 1900,
+      "Oak_Bark": 5292
+    },
+    "bounds_gltf": [
+      [
+        -4.912966251373291,
+        0.0,
+        -5.85964822769165
+      ],
+      [
+        6.742230415344238,
+        9.0,
+        6.387866020202637
+      ]
+    ],
+    "dimensions_m": [
+      11.65519666671753,
+      9.0,
+      12.247514247894287
+    ],
+    "geometry_sha256": "653f837afaf740d5f4a32381dc7a2b591a4be633c2c281624e8921f0398b1153",
+    "glb_sha256": "d4aeec7bbbb2f87a24e286c77dcc25fa96f95fd016ad9dd8e4323aaed02172ec"
+  },
+  "files_sha256": {
+    "branches.png": "e1e2e94d2edc192105f374571944a2c4e6620dbe392efe2465436ba5179eeeb5",
+    "front.png": "c6ead5ee8a81a20340832ebba213f17b7b12648d8f82c5eecfe53622dfb2ef32",
+    "perspective.png": "da8e1761fb0c04dd59efe17ddddbf7b18ac3d76f25c210e6292ffb212652451c",
+    "side.png": "5e2d3d4a23824624a8d510eac38b860b446fb517a85f4eb79f2b560c24bbf2ec",
+    "top.png": "0b780f607ce4d7d6292c9110c1219e3fa1608738ccacba3d407ac2a1d7d9be5d",
+    "tree.blend": "d580c151f964c181d637ab89bdb9c8e37d3644caa61c07c9e1dfedd792549eb3",
+    "tree.glb": "d4aeec7bbbb2f87a24e286c77dcc25fa96f95fd016ad9dd8e4323aaed02172ec"
+  }
+}

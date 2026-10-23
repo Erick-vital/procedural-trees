@@ -1,0 +1,115 @@
+{
+  "status": "completed",
+  "spec": {
+    "schema_version": "1.0",
+    "algorithm": "oak_geometry_nodes",
+    "algorithm_version": "0.1.0",
+    "seed": 29,
+    "parameters": {
+      "height_m": 10,
+      "base_radius_m": 0.5,
+      "curvature": 0.12,
+      "primary_branches": 9,
+      "max_depth": 2,
+      "branch_length_ratio": 0.5,
+      "inclination_deg": 65,
+      "asymmetry": 0.6,
+      "foliage_density": 1,
+      "foliage_scale_m": 1.5
+    }
+  },
+  "spec_sha256": "2d9c3f756224c6887cd6ffafb35cf4f36b1db27918b405bfb07a3dc10292dd24",
+  "seeds": {
+    "structure": 1824590334,
+    "foliage": 228031302
+  },
+  "socket_values": {
+    "Height": 10,
+    "Base Radius": 0.5,
+    "Curvature": 0.12,
+    "Primary Count": 9,
+    "Depth": 2,
+    "Branch Ratio": 0.5,
+    "Inclination": 65,
+    "Asymmetry": 0.6,
+    "Density": 1,
+    "Foliage Scale": 1.5,
+    "Structure Seed": 1824590334,
+    "Foliage Seed": 228031302,
+    "Profile Resolution": 8
+  },
+  "socket_mapping": {
+    "Height": "Socket_0",
+    "Base Radius": "Socket_1",
+    "Curvature": "Socket_2",
+    "Primary Count": "Socket_3",
+    "Depth": "Socket_4",
+    "Branch Ratio": "Socket_5",
+    "Inclination": "Socket_6",
+    "Asymmetry": "Socket_7",
+    "Density": "Socket_8",
+    "Foliage Scale": "Socket_9",
+    "Structure Seed": "Socket_10",
+    "Foliage Seed": "Socket_11",
+    "Profile Resolution": "Socket_12"
+  },
+  "algorithm_version": "0.1.0",
+  "node_groups": {
+    "Oak_Foliage_v0.1.0": 21,
+    "Oak_Generator_v0.1.0": 19,
+    "Oak_Structure_v0.1.0": 101,
+    "Oak_Volume_v0.1.0": 6
+  },
+  "blender": "5.2.1 LTS",
+  "blender_build": "9e2066aef7ef",
+  "runner_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "jsonschema_version": "4.19.2",
+  "blender_python": "3.13.13 (main, Apr 25 2025, 12:39:20) [GCC 14.2.1 20250110 (Red Hat 14.2.1-11)]",
+  "metrics": {
+    "vertices": 2664,
+    "triangles": 4768,
+    "bounds_blender": [
+      [
+        -7.089787,
+        -6.829822,
+        0.0
+      ],
+      [
+        7.393087,
+        8.015457,
+        10.0
+      ]
+    ],
+    "height_m": 10.0,
+    "triangles_by_material": {
+      "Oak_Leaves": 2240,
+      "Oak_Bark": 2528
+    },
+    "geometry_sha256": "7971d2cc3fd364496b2ddf46a0cb83c0d4b21a23e9b234a7d8bfd0595bdaf659"
+  },
+  "structure_checks": {
+    "curves": 28,
+    "primary_branches": 9,
+    "secondary_branches": 18,
+    "samples_per_curve": 64,
+    "max_attachment_error_m": 0.0001507868874381883,
+    "structure_sha256": "c1b4bf085b699918b101fca50786f3a829d66968bb8d4f9e462254d77195ee97"
+  },
+  "parameter_effect_checks": {
+    "height_m": "73acd483cc44e2f9ec353f032dafff15175d353f6d664e7ff6d54b564a6b062e",
+    "base_radius_m": "6e4bf92b53d454272a9dd0e967157e5335b32c505931689eec9907ba6404c4f3",
+    "curvature": "f17d1315d088dbc5ece92cd02938dee0d8478bd15483c76f680f420b4a9265b4",
+    "primary_branches": "623ee7b75bf8bd5be61bb8bef9ea13fcb8c813399e17e4651ada9eabc7e43e40",
+    "max_depth": "2e637bb39fdd2159c9d369cdd7a1a1d4d6637973697009a39237e379a63bb6d1",
+    "branch_length_ratio": "5931dde82b320cb843ea5f9ee974aeb219745e47578285b1a08595ad5c5a1b32",
+    "inclination_deg": "157e89fb5e4b220cb77ff2eb927c663150c64dc27d80ae17ae34b7396bdeb7d1",
+    "asymmetry": "5390822bf6c2780ea1660edb1767cb364afb1fca09f191ca584cb86c7f5b17f4",
+    "foliage_density": "8468f7afcb777d3383d1cc6963ea0f63de378e1d528ea7a99f54661f2081d55d",
+    "foliage_scale_m": "a5fb96f5ee04ffaadb153ac51e7f0138ee42f572b75b6512e288729034b5eb6f"
+  },
+  "sources_sha256": {
+    "blender/generate_oak.py": "0bda632124aa7a5df1c81e44a7415f2a6823e84d3d686031a76aa399d4cf849f",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a"
+  },
+  "glb_sha256": "0504f8f803a68520cf8a3784f37d13f494e55dc2818cb913bee4e8129beda26a"
+}

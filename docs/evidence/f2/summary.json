@@ -1,0 +1,523 @@
+{
+  "passed": true,
+  "batch_path": "artifacts/f2/lote-final",
+  "cases_sha256": "4b93c7890d97fb4a7cf2c22b71f717992036423bdb0460ba6e75917c9cc83a07",
+  "cases": [
+    {
+      "id": "joven-00",
+      "seed": 1000,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 4.0,
+      "geometry_sha256": "49512de3692c1fd69e5be6f1f4df2c00eb48d84c516befecb9584466309bf85a"
+    },
+    {
+      "id": "joven-01",
+      "seed": 1001,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 3.999999523162842,
+      "geometry_sha256": "2f62a93ffb776baacf0de967e8b7983e3912c5b0e7b1469e98b0fe002ee61ffe"
+    },
+    {
+      "id": "joven-02",
+      "seed": 1002,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 3.999999761581421,
+      "geometry_sha256": "0973eba374c8ca77629ce63a4e928c63bda7568b405475385f54a73516c34538"
+    },
+    {
+      "id": "joven-03",
+      "seed": 1003,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 3.999999761581421,
+      "geometry_sha256": "43d287618b3060dc12961366bae65cc2fd1b5c33109735ad989b7ceda29fe91e"
+    },
+    {
+      "id": "joven-04",
+      "seed": 1004,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 3.999999761581421,
+      "geometry_sha256": "cb4b481ebf08b3d309a170ca2249946d1accd664ac61c6a2bfbceca2cb94b3ff"
+    },
+    {
+      "id": "joven-05",
+      "seed": 1005,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 4.0,
+      "geometry_sha256": "3043e6b53d9ff85d8ad8fc67b28e2748fea6d2e2bef982471cce894a1c50e36a"
+    },
+    {
+      "id": "joven-06",
+      "seed": 1006,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 3.999999761581421,
+      "geometry_sha256": "56894fa4a8da77189fdf4dae8e7b838f3a86b6acbf9c80ca015fbdf27f7ee4ab"
+    },
+    {
+      "id": "joven-07",
+      "seed": 1007,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 3.999999761581421,
+      "geometry_sha256": "938b76defa652d50a8f22d195567254cc53f564589ec3955755b5ac5dbeaa0fe"
+    },
+    {
+      "id": "joven-08",
+      "seed": 1008,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 3.999999761581421,
+      "geometry_sha256": "3345bf704a17fde95665f5374cb4dcc04198c2182555df3520de5892556890ed"
+    },
+    {
+      "id": "joven-09",
+      "seed": 1009,
+      "triangles": 1748,
+      "materials": 2,
+      "height_m": 3.999999761581421,
+      "geometry_sha256": "cc91cb15282fb2b27bd75ea037617062250958492dc65590a7481a5cd9cc4655"
+    },
+    {
+      "id": "adulto-00",
+      "seed": 2000,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.0,
+      "geometry_sha256": "95273d28e4ee4a41abe8deeb5c75e35df4428034624cdc30616d04a57a772e75"
+    },
+    {
+      "id": "adulto-01",
+      "seed": 2001,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.000000953674316,
+      "geometry_sha256": "9f42fc4ec9a2032639cc7a44bb247584500a18c29fab5f49ed4940f7c7a9d5a5"
+    },
+    {
+      "id": "adulto-02",
+      "seed": 2002,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.0,
+      "geometry_sha256": "3484bfb8cee85648fabb6af1f79071f0fee1a986e4e24cd9beb552753ef0cd55"
+    },
+    {
+      "id": "adulto-03",
+      "seed": 2003,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.0,
+      "geometry_sha256": "83d3bd58d89d30798762000e65313372e745b3186e6d66a3de472f5fc8939445"
+    },
+    {
+      "id": "adulto-04",
+      "seed": 2004,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 9.999999046325684,
+      "geometry_sha256": "6ba7f370c9b6633280d98fe325fae03b6aee70469a7f8ec9b03509bfca910e58"
+    },
+    {
+      "id": "adulto-05",
+      "seed": 2005,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.0,
+      "geometry_sha256": "0faa49fa20ace569d6bd536fbfe557a134f3f92dbac30ed8688359c35c102a93"
+    },
+    {
+      "id": "adulto-06",
+      "seed": 2006,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.0,
+      "geometry_sha256": "1892516d2a7a35f4ac1e4dec298b83ffebec0259b30c20b09c06e4fafbcf20e0"
+    },
+    {
+      "id": "adulto-07",
+      "seed": 2007,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.000000953674316,
+      "geometry_sha256": "930cdb7dd758511a88e3bd06a9697ebaf4f31a55cfb2ed541985b35131e80683"
+    },
+    {
+      "id": "adulto-08",
+      "seed": 2008,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.0,
+      "geometry_sha256": "750aa3f69fd7abb06214492f877a219c534fcb4421a62641a43f21119e64eaab"
+    },
+    {
+      "id": "adulto-09",
+      "seed": 2009,
+      "triangles": 4768,
+      "materials": 2,
+      "height_m": 10.0,
+      "geometry_sha256": "2187f601d3262cf4433c651b86825e145e83cfade370311474a54e5b6eb67102"
+    },
+    {
+      "id": "viejo-00",
+      "seed": 3000,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.0,
+      "geometry_sha256": "a8e51905873b298619fad8e7abfd4973e38dedaf1afebff67432e8dff3988743"
+    },
+    {
+      "id": "viejo-01",
+      "seed": 3001,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.0,
+      "geometry_sha256": "113165efed5216bb502ffab96c68baa7e00828a626908b783749c6145d1b6989"
+    },
+    {
+      "id": "viejo-02",
+      "seed": 3002,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.0,
+      "geometry_sha256": "44d4b5d0c7e6781185c994b83c047d07b70ae06bcedd0314ce42c369270b3502"
+    },
+    {
+      "id": "viejo-03",
+      "seed": 3003,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.000000953674316,
+      "geometry_sha256": "1e83e3d3b8b95ab80dc487a18b7588575ff822e03c7d11937778b8063fdc014f"
+    },
+    {
+      "id": "viejo-04",
+      "seed": 3004,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.000000953674316,
+      "geometry_sha256": "7673383f0fe4ce8db71e847f52a5c920f60643dc54cba522896b09e6469073fb"
+    },
+    {
+      "id": "viejo-05",
+      "seed": 3005,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 8.999999046325684,
+      "geometry_sha256": "7b1a7662eab2afee1fb392c691f3efae9935ca27a89287392f683d369ebf5c67"
+    },
+    {
+      "id": "viejo-06",
+      "seed": 3006,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.0,
+      "geometry_sha256": "de62b39a946202230d26c5df98be2f7bcea836d6a84e657748541fec3d316dd5"
+    },
+    {
+      "id": "viejo-07",
+      "seed": 3007,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.000000953674316,
+      "geometry_sha256": "93e18a2c6f9c03f65a2b32687c5bd69376d251cc888bd2f1806c49a73297b03a"
+    },
+    {
+      "id": "viejo-08",
+      "seed": 3008,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.0,
+      "geometry_sha256": "966accecead699b579df049bd09176d8612aa31e3a4b4317f674551c3781a34a"
+    },
+    {
+      "id": "viejo-09",
+      "seed": 3009,
+      "triangles": 5088,
+      "materials": 2,
+      "height_m": 9.0,
+      "geometry_sha256": "8bd850bedf7b0d8271ee455b91084ac203a691a6257f2ec135cdfea4f451194d"
+    }
+  ],
+  "unique_geometries": 30,
+  "repeat": {
+    "left": "/home/tao/repos/procedural/arboles/artifacts/f2/lote-final/adulto-00",
+    "right": "/home/tao/repos/procedural/arboles/artifacts/f2/verification-final/repeat",
+    "same_spec": true,
+    "same_environment": true,
+    "same_sources": true,
+    "same_cameras": true,
+    "same_geometry": true,
+    "triangle_delta": 0
+  },
+  "godot": {
+    "assets": {
+      "adulto-00": {
+        "height_m": 10.0,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-01": {
+        "height_m": 10.0000009536743,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-02": {
+        "height_m": 10.0,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-03": {
+        "height_m": 10.0,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-04": {
+        "height_m": 9.99999904632568,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-05": {
+        "height_m": 10.0,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-06": {
+        "height_m": 10.0,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-07": {
+        "height_m": 10.0000009536743,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-08": {
+        "height_m": 10.0,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "adulto-09": {
+        "height_m": 10.0,
+        "materials": {
+          "Oak_Bark": 2528,
+          "Oak_Leaves": 2240
+        },
+        "triangles": 4768
+      },
+      "joven-00": {
+        "height_m": 4.0,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-01": {
+        "height_m": 3.99999952316284,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-02": {
+        "height_m": 3.99999952316284,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-03": {
+        "height_m": 3.99999976158142,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-04": {
+        "height_m": 3.99999976158142,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-05": {
+        "height_m": 4.0,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-06": {
+        "height_m": 3.99999976158142,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-07": {
+        "height_m": 3.99999952316284,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-08": {
+        "height_m": 3.99999976158142,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "joven-09": {
+        "height_m": 3.99999952316284,
+        "materials": {
+          "Oak_Bark": 1228,
+          "Oak_Leaves": 520
+        },
+        "triangles": 1748
+      },
+      "viejo-00": {
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-01": {
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-02": {
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-03": {
+        "height_m": 9.00000095367432,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-04": {
+        "height_m": 9.00000095367432,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-05": {
+        "height_m": 8.99999904632568,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-06": {
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-07": {
+        "height_m": 9.00000095367432,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-08": {
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      },
+      "viejo-09": {
+        "height_m": 9.0,
+        "materials": {
+          "Oak_Bark": 3048,
+          "Oak_Leaves": 2040
+        },
+        "triangles": 5088
+      }
+    },
+    "godot": "4.7.2-stable (official)",
+    "passed": true
+  },
+  "unit_tests_passed": 11,
+  "visual_captures_generated": true,
+  "duration_seconds": {
+    "total": 48.965,
+    "median": 1.669
+  },
+  "sources_sha256": {
+    "blender/generate_oak.py": "44149818a5ff1bb2956b6dc085d0d1b16b5af780349cd42865e05449f469f3e6",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/cli.py": "4cc2629b17b99e90673bc469682889b4293dace9f251e9746ea74f1fd97807f9",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/evaluation.py": "3eb4c8a29be0479ceb89f80a2a2061d33ea19fb74d8a7220783ed83f2adbf086",
+    "src/treegen/runner.py": "876445d8b4a139a9e2c5c9d4f43257626c7fbd14932e1cc4acca5a6dd2e8c912",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "schemas/tree-spec.schema.json": "ac391d14e1d060ba7be28522bcb1bc3f04a90d544166a37b069e2738e863edae"
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "status": "completed",
+  "cameras": {
+    "perspective": {
+      "type": "PERSP",
+      "location": [
+        13.434197425842285,
+        -17.88487434387207,
+        14.272991180419922
+      ],
+      "rotation_euler": [
+        1.147628664970398,
+        -7.831545190128963e-08,
+        0.6254850625991821
+      ],
+      "ortho_scale": 11.423417091369629,
+      "lens_mm": 50.0,
+      "resolution": [
+        900,
+        900
+      ]
+    },
+    "front": {
+      "type": "ORTHO",
+      "location": [
+        0.7293112277984619,
+        -24.09227752685547,
+        4.500000476837158
+      ],
+      "rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 11.423417091369629,
+      "lens_mm": 50.0,
+      "resolution": [
+        900,
+        900
+      ]
+    },
+    "side": {
+      "type": "ORTHO",
+      "location": [
+        24.52809715270996,
+        -0.29349184036254883,
+        4.500000476837158
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        1.5707963705062866
+      ],
+      "ortho_scale": 11.423417091369629,
+      "lens_mm": 50.0,
+      "resolution": [
+        900,
+        900
+      ]
+    },
+    "top": {
+      "type": "ORTHO",
+      "location": [
+        0.7293112277984619,
+        -0.29349184036254883,
+        28.298786163330078
+      ],
+      "rotation_euler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 11.423417091369629,
+      "lens_mm": 50.0,
+      "resolution": [
+        900,
+        900
+      ]
+    }
+  },
+  "spec": {
+    "schema_version": "1.0",
+    "algorithm": "oak_geometry_nodes",
+    "algorithm_version": "0.2.0",
+    "seed": 3009,
+    "parameters": {
+      "height_m": 9,
+      "base_radius_m": 0.8,
+      "curvature": 0.16,
+      "primary_branches": 11,
+      "max_depth": 2,
+      "branch_length_ratio": 0.55,
+      "inclination_deg": 72,
+      "asymmetry": 0.85,
+      "foliage_density": 0.75,
+      "foliage_scale_m": 1.6
+    }
+  },
+  "spec_sha256": "5ededa5970b9c8f06009cf9f75ab5d2ab4fc737d8500bae1b7790aa50614ef59",
+  "seeds": {
+    "structure": 669423365,
+    "foliage": 927115663
+  },
+  "socket_values": {
+    "Height": 9,
+    "Base Radius": 0.8,
+    "Curvature": 0.16,
+    "Primary Count": 11,
+    "Depth": 2,
+    "Branch Ratio": 0.55,
+    "Inclination": 72,
+    "Asymmetry": 0.85,
+    "Density": 0.75,
+    "Foliage Scale": 1.6,
+    "Structure Seed": 669423365,
+    "Foliage Seed": 927115663,
+    "Profile Resolution": 8
+  },
+  "socket_mapping": {
+    "Height": "Socket_0",
+    "Base Radius": "Socket_1",
+    "Curvature": "Socket_2",
+    "Primary Count": "Socket_3",
+    "Depth": "Socket_4",
+    "Branch Ratio": "Socket_5",
+    "Inclination": "Socket_6",
+    "Asymmetry": "Socket_7",
+    "Density": "Socket_8",
+    "Foliage Scale": "Socket_9",
+    "Structure Seed": "Socket_10",
+    "Foliage Seed": "Socket_11",
+    "Profile Resolution": "Socket_12"
+  },
+  "algorithm_version": "0.2.0",
+  "node_groups": {
+    "Oak_Foliage_v0.1.0": 21,
+    "Oak_Generator_v0.2.0": 19,
+    "Oak_Structure_v0.2.0": 200,
+    "Oak_Volume_v0.1.0": 6
+  },
+  "blender": "5.2.1 LTS",
+  "blender_build": "9e2066aef7ef",
+  "runner_python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "jsonschema_version": "4.19.2",
+  "blender_python": "3.13.13 (main, Apr 25 2025, 12:39:20) [GCC 14.2.1 20250110 (Red Hat 14.2.1-11)]",
+  "metrics": {
+    "vertices": 3344,
+    "triangles": 6144,
+    "bounds_blender": [
+      [
+        -4.030446,
+        -4.75506,
+        0.0
+      ],
+      [
+        5.489068,
+        4.168077,
+        9.000001
+      ]
+    ],
+    "height_m": 9.000001,
+    "triangles_by_material": {
+      "Oak_Leaves": 2040,
+      "Oak_Bark": 4104
+    },
+    "geometry_sha256": "9b34817a2ba8ec66b95ab4b70b1424a98370609bae3e9beab900efeda4f9c6dd"
+  },
+  "structure_checks": {
+    "curves": 34,
+    "primary_branches": 11,
+    "secondary_branches": 22,
+    "samples_per_curve": 64,
+    "max_attachment_error_m": 0.0008278817384644951,
+    "structure_sha256": "27e7bf2f40f2fe65fc3ba8138e31a6e10a52b0042574d5ecd65a4b15c55a77d4"
+  },
+  "parameter_effect_checks": {},
+  "sources_sha256": {
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/generate_oak.py": "b9aae8fc8d63be8c5b8a57ebc0866049eb62a04c9faba01673af7686d6618c59",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/cli.py": "4cc2629b17b99e90673bc469682889b4293dace9f251e9746ea74f1fd97807f9",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/evaluation.py": "3eb4c8a29be0479ceb89f80a2a2061d33ea19fb74d8a7220783ed83f2adbf086",
+    "src/treegen/quality.py": "4afcef6b34f1da9e1f204996974a725f4fb329a935cf1373c5263683cd561ee6",
+    "src/treegen/runner.py": "876445d8b4a139a9e2c5c9d4f43257626c7fbd14932e1cc4acca5a6dd2e8c912",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "schemas/tree-spec.schema.json": "eebdf4f19f5e9aff22e5697e7958f7a707a52902ae5599c84b8e5092272f886c"
+  },
+  "glb_sha256": "1197538fceae1ac1793c543322ff712ca1b936fe56f057c76367826e61778972",
+  "manifest_version": "1.0",
+  "job_id": "f4ea9edc-59ba-4747-bafc-2b84f4526ebe",
+  "started_at": "2026-10-22T21:24:01.773052+00:00",
+  "required_views": [
+    "front",
+    "side",
+    "top",
+    "perspective"
+  ],
+  "adapter_version": "1.0",
+  "duration_seconds": 1.668,
+  "finished_at": "2026-10-22T21:24:03.441378+00:00",
+  "export_validation": {
+    "triangles": 6144,
+    "materials": {
+      "Oak_Leaves": 2040,
+      "Oak_Bark": 4104
+    },
+    "bounds_gltf": [
+      [
+        -4.030445575714111,
+        0.0,
+        -4.168076515197754
+      ],
+      [
+        5.489068031311035,
+        9.000000953674316,
+        4.755060195922852
+      ]
+    ],
+    "dimensions_m": [
+      9.519513607025146,
+      9.000000953674316,
+      8.923136711120605
+    ],
+    "geometry_sha256": "334cd5a581cefd7a201da89ec8efb505c87e72886c61be20e278f9563dff015b",
+    "glb_sha256": "1197538fceae1ac1793c543322ff712ca1b936fe56f057c76367826e61778972"
+  },
+  "files_sha256": {
+    "branches.png": "1e3b4b04e62e5da2f60495b3d7d6cc36cdbeb8c88a5698e52a53339df0548e9a",
+    "front.png": "847c3b436853ec559d090f38c57d384f00be32be017808146e6a9a8ba499d3ff",
+    "perspective.png": "7c4dd1b39989a3a6e7e7e2b5b1f1dfac4d59c7e603964d44b8f1606f5281f366",
+    "side.png": "5e71040074f7e7304fdcd43707d84d1190bd785f11e53480187eea457a8a6eaf",
+    "top.png": "77a0137945c4757012744024ffc42f0e8a03cb693c261438c371e4d62982c77d",
+    "tree.blend": "c5474e0d8e156ca75fe6f7c199eb97d32fa05a6e70cd107fa443b70242aaac36",
+    "tree.glb": "1197538fceae1ac1793c543322ff712ca1b936fe56f057c76367826e61778972"
+  }
+}
