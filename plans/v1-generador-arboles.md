@@ -4,6 +4,10 @@ Fecha: 2026-10-22
 Revisión: foco en assets de árboles; arquitectura híbrida con Geometry Nodes, automatización con `bpy` y reglas espaciales en Python.  
 Estado: F0–F2 verificadas; Q1 0.2.0 rechazada estéticamente por el usuario. Q1b 0.2.1 y copa ajustada Q2 0.3.0 aprobadas por el usuario. El usuario identifica Q3 0.4.0 como última iteración buena y rechaza estéticamente Q3b 0.4.1, que permanece verificada técnicamente. Autoriza una prueba acotada de fusión parcial desde Q3, descrita abajo. F4–F6 pendientes; F3 diferida fuera del alcance activo. Informes [F0](../docs/evidence/f0/informe.md), [F1](../docs/evidence/f1/informe.md), [F2](../docs/evidence/f2/informe.md) y [Q3b](../docs/evidence/q3b/informe.md).
 
+## Prioridad posterior: plan separado de rediseño del follaje — 2026-10-22
+
+El usuario solicita un nuevo plan para la nueva familia de follaje: [rediseño de follaje](rediseno-follaje.md). Ese documento pasa a dirigir este trabajo y detalla RF0–RF5; este plan conserva el marco y la evidencia de v1. Es una excepción explícita a la decisión anterior de mantener todas las revisiones Q en un único plan. Las secuencias originales que aparecen más abajo conservan su contexto; F4–F6 continúan pendientes durante el rediseño y no se declara terminada v1. La creación del nuevo plan no implementa algoritmos, contratos ni especies adicionales.
+
 ## Cambio de alcance vigente — 2026-10-22
 
 Por decisión del usuario tras F2, este proyecto se concentra en generar, evaluar y mejorar árboles. La distribución de bosques (F3), el mapa y el terreno se difieren; se estudiarán en un proyecto posterior de terrenos variados y no son requisitos para cerrar esta v1. La generación de terreno no estaba implementada ni formaba parte del generador actual.
@@ -91,7 +95,13 @@ El usuario rechaza Q3b y autoriza conservar el estado actual en Git antes de exp
 
 El ensayo se ejecuta como posprocesado explícito `q3-partial-fusion-0.2.1`, separado del generador Q3. La especificación conservada describe la entrada Q3; el manifiesto del candidato registra además versión, configuración y procedencia del posprocesado. No se amplía el contrato de producción para un experimento todavía sin aceptación.
 
-Resultado: piloto y tres controles completados, con revisión de capturas Blender/Godot. Madera y sombreado idénticos, entradas Q3 conservadas y cuatro GLB válidos; ocho bases/candidatos importados en Godot. Reproducción idéntica de Q3 y fusión sobre viejo-09. IoU mínima de silueta 98.33 % en cuatro vistas. El cambio visual es moderado y todavía conserva piezas reconocibles; queda pendiente la valoración del usuario, sin extensión al lote ni promoción. [Informe y reproducción](../docs/evidence/q3-fusion/informe.md).
+Resultado: piloto y tres controles completados, con revisión de capturas Blender/Godot. Madera y sombreado idénticos, entradas Q3 conservadas y cuatro GLB válidos; ocho bases/candidatos importados en Godot. Reproducción idéntica de Q3 y fusión sobre viejo-09. IoU mínima de silueta 98.33 % en cuatro vistas. El usuario considera casi iguales Q3 y fusión y acepta cerrar esta familia de follaje como aprobada para su estilo; no se atribuye superioridad a la fusión ni se extiende al lote. [Informe y reproducción](../docs/evidence/q3-fusion/informe.md).
+
+### Dirección posterior: rediseño del follaje — diseño, sin implementación
+
+El usuario pide conservar la familia actual y pensar un rediseño con más precisión, otra estética y preparación para distintos árboles futuros. Se documenta en [dirección de diseño](../docs/diseno-follaje.md): copa objetivo, arquitectura portadora, ocupación y representación separadas. La primera hipótesis es una unidad pequeña de ramilla y hojas geométricas, a revisar antes de construir una copa completa; las tarjetas texturizadas son una alternativa, no una decisión tomada.
+
+La prueba de fusión no demuestra que las esferas hayan agotado sus posibilidades: mantuvo la composición Q3 de entrada. El cierre es una decisión práctica/artística. El usuario solicita después un [plan separado](rediseno-follaje.md), que dirige el trabajo pendiente de la nueva familia. Se prepara extensibilidad en el diseño; múltiples especies siguen fuera de la implementación v1. No se inicia otro algoritmo, F4–F6, un lote nuevo ni una migración estructural por esta actualización documental.
 
 ## 1. Objetivo y demostración final
 

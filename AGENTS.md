@@ -12,7 +12,7 @@ Desarrollar un generador procedural de robles low-poly como primer experimento d
 
 ## Forma de trabajo
 
-- Seguir el alcance y las fases de `plans/v1-generador-arboles.md`. Registrar cambios de alcance expresamente.
+- Seguir el plan activo enlazado en `ESTADO.md`. `plans/v1-generador-arboles.md` conserva el marco de infraestructura y fases anteriores; el rediseño de follaje se rige por `plans/rediseno-follaje.md`, solicitado por el usuario. Registrar cambios de alcance expresamente.
 - Separar contratos, algoritmos, ejecución, evaluación y adaptadores Blender/Godot.
 - Mantener semillas explícitas y registrar versiones, parámetros y procedencia de los resultados.
 - Validar entradas y limitar trabajo geométrico y tiempos de ejecución.
@@ -25,7 +25,7 @@ Desarrollar un generador procedural de robles low-poly como primer experimento d
 
 `ESTADO.md` es una síntesis del estado vigente, no una bitácora ni un almacén ilimitado de contexto.
 
-- Mantenerlo en **100 líneas como máximo y 8 KiB (8192 bytes) como máximo**; ambos límites aplican al archivo completo.
+- Mantenerlo en **200 líneas como máximo y 16 KiB (16 384 bytes) como máximo**; ambos límites aplican al archivo completo.
 - Incluir: última actualización, fase actual, avances verificados, siguiente paso, bloqueos y decisiones vigentes necesarias para continuar.
 - Enlazar planes, decisiones e informes cuando haga falta detalle. Guardar evidencia solo si sirve para reproducir o evaluar un resultado; no volcar conversaciones, logs ni estados anteriores completos.
 - Actualizarlo al cerrar una sesión con cambios relevantes de implementación, validación, decisiones o bloqueos. Si nada cambió, no añadir una entrada por rutina.

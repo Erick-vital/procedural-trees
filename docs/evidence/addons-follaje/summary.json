@@ -1,0 +1,803 @@
+{
+  "blender": "5.2.1 LTS",
+  "build": "9e2066aef7ef",
+  "addons_root": "/home/tao/.config/blender/5.2/extensions/blender_org",
+  "versions": {
+    "easy_tree": "1.0.1",
+    "sapling_tree_gen": "0.3.7"
+  },
+  "sources_sha256": {
+    "easy_tree/README.md": "97f2e806a2bc3cf56694dca3d73411726e3770646b0f56ed2bd855b6cf3a92d0",
+    "easy_tree/__init__.py": "f6275e9ca8fc257bbef68abbe8ece03cd8c670600da65545628cc008969b82a6",
+    "easy_tree/assets/assets.blend": "7a9febfb39c78e80af2cb88424d1fd23dbd5c6b8a44626b41369efcc7941eeca",
+    "easy_tree/blender_manifest.toml": "9e4a5eb7c18050e47735e14bb2b31e84f876daca50714d2041813768c2a4cc25",
+    "easy_tree/operators.py": "b828cf473e03c2fa821e58ae35b58daed1fb497984ed6d9267e4f6b6dcf7bc75",
+    "easy_tree/panel.py": "78d4f55af644fccc947f82535c809d58c9b9c8b046b10e6ba17b19babf3cd90a",
+    "sapling_tree_gen/__init__.py": "1852fa3878b36744a0ef1a89020e7dd38c334961c56a268ac7f839a65a637353",
+    "sapling_tree_gen/blender_manifest.toml": "2cc070bcc1a0704f26da3c04c024a5cca578c4f622ff831414b881dfeb297d5a",
+    "sapling_tree_gen/presets/callistemon.py": "7a14c3d6577334cc1d868f4aa28040e4421900b83a06af8bca21d8009d5b9c12",
+    "sapling_tree_gen/presets/douglas_fir.py": "9a8cb6feeaee635abb3d1bca69a6ee891e3de3be0f8756517d0e8ff4d965dc68",
+    "sapling_tree_gen/presets/japanese_maple.py": "c0a2a0ac4257aeaacd572cadc7af76d3c4c4654070eb9118b786430d18d8fca2",
+    "sapling_tree_gen/presets/quaking_aspen.py": "0af1dfe9ddce50d3b04b2c26d9447a396a852a6731fb8839c1529133649c4a93",
+    "sapling_tree_gen/presets/small_maple.py": "d138680a6680fb447842c7a751b92080e7f64e9a53ebef200504152554ad8278",
+    "sapling_tree_gen/presets/small_pine.py": "a0931e7a8914f6acb6f7a423edbb8eef4183617cb3d364fdd2045eb473ae2dc0",
+    "sapling_tree_gen/presets/weeping_willow.py": "403159b3fb980d30df748e65b6c95dfd1e340969d3f26e20cf8defdc420aefa9",
+    "sapling_tree_gen/presets/white_birch.py": "e8a129041e0f75b6d5966e4a93450151f4ecc6287aa0005832f6a3115734a3fc",
+    "sapling_tree_gen/presets/willow.py": "cfaa9c0ff58a47c712148f1b98e748ce9c794f47c57fb5883a1e9c31f1c3a953",
+    "sapling_tree_gen/utils.py": "78639c81d742343b702ff5cdace8d9c482a94d9d9d00ad5cd3bb4ea1835bb01f"
+  },
+  "inspection_script_sha256": "0645681d5eeeffcfba5dd342e7050b30d675a2bac60df929b0a5356975d1a782",
+  "easy_tree": {
+    "groups": {
+      "Add Branches": 64,
+      "Instance onto Tree": 19,
+      "Make Branch": 25,
+      "Make Leaf": 33,
+      "Make Tree Skeleton": 94,
+      "Make Twig & Leaf": 22,
+      "Random Deviation from Vector": 14,
+      "Random Offset": 8,
+      "Season": 21,
+      "Simple Tree Generator": 16,
+      "Strict Random Devation": 9,
+      "Tree Factor": 5,
+      "Tree Height": 12,
+      "Tree to Mesh": 39,
+      "Tree to Mesh and Leaves": 29,
+      "Wind": 45
+    },
+    "inputs": [
+      {
+        "name": "N Branches per Level",
+        "id": "Socket_25",
+        "type": "NodeSocketMenu",
+        "default": "Two Branches"
+      },
+      {
+        "name": "Trunk Height",
+        "id": "Socket_40",
+        "type": "NodeSocketInt",
+        "default": 2
+      },
+      {
+        "name": "Treetop Height",
+        "id": "Socket_26",
+        "type": "NodeSocketInt",
+        "default": 2
+      },
+      {
+        "name": "Num Levels",
+        "id": "Socket_27",
+        "type": "NodeSocketInt",
+        "default": 6
+      },
+      {
+        "name": "Branch Length",
+        "id": "Socket_28",
+        "type": "NodeSocketInt",
+        "default": 6
+      },
+      {
+        "name": "Random Angle",
+        "id": "Socket_29",
+        "type": "NodeSocketFloat",
+        "default": 0.5199999809265137
+      },
+      {
+        "name": "Random Jitter",
+        "id": "Socket_30",
+        "type": "NodeSocketFloat",
+        "default": 0.17000000178813934
+      },
+      {
+        "name": "Gravity",
+        "id": "Socket_31",
+        "type": "NodeSocketFloat",
+        "default": 0.5
+      },
+      {
+        "name": "Thickness",
+        "id": "Socket_32",
+        "type": "NodeSocketFloat",
+        "default": 1.600000023841858
+      },
+      {
+        "name": "Bark Material",
+        "id": "Socket_8",
+        "type": "NodeSocketMaterial",
+        "default": {
+          "datablock": "Bark"
+        }
+      },
+      {
+        "name": "Seed",
+        "id": "Socket_16",
+        "type": "NodeSocketInt",
+        "default": 0
+      },
+      {
+        "name": "Add Leaves",
+        "id": "Socket_19",
+        "type": "NodeSocketBool",
+        "default": true
+      },
+      {
+        "name": "Leaf Type",
+        "id": "Socket_11",
+        "type": "NodeSocketMenu",
+        "default": "Beech"
+      },
+      {
+        "name": "Season",
+        "id": "Socket_17",
+        "type": "NodeSocketFloat",
+        "default": 0.0
+      },
+      {
+        "name": "Min Height",
+        "id": "Socket_12",
+        "type": "NodeSocketInt",
+        "default": 15
+      },
+      {
+        "name": "Leaf Density",
+        "id": "Socket_13",
+        "type": "NodeSocketFloat",
+        "default": 6.0
+      },
+      {
+        "name": "Leaf Min Scale",
+        "id": "Socket_14",
+        "type": "NodeSocketFloat",
+        "default": 0.699999988079071
+      },
+      {
+        "name": "Leaf Max Scale",
+        "id": "Socket_15",
+        "type": "NodeSocketFloat",
+        "default": 1.2000000476837158
+      },
+      {
+        "name": "Visible in Viewport",
+        "id": "Socket_39",
+        "type": "NodeSocketBool",
+        "default": true
+      },
+      {
+        "name": "Custom Twig and  Leaf",
+        "id": "Socket_23",
+        "type": "NodeSocketBool",
+        "default": false
+      },
+      {
+        "name": "Custom  Leaf",
+        "id": "Socket_24",
+        "type": "NodeSocketObject",
+        "default": null
+      },
+      {
+        "name": "Wind",
+        "id": "Socket_34",
+        "type": "NodeSocketBool",
+        "default": false
+      },
+      {
+        "name": "Angle",
+        "id": "Socket_35",
+        "type": "NodeSocketFloat",
+        "default": 0.0
+      },
+      {
+        "name": "Speed",
+        "id": "Socket_36",
+        "type": "NodeSocketFloat",
+        "default": 0.5
+      },
+      {
+        "name": "Strength",
+        "id": "Socket_37",
+        "type": "NodeSocketFloat",
+        "default": 0.5
+      },
+      {
+        "name": "Shape",
+        "id": "Socket_38",
+        "type": "NodeSocketFloat",
+        "default": 2.0
+      }
+    ],
+    "legacy_assignment": "TypeError: bpy_struct[key] = val: id properties not supported for this type",
+    "modern_input_evaluation": {
+      "vertices": 332,
+      "triangles": 552
+    },
+    "probes": {
+      "leaf_low": {
+        "group": "Make Leaf",
+        "controls": {
+          "X Divisions": 2,
+          "Y Divisions": 2
+        },
+        "vertices": 4,
+        "polygons": 1,
+        "triangles": 2,
+        "geometry_sha256": "6ba9c5a2b3a13f9667bcc7ad7290c3d01d88a335bee9e7c2b9e7a6d46ce9154e",
+        "triangles_by_material": {
+          "Beech Leaves": 2
+        }
+      },
+      "leaf_twig_resolution": {
+        "group": "Make Leaf",
+        "controls": {
+          "X Divisions": 3,
+          "Y Divisions": 4
+        },
+        "vertices": 12,
+        "polygons": 6,
+        "triangles": 12,
+        "geometry_sha256": "1c83e33f0a921c340b38369906c9ad66f8a80f1039287bbe2753d6cb3e37c9fa",
+        "triangles_by_material": {
+          "Beech Leaves": 12
+        }
+      },
+      "twig": {
+        "group": "Make Twig & Leaf",
+        "controls": {
+          "Count": 7
+        },
+        "vertices": 112,
+        "polygons": 68,
+        "triangles": 136,
+        "geometry_sha256": "218f6cf026d5baa11ae4eef4569aef11848338af1b00c06a70ad78a310600d79",
+        "triangles_by_material": {
+          "Beech Leaves": 84
+        }
+      },
+      "twig_repeat": {
+        "group": "Make Twig & Leaf",
+        "controls": {
+          "Count": 7
+        },
+        "vertices": 112,
+        "polygons": 68,
+        "triangles": 136,
+        "geometry_sha256": "218f6cf026d5baa11ae4eef4569aef11848338af1b00c06a70ad78a310600d79",
+        "triangles_by_material": {
+          "Beech Leaves": 84
+        }
+      },
+      "small_tree": {
+        "group": "Simple Tree Generator",
+        "controls": {
+          "Num Levels": 2,
+          "Trunk Height": 1,
+          "Treetop Height": 1,
+          "Branch Length": 2,
+          "Min Height": 1,
+          "Leaf Density": 2.0,
+          "Seed": 17
+        },
+        "vertices": 1676,
+        "polygons": 1140,
+        "triangles": 2184,
+        "geometry_sha256": "630c51856c87142886ea7ee493bdb63aedc93e52bc2ffa017f33fd1509ac599d",
+        "triangles_by_material": {
+          "Bark": 1176,
+          "Beech Leaves": 1008
+        }
+      }
+    },
+    "leaf_material_alpha_sources": {
+      "Beech Leaves": [
+        "LeafSet024_1K-JPG_Opacity.jpg"
+      ],
+      "Hornbeam Leaves": [
+        "LeafSet014_1K-JPG_Opacity.jpg"
+      ],
+      "Ivy Leaves": [
+        "LeafSet017_1K-JPG_Opacity.jpg"
+      ]
+    },
+    "images": [
+      {
+        "name": "Bark001_2K-JPG_Color.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/Bark001_2K-JPG_Color.jpg",
+        "packed": false
+      },
+      {
+        "name": "Bark001_2K-JPG_Displacement.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/Bark001_2K-JPG_Displacement.jpg",
+        "packed": false
+      },
+      {
+        "name": "Bark001_2K-JPG_NormalGL.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/Bark001_2K-JPG_NormalGL.jpg",
+        "packed": false
+      },
+      {
+        "name": "Bark001_2K-JPG_Roughness.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/Bark001_2K-JPG_Roughness.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet014_1K-JPG_Color.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet014_1K-JPG_Color.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet014_1K-JPG_Displacement.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet014_1K-JPG_Displacement.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet014_1K-JPG_NormalGL.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet014_1K-JPG_NormalGL.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet014_1K-JPG_Opacity.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet014_1K-JPG_Opacity.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet014_1K-JPG_Roughness.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet014_1K-JPG_Roughness.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet017_1K-JPG_Color.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet017_1K-JPG_Color.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet017_1K-JPG_Displacement.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet017_1K-JPG_Displacement.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet017_1K-JPG_NormalGL.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet017_1K-JPG_NormalGL.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet017_1K-JPG_Opacity.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet017_1K-JPG_Opacity.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet017_1K-JPG_Roughness.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet017_1K-JPG_Roughness.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet024_1K-JPG_Color.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet024_1K-JPG_Color.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet024_1K-JPG_Displacement.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet024_1K-JPG_Displacement.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet024_1K-JPG_NormalGL.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet024_1K-JPG_NormalGL.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet024_1K-JPG_Opacity.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet024_1K-JPG_Opacity.jpg",
+        "packed": false
+      },
+      {
+        "name": "LeafSet024_1K-JPG_Roughness.jpg",
+        "filepath": "/home/tao/.config/blender/5.2/extensions/blender_org/easy_tree/assets/textures/LeafSet024_1K-JPG_Roughness.jpg",
+        "packed": false
+      },
+      {
+        "name": "Render Result",
+        "filepath": "",
+        "packed": false
+      },
+      {
+        "name": "Viewer Node",
+        "filepath": "",
+        "packed": false
+      }
+    ]
+  },
+  "sapling": {
+    "probes": {
+      "base": {
+        "controls": {
+          "seed": 17,
+          "levels": 3,
+          "branches": [
+            0,
+            5,
+            3,
+            1
+          ],
+          "curveRes": [
+            4,
+            4,
+            3,
+            1
+          ],
+          "segSplits": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "baseSplits": 0,
+          "showLeaves": true,
+          "leaves": 12,
+          "leafShape": "hex",
+          "scale": 6.0,
+          "scaleV": 0.0,
+          "useArm": false,
+          "armAnim": false,
+          "leafAnim": false,
+          "prune": false,
+          "makeMesh": false,
+          "bevel": true,
+          "bevelRes": 0,
+          "resU": 2
+        },
+        "splines": 11,
+        "wood_curve_sha256": "0739653f40b6e3f08eee0988529b981cfde3afd24e023af9b5a1551f9ddef9c8",
+        "leaf_vertices": 198,
+        "leaf_faces": 66,
+        "leaf_triangles": 132,
+        "leaf_geometry_sha256": "9efbdf0df8de77d3876aba36099aa92c328a84bb01b92dc3808e6feffc7ec670"
+      },
+      "repeat": {
+        "controls": {
+          "seed": 17,
+          "levels": 3,
+          "branches": [
+            0,
+            5,
+            3,
+            1
+          ],
+          "curveRes": [
+            4,
+            4,
+            3,
+            1
+          ],
+          "segSplits": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "baseSplits": 0,
+          "showLeaves": true,
+          "leaves": 12,
+          "leafShape": "hex",
+          "scale": 6.0,
+          "scaleV": 0.0,
+          "useArm": false,
+          "armAnim": false,
+          "leafAnim": false,
+          "prune": false,
+          "makeMesh": false,
+          "bevel": true,
+          "bevelRes": 0,
+          "resU": 2
+        },
+        "splines": 11,
+        "wood_curve_sha256": "0739653f40b6e3f08eee0988529b981cfde3afd24e023af9b5a1551f9ddef9c8",
+        "leaf_vertices": 198,
+        "leaf_faces": 66,
+        "leaf_triangles": 132,
+        "leaf_geometry_sha256": "9efbdf0df8de77d3876aba36099aa92c328a84bb01b92dc3808e6feffc7ec670"
+      },
+      "scale": {
+        "controls": {
+          "seed": 17,
+          "levels": 3,
+          "branches": [
+            0,
+            5,
+            3,
+            1
+          ],
+          "curveRes": [
+            4,
+            4,
+            3,
+            1
+          ],
+          "segSplits": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "baseSplits": 0,
+          "showLeaves": true,
+          "leaves": 12,
+          "leafShape": "hex",
+          "scale": 6.0,
+          "scaleV": 0.0,
+          "useArm": false,
+          "armAnim": false,
+          "leafAnim": false,
+          "prune": false,
+          "makeMesh": false,
+          "bevel": true,
+          "bevelRes": 0,
+          "resU": 2,
+          "leafScale": 0.35
+        },
+        "splines": 11,
+        "wood_curve_sha256": "0739653f40b6e3f08eee0988529b981cfde3afd24e023af9b5a1551f9ddef9c8",
+        "leaf_vertices": 198,
+        "leaf_faces": 66,
+        "leaf_triangles": 132,
+        "leaf_geometry_sha256": "8c33412e2d54819d659fbe3d3845d6446b0aad2fc2ed361d7808110be40a082e"
+      },
+      "density": {
+        "controls": {
+          "seed": 17,
+          "levels": 3,
+          "branches": [
+            0,
+            5,
+            3,
+            1
+          ],
+          "curveRes": [
+            4,
+            4,
+            3,
+            1
+          ],
+          "segSplits": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "baseSplits": 0,
+          "showLeaves": true,
+          "leaves": 24,
+          "leafShape": "hex",
+          "scale": 6.0,
+          "scaleV": 0.0,
+          "useArm": false,
+          "armAnim": false,
+          "leafAnim": false,
+          "prune": false,
+          "makeMesh": false,
+          "bevel": true,
+          "bevelRes": 0,
+          "resU": 2
+        },
+        "splines": 11,
+        "wood_curve_sha256": "0739653f40b6e3f08eee0988529b981cfde3afd24e023af9b5a1551f9ddef9c8",
+        "leaf_vertices": 408,
+        "leaf_faces": 136,
+        "leaf_triangles": 272,
+        "leaf_geometry_sha256": "b1c23019380d651634ff021f1c0aea6901e1383032636ae067dc5d3284500562"
+      },
+      "fan": {
+        "controls": {
+          "seed": 17,
+          "levels": 3,
+          "branches": [
+            0,
+            5,
+            3,
+            1
+          ],
+          "curveRes": [
+            4,
+            4,
+            3,
+            1
+          ],
+          "segSplits": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "baseSplits": 0,
+          "showLeaves": true,
+          "leaves": -5,
+          "leafShape": "hex",
+          "scale": 6.0,
+          "scaleV": 0.0,
+          "useArm": false,
+          "armAnim": false,
+          "leafAnim": false,
+          "prune": false,
+          "makeMesh": false,
+          "bevel": true,
+          "bevelRes": 0,
+          "resU": 2
+        },
+        "splines": 11,
+        "wood_curve_sha256": "0739653f40b6e3f08eee0988529b981cfde3afd24e023af9b5a1551f9ddef9c8",
+        "leaf_vertices": 210,
+        "leaf_faces": 70,
+        "leaf_triangles": 140,
+        "leaf_geometry_sha256": "0293ea9a7fa1797e4bd16d1b08827482363453253512191c19e369e63db3b955"
+      },
+      "rectangle": {
+        "controls": {
+          "seed": 17,
+          "levels": 3,
+          "branches": [
+            0,
+            5,
+            3,
+            1
+          ],
+          "curveRes": [
+            4,
+            4,
+            3,
+            1
+          ],
+          "segSplits": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "baseSplits": 0,
+          "showLeaves": true,
+          "leaves": 12,
+          "leafShape": "rect",
+          "scale": 6.0,
+          "scaleV": 0.0,
+          "useArm": false,
+          "armAnim": false,
+          "leafAnim": false,
+          "prune": false,
+          "makeMesh": false,
+          "bevel": true,
+          "bevelRes": 0,
+          "resU": 2
+        },
+        "splines": 11,
+        "wood_curve_sha256": "0739653f40b6e3f08eee0988529b981cfde3afd24e023af9b5a1551f9ddef9c8",
+        "leaf_vertices": 132,
+        "leaf_faces": 33,
+        "leaf_triangles": 66,
+        "leaf_geometry_sha256": "05d0b84303333b86dae2f7676b00e0ad7d76b7035cdbcd6222ed2758a69dcdbf"
+      },
+      "orientation": {
+        "controls": {
+          "seed": 17,
+          "levels": 3,
+          "branches": [
+            0,
+            5,
+            3,
+            1
+          ],
+          "curveRes": [
+            4,
+            4,
+            3,
+            1
+          ],
+          "segSplits": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "baseSplits": 0,
+          "showLeaves": true,
+          "leaves": 12,
+          "leafShape": "hex",
+          "scale": 6.0,
+          "scaleV": 0.0,
+          "useArm": false,
+          "armAnim": false,
+          "leafAnim": false,
+          "prune": false,
+          "makeMesh": false,
+          "bevel": true,
+          "bevelRes": 0,
+          "resU": 2,
+          "leafRotate": -90.0,
+          "leafDownAngle": 65.0
+        },
+        "splines": 11,
+        "wood_curve_sha256": "0739653f40b6e3f08eee0988529b981cfde3afd24e023af9b5a1551f9ddef9c8",
+        "leaf_vertices": 198,
+        "leaf_faces": 66,
+        "leaf_triangles": 132,
+        "leaf_geometry_sha256": "48d1de7c2b71a8acb2fdcc1054340dbf5726ffb079106badb601aca757b9482d"
+      }
+    },
+    "repeat_geometry": true,
+    "wood_preserved_by_tested_leaf_controls": true,
+    "preset_fields": {
+      "small_maple": {
+        "levels": 3,
+        "branches": [
+          0,
+          110,
+          18,
+          10
+        ],
+        "shape": "7",
+        "shapeS": "7",
+        "leafDist": "6",
+        "leafShape": "hex",
+        "leaves": 32,
+        "leafScale": 0.18000000715255737,
+        "leafScaleX": 0.6499999761581421,
+        "leafRotate": 137.5,
+        "leafDownAngle": 45.0,
+        "attractUp": [
+          -0.5,
+          -0.699999988079071,
+          0.0,
+          0.0
+        ]
+      },
+      "weeping_willow": {
+        "levels": 3,
+        "branches": [
+          0,
+          35,
+          15,
+          1
+        ],
+        "shape": "4",
+        "shapeS": "4",
+        "leafDist": "10",
+        "leafShape": "hex",
+        "leaves": 150,
+        "leafScale": 0.25,
+        "leafScaleX": 0.20000000298023224,
+        "leafRotate": 137.5,
+        "leafDownAngle": 30.0,
+        "attractUp": [
+          0.0,
+          0.0,
+          -2.75,
+          -3.0
+        ]
+      },
+      "small_pine": {
+        "levels": 3,
+        "branches": [
+          0,
+          36,
+          7,
+          10
+        ],
+        "shape": "8",
+        "shapeS": "4",
+        "leafDist": "3",
+        "leafShape": "rect",
+        "leaves": 500,
+        "leafScale": 0.20000000298023224,
+        "leafScaleX": 0.019999999552965164,
+        "leafRotate": 137.5,
+        "leafDownAngle": 65.0,
+        "attractUp": [
+          2.0,
+          0.0,
+          0.5,
+          0.5
+        ]
+      }
+    }
+  },
+  "visual_comparison_performed": false,
+  "godot_export_tested": false,
+  "addon_sources_unchanged": true
+}

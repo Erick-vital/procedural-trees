@@ -1,6 +1,6 @@
 # Ensayo Q3: fusión parcial de superficies de follaje
 
-Fecha: 2026-10-22. Posprocesado **`q3-partial-fusion-0.2.1`** sobre Q3 0.4.0. Cuatro casos verificados técnicamente y revisados por el agente mediante capturas reales de Blender y Godot. **Valoración estética del usuario pendiente; no se sustituye Q3 ni se extiende al lote.**
+Fecha: 2026-10-22. Posprocesado **`q3-partial-fusion-0.2.1`** sobre Q3 0.4.0. Cuatro casos verificados técnicamente y revisados mediante capturas reales de Blender y Godot. **El usuario considera Q3/fusión casi iguales y acepta cerrar esta familia como aprobada para su estilo, sin atribuir mejora a la fusión ni extenderla al lote.**
 
 ## Alcance y referencia congelada
 
@@ -52,7 +52,7 @@ El agente revisó las seis vistas de los cuatro casos y las capturas Godot. Algu
 
 La toma distante está a 101–108 m del centro del árbol, con focal equivalente de 50 mm y resolución 900×900. Es una referencia de lectura lejana; no constituye una cámara de juego aprobada ni un ensayo de LOD/rendimiento. A esa distancia la diferencia visual es pequeña.
 
-La prueba justifica evaluar esta variante con el usuario, pero **no demuestra un salto de calidad suficiente para sustituir Q3**. No se afirma mejora de IA, rendimiento o naturalidad general. No se inicia otra técnica ni se amplía al lote sin una nueva decisión.
+La prueba **no demuestra un salto de calidad suficiente para sustituir Q3**. El usuario acepta cerrar esta familia y pide pensar un rediseño más completo: [dirección de diseño](../../diseno-follaje.md). La aprobación se limita al estilo y resultados mostrados, sin aprobar un lote fusionado inexistente. No se afirma mejora de IA, rendimiento, naturalidad general ni agotamiento absoluto de métodos con esferas. No se inicia otra implementación por esta revisión.
 
 ## Reproducción
 

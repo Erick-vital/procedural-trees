@@ -814,11 +814,12 @@
     }
   },
   "godot_visual_captures_generated": true,
-  "user_visual_acceptance": "pending",
+  "user_visual_acceptance": "approved_for_shown_cases_as_polygonal_foliage_style",
   "full_batch_generated": false,
   "verification_sources_sha256": {
     "scripts/verify_fusion.py": "fd976bfcce144a794b77917d83912529744dadd8037cae5dc462ed7b12a6161d",
     "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
     "godot/verify_fusion.gd": "ccf532928646c62bf8565e1c1fc77547d506869296db8941c5fb0de94234d86a"
-  }
+  },
+  "user_feedback": "Q3 y fusi\u00f3n se ven casi iguales; cerrar esta familia como aprobada y estudiar un redise\u00f1o m\u00e1s completo, sin atribuir superioridad ni extender al lote."
 }

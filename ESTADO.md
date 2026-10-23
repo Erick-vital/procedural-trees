@@ -4,7 +4,7 @@
 
 ## Situación actual
 
-Fase: F0–F2 verificadas; ramas Q1b 0.2.1 y copa ajustada Q2 0.3.0 aprobadas. Q3 0.4.0 es la última iteración buena según el usuario; Q3b 0.4.1 rechazada estéticamente. Ensayo de fusión parcial Q3 verificado en cuatro casos; valoración del usuario pendiente. F4–F6 pendientes; F3 diferida.
+Fase activa: planificación del [rediseño de follaje](plans/rediseno-follaje.md); RF0–RF5 pendientes, sin implementación nueva. F0–F2 verificadas; ramas Q1b y copa Q2 aprobadas. Familia de masas poligonales cerrada como aprobada: Q3 de referencia y fusión parcial en los cuatro casos mostrados, sin superioridad atribuida. Q3b rechazada. F4–F6 pendientes durante el rediseño; F3 diferida.
 
 Objetivo v1: 30 robles low-poly reproducibles y exportables a GLB, inspeccionados en Godot; evaluar IA para parámetros, reglas espaciales y simplificación. Bosque, mapa y terrenos variados se reservan para otro proyecto.
 
@@ -18,12 +18,17 @@ Objetivo v1: 30 robles low-poly reproducibles y exportables a GLB, inspeccionado
 - Fusión `q3-partial-fusion-0.2.1`: piloto viejo-09 y controles viejo-00/03 y adulto-00. Unión por vóxeles de hasta tres subárboles vecinos, suavizado y simplificación con presupuesto de entrada; sin cambiar distribución ni tamaños iniciales.
 - Los cuatro conservan madera X/Y/Z, polígonos/sombreado y malla Q3 de entrada completa con atributos, parámetros, semillas, estructura y normalización. Archivos originales y fuentes históricas intactos; cámaras históricas y nuevas tomas inferiores/distantes congeladas, iluminación compartida por pareja.
 - Cuatro candidatos GLB válidos: 6982–8512 triángulos/dos materiales. Ocho bases/candidatos importados y capturados en Godot. Q3 y fusión viejo-09 se repiten con geometría idéntica. Dieciocho pruebas existentes aprobadas y verificación independiente de mallas guardadas.
-- IoU mínima de silueta 98.33 % sobre cuatro vistas a 192×192 rayos. El agente revisó las seis vistas y capturas Godot: cambio moderado, persisten lóbulos/piezas reconocibles; diferencia lejana pequeña. No implica aceptación estética ni mejora de rendimiento/IA.
+- IoU mínima de silueta 98.33 % sobre cuatro vistas a 192×192 rayos. El usuario considera Q3/fusión casi iguales y acepta cerrar esta familia como aprobada para su estilo. No demuestra un límite absoluto del método, mejora de rendimiento/IA ni aceptación de un lote fusionado completo.
+- Addons instalados analizados: Easy Tree 1.0.1 y Sapling 0.3.7, con grafos/código y pruebas pequeñas reproducibles. Sapling: hojas de 4/2 triángulos; siete casos conservan once curvas. Easy Tree: siete hojas y tallo suman 136 triángulos. Sin comparación estética ni validación Godot de esos addons; [informe](docs/evidence/addons-follaje/informe.md).
 - Evidencia y reproducción: [fusión Q3](docs/evidence/q3-fusion/informe.md), [Q3](docs/evidence/q3/informe.md), [Q2](docs/evidence/q2/informe.md), [Q1b](docs/evidence/q1b/informe.md), [F2](docs/evidence/f2/informe.md), [README](README.md).
 
 ## Decisiones vigentes
 
-- Un único [plan v1](plans/v1-generador-arboles.md). Q3 sigue como referencia visual; Q3b rechazada. La fusión es un ensayo acotado sin promoción ni extensión al lote; F4–F6 siguen pendientes.
+- Por solicitud del usuario, el [nuevo plan activo](plans/rediseno-follaje.md) dirige el follaje; el [plan v1](plans/v1-generador-arboles.md) conserva infraestructura/fases pendientes. Familia poligonal aprobada y conservada; sin extender la fusión al lote. [Fundamento del diseño](docs/diseno-follaje.md).
+- Secuencia prevista RF0–RF5: objetivo visual → unidad/contrato → rama → copa viejo-09 → controles → integración/lote. Cada ampliación depende de la calidad del resultado anterior. Hipótesis inicial: hojas geométricas opacas; tarjetas solo como alternativa por evaluar. Nada de ello está implementado.
+- Madera final Q3 idéntica durante el rediseño; portadores nuevos virtuales, sin madera adicional. Preparar extensibilidad no añade especies a v1. Presupuesto inicial: 10 000 triángulos/3 materiales por árbol; generación y datos intermedios acotados.
+- Revisión del plan por addons: portadores con recorrido/inserción/contexto terminal; patrón longitudinal o terminal separado de geometría; densidad por longitud y orientación explícitas. RF2 debe comprobar si el soporte invisible basta; no se aprueban ramillas visibles por esta revisión. Distinguir efectos de textura/recorte y geometría en RF0.
+- Política de este archivo actualizada por el usuario: máximo 200 líneas y 16 KiB (16 384 bytes); síntesis vigente, sin acumular bitácora.
 - Q3b en `blender/oak_nodes_v41.py`, reutiliza formas Q3 y ensamblado Q2. Fuentes 0.1.0/0.2.0/0.2.1/0.3.0/0.4.0 congeladas. Grafos Python/bpy como fuente; resultados en carpetas nuevas sin sobrescribir referencias.
 - Presets principales aún Q3b 0.4.1; no se modifican en este ensayo. Para Q3 usar `presets/v0.4.0/` y `presets/q3-cases.json`. Lotes Q2/Q3 conservados.
 - Densidad Q3b: control cuantizado modulado por longitud/radio; máximos tronco/primaria/secundaria 1/3/2, con dos secundarias foliadas de tres por padre. Hasta 85 masas/25 de detalle alto; límite derivado 8956 triángulos/dos materiales. Presupuesto contractual 10 000/3.
@@ -34,10 +39,11 @@ Objetivo v1: 30 robles low-poly reproducibles y exportables a GLB, inspeccionado
 
 ## Siguiente paso
 
-Revisión del usuario de [piloto en seis vistas](docs/evidence/q3-fusion/pilot-all-views.jpg) y [controles Godot](docs/evidence/q3-fusion/controls-godot.jpg). Comparación completa: `artifacts/q3-fusion/acceptance/index.html`; candidatos `<caso>/candidate/tree.glb`. Referencia: `artifacts/q3/acceptance/lote/`. No iniciar otra técnica ni el lote antes de valorar este resultado.
+Al iniciar ejecución, RF0 del [plan de rediseño](plans/rediseno-follaje.md): referencias/ficha visual y vistas cercana, media y lejana. Aplicar las precisiones del [análisis de addons](docs/evidence/addons-follaje/informe.md). Referencia aprobada: `artifacts/q3/acceptance/lote/`; comparación fusionada: `artifacts/q3-fusion/acceptance/index.html`. RF0–RF5 siguen sin implementar.
 
 ## Bloqueos y pendientes
 
 - Sin bloqueos de ejecución fuera del sandbox. Dentro, Blender puede bloquearse al cerrar por audio y HTTP no admite loopback; usar ejecución autorizada fuera y tiempos límite.
-- Q3b rechazada por el usuario por empeorar el árbol; no confundir sus verificaciones técnicas con aceptación visual. Q3 conserva margen de mejora en piezas reconocibles, solapamientos y transiciones entre masas. Extremos sin aprobación estética general.
+- Aprobación visual limitada al estilo/resultados mostrados; extremos sin aprobación estética general. El rediseño no tiene representación ni objetivo visual definitivo elegidos. Diferenciar otros árboles requerirá considerar arquitectura, no solo cambiar hojas.
+- Easy Tree usa asignación histórica de sockets que falla en Blender 5.2.1; el grafo evaluó con API actual. No se reparó ni se incorpora como dependencia. Addons intactos; reproducir inspección con `scripts/review_tree_addons.py`.
 - Una discrepancia intermedia de un triángulo GLB se corrigió limpiando aristas residuales; los cuatro finales pasan. Sin bloqueos actuales. No se validan extremos ni lote para la fusión; tercer nivel y anticolisiones siguen sin implementar. F4–F6 y rendimiento del bosque pendientes/diferidos.
