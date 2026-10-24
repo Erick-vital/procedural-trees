@@ -30,3 +30,15 @@ class ContractsTest(unittest.TestCase):
             spec[key] = value
             with self.assertRaises(ValueError):
                 validate_spec(spec)
+
+
+    def test_unversioned_presets_use_approved_q3_and_keep_q3b_explicit(self):
+        for age in ('joven', 'adulto', 'viejo'):
+            current = load_spec(ROOT / f'presets/{age}.json')
+            approved = load_spec(ROOT / f'presets/v0.4.0/{age}.json')
+            history = load_spec(ROOT / f'presets/v0.4.1/{age}.json')
+            self.assertEqual(current, approved)
+            self.assertEqual(current['algorithm_version'], '0.4.0')
+            self.assertEqual(history['algorithm_version'], '0.4.1')
+            self.assertEqual(current['parameters'], history['parameters'])
+            self.assertEqual(current['seed'], history['seed'])

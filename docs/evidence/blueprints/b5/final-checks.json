@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-23",
+  "passed": true,
+  "unit_tests": 85,
+  "cli_generations": 7,
+  "cli_validations": 7,
+  "comparisons": 4,
+  "closure_checks": 19,
+  "markdown_links_checked": 166,
+  "changed_production_sources_since_b4": [
+    "src/treegen/runner.py"
+  ],
+  "geometry_sources_and_blueprints_unchanged": true,
+  "q3b_archive_hashes_preserved": true,
+  "state_lines": 115,
+  "state_bytes": 7609,
+  "selected_files_sha256": {
+    "README.md": "eec9d3be75cc346149140ffe319e68323f44e8f6613c094bbaa88faf22585553",
+    "ESTADO.md": "0378bbeace6bdac4a1a093918f0efe32911b93fc22c051813d3119125b0a8c53",
+    "docs/uso-blueprints.md": "abdd090fc135cd01aef546ba00ca74deed1262884f4d103fff496bc173cc2459",
+    "docs/operacion-historica.md": "3b8f85479a4a2e7a411e8c934fedc48a715f636ba6cd2b9eed0e1af22f6452c7",
+    "docs/contrato-blueprints.md": "f690dd69d2de66c600e4c784c5a04d457df421bbcf0e0b315e2c5302d14ed90c",
+    "plans/sistema-blueprints.md": "53cf511fcbe927682ddcb268b1090f8da4bb1491595852d4242213fd38d2969c",
+    "plans/rediseno-follaje.md": "30ed7448601893dc8b8a0429005bda985a7cce7654bb635e09e9f177162b8d77",
+    "docs/evidence/blueprints/b5/informe.md": "06430a90b30e0cb55a243a72e551cf728a7a1357ac80995bb12ab1d3ad49dd4a",
+    "src/treegen/runner.py": "ccf64bb275c9882ab047a157c156391d1835292b235f8a95bc95e2524f9c28e5",
+    "tests/test_contracts.py": "2138a1633de87b733f667d23ff309d2d3ac33b0a23e30974726add8a44a2d255",
+    "tests/test_execution.py": "88bf66c292a194aeefb7113d187d6c8a9702029663e7a91358c15a19b85611cb",
+    "scripts/verify_blueprint_closure.py": "0664804ef7550c78cb46ed55c22d22dfd0685538ce2ec6f8f1c990fc06242159"
+  }
+}

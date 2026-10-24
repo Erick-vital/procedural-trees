@@ -1,0 +1,16 @@
+{
+  "carriers": 264,
+  "failed": [
+    {
+      "id": "q3:primary:110:mold:01780:canopy:surface:0712:support",
+      "parent": "q3:primary:110",
+      "distance_m": 0.00024190310796257108,
+      "insertion": [
+        -5.039996147155762,
+        1.089943528175354,
+        18.12546730041504
+      ]
+    }
+  ],
+  "max_error_m": 0.00024190310796257108
+}

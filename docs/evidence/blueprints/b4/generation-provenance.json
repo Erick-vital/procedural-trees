@@ -1,0 +1,3325 @@
+{
+  "pilot": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "arbol_copa_columnar",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 12,
+            "base_radius_m": 0.22,
+            "curvature": 0.025,
+            "primary_branches": 12,
+            "max_depth": 2,
+            "branch_length_ratio": 0.22,
+            "inclination_deg": 18,
+            "asymmetry": 0.12,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 0.65
+          },
+          "canopy": {
+            "group_count": 300,
+            "leaf_length_m": 0.45,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 0.45
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 337
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 0.45
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "columna",
+        "profiles": {
+          "columna": {
+            "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+            "overrides": {},
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "docs/blueprints/b4-objetivo.md",
+                "configs/verification/b4-v1.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4100,
+          "canopy": 73
+        }
+      },
+      "profile": "columna",
+      "parameters": {
+        "base": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        },
+        "canopy": {
+          "group_count": 300,
+          "leaf_length_m": 0.45,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 0.45
+        }
+      },
+      "profile_validation_claim": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4100,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "canopy_spec": {
+        "group_count": 300,
+        "leaf_length_m": 0.45,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 1514547866,
+        "foliage": 441333873
+      },
+      "layout_leaf_length_m": 0.45,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5756,
+        "added_triangles_max": 6000,
+        "triangles_max": 11756,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 300,
+        "leaves_max": 1800
+      },
+      "resolved_sha256": "c1bf60a3d897568810264155106254622f1498a0e9871de03381766e78a4728a"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+    "duration_seconds": 3.39,
+    "glb_bytes": 492956,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 316,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 7.515391524969555e-07,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002733868546783924,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "control-01": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "arbol_copa_columnar",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 12,
+            "base_radius_m": 0.22,
+            "curvature": 0.025,
+            "primary_branches": 12,
+            "max_depth": 2,
+            "branch_length_ratio": 0.22,
+            "inclination_deg": 18,
+            "asymmetry": 0.12,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 0.65
+          },
+          "canopy": {
+            "group_count": 300,
+            "leaf_length_m": 0.45,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 0.45
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 337
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 0.45
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "columna",
+        "profiles": {
+          "columna": {
+            "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+            "overrides": {},
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "docs/blueprints/b4-objetivo.md",
+                "configs/verification/b4-v1.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4101,
+          "canopy": 73
+        }
+      },
+      "profile": "columna",
+      "parameters": {
+        "base": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        },
+        "canopy": {
+          "group_count": 300,
+          "leaf_length_m": 0.45,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 0.45
+        }
+      },
+      "profile_validation_claim": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4101,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "canopy_spec": {
+        "group_count": 300,
+        "leaf_length_m": 0.45,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 1128986819,
+        "foliage": 645368572
+      },
+      "layout_leaf_length_m": 0.45,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5756,
+        "added_triangles_max": 6000,
+        "triangles_max": 11756,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 300,
+        "leaves_max": 1800
+      },
+      "resolved_sha256": "82b47622ff76c57e7b7535585d99b374a3b6cc73cad0e449a60d1ed6b63aaf4b"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "8faaf2369ed993b74b5121ff62e5cbc36277c86fa0f0e19a7d49ed6f7ce4ef3e",
+    "duration_seconds": 3.438,
+    "glb_bytes": 494076,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 316,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 3.0866522160888685e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002744344063103199,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "control-02": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "arbol_copa_columnar",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 12,
+            "base_radius_m": 0.22,
+            "curvature": 0.025,
+            "primary_branches": 12,
+            "max_depth": 2,
+            "branch_length_ratio": 0.22,
+            "inclination_deg": 18,
+            "asymmetry": 0.12,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 0.65
+          },
+          "canopy": {
+            "group_count": 300,
+            "leaf_length_m": 0.45,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 0.45
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 337
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 0.45
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "columna",
+        "profiles": {
+          "columna": {
+            "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+            "overrides": {},
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "docs/blueprints/b4-objetivo.md",
+                "configs/verification/b4-v1.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4102,
+          "canopy": 73
+        }
+      },
+      "profile": "columna",
+      "parameters": {
+        "base": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        },
+        "canopy": {
+          "group_count": 300,
+          "leaf_length_m": 0.45,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 0.45
+        }
+      },
+      "profile_validation_claim": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4102,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "canopy_spec": {
+        "group_count": 300,
+        "leaf_length_m": 0.45,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 780830679,
+        "foliage": 152251694
+      },
+      "layout_leaf_length_m": 0.45,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5756,
+        "added_triangles_max": 6000,
+        "triangles_max": 11756,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 300,
+        "leaves_max": 1800
+      },
+      "resolved_sha256": "5094ef39d7879658b43a82c0057cf70f5c14e99100b8f2041c7ef0cc9dad72fc"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "e2d0ee2813ed4cc8afad4650ce85cf754614f6524b95630d15dc6a887c296a00",
+    "duration_seconds": 3.341,
+    "glb_bytes": 493680,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 321,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 6.722900800222201e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027163606137037277,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "control-03": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "arbol_copa_columnar",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 12,
+            "base_radius_m": 0.22,
+            "curvature": 0.025,
+            "primary_branches": 12,
+            "max_depth": 2,
+            "branch_length_ratio": 0.22,
+            "inclination_deg": 18,
+            "asymmetry": 0.12,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 0.65
+          },
+          "canopy": {
+            "group_count": 300,
+            "leaf_length_m": 0.45,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 0.45
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 337
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 0.45
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "columna",
+        "profiles": {
+          "columna": {
+            "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+            "overrides": {},
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "docs/blueprints/b4-objetivo.md",
+                "configs/verification/b4-v1.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4103,
+          "canopy": 73
+        }
+      },
+      "profile": "columna",
+      "parameters": {
+        "base": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        },
+        "canopy": {
+          "group_count": 300,
+          "leaf_length_m": 0.45,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 0.45
+        }
+      },
+      "profile_validation_claim": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4103,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "canopy_spec": {
+        "group_count": 300,
+        "leaf_length_m": 0.45,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 841843216,
+        "foliage": 939892737
+      },
+      "layout_leaf_length_m": 0.45,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5756,
+        "added_triangles_max": 6000,
+        "triangles_max": 11756,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 300,
+        "leaves_max": 1800
+      },
+      "resolved_sha256": "8a6ee9c3ad9daa6dd4f4156873ab933e05ab60c75a6be08aa72def15dc7b52eb"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "0300dd7ede72d7dd31a9888e0116d1e077ecab37ffb7ce4198f7ca2fd5d08f5f",
+    "duration_seconds": 3.444,
+    "glb_bytes": 492292,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 310,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 3.1631876923245655e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002710779197514057,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "pilot-repeat": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "arbol_copa_columnar",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 12,
+            "base_radius_m": 0.22,
+            "curvature": 0.025,
+            "primary_branches": 12,
+            "max_depth": 2,
+            "branch_length_ratio": 0.22,
+            "inclination_deg": 18,
+            "asymmetry": 0.12,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 0.65
+          },
+          "canopy": {
+            "group_count": 300,
+            "leaf_length_m": 0.45,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 0.45
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 337
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 0.45
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "columna",
+        "profiles": {
+          "columna": {
+            "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+            "overrides": {},
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "docs/blueprints/b4-objetivo.md",
+                "configs/verification/b4-v1.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4100,
+          "canopy": 73
+        }
+      },
+      "profile": "columna",
+      "parameters": {
+        "base": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        },
+        "canopy": {
+          "group_count": 300,
+          "leaf_length_m": 0.45,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 0.45
+        }
+      },
+      "profile_validation_claim": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4100,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "canopy_spec": {
+        "group_count": 300,
+        "leaf_length_m": 0.45,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 1514547866,
+        "foliage": 441333873
+      },
+      "layout_leaf_length_m": 0.45,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5756,
+        "added_triangles_max": 6000,
+        "triangles_max": 11756,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 300,
+        "leaves_max": 1800
+      },
+      "resolved_sha256": "c1bf60a3d897568810264155106254622f1498a0e9871de03381766e78a4728a"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+    "duration_seconds": 3.292,
+    "glb_bytes": 492956,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 316,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 7.515391524969555e-07,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002733868546783924,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "control-01-repeat": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "arbol_copa_columnar",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 12,
+            "base_radius_m": 0.22,
+            "curvature": 0.025,
+            "primary_branches": 12,
+            "max_depth": 2,
+            "branch_length_ratio": 0.22,
+            "inclination_deg": 18,
+            "asymmetry": 0.12,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 0.65
+          },
+          "canopy": {
+            "group_count": 300,
+            "leaf_length_m": 0.45,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 0.45
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 337
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 0.45
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "columna",
+        "profiles": {
+          "columna": {
+            "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+            "overrides": {},
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "docs/blueprints/b4-objetivo.md",
+                "configs/verification/b4-v1.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4101,
+          "canopy": 73
+        }
+      },
+      "profile": "columna",
+      "parameters": {
+        "base": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        },
+        "canopy": {
+          "group_count": 300,
+          "leaf_length_m": 0.45,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 0.45
+        }
+      },
+      "profile_validation_claim": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4101,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "canopy_spec": {
+        "group_count": 300,
+        "leaf_length_m": 0.45,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 1128986819,
+        "foliage": 645368572
+      },
+      "layout_leaf_length_m": 0.45,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5756,
+        "added_triangles_max": 6000,
+        "triangles_max": 11756,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 300,
+        "leaves_max": 1800
+      },
+      "resolved_sha256": "82b47622ff76c57e7b7535585d99b374a3b6cc73cad0e449a60d1ed6b63aaf4b"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "8faaf2369ed993b74b5121ff62e5cbc36277c86fa0f0e19a7d49ed6f7ce4ef3e",
+    "duration_seconds": 3.385,
+    "glb_bytes": 494076,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 316,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 3.0866522160888685e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002744344063103199,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "control-02-repeat": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "arbol_copa_columnar",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 12,
+            "base_radius_m": 0.22,
+            "curvature": 0.025,
+            "primary_branches": 12,
+            "max_depth": 2,
+            "branch_length_ratio": 0.22,
+            "inclination_deg": 18,
+            "asymmetry": 0.12,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 0.65
+          },
+          "canopy": {
+            "group_count": 300,
+            "leaf_length_m": 0.45,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 0.45
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 337
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 0.45
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "columna",
+        "profiles": {
+          "columna": {
+            "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+            "overrides": {},
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "docs/blueprints/b4-objetivo.md",
+                "configs/verification/b4-v1.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4102,
+          "canopy": 73
+        }
+      },
+      "profile": "columna",
+      "parameters": {
+        "base": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        },
+        "canopy": {
+          "group_count": 300,
+          "leaf_length_m": 0.45,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 0.45
+        }
+      },
+      "profile_validation_claim": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4102,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "canopy_spec": {
+        "group_count": 300,
+        "leaf_length_m": 0.45,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 780830679,
+        "foliage": 152251694
+      },
+      "layout_leaf_length_m": 0.45,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5756,
+        "added_triangles_max": 6000,
+        "triangles_max": 11756,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 300,
+        "leaves_max": 1800
+      },
+      "resolved_sha256": "5094ef39d7879658b43a82c0057cf70f5c14e99100b8f2041c7ef0cc9dad72fc"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "e2d0ee2813ed4cc8afad4650ce85cf754614f6524b95630d15dc6a887c296a00",
+    "duration_seconds": 3.351,
+    "glb_bytes": 493680,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 321,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 6.722900800222201e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027163606137037277,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "control-03-repeat": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "arbol_copa_columnar",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 12,
+            "base_radius_m": 0.22,
+            "curvature": 0.025,
+            "primary_branches": 12,
+            "max_depth": 2,
+            "branch_length_ratio": 0.22,
+            "inclination_deg": 18,
+            "asymmetry": 0.12,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 0.65
+          },
+          "canopy": {
+            "group_count": 300,
+            "leaf_length_m": 0.45,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 0.45
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 337
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 0.45
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "columna",
+        "profiles": {
+          "columna": {
+            "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+            "overrides": {},
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "docs/blueprints/b4-objetivo.md",
+                "configs/verification/b4-v1.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4103,
+          "canopy": 73
+        }
+      },
+      "profile": "columna",
+      "parameters": {
+        "base": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        },
+        "canopy": {
+          "group_count": 300,
+          "leaf_length_m": 0.45,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 0.45
+        }
+      },
+      "profile_validation_claim": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4103,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "canopy_spec": {
+        "group_count": 300,
+        "leaf_length_m": 0.45,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 841843216,
+        "foliage": 939892737
+      },
+      "layout_leaf_length_m": 0.45,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5756,
+        "added_triangles_max": 6000,
+        "triangles_max": 11756,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 300,
+        "leaves_max": 1800
+      },
+      "resolved_sha256": "8a6ee9c3ad9daa6dd4f4156873ab933e05ab60c75a6be08aa72def15dc7b52eb"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "0300dd7ede72d7dd31a9888e0116d1e077ecab37ffb7ce4198f7ca2fd5d08f5f",
+    "duration_seconds": 3.334,
+    "glb_bytes": 492292,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 310,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 3.1631876923245655e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002710779197514057,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "first-reference": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "1.0.0",
+      "blueprint_sha256": "5d3b69925552b244fb2fa9568afa46a7e7f71390280680d28e52f1fe19b93cf7",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "roble_copa_ancha",
+        "version": "1.0.0",
+        "name": "Roble estilizado de copa ancha",
+        "description": "Primer tipo artístico; base Q3 y hojas opacas RF3. Referencia aprobada viejo-09; otras edades y semillas pendientes de B3. Sin atribución botánica específica.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.0",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 9,
+            "base_radius_m": 0.8,
+            "curvature": 0.16,
+            "primary_branches": 11,
+            "max_depth": 2,
+            "branch_length_ratio": 0.55,
+            "inclination_deg": 72,
+            "asymmetry": 0.85,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 1.3
+          },
+          "canopy": {
+            "group_count": 264,
+            "leaf_length_m": 1.0,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 1.0
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 360
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 1
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "default_profile": "viejo_referencia",
+        "profiles": {
+          "viejo_referencia": {
+            "description": "Piloto RF3 viejo-09 aprobado como referencia; no representa aprobación de todas las semillas.",
+            "overrides": {},
+            "validation": {
+              "status": "reference_only",
+              "evidence": [
+                "docs/evidence/blueprints/b0/reference-lock.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.0.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        }
+      },
+      "profile": "viejo_referencia",
+      "parameters": {
+        "base": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        },
+        "canopy": {
+          "group_count": 264,
+          "leaf_length_m": 1.0,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 1.0
+        }
+      },
+      "profile_validation_claim": {
+        "status": "reference_only",
+        "evidence": [
+          "docs/evidence/blueprints/b0/reference-lock.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 3009,
+        "parameters": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        }
+      },
+      "canopy_spec": {
+        "group_count": 264,
+        "leaf_length_m": 1.0,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.0",
+        "seed": 17
+      },
+      "base_seeds": {
+        "structure": 669423365,
+        "foliage": 927115663
+      },
+      "layout_leaf_length_m": 1.0,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5292,
+        "added_triangles_max": 5280,
+        "triangles_max": 10572,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 264,
+        "leaves_max": 1584
+      },
+      "resolved_sha256": "1c1e787c1ea0bc5803c2ae698ed5c6a1dd52ba3ee111a3181dc6d5917fc470c2"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+    "duration_seconds": 2.492,
+    "glb_bytes": 432232,
+    "surface_projection": {
+      "version": "legacy-polygons-0.1.0",
+      "corrected_queries": 0
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 1.2157009905422456e-06,
+      "insertion_method": "legacy_polygons_bvh",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002758591901510954,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  },
+  "wide-same-seed": {
+    "resolved_blueprint": {
+      "resolved_version": "1.0",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "1.2.0",
+      "blueprint_sha256": "990f515f87fc8dc6c787bb15deef71a4227ea3b591b4dde488efcea35f230b60",
+      "blueprint_definition": {
+        "schema_version": "1.0",
+        "id": "roble_copa_ancha",
+        "version": "1.2.0",
+        "name": "Roble estilizado de copa ancha",
+        "description": "B3: hoja joven .45 m conservando planificación/conteo. Distribución 0.1.1 corrige proyecciones Q3 fuera de la triangulación real (hasta 1 mm), sin mover madera ni relajar tolerancia de .1 mm. Piloto conservado.",
+        "components": {
+          "base": "oak_geometry_nodes@0.4.0",
+          "distribution": "foliage-canopy@0.1.1",
+          "representation": "rf3-diamond-six@0.1.0"
+        },
+        "parameters": {
+          "base": {
+            "height_m": 9,
+            "base_radius_m": 0.8,
+            "curvature": 0.16,
+            "primary_branches": 11,
+            "max_depth": 2,
+            "branch_length_ratio": 0.55,
+            "inclination_deg": 72,
+            "asymmetry": 0.85,
+            "foliage_density": 0.75,
+            "foliage_scale_m": 1.3
+          },
+          "canopy": {
+            "group_count": 264,
+            "leaf_length_m": 1.0,
+            "shell_depth_m": 0.08,
+            "twig_radius_m": 0.02,
+            "tip_radius_ratio": 0.25,
+            "profile_width_scale": 1.0,
+            "region_weights": {
+              "north": 1.0,
+              "east": 1.0,
+              "south": 1.0,
+              "west": 1.0
+            },
+            "layout_leaf_length_m": 1.0
+          }
+        },
+        "appearance": {
+          "bark": {
+            "color_rgba": [
+              0.23999999463558197,
+              0.10499999672174454,
+              0.04500000178813934,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          },
+          "leaf": {
+            "color_rgba": [
+              0.23000000417232513,
+              0.4300000071525574,
+              0.06499999761581421,
+              1
+            ],
+            "roughness": 0.8799999952316284,
+            "metallic": 0,
+            "double_sided": true
+          }
+        },
+        "editable_ranges": {
+          "canopy.group_count": {
+            "minimum": 24,
+            "maximum": 360
+          },
+          "canopy.leaf_length_m": {
+            "minimum": 0.2,
+            "maximum": 1
+          },
+          "canopy.profile_width_scale": {
+            "minimum": 0.85,
+            "maximum": 1.15
+          },
+          "canopy.region_weights.north": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.east": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.south": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "canopy.region_weights.west": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "base.height_m": {
+            "minimum": 2,
+            "maximum": 20
+          },
+          "base.base_radius_m": {
+            "minimum": 0.12,
+            "maximum": 0.8
+          },
+          "base.curvature": {
+            "minimum": 0.06,
+            "maximum": 0.16
+          },
+          "base.primary_branches": {
+            "minimum": 4,
+            "maximum": 11
+          },
+          "base.max_depth": {
+            "minimum": 2,
+            "maximum": 2
+          },
+          "base.branch_length_ratio": {
+            "minimum": 0.3,
+            "maximum": 0.55
+          },
+          "base.inclination_deg": {
+            "minimum": 35,
+            "maximum": 72
+          },
+          "base.asymmetry": {
+            "minimum": 0.15,
+            "maximum": 0.85
+          },
+          "base.foliage_density": {
+            "minimum": 0.5,
+            "maximum": 0.75
+          },
+          "base.foliage_scale_m": {
+            "minimum": 0.2,
+            "maximum": 3
+          }
+        },
+        "default_profile": "viejo_referencia",
+        "profiles": {
+          "viejo_referencia": {
+            "description": "Piloto RF3 viejo-09 aprobado como referencia; no representa aprobación de todas las semillas.",
+            "overrides": {},
+            "validation": {
+              "status": "reference_only",
+              "evidence": [
+                "docs/evidence/blueprints/b0/reference-lock.json"
+              ]
+            }
+          },
+          "joven": {
+            "description": "Base Q3 joven; 264 grupos con hoja de 0.45 m, manteniendo la planificación de 1 m y los mismos soportes de B3 inicial.",
+            "overrides": {
+              "base": {
+                "height_m": 4,
+                "base_radius_m": 0.12,
+                "curvature": 0.06,
+                "primary_branches": 4,
+                "max_depth": 2,
+                "branch_length_ratio": 0.3,
+                "inclination_deg": 35,
+                "asymmetry": 0.15,
+                "foliage_density": 0.5,
+                "foliage_scale_m": 0.45
+              },
+              "canopy": {
+                "leaf_length_m": 0.45
+              }
+            },
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "configs/verification/b3-v3.json"
+              ]
+            }
+          },
+          "adulto": {
+            "description": "Base Q3 adulto; 264 grupos y hoja nominal de 1 m comunes, sin ajuste por ejemplar.",
+            "overrides": {
+              "base": {
+                "height_m": 10,
+                "base_radius_m": 0.5,
+                "curvature": 0.12,
+                "primary_branches": 9,
+                "max_depth": 2,
+                "branch_length_ratio": 0.5,
+                "inclination_deg": 65,
+                "asymmetry": 0.6,
+                "foliage_density": 0.75,
+                "foliage_scale_m": 1.15
+              }
+            },
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "configs/verification/b3-v3.json"
+              ]
+            }
+          },
+          "viejo": {
+            "description": "Base Q3 viejo; 264 grupos y hoja nominal de 1 m comunes, sin ajuste por ejemplar.",
+            "overrides": {
+              "base": {
+                "height_m": 9,
+                "base_radius_m": 0.8,
+                "curvature": 0.16,
+                "primary_branches": 11,
+                "max_depth": 2,
+                "branch_length_ratio": 0.55,
+                "inclination_deg": 72,
+                "asymmetry": 0.85,
+                "foliage_density": 0.75,
+                "foliage_scale_m": 1.3
+              }
+            },
+            "validation": {
+              "status": "experimental",
+              "evidence": [
+                "configs/verification/b3-v3.json"
+              ]
+            }
+          }
+        },
+        "limits": {
+          "triangles": 12500,
+          "materials": 3,
+          "generation_seconds": 120
+        }
+      },
+      "instance_request": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 4100,
+          "canopy": 73
+        }
+      },
+      "profile": "viejo_referencia",
+      "parameters": {
+        "base": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        },
+        "canopy": {
+          "group_count": 264,
+          "leaf_length_m": 1.0,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 1.0
+        }
+      },
+      "profile_validation_claim": {
+        "status": "reference_only",
+        "evidence": [
+          "docs/evidence/blueprints/b0/reference-lock.json"
+        ]
+      },
+      "parameters_differ_from_profile": false,
+      "base_spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4100,
+        "parameters": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        }
+      },
+      "canopy_spec": {
+        "group_count": 264,
+        "leaf_length_m": 1.0,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "version": "foliage-canopy-0.1.1",
+        "seed": 73
+      },
+      "base_seeds": {
+        "structure": 1514547866,
+        "foliage": 441333873
+      },
+      "layout_leaf_length_m": 1.0,
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      },
+      "budget_upper_bound": {
+        "wood_triangles": 5292,
+        "added_triangles_max": 5280,
+        "triangles_max": 10572,
+        "materials_max": 3,
+        "surface_samples_max": 8192,
+        "support_attempts_max": 2048,
+        "groups_max": 264,
+        "leaves_max": 1584
+      },
+      "resolved_sha256": "0cc3c42273df4822f37fe0c07f91a7b572d622dc5510f9c7f4390a0594659d40"
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "sources_sha256": {
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+      "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+      "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+      "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+      "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+      "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+      "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+      "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+      "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+      "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767"
+    },
+    "glb_sha256": "a3a1b9d37125d62bae1aca79771a75bd65a659640bfe6f4008fcde4405142d51",
+    "duration_seconds": 3.187,
+    "glb_bytes": 433288,
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 297,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 9.000242010823825e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027463221922516823,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "base_generation": "q3_in_memory",
+    "external_geometry_inputs": []
+  }
+}

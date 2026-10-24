@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "blueprint_id": "arbol_copa_columnar",
+  "blueprint_version": "1.0.0",
+  "profile": "columna",
+  "seeds": {
+    "base": 4100,
+    "canopy": 73
+  }
+}

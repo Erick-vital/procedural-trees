@@ -1,0 +1,426 @@
+{
+  "phase": "B5",
+  "passed": true,
+  "checks": {
+    "clean_source_has_no_prior_results_or_evidence": true,
+    "catalog_exact_versions": true,
+    "joven-alias-is-q3": true,
+    "joven-q3b-still-explicit": true,
+    "adulto-alias-is-q3": true,
+    "adulto-q3b-still-explicit": true,
+    "viejo-alias-is-q3": true,
+    "viejo-q3b-still-explicit": true,
+    "documented-frozen-inputs-exact": true,
+    "roble-comparison-identical": true,
+    "roble-glb-byte-identical": true,
+    "columnar-comparison-identical": true,
+    "columnar-glb-byte-identical": true,
+    "frozen-comparison-identical": true,
+    "frozen-glb-byte-identical": true,
+    "q3-default-comparison-identical": true,
+    "q3-default-glb-byte-identical": true,
+    "roble-matches-approved-b0": true,
+    "columnar-matches-b4": true
+  },
+  "jobs": {
+    "roble-a": {
+      "kind": "blueprint",
+      "spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 3009,
+        "parameters": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        }
+      },
+      "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            7.471208,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "5b8aeaa0488b61b94298f3533105531279c451119d28e5102ecbb0140bd2ed18"
+      },
+      "duration_seconds": 2.741,
+      "sources_canonical_sha256": "02d4c0a17f0ddf78c7400d384a64c661b69557fdb10bfca6c6ecb420f7f67a2d"
+    },
+    "roble-b": {
+      "kind": "blueprint",
+      "spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 3009,
+        "parameters": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        }
+      },
+      "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            7.471208,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "5b8aeaa0488b61b94298f3533105531279c451119d28e5102ecbb0140bd2ed18"
+      },
+      "duration_seconds": 2.604,
+      "sources_canonical_sha256": "02d4c0a17f0ddf78c7400d384a64c661b69557fdb10bfca6c6ecb420f7f67a2d"
+    },
+    "columna-a": {
+      "kind": "blueprint",
+      "spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4100,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.155441,
+            -2.51214,
+            0.0
+          ],
+          [
+            2.350929,
+            2.534153,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "bb69d2e397de6e65a2bbd723ddcfd76abe0a9cc6b58df5fa3d5e3457c2c5392a"
+      },
+      "duration_seconds": 3.441,
+      "sources_canonical_sha256": "8c7e87fa8508d7b1976df2da5a5b1d7c1bf5ef5a3289a309ea1d164d436a3699"
+    },
+    "columna-b": {
+      "kind": "blueprint",
+      "spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 4100,
+        "parameters": {
+          "height_m": 12,
+          "base_radius_m": 0.22,
+          "curvature": 0.025,
+          "primary_branches": 12,
+          "max_depth": 2,
+          "branch_length_ratio": 0.22,
+          "inclination_deg": 18,
+          "asymmetry": 0.12,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 0.65
+        }
+      },
+      "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.155441,
+            -2.51214,
+            0.0
+          ],
+          [
+            2.350929,
+            2.534153,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "bb69d2e397de6e65a2bbd723ddcfd76abe0a9cc6b58df5fa3d5e3457c2c5392a"
+      },
+      "duration_seconds": 3.497,
+      "sources_canonical_sha256": "8c7e87fa8508d7b1976df2da5a5b1d7c1bf5ef5a3289a309ea1d164d436a3699"
+    },
+    "roble-congelado": {
+      "kind": "blueprint",
+      "spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 3009,
+        "parameters": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        }
+      },
+      "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            7.471208,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "5b8aeaa0488b61b94298f3533105531279c451119d28e5102ecbb0140bd2ed18"
+      },
+      "duration_seconds": 2.701,
+      "sources_canonical_sha256": "02d4c0a17f0ddf78c7400d384a64c661b69557fdb10bfca6c6ecb420f7f67a2d"
+    },
+    "q3-alias": {
+      "spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 29,
+        "parameters": {
+          "height_m": 10,
+          "base_radius_m": 0.5,
+          "curvature": 0.12,
+          "primary_branches": 9,
+          "max_depth": 2,
+          "branch_length_ratio": 0.5,
+          "inclination_deg": 65,
+          "asymmetry": 0.6,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.15
+        }
+      },
+      "glb_sha256": "f17696ce94326484a97b3b69084d11e1f3b8d19f30ec6df12b6d59939975d548",
+      "metrics": {
+        "vertices": 3696,
+        "triangles": 6964,
+        "bounds_blender": [
+          [
+            -5.723757,
+            -5.707623,
+            0.0
+          ],
+          [
+            7.224824,
+            6.161137,
+            10.0
+          ]
+        ],
+        "height_m": 10.0,
+        "triangles_by_material": {
+          "Oak_Leaves": 2600,
+          "Oak_Bark": 4364
+        },
+        "geometry_sha256": "6a5599cd110eb02bd7006785ba73c3b6e622d29aeab3eaae8348c1931fd34b96"
+      },
+      "duration_seconds": 1.268,
+      "sources_canonical_sha256": "1a14a631a58acfe080f78351db587a47f4fb021f127ad0d0e6a7b0d0f15f0316"
+    },
+    "q3-explicit": {
+      "spec": {
+        "schema_version": "1.0",
+        "algorithm": "oak_geometry_nodes",
+        "algorithm_version": "0.4.0",
+        "seed": 29,
+        "parameters": {
+          "height_m": 10,
+          "base_radius_m": 0.5,
+          "curvature": 0.12,
+          "primary_branches": 9,
+          "max_depth": 2,
+          "branch_length_ratio": 0.5,
+          "inclination_deg": 65,
+          "asymmetry": 0.6,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.15
+        }
+      },
+      "glb_sha256": "f17696ce94326484a97b3b69084d11e1f3b8d19f30ec6df12b6d59939975d548",
+      "metrics": {
+        "vertices": 3696,
+        "triangles": 6964,
+        "bounds_blender": [
+          [
+            -5.723757,
+            -5.707623,
+            0.0
+          ],
+          [
+            7.224824,
+            6.161137,
+            10.0
+          ]
+        ],
+        "height_m": 10.0,
+        "triangles_by_material": {
+          "Oak_Leaves": 2600,
+          "Oak_Bark": 4364
+        },
+        "geometry_sha256": "6a5599cd110eb02bd7006785ba73c3b6e622d29aeab3eaae8348c1931fd34b96"
+      },
+      "duration_seconds": 1.218,
+      "sources_canonical_sha256": "1a14a631a58acfe080f78351db587a47f4fb021f127ad0d0e6a7b0d0f15f0316"
+    }
+  },
+  "visual_validation": "Reutiliza B3/B4; sin capturas nuevas en B5.",
+  "unit_tests": 85,
+  "catalog": {
+    "blueprints": [
+      {
+        "id": "arbol_copa_columnar",
+        "version": "1.0.0",
+        "name": "Árbol estilizado de copa columnar",
+        "default_profile": "columna",
+        "path": "blueprints/arbol_copa_columnar/1.0.0.json",
+        "sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3"
+      },
+      {
+        "id": "roble_copa_ancha",
+        "version": "1.0.0",
+        "name": "Roble estilizado de copa ancha",
+        "default_profile": "viejo_referencia",
+        "path": "blueprints/roble_copa_ancha/1.0.0.json",
+        "sha256": "5d3b69925552b244fb2fa9568afa46a7e7f71390280680d28e52f1fe19b93cf7"
+      },
+      {
+        "id": "roble_copa_ancha",
+        "version": "1.1.0",
+        "name": "Roble estilizado de copa ancha",
+        "default_profile": "viejo_referencia",
+        "path": "blueprints/roble_copa_ancha/1.1.0.json",
+        "sha256": "8832c75efad6b1c908b7db8836c300548d7ef687375761777b5a9fce78fc7582"
+      },
+      {
+        "id": "roble_copa_ancha",
+        "version": "1.2.0",
+        "name": "Roble estilizado de copa ancha",
+        "default_profile": "viejo_referencia",
+        "path": "blueprints/roble_copa_ancha/1.2.0.json",
+        "sha256": "990f515f87fc8dc6c787bb15deef71a4227ea3b591b4dde488efcea35f230b60"
+      }
+    ]
+  },
+  "comparisons": {
+    "roble": {
+      "same_spec": true,
+      "same_environment": true,
+      "same_sources": true,
+      "same_cameras": true,
+      "same_geometry": true,
+      "triangle_delta": 0
+    },
+    "columnar": {
+      "same_spec": true,
+      "same_environment": true,
+      "same_sources": true,
+      "same_cameras": true,
+      "same_geometry": true,
+      "triangle_delta": 0
+    },
+    "frozen": {
+      "same_spec": true,
+      "same_environment": true,
+      "same_sources": true,
+      "same_cameras": true,
+      "same_geometry": true,
+      "triangle_delta": 0
+    },
+    "q3-default": {
+      "same_spec": true,
+      "same_environment": true,
+      "same_sources": true,
+      "same_cameras": true,
+      "same_geometry": true,
+      "triangle_delta": 0
+    }
+  },
+  "matrix_executed": true,
+  "study": "artifacts/blueprints/b5-closure-02"
+}

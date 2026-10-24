@@ -1,0 +1,51 @@
+{
+  "viejo-00": {
+    "source": "artifacts/q3/acceptance/lote/viejo-00",
+    "glb_sha256": "7ef2bec1e6d8233fb5879bb65f0a123a31c875dea740ce58449f028ff20d6d9d",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-03": {
+    "source": "artifacts/q3/acceptance/lote/viejo-03",
+    "glb_sha256": "f37d57f9b4da391041d146bef84b76546f08208c8ff88514c2a4b6274cbeef62",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-00": {
+    "source": "artifacts/q3/acceptance/lote/adulto-00",
+    "glb_sha256": "605e7033b2b51b6531e6b9df5c5197b57fcd0d34189de424cb373a2c84abc8b8",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-00": {
+    "source": "artifacts/q3/acceptance/lote/joven-00",
+    "glb_sha256": "eba606d1169017cb1d65e62930dabb1760774673dca9135eaba5218c2b80a5a0",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-07": {
+    "source": "artifacts/q3/acceptance/lote/viejo-07",
+    "glb_sha256": "83a4f077995c60430c2d4f1b338fa6911637b681baf14ef52cbfcd2b68dff507",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-07": {
+    "source": "artifacts/q3/acceptance/lote/adulto-07",
+    "glb_sha256": "34807937972f86f8509bafad737efc6e903d6e1a9bc8f807bc788f4a2238850a",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-07": {
+    "source": "artifacts/q3/acceptance/lote/joven-07",
+    "glb_sha256": "2c52e0b4d5ade5325092533f6236fe7c0c32abe81cb2c1525c68bb356bb6bce0",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  }
+}

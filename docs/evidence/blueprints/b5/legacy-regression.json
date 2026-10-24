@@ -1,0 +1,8 @@
+{
+  "initial_attempt": "artifacts/blueprints/b5-closure-01",
+  "initial_error": "KeyError: files_sha256 al finalizar un TreeSpec sin ese campo",
+  "fix": "Inicializar files_sha256 antes del registro común de artefactos",
+  "export_before_fix_sha256": "f17696ce94326484a97b3b69084d11e1f3b8d19f30ec6df12b6d59939975d548",
+  "export_after_fix_sha256": "f17696ce94326484a97b3b69084d11e1f3b8d19f30ec6df12b6d59939975d548",
+  "glb_unchanged": true
+}

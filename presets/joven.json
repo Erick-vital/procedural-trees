@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "algorithm": "oak_geometry_nodes",
-  "algorithm_version": "0.4.1",
+  "algorithm_version": "0.4.0",
   "seed": 17,
   "parameters": {
     "height_m": 4,

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-23",
+  "unit_tests": 80,
+  "matrix_passed": true,
+  "invariant_checks": 84,
+  "original_recipe_regenerated": {
+    "directory": "artifacts/blueprints/b3-original-recipe-regression",
+    "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+    "matches_b0": true
+  },
+  "previous_recipes_unchanged": [
+    "1.0.0",
+    "1.1.0"
+  ],
+  "godot_matrix_assets": 28,
+  "godot_before_after_assets": 2,
+  "capture_count": 270,
+  "source_sha256": {
+    "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blueprints/roble_copa_ancha/1.2.0.json": "d2edf70b89405cfdf5a7c4bf3a867849421fde08456794b2a46f7814788386ba",
+    "configs/verification/b3-v3.json": "271925af42fb12047f80af3f08b94a5f5de561b579fdac8e1c36f636416468f3",
+    "scripts/verify_blueprint_controls.py": "ab8ad5010e4ce3a1fea26b461fbce3765876c0b0210d89ab46ced9a2207bab54",
+    "scripts/blueprint_revision_evidence.py": "49df27ea1eeacc64bdfbd049bb54b6445f92e0e2d20880669ec4329bfba124c2",
+    "tests/test_blueprint_controls.py": "39fd5989210c5573b9037206495de669bbfea1c2ad4c759c0970202b3e8c1d42",
+    "tests/test_surface_evaluation.py": "4de9efb4371164d1a5850e5b21799ca622662ac3c659239faca00d912ac098ef"
+  },
+  "state_lines": 188,
+  "state_bytes": 12933
+}

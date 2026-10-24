@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "assets": {
+    "pilot": {
+      "insertions": 300,
+      "max_error_m": 7.515391524969555e-07,
+      "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+      "tolerance_m": 0.0001
+    },
+    "control-01": {
+      "insertions": 300,
+      "max_error_m": 3.0866522160888685e-06,
+      "glb_sha256": "8faaf2369ed993b74b5121ff62e5cbc36277c86fa0f0e19a7d49ed6f7ce4ef3e",
+      "tolerance_m": 0.0001
+    },
+    "control-02": {
+      "insertions": 300,
+      "max_error_m": 6.722900800222201e-06,
+      "glb_sha256": "e2d0ee2813ed4cc8afad4650ce85cf754614f6524b95630d15dc6a887c296a00",
+      "tolerance_m": 0.0001
+    },
+    "control-03": {
+      "insertions": 300,
+      "max_error_m": 3.1631876923245655e-06,
+      "glb_sha256": "0300dd7ede72d7dd31a9888e0116d1e077ecab37ffb7ce4198f7ca2fd5d08f5f",
+      "tolerance_m": 0.0001
+    },
+    "pilot-repeat": {
+      "insertions": 300,
+      "max_error_m": 7.515391524969555e-07,
+      "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+      "tolerance_m": 0.0001
+    },
+    "control-01-repeat": {
+      "insertions": 300,
+      "max_error_m": 3.0866522160888685e-06,
+      "glb_sha256": "8faaf2369ed993b74b5121ff62e5cbc36277c86fa0f0e19a7d49ed6f7ce4ef3e",
+      "tolerance_m": 0.0001
+    },
+    "control-02-repeat": {
+      "insertions": 300,
+      "max_error_m": 6.722900800222201e-06,
+      "glb_sha256": "e2d0ee2813ed4cc8afad4650ce85cf754614f6524b95630d15dc6a887c296a00",
+      "tolerance_m": 0.0001
+    },
+    "control-03-repeat": {
+      "insertions": 300,
+      "max_error_m": 3.1631876923245655e-06,
+      "glb_sha256": "0300dd7ede72d7dd31a9888e0116d1e077ecab37ffb7ce4198f7ca2fd5d08f5f",
+      "tolerance_m": 0.0001
+    },
+    "first-reference": {
+      "insertions": 264,
+      "max_error_m": 9.307643763366049e-05,
+      "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "tolerance_m": 0.0001
+    },
+    "wide-same-seed": {
+      "insertions": 264,
+      "max_error_m": 9.000242010823825e-05,
+      "glb_sha256": "a3a1b9d37125d62bae1aca79771a75bd65a659640bfe6f4008fcde4405142d51",
+      "tolerance_m": 0.0001
+    }
+  }
+}

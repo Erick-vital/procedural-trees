@@ -1,0 +1,470 @@
+{
+  "version": "b3-matrix-1.2.0",
+  "frozen_on": "2026-10-23",
+  "blueprint": "blueprints/roble_copa_ancha/1.2.0.json",
+  "reserved_policy": "Casos 07 ya evaluados en B3 v1; controles reutilizados, no nuevas reservas. Se mantienen las semillas sin ajustes individuales.",
+  "common_canopy": {
+    "group_count": 264,
+    "leaf_length_m": 1.0,
+    "shell_depth_m": 0.08,
+    "twig_radius_m": 0.02,
+    "tip_radius_ratio": 0.25,
+    "profile_width_scale": 1.0,
+    "region_weights": {
+      "north": 1.0,
+      "east": 1.0,
+      "south": 1.0,
+      "west": 1.0
+    },
+    "layout_leaf_length_m": 1.0
+  },
+  "cases": [
+    {
+      "id": "pilot",
+      "kind": "reference",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "viejo-00",
+      "kind": "age",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo",
+        "seeds": {
+          "base": 3000,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "viejo-03",
+      "kind": "age",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo",
+        "seeds": {
+          "base": 3003,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "adulto-00",
+      "kind": "age",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "joven-00",
+      "kind": "age",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 1000,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "viejo-07",
+      "kind": "reserved",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo",
+        "seeds": {
+          "base": 3007,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "adulto-07",
+      "kind": "reserved",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2007,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "joven-07",
+      "kind": "reserved",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 1007,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "viejo-00-repeat",
+      "kind": "repeat",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo",
+        "seeds": {
+          "base": 3000,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "adulto-00-repeat",
+      "kind": "repeat",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "joven-00-repeat",
+      "kind": "repeat",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 1000,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "leaf-min",
+      "kind": "control",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "leaf_length_m": 0.2
+          }
+        }
+      }
+    },
+    {
+      "id": "groups-min",
+      "kind": "control",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "group_count": 24
+          }
+        }
+      }
+    },
+    {
+      "id": "groups-max",
+      "kind": "control",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "group_count": 360
+          }
+        }
+      }
+    },
+    {
+      "id": "profile-min",
+      "kind": "control",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "profile_width_scale": 0.85
+          }
+        }
+      }
+    },
+    {
+      "id": "profile-max",
+      "kind": "control",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "profile_width_scale": 1.15
+          }
+        }
+      }
+    },
+    {
+      "id": "east-zero",
+      "kind": "control",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "region_weights": {
+              "east": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "canopy-seed",
+      "kind": "control",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 1701
+        }
+      }
+    },
+    {
+      "id": "height-low-scale-high",
+      "kind": "stress",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "base": {
+            "height_m": 2,
+            "foliage_scale_m": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "height-high-scale-low",
+      "kind": "stress",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "base": {
+            "height_m": 20,
+            "foliage_scale_m": 0.2
+          }
+        }
+      }
+    },
+    {
+      "id": "empty-groups",
+      "kind": "control",
+      "expect": "reject",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "group_count": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "empty-regions",
+      "kind": "control",
+      "expect": "reject",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "region_weights": {
+              "north": 0,
+              "east": 0,
+              "south": 0,
+              "west": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "groups-outside-contract",
+      "kind": "control",
+      "expect": "reject",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "canopy": {
+            "group_count": 361
+          }
+        }
+      }
+    },
+    {
+      "id": "height-high-scale-low-repeat",
+      "kind": "repeat",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        },
+        "overrides": {
+          "base": {
+            "height_m": 20,
+            "foliage_scale_m": 0.2
+          }
+        }
+      }
+    },
+    {
+      "id": "base-seed",
+      "kind": "control",
+      "expect": "generate",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3019,
+          "canopy": 17
+        }
+      }
+    }
+  ],
+  "revision": "Hoja joven .45 m; distribución0.1.1 corrige proyecciones >=.1 mm con máximo1 mm, valida superficie real en float64. Mantiene tolerancia y madera. Extremo20m debe generar.",
+  "comparison_study": "artifacts/blueprints/b3-controls-02"
+}

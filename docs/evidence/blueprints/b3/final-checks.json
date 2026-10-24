@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-23",
+  "unit_tests": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+    "count": 75,
+    "passed": true,
+    "environment": "Fuera del sandbox; API loopback incluida"
+  },
+  "syntax_check": true,
+  "git_diff_check": true,
+  "state_lines": 178,
+  "state_bytes": 12228,
+  "source_sha256": {
+    "blueprints/roble_copa_ancha/1.0.0.json": "c43864c26748f38e72fe6a74e1d645783d1b5fd24fb86c2fdd28ce899c133f0c",
+    "blueprints/roble_copa_ancha/1.1.0.json": "2e164488970e7eef6c621d13491a1fff9ce903a0dbb9f337030ecf0aac996e38",
+    "configs/verification/b3-v1.json": "a6bd5e85db72ab675beddec888da5db270beca6eb8d8497ff3fd0895adf27187",
+    "scripts/verify_blueprint_controls.py": "5b43032106d6df4961efcab2c4f04e36ed2c767891a27c40604d54c72f65dfcd",
+    "scripts/blueprint_controls_evidence.py": "bc6aa61a1fa16baa05e08f4d6ffc1b51a21f419639942fe58821aa291d0a0352",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "tests/test_blueprint_controls.py": "3f45e584fac6354e4958aee646415941ce2171414f48190552594dc1f1219413"
+  },
+  "note": "La suite pasa; la matriz geométrica conserva passed=false por un caso de contacto fallido. Revisión visual limitada a láminas seleccionadas, sin aprobación artística del usuario."
+}

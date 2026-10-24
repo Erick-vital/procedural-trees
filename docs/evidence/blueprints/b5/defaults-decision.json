@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-23",
+  "decision": "Presets TreeSpec sin versión apuntan a Q3 0.4.0 ya aprobada; Q3b 0.4.1 se conserva por ruta explícita. Blueprints requieren receta/version y ejemplar explícitos; sin selección latest.",
+  "files": {
+    "joven": {
+      "current": "presets/joven.json",
+      "current_sha256": "09e46c01840716f6c4a373c9e46ff495ea5778243209cbcddf2523813493a338",
+      "matches_explicit_q3": true,
+      "previous_archived_at": "presets/v0.4.1/joven.json",
+      "previous_sha256": "bf605c2a5eb0ff60c844c43f23ba13cd8f2b8187f1e356b27c13716d149057dd",
+      "archive_byte_identical": true
+    },
+    "adulto": {
+      "current": "presets/adulto.json",
+      "current_sha256": "48723f6399b050d3f71ea8b36a227c9e16af45f6de02f9d8534b11c3f8cec9d1",
+      "matches_explicit_q3": true,
+      "previous_archived_at": "presets/v0.4.1/adulto.json",
+      "previous_sha256": "4d16125c302b01e78296776a74cc17c5ab80bd8fba11875106e009a2e45e7d12",
+      "archive_byte_identical": true
+    },
+    "viejo": {
+      "current": "presets/viejo.json",
+      "current_sha256": "4777c428be9322a14d390d3f84edcb87b2d204576bdcb3105a330ea4a817b044",
+      "matches_explicit_q3": true,
+      "previous_archived_at": "presets/v0.4.1/viejo.json",
+      "previous_sha256": "0a924098250af7bc41f2430eb8126edcd34a85ec35cd982b4d79501215559321",
+      "archive_byte_identical": true
+    }
+  }
+}

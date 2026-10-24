@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-23",
+  "passed": true,
+  "unit_tests": 83,
+  "generation_count": 10,
+  "repeat_pairs": 4,
+  "invariant_checks": 27,
+  "godot_assets": 12,
+  "capture_count": 108,
+  "first_blueprint_matches_b0": true,
+  "shared_sources_unchanged_since_b3": true,
+  "objective_unchanged_since_freeze": true,
+  "new_files_sha256": {
+    "blueprints/arbol_copa_columnar/1.0.0.json": "5dc770bf8842b9912d2c346fec176cf57375ce3bf3ba50c8df4b229353faf193",
+    "configs/verification/b4-v1.json": "246cdd414cc66c14e064f38e0662370112639d70660d0417fd0a4b5297a6152c",
+    "docs/blueprints/b4-objetivo.md": "98635d06a0a71aa688c9b3fb5710c5c48a7fba9f34aed6fdac290b6782853364",
+    "docs/blueprints/columnar-concepto.svg": "47b794eecd8b941034be5c4776e6d69cabbcace9ae1201ac63be0c3e6bde568d",
+    "scripts/verify_second_blueprint.py": "e7600e66e392c11f8cd811d76d658031c451cad528bd57cf4e027d52f5199ee4",
+    "scripts/second_blueprint_evidence.py": "fa6d5f16761650bb06ecf81edcaed697446a5fa133497d08dfc6038c5d08ae00",
+    "tests/test_second_blueprint.py": "1d71c90a93bdb61b1ed14cd69163f7c99ef45734ae93796281361926e1539dba"
+  },
+  "state_lines": 193,
+  "state_bytes": 13324
+}

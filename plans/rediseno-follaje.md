@@ -1,7 +1,9 @@
 # Plan: rediseño del follaje procedural
 
 Fecha: 2026-10-22.
-Estado: RF3 implementada y verificada técnicamente, con revisión de imágenes reales Godot y aprobación artística de copa pendiente; [informe](../docs/evidence/rediseno-follaje/rf3/informe.md). Viejo-09 completo: 10572 triángulos/1584 hojas/9 m, techo 12500. RF4/RF5 sin iniciar. Referencia: [rama RF2 de 144 aprobada](../docs/evidence/rediseno-follaje/rf2-densidad/aceptacion.json). Se conservan revisiones anteriores y addons como referencias: [moldes](../docs/evidence/rediseno-follaje/rf2-moldes/informe.md), [ramillas](../docs/evidence/rediseno-follaje/rf2-ramillas/informe.md), [RF2 original](../docs/evidence/rf2/informe.md) y [addons](../docs/evidence/comparacion-addons/informe.md).
+Estado actualizado el 2026-10-23: RF3 aprobada como referencia del primer tipo; [B0 de blueprints](../docs/evidence/blueprints/b0/informe.md) conserva el piloto y [B2](../docs/evidence/blueprints/b2/informe.md) integra su generación, con GLB idéntico. RF4/B3 y su revisión están verificadas técnicamente: [informe B3](../docs/evidence/blueprints/b3-revision/informe.md). Sistema de blueprints cerrado técnicamente en B5; perfiles nuevos aún experimentales y lote RF5 pendiente.
+
+Estado técnico previo a esta adopción: RF3 implementada y verificada técnicamente, con revisión de imágenes reales Godot y aprobación artística de copa pendiente; [informe](../docs/evidence/rediseno-follaje/rf3/informe.md). Viejo-09 completo: 10572 triángulos/1584 hojas/9 m, techo 12500. RF4/RF5 sin iniciar. Referencia: [rama RF2 de 144 aprobada](../docs/evidence/rediseno-follaje/rf2-densidad/aceptacion.json). Se conservan revisiones anteriores y addons como referencias: [moldes](../docs/evidence/rediseno-follaje/rf2-moldes/informe.md), [ramillas](../docs/evidence/rediseno-follaje/rf2-ramillas/informe.md), [RF2 original](../docs/evidence/rf2/informe.md) y [addons](../docs/evidence/comparacion-addons/informe.md).
 
 ## Comparación acotada antes de RF3 — autorizada el 2026-10-22
 
@@ -238,7 +240,7 @@ referencia de rama para RF3, sin aceptación de una copa completa ni promoción
 a presets normales. [Aceptación y hashes](../docs/evidence/rediseno-follaje/rf2-densidad/aceptacion.json).
 Galería: `artifacts/rediseno-follaje/rf2-densidad-01/index.html`.
 
-### RF3. Primera copa completa sobre viejo-09 — verificada, aprobación artística pendiente
+### RF3. Primera copa completa sobre viejo-09 — verificada y aprobada como referencia
 
 Implementación iniciada por autorización del usuario el 2026-10-23.
 [Contrato RF3](../docs/contrato-rf3-copa.md): hasta 128 moldes y 49 ramas;
@@ -375,8 +377,14 @@ No se promete un resultado mejor antes de compararlo. Si una etapa no ofrece un 
 | Revisión de RF2 con ramillas visibles | Implementada y verificada: conexiones legibles en detalle; volumen insuficiente, salida artística pendiente |
 | Ensayo RF2 con moldes Q3 invisibles | Implementado/verificado, mayor presencia y cobertura; tamaño/forma por revisar, aprobación artística pendiente |
 | Aumento aditivo de hojas RF2 | 96/120/144/192 verificados; rama de 144 aprobada el 2026-10-23, referencia para RF3 |
-| RF3: copa piloto | Implementada/verificada en Godot: 10572 triángulos; aprobación artística pendiente |
-| RF4: controles | Pendiente |
-| RF5: integración y lote | Pendiente |
+| RF3: copa piloto | Implementada/verificada en Godot: 10572 triángulos; aprobada como referencia del primer tipo el 2026-10-23 |
+| RF4: controles | B3 revisada: 22 éxitos, tres rechazos; joven .45 m y contacto de 20 m resueltos. Aceptación artística pendiente |
+| RF5: integración y lote | Primer blueprint integrado en B2; perfiles/promoción de familia y lote pendientes |
 
-Próximo trabajo: revisar la copa completa RF3 en `artifacts/rediseno-follaje/rf3-acceptance-02/index.html` y fijar su configuración antes de RF4. GLB piloto en `pilot/tree.glb`. La rama aprobada continúa como referencia; la copa requiere aceptación propia. RF4 contrastará edades y semillas reservadas seleccionadas antes de generar, sin ajustes ocultos por caso. No se inicia el lote ni se promocionan presets por pasar las pruebas.
+El [sistema de blueprints](sistema-blueprints.md) queda cerrado técnicamente en
+B5. B2 integra la generación y B3 cubre los controles RF4 de los casos ensayados;
+la revisión resuelve tamaño joven y contacto de 20 m. B4 aporta un segundo tipo
+para comprobar reutilización. La referencia RF3 permanece aprobada; perfiles
+nuevos y tipo columnar siguen experimentales. **No se ejecuta ni promueve el lote
+RF5 al cerrar B5**: queda para una decisión posterior separada.
+Galería RF3 conservada: `artifacts/rediseno-follaje/rf3-acceptance-02/index.html`.

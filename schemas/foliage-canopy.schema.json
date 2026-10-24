@@ -15,7 +15,10 @@
   ],
   "properties": {
     "version": {
-      "const": "foliage-canopy-0.1.0"
+      "enum": [
+        "foliage-canopy-0.1.0",
+        "foliage-canopy-0.1.1"
+      ]
     },
     "seed": {
       "type": "integer",

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+<rect width="960" height="620" fill="#e9edf1"/>
+<g font-family="sans-serif" fill="#203040"><text x="40" y="44" font-size="23">B4 · referencia artística propia, anterior a la generación</text><text x="40" y="78" font-size="16">Misma paleta. La identidad procede de proporciones, ramas y organización de copa.</text></g>
+<g stroke="#795038" stroke-linecap="round" fill="none">
+<path d="M230 520 L235 325 M235 425 L125 330 M235 395 L350 300 M235 350 L160 270 M235 355 L300 250" stroke-width="18"/>
+<path d="M699 520 L700 190 M700 440 L657 310 M700 400 L746 255 M700 355 L669 205 M700 300 L726 156" stroke-width="10"/>
+</g>
+<g fill="#80a34a" fill-opacity=".72" stroke="#527338" stroke-width="2">
+<path d="M80 320 L92 266 L145 235 L210 245 L259 208 L327 230 L385 275 L372 330 L305 355 L247 340 L193 365 L127 345 Z"/>
+<path d="M646 353 L638 307 L653 254 L651 210 L675 152 L701 118 L727 161 L742 222 L755 281 L747 341 L725 379 L670 390 Z"/>
+</g>
+<g stroke="#203040" stroke-width="1" fill="none"><path d="M50 530 H410 M620 530 H780"/><path d="M790 118 V520 M782 118 H798 M782 520 H798"/><path d="M638 555 H755 M638 547 V563 M755 547 V563"/></g>
+<g font-family="sans-serif" fill="#203040" font-size="17"><text x="65" y="575">Primer tipo: copa ancha</text><text x="600" y="590">Segundo: copa columnar</text><text x="805" y="330">altura</text><text x="640" y="548">anchura</text><text x="40" y="609" font-size="13">Boceto conceptual; no captura ni resultado geométrico. Sin atribución botánica.</text></g>
+</svg>

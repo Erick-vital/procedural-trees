@@ -7,6 +7,11 @@ artística de copa pendiente**. RF4/RF5 sin iniciar. Se parte de la
 [plan activo](../../../../plans/rediseno-follaje.md) y el
 [contrato RF3 fijado antes de generar](../../../contrato-rf3-copa.md).
 
+Actualización del 2026-10-23: el usuario aprueba el piloto RF3 como referencia del
+primer tipo de árbol. La [adopción B0](../../blueprints/b0/informe.md) fija los
+archivos y el alcance. La valoración pendiente del ensayo original queda
+resuelta para ese piloto; RF4/RF5 siguen pendientes.
+
 ## Entregables
 
 - [Q3 frente al piloto](comparison.jpg), [controles espaciales](controls.jpg),

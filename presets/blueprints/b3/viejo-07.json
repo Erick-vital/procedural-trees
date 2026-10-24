@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "blueprint_id": "roble_copa_ancha",
+  "blueprint_version": "1.1.0",
+  "profile": "viejo",
+  "seeds": {
+    "base": 3007,
+    "canopy": 17
+  }
+}

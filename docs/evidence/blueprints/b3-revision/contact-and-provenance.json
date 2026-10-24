@@ -1,0 +1,596 @@
+{
+  "pilot": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 294,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 9.307643763366049e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002758591901510954,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "5ef4d1ebbe2741c820156d9930bf1b14f338b43dd94237f29c1f87c2ef14b28c",
+    "twigs_sha256": "df60cb370c22f76891433d95aeb95920ca0c339740a6112f060e133196262c53",
+    "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+    "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+    "duration_seconds": 3.103,
+    "glb_bytes": 432232
+  },
+  "viejo-00": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 308,
+      "corrected_queries": 2,
+      "max_correction_m": 0.00010449095253055158,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 7.116703527377634e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027350992895662785,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "ee08247cd488b8138fbc1c1f3d6602c4584732b042bc2b750bcd99f6b1f1bf8a",
+    "twigs_sha256": "053b4e98f8085a998c8d315e951fc673d09a030ec9082c6d3c67d3e2a8b860b6",
+    "wood_sha256": "77a40cf75ce6b25b3f550b1b3d7576332889939114b1c014125808c77a93f604",
+    "glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+    "duration_seconds": 3.187,
+    "glb_bytes": 432568
+  },
+  "viejo-03": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 296,
+      "corrected_queries": 1,
+      "max_correction_m": 0.00010123729366713779,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 5.2190015300884434e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.00263118848670274,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "48aad3a76374712f7cba343e0901282755b20c5d481f85bb3a64a6c03e888abb",
+    "twigs_sha256": "1290f29e8459c279c1416527bdd8be2aadff24b0155f791deff04fb423976eb5",
+    "wood_sha256": "8f47c1b5bec9a509d4c23c507fedab3866b09cf7390016e1aa24a2e069bc7d65",
+    "glb_sha256": "8645e921bd678e15d2345fdd5c71e526e4a1d35846a34ee7ff0010893bad0d28",
+    "duration_seconds": 3.091,
+    "glb_bytes": 434056
+  },
+  "adulto-00": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 302,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 2.0331191769173077e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027091221418231726,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "beb883a5c1698d2ee6cf5d372b9fe43d07494c6c6c4bf310385f4bd5afa8afc4",
+    "twigs_sha256": "a19b013a294acad0106d855ac438d74fd8684203741191fa39a2abb254f10a38",
+    "wood_sha256": "22f722376bce1f277182e6009c3f3e51f831889159a89cacce55fbde745b5ad5",
+    "glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+    "duration_seconds": 2.993,
+    "glb_bytes": 414088
+  },
+  "joven-00": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 743,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 5.0613648615162825e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027101384475827217,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "2d5fae5623f66e972b41c9a9a55a720ed954b551ffd0919ed874b9761051ebd4",
+    "twigs_sha256": "4bf6dc89f54470e9723a5622cc43fbbc8b7fdefa1955d6362efa0231e6047a9a",
+    "wood_sha256": "704f1920c942d06ce2184b811dfc453fd6cb86abde022b35d44230959511e454",
+    "glb_sha256": "a22a75158cfe0f009fc514f48a9292e5394e0f00c170a40300fdcd1752e80f71",
+    "duration_seconds": 2.486,
+    "glb_bytes": 354348
+  },
+  "viejo-07": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 300,
+      "corrected_queries": 1,
+      "max_correction_m": 0.00014937246281077006,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 7.265680385560444e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027777679497376084,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "c55cbabb46adf7b032712c2ceb3d002481700e3d4b986d83b35dd9d8c24cfe38",
+    "twigs_sha256": "e1853323f29840bd6ce86fef10a3c4586197e8434ddf38747c5181cd56fab460",
+    "wood_sha256": "4fa5f7f7683e2603b26101c2da936616edcd238d8de9d383f83cb0db7bfcb4e7",
+    "glb_sha256": "c1c7ad9799b238484794f4f4c6cc11d6c28f3f9a3fbfd7ac3267ce6f3cd1b317",
+    "duration_seconds": 3.099,
+    "glb_bytes": 432952
+  },
+  "adulto-07": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 298,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 3.301709126003259e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027375202625989914,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "d2ff25f56c90170ba8d66ad245eac917590f5b8e513dc738bbaebe8a48306526",
+    "twigs_sha256": "b8555643180c37b1be7ef20f80843c5f814750bc3f9b5c0a5b3e699b5b7605ab",
+    "wood_sha256": "f230d354c795127eeb67d7619d067cf54d5e4a50698479e71efd26891241eb14",
+    "glb_sha256": "8f0a29591801492e9406ab5ac45a285d5e0ef7974e9fb67ea58ea0f8a653bc75",
+    "duration_seconds": 3.098,
+    "glb_bytes": 414012
+  },
+  "joven-07": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 675,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 3.5976228694820637e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027424334548413754,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "4fce7e671141089cd8399f2c560829e0f39130f8552fb62e8a8acc2c6e0790cc",
+    "twigs_sha256": "fe8913dc6ac7cb09cb1e0d34d55fa962355b3b16c643c2cecdafddbeadba15de",
+    "wood_sha256": "ce7b48279a67d7454aff5eb8702c4b8d6f21c5fef3a2ba56a887ffa533caa094",
+    "glb_sha256": "1bd20c40b9f38fbb2a154e2ca9898b2044994e694413db63ffc448bad6bc6176",
+    "duration_seconds": 2.49,
+    "glb_bytes": 355456
+  },
+  "viejo-00-repeat": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 308,
+      "corrected_queries": 2,
+      "max_correction_m": 0.00010449095253055158,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 7.116703527377634e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027350992895662785,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "ee08247cd488b8138fbc1c1f3d6602c4584732b042bc2b750bcd99f6b1f1bf8a",
+    "twigs_sha256": "053b4e98f8085a998c8d315e951fc673d09a030ec9082c6d3c67d3e2a8b860b6",
+    "wood_sha256": "77a40cf75ce6b25b3f550b1b3d7576332889939114b1c014125808c77a93f604",
+    "glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+    "duration_seconds": 3.188,
+    "glb_bytes": 432568
+  },
+  "adulto-00-repeat": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 302,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 2.0331191769173077e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027091221418231726,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "beb883a5c1698d2ee6cf5d372b9fe43d07494c6c6c4bf310385f4bd5afa8afc4",
+    "twigs_sha256": "a19b013a294acad0106d855ac438d74fd8684203741191fa39a2abb254f10a38",
+    "wood_sha256": "22f722376bce1f277182e6009c3f3e51f831889159a89cacce55fbde745b5ad5",
+    "glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+    "duration_seconds": 2.985,
+    "glb_bytes": 414088
+  },
+  "joven-00-repeat": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 743,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 5.0613648615162825e-06,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027101384475827217,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "2d5fae5623f66e972b41c9a9a55a720ed954b551ffd0919ed874b9761051ebd4",
+    "twigs_sha256": "4bf6dc89f54470e9723a5622cc43fbbc8b7fdefa1955d6362efa0231e6047a9a",
+    "wood_sha256": "704f1920c942d06ce2184b811dfc453fd6cb86abde022b35d44230959511e454",
+    "glb_sha256": "a22a75158cfe0f009fc514f48a9292e5394e0f00c170a40300fdcd1752e80f71",
+    "duration_seconds": 2.546,
+    "glb_bytes": 354348
+  },
+  "leaf-min": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 294,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 9.307643763366049e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002758591901510954,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "5ef4d1ebbe2741c820156d9930bf1b14f338b43dd94237f29c1f87c2ef14b28c",
+    "twigs_sha256": "df60cb370c22f76891433d95aeb95920ca0c339740a6112f060e133196262c53",
+    "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+    "glb_sha256": "37cdfd479436e85ea056bdb557182bc65f4bd6876f14f1d41d998a56820a565b",
+    "duration_seconds": 3.138,
+    "glb_bytes": 439528
+  },
+  "groups-min": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 32,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 2.6039982398990444e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0028211306780576706,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "278fb6906ecda43d2805b4382b4082e55c7942d271f488b5949daf8d6028e9cd",
+    "twigs_sha256": "3ae2d7492b3e3a0feedcfb9ce97e06231e4407f8fc04e245331e53a14174f02e",
+    "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+    "glb_sha256": "b968bbd1689c32458523d46d8d33349b65b4eac884698fd8652e5226f227ee1d",
+    "duration_seconds": 2.078,
+    "glb_bytes": 145804
+  },
+  "groups-max": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 403,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 9.676473060218576e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027217743918299675,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "8be83b8172bf33d37b3de8e8c0515444815a34e9886d3208cb898eea1bef8b46",
+    "twigs_sha256": "dae30abb8a9f8b0343fe380a53f6080f33eab1c1c9a7920ecf22edfd8aa8706c",
+    "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+    "glb_sha256": "f721086e7f535eda8689f53d125d5656b02a4703c29a8e30c1eafb97ccb19891",
+    "duration_seconds": 3.539,
+    "glb_bytes": 546284
+  },
+  "profile-min": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 290,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 8.42640122588233e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027080029249191284,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "2e0b526069d60c47275eddd5c6b614b1685b80153f529bce40589bfdfe298d9b",
+    "twigs_sha256": "8005aa82a3427db3c91dbde592dad4ff40134d4285baa7dbc6ebf8307f6dbf4f",
+    "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+    "glb_sha256": "585da097dd4ed77e926ed3268c808cc262f340300482c325a89caa5123a3b7cc",
+    "duration_seconds": 3.135,
+    "glb_bytes": 432524
+  },
+  "profile-max": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 298,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 8.996045214146876e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027747899293899536,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "75269a7ce85b25ded09759a1705bf98a27cce8bd2d6b5f342267f36f4ee57198",
+    "twigs_sha256": "993bbafe122b75ecd3842512b75d01ee3bc694b6e998a02c9d957b030b8961c2",
+    "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+    "glb_sha256": "5f274962167b1c138aff9b4506a2c91938e1f426171178773957a616d18ccc9f",
+    "duration_seconds": 3.133,
+    "glb_bytes": 433624
+  },
+  "east-zero": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 209,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 4.192007741669855e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002758591901510954,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "f84ccbb3b21580fde0d41b403bc6bbd8f4c5e59a2100cb041e3d18819f92acaa",
+    "twigs_sha256": "88a7bd7a77005ff978c2e95ff45b205827f6b03b85dcb8353dabf4fb8ada8837",
+    "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+    "glb_sha256": "f6a4a58dbf29fdc7b16b3a18e63573b479b5932de0f05cddffe339363e949bd2",
+    "duration_seconds": 2.785,
+    "glb_bytes": 349048
+  },
+  "canopy-seed": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 311,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 9.38305067695275e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0027293259045109153,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "c15986569fa17e0b1407c02e897076559bceeff9a48dd6b4cba80d11824f9be5",
+    "twigs_sha256": "9d219056021665acbe2255e6e85ae7a9a1d33c0300fa2ab489671b562a3f8c89",
+    "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+    "glb_sha256": "02b2a2e676d2fac7221e7d5338e421a27df42cd6452efea7fe2cd3ecab6a3f44",
+    "duration_seconds": 3.134,
+    "glb_bytes": 432952
+  },
+  "height-low-scale-high": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 875,
+      "corrected_queries": 35,
+      "max_correction_m": 0.0005338824950536633,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 9.804029628002031e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002632699062814936,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "ea0f13a75597342f4fe01e6fbae339e86136f8ce637b7ce755fa41962c8f1fe8",
+    "twigs_sha256": "d3db0a8b83db8f5fa9b520cada188d64d5fea8203f72ea0595f98d962fc48309",
+    "wood_sha256": "517d5b835f9714b2177c9a9f165cf88fb8b370d0fa2f67cb51e79dd9a60759ce",
+    "glb_sha256": "bfef35be7fcb22e4ef6d7c47418764b20cbb8086eb7d0a1c4d4c34ac666c1306",
+    "duration_seconds": 3.138,
+    "glb_bytes": 419908
+  },
+  "height-high-scale-low": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 2021,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 5.50084896789609e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0024493484088452533,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "310e7aa39bc9ac3620e08c086a7b7dd83bf0614ed27770f5465c68638204ded5",
+    "twigs_sha256": "6ffeb3f2d376bf97c4b99e674e24a0917a075f0b7e2749d5e74e734d6726e590",
+    "wood_sha256": "19d3c35e0a490b760a954560bdce0e85c877e94a2ea87c4fcad52fd5a5724a7f",
+    "glb_sha256": "d356329db61618e3ba8a8f31bea7da93497c1b181a0453095035ee25735cb01f",
+    "duration_seconds": 4.491,
+    "glb_bytes": 446932
+  },
+  "height-high-scale-low-repeat": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 2021,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 5.50084896789609e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.0024493484088452533,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "310e7aa39bc9ac3620e08c086a7b7dd83bf0614ed27770f5465c68638204ded5",
+    "twigs_sha256": "6ffeb3f2d376bf97c4b99e674e24a0917a075f0b7e2749d5e74e734d6726e590",
+    "wood_sha256": "19d3c35e0a490b760a954560bdce0e85c877e94a2ea87c4fcad52fd5a5724a7f",
+    "glb_sha256": "d356329db61618e3ba8a8f31bea7da93497c1b181a0453095035ee25735cb01f",
+    "duration_seconds": 4.401,
+    "glb_bytes": 446932
+  },
+  "base-seed": {
+    "surface_projection": {
+      "version": "q3-loop-triangles-projection-0.1.1",
+      "queries": 304,
+      "corrected_queries": 0,
+      "max_correction_m": 0.0,
+      "correction_limit_m": 0.001,
+      "unchanged_below_m": 0.0001
+    },
+    "contacts": {
+      "all_insertions_on_q3_and_inside_twig": true,
+      "all_leaf_roots_inside_own_twig": true,
+      "max_insertion_error_m": 5.8216381529811216e-05,
+      "insertion_method": "blender_loop_triangles_float64",
+      "insertion_tolerance_m": 0.0001,
+      "method": "convex_tube_face_halfspaces",
+      "maximum_leaf_signed_face_distance_m": -0.002733894856646657,
+      "legacy_fixed_ray_long_paths": 0
+    },
+    "adapter_version": "blueprint-blender-1.1.0",
+    "supports_sha256": "3c8b86d518b2c00d67cd7d52875fa6b6eaff1b0012268f490256bd115ae886f3",
+    "twigs_sha256": "dfefc831b38ba3a20d37ca83965084d1a03e4f2d029a3990d2d93870cf83c4bc",
+    "wood_sha256": "880a59288e70fae284b4548523b7b5853acfc2701d72a022b1f8138b13345c1d",
+    "glb_sha256": "6155f7b600d47c95a672ea57a04a60b425ea024b14ffe719cb82eea52543f63b",
+    "duration_seconds": 3.137,
+    "glb_bytes": 433244
+  }
+}

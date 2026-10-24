@@ -1,0 +1,26 @@
+{
+  "phase": "B0",
+  "passed": true,
+  "reproduction_requested": true,
+  "file_count": 133,
+  "file_mismatches": [],
+  "pilot_matches_lock": true,
+  "reproduction_matches_lock": true,
+  "prepared_reference_matches": true,
+  "date": "2026-10-23",
+  "scope": "B0; auditoría y reproducción histórica, sin nueva validación visual",
+  "audit_script_sha256": "9c02e64137a753a7bc2f223b9d0fe4e6436ac7bf316dee84834faff47663decc",
+  "sandbox_attempt": {
+    "phase": "B0",
+    "passed": false,
+    "reproduction_requested": true,
+    "file_count": 133,
+    "file_mismatches": [],
+    "pilot_matches_lock": true,
+    "error": "prepare: Blender excedió 120 s"
+  },
+  "successful_output": "artifacts/blueprints/b0-reproduction-02",
+  "successful_execution": "fuera del sandbox; ambos procesos Blender terminaron correctamente",
+  "negative_control_reversed_triangle_detected": true,
+  "historical_sources_recoverable_from_git": 105
+}

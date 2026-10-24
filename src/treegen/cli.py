@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import sys
 from .contracts import load_spec
-from .runner import execute, batch
+from .runner import execute, execute_blueprint, batch
 from .evaluation import validate_result, compare
 
 
@@ -16,6 +16,13 @@ def main():
     generate.add_argument('--output', required=True, type=Path)
     generate.add_argument('--no-render', action='store_true')
     generate.add_argument('--timeout', type=float, default=120)
+    commands.add_parser('blueprints', help='Listar recetas registradas y sus versiones')
+    blueprint = commands.add_parser('generate-blueprint', help='Generar un ejemplar desde una receta explícita')
+    blueprint.add_argument('blueprint', type=Path)
+    blueprint.add_argument('--instance', type=Path, required=True)
+    blueprint.add_argument('--output', type=Path, required=True)
+    blueprint.add_argument('--no-render', action='store_true')
+    blueprint.add_argument('--timeout', type=float, default=120)
     bat = commands.add_parser('batch')
     bat.add_argument('--cases', type=Path, default=Path('presets/f2-cases.json'))
     bat.add_argument('--output', type=Path, required=True)
@@ -33,6 +40,11 @@ def main():
     try:
         if args.command == 'generate':
             result = execute(args.spec, args.output, not args.no_render, args.timeout)
+        elif args.command == 'generate-blueprint':
+            result = execute_blueprint(args.blueprint, args.instance, args.output, not args.no_render, args.timeout)
+        elif args.command == 'blueprints':
+            from .blueprints import registered_blueprints
+            result = {'blueprints': registered_blueprints()}
         elif args.command == 'batch':
             result = batch(args.cases, args.output, args.timeout)
         elif args.command == 'validate':

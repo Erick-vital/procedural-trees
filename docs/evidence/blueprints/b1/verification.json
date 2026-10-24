@@ -1,0 +1,40 @@
+{
+  "phase": "B1",
+  "date": "2026-10-23",
+  "implemented": [
+    "strict_blueprint_and_instance_contracts",
+    "component_registry",
+    "profile_and_instance_precedence",
+    "editable_ranges",
+    "historical_seed_derivation",
+    "deterministic_resolution",
+    "conservative_pre_mesh_budget"
+  ],
+  "new_tests": 13,
+  "full_suite_tests": 64,
+  "full_suite_passed": true,
+  "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+  "execution": "fuera del sandbox, socket loopback autorizado",
+  "sandbox_attempt": {
+    "tests_run": 64,
+    "errors": 1,
+    "reason": "PermissionError al abrir socket loopback en prueba histórica"
+  },
+  "historical_rf3_inputs_match": true,
+  "geometry_generated_by_b1": false,
+  "production_blueprint_registered": false,
+  "b2_started": false,
+  "sources_sha256": {
+    "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+    "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+    "src/treegen/blueprints.py": "e7c14c14eb14451ab4d5cea61d75a7cb647c8056d9c9fbdf885f73d7cb79d9a6",
+    "tests/test_blueprints.py": "a95a1e40e9e42f83e42f9cd76893d6acc059b54b1a74da9e7d0c360e1ceac7ad",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+    "schemas/foliage-canopy.schema.json": "da6a7a9c31929cf2392a5ef5818c44e133e28e57d456a72823b1e149473fb8da",
+    "docs/evidence/blueprints/b0/reference-lock.json": "94c69455477859a163ad0fb1920ba9bb9942a9cc0b216dc92ad476ebb0e116b3"
+  },
+  "unit_test_log_sha256": "aa044f83690a295ec346ee9427e7ca652bd192f7e7e8cba89371d8a64ff9ce4d"
+}

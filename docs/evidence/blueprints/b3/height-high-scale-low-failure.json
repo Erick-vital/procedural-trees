@@ -1,0 +1,392 @@
+{
+  "manifest_version": "1.0",
+  "job_id": "ae089aff-ac5a-40d3-a48a-1e3f4b420ffb",
+  "status": "failed",
+  "started_at": "2026-10-23T21:10:38.806466+00:00",
+  "kind": "blueprint",
+  "resolved_blueprint": {
+    "resolved_version": "1.0",
+    "blueprint_id": "roble_copa_ancha",
+    "blueprint_version": "1.1.0",
+    "blueprint_sha256": "8832c75efad6b1c908b7db8836c300548d7ef687375761777b5a9fce78fc7582",
+    "blueprint_definition": {
+      "schema_version": "1.0",
+      "id": "roble_copa_ancha",
+      "version": "1.1.0",
+      "name": "Roble estilizado de copa ancha",
+      "description": "Variaci\u00f3n B3 del primer tipo: madera Q3 hist\u00f3rica por edad y regla RF3 com\u00fan sin ajustes por semilla. Perfiles experimentales hasta revisi\u00f3n de controles; referencia 1.0.0 conservada.",
+      "components": {
+        "base": "oak_geometry_nodes@0.4.0",
+        "distribution": "foliage-canopy@0.1.0",
+        "representation": "rf3-diamond-six@0.1.0"
+      },
+      "parameters": {
+        "base": {
+          "height_m": 9,
+          "base_radius_m": 0.8,
+          "curvature": 0.16,
+          "primary_branches": 11,
+          "max_depth": 2,
+          "branch_length_ratio": 0.55,
+          "inclination_deg": 72,
+          "asymmetry": 0.85,
+          "foliage_density": 0.75,
+          "foliage_scale_m": 1.3
+        },
+        "canopy": {
+          "group_count": 264,
+          "leaf_length_m": 1.0,
+          "shell_depth_m": 0.08,
+          "twig_radius_m": 0.02,
+          "tip_radius_ratio": 0.25,
+          "profile_width_scale": 1.0,
+          "region_weights": {
+            "north": 1.0,
+            "east": 1.0,
+            "south": 1.0,
+            "west": 1.0
+          },
+          "layout_leaf_length_m": 1.0
+        }
+      },
+      "appearance": {
+        "bark": {
+          "color_rgba": [
+            0.23999999463558197,
+            0.10499999672174454,
+            0.04500000178813934,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        },
+        "leaf": {
+          "color_rgba": [
+            0.23000000417232513,
+            0.4300000071525574,
+            0.06499999761581421,
+            1
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0,
+          "double_sided": true
+        }
+      },
+      "editable_ranges": {
+        "canopy.group_count": {
+          "minimum": 24,
+          "maximum": 360
+        },
+        "canopy.leaf_length_m": {
+          "minimum": 0.2,
+          "maximum": 1
+        },
+        "canopy.profile_width_scale": {
+          "minimum": 0.85,
+          "maximum": 1.15
+        },
+        "canopy.region_weights.north": {
+          "minimum": 0,
+          "maximum": 1
+        },
+        "canopy.region_weights.east": {
+          "minimum": 0,
+          "maximum": 1
+        },
+        "canopy.region_weights.south": {
+          "minimum": 0,
+          "maximum": 1
+        },
+        "canopy.region_weights.west": {
+          "minimum": 0,
+          "maximum": 1
+        },
+        "base.height_m": {
+          "minimum": 2,
+          "maximum": 20
+        },
+        "base.base_radius_m": {
+          "minimum": 0.12,
+          "maximum": 0.8
+        },
+        "base.curvature": {
+          "minimum": 0.06,
+          "maximum": 0.16
+        },
+        "base.primary_branches": {
+          "minimum": 4,
+          "maximum": 11
+        },
+        "base.max_depth": {
+          "minimum": 2,
+          "maximum": 2
+        },
+        "base.branch_length_ratio": {
+          "minimum": 0.3,
+          "maximum": 0.55
+        },
+        "base.inclination_deg": {
+          "minimum": 35,
+          "maximum": 72
+        },
+        "base.asymmetry": {
+          "minimum": 0.15,
+          "maximum": 0.85
+        },
+        "base.foliage_density": {
+          "minimum": 0.5,
+          "maximum": 0.75
+        },
+        "base.foliage_scale_m": {
+          "minimum": 0.2,
+          "maximum": 3
+        }
+      },
+      "default_profile": "viejo_referencia",
+      "profiles": {
+        "viejo_referencia": {
+          "description": "Piloto RF3 viejo-09 aprobado como referencia; no representa aprobaci\u00f3n de todas las semillas.",
+          "overrides": {},
+          "validation": {
+            "status": "reference_only",
+            "evidence": [
+              "docs/evidence/blueprints/b0/reference-lock.json"
+            ]
+          }
+        },
+        "joven": {
+          "description": "Base Q3 joven; 264 grupos y hoja nominal de 1 m comunes, sin ajuste por ejemplar.",
+          "overrides": {
+            "base": {
+              "height_m": 4,
+              "base_radius_m": 0.12,
+              "curvature": 0.06,
+              "primary_branches": 4,
+              "max_depth": 2,
+              "branch_length_ratio": 0.3,
+              "inclination_deg": 35,
+              "asymmetry": 0.15,
+              "foliage_density": 0.5,
+              "foliage_scale_m": 0.45
+            }
+          },
+          "validation": {
+            "status": "experimental",
+            "evidence": [
+              "configs/verification/b3-v1.json"
+            ]
+          }
+        },
+        "adulto": {
+          "description": "Base Q3 adulto; 264 grupos y hoja nominal de 1 m comunes, sin ajuste por ejemplar.",
+          "overrides": {
+            "base": {
+              "height_m": 10,
+              "base_radius_m": 0.5,
+              "curvature": 0.12,
+              "primary_branches": 9,
+              "max_depth": 2,
+              "branch_length_ratio": 0.5,
+              "inclination_deg": 65,
+              "asymmetry": 0.6,
+              "foliage_density": 0.75,
+              "foliage_scale_m": 1.15
+            }
+          },
+          "validation": {
+            "status": "experimental",
+            "evidence": [
+              "configs/verification/b3-v1.json"
+            ]
+          }
+        },
+        "viejo": {
+          "description": "Base Q3 viejo; 264 grupos y hoja nominal de 1 m comunes, sin ajuste por ejemplar.",
+          "overrides": {
+            "base": {
+              "height_m": 9,
+              "base_radius_m": 0.8,
+              "curvature": 0.16,
+              "primary_branches": 11,
+              "max_depth": 2,
+              "branch_length_ratio": 0.55,
+              "inclination_deg": 72,
+              "asymmetry": 0.85,
+              "foliage_density": 0.75,
+              "foliage_scale_m": 1.3
+            }
+          },
+          "validation": {
+            "status": "experimental",
+            "evidence": [
+              "configs/verification/b3-v1.json"
+            ]
+          }
+        }
+      },
+      "limits": {
+        "triangles": 12500,
+        "materials": 3,
+        "generation_seconds": 120
+      }
+    },
+    "instance_request": {
+      "schema_version": "1.0",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "1.1.0",
+      "profile": "viejo_referencia",
+      "seeds": {
+        "base": 3009,
+        "canopy": 17
+      },
+      "overrides": {
+        "base": {
+          "height_m": 20,
+          "foliage_scale_m": 0.2
+        }
+      }
+    },
+    "profile": "viejo_referencia",
+    "parameters": {
+      "base": {
+        "height_m": 20,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 0.2
+      },
+      "canopy": {
+        "group_count": 264,
+        "leaf_length_m": 1.0,
+        "shell_depth_m": 0.08,
+        "twig_radius_m": 0.02,
+        "tip_radius_ratio": 0.25,
+        "profile_width_scale": 1.0,
+        "region_weights": {
+          "north": 1.0,
+          "east": 1.0,
+          "south": 1.0,
+          "west": 1.0
+        },
+        "layout_leaf_length_m": 1.0
+      }
+    },
+    "profile_validation_claim": {
+      "status": "reference_only",
+      "evidence": [
+        "docs/evidence/blueprints/b0/reference-lock.json"
+      ]
+    },
+    "parameters_differ_from_profile": true,
+    "base_spec": {
+      "schema_version": "1.0",
+      "algorithm": "oak_geometry_nodes",
+      "algorithm_version": "0.4.0",
+      "seed": 3009,
+      "parameters": {
+        "height_m": 20,
+        "base_radius_m": 0.8,
+        "curvature": 0.16,
+        "primary_branches": 11,
+        "max_depth": 2,
+        "branch_length_ratio": 0.55,
+        "inclination_deg": 72,
+        "asymmetry": 0.85,
+        "foliage_density": 0.75,
+        "foliage_scale_m": 0.2
+      }
+    },
+    "canopy_spec": {
+      "group_count": 264,
+      "leaf_length_m": 1.0,
+      "shell_depth_m": 0.08,
+      "twig_radius_m": 0.02,
+      "tip_radius_ratio": 0.25,
+      "profile_width_scale": 1.0,
+      "region_weights": {
+        "north": 1.0,
+        "east": 1.0,
+        "south": 1.0,
+        "west": 1.0
+      },
+      "version": "foliage-canopy-0.1.0",
+      "seed": 17
+    },
+    "base_seeds": {
+      "structure": 669423365,
+      "foliage": 927115663
+    },
+    "layout_leaf_length_m": 1.0,
+    "appearance": {
+      "bark": {
+        "color_rgba": [
+          0.23999999463558197,
+          0.10499999672174454,
+          0.04500000178813934,
+          1
+        ],
+        "roughness": 0.8799999952316284,
+        "metallic": 0,
+        "double_sided": true
+      },
+      "leaf": {
+        "color_rgba": [
+          0.23000000417232513,
+          0.4300000071525574,
+          0.06499999761581421,
+          1
+        ],
+        "roughness": 0.8799999952316284,
+        "metallic": 0,
+        "double_sided": true
+      }
+    },
+    "limits": {
+      "triangles": 12500,
+      "materials": 3,
+      "generation_seconds": 120
+    },
+    "budget_upper_bound": {
+      "wood_triangles": 5292,
+      "added_triangles_max": 5280,
+      "triangles_max": 10572,
+      "materials_max": 3,
+      "surface_samples_max": 8192,
+      "support_attempts_max": 2048,
+      "groups_max": 264,
+      "leaves_max": 1584
+    },
+    "resolved_sha256": "d80a6064c9c58f50e9386ee5f14f733c376a5bea29e8b3c1ba9cc0cf337a8449"
+  },
+  "spec": {
+    "schema_version": "1.0",
+    "algorithm": "oak_geometry_nodes",
+    "algorithm_version": "0.4.0",
+    "seed": 3009,
+    "parameters": {
+      "height_m": 20,
+      "base_radius_m": 0.8,
+      "curvature": 0.16,
+      "primary_branches": 11,
+      "max_depth": 2,
+      "branch_length_ratio": 0.55,
+      "inclination_deg": 72,
+      "asymmetry": 0.85,
+      "foliage_density": 0.75,
+      "foliage_scale_m": 0.2
+    }
+  },
+  "spec_sha256": "85aaa6805d0b80a9855ea27f21f6b5036d652d48b51aca417f58cc1ddaa65fb0",
+  "finished_at": "2026-10-23T21:10:41.229667+00:00",
+  "duration_seconds": 2.423,
+  "error": {
+    "type": "RuntimeError",
+    "message": "Blender termin\u00f3 con c\u00f3digo 1; consultar blender.log: Traceback (most recent call last):\n  File \"/home/tao/repos/procedural/arboles/blender/generate_blueprint.py\", line 288, in <module>\n    generate(json.loads(Path(sys.argv[sys.argv.index('--') + 1]).read_text()))\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/tao/repos/procedural/arboles/blender/generate_blueprint.py\", line 237, in generate\n    assert max(errors) < .0001\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError\n\nError: script failed, file: '/home/tao/repos/procedural/arboles/blender/generate_blueprint.py', exiting.\nBlender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:12:34)\n\nBlender quit\n"
+  }
+}

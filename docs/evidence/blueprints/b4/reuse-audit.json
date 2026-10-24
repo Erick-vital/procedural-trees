@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "comparison": "Hashes seleccionados de B3 final, antes de B4",
+  "files": {
+    "src/treegen/blueprints.py": {
+      "expected_sha256": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+      "actual_sha256": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d"
+    },
+    "src/treegen/surface_evaluation.py": {
+      "expected_sha256": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "actual_sha256": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd"
+    },
+    "schemas/foliage-canopy.schema.json": {
+      "expected_sha256": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+      "actual_sha256": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65"
+    },
+    "blender/generate_blueprint.py": {
+      "expected_sha256": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "actual_sha256": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f"
+    },
+    "blender/mesh_contacts.py": {
+      "expected_sha256": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "actual_sha256": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8"
+    },
+    "blender/blueprint_surfaces.py": {
+      "expected_sha256": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "actual_sha256": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560"
+    },
+    "blender/verify_mesh_contacts.py": {
+      "expected_sha256": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+      "actual_sha256": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c"
+    },
+    "blender/verify_export_contacts.py": {
+      "expected_sha256": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+      "actual_sha256": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d"
+    },
+    "blueprints/roble_copa_ancha/1.2.0.json": {
+      "expected_sha256": "d2edf70b89405cfdf5a7c4bf3a867849421fde08456794b2a46f7814788386ba",
+      "actual_sha256": "d2edf70b89405cfdf5a7c4bf3a867849421fde08456794b2a46f7814788386ba"
+    },
+    "configs/verification/b3-v3.json": {
+      "expected_sha256": "271925af42fb12047f80af3f08b94a5f5de561b579fdac8e1c36f636416468f3",
+      "actual_sha256": "271925af42fb12047f80af3f08b94a5f5de561b579fdac8e1c36f636416468f3"
+    },
+    "scripts/verify_blueprint_controls.py": {
+      "expected_sha256": "ab8ad5010e4ce3a1fea26b461fbce3765876c0b0210d89ab46ced9a2207bab54",
+      "actual_sha256": "ab8ad5010e4ce3a1fea26b461fbce3765876c0b0210d89ab46ced9a2207bab54"
+    },
+    "scripts/blueprint_revision_evidence.py": {
+      "expected_sha256": "49df27ea1eeacc64bdfbd049bb54b6445f92e0e2d20880669ec4329bfba124c2",
+      "actual_sha256": "49df27ea1eeacc64bdfbd049bb54b6445f92e0e2d20880669ec4329bfba124c2"
+    },
+    "tests/test_blueprint_controls.py": {
+      "expected_sha256": "39fd5989210c5573b9037206495de669bbfea1c2ad4c759c0970202b3e8c1d42",
+      "actual_sha256": "39fd5989210c5573b9037206495de669bbfea1c2ad4c759c0970202b3e8c1d42"
+    },
+    "tests/test_surface_evaluation.py": {
+      "expected_sha256": "4de9efb4371164d1a5850e5b21799ca622662ac3c659239faca00d912ac098ef",
+      "actual_sha256": "4de9efb4371164d1a5850e5b21799ca622662ac3c659239faca00d912ac098ef"
+    },
+    "blueprints/roble_copa_ancha/1.0.0.json": {
+      "expected_sha256": "c43864c26748f38e72fe6a74e1d645783d1b5fd24fb86c2fdd28ce899c133f0c",
+      "actual_sha256": "c43864c26748f38e72fe6a74e1d645783d1b5fd24fb86c2fdd28ce899c133f0c"
+    },
+    "blueprints/roble_copa_ancha/1.1.0.json": {
+      "expected_sha256": "2e164488970e7eef6c621d13491a1fff9ce903a0dbb9f337030ecf0aac996e38",
+      "actual_sha256": "2e164488970e7eef6c621d13491a1fff9ce903a0dbb9f337030ecf0aac996e38"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "phase": "B4",
+  "version": "b4-matrix-1.0.0",
+  "frozen_on": "2026-10-23",
+  "objective": "docs/blueprints/b4-objetivo.md",
+  "concept": "docs/blueprints/columnar-concepto.svg",
+  "architecture_diagnostics": {
+    "max_width_height_ratio": 0.5
+  },
+  "cases": [
+    {
+      "id": "pilot",
+      "kind": "pilot",
+      "blueprint": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4100,
+          "canopy": 73
+        }
+      }
+    },
+    {
+      "id": "control-01",
+      "kind": "reserved",
+      "blueprint": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4101,
+          "canopy": 73
+        }
+      }
+    },
+    {
+      "id": "control-02",
+      "kind": "reserved",
+      "blueprint": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4102,
+          "canopy": 73
+        }
+      }
+    },
+    {
+      "id": "control-03",
+      "kind": "reserved",
+      "blueprint": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4103,
+          "canopy": 73
+        }
+      }
+    },
+    {
+      "id": "pilot-repeat",
+      "kind": "repeat",
+      "blueprint": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4100,
+          "canopy": 73
+        }
+      }
+    },
+    {
+      "id": "control-01-repeat",
+      "kind": "repeat",
+      "blueprint": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4101,
+          "canopy": 73
+        }
+      }
+    },
+    {
+      "id": "control-02-repeat",
+      "kind": "repeat",
+      "blueprint": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4102,
+          "canopy": 73
+        }
+      }
+    },
+    {
+      "id": "control-03-repeat",
+      "kind": "repeat",
+      "blueprint": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "arbol_copa_columnar",
+        "blueprint_version": "1.0.0",
+        "profile": "columna",
+        "seeds": {
+          "base": 4103,
+          "canopy": 73
+        }
+      }
+    },
+    {
+      "id": "first-reference",
+      "kind": "regression",
+      "blueprint": "blueprints/roble_copa_ancha/1.0.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.0.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17
+        }
+      }
+    },
+    {
+      "id": "wide-same-seed",
+      "kind": "comparison",
+      "blueprint": "blueprints/roble_copa_ancha/1.2.0.json",
+      "instance": {
+        "schema_version": "1.0",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "1.2.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 4100,
+          "canopy": 73
+        }
+      }
+    }
+  ]
+}

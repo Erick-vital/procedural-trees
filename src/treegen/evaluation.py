@@ -81,7 +81,23 @@ def validate_result(directory):
     manifest = json.loads((directory / 'manifest.json').read_text())
     if manifest['status'] != 'completed':
         raise ValueError('Trabajo no completado')
-    report = validate_glb(directory / 'tree.glb', manifest['spec'])
+    triangle_limit = 10000
+    if manifest.get('kind') == 'blueprint':
+        from .blueprints import resolve_blueprint
+        stored = manifest['resolved_blueprint']
+        resolved = resolve_blueprint(stored['blueprint_definition'], stored['instance_request'])
+        if stored != resolved or manifest['spec'] != resolved['base_spec']:
+            raise ValueError('Resolución de blueprint alterada o distinta de la especificación')
+        if manifest['canopy_spec'] != resolved['canopy_spec'] or manifest['base_seeds'] != resolved['base_seeds']:
+            raise ValueError('Entradas de generación distintas del blueprint resuelto')
+        triangle_limit = resolved['limits']['triangles']
+    report = validate_glb(directory / 'tree.glb', manifest['spec'], triangle_limit=triangle_limit)
+    if manifest.get('kind') == 'blueprint':
+        from .foliage_twigs_evaluation import inspect_twigs_glb
+        detailed = inspect_twigs_glb(directory / 'tree.glb', manifest['metrics'], triangle_limit=triangle_limit)
+        if manifest.get('export_validation') and manifest['export_validation'] != detailed:
+            raise ValueError('Firmas exportadas distintas de las registradas')
+        report = detailed
     metrics = manifest['metrics']
     if report['triangles'] != metrics['triangles'] or report['materials'] != metrics['triangles_by_material']:
         raise ValueError('GLB distinto de la malla evaluada')
@@ -108,7 +124,8 @@ def compare(left, right, output):
     left, right, output = Path(left).resolve(), Path(right).resolve(), Path(output).resolve()
     a, b = [json.loads((p / 'manifest.json').read_text()) for p in (left, right)]
     va, vb = validate_result(left), validate_result(right)
-    report = {'left': str(left), 'right': str(right), 'same_spec': a['spec_sha256'] == b['spec_sha256'],
+    report = {'left': str(left), 'right': str(right), 'same_spec': a['spec_sha256'] == b['spec_sha256']
+              and a.get('resolved_blueprint') == b.get('resolved_blueprint'),
               'same_environment': all(a.get(k) == b.get(k) for k in
                                       ('blender', 'blender_build', 'blender_python', 'runner_python', 'jsonschema_version')),
               'same_sources': a.get('sources_sha256') == b.get('sources_sha256'),

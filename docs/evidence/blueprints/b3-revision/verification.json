@@ -1,0 +1,2223 @@
+{
+  "phase": "B3",
+  "matrix_sha256": "c844779c4bbd8bdf275ebd6536831fa8aa6da68ff8eb3045693aec3ba1a3238f",
+  "blueprint_sha256": "990f515f87fc8dc6c787bb15deef71a4227ea3b591b4dde488efcea35f230b60",
+  "verifier_sha256": "ab8ad5010e4ce3a1fea26b461fbce3765876c0b0210d89ab46ced9a2207bab54",
+  "cases": {
+    "pilot": {
+      "status": "generated",
+      "kind": "reference",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            7.471208,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "5b8aeaa0488b61b94298f3533105531279c451119d28e5102ecbb0140bd2ed18"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 735,
+          "east": 788,
+          "south": 722,
+          "west": 703
+        },
+        "unweighted_quotas": {
+          "north": 66,
+          "east": 70,
+          "south": 65,
+          "west": 63
+        },
+        "group_quotas": {
+          "north": 66,
+          "east": 70,
+          "south": 65,
+          "west": 63
+        },
+        "connection_attempts": 294,
+        "rejected_connections": {
+          "short_or_long": 1,
+          "height": 29
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2948,
+        "interior_rejected": 5244,
+        "guide_area_m2_with_overlaps": 1325.4074193978959
+      },
+      "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "export_channels": {
+        "Oak_Bark": "b176c16a42ca899672d3dfe55345d37e221805ac0d077787f417f89fa5168e55",
+        "RF1_Leaf": "4746fb11b9c53ecb3e3f3ccc4ac481b1c02083a5eea64754731a638671d8852f",
+        "RF2_Twig": "ae23dd163e480afaa16d00ad68e1cb4ca0bae625b02de3ddda1a9999c251588b"
+      },
+      "duration_seconds": 3.795
+    },
+    "viejo-00": {
+      "status": "generated",
+      "kind": "age",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -6.119922,
+            -7.20857,
+            0.0
+          ],
+          [
+            7.324534,
+            7.496101,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "9c2b92f4198c9242bb5c42ccf44633127fc58704f0e51ecd1388a15692cfda2f"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 916,
+          "east": 665,
+          "south": 883,
+          "west": 656
+        },
+        "unweighted_quotas": {
+          "north": 78,
+          "east": 56,
+          "south": 75,
+          "west": 55
+        },
+        "group_quotas": {
+          "north": 78,
+          "east": 56,
+          "south": 75,
+          "west": 55
+        },
+        "connection_attempts": 308,
+        "rejected_connections": {
+          "short_or_long": 3,
+          "height": 41
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3120,
+        "interior_rejected": 5072,
+        "guide_area_m2_with_overlaps": 1350.682761681913
+      },
+      "glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+      "wood_sha256": "77a40cf75ce6b25b3f550b1b3d7576332889939114b1c014125808c77a93f604",
+      "export_channels": {
+        "Oak_Bark": "0a281ae8bbdb622829ab761e06ed89261bc0a7a7eb0a99f86d7f0e5d00ab2e4d",
+        "RF1_Leaf": "03f242d5b7600d701d56c99fb288f0c3b2e284769edf9dfc80a4dd1f7ec4e144",
+        "RF2_Twig": "11886b4d89afdfa5a625e01b9c9ac540d44648500b0c8ea127cec0181267d29a"
+      },
+      "duration_seconds": 3.987
+    },
+    "viejo-03": {
+      "status": "generated",
+      "kind": "age",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -7.119852,
+            -6.721575,
+            0.0
+          ],
+          [
+            7.443138,
+            6.54517,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "a14e1644df29bfd57a5a7aba05f59f2acc78f4375ba21cf2a18019994caf4394"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 562,
+          "east": 770,
+          "south": 631,
+          "west": 872
+        },
+        "unweighted_quotas": {
+          "north": 52,
+          "east": 72,
+          "south": 59,
+          "west": 81
+        },
+        "group_quotas": {
+          "north": 52,
+          "east": 72,
+          "south": 59,
+          "west": 81
+        },
+        "connection_attempts": 296,
+        "rejected_connections": {
+          "short_or_long": 2,
+          "height": 30
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2835,
+        "interior_rejected": 5357,
+        "guide_area_m2_with_overlaps": 1340.288283852595
+      },
+      "glb_sha256": "8645e921bd678e15d2345fdd5c71e526e4a1d35846a34ee7ff0010893bad0d28",
+      "wood_sha256": "8f47c1b5bec9a509d4c23c507fedab3866b09cf7390016e1aa24a2e069bc7d65",
+      "export_channels": {
+        "Oak_Bark": "6c9861755447c1984f3dde5eb95d0ca2645838373d23c8afb79aaf98c940be2f",
+        "RF1_Leaf": "d484b3683cb54d52bc5bc0b0b28b1827de477f6e0146f6fa88dc64b6612ba520",
+        "RF2_Twig": "8c920cd0214a5feaa03314e71c23997d36f4b8e23ff563fa8e8ff34ef84d9602"
+      },
+      "duration_seconds": 3.782
+    },
+    "adulto-00": {
+      "status": "generated",
+      "kind": "age",
+      "metrics": {
+        "vertices": 10176,
+        "triangles": 9644,
+        "bounds_blender": [
+          [
+            -6.612331,
+            -5.631225,
+            0.0
+          ],
+          [
+            7.463594,
+            6.454381,
+            10.0
+          ]
+        ],
+        "height_m": 10.0,
+        "triangles_by_material": {
+          "Oak_Bark": 4364,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "fb2738aacbc633c5946b11f08d9646a3ebea3966641b24433b98df6ebd9af608"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 1106,
+          "east": 1153,
+          "south": 1047,
+          "west": 1202
+        },
+        "unweighted_quotas": {
+          "north": 65,
+          "east": 68,
+          "south": 61,
+          "west": 70
+        },
+        "group_quotas": {
+          "north": 65,
+          "east": 68,
+          "south": 61,
+          "west": 70
+        },
+        "connection_attempts": 302,
+        "rejected_connections": {
+          "short_or_long": 2,
+          "height": 36
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 4508,
+        "interior_rejected": 3684,
+        "guide_area_m2_with_overlaps": 853.3589959527391
+      },
+      "glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+      "wood_sha256": "22f722376bce1f277182e6009c3f3e51f831889159a89cacce55fbde745b5ad5",
+      "export_channels": {
+        "Oak_Bark": "95bdd0a1fe3905e403e9b49453e879def6b9d7d20ed731c428e5913746272d5b",
+        "RF1_Leaf": "f0094851f8e3b60589f4138adb811793f9816354aada85ea6d60f94c13725531",
+        "RF2_Twig": "f62fe811956ef1319643fc7592fd9370db7d66f897cd5f914ce8ae1a9e4e74da"
+      },
+      "duration_seconds": 3.624
+    },
+    "joven-00": {
+      "status": "generated",
+      "kind": "age",
+      "metrics": {
+        "vertices": 8976,
+        "triangles": 7324,
+        "bounds_blender": [
+          [
+            -1.330054,
+            -1.738029,
+            0.0
+          ],
+          [
+            1.757569,
+            1.79667,
+            4.0
+          ]
+        ],
+        "height_m": 4.0,
+        "triangles_by_material": {
+          "Oak_Bark": 2044,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "50218d70daa52289353ea328ccaceed88e9718d5f3c4a1b285d060e142a520c2"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 995,
+          "east": 1117,
+          "south": 975,
+          "west": 892
+        },
+        "unweighted_quotas": {
+          "north": 66,
+          "east": 74,
+          "south": 65,
+          "west": 59
+        },
+        "group_quotas": {
+          "north": 66,
+          "east": 74,
+          "south": 65,
+          "west": 59
+        },
+        "connection_attempts": 743,
+        "rejected_connections": {
+          "short_or_long": 6,
+          "height": 473
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3979,
+        "interior_rejected": 4213,
+        "guide_area_m2_with_overlaps": 42.043180454519835
+      },
+      "glb_sha256": "a22a75158cfe0f009fc514f48a9292e5394e0f00c170a40300fdcd1752e80f71",
+      "wood_sha256": "704f1920c942d06ce2184b811dfc453fd6cb86abde022b35d44230959511e454",
+      "export_channels": {
+        "Oak_Bark": "6163ba6c3c33caea388545a80733f5c9071f4c6d15608e5662e11b6bd9253b20",
+        "RF1_Leaf": "918ea8f10e6c2e322c923a2cd806a0738664acc3649d60da55125ae511261980",
+        "RF2_Twig": "cde0e78d67092bd30c9b27eabc3187497c7abf59b29fbe2d0ccfe92ccdb073fe"
+      },
+      "duration_seconds": 2.98
+    },
+    "viejo-07": {
+      "status": "generated",
+      "kind": "reserved",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -7.179813,
+            -7.059627,
+            0.0
+          ],
+          [
+            6.927431,
+            5.963152,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "cd1c3b3b6f3953964d45ad01d01bae219e4d25e0e35b6f5966a81e5b781c0327"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 637,
+          "east": 877,
+          "south": 758,
+          "west": 620
+        },
+        "unweighted_quotas": {
+          "north": 58,
+          "east": 80,
+          "south": 69,
+          "west": 57
+        },
+        "group_quotas": {
+          "north": 58,
+          "east": 80,
+          "south": 69,
+          "west": 57
+        },
+        "connection_attempts": 300,
+        "rejected_connections": {
+          "short_or_long": 4,
+          "height": 32
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2892,
+        "interior_rejected": 5300,
+        "guide_area_m2_with_overlaps": 1337.2429296765215
+      },
+      "glb_sha256": "c1c7ad9799b238484794f4f4c6cc11d6c28f3f9a3fbfd7ac3267ce6f3cd1b317",
+      "wood_sha256": "4fa5f7f7683e2603b26101c2da936616edcd238d8de9d383f83cb0db7bfcb4e7",
+      "export_channels": {
+        "Oak_Bark": "f0a93455096b485e033d5cf93afac1190c60ad812c8fdda60b30dd097c7c78f0",
+        "RF1_Leaf": "92f568aa1ba8ac915ccea027170456db08d93115a8cc760fffa4b1c8389a70c8",
+        "RF2_Twig": "76489aab5a95639759b59597f782db48f89f4c966836c32637a84d0beb3756ef"
+      },
+      "duration_seconds": 3.81
+    },
+    "adulto-07": {
+      "status": "generated",
+      "kind": "reserved",
+      "metrics": {
+        "vertices": 10176,
+        "triangles": 9644,
+        "bounds_blender": [
+          [
+            -7.13274,
+            -7.101542,
+            0.0
+          ],
+          [
+            7.615393,
+            6.110034,
+            10.000001
+          ]
+        ],
+        "height_m": 10.000001,
+        "triangles_by_material": {
+          "Oak_Bark": 4364,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "aeea02fbe0e627a5d2a26392dc6102904566899840dc8f2a6ccff736d18f6315"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 1100,
+          "east": 1421,
+          "south": 999,
+          "west": 1051
+        },
+        "unweighted_quotas": {
+          "north": 63,
+          "east": 82,
+          "south": 58,
+          "west": 61
+        },
+        "group_quotas": {
+          "north": 63,
+          "east": 82,
+          "south": 58,
+          "west": 61
+        },
+        "connection_attempts": 298,
+        "rejected_connections": {
+          "short_or_long": 1,
+          "height": 33
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 4571,
+        "interior_rejected": 3621,
+        "guide_area_m2_with_overlaps": 844.9688536843821
+      },
+      "glb_sha256": "8f0a29591801492e9406ab5ac45a285d5e0ef7974e9fb67ea58ea0f8a653bc75",
+      "wood_sha256": "f230d354c795127eeb67d7619d067cf54d5e4a50698479e71efd26891241eb14",
+      "export_channels": {
+        "Oak_Bark": "e641a097f1f247f14fdecf1b1b170553abfb5060130eb7be403d5f9f74ab6ce9",
+        "RF1_Leaf": "b8a467a12839525dcaf951800086bc567cba9c1c3da6039f952885d2afe028b2",
+        "RF2_Twig": "466df4e38de9cc05672828ffd4fb0f2472fc318691b8ff92fd71bf03bea8a7a6"
+      },
+      "duration_seconds": 3.719
+    },
+    "joven-07": {
+      "status": "generated",
+      "kind": "reserved",
+      "metrics": {
+        "vertices": 8976,
+        "triangles": 7324,
+        "bounds_blender": [
+          [
+            -1.383955,
+            -1.733637,
+            0.0
+          ],
+          [
+            1.372668,
+            1.674073,
+            4.0
+          ]
+        ],
+        "height_m": 4.0,
+        "triangles_by_material": {
+          "Oak_Bark": 2044,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "6dc3ee29724e871a5c76d66ffddbd75c8faa53e87a66e8f3e682924921ff402e"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 1257,
+          "east": 916,
+          "south": 846,
+          "west": 756
+        },
+        "unweighted_quotas": {
+          "north": 88,
+          "east": 64,
+          "south": 59,
+          "west": 53
+        },
+        "group_quotas": {
+          "north": 88,
+          "east": 64,
+          "south": 59,
+          "west": 53
+        },
+        "connection_attempts": 675,
+        "rejected_connections": {
+          "short_or_long": 5,
+          "height": 406
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3775,
+        "interior_rejected": 4417,
+        "guide_area_m2_with_overlaps": 43.017153129315226
+      },
+      "glb_sha256": "1bd20c40b9f38fbb2a154e2ca9898b2044994e694413db63ffc448bad6bc6176",
+      "wood_sha256": "ce7b48279a67d7454aff5eb8702c4b8d6f21c5fef3a2ba56a887ffa533caa094",
+      "export_channels": {
+        "Oak_Bark": "efd1f68d7462b1a85f4e52fd875751570ac478463d94cd1fdd2ef65ffcb9e179",
+        "RF1_Leaf": "d6746d0b0fc178d0bf793e9752c44387eaf7976a8e9063d4935c0a569c33fbec",
+        "RF2_Twig": "3f68fdd62462f8726c07dd640a8dd6c0969138bdbae918c5c32f29ce0893d3f0"
+      },
+      "duration_seconds": 2.963
+    },
+    "viejo-00-repeat": {
+      "status": "generated",
+      "kind": "repeat",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -6.119922,
+            -7.20857,
+            0.0
+          ],
+          [
+            7.324534,
+            7.496101,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "9c2b92f4198c9242bb5c42ccf44633127fc58704f0e51ecd1388a15692cfda2f"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 916,
+          "east": 665,
+          "south": 883,
+          "west": 656
+        },
+        "unweighted_quotas": {
+          "north": 78,
+          "east": 56,
+          "south": 75,
+          "west": 55
+        },
+        "group_quotas": {
+          "north": 78,
+          "east": 56,
+          "south": 75,
+          "west": 55
+        },
+        "connection_attempts": 308,
+        "rejected_connections": {
+          "short_or_long": 3,
+          "height": 41
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3120,
+        "interior_rejected": 5072,
+        "guide_area_m2_with_overlaps": 1350.682761681913
+      },
+      "glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+      "wood_sha256": "77a40cf75ce6b25b3f550b1b3d7576332889939114b1c014125808c77a93f604",
+      "export_channels": {
+        "Oak_Bark": "0a281ae8bbdb622829ab761e06ed89261bc0a7a7eb0a99f86d7f0e5d00ab2e4d",
+        "RF1_Leaf": "03f242d5b7600d701d56c99fb288f0c3b2e284769edf9dfc80a4dd1f7ec4e144",
+        "RF2_Twig": "11886b4d89afdfa5a625e01b9c9ac540d44648500b0c8ea127cec0181267d29a"
+      },
+      "duration_seconds": 3.885
+    },
+    "adulto-00-repeat": {
+      "status": "generated",
+      "kind": "repeat",
+      "metrics": {
+        "vertices": 10176,
+        "triangles": 9644,
+        "bounds_blender": [
+          [
+            -6.612331,
+            -5.631225,
+            0.0
+          ],
+          [
+            7.463594,
+            6.454381,
+            10.0
+          ]
+        ],
+        "height_m": 10.0,
+        "triangles_by_material": {
+          "Oak_Bark": 4364,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "fb2738aacbc633c5946b11f08d9646a3ebea3966641b24433b98df6ebd9af608"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 1106,
+          "east": 1153,
+          "south": 1047,
+          "west": 1202
+        },
+        "unweighted_quotas": {
+          "north": 65,
+          "east": 68,
+          "south": 61,
+          "west": 70
+        },
+        "group_quotas": {
+          "north": 65,
+          "east": 68,
+          "south": 61,
+          "west": 70
+        },
+        "connection_attempts": 302,
+        "rejected_connections": {
+          "short_or_long": 2,
+          "height": 36
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 4508,
+        "interior_rejected": 3684,
+        "guide_area_m2_with_overlaps": 853.3589959527391
+      },
+      "glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+      "wood_sha256": "22f722376bce1f277182e6009c3f3e51f831889159a89cacce55fbde745b5ad5",
+      "export_channels": {
+        "Oak_Bark": "95bdd0a1fe3905e403e9b49453e879def6b9d7d20ed731c428e5913746272d5b",
+        "RF1_Leaf": "f0094851f8e3b60589f4138adb811793f9816354aada85ea6d60f94c13725531",
+        "RF2_Twig": "f62fe811956ef1319643fc7592fd9370db7d66f897cd5f914ce8ae1a9e4e74da"
+      },
+      "duration_seconds": 3.606
+    },
+    "joven-00-repeat": {
+      "status": "generated",
+      "kind": "repeat",
+      "metrics": {
+        "vertices": 8976,
+        "triangles": 7324,
+        "bounds_blender": [
+          [
+            -1.330054,
+            -1.738029,
+            0.0
+          ],
+          [
+            1.757569,
+            1.79667,
+            4.0
+          ]
+        ],
+        "height_m": 4.0,
+        "triangles_by_material": {
+          "Oak_Bark": 2044,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "50218d70daa52289353ea328ccaceed88e9718d5f3c4a1b285d060e142a520c2"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 995,
+          "east": 1117,
+          "south": 975,
+          "west": 892
+        },
+        "unweighted_quotas": {
+          "north": 66,
+          "east": 74,
+          "south": 65,
+          "west": 59
+        },
+        "group_quotas": {
+          "north": 66,
+          "east": 74,
+          "south": 65,
+          "west": 59
+        },
+        "connection_attempts": 743,
+        "rejected_connections": {
+          "short_or_long": 6,
+          "height": 473
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3979,
+        "interior_rejected": 4213,
+        "guide_area_m2_with_overlaps": 42.043180454519835
+      },
+      "glb_sha256": "a22a75158cfe0f009fc514f48a9292e5394e0f00c170a40300fdcd1752e80f71",
+      "wood_sha256": "704f1920c942d06ce2184b811dfc453fd6cb86abde022b35d44230959511e454",
+      "export_channels": {
+        "Oak_Bark": "6163ba6c3c33caea388545a80733f5c9071f4c6d15608e5662e11b6bd9253b20",
+        "RF1_Leaf": "918ea8f10e6c2e322c923a2cd806a0738664acc3649d60da55125ae511261980",
+        "RF2_Twig": "cde0e78d67092bd30c9b27eabc3187497c7abf59b29fbe2d0ccfe92ccdb073fe"
+      },
+      "duration_seconds": 3.027
+    },
+    "leaf-min": {
+      "status": "generated",
+      "kind": "control",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.083347,
+            -6.795166,
+            0.0
+          ],
+          [
+            7.017783,
+            5.831093,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "28773d06f4f267e5bd55277ebb832788e2553a24df91d655b563b868f92f745a"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 735,
+          "east": 788,
+          "south": 722,
+          "west": 703
+        },
+        "unweighted_quotas": {
+          "north": 66,
+          "east": 70,
+          "south": 65,
+          "west": 63
+        },
+        "group_quotas": {
+          "north": 66,
+          "east": 70,
+          "south": 65,
+          "west": 63
+        },
+        "connection_attempts": 294,
+        "rejected_connections": {
+          "short_or_long": 1,
+          "height": 29
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2948,
+        "interior_rejected": 5244,
+        "guide_area_m2_with_overlaps": 1325.4074193978959
+      },
+      "glb_sha256": "37cdfd479436e85ea056bdb557182bc65f4bd6876f14f1d41d998a56820a565b",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "export_channels": {
+        "Oak_Bark": "b176c16a42ca899672d3dfe55345d37e221805ac0d077787f417f89fa5168e55",
+        "RF1_Leaf": "b5e4092a5f579c5199009f0a07b38d4df12ce48d99ea4514b3dddbf81c709ace",
+        "RF2_Twig": "ae23dd163e480afaa16d00ad68e1cb4ca0bae625b02de3ddda1a9999c251588b"
+      },
+      "duration_seconds": 3.835
+    },
+    "groups-min": {
+      "status": "generated",
+      "kind": "control",
+      "metrics": {
+        "vertices": 3456,
+        "triangles": 5772,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -6.016532,
+            0.0
+          ],
+          [
+            6.566975,
+            6.324314,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 288,
+          "RF2_Twig": 192
+        },
+        "geometry_sha256": "238a65351404f3945495354daa1826c7a88ac4957a7c5996d898b870c80417ac"
+      },
+      "supports": 24,
+      "leaves": 144,
+      "selection": {
+        "samples_by_region": {
+          "north": 735,
+          "east": 788,
+          "south": 722,
+          "west": 703
+        },
+        "unweighted_quotas": {
+          "north": 6,
+          "east": 6,
+          "south": 6,
+          "west": 6
+        },
+        "group_quotas": {
+          "north": 6,
+          "east": 6,
+          "south": 6,
+          "west": 6
+        },
+        "connection_attempts": 32,
+        "rejected_connections": {
+          "short_or_long": 0,
+          "height": 8
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2948,
+        "interior_rejected": 5244,
+        "guide_area_m2_with_overlaps": 1325.4074193978959
+      },
+      "glb_sha256": "b968bbd1689c32458523d46d8d33349b65b4eac884698fd8652e5226f227ee1d",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "export_channels": {
+        "Oak_Bark": "b176c16a42ca899672d3dfe55345d37e221805ac0d077787f417f89fa5168e55",
+        "RF1_Leaf": "ee1a6c0cd8c8182405f1805ed5031e3086bfff827b91cfb53c385d209553cb3e",
+        "RF2_Twig": "e4203f19f3f764c1d15afc695e27cfa79c937f2681006f4af81e41b6690ebafb"
+      },
+      "duration_seconds": 2.458
+    },
+    "groups-max": {
+      "status": "generated",
+      "kind": "control",
+      "metrics": {
+        "vertices": 13536,
+        "triangles": 12492,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            7.717261,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 4320,
+          "RF2_Twig": 2880
+        },
+        "geometry_sha256": "5e9ad43f54a0b68a3be896f1807e132c66bfb8be4bacb4da00eb49b5d7bc6f50"
+      },
+      "supports": 360,
+      "leaves": 2160,
+      "selection": {
+        "samples_by_region": {
+          "north": 735,
+          "east": 788,
+          "south": 722,
+          "west": 703
+        },
+        "unweighted_quotas": {
+          "north": 90,
+          "east": 96,
+          "south": 88,
+          "west": 86
+        },
+        "group_quotas": {
+          "north": 90,
+          "east": 96,
+          "south": 88,
+          "west": 86
+        },
+        "connection_attempts": 403,
+        "rejected_connections": {
+          "short_or_long": 2,
+          "height": 41
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2948,
+        "interior_rejected": 5244,
+        "guide_area_m2_with_overlaps": 1325.4074193978959
+      },
+      "glb_sha256": "f721086e7f535eda8689f53d125d5656b02a4703c29a8e30c1eafb97ccb19891",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "export_channels": {
+        "Oak_Bark": "b176c16a42ca899672d3dfe55345d37e221805ac0d077787f417f89fa5168e55",
+        "RF1_Leaf": "dfd9fc5a9200b0ff0558c37dc3156b61419b27eca9a9cfbebecb5cd4ab474a8f",
+        "RF2_Twig": "4880b24292339b419d341bf953ba935adbda0f6b839cef570c8264d5dd2ffe66"
+      },
+      "duration_seconds": 4.393
+    },
+    "profile-min": {
+      "status": "generated",
+      "kind": "control",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -4.973111,
+            -6.387413,
+            0.0
+          ],
+          [
+            6.924283,
+            5.65162,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "a1e83c51eac8381c14335953bc3368351f53b3a2cd6f7a7e6fc23d58a5726e8e"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 758,
+          "east": 827,
+          "south": 737,
+          "west": 683
+        },
+        "unweighted_quotas": {
+          "north": 66,
+          "east": 73,
+          "south": 65,
+          "west": 60
+        },
+        "group_quotas": {
+          "north": 66,
+          "east": 73,
+          "south": 65,
+          "west": 60
+        },
+        "connection_attempts": 290,
+        "rejected_connections": {
+          "short_or_long": 3,
+          "height": 23
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3005,
+        "interior_rejected": 5187,
+        "guide_area_m2_with_overlaps": 1057.0592537043956
+      },
+      "glb_sha256": "585da097dd4ed77e926ed3268c808cc262f340300482c325a89caa5123a3b7cc",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "export_channels": {
+        "Oak_Bark": "b176c16a42ca899672d3dfe55345d37e221805ac0d077787f417f89fa5168e55",
+        "RF1_Leaf": "f2473b1e94727e1d04a953b67215faa220433751e0844a16ef3912bc8073fc2c",
+        "RF2_Twig": "cb3a743760f863adaacf11fd67b288a7c6dd94e44e96660e6ec28ba8e53f4ed4"
+      },
+      "duration_seconds": 3.843
+    },
+    "profile-max": {
+      "status": "generated",
+      "kind": "control",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -6.653384,
+            -8.199263,
+            0.0
+          ],
+          [
+            8.546474,
+            7.314995,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "06a51045f72db80082db065cbd3eb203f621dbad956e8851cb71f4d6bf616d47"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 708,
+          "east": 778,
+          "south": 732,
+          "west": 722
+        },
+        "unweighted_quotas": {
+          "north": 63,
+          "east": 70,
+          "south": 66,
+          "west": 65
+        },
+        "group_quotas": {
+          "north": 63,
+          "east": 70,
+          "south": 66,
+          "west": 65
+        },
+        "connection_attempts": 298,
+        "rejected_connections": {
+          "short_or_long": 0,
+          "height": 34
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2940,
+        "interior_rejected": 5252,
+        "guide_area_m2_with_overlaps": 1622.8935619815643
+      },
+      "glb_sha256": "5f274962167b1c138aff9b4506a2c91938e1f426171178773957a616d18ccc9f",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "export_channels": {
+        "Oak_Bark": "b176c16a42ca899672d3dfe55345d37e221805ac0d077787f417f89fa5168e55",
+        "RF1_Leaf": "019005231d593eeac8e076f4fccfb561beaae6915bf8251e802aa4f80bc83a06",
+        "RF2_Twig": "1ba47a27b2dacacd33b1469b6ad0504f947e54dbe23674510b29313effdd9b90"
+      },
+      "duration_seconds": 3.819
+    },
+    "east-zero": {
+      "status": "generated",
+      "kind": "control",
+      "metrics": {
+        "vertices": 8556,
+        "triangles": 9172,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            6.504336,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 2328,
+          "RF2_Twig": 1552
+        },
+        "geometry_sha256": "c396239e8c8aab518f5e414a54effb5c52f76a3b84dbe22f886f29d5ba630778"
+      },
+      "supports": 194,
+      "leaves": 1164,
+      "selection": {
+        "samples_by_region": {
+          "north": 735,
+          "east": 788,
+          "south": 722,
+          "west": 703
+        },
+        "unweighted_quotas": {
+          "north": 66,
+          "east": 70,
+          "south": 65,
+          "west": 63
+        },
+        "group_quotas": {
+          "north": 66,
+          "east": 0,
+          "south": 65,
+          "west": 63
+        },
+        "connection_attempts": 209,
+        "rejected_connections": {
+          "short_or_long": 1,
+          "height": 14
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2948,
+        "interior_rejected": 5244,
+        "guide_area_m2_with_overlaps": 1325.4074193978959
+      },
+      "glb_sha256": "f6a4a58dbf29fdc7b16b3a18e63573b479b5932de0f05cddffe339363e949bd2",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "export_channels": {
+        "Oak_Bark": "b176c16a42ca899672d3dfe55345d37e221805ac0d077787f417f89fa5168e55",
+        "RF1_Leaf": "6d52709b7c0bd4c6d240814a0e10dcda566b814e6bb7ef12c2beafa2422493b7",
+        "RF2_Twig": "b27506f0371448864eb79ef715b3d6815e5f2ce7a5217bf2cf5b8637e5d3676e"
+      },
+      "duration_seconds": 3.372
+    },
+    "canopy-seed": {
+      "status": "generated",
+      "kind": "control",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.798312,
+            -6.999547,
+            0.0
+          ],
+          [
+            7.559896,
+            6.731528,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "56b789758f3561d76c9035c4a34815ca9df244423764299cc579f86669a4eb7b"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 777,
+          "east": 863,
+          "south": 656,
+          "west": 735
+        },
+        "unweighted_quotas": {
+          "north": 68,
+          "east": 75,
+          "south": 57,
+          "west": 64
+        },
+        "group_quotas": {
+          "north": 68,
+          "east": 75,
+          "south": 57,
+          "west": 64
+        },
+        "connection_attempts": 311,
+        "rejected_connections": {
+          "short_or_long": 0,
+          "height": 47
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3031,
+        "interior_rejected": 5161,
+        "guide_area_m2_with_overlaps": 1325.4074193978959
+      },
+      "glb_sha256": "02b2a2e676d2fac7221e7d5338e421a27df42cd6452efea7fe2cd3ecab6a3f44",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "export_channels": {
+        "Oak_Bark": "b176c16a42ca899672d3dfe55345d37e221805ac0d077787f417f89fa5168e55",
+        "RF1_Leaf": "d7e5e1f81070606346f01f91edf1514c9a82dd7f0f65a1b32a3c4acb1b0a0d82",
+        "RF2_Twig": "97fe95aa2d5cf830c5f5277a6c31b65230e71a28a5e31eb2dab0908cda45f53c"
+      },
+      "duration_seconds": 3.827
+    },
+    "height-low-scale-high": {
+      "status": "generated",
+      "kind": "stress",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -2.09587,
+            -2.502377,
+            0.0
+          ],
+          [
+            2.531539,
+            2.486765,
+            2.0
+          ]
+        ],
+        "height_m": 2.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "3d65e2ea2aabb8706adb9ecc966c5c433b7236fc108f579bf849eaabc2b323b7"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 278,
+          "east": 280,
+          "south": 321,
+          "west": 295
+        },
+        "unweighted_quotas": {
+          "north": 63,
+          "east": 63,
+          "south": 72,
+          "west": 66
+        },
+        "group_quotas": {
+          "north": 63,
+          "east": 63,
+          "south": 72,
+          "west": 66
+        },
+        "connection_attempts": 875,
+        "rejected_connections": {
+          "short_or_long": 23,
+          "height": 588
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 1174,
+        "interior_rejected": 7018,
+        "guide_area_m2_with_overlaps": 180.69460562195323
+      },
+      "glb_sha256": "bfef35be7fcb22e4ef6d7c47418764b20cbb8086eb7d0a1c4d4c34ac666c1306",
+      "wood_sha256": "517d5b835f9714b2177c9a9f165cf88fb8b370d0fa2f67cb51e79dd9a60759ce",
+      "export_channels": {
+        "Oak_Bark": "bfda4ac5111066b0abc97c7ca90ee3a3c677f668084a27d199018b717238c4bd",
+        "RF1_Leaf": "8af283f4615e62c40b69fe8ed2a72fb1e21469324e2eb6cd691e0b7d07b3463b",
+        "RF2_Twig": "fafd2096ab654a035adce5b4c675ee509bb45e4995e8bc1a9b86a41835241eda"
+      },
+      "duration_seconds": 3.836
+    },
+    "height-high-scale-low": {
+      "status": "generated",
+      "kind": "stress",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -11.060473,
+            -13.873582,
+            0.0
+          ],
+          [
+            14.449936,
+            12.362612,
+            20.0
+          ]
+        ],
+        "height_m": 20.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "812d7a4b2982a75e84565e326cf07debd6024e8c57d94b9ab0cf208d2713df1c"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 2445,
+          "east": 1814,
+          "south": 2030,
+          "west": 1903
+        },
+        "unweighted_quotas": {
+          "north": 79,
+          "east": 59,
+          "south": 65,
+          "west": 61
+        },
+        "group_quotas": {
+          "north": 79,
+          "east": 59,
+          "south": 65,
+          "west": 61
+        },
+        "connection_attempts": 2021,
+        "rejected_connections": {
+          "short_or_long": 1727,
+          "height": 30
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 8192,
+        "interior_rejected": 0,
+        "guide_area_m2_with_overlaps": 31.370590751601164
+      },
+      "glb_sha256": "d356329db61618e3ba8a8f31bea7da93497c1b181a0453095035ee25735cb01f",
+      "wood_sha256": "19d3c35e0a490b760a954560bdce0e85c877e94a2ea87c4fcad52fd5a5724a7f",
+      "export_channels": {
+        "Oak_Bark": "2cc5a0054313ee83c2604145cc71803f417a658c366c3d77254480b6e36f235a",
+        "RF1_Leaf": "2022eb7c955cc0c048201326a5a25321aa6d5617bab6fd4a1b20fa289e7a5f54",
+        "RF2_Twig": "3bd12938661de7f2bb79775d0031f14b566a4a457c3ef95198f97328a0684e24"
+      },
+      "duration_seconds": 5.192
+    },
+    "empty-groups": {
+      "status": "rejected",
+      "kind": "control",
+      "error": "['overrides', 'canopy', 'group_count']: 0 is less than the minimum of 24"
+    },
+    "empty-regions": {
+      "status": "rejected",
+      "kind": "control",
+      "error": "RF3 requiere al menos una región ocupada"
+    },
+    "groups-outside-contract": {
+      "status": "rejected",
+      "kind": "control",
+      "error": "['overrides', 'canopy', 'group_count']: 361 is greater than the maximum of 360"
+    },
+    "height-high-scale-low-repeat": {
+      "status": "generated",
+      "kind": "repeat",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -11.060473,
+            -13.873582,
+            0.0
+          ],
+          [
+            14.449936,
+            12.362612,
+            20.0
+          ]
+        ],
+        "height_m": 20.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "812d7a4b2982a75e84565e326cf07debd6024e8c57d94b9ab0cf208d2713df1c"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 2445,
+          "east": 1814,
+          "south": 2030,
+          "west": 1903
+        },
+        "unweighted_quotas": {
+          "north": 79,
+          "east": 59,
+          "south": 65,
+          "west": 61
+        },
+        "group_quotas": {
+          "north": 79,
+          "east": 59,
+          "south": 65,
+          "west": 61
+        },
+        "connection_attempts": 2021,
+        "rejected_connections": {
+          "short_or_long": 1727,
+          "height": 30
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 8192,
+        "interior_rejected": 0,
+        "guide_area_m2_with_overlaps": 31.370590751601164
+      },
+      "glb_sha256": "d356329db61618e3ba8a8f31bea7da93497c1b181a0453095035ee25735cb01f",
+      "wood_sha256": "19d3c35e0a490b760a954560bdce0e85c877e94a2ea87c4fcad52fd5a5724a7f",
+      "export_channels": {
+        "Oak_Bark": "2cc5a0054313ee83c2604145cc71803f417a658c366c3d77254480b6e36f235a",
+        "RF1_Leaf": "2022eb7c955cc0c048201326a5a25321aa6d5617bab6fd4a1b20fa289e7a5f54",
+        "RF2_Twig": "3bd12938661de7f2bb79775d0031f14b566a4a457c3ef95198f97328a0684e24"
+      },
+      "duration_seconds": 5.11
+    },
+    "base-seed": {
+      "status": "generated",
+      "kind": "control",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -6.27342,
+            -7.211539,
+            0.0
+          ],
+          [
+            7.290836,
+            7.664815,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "32ffb50c43ab24dab077096d25c9e6c19a02bf2bf8592f7e5524991981bab65b"
+      },
+      "supports": 264,
+      "leaves": 1584,
+      "selection": {
+        "samples_by_region": {
+          "north": 784,
+          "east": 638,
+          "south": 868,
+          "west": 823
+        },
+        "unweighted_quotas": {
+          "north": 66,
+          "east": 54,
+          "south": 74,
+          "west": 70
+        },
+        "group_quotas": {
+          "north": 66,
+          "east": 54,
+          "south": 74,
+          "west": 70
+        },
+        "connection_attempts": 304,
+        "rejected_connections": {
+          "short_or_long": 1,
+          "height": 39
+        }
+      },
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3113,
+        "interior_rejected": 5079,
+        "guide_area_m2_with_overlaps": 1326.9363909081171
+      },
+      "glb_sha256": "6155f7b600d47c95a672ea57a04a60b425ea024b14ffe719cb82eea52543f63b",
+      "wood_sha256": "880a59288e70fae284b4548523b7b5853acfc2701d72a022b1f8138b13345c1d",
+      "export_channels": {
+        "Oak_Bark": "0fb1d5ef5d73e75ee393f92bae5b05aca8ddb924eec8d7299963da5417712663",
+        "RF1_Leaf": "92fe163a6f727d436c42b1e4c3be93ca9c4af20d9564f6558ac45968d86da804",
+        "RF2_Twig": "2357cf05bb57d6d7a818090048aad328fdb1a6279ced91b50cf26bcf025c8166"
+      },
+      "duration_seconds": 3.846
+    }
+  },
+  "checks": {
+    "pilot_glb_matches_b0": true,
+    "viejo-00-repeat": true,
+    "adulto-00-repeat": true,
+    "joven-00-repeat": true,
+    "leaf-min-base-unchanged": true,
+    "groups-min-base-unchanged": true,
+    "groups-max-base-unchanged": true,
+    "profile-min-base-unchanged": true,
+    "profile-max-base-unchanged": true,
+    "east-zero-base-unchanged": true,
+    "canopy-seed-base-unchanged": true,
+    "leaf-only-supports-and-twigs": true,
+    "leaf-only-roots-axes": true,
+    "canopy-seed-changes-layout": true,
+    "east-zero-keeps-other-supports": true,
+    "viejo-00-same-parameters": true,
+    "viejo-00-different-wood": true,
+    "viejo-03-same-parameters": true,
+    "viejo-03-different-wood": true,
+    "viejo-07-same-parameters": true,
+    "viejo-07-different-wood": true,
+    "pilot-previous-wood-identical": true,
+    "pilot-previous-glb-or-explicit-projection": true,
+    "pilot-same-counts": true,
+    "viejo-00-previous-wood-identical": true,
+    "viejo-00-previous-glb-or-explicit-projection": true,
+    "viejo-00-same-counts": true,
+    "viejo-03-previous-wood-identical": true,
+    "viejo-03-previous-glb-or-explicit-projection": true,
+    "viejo-03-same-counts": true,
+    "adulto-00-previous-wood-identical": true,
+    "adulto-00-previous-glb-or-explicit-projection": true,
+    "adulto-00-same-counts": true,
+    "joven-00-young-only-size": true,
+    "joven-00-young-roots-axes": true,
+    "joven-00-young-size-factor": true,
+    "viejo-07-previous-wood-identical": true,
+    "viejo-07-previous-glb-or-explicit-projection": true,
+    "viejo-07-same-counts": true,
+    "adulto-07-previous-wood-identical": true,
+    "adulto-07-previous-glb-or-explicit-projection": true,
+    "adulto-07-same-counts": true,
+    "joven-07-young-only-size": true,
+    "joven-07-young-roots-axes": true,
+    "joven-07-young-size-factor": true,
+    "viejo-00-repeat-previous-wood-identical": true,
+    "viejo-00-repeat-previous-glb-or-explicit-projection": true,
+    "viejo-00-repeat-same-counts": true,
+    "adulto-00-repeat-previous-wood-identical": true,
+    "adulto-00-repeat-previous-glb-or-explicit-projection": true,
+    "adulto-00-repeat-same-counts": true,
+    "joven-00-repeat-young-only-size": true,
+    "joven-00-repeat-young-roots-axes": true,
+    "joven-00-repeat-young-size-factor": true,
+    "leaf-min-previous-wood-identical": true,
+    "leaf-min-previous-glb-or-explicit-projection": true,
+    "leaf-min-same-counts": true,
+    "groups-min-previous-wood-identical": true,
+    "groups-min-previous-glb-or-explicit-projection": true,
+    "groups-min-same-counts": true,
+    "groups-max-previous-wood-identical": true,
+    "groups-max-previous-glb-or-explicit-projection": true,
+    "groups-max-same-counts": true,
+    "profile-min-previous-wood-identical": true,
+    "profile-min-previous-glb-or-explicit-projection": true,
+    "profile-min-same-counts": true,
+    "profile-max-previous-wood-identical": true,
+    "profile-max-previous-glb-or-explicit-projection": true,
+    "profile-max-same-counts": true,
+    "east-zero-previous-wood-identical": true,
+    "east-zero-previous-glb-or-explicit-projection": true,
+    "east-zero-same-counts": true,
+    "canopy-seed-previous-wood-identical": true,
+    "canopy-seed-previous-glb-or-explicit-projection": true,
+    "canopy-seed-same-counts": true,
+    "height-low-scale-high-previous-wood-identical": true,
+    "height-low-scale-high-previous-glb-or-explicit-projection": true,
+    "height-low-scale-high-same-counts": true,
+    "extreme-repeat": true,
+    "extreme-reference-unchanged": true,
+    "extreme-keeps-previous-failed-insertion": true,
+    "base-seed-changes-wood": true,
+    "base-seed-keeps-canopy-seed": true,
+    "all-export-contacts": true
+  },
+  "visual_requested": true,
+  "passed": true,
+  "previous_study": "artifacts/blueprints/b3-controls-02",
+  "export_contacts": {
+    "passed": true,
+    "assets": {
+      "pilot": {
+        "insertions": 264,
+        "max_error_m": 9.307643763366049e-05,
+        "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+        "tolerance_m": 0.0001
+      },
+      "viejo-00": {
+        "insertions": 264,
+        "max_error_m": 7.116703527377634e-05,
+        "glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+        "tolerance_m": 0.0001
+      },
+      "viejo-03": {
+        "insertions": 264,
+        "max_error_m": 5.2190015300884434e-05,
+        "glb_sha256": "8645e921bd678e15d2345fdd5c71e526e4a1d35846a34ee7ff0010893bad0d28",
+        "tolerance_m": 0.0001
+      },
+      "adulto-00": {
+        "insertions": 264,
+        "max_error_m": 2.0331191769173077e-05,
+        "glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+        "tolerance_m": 0.0001
+      },
+      "joven-00": {
+        "insertions": 264,
+        "max_error_m": 5.0613648615162825e-06,
+        "glb_sha256": "a22a75158cfe0f009fc514f48a9292e5394e0f00c170a40300fdcd1752e80f71",
+        "tolerance_m": 0.0001
+      },
+      "viejo-07": {
+        "insertions": 264,
+        "max_error_m": 7.265680385560444e-05,
+        "glb_sha256": "c1c7ad9799b238484794f4f4c6cc11d6c28f3f9a3fbfd7ac3267ce6f3cd1b317",
+        "tolerance_m": 0.0001
+      },
+      "adulto-07": {
+        "insertions": 264,
+        "max_error_m": 3.301709126003259e-05,
+        "glb_sha256": "8f0a29591801492e9406ab5ac45a285d5e0ef7974e9fb67ea58ea0f8a653bc75",
+        "tolerance_m": 0.0001
+      },
+      "joven-07": {
+        "insertions": 264,
+        "max_error_m": 3.5976228694820637e-06,
+        "glb_sha256": "1bd20c40b9f38fbb2a154e2ca9898b2044994e694413db63ffc448bad6bc6176",
+        "tolerance_m": 0.0001
+      },
+      "viejo-00-repeat": {
+        "insertions": 264,
+        "max_error_m": 7.116703527377634e-05,
+        "glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+        "tolerance_m": 0.0001
+      },
+      "adulto-00-repeat": {
+        "insertions": 264,
+        "max_error_m": 2.0331191769173077e-05,
+        "glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+        "tolerance_m": 0.0001
+      },
+      "joven-00-repeat": {
+        "insertions": 264,
+        "max_error_m": 5.0613648615162825e-06,
+        "glb_sha256": "a22a75158cfe0f009fc514f48a9292e5394e0f00c170a40300fdcd1752e80f71",
+        "tolerance_m": 0.0001
+      },
+      "leaf-min": {
+        "insertions": 264,
+        "max_error_m": 9.307643763366049e-05,
+        "glb_sha256": "37cdfd479436e85ea056bdb557182bc65f4bd6876f14f1d41d998a56820a565b",
+        "tolerance_m": 0.0001
+      },
+      "groups-min": {
+        "insertions": 24,
+        "max_error_m": 2.6039982398990444e-05,
+        "glb_sha256": "b968bbd1689c32458523d46d8d33349b65b4eac884698fd8652e5226f227ee1d",
+        "tolerance_m": 0.0001
+      },
+      "groups-max": {
+        "insertions": 360,
+        "max_error_m": 9.676473060218576e-05,
+        "glb_sha256": "f721086e7f535eda8689f53d125d5656b02a4703c29a8e30c1eafb97ccb19891",
+        "tolerance_m": 0.0001
+      },
+      "profile-min": {
+        "insertions": 264,
+        "max_error_m": 8.42640122588233e-05,
+        "glb_sha256": "585da097dd4ed77e926ed3268c808cc262f340300482c325a89caa5123a3b7cc",
+        "tolerance_m": 0.0001
+      },
+      "profile-max": {
+        "insertions": 264,
+        "max_error_m": 8.996045214146876e-05,
+        "glb_sha256": "5f274962167b1c138aff9b4506a2c91938e1f426171178773957a616d18ccc9f",
+        "tolerance_m": 0.0001
+      },
+      "east-zero": {
+        "insertions": 194,
+        "max_error_m": 4.192007741669855e-05,
+        "glb_sha256": "f6a4a58dbf29fdc7b16b3a18e63573b479b5932de0f05cddffe339363e949bd2",
+        "tolerance_m": 0.0001
+      },
+      "canopy-seed": {
+        "insertions": 264,
+        "max_error_m": 9.38305067695275e-05,
+        "glb_sha256": "02b2a2e676d2fac7221e7d5338e421a27df42cd6452efea7fe2cd3ecab6a3f44",
+        "tolerance_m": 0.0001
+      },
+      "height-low-scale-high": {
+        "insertions": 264,
+        "max_error_m": 9.804029628002031e-05,
+        "glb_sha256": "bfef35be7fcb22e4ef6d7c47418764b20cbb8086eb7d0a1c4d4c34ac666c1306",
+        "tolerance_m": 0.0001
+      },
+      "height-high-scale-low": {
+        "insertions": 264,
+        "max_error_m": 5.50084896789609e-05,
+        "glb_sha256": "d356329db61618e3ba8a8f31bea7da93497c1b181a0453095035ee25735cb01f",
+        "tolerance_m": 0.0001
+      },
+      "height-high-scale-low-repeat": {
+        "insertions": 264,
+        "max_error_m": 5.50084896789609e-05,
+        "glb_sha256": "d356329db61618e3ba8a8f31bea7da93497c1b181a0453095035ee25735cb01f",
+        "tolerance_m": 0.0001
+      },
+      "base-seed": {
+        "insertions": 264,
+        "max_error_m": 5.8216381529811216e-05,
+        "glb_sha256": "6155f7b600d47c95a672ea57a04a60b425ea024b14ffe719cb82eea52543f63b",
+        "tolerance_m": 0.0001
+      }
+    }
+  },
+  "godot": [
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    }
+  ],
+  "camera_protocol": {
+    "general_shared_ortho_scale": 47.38948162503153,
+    "global_bounds": [
+      [
+        -11.060473,
+        -13.873582,
+        0.0
+      ],
+      [
+        14.449936,
+        12.362612,
+        20.0
+      ]
+    ],
+    "scale_views": "Altura 50/25/10%; centro del árbol completo compartido con su madera."
+  },
+  "matrix_executed": true,
+  "case_counts": {
+    "generated": 22,
+    "rejected": 3
+  },
+  "study": "artifacts/blueprints/b3-controls-05",
+  "evidence_script_sha256": "bc6aa61a1fa16baa05e08f4d6ffc1b51a21f419639942fe58821aa291d0a0352",
+  "capture_count": 270,
+  "capture_files_sha256": {
+    "inspection/adulto-00/godot-below.png": "9e5526d26f16757bf252bf4d54d788417baab708c37bb283f7bf3e0b24eb8485",
+    "inspection/adulto-00/godot-far.png": "0d2bb9b71f54cd9b26660677a6f1980af2856006d17b8da2ba5a4c090cfaf367",
+    "inspection/adulto-00/godot-front.png": "c1d0d3dd8c659e77f329a317be85948032a01c3793b3933901216ab415e39973",
+    "inspection/adulto-00/godot-medium.png": "f555f5620f36841da3d9f57ed2c362d8758afedf37a1f97ca9b7fbf3b59ffa22",
+    "inspection/adulto-00/godot-near.png": "94278c40bb932e204a6fe4cc4ea56c33fe300f54ed44062b27a6c31081d29c4d",
+    "inspection/adulto-00/godot-perspective.png": "78f6f1b165c9237fd874fc1ced1479f44f7abd1030090a327b8fc031f3b7f504",
+    "inspection/adulto-00/godot-reverse.png": "48c84b63ae2007c45cada8b46c36011a0621ef14e00159798dd5f77da870cc5a",
+    "inspection/adulto-00/godot-side.png": "7ac36b7e706290c03f29b2fe3d729c0366d357fc9f52f7fa2cb7fd883a5f50c8",
+    "inspection/adulto-00/godot-top.png": "856536c323bf0250ed805a98f8395cf9ac5ca9c727003d5881158b3c0f6b2d89",
+    "inspection/adulto-00-wood/godot-below.png": "25a8e081acb7fa6af5d8ca6e657ac66a5fa0d827b70c11410c0c2fbc80f892e2",
+    "inspection/adulto-00-wood/godot-far.png": "5d06ebfe2460b642ffefc1e3d3c24449b065351833c35d6438fec39ae0ecfd0b",
+    "inspection/adulto-00-wood/godot-front.png": "4bed63f6e9a0ad3c723a721973bf4893ea87fdf642a5bc57683d80329c8a8425",
+    "inspection/adulto-00-wood/godot-medium.png": "64a4b4b6c46de286624769871922c6ba93e95b4211aec2bedebb0960f202ea8c",
+    "inspection/adulto-00-wood/godot-near.png": "c95ebebefba1591331856aa5ef7fa8ac3cbe9a923c40462cdf71416710229543",
+    "inspection/adulto-00-wood/godot-perspective.png": "a3bcc1845155d4c6b7886202a1d0d80902d64b4c29e8aad4680844631eb4ec02",
+    "inspection/adulto-00-wood/godot-reverse.png": "0c5064a97f9d2c27f59c98aec567dbc419a4abff936c2646149cf40b7b59fa43",
+    "inspection/adulto-00-wood/godot-side.png": "d20ffb4ccad9d4fad29ca0caec4f976a9bdfe244fe6a3e6fc57048fd0b6c5ab2",
+    "inspection/adulto-00-wood/godot-top.png": "fc4671ac428ea8f19e64a5751b9255e7c8ccf08b593890349a505ec7e991ffc7",
+    "inspection/adulto-07/godot-below.png": "631cced5cb4e7d2ea562912a2c5b92f0771f088ce3a7ef059804678aceeecf75",
+    "inspection/adulto-07/godot-far.png": "0e1a2425e511be1e50fe95f79b695fbd408401769ff0aa4c57d3e0bb222483c6",
+    "inspection/adulto-07/godot-front.png": "36c4ec0f212c9aa4baa2fca8b81c5293c68ab91e37b4e3836a47a435e03d602c",
+    "inspection/adulto-07/godot-medium.png": "9232a14cc02c7dd846f2a50fc86aa6bfedfb29691b59fc809051d8cc60cbf012",
+    "inspection/adulto-07/godot-near.png": "6b1e5ec90b5ae9e9d9050d79d3783dadf4d905d000083b81c991b4a8f012daf2",
+    "inspection/adulto-07/godot-perspective.png": "18fae883a3ca2172bd9de385d0af6ad1f74fa0504aa0ee19ec244871841af082",
+    "inspection/adulto-07/godot-reverse.png": "2d3405e9733f8ae2af2034f52e57223357dfe3958b32d067f865104d41bb609f",
+    "inspection/adulto-07/godot-side.png": "ac3a6aa525a021f33df0f358956aaecffc3751362df90a1ff54ebf0296ca3fd9",
+    "inspection/adulto-07/godot-top.png": "22163da9f7d462b10c5f5fae8fcdadb1c55c8b9128cd07388ad91039369c16b4",
+    "inspection/adulto-07-wood/godot-below.png": "4c33aadbed5c728e0d431dbfce6ae74c839f790c7db3c17349deffe4c63693fa",
+    "inspection/adulto-07-wood/godot-far.png": "aaea8df7f7e7cb32eac80fd872472530d916c6dbab267382c0849d48eccb6210",
+    "inspection/adulto-07-wood/godot-front.png": "36caf77ccd496bc5b7e76680c1eed7836e40d9b0a765be93ae0373b7382ac5a8",
+    "inspection/adulto-07-wood/godot-medium.png": "de43926155baed55b109e5cd04c53b8afe2e9283766fe590919f33d728016701",
+    "inspection/adulto-07-wood/godot-near.png": "87f5cca0c7fd2966ef84e7bf1c2d945fa2b7f59d6cf49ebd3f162a95540ca35d",
+    "inspection/adulto-07-wood/godot-perspective.png": "abfbd23a5c7c651c5aef09154fc8b1611ec80b7475b8386716a65d3f4249903f",
+    "inspection/adulto-07-wood/godot-reverse.png": "d62ba4df364ff72b7b34cc06fc7d7b0e99f8b7a4aadbdfaff29254669ce59a1c",
+    "inspection/adulto-07-wood/godot-side.png": "29dc297b0d2c65d9b0bafc5736087867bcbed28702d89ddbe45b84a87a192436",
+    "inspection/adulto-07-wood/godot-top.png": "915ec3f1d13de15ed425dbdf6d2536dc95e33fe66724afd2fdbc6a2b9aec2850",
+    "inspection/base-seed/godot-below.png": "f395a4c2fd768964aab60baf00cbcaa89687962de39461e91529af0a2284eec3",
+    "inspection/base-seed/godot-far.png": "d3d8305a6de858cb2c5b491b9e35a68d52868b60aa8d03045817fb615f63c04f",
+    "inspection/base-seed/godot-front.png": "2895ee979d677d336d0bc73b75ed832cd57ee8d672427aae72df9c060cbc7d8d",
+    "inspection/base-seed/godot-medium.png": "c3977b03005359a77d8e8b0bc6e062c054a258989293bd5101e23c0c8bde09c4",
+    "inspection/base-seed/godot-near.png": "05cbb075728485500b78231e4f2ac874a3fa8553a4f1ba1aadc1dcf2c51029f5",
+    "inspection/base-seed/godot-perspective.png": "a65077875764af1c851c7dd9bd17d33e5a05502e238cb06e55c4c158951d4d1a",
+    "inspection/base-seed/godot-reverse.png": "0679cf7b6d45d70655e42ce4c5e3f8a57e21989469889b8fded4c536c66dd1a9",
+    "inspection/base-seed/godot-side.png": "f55da3e13d763bd0aa214dce71006fefa690c004372436dd0b1ea6d285678281",
+    "inspection/base-seed/godot-top.png": "d667be2ce9f760c90f302791e52ff23ce6faba74973fb5ed10e6b4c50297624e",
+    "inspection/canopy-seed/godot-below.png": "51214606a5be189d59c71a2fa5a258c769f2e25cb0c37f14a04552f45c6d570a",
+    "inspection/canopy-seed/godot-far.png": "387dfe064c0e3542f15c90e56f7da06caaf1216aa98ece511a0f330308cfa2dd",
+    "inspection/canopy-seed/godot-front.png": "3dfa78261f65e57c270e327dd1d28c7f4a4d755aed999411ce1f0459065f2129",
+    "inspection/canopy-seed/godot-medium.png": "2e21aecb264df7d08c37b3f9ef7fb2cf87603b818853a68221a45671723988c4",
+    "inspection/canopy-seed/godot-near.png": "d45bb32802d835268d31ac47fd9e65dd954daf7ddfd57d19abe7a5799b866435",
+    "inspection/canopy-seed/godot-perspective.png": "5a22f2ff5bcfdffd3b6eb90c36fe5a3d5ada32243e49321c3a3efe648fbd1d0f",
+    "inspection/canopy-seed/godot-reverse.png": "7c9d16af277e8f121c913c9d2539a023af051a75aa38bc556d556736b72a42db",
+    "inspection/canopy-seed/godot-side.png": "9a1dc116f9ddb7073bd19a8b48152c34bb5032b7a18285dfc05124d717d1f541",
+    "inspection/canopy-seed/godot-top.png": "9c9ee38c69664d6155c50e329eb1d4ae3c2bb55f35932cfce9360750df0a83e5",
+    "inspection/east-zero/godot-below.png": "38e3beef437d626b96caaaa8e4041596cc8fd5cb288ada6d6ca0d160da3f7a75",
+    "inspection/east-zero/godot-far.png": "18fc5cb2a7918afa9d29eec43cfffea595b93e37cb98ce441bfa3ec6fc427f12",
+    "inspection/east-zero/godot-front.png": "6a5587480a461ece9b6bdf1b99e6a0943136f4d4f0b60cf28053f55c5ef4ea1b",
+    "inspection/east-zero/godot-medium.png": "7c84d7968271f7d245422bdb7358866f4d7728ffa4b60bb735bc83d3e69bc0e1",
+    "inspection/east-zero/godot-near.png": "360c7cc715c96d617a8a0fcaf7752e78dab3426822f8e8d358ec7823b887b445",
+    "inspection/east-zero/godot-perspective.png": "1d293e6fe9ac8070c2b24d7b836169927925934898d5db42241196abc1f7a9f8",
+    "inspection/east-zero/godot-reverse.png": "3bb0d847bb178c21ded053a5b4708bd280dd2ed36203fc981f461fe3a2c393a9",
+    "inspection/east-zero/godot-side.png": "199777f0188857b88b7e03a14f453542f3520ef0f02ce2dee17a200b24d5c984",
+    "inspection/east-zero/godot-top.png": "0668c1df40bc5ef423689a4f98459f4cb8e7cf5fd1f5f109761049e977666873",
+    "inspection/groups-max/godot-below.png": "7c27eaa02be259f747b96a019e0351532c086ef7d5bea74d6b17b7f65e6165e1",
+    "inspection/groups-max/godot-far.png": "816ac26d131e9121b8e3c9fc332cdd0006696ba13b6099b3a8fd3f7d931323b9",
+    "inspection/groups-max/godot-front.png": "a94bf34e7a6df6cece763b247091db1186cb77144d7579daee0578142b1e873b",
+    "inspection/groups-max/godot-medium.png": "b8dd05ec57c0efde6c7e7b56ef7ce1277d88b7980f3c91391f895b65cfe016d7",
+    "inspection/groups-max/godot-near.png": "47809b85b1b8b66b4aa95c76ddf44a603a344ff450726f0fa1542e338e95805d",
+    "inspection/groups-max/godot-perspective.png": "256ae4bddc4a07ef2d8462f45761d017f34ef6ef2ad4118ae036b566d9779299",
+    "inspection/groups-max/godot-reverse.png": "52cb094af635accb1115454632a01ba897f295640671fb022715d13270258367",
+    "inspection/groups-max/godot-side.png": "2f95df8d8f9b44dca491a1f5b8d66de8b5d6308763654ae497fed0337b1fdfcb",
+    "inspection/groups-max/godot-top.png": "1d6d55abbd79f4e3c02e717a7cd28eeef8dc911ee3228d9a9cff4bc58be3f480",
+    "inspection/groups-min/godot-below.png": "c720b0a2379cadefbf031467c3635b203397c413d702e2e50fdd48b1d9543335",
+    "inspection/groups-min/godot-far.png": "116d24fac69588c8e18f51594aea24b467a6e1ac24eac6fc4ad99fca99ac3b8c",
+    "inspection/groups-min/godot-front.png": "8c8b15dbf89bb12ab27ddf158a53e4f96a13568e90fde64e5ce919fe8d182457",
+    "inspection/groups-min/godot-medium.png": "7a0fa151f4fbeeca1b151534d63e83db66d783545c75c5a016a2314d59be1c96",
+    "inspection/groups-min/godot-near.png": "77ff39d48a2a0169b1ef311c1def66f0a660461a0a8d5186da7393dc5c084ce3",
+    "inspection/groups-min/godot-perspective.png": "dd0db4bf9720a981b7b578973a6b0602e8436a925a00f0cb0afcb7fe60be83fc",
+    "inspection/groups-min/godot-reverse.png": "b0c272785266de7575951db2b6ec5acabe938ef1a52b120efcdc3360190fa69a",
+    "inspection/groups-min/godot-side.png": "328f2eb0d902477e3af96d6b7e5de8015491717c390190f9e3ab5a4ec1c706e3",
+    "inspection/groups-min/godot-top.png": "b9cdf7578da095f855ccb554ca7d9fbc60fce378ed0e6c0a23c5d495f62bd2b5",
+    "inspection/height-high-scale-low/godot-below.png": "6572294a73e1eb02e18a19beb7655d548148bf6b683c35df562065230d2998f3",
+    "inspection/height-high-scale-low/godot-far.png": "1d97ae49dfbfc27a72ff8e0735e5c68ed982827e33053e12313ceff0b0e5a0f3",
+    "inspection/height-high-scale-low/godot-front.png": "129bcc6dd3bcce96d16b43dfef194ba5980f5cf7803a896627494b3b802aba32",
+    "inspection/height-high-scale-low/godot-medium.png": "5ca64acc52de10d1a6c45a4f272d0c79c6651282741c6ade5f11ef2d5d9f2e32",
+    "inspection/height-high-scale-low/godot-near.png": "917a7631c9de6a4d36fc384b1d5f7f41895065683f9c90bfb86b936f04c0b771",
+    "inspection/height-high-scale-low/godot-perspective.png": "721f109c17d825cc45c3f87ddf479f70bacfcdfab343b9bf4db0b82dc6f2b99f",
+    "inspection/height-high-scale-low/godot-reverse.png": "8c7668a3f0b45cd1c4392cbea5969f0b6e8895ef677be35cfb819be4d6b4675c",
+    "inspection/height-high-scale-low/godot-side.png": "60cbd94476e9bbda57993dd21eeaf8e6a175ae6a5e9ee83d42bd2d48cc75a8aa",
+    "inspection/height-high-scale-low/godot-top.png": "2582bb1a0290924b6ed93b70a7ceb1683f06973edbc26d2ebc4756d2440a9b39",
+    "inspection/height-high-scale-low-wood/godot-below.png": "27f461da2388a5a016670881f7b07057faefd70bea7335a61643c2f408e24538",
+    "inspection/height-high-scale-low-wood/godot-far.png": "39d6b21ebf59c8e5569636cb472356cb4f6a328c82db333b0cd638923b76fc1e",
+    "inspection/height-high-scale-low-wood/godot-front.png": "dafc8f72b4133d7be63dd1f70772c952b8c9fc80deb3d46a491dcb3034898610",
+    "inspection/height-high-scale-low-wood/godot-medium.png": "92c120c5e83158fdbb107d922e48025d4f4faa7d30608a247a9f52f0e0ce598b",
+    "inspection/height-high-scale-low-wood/godot-near.png": "e630fb3a60761a17f60901a16724c281d95e783bf3b18da2b5bf3b554136a967",
+    "inspection/height-high-scale-low-wood/godot-perspective.png": "cca4c6230321f083667569be84750aa477bb5d9cf6b28778a7f52dc87dfbb008",
+    "inspection/height-high-scale-low-wood/godot-reverse.png": "945932ac7c53c199306f31dc6289d3c8ec8c2c490a98128d0e8f7dd37499ee24",
+    "inspection/height-high-scale-low-wood/godot-side.png": "b1003efdf4e0a26bd2f493fd8e48c833aae7d1869891abe6290250739de97186",
+    "inspection/height-high-scale-low-wood/godot-top.png": "95f619bf27b898f553b6bd5d94ec97acb6f8d5f2fc1e995c57915c5cec949566",
+    "inspection/height-low-scale-high/godot-below.png": "03a17edbb02f04f406902a3791b98ce25a59aef6a396222ad782a22643ebd8c9",
+    "inspection/height-low-scale-high/godot-far.png": "d5e8747d9316f8a7ed1b451dd4a8c44b0779484b194e2829430cbbaf4b630a06",
+    "inspection/height-low-scale-high/godot-front.png": "7167b93427c3549c8f850cbfda02216bfaaf214d4bebe4694fc42ad8cbf6a910",
+    "inspection/height-low-scale-high/godot-medium.png": "d2ab7d686ca74fc12918eff18be995f4f543c7610fcc4802851f0ff2fdb3743c",
+    "inspection/height-low-scale-high/godot-near.png": "1e658466d62bd5c16ed70a26e4ffb713e22f3681f044b092955e1d514052a618",
+    "inspection/height-low-scale-high/godot-perspective.png": "9d4c794e1e900828c65f13d6ff56e67f099f06468b2c114a7765156908ab86e6",
+    "inspection/height-low-scale-high/godot-reverse.png": "0626bba6f19a70004baa37d047f2866ae1870eb5f2b62c00280118de7ced4833",
+    "inspection/height-low-scale-high/godot-side.png": "44b7b66534428d1c500724ab891a1b6d7df48e88c855a63773b56e536f5d15c6",
+    "inspection/height-low-scale-high/godot-top.png": "74ad11f590cec71691a0235694729b7e373d013aff60c63f299c0502ca9ed6d8",
+    "inspection/height-low-scale-high-wood/godot-below.png": "8625264cad057a305b1511afb4d7dd3e2c1d4830d6eb79682328e516f8b4a5cb",
+    "inspection/height-low-scale-high-wood/godot-far.png": "3aa70776d026f202258aa25e11581bc1ebf07a42b0c20c1031a8bd5289b3ae17",
+    "inspection/height-low-scale-high-wood/godot-front.png": "adc2d9bb7e83b9134777ffb153249c7ca5bb666e266ad523619c084f2f09920b",
+    "inspection/height-low-scale-high-wood/godot-medium.png": "9be4423ef1320c0aba20a0229ca179dfc4f857411f59b2d0d31dd2f70e9e7c12",
+    "inspection/height-low-scale-high-wood/godot-near.png": "9c90d4cf4c437262f56fef05634168f90a5f3ab9708c033ef13d6c93f8286040",
+    "inspection/height-low-scale-high-wood/godot-perspective.png": "6f42bb5cb68b26397e3011c75581400f682adf77ee8338361f54cf82a0af35d6",
+    "inspection/height-low-scale-high-wood/godot-reverse.png": "55a2457cadf1e098460d1e47062e8c33b24c82fa46e89e78de0989957fa1da37",
+    "inspection/height-low-scale-high-wood/godot-side.png": "de6084c8d9c67291ee14cf5c34793bb7d51804fbbae015b0fea09cff1be2bb91",
+    "inspection/height-low-scale-high-wood/godot-top.png": "7a4445fa8eb467b0a56ce6479dd053f208836be33036673f92c2290e2a233f6b",
+    "inspection/joven-00/godot-below.png": "57f81de5b7f98b8ceea3d76e1c3412a25de9370189a9a4c75d83d89f2dc7464f",
+    "inspection/joven-00/godot-far.png": "974d82b4d9d7976b33e85fe83c7ef22a386fd1f4ad642a499359aeaeded251ef",
+    "inspection/joven-00/godot-front.png": "d98b18f16182cdb29700fb75b1caa529cd1338180ff72b4c600dc9122d0b89f2",
+    "inspection/joven-00/godot-medium.png": "a6f1d3c604db3eb95d534e36f41e707fc3f059c2f36dda69757da4e28d8f2af2",
+    "inspection/joven-00/godot-near.png": "14b8ce5c086162ebe461f0b307708ef6d9651923fe59fef814edc992a401d310",
+    "inspection/joven-00/godot-perspective.png": "c3b66d10dcbd77d1158fd2fa9b2dbfb08528e7354e8d9de4da1f1ecd75cb5fd6",
+    "inspection/joven-00/godot-reverse.png": "528168daf99144e5615db648c9d024c1a6b8d73123142c21a01ec56c538a0a09",
+    "inspection/joven-00/godot-side.png": "873d9020bc7abcb1738990dd0a58d100a3c4cf3f7d4678e008976f5b3b3b16ca",
+    "inspection/joven-00/godot-top.png": "dc59975b41e4dcce461d93b1cebfd476b2f6105a60a256478c1195a51e7bbf7e",
+    "inspection/joven-00-before/godot-below.png": "4715f922ada26371b4f5fea0f0ea34c19a8e9075149154712d1b2050bf96839e",
+    "inspection/joven-00-before/godot-far.png": "5b653c5b8519e93b1effaac84dcbe80859e6b78e46b6d5710f249b22415580cd",
+    "inspection/joven-00-before/godot-front.png": "f542b0ee0d7e215719eefd36c29d1583940088367b8f6978cb4573092fc6224e",
+    "inspection/joven-00-before/godot-medium.png": "dd9abe93a14cad8f37aa8edd8daa47f970a9b929cb5c30ce811d75a34d7eac95",
+    "inspection/joven-00-before/godot-near.png": "7b65aad58d672ce72fac61adae83a09ca62ede444388a8cddf0f916c34039a5f",
+    "inspection/joven-00-before/godot-perspective.png": "6ccdcc4ed18db1bd9efefd5b9a6b08bca9f26de2f1c20c2331241fa3b913f375",
+    "inspection/joven-00-before/godot-reverse.png": "1c80eca907e1571510fb354b0681c53040f62ead082ab18215bde3a2ef7ce017",
+    "inspection/joven-00-before/godot-side.png": "411fbb3b9d1919212424bdb4b7f5d728f155b9b85e80f5e03e2da9e9004443d7",
+    "inspection/joven-00-before/godot-top.png": "1487399a3a453beb02e986f2fccf07fff25970c0cb9860089bf2ea0e1f1fe048",
+    "inspection/joven-00-wood/godot-below.png": "e2c8889117ae308a98cd6274005ceb6b324a7ad3dedd31d3cd5726083c11f064",
+    "inspection/joven-00-wood/godot-far.png": "732e9357f548a3e856a695f11f5ce299bfc073b08d2b015de70740666707b2f1",
+    "inspection/joven-00-wood/godot-front.png": "9f64f4fb62e649f02b0ee4a6871462390c7446e8b800eb314c7fd7d59912a28c",
+    "inspection/joven-00-wood/godot-medium.png": "3e235385ff090c9a27f496fc8fa9ba008877b309b7a4e28e9d2cfdc4995c5254",
+    "inspection/joven-00-wood/godot-near.png": "2fbdfcad4653b6c15253552c096e84046dc87622d3689810c70bb6c28e487575",
+    "inspection/joven-00-wood/godot-perspective.png": "96780d5a987c4577f9a373af88e592016569595fc4c725a4b2d4155e05873db2",
+    "inspection/joven-00-wood/godot-reverse.png": "47bdfc70b486f37a4b46c542b20735fb829bc562a1b06d4c6c21d212ffb22996",
+    "inspection/joven-00-wood/godot-side.png": "4fca3c007833923e01ad74d38b23de5f41d52623592f60657b924f5531346c60",
+    "inspection/joven-00-wood/godot-top.png": "ad8505a8accde2bd0d3228c2790f18031acd4eab46a9c5b6076af8b178a23d25",
+    "inspection/joven-07/godot-below.png": "ebb70bda1587c5b12a3e54a05d37a326f90b6dd15c2696ac86dd7426d4812ad4",
+    "inspection/joven-07/godot-far.png": "cdd07371d3c63d50c1da1c3acab4a429deb9595969a5a22a3167415819518b5b",
+    "inspection/joven-07/godot-front.png": "9822d435c5719ed53df8f5b35cdb92c343686dc875aa542d66d6be5985c9d3fc",
+    "inspection/joven-07/godot-medium.png": "c1cca02495b05d237aecf38ab3b2e6b095cebef0c1d4b88729c311bc5208442b",
+    "inspection/joven-07/godot-near.png": "8ef673fea820c2a7e0fc142cfdf6154dd2d5c61cc220e48fb2bd8247a40ad077",
+    "inspection/joven-07/godot-perspective.png": "ab2dfd20ea79085d509948f9d7adcd194f3b451a24cbda636c806f1289452f7a",
+    "inspection/joven-07/godot-reverse.png": "9a40bd6e04c5e9214f461749b1026b567724945236913307515acf6e433871ba",
+    "inspection/joven-07/godot-side.png": "28b38796c3253ce693969edb0bbff11bc44e0916ac775e609b0110e8885a4c68",
+    "inspection/joven-07/godot-top.png": "f3694b90e85acaf7ae343622a687a0af05e285b397ec79db17e3314db53f5df1",
+    "inspection/joven-07-before/godot-below.png": "cb31b6b8674cfd2f38164afd04872f602a4e6dc05d25cade857afba0e2c1933a",
+    "inspection/joven-07-before/godot-far.png": "a6cd646e8a32af27647539e8c8861fe8dcc76f18c59e9b9e73ebd55ad9f78c72",
+    "inspection/joven-07-before/godot-front.png": "54ac97786d0c7d4238de89901d514535b966f269e31c99399daed19848fe3dcd",
+    "inspection/joven-07-before/godot-medium.png": "aba1e467e1048d145fde1f9a14e272494bc2d24ed7e6c127a6700695c882bd10",
+    "inspection/joven-07-before/godot-near.png": "6e2c20d6b901ff3f90caed4b1cbcdae6217201815e1db7c6b820a4d38f362d1e",
+    "inspection/joven-07-before/godot-perspective.png": "61b3a7df3020c4f24ef5dd767a637f426e0ae4f6773ceed5308e9a76fb874257",
+    "inspection/joven-07-before/godot-reverse.png": "553540ca1c7740ff7b015bb481c868c2f28e11eb9a5a1ba0bccdce513982763d",
+    "inspection/joven-07-before/godot-side.png": "3707dfddd26d8c04f69398a12623223860e6500c267a3006af9bf80791b19d2e",
+    "inspection/joven-07-before/godot-top.png": "1550ca9ef7539da9e7062e6140ab6d2ac17177d420601864ca535f251a2513b2",
+    "inspection/joven-07-wood/godot-below.png": "bf113b870af1d6b3119e43511d9acb91d563ea1ff2c65e30aca5e465cba96d30",
+    "inspection/joven-07-wood/godot-far.png": "1961ad89fdd44d9dff7c75a4421fbc1480d888e1c3a608d6d5b50789cc8b3159",
+    "inspection/joven-07-wood/godot-front.png": "daf8b92dad734eda6ff37d7530de316641f7bb49887fcbaabfccba40b73fc01d",
+    "inspection/joven-07-wood/godot-medium.png": "a67a8019672150972db4f1cfb2026162c93fcdce8e85808fd89e01082c311155",
+    "inspection/joven-07-wood/godot-near.png": "4ec329d68c49cb68270a13144dd82b3c6ffbcb9f7cc7080e3bd46e0eb7b9daf6",
+    "inspection/joven-07-wood/godot-perspective.png": "5a4ebbd2eb112f818efc0d348d7a7b7b0f86c5c1948f70062388d8337cf60ae4",
+    "inspection/joven-07-wood/godot-reverse.png": "c2dfb2336cca1d90390d5dc5cc8b19775ed53c087f57fba6cb17c0e538dfebd5",
+    "inspection/joven-07-wood/godot-side.png": "5a7c95835e4a2111ef25799c16365c1b93dc184062a229f4c61cfe586d3cd0b4",
+    "inspection/joven-07-wood/godot-top.png": "9ad2eea599c76c7308657eb7d088f9869e97b5bc9df097b70bde2b449d336a58",
+    "inspection/leaf-min/godot-below.png": "17765728e88b44edf71d27f3b77d80fba2cc6be5db8213e746326ecf5f12ea39",
+    "inspection/leaf-min/godot-far.png": "31076f22e91617e132fb516214c18dae0df09500770789fc06f888e003395ee2",
+    "inspection/leaf-min/godot-front.png": "51d7d924b9bfe76845f2d09d59dc05727890a7859ff3aca95e24a0773ff87be5",
+    "inspection/leaf-min/godot-medium.png": "58dadd59d06b198b5d15f09431e4c96dde7fcbcb32754c52129a422945c19f03",
+    "inspection/leaf-min/godot-near.png": "a9a6b76ea920e2db3c09ec55daa318a1e663bb8cec88168875e6d5297bedc972",
+    "inspection/leaf-min/godot-perspective.png": "af3aa0e5412301a645cbf0b51da2c7549f5a4d469234ef42180cf12aa46083b6",
+    "inspection/leaf-min/godot-reverse.png": "207c65f22616b4bda0fb6368b4333b358128464eb6cb415644608cb49afea096",
+    "inspection/leaf-min/godot-side.png": "636d9a3d596d40d1fb0d0d387474b87a8e237375c2612674954df49287bd7e11",
+    "inspection/leaf-min/godot-top.png": "bad5b3a4f827dfef83f496c63b4527ae1b6b72134e0e69944fa63f5804aa1bc0",
+    "inspection/pilot/godot-below.png": "44d8b601e8a3d0bd9fa0ac381db5208d16f94fc8bcc80da1069bb5ec28df11dd",
+    "inspection/pilot/godot-far.png": "4678ca1aad45cb57c2caca0757fc479378061c40cf70699be4108fea71aa1020",
+    "inspection/pilot/godot-front.png": "dc41492abc6dff3b613a173c3ce5b9319e4cf812e21ad283398c1492b5be3a53",
+    "inspection/pilot/godot-medium.png": "ea90900c0e25fae9e27c4d9301a568e998b15873b98a40a8e610388b8cd6e9fa",
+    "inspection/pilot/godot-near.png": "a31b1cc43bdebdf65b9456b0a3ca616a59d75d8466175e205a157f136afb1a33",
+    "inspection/pilot/godot-perspective.png": "da565a2e72c41fc29c2c3a984b6553edfd182be53781d904a886a8cd51894e15",
+    "inspection/pilot/godot-reverse.png": "46ec3ba349d30a44ac6d5d3af43984a26430d60c1ae92d43253f291399fcab37",
+    "inspection/pilot/godot-side.png": "c38a97398aa5fd36040785c037950ddc67cbe270c8025a1d17311390872a5265",
+    "inspection/pilot/godot-top.png": "2393b04c4bd77b1a74dc90f47c347d121744631370e0d1abb22eeebfb377d9b5",
+    "inspection/pilot-wood/godot-below.png": "c0a14780fbefeb77786e71f53d44ea4822687c04fd51a4ee21bd345755e6a8b5",
+    "inspection/pilot-wood/godot-far.png": "829b7e034150c0ac61788a3afb96b9f5d91d5b7767639abd26b2eecf57302486",
+    "inspection/pilot-wood/godot-front.png": "4a7289c90737943f88ae8676b62fcc8c50e80f3ef8565bc8f826c71e4a7ebb31",
+    "inspection/pilot-wood/godot-medium.png": "43039309b5ce7cb62112850690634f4db0929288e0944f1ce7565e7643cff692",
+    "inspection/pilot-wood/godot-near.png": "7d7df2da8f691289c295fab956a60f5afa5af53da2f48f436a198098acbba0bd",
+    "inspection/pilot-wood/godot-perspective.png": "0e93439007a4ab5555791c958d1a3e8e5df79600d16b019a7cc20125b047f615",
+    "inspection/pilot-wood/godot-reverse.png": "f811d523622a91357b279afada39895fcff217c495f00d2332047b9b7d09d6ad",
+    "inspection/pilot-wood/godot-side.png": "427fb8e3cff7cb65ae2506a29afda139db9d07aa3ac6d4b06ca1042b8eccd626",
+    "inspection/pilot-wood/godot-top.png": "0a119fb9095f7a4587f6bb4860861bfcb4e35d6e3638b8e7c771e49aa463c2a9",
+    "inspection/profile-max/godot-below.png": "236cabb8c17c0cbba32d42976f060bba839853ffcfb011a9a23eb2a00d01e266",
+    "inspection/profile-max/godot-far.png": "91b6ff45a1be87bb0cf3291b2b38f80201e100492411bbbe1406e3e2a5b988d1",
+    "inspection/profile-max/godot-front.png": "d484f86bb4205e8fb59971e8dda5eb096c4f72008ca8a9cffae20bc50165c9ac",
+    "inspection/profile-max/godot-medium.png": "ce33ea5ed2ddfd74c4b90538e459954480bfbe3bfdb89e42c2e8974ab2c87e61",
+    "inspection/profile-max/godot-near.png": "1a032bff9eb4b4eae394dce49a245aeb6b697d9aec07f2504022ea164a81b517",
+    "inspection/profile-max/godot-perspective.png": "f26d41b1c7474c4748d8cc7e0f46296bdd04a314a709ceb40d66becc6f5c3f02",
+    "inspection/profile-max/godot-reverse.png": "184f44a54e597e3c0541bee51831614ae8c4167d5842b43df3180500d1cea9ad",
+    "inspection/profile-max/godot-side.png": "d5d08f4f68eb96166a0cb01cf0cdee6e158a1bea3cabbc0a3d9811b197e8da10",
+    "inspection/profile-max/godot-top.png": "217896a60a8fd84a7ce64e83d75920b3106472ba0db4f22d90951107355315ac",
+    "inspection/profile-min/godot-below.png": "9919defe5674fbe89f2f5f47ddbc7af6fe79cdd9ac16c8f01cb8072454c000f8",
+    "inspection/profile-min/godot-far.png": "c41b5a24eee13884d0c2251e8317f2c6752f1acf98a64c580418717c8ec98f3b",
+    "inspection/profile-min/godot-front.png": "ef188349830bd56609cc71a91abdd774f425290bf6c99b46cd86ab5e0da8c7f7",
+    "inspection/profile-min/godot-medium.png": "37d7f25084861f57a458bd23d9de49a4d655bfc7663f14196adceb358c3e4a09",
+    "inspection/profile-min/godot-near.png": "dd2312a99f0bc2272d7453c7f104a68aba96a718763e40672f5a3f2d3b523199",
+    "inspection/profile-min/godot-perspective.png": "57a7ba13523eb8f8505b103457153698672739d8314f1c52f804a84c77510578",
+    "inspection/profile-min/godot-reverse.png": "d85b8e0b886d6831390827ea6bde0aa65116280f4fd892250d4092905d40af88",
+    "inspection/profile-min/godot-side.png": "6c2f8212a573d9000d18574f4ec595f4d433fdfecad6490627955c301f0d37ff",
+    "inspection/profile-min/godot-top.png": "403ab77a695d047d02c645559207e00ae318266a77eac2956fc8c4a2387ea22b",
+    "inspection/viejo-00/godot-below.png": "6557d4b0ed50600d72f267d70255ac359b0a63a4f3bef24b574a7e2f3b563fc9",
+    "inspection/viejo-00/godot-far.png": "3904650ba962b0af7ca5a2d848f9fffd9cf36fe3d8b7920ba8a36f92472fb5ff",
+    "inspection/viejo-00/godot-front.png": "e1ba0719fee11dc81733131cfb9121f620be33bbacd46fb684d85d8972d373b4",
+    "inspection/viejo-00/godot-medium.png": "517ef322f1bd3996932859a86e40fd5c484c30ede9a20f40e6fca093adfff5f0",
+    "inspection/viejo-00/godot-near.png": "ffdfeb3ca086fa555384a3015e1129473a6a85dd7984d1146392bdef8a443739",
+    "inspection/viejo-00/godot-perspective.png": "a67346bbc84699643c032bcb8d2052934a0363a4f1061b9e62803c45e692c6d8",
+    "inspection/viejo-00/godot-reverse.png": "76592dd21295be05545179dd3b0c424a00cccc7d6dd23cde9b14e14827aa1c2e",
+    "inspection/viejo-00/godot-side.png": "e9c69dadd199c74826fa3358e175e34e4bc7288dc7a95475187dec29479603f1",
+    "inspection/viejo-00/godot-top.png": "c95b806623e28cc56e151f23cb92f47ef5bff87fa6b6977a351e68e2d869b372",
+    "inspection/viejo-00-wood/godot-below.png": "334cb8ef055b1697b5b7393c98b66f99c1e82d4fdc6cc985f03a5643760c3c47",
+    "inspection/viejo-00-wood/godot-far.png": "9803722d28e8238aacfa6260b2a6e516ec621c124a95929339fb588d23082b6e",
+    "inspection/viejo-00-wood/godot-front.png": "07b73819f499c6ea0630344a2b9c681ad715b5385579d08c6a88f192119b2b26",
+    "inspection/viejo-00-wood/godot-medium.png": "5cc515260d536fd1d0f655a5d8422203d606a0637e09b4add424d12e56b91ff8",
+    "inspection/viejo-00-wood/godot-near.png": "52ecc46561edfc337d7d8b15fbf2f8341f0cbfc0df0532ec1d069e39d4884fb5",
+    "inspection/viejo-00-wood/godot-perspective.png": "20289cc5143e25e903fc23a7a5a51f6969efcb36b577bcb20ad0f3e31e0f323f",
+    "inspection/viejo-00-wood/godot-reverse.png": "1670501060e3022d1d005aefec5a8d7e1d43b97bfe28d55b65d98d01871c8e44",
+    "inspection/viejo-00-wood/godot-side.png": "ab1c8160e39d81278fe74552ec94811b31bbd93b7ceab06b3b8ef5153e1b81ec",
+    "inspection/viejo-00-wood/godot-top.png": "35df491680ccd1998306de30ed75b5fefb5002e24cb4d3185d17045613c77a23",
+    "inspection/viejo-03/godot-below.png": "d34a40b5ce526a856052184c07ba1bde7e7c2ec71e36ba46a579dc5cb9f3afe5",
+    "inspection/viejo-03/godot-far.png": "6c53524f3946c6f623fddddf55a548916fcb5a0264aaffe4a099aa76be503a0e",
+    "inspection/viejo-03/godot-front.png": "acea81ef6d487426b4d0e531a93d9d76f3b60784c5fc7432d7fa0cf7d77366f2",
+    "inspection/viejo-03/godot-medium.png": "de053fbefd254e6fb8bcd582eb0c4362202d1f75da9e5ce9bf8c9859fe9aa40f",
+    "inspection/viejo-03/godot-near.png": "ff3f47b22a575d50151a859a94f22e6f01b8a05a47fc6513916066d3bf560848",
+    "inspection/viejo-03/godot-perspective.png": "9d5d0d493a1a637c752cd30d74945b351a35ffa1be29cd2198fb91fe0b923f70",
+    "inspection/viejo-03/godot-reverse.png": "6d923722203940d48ecefc101c8a27dcad73ff791a38aa837b3c2fb1e54a7928",
+    "inspection/viejo-03/godot-side.png": "15e75e5a44c7d697e4e0f9ff198cf68fd913de6cf603652ec9c7b596851dd1c3",
+    "inspection/viejo-03/godot-top.png": "9c6323e5fbacc8af3ec5932f7e779e29a8ca2929469593e14a9578d5da6e0364",
+    "inspection/viejo-03-wood/godot-below.png": "527e51c0684abdc5b572df52df6de5848f1dcaa2fa773250a5cc8ebfad4ff6b8",
+    "inspection/viejo-03-wood/godot-far.png": "7e57fca654637c090cd78eb93c63b577a1f3e59c02fb707b40f99492e70face8",
+    "inspection/viejo-03-wood/godot-front.png": "693b3ba3943046adbb3c3c7b557adf363005f90421e24d8cd4b1a17cb5927041",
+    "inspection/viejo-03-wood/godot-medium.png": "8a20b82077d1ad031de92de3366de111036605f8a09231c67d53615b414cfe6c",
+    "inspection/viejo-03-wood/godot-near.png": "82dd5773ea3feb65ca3958eccad603b55d5df50ac4dfa6b7f08429b2e9f62c8f",
+    "inspection/viejo-03-wood/godot-perspective.png": "5399e7090d3459a4e5e30c9b23eb45069e73ba2664f21eb988317ca0c4ffdcf3",
+    "inspection/viejo-03-wood/godot-reverse.png": "cc5d6c07bcbc9b72db9ed13469e79a2db40c9ada77d81283b033671bee190fd1",
+    "inspection/viejo-03-wood/godot-side.png": "dab080444c9b2b7e5fe4067c593c66023c9cf984fe793a3598cf581dca0bdf17",
+    "inspection/viejo-03-wood/godot-top.png": "a0f6a52fa24fd6e87f36d1acd05981feddb16095e12bf7049ee7bd2f5c56917d",
+    "inspection/viejo-07/godot-below.png": "7617cfeb9777ffae7bb753f9698839a3ea51f8fabb75b4768adc4543c5746c41",
+    "inspection/viejo-07/godot-far.png": "13e5d94dda161c1c26e854b9cd9aa67fcbdaeaefd101f5e1d077139a9f67b0af",
+    "inspection/viejo-07/godot-front.png": "81cebb744d151b5c4c93b3c75dcbdba8fa5ecbb1be602198b4ba466a1f1d1b5d",
+    "inspection/viejo-07/godot-medium.png": "e2ae6cc4203dbcbe6a33f9c6f5ae427fd3fd3a58caaa745d2b3c719bf372caf1",
+    "inspection/viejo-07/godot-near.png": "93fa7e88b2e9dcfdd125f97433a6a8669fa451968f604657fb8b8995fadf1c45",
+    "inspection/viejo-07/godot-perspective.png": "7858ef8d2b088351dca0d374470981a2c923d8e1af25eb7be6946864063f8681",
+    "inspection/viejo-07/godot-reverse.png": "546f9422aa4afb40bb43155b3fa24bf31d439dafa96619be4125fd7f79e6e95d",
+    "inspection/viejo-07/godot-side.png": "c39b9daf42dbe46bfb5bba64fbbcab233d0ded71ab841686e115067c1e3b74b9",
+    "inspection/viejo-07/godot-top.png": "fa34d07ef665734c231e1dc1a6ec67e4e4942f1ecb408e4f34c58207c3eeb44d",
+    "inspection/viejo-07-wood/godot-below.png": "52169610a81b731adc167e66fe9db42b73356a8a6b40dfb4d86086f71ab33acb",
+    "inspection/viejo-07-wood/godot-far.png": "48fb3602835b98357bcacffd7c8721be5364120b988154d67d26b0c87d92abf5",
+    "inspection/viejo-07-wood/godot-front.png": "48bc61e4a59ba94389bf6710ba64098ab13f290feddb11de6f390dcff531ed4b",
+    "inspection/viejo-07-wood/godot-medium.png": "2d85a62a8738e0b0765b1208a3bd624d1ee77ca492cafa27e0d9f1e68a9cc88b",
+    "inspection/viejo-07-wood/godot-near.png": "ef6c3a600090ed12310f2d89b607328e447474602c6a6a80cab11666e63d86c4",
+    "inspection/viejo-07-wood/godot-perspective.png": "78abc478c143fb27d687d9114ca00a42cd37a9f6daa0a67a9d4051336de7a922",
+    "inspection/viejo-07-wood/godot-reverse.png": "e20281ccc129e578380b949300d998ac1ae65cfd688cfea5c22fb05962c16216",
+    "inspection/viejo-07-wood/godot-side.png": "044073d518b1b5edc198d8289d1d6e08806134177294eca0c37e96112622116d",
+    "inspection/viejo-07-wood/godot-top.png": "fc578a42be8f7ca3e72d40155e2fe5276970be7c04e9cce100accd79f2ba1502"
+  },
+  "godot_asset_count": 28,
+  "selected_images_sha256": {
+    "overview.jpg": "9f1e1371825ab81101620595bb37ccea4bd24954566f4d4a56a462bf67b80a1c",
+    "ages.jpg": "d253dd90afddd707211bc0ffab78c522b375acb9a211b36cdeace7ef3116eb13",
+    "young-summary.jpg": "289fb1b401c9332880be15a010d81b0af3f5318058f7dbc8870a9bf8df5f6145",
+    "age-views.jpg": "742a96e0a959b2a134ea34fa2ec99035b637d9ec69e1f460573ade5605a5b1b9",
+    "extreme-20m.jpg": "37e4e7695b462b0e18990f659030fda90e5c9df31008a1840bef1f724ecb5369",
+    "young-before-after.jpg": "16f77ff399a708e56416513283e8045c0f6508a9f40c2b30e39be7bd27e119e3",
+    "controls.jpg": "58b8a7796a12a104a35f68380d57b89c99762aaf9d6325c3b56abd7ccd387a70"
+  },
+  "comparison_cameras_identical": true,
+  "revision_evidence_script_sha256": "49df27ea1eeacc64bdfbd049bb54b6445f92e0e2d20880669ec4329bfba124c2"
+}

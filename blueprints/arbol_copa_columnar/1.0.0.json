@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "id": "arbol_copa_columnar",
+  "version": "1.0.0",
+  "name": "Árbol estilizado de copa columnar",
+  "description": "Segundo tipo artístico B4: tronco esbelto, ramas ascendentes y copa vertical. Reutiliza Q3, distribución RF3 0.1.1 y seis rombos opacos; sin atribución botánica. Objetivo fijado en docs/blueprints/b4-objetivo.md.",
+  "components": {
+    "base": "oak_geometry_nodes@0.4.0",
+    "distribution": "foliage-canopy@0.1.1",
+    "representation": "rf3-diamond-six@0.1.0"
+  },
+  "parameters": {
+    "base": {
+      "height_m": 12,
+      "base_radius_m": 0.22,
+      "curvature": 0.025,
+      "primary_branches": 12,
+      "max_depth": 2,
+      "branch_length_ratio": 0.22,
+      "inclination_deg": 18,
+      "asymmetry": 0.12,
+      "foliage_density": 0.75,
+      "foliage_scale_m": 0.65
+    },
+    "canopy": {
+      "group_count": 300,
+      "leaf_length_m": 0.45,
+      "shell_depth_m": 0.08,
+      "twig_radius_m": 0.02,
+      "tip_radius_ratio": 0.25,
+      "profile_width_scale": 1.0,
+      "region_weights": {
+        "north": 1.0,
+        "east": 1.0,
+        "south": 1.0,
+        "west": 1.0
+      },
+      "layout_leaf_length_m": 0.45
+    }
+  },
+  "appearance": {
+    "bark": {
+      "color_rgba": [
+        0.23999999463558197,
+        0.10499999672174454,
+        0.04500000178813934,
+        1
+      ],
+      "roughness": 0.8799999952316284,
+      "metallic": 0,
+      "double_sided": true
+    },
+    "leaf": {
+      "color_rgba": [
+        0.23000000417232513,
+        0.4300000071525574,
+        0.06499999761581421,
+        1
+      ],
+      "roughness": 0.8799999952316284,
+      "metallic": 0,
+      "double_sided": true
+    }
+  },
+  "editable_ranges": {
+    "canopy.group_count": {
+      "minimum": 24,
+      "maximum": 337
+    },
+    "canopy.leaf_length_m": {
+      "minimum": 0.2,
+      "maximum": 0.45
+    },
+    "canopy.profile_width_scale": {
+      "minimum": 0.85,
+      "maximum": 1.15
+    },
+    "canopy.region_weights.north": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "canopy.region_weights.east": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "canopy.region_weights.south": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "canopy.region_weights.west": {
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "default_profile": "columna",
+  "profiles": {
+    "columna": {
+      "description": "Configuración común B4, altura12 m y copa columnar. Piloto y tres semillas de control fijados antes de generar.",
+      "overrides": {},
+      "validation": {
+        "status": "experimental",
+        "evidence": [
+          "docs/blueprints/b4-objetivo.md",
+          "configs/verification/b4-v1.json"
+        ]
+      }
+    }
+  },
+  "limits": {
+    "triangles": 12500,
+    "materials": 3,
+    "generation_seconds": 120
+  }
+}

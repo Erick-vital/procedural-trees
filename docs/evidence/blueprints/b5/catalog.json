@@ -1,0 +1,36 @@
+{
+  "blueprints": [
+    {
+      "id": "arbol_copa_columnar",
+      "version": "1.0.0",
+      "name": "\u00c1rbol estilizado de copa columnar",
+      "default_profile": "columna",
+      "path": "blueprints/arbol_copa_columnar/1.0.0.json",
+      "sha256": "7e4ff8e98b8f43bb00e65ccfe6bc3728e689bb547d5e6b8fbdfa02ec0b06ffc3"
+    },
+    {
+      "id": "roble_copa_ancha",
+      "version": "1.0.0",
+      "name": "Roble estilizado de copa ancha",
+      "default_profile": "viejo_referencia",
+      "path": "blueprints/roble_copa_ancha/1.0.0.json",
+      "sha256": "5d3b69925552b244fb2fa9568afa46a7e7f71390280680d28e52f1fe19b93cf7"
+    },
+    {
+      "id": "roble_copa_ancha",
+      "version": "1.1.0",
+      "name": "Roble estilizado de copa ancha",
+      "default_profile": "viejo_referencia",
+      "path": "blueprints/roble_copa_ancha/1.1.0.json",
+      "sha256": "8832c75efad6b1c908b7db8836c300548d7ef687375761777b5a9fce78fc7582"
+    },
+    {
+      "id": "roble_copa_ancha",
+      "version": "1.2.0",
+      "name": "Roble estilizado de copa ancha",
+      "default_profile": "viejo_referencia",
+      "path": "blueprints/roble_copa_ancha/1.2.0.json",
+      "sha256": "990f515f87fc8dc6c787bb15deef71a4227ea3b591b4dde488efcea35f230b60"
+    }
+  ]
+}

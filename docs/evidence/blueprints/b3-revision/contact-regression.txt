@@ -1,0 +1,5 @@
+{"passed": true, "legacy_distance_m": 0.00024190310796257108, "triangle_distance_m": 4.089225559868517e-07, "real_separation_rejected_m": 0.001, "tolerance_m": 0.0001, "mesh_unchanged": true}
+Regresión de proyección acotada: OK
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:12:34)
+
+Blender quit

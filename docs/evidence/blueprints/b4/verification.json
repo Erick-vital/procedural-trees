@@ -1,0 +1,1697 @@
+{
+  "phase": "B4",
+  "passed": true,
+  "matrix_sha256": "562949d42d86e2554fed1544653745e1fd56da5e4643a61e38c6ab69894a7554",
+  "objective_sha256": "98635d06a0a71aa688c9b3fb5710c5c48a7fba9f34aed6fdac290b6782853364",
+  "concept_sha256": "47b794eecd8b941034be5c4776e6d69cabbcace9ae1201ac63be0c3e6bde568d",
+  "verifier_sha256": "e7600e66e392c11f8cd811d76d658031c451cad528bd57cf4e027d52f5199ee4",
+  "sources_before": {
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blueprints/arbol_copa_columnar/1.0.0.json": "5dc770bf8842b9912d2c346fec176cf57375ce3bf3ba50c8df4b229353faf193",
+    "blueprints/roble_copa_ancha/1.0.0.json": "c43864c26748f38e72fe6a74e1d645783d1b5fd24fb86c2fdd28ce899c133f0c",
+    "blueprints/roble_copa_ancha/1.1.0.json": "2e164488970e7eef6c621d13491a1fff9ce903a0dbb9f337030ecf0aac996e38",
+    "blueprints/roble_copa_ancha/1.2.0.json": "d2edf70b89405cfdf5a7c4bf3a867849421fde08456794b2a46f7814788386ba",
+    "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+    "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+    "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+    "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+    "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+    "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+    "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+    "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+    "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/blueprints.py": "7a30ab198fe04b8ded71a65bb6e4cd8e86c88835bbbf1a790484627363c47c3d",
+    "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/evaluation.py": "778d261daf300f3359c12f86a5d834d2775e4c722fa0b94da0176e71f9bf0d14",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/foliage_branch_evaluation.py": "167fc0b4c4bc4df94666cce10d85e201fa5b518f4dc2f7eea31ee9f384b392c6",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/foliage_twigs_evaluation.py": "bd48a04c6c1c130eccf5e95efe2e464be67a5da72d573b108e04ec84161d12b4",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "4565759ac012666a2ce368694f64c3879c042e08f3dd3e615bc6ceeb7ba20a46",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd"
+  },
+  "visual_requested": true,
+  "cases": {
+    "pilot": {
+      "status": "generated",
+      "kind": "pilot",
+      "blueprint_id": "arbol_copa_columnar",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.155441,
+            -2.51214,
+            0.0
+          ],
+          [
+            2.350929,
+            2.534153,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "bb69d2e397de6e65a2bbd723ddcfd76abe0a9cc6b58df5fa3d5e3457c2c5392a"
+      },
+      "width_height_ratio": [
+        0.37553083333333337,
+        0.4205244166666667
+      ],
+      "wood_width_height_ratio": [
+        0.19478359818458557,
+        0.23478923241297403
+      ],
+      "supports": 300,
+      "leaves": 1800,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2821,
+        "interior_rejected": 5371,
+        "guide_area_m2_with_overlaps": 269.21598363851933
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 703,
+          "east": 640,
+          "south": 832,
+          "west": 646
+        },
+        "unweighted_quotas": {
+          "north": 75,
+          "east": 68,
+          "south": 88,
+          "west": 69
+        },
+        "group_quotas": {
+          "north": 75,
+          "east": 68,
+          "south": 88,
+          "west": 69
+        },
+        "connection_attempts": 316,
+        "rejected_connections": {
+          "short_or_long": 3,
+          "height": 13
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 7.515391524969555e-07,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.002733868546783924,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 316,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+      "resolved_sha256": "c1bf60a3d897568810264155106254622f1498a0e9871de03381766e78a4728a",
+      "wood_sha256": "fba00220eba991e901f023ae141054e8c6ed94738b7d8fc0cb9b6ffb749278ce",
+      "glb_bytes": 492956,
+      "duration_seconds": 3.893,
+      "foliage_span_m": [
+        4.506369285904865,
+        5.046292188988476,
+        6.363134601953687
+      ]
+    },
+    "control-01": {
+      "status": "generated",
+      "kind": "reserved",
+      "blueprint_id": "arbol_copa_columnar",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.435885,
+            -2.176168,
+            0.0
+          ],
+          [
+            2.166553,
+            2.188131,
+            12.000001
+          ]
+        ],
+        "height_m": 12.000001,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "e603d41c004510baf519c6d2d15ba6ff7f932a629ad37fc3c95c3a2d88e79688"
+      },
+      "width_height_ratio": [
+        0.3835364680386276,
+        0.36369155302570394
+      ],
+      "wood_width_height_ratio": [
+        0.2334826005711078,
+        0.1748405655351825
+      ],
+      "supports": 300,
+      "leaves": 1800,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3089,
+        "interior_rejected": 5103,
+        "guide_area_m2_with_overlaps": 264.85203857784535
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 799,
+          "east": 912,
+          "south": 592,
+          "west": 786
+        },
+        "unweighted_quotas": {
+          "north": 78,
+          "east": 89,
+          "south": 57,
+          "west": 76
+        },
+        "group_quotas": {
+          "north": 78,
+          "east": 89,
+          "south": 57,
+          "west": 76
+        },
+        "connection_attempts": 316,
+        "rejected_connections": {
+          "short_or_long": 2,
+          "height": 14
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.0866522160888685e-06,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.002744344063103199,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 316,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "8faaf2369ed993b74b5121ff62e5cbc36277c86fa0f0e19a7d49ed6f7ce4ef3e",
+      "resolved_sha256": "82b47622ff76c57e7b7535585d99b374a3b6cc73cad0e449a60d1ed6b63aaf4b",
+      "wood_sha256": "737597a72b459f6d06e37eea122dd3f350c2577c3b551279241c6fa33f83a4f5",
+      "glb_bytes": 494076,
+      "duration_seconds": 3.948,
+      "foliage_span_m": [
+        4.602437576559301,
+        4.36429941122825,
+        7.812117197519481
+      ]
+    },
+    "control-02": {
+      "status": "generated",
+      "kind": "reserved",
+      "blueprint_id": "arbol_copa_columnar",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.183274,
+            -1.951094,
+            0.0
+          ],
+          [
+            2.197114,
+            2.488895,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "93d29ecf5a5cd40a0c24e69236e431f5989f29ec2224746a9928582b7ee0207c"
+      },
+      "width_height_ratio": [
+        0.36503233333333335,
+        0.3699990833333333
+      ],
+      "wood_width_height_ratio": [
+        0.2028952439626058,
+        0.2278590202331543
+      ],
+      "supports": 300,
+      "leaves": 1800,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2941,
+        "interior_rejected": 5251,
+        "guide_area_m2_with_overlaps": 260.774255655532
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 700,
+          "east": 628,
+          "south": 873,
+          "west": 740
+        },
+        "unweighted_quotas": {
+          "north": 71,
+          "east": 64,
+          "south": 89,
+          "west": 76
+        },
+        "group_quotas": {
+          "north": 71,
+          "east": 64,
+          "south": 89,
+          "west": 76
+        },
+        "connection_attempts": 321,
+        "rejected_connections": {
+          "short_or_long": 0,
+          "height": 21
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 6.722900800222201e-06,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.0027163606137037277,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 321,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "e2d0ee2813ed4cc8afad4650ce85cf754614f6524b95630d15dc6a887c296a00",
+      "resolved_sha256": "5094ef39d7879658b43a82c0057cf70f5c14e99100b8f2041c7ef0cc9dad72fc",
+      "wood_sha256": "e42d3bf2bae72ce781895209ac8ce95770958fdaadc2bbc278cc16fc20721ffd",
+      "glb_bytes": 493680,
+      "duration_seconds": 3.833,
+      "foliage_span_m": [
+        4.380388484917499,
+        4.4399895182256675,
+        7.785519578560635
+      ]
+    },
+    "control-03": {
+      "status": "generated",
+      "kind": "reserved",
+      "blueprint_id": "arbol_copa_columnar",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.755034,
+            -2.162998,
+            0.0
+          ],
+          [
+            2.092546,
+            2.150896,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "fe9234c0bf3659190a335cb29236366549d8c0608c44958de78fe6bd06154e88"
+      },
+      "width_height_ratio": [
+        0.4039650000000001,
+        0.35949116666666664
+      ],
+      "wood_width_height_ratio": [
+        0.25379111369450885,
+        0.2019662857055664
+      ],
+      "supports": 300,
+      "leaves": 1800,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3235,
+        "interior_rejected": 4957,
+        "guide_area_m2_with_overlaps": 253.51764391281068
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 666,
+          "east": 1203,
+          "south": 615,
+          "west": 751
+        },
+        "unweighted_quotas": {
+          "north": 62,
+          "east": 111,
+          "south": 57,
+          "west": 70
+        },
+        "group_quotas": {
+          "north": 62,
+          "east": 111,
+          "south": 57,
+          "west": 70
+        },
+        "connection_attempts": 310,
+        "rejected_connections": {
+          "short_or_long": 1,
+          "height": 9
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.1631876923245655e-06,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.002710779197514057,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 310,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "0300dd7ede72d7dd31a9888e0116d1e077ecab37ffb7ce4198f7ca2fd5d08f5f",
+      "resolved_sha256": "8a6ee9c3ad9daa6dd4f4156873ab933e05ab60c75a6be08aa72def15dc7b52eb",
+      "wood_sha256": "0ba1173e06513cbc359415bfd4076677f284a8eb8994ae5787eda35e104c6128",
+      "glb_bytes": 492292,
+      "duration_seconds": 3.921,
+      "foliage_span_m": [
+        4.847580486059794,
+        4.313893775505219,
+        7.752606956994439
+      ]
+    },
+    "pilot-repeat": {
+      "status": "generated",
+      "kind": "repeat",
+      "blueprint_id": "arbol_copa_columnar",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.155441,
+            -2.51214,
+            0.0
+          ],
+          [
+            2.350929,
+            2.534153,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "bb69d2e397de6e65a2bbd723ddcfd76abe0a9cc6b58df5fa3d5e3457c2c5392a"
+      },
+      "width_height_ratio": [
+        0.37553083333333337,
+        0.4205244166666667
+      ],
+      "wood_width_height_ratio": [
+        0.19478359818458557,
+        0.23478923241297403
+      ],
+      "supports": 300,
+      "leaves": 1800,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2821,
+        "interior_rejected": 5371,
+        "guide_area_m2_with_overlaps": 269.21598363851933
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 703,
+          "east": 640,
+          "south": 832,
+          "west": 646
+        },
+        "unweighted_quotas": {
+          "north": 75,
+          "east": 68,
+          "south": 88,
+          "west": 69
+        },
+        "group_quotas": {
+          "north": 75,
+          "east": 68,
+          "south": 88,
+          "west": 69
+        },
+        "connection_attempts": 316,
+        "rejected_connections": {
+          "short_or_long": 3,
+          "height": 13
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 7.515391524969555e-07,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.002733868546783924,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 316,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+      "resolved_sha256": "c1bf60a3d897568810264155106254622f1498a0e9871de03381766e78a4728a",
+      "wood_sha256": "fba00220eba991e901f023ae141054e8c6ed94738b7d8fc0cb9b6ffb749278ce",
+      "glb_bytes": 492956,
+      "duration_seconds": 3.781,
+      "foliage_span_m": [
+        4.506369285904865,
+        5.046292188988476,
+        6.363134601953687
+      ]
+    },
+    "control-01-repeat": {
+      "status": "generated",
+      "kind": "repeat",
+      "blueprint_id": "arbol_copa_columnar",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.435885,
+            -2.176168,
+            0.0
+          ],
+          [
+            2.166553,
+            2.188131,
+            12.000001
+          ]
+        ],
+        "height_m": 12.000001,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "e603d41c004510baf519c6d2d15ba6ff7f932a629ad37fc3c95c3a2d88e79688"
+      },
+      "width_height_ratio": [
+        0.3835364680386276,
+        0.36369155302570394
+      ],
+      "wood_width_height_ratio": [
+        0.2334826005711078,
+        0.1748405655351825
+      ],
+      "supports": 300,
+      "leaves": 1800,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3089,
+        "interior_rejected": 5103,
+        "guide_area_m2_with_overlaps": 264.85203857784535
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 799,
+          "east": 912,
+          "south": 592,
+          "west": 786
+        },
+        "unweighted_quotas": {
+          "north": 78,
+          "east": 89,
+          "south": 57,
+          "west": 76
+        },
+        "group_quotas": {
+          "north": 78,
+          "east": 89,
+          "south": 57,
+          "west": 76
+        },
+        "connection_attempts": 316,
+        "rejected_connections": {
+          "short_or_long": 2,
+          "height": 14
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.0866522160888685e-06,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.002744344063103199,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 316,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "8faaf2369ed993b74b5121ff62e5cbc36277c86fa0f0e19a7d49ed6f7ce4ef3e",
+      "resolved_sha256": "82b47622ff76c57e7b7535585d99b374a3b6cc73cad0e449a60d1ed6b63aaf4b",
+      "wood_sha256": "737597a72b459f6d06e37eea122dd3f350c2577c3b551279241c6fa33f83a4f5",
+      "glb_bytes": 494076,
+      "duration_seconds": 3.917,
+      "foliage_span_m": [
+        4.602437576559301,
+        4.36429941122825,
+        7.812117197519481
+      ]
+    },
+    "control-02-repeat": {
+      "status": "generated",
+      "kind": "repeat",
+      "blueprint_id": "arbol_copa_columnar",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.183274,
+            -1.951094,
+            0.0
+          ],
+          [
+            2.197114,
+            2.488895,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "93d29ecf5a5cd40a0c24e69236e431f5989f29ec2224746a9928582b7ee0207c"
+      },
+      "width_height_ratio": [
+        0.36503233333333335,
+        0.3699990833333333
+      ],
+      "wood_width_height_ratio": [
+        0.2028952439626058,
+        0.2278590202331543
+      ],
+      "supports": 300,
+      "leaves": 1800,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2941,
+        "interior_rejected": 5251,
+        "guide_area_m2_with_overlaps": 260.774255655532
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 700,
+          "east": 628,
+          "south": 873,
+          "west": 740
+        },
+        "unweighted_quotas": {
+          "north": 71,
+          "east": 64,
+          "south": 89,
+          "west": 76
+        },
+        "group_quotas": {
+          "north": 71,
+          "east": 64,
+          "south": 89,
+          "west": 76
+        },
+        "connection_attempts": 321,
+        "rejected_connections": {
+          "short_or_long": 0,
+          "height": 21
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 6.722900800222201e-06,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.0027163606137037277,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 321,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "e2d0ee2813ed4cc8afad4650ce85cf754614f6524b95630d15dc6a887c296a00",
+      "resolved_sha256": "5094ef39d7879658b43a82c0057cf70f5c14e99100b8f2041c7ef0cc9dad72fc",
+      "wood_sha256": "e42d3bf2bae72ce781895209ac8ce95770958fdaadc2bbc278cc16fc20721ffd",
+      "glb_bytes": 493680,
+      "duration_seconds": 3.832,
+      "foliage_span_m": [
+        4.380388484917499,
+        4.4399895182256675,
+        7.785519578560635
+      ]
+    },
+    "control-03-repeat": {
+      "status": "generated",
+      "kind": "repeat",
+      "blueprint_id": "arbol_copa_columnar",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.755034,
+            -2.162998,
+            0.0
+          ],
+          [
+            2.092546,
+            2.150896,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "fe9234c0bf3659190a335cb29236366549d8c0608c44958de78fe6bd06154e88"
+      },
+      "width_height_ratio": [
+        0.4039650000000001,
+        0.35949116666666664
+      ],
+      "wood_width_height_ratio": [
+        0.25379111369450885,
+        0.2019662857055664
+      ],
+      "supports": 300,
+      "leaves": 1800,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3235,
+        "interior_rejected": 4957,
+        "guide_area_m2_with_overlaps": 253.51764391281068
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 666,
+          "east": 1203,
+          "south": 615,
+          "west": 751
+        },
+        "unweighted_quotas": {
+          "north": 62,
+          "east": 111,
+          "south": 57,
+          "west": 70
+        },
+        "group_quotas": {
+          "north": 62,
+          "east": 111,
+          "south": 57,
+          "west": 70
+        },
+        "connection_attempts": 310,
+        "rejected_connections": {
+          "short_or_long": 1,
+          "height": 9
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 3.1631876923245655e-06,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.002710779197514057,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 310,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "0300dd7ede72d7dd31a9888e0116d1e077ecab37ffb7ce4198f7ca2fd5d08f5f",
+      "resolved_sha256": "8a6ee9c3ad9daa6dd4f4156873ab933e05ab60c75a6be08aa72def15dc7b52eb",
+      "wood_sha256": "0ba1173e06513cbc359415bfd4076677f284a8eb8994ae5787eda35e104c6128",
+      "glb_bytes": 492292,
+      "duration_seconds": 3.832,
+      "foliage_span_m": [
+        4.847580486059794,
+        4.313893775505219,
+        7.752606956994439
+      ]
+    },
+    "first-reference": {
+      "status": "generated",
+      "kind": "regression",
+      "blueprint_id": "roble_copa_ancha",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            7.471208,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "5b8aeaa0488b61b94298f3533105531279c451119d28e5102ecbb0140bd2ed18"
+      },
+      "width_height_ratio": [
+        1.4723203333333332,
+        1.5351963333333334
+      ],
+      "wood_width_height_ratio": [
+        1.23683410220676,
+        1.2664426697625055
+      ],
+      "supports": 264,
+      "leaves": 1584,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 2948,
+        "interior_rejected": 5244,
+        "guide_area_m2_with_overlaps": 1325.4074193978959
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 735,
+          "east": 788,
+          "south": 722,
+          "west": 703
+        },
+        "unweighted_quotas": {
+          "north": 66,
+          "east": 70,
+          "south": 65,
+          "west": 63
+        },
+        "group_quotas": {
+          "north": 66,
+          "east": 70,
+          "south": 65,
+          "west": 63
+        },
+        "connection_attempts": 294,
+        "rejected_connections": {
+          "short_or_long": 1,
+          "height": 29
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 1.2157009905422456e-06,
+        "insertion_method": "legacy_polygons_bvh",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.002758591901510954,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "legacy-polygons-0.1.0",
+        "corrected_queries": 0
+      },
+      "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "resolved_sha256": "1c1e787c1ea0bc5803c2ae698ed5c6a1dd52ba3ee111a3181dc6d5917fc470c2",
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "glb_bytes": 432232,
+      "duration_seconds": 2.921,
+      "foliage_span_m": [
+        13.250881667627231,
+        13.816768409416703,
+        7.932119622713433
+      ]
+    },
+    "wide-same-seed": {
+      "status": "generated",
+      "kind": "comparison",
+      "blueprint_id": "roble_copa_ancha",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -6.085593,
+            -7.647771,
+            0.0
+          ],
+          [
+            7.104368,
+            7.305898,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "6f2925056e06845ae2ea46d2e86831a9ce26537f854f6356b13af957f8cafee6"
+      },
+      "width_height_ratio": [
+        1.4655512222222222,
+        1.6615187777777778
+      ],
+      "wood_width_height_ratio": [
+        1.1799738672044542,
+        1.3313280211554632
+      ],
+      "supports": 264,
+      "leaves": 1584,
+      "sampling": {
+        "attempts": 8192,
+        "exposed_samples": 3015,
+        "interior_rejected": 5177,
+        "guide_area_m2_with_overlaps": 1354.3293405666104
+      },
+      "selection": {
+        "samples_by_region": {
+          "north": 781,
+          "east": 605,
+          "south": 812,
+          "west": 817
+        },
+        "unweighted_quotas": {
+          "north": 68,
+          "east": 53,
+          "south": 71,
+          "west": 72
+        },
+        "group_quotas": {
+          "north": 68,
+          "east": 53,
+          "south": 71,
+          "west": 72
+        },
+        "connection_attempts": 297,
+        "rejected_connections": {
+          "short_or_long": 3,
+          "height": 30
+        }
+      },
+      "contacts": {
+        "all_insertions_on_q3_and_inside_twig": true,
+        "all_leaf_roots_inside_own_twig": true,
+        "max_insertion_error_m": 9.000242010823825e-05,
+        "insertion_method": "blender_loop_triangles_float64",
+        "insertion_tolerance_m": 0.0001,
+        "method": "convex_tube_face_halfspaces",
+        "maximum_leaf_signed_face_distance_m": -0.0027463221922516823,
+        "legacy_fixed_ray_long_paths": 0
+      },
+      "surface_projection": {
+        "version": "q3-loop-triangles-projection-0.1.1",
+        "queries": 297,
+        "corrected_queries": 0,
+        "max_correction_m": 0.0,
+        "correction_limit_m": 0.001,
+        "unchanged_below_m": 0.0001
+      },
+      "glb_sha256": "a3a1b9d37125d62bae1aca79771a75bd65a659640bfe6f4008fcde4405142d51",
+      "resolved_sha256": "0cc3c42273df4822f37fe0c07f91a7b572d622dc5510f9c7f4390a0594659d40",
+      "wood_sha256": "4911aa1a2ee8b2662b48b18e5b312817b8233b48f8a43e263f6fb4833278ab78",
+      "glb_bytes": 433288,
+      "duration_seconds": 3.609,
+      "foliage_span_m": [
+        13.18996145516684,
+        14.95366962026905,
+        7.429294370139064
+      ]
+    }
+  },
+  "checks": {
+    "pilot-columnar-full": true,
+    "pilot-columnar-wood": true,
+    "pilot-same-parameters": true,
+    "pilot-repeat": true,
+    "pilot-source-only-inputs": true,
+    "control-01-columnar-full": true,
+    "control-01-columnar-wood": true,
+    "control-01-same-parameters": true,
+    "control-01-repeat": true,
+    "control-01-source-only-inputs": true,
+    "control-02-columnar-full": true,
+    "control-02-columnar-wood": true,
+    "control-02-same-parameters": true,
+    "control-02-repeat": true,
+    "control-02-source-only-inputs": true,
+    "control-03-columnar-full": true,
+    "control-03-columnar-wood": true,
+    "control-03-same-parameters": true,
+    "control-03-repeat": true,
+    "control-03-source-only-inputs": true,
+    "first-reference-matches-b0": true,
+    "same-seed-comparison": true,
+    "components-identical": true,
+    "palette-identical": true,
+    "architecture-parameters-differ": true,
+    "all-export-contacts": true,
+    "sources-and-recipes-unchanged-during-run": true
+  },
+  "same_seed_diagnostics": {
+    "pilot": [
+      0.37553083333333337,
+      0.4205244166666667
+    ],
+    "wide-same-seed": [
+      1.4655512222222222,
+      1.6615187777777778
+    ]
+  },
+  "export_contacts": {
+    "passed": true,
+    "assets": {
+      "pilot": {
+        "insertions": 300,
+        "max_error_m": 7.515391524969555e-07,
+        "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+        "tolerance_m": 0.0001
+      },
+      "control-01": {
+        "insertions": 300,
+        "max_error_m": 3.0866522160888685e-06,
+        "glb_sha256": "8faaf2369ed993b74b5121ff62e5cbc36277c86fa0f0e19a7d49ed6f7ce4ef3e",
+        "tolerance_m": 0.0001
+      },
+      "control-02": {
+        "insertions": 300,
+        "max_error_m": 6.722900800222201e-06,
+        "glb_sha256": "e2d0ee2813ed4cc8afad4650ce85cf754614f6524b95630d15dc6a887c296a00",
+        "tolerance_m": 0.0001
+      },
+      "control-03": {
+        "insertions": 300,
+        "max_error_m": 3.1631876923245655e-06,
+        "glb_sha256": "0300dd7ede72d7dd31a9888e0116d1e077ecab37ffb7ce4198f7ca2fd5d08f5f",
+        "tolerance_m": 0.0001
+      },
+      "pilot-repeat": {
+        "insertions": 300,
+        "max_error_m": 7.515391524969555e-07,
+        "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+        "tolerance_m": 0.0001
+      },
+      "control-01-repeat": {
+        "insertions": 300,
+        "max_error_m": 3.0866522160888685e-06,
+        "glb_sha256": "8faaf2369ed993b74b5121ff62e5cbc36277c86fa0f0e19a7d49ed6f7ce4ef3e",
+        "tolerance_m": 0.0001
+      },
+      "control-02-repeat": {
+        "insertions": 300,
+        "max_error_m": 6.722900800222201e-06,
+        "glb_sha256": "e2d0ee2813ed4cc8afad4650ce85cf754614f6524b95630d15dc6a887c296a00",
+        "tolerance_m": 0.0001
+      },
+      "control-03-repeat": {
+        "insertions": 300,
+        "max_error_m": 3.1631876923245655e-06,
+        "glb_sha256": "0300dd7ede72d7dd31a9888e0116d1e077ecab37ffb7ce4198f7ca2fd5d08f5f",
+        "tolerance_m": 0.0001
+      },
+      "first-reference": {
+        "insertions": 264,
+        "max_error_m": 9.307643763366049e-05,
+        "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+        "tolerance_m": 0.0001
+      },
+      "wide-same-seed": {
+        "insertions": 264,
+        "max_error_m": 9.000242010823825e-05,
+        "glb_sha256": "a3a1b9d37125d62bae1aca79771a75bd65a659640bfe6f4008fcde4405142d51",
+        "tolerance_m": 0.0001
+      }
+    }
+  },
+  "camera_protocol": {
+    "shared_by_all_assets": true,
+    "cameras": {
+      "front": {
+        "type": "ORTHO",
+        "location": [
+          0.6928074999999998,
+          -80.1709365,
+          5.999987466345204
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 26.683964359131004,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "side": {
+        "type": "ORTHO",
+        "location": [
+          80.6928075,
+          -0.17093300308893689,
+          5.999997003088937
+        ],
+        "rotation_euler": [
+          1.5707963705062866,
+          -0.0,
+          1.5707963705062866
+        ],
+        "ortho_scale": 26.683964359131004,
+        "basis_columns": [
+          [
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            4.371138828673793e-08,
+            1.910685676922942e-15,
+            1.0
+          ],
+          [
+            1.0,
+            4.371138828673793e-08,
+            -4.371138828673793e-08
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "top": {
+        "type": "ORTHO",
+        "location": [
+          0.6928074999999998,
+          -0.17093649999999982,
+          86.0000005
+        ],
+        "rotation_euler": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 26.683964359131004,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "below": {
+        "type": "ORTHO",
+        "location": [
+          44.75901729309082,
+          -61.18569365637207,
+          -21.117673850738527
+        ],
+        "rotation_euler": [
+          1.9166191816329956,
+          3.3622455930526485e-09,
+          0.6254850029945374
+        ],
+        "ortho_scale": 26.683964359131004,
+        "basis_columns": [
+          [
+            0.8106792569160461,
+            0.5854905247688293,
+            -3.3622455930526485e-09
+          ],
+          [
+            0.1984642744064331,
+            -0.2747966945171356,
+            0.9407968521118164
+          ],
+          [
+            0.5508276224136353,
+            -0.7626844644546509,
+            -0.33897092938423157
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "perspective": {
+        "type": "ORTHO",
+        "location": [
+          44.75901729309082,
+          -61.18569842474365,
+          33.11766769818115
+        ],
+        "rotation_euler": [
+          1.2249735593795776,
+          6.040473010671121e-09,
+          0.6254849433898926
+        ],
+        "ortho_scale": 26.683964359131004,
+        "basis_columns": [
+          [
+            0.8106792569160461,
+            0.5854904651641846,
+            -6.040473010671121e-09
+          ],
+          [
+            -0.19846419990062714,
+            0.27479663491249084,
+            0.9407968521118164
+          ],
+          [
+            0.5508276224136353,
+            -0.7626845240592957,
+            0.3389708399772644
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "reverse": {
+        "type": "ORTHO",
+        "location": [
+          -43.3734070614624,
+          60.843825424743656,
+          -21.117664313995363
+        ],
+        "rotation_euler": [
+          1.916619062423706,
+          1.8246578292746563e-07,
+          -2.5161075592041016
+        ],
+        "ortho_scale": 26.683964359131004,
+        "basis_columns": [
+          [
+            -0.8106791973114014,
+            -0.5854905843734741,
+            -1.8246578292746563e-07
+          ],
+          [
+            -0.19846436381340027,
+            0.2747964859008789,
+            0.9407969117164612
+          ],
+          [
+            -0.55082768201828,
+            0.7626845240592957,
+            -0.338970810174942
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "near": {
+        "type": "ORTHO",
+        "location": [
+          0.6928074999999998,
+          -80.1709365,
+          5.999987466345204
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 26.683964359131004,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "medium": {
+        "type": "ORTHO",
+        "location": [
+          0.6928074999999998,
+          -80.1709365,
+          5.999987466345204
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 53.36792871826201,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "far": {
+        "type": "ORTHO",
+        "location": [
+          0.6928074999999998,
+          -80.1709365,
+          5.999987466345204
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 133.41982179565503,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      }
+    },
+    "global_bounds": [
+      [
+        -6.085593,
+        -7.647771,
+        0.0
+      ],
+      [
+        7.471208,
+        7.305898,
+        12.000001
+      ]
+    ],
+    "lighting": "Godot RF3/B2: rotación[-35,-25,0], energía1.2, ambiente.5; misma paleta."
+  },
+  "godot": [
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    }
+  ],
+  "matrix_executed": true,
+  "study": "artifacts/blueprints/b4-columnar-01",
+  "case_counts": {
+    "generated": 10
+  },
+  "control_glb_hashes_distinct": true,
+  "control_wood_hashes_distinct": true,
+  "godot_asset_count": 12,
+  "capture_count": 108,
+  "capture_content_checks": {
+    "all_nonblank": true,
+    "minimum_background_margin_px": 196
+  },
+  "captures_sha256": {
+    "inspection/control-01/godot-below.png": "25f023a682f5dc1028adcb48ea1a624f518794a4622bfc265b105d4d64e2a282",
+    "inspection/control-01/godot-far.png": "1a4dc804ca9427b25a2b5fce46d0878b719077f17b5e09f6adc5ca774e4fdd81",
+    "inspection/control-01/godot-front.png": "06d78fd4beccb2fd6b42ee77ee56039f9433f4d3f1ac2b7229c22a3acfadc51b",
+    "inspection/control-01/godot-medium.png": "b8505058620b82c04059749884ea4b192e907dfebd12caa350ba90e12f07f434",
+    "inspection/control-01/godot-near.png": "06d78fd4beccb2fd6b42ee77ee56039f9433f4d3f1ac2b7229c22a3acfadc51b",
+    "inspection/control-01/godot-perspective.png": "e3f682fdea71274919826259299ae8c897b95b3cdc9ad244e8afc94ef47a7da7",
+    "inspection/control-01/godot-reverse.png": "3928ca9021dbfa6b541001852bde0dea1735d79cbb877310e519654c67233a2d",
+    "inspection/control-01/godot-side.png": "28376f4f5ec826c26fddad573aeeda092b577b5ee3db62c4920e6c4c4564b103",
+    "inspection/control-01/godot-top.png": "59df206a4f6d8de5a702dcc0d25f9cc247e2be41ea3cf54e2ad07f57979a8677",
+    "inspection/control-01-wood/godot-below.png": "6f0da4f3ec5d3b81488b1379e08b8d8c5d6373b4a0c1d68c47e1b3ddf4cc5179",
+    "inspection/control-01-wood/godot-far.png": "b22ff3593e74529bd52bb0172341fdf81c1b305089695d7310d4e4d4b151bde2",
+    "inspection/control-01-wood/godot-front.png": "3859c3bde4fe1896486b7faa35fb744cb55459945c00e8000bbee85397075926",
+    "inspection/control-01-wood/godot-medium.png": "c3be7ca3817068e72c59c88107c5da49eb33f85dad422f5b759c4c13a9be61dc",
+    "inspection/control-01-wood/godot-near.png": "3859c3bde4fe1896486b7faa35fb744cb55459945c00e8000bbee85397075926",
+    "inspection/control-01-wood/godot-perspective.png": "f963c6afabae67c15b854f8fa95815ba9f1b7f0687e329b3a0200286ba0c712e",
+    "inspection/control-01-wood/godot-reverse.png": "1ac79c9bea29cb5482da1a93794983c76a3703371dfd23f81fd87e53c3fa17f0",
+    "inspection/control-01-wood/godot-side.png": "4bb1f2ad16579211fa6de6ba1d3fb9ea98f34daaa99d9df7a3ea8687ab1e928c",
+    "inspection/control-01-wood/godot-top.png": "75944c04b6c2848f27ca0beda65af615cabc5ee6e15ddf70474f0f75981cd38c",
+    "inspection/control-02/godot-below.png": "e52e41d40c4b6c68709bb8f2d5a960f3da2040601466422e35e6502d5cc4a7da",
+    "inspection/control-02/godot-far.png": "99cafb05c98ff77ab98785c2ef147b14f4b4f53b435af443c34be2e0537d24f2",
+    "inspection/control-02/godot-front.png": "abb6e8f7cb65fcf6721316b65bcde5e81d9754e37b496c97808132a05c84070e",
+    "inspection/control-02/godot-medium.png": "67cfb23c30cd2c743c87609f0444c4b59d915ecfe5680ba159e95d96281a7304",
+    "inspection/control-02/godot-near.png": "abb6e8f7cb65fcf6721316b65bcde5e81d9754e37b496c97808132a05c84070e",
+    "inspection/control-02/godot-perspective.png": "a7e01fa202151c177b79e160aabfcc5443254697a50e5f839fda7c42a2302c8d",
+    "inspection/control-02/godot-reverse.png": "337f8ee2d073e5bfda7e088e8289e9e88bebf2b596b36d5653f9142ff0aa8136",
+    "inspection/control-02/godot-side.png": "4a7e8a8ca1dc0907d325ee317b48f6ef951d930a621e0cea0fe299fd401c33f6",
+    "inspection/control-02/godot-top.png": "3f1e65a1942123aff3f20e2641985777b096e04e0c851675d14f511f22999399",
+    "inspection/control-02-wood/godot-below.png": "63ed9059deb4abdf00776c3fa66ae09805a2a684100ab12c269a443bcdd679e9",
+    "inspection/control-02-wood/godot-far.png": "8c06a549fcd01180e11c4063a5e1eca5667e53d04d39b7956a52d646a932bc3b",
+    "inspection/control-02-wood/godot-front.png": "c4bb9e0bf246a8ea4ad62b8a5fcf8fbbac36f2d458ec22733f8087eee5b3881b",
+    "inspection/control-02-wood/godot-medium.png": "2ff87c40cd90faee33d14302cbef11ac1c09f272fb4c7d67756e1866779d1a37",
+    "inspection/control-02-wood/godot-near.png": "c4bb9e0bf246a8ea4ad62b8a5fcf8fbbac36f2d458ec22733f8087eee5b3881b",
+    "inspection/control-02-wood/godot-perspective.png": "4c22160ae85dc55c2a19747d1c39583d59fbf1bc98bd3240295af82fc6f22177",
+    "inspection/control-02-wood/godot-reverse.png": "26679e713b564cc3f57f85cd235e34ce04e02031a9db782ad317234357897d81",
+    "inspection/control-02-wood/godot-side.png": "cfac566124e29fc05bf901914788fa0be0d95bf48232828b13dc8cfa77d5f785",
+    "inspection/control-02-wood/godot-top.png": "b09194696b815ddd198b6c4e97dcd72fda86ea74644de9a34eef2f466fafe231",
+    "inspection/control-03/godot-below.png": "f533b2c517d001d9095f6358ee6e2faee8de1dd7799ecd2915e4bb5b56fd228d",
+    "inspection/control-03/godot-far.png": "1dcdeedb82db5915865862be4fa04a42cfcd8092a7367389562f969ded6f01d3",
+    "inspection/control-03/godot-front.png": "52b18ab2bcbc1528648b3fcac0297eeb9feaed944fa0b0ba9b9880f7b3d891ff",
+    "inspection/control-03/godot-medium.png": "8c7cc6bd95ce762632750fd7f7df7fa6af7413474db510462a27229d37dca527",
+    "inspection/control-03/godot-near.png": "52b18ab2bcbc1528648b3fcac0297eeb9feaed944fa0b0ba9b9880f7b3d891ff",
+    "inspection/control-03/godot-perspective.png": "452ac2bbb06392ca70a91ff07c8f771f85409ae35513596a0d47cf444398127d",
+    "inspection/control-03/godot-reverse.png": "5fb54d77c52bd0b47517c0b0b211a8c293d0a4f01b00194fe2d0e2a2708559b1",
+    "inspection/control-03/godot-side.png": "d49a990eac212dffd10f6909a77e5149a05e96bf63eb9a0049f85144325f3baa",
+    "inspection/control-03/godot-top.png": "e3de644286e9f8810814346bf7c146cfcd4946019ea567381e33f09c4d24fdc2",
+    "inspection/control-03-wood/godot-below.png": "2fa3a03775022344c4f205ac285aa48886b8877553a778185fbbfc60567c1994",
+    "inspection/control-03-wood/godot-far.png": "aa953ec98119ef7282bc6cd13791d3dcad0198f657dd59029e8d9b39b7e5f711",
+    "inspection/control-03-wood/godot-front.png": "1781e4d81bf11cfe63d0d984b94432a2c369e4092f1e69878af31600cb10e151",
+    "inspection/control-03-wood/godot-medium.png": "a35ba745ff910d433d95d4fc39ea6d4c51878d080dafddefb16170d9f2ea6ffe",
+    "inspection/control-03-wood/godot-near.png": "1781e4d81bf11cfe63d0d984b94432a2c369e4092f1e69878af31600cb10e151",
+    "inspection/control-03-wood/godot-perspective.png": "41c380951ba2cd7048390ffe24052105b48617054f9c13602c94f499d992d823",
+    "inspection/control-03-wood/godot-reverse.png": "11660e5d4244751a26ff6d5167d12c77a8b81bc20252cf4d78f33fc48c6e11e0",
+    "inspection/control-03-wood/godot-side.png": "2ee582261b0e1200f1de86d262ffaf294d555978234cba019b631ccecea4f18f",
+    "inspection/control-03-wood/godot-top.png": "86ed1e98dd855010c911c824549b1549de44c5846db2760b19acab289cdcc61d",
+    "inspection/first-reference/godot-below.png": "5cc0590214ebe36c38ca4ad257b39e59917e0e5bfae8e7807a2bdf0b873bbf27",
+    "inspection/first-reference/godot-far.png": "71a47ab634d5558345a3ef6fb593d03d7ea2b9b9dc6621489d9488cd3ac9f35d",
+    "inspection/first-reference/godot-front.png": "d20754351bed540c28031598fa4389d650adac53f3939164f07f903206ec1750",
+    "inspection/first-reference/godot-medium.png": "9d08625a1eec8954e9674a21fd1e5f75334109cd3f1698dc6f8a54b24f738797",
+    "inspection/first-reference/godot-near.png": "d20754351bed540c28031598fa4389d650adac53f3939164f07f903206ec1750",
+    "inspection/first-reference/godot-perspective.png": "7d1c41f4c19dc4eff6849c5157811385c843c946cfac0bb40862e3278e9ab2fe",
+    "inspection/first-reference/godot-reverse.png": "8ebadd60182aad75b971fa53d800b52ef1e49ec31bcee71767e8069fe187710f",
+    "inspection/first-reference/godot-side.png": "7e1b08199cd7981cba4c949a247f71a3cf9d580f96ca1cd8e2fe9a41b3cbc140",
+    "inspection/first-reference/godot-top.png": "32ddaaaaa78d653dd5a39fc58f81e1142e0a51481a3dcc5dff0f057443ccf74f",
+    "inspection/first-reference-wood/godot-below.png": "459ff8a903f05d42bbef8cbb5bcc6b3a064ed1d9b25ef5dbe2b648b22d986a38",
+    "inspection/first-reference-wood/godot-far.png": "f2747427a21d33e24dd143b9157dd7e7aa35fd97e5d1a256b6877f679387b8dc",
+    "inspection/first-reference-wood/godot-front.png": "de5f6806b69a7b319ea0405befee048cad76e67215e199e88838fcfaa110663e",
+    "inspection/first-reference-wood/godot-medium.png": "1a23adf45eb8987e74f2ef02dce8648e8f9023ca9a80f7688761d35b39cd505b",
+    "inspection/first-reference-wood/godot-near.png": "de5f6806b69a7b319ea0405befee048cad76e67215e199e88838fcfaa110663e",
+    "inspection/first-reference-wood/godot-perspective.png": "89cc4816ea2233ff7db46ffc3e634e85d048489614675b7973fc7d3ec517068e",
+    "inspection/first-reference-wood/godot-reverse.png": "7e814e0ef28e86cc88422cfd00a2c13ade9f72aa7817b38cbaa1de66f4add464",
+    "inspection/first-reference-wood/godot-side.png": "ec078a118d7b97287a6198a3d0e9af78c3f74101eab7f43e29a24c8b0691078d",
+    "inspection/first-reference-wood/godot-top.png": "1aa8610a0e9c8a215e1e7c89cc4f360a93e0695d9143051d5f94068668bd9ec3",
+    "inspection/pilot/godot-below.png": "26bafa1e0b56710b68836121ba0843afd22eee0bd27f8309ac4c271112e44599",
+    "inspection/pilot/godot-far.png": "ef0f7fc7e6a127702fdfbe6598e77ce27edb84dac3f60e7b15b39be2cd1f63f5",
+    "inspection/pilot/godot-front.png": "f2abaa8f1c4498825394b580ba26174e1cd027a99c77ae21bfa6d26682e0f855",
+    "inspection/pilot/godot-medium.png": "abc08e1a742133a3a12a006f5672b3cf32b449165a00539b6ae93f8ec03a5475",
+    "inspection/pilot/godot-near.png": "f2abaa8f1c4498825394b580ba26174e1cd027a99c77ae21bfa6d26682e0f855",
+    "inspection/pilot/godot-perspective.png": "b1fa148753a4489b93089ece71ae545d9e495714b78a58155407a864bfaafe03",
+    "inspection/pilot/godot-reverse.png": "9698218e43ce484042461726167bf69c49c11e1d9f54f14a2716da4ec7a9b6d4",
+    "inspection/pilot/godot-side.png": "2f9f3c2f7586206823842c08f931afd0a636a8cc0e86169d176b15cd42f65b52",
+    "inspection/pilot/godot-top.png": "610c2f7c25d3f17b2f45814a6f5651af96ee02873b1d4985487223eac38506db",
+    "inspection/pilot-wood/godot-below.png": "15ba1fb7bcc7e92ccdd232af90e9f19fed8db6fe247fa6d09e96cf67b76a8c89",
+    "inspection/pilot-wood/godot-far.png": "2db9e6835d4841579a4a0ccc160e98438110c4fc223c859ffa14efe0b4aa4021",
+    "inspection/pilot-wood/godot-front.png": "4887ab6669dd5826827d9c0c783b4cc7f3b1137e7f4fdbdf1443fa35135463da",
+    "inspection/pilot-wood/godot-medium.png": "cecbbc9d2c5cb2f86d81fe3668976351e8d88109dd69c0e6b317594f9fa29ff9",
+    "inspection/pilot-wood/godot-near.png": "4887ab6669dd5826827d9c0c783b4cc7f3b1137e7f4fdbdf1443fa35135463da",
+    "inspection/pilot-wood/godot-perspective.png": "92f6a389540e0dc20748a3a1f7f6782fab5a3dc854b748b84b6b0599349db2b1",
+    "inspection/pilot-wood/godot-reverse.png": "3f2fc7843e4db80e9f583ad0ea70463829d34b9fe3b9f73614da362f464b116d",
+    "inspection/pilot-wood/godot-side.png": "58e30e4fb4e9377eceebae9a857c3f97adac0a99ff1907adfb526a7a258fe0a2",
+    "inspection/pilot-wood/godot-top.png": "9ee6e4278c671dc6311309a4ce228847a4859942780f22989dc77427bf3ba85b",
+    "inspection/wide-same-seed/godot-below.png": "5d0477be191069bc3e5b966578dee61383e4ed2f017e5b494d6a07a47215a396",
+    "inspection/wide-same-seed/godot-far.png": "313bdc293dcedf93f16434fd95383d367d288bbce35065724f6c7e200a07bacb",
+    "inspection/wide-same-seed/godot-front.png": "081a9e79285faf39df24aa8782cb3331117f87f539b445766941ae659296a7a5",
+    "inspection/wide-same-seed/godot-medium.png": "8bab023ea4ceacd902c56d1b0c31ab4e8d46d66019c991299667c3e59b245a66",
+    "inspection/wide-same-seed/godot-near.png": "081a9e79285faf39df24aa8782cb3331117f87f539b445766941ae659296a7a5",
+    "inspection/wide-same-seed/godot-perspective.png": "02b2cbed8428a2198399ed4699c858d08e89d6a4ec6d26a4298ca485855e3e3b",
+    "inspection/wide-same-seed/godot-reverse.png": "6aba9313a8b2741e4d197042382721169f860b9ba7bb34ff0e12edd33aedd03b",
+    "inspection/wide-same-seed/godot-side.png": "196376d599d0f25cb5cc7ce260bc87d4801e0e1dedc212bea3df7b152cad4169",
+    "inspection/wide-same-seed/godot-top.png": "086c2e21051064bf5e3a1a8a822897d6fd310870e1e45fe8a339071fc021da98",
+    "inspection/wide-same-seed-wood/godot-below.png": "7d55700218d8b7e799cf7e8de9c2e688e7bffb5b380c3d210c4acdebb8cbfdb6",
+    "inspection/wide-same-seed-wood/godot-far.png": "5682cbab7ddd7ed745413d99b3e3bd3120427122eeba562913960829e59bd35e",
+    "inspection/wide-same-seed-wood/godot-front.png": "e1a43ea511faa91212898bd35c99a5508fd27bcf4873a0182c9dd2e50e88f50e",
+    "inspection/wide-same-seed-wood/godot-medium.png": "e88ed52eacf7696d4edacd10a7f6bda582bc3fc0d02aa0c65c179e865b41da9e",
+    "inspection/wide-same-seed-wood/godot-near.png": "e1a43ea511faa91212898bd35c99a5508fd27bcf4873a0182c9dd2e50e88f50e",
+    "inspection/wide-same-seed-wood/godot-perspective.png": "01991a343355808823978deaa73476d2031a387cea750a512a73aac8a0b1e033",
+    "inspection/wide-same-seed-wood/godot-reverse.png": "9470cc3faff220ac1b9e6d3132152332dbdc0d0c4a86e8540bb882c695853523",
+    "inspection/wide-same-seed-wood/godot-side.png": "1e00b1fc4ad18731c9259fab052c7bff4c0f4ae7d90e2d77f0e82cca000af7c0",
+    "inspection/wide-same-seed-wood/godot-top.png": "dc4b7c8e28ee41bb5db0f68373465fa5db260d49a6e81809ab544c2b2d09c6e6"
+  },
+  "evidence_script_sha256": "fa6d5f16761650bb06ecf81edcaed697446a5fa133497d08dfc6038c5d08ae00",
+  "images_sha256": {
+    "comparison.jpg": "9b6b0f7e731e92e2fd9cb2d7d69b40b681dbae8cbc0f64103f486480453a68d2",
+    "wood-comparison.jpg": "f1222fbf2bbc84bb242a546fb9d805fa50145c8432a2a64a1666c59158f97ec1",
+    "identity.jpg": "a3e1fe7d594cc844835d9c6bcb5180dcb749a6137accdebdd69ac4e0911c5484",
+    "scales.jpg": "61aa4420fc5782284e00c02a5840b1078e2ae0f1eb2b292f27d332cc6350f569",
+    "controls.jpg": "9a06e84660b34a299a97f4c3ca0ce1b80d81007d834ae6c316718e5ad81142c1",
+    "same-seed.jpg": "74cd8757c68578445028988a25a8645524e9e4e8569b2df986d238ff7773a7d0",
+    "wood.jpg": "8ac8b860c241e3b62fc45a8938b3d1431e94fae4cfd1d9e2a76b8f1d1911fae6"
+  }
+}

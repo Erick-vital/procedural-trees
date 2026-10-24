@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "assets": {
+    "pilot": {
+      "insertions": 264,
+      "max_error_m": 9.307643763366049e-05,
+      "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "tolerance_m": 0.0001
+    },
+    "viejo-00": {
+      "insertions": 264,
+      "max_error_m": 7.116703527377634e-05,
+      "glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+      "tolerance_m": 0.0001
+    },
+    "viejo-03": {
+      "insertions": 264,
+      "max_error_m": 5.2190015300884434e-05,
+      "glb_sha256": "8645e921bd678e15d2345fdd5c71e526e4a1d35846a34ee7ff0010893bad0d28",
+      "tolerance_m": 0.0001
+    },
+    "adulto-00": {
+      "insertions": 264,
+      "max_error_m": 2.0331191769173077e-05,
+      "glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+      "tolerance_m": 0.0001
+    },
+    "joven-00": {
+      "insertions": 264,
+      "max_error_m": 5.0613648615162825e-06,
+      "glb_sha256": "a22a75158cfe0f009fc514f48a9292e5394e0f00c170a40300fdcd1752e80f71",
+      "tolerance_m": 0.0001
+    },
+    "viejo-07": {
+      "insertions": 264,
+      "max_error_m": 7.265680385560444e-05,
+      "glb_sha256": "c1c7ad9799b238484794f4f4c6cc11d6c28f3f9a3fbfd7ac3267ce6f3cd1b317",
+      "tolerance_m": 0.0001
+    },
+    "adulto-07": {
+      "insertions": 264,
+      "max_error_m": 3.301709126003259e-05,
+      "glb_sha256": "8f0a29591801492e9406ab5ac45a285d5e0ef7974e9fb67ea58ea0f8a653bc75",
+      "tolerance_m": 0.0001
+    },
+    "joven-07": {
+      "insertions": 264,
+      "max_error_m": 3.5976228694820637e-06,
+      "glb_sha256": "1bd20c40b9f38fbb2a154e2ca9898b2044994e694413db63ffc448bad6bc6176",
+      "tolerance_m": 0.0001
+    },
+    "viejo-00-repeat": {
+      "insertions": 264,
+      "max_error_m": 7.116703527377634e-05,
+      "glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+      "tolerance_m": 0.0001
+    },
+    "adulto-00-repeat": {
+      "insertions": 264,
+      "max_error_m": 2.0331191769173077e-05,
+      "glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+      "tolerance_m": 0.0001
+    },
+    "joven-00-repeat": {
+      "insertions": 264,
+      "max_error_m": 5.0613648615162825e-06,
+      "glb_sha256": "a22a75158cfe0f009fc514f48a9292e5394e0f00c170a40300fdcd1752e80f71",
+      "tolerance_m": 0.0001
+    },
+    "leaf-min": {
+      "insertions": 264,
+      "max_error_m": 9.307643763366049e-05,
+      "glb_sha256": "37cdfd479436e85ea056bdb557182bc65f4bd6876f14f1d41d998a56820a565b",
+      "tolerance_m": 0.0001
+    },
+    "groups-min": {
+      "insertions": 24,
+      "max_error_m": 2.6039982398990444e-05,
+      "glb_sha256": "b968bbd1689c32458523d46d8d33349b65b4eac884698fd8652e5226f227ee1d",
+      "tolerance_m": 0.0001
+    },
+    "groups-max": {
+      "insertions": 360,
+      "max_error_m": 9.676473060218576e-05,
+      "glb_sha256": "f721086e7f535eda8689f53d125d5656b02a4703c29a8e30c1eafb97ccb19891",
+      "tolerance_m": 0.0001
+    },
+    "profile-min": {
+      "insertions": 264,
+      "max_error_m": 8.42640122588233e-05,
+      "glb_sha256": "585da097dd4ed77e926ed3268c808cc262f340300482c325a89caa5123a3b7cc",
+      "tolerance_m": 0.0001
+    },
+    "profile-max": {
+      "insertions": 264,
+      "max_error_m": 8.996045214146876e-05,
+      "glb_sha256": "5f274962167b1c138aff9b4506a2c91938e1f426171178773957a616d18ccc9f",
+      "tolerance_m": 0.0001
+    },
+    "east-zero": {
+      "insertions": 194,
+      "max_error_m": 4.192007741669855e-05,
+      "glb_sha256": "f6a4a58dbf29fdc7b16b3a18e63573b479b5932de0f05cddffe339363e949bd2",
+      "tolerance_m": 0.0001
+    },
+    "canopy-seed": {
+      "insertions": 264,
+      "max_error_m": 9.38305067695275e-05,
+      "glb_sha256": "02b2a2e676d2fac7221e7d5338e421a27df42cd6452efea7fe2cd3ecab6a3f44",
+      "tolerance_m": 0.0001
+    },
+    "height-low-scale-high": {
+      "insertions": 264,
+      "max_error_m": 9.804029628002031e-05,
+      "glb_sha256": "bfef35be7fcb22e4ef6d7c47418764b20cbb8086eb7d0a1c4d4c34ac666c1306",
+      "tolerance_m": 0.0001
+    },
+    "height-high-scale-low": {
+      "insertions": 264,
+      "max_error_m": 5.50084896789609e-05,
+      "glb_sha256": "d356329db61618e3ba8a8f31bea7da93497c1b181a0453095035ee25735cb01f",
+      "tolerance_m": 0.0001
+    },
+    "height-high-scale-low-repeat": {
+      "insertions": 264,
+      "max_error_m": 5.50084896789609e-05,
+      "glb_sha256": "d356329db61618e3ba8a8f31bea7da93497c1b181a0453095035ee25735cb01f",
+      "tolerance_m": 0.0001
+    },
+    "base-seed": {
+      "insertions": 264,
+      "max_error_m": 5.8216381529811216e-05,
+      "glb_sha256": "6155f7b600d47c95a672ea57a04a60b425ea024b14ffe719cb82eea52543f63b",
+      "tolerance_m": 0.0001
+    }
+  }
+}

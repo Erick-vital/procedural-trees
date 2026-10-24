@@ -55,6 +55,26 @@ class ExecutionTests(unittest.TestCase):
         with self.assertRaises(FileExistsError):
             execute(self.spec, self.path)
 
+    def test_legacy_success_initializes_artifact_hashes(self):
+        def start(*args, **kwargs):
+            job = json.loads((self.path / 'input.json').read_text())
+            # Forma del manifiesto histórico: sin files_sha256.
+            (self.path / 'manifest.json').write_text(json.dumps({
+                'status': 'completed', 'spec': self.spec, 'spec_sha256': job['spec_sha256'],
+                'cameras': {}, 'sources_sha256': {}, 'metrics': {'triangles': 1}}))
+            (self.path / 'tree.glb').write_bytes(b'exported-glb')
+            (self.path / 'tree.blend').write_bytes(b'exported-blend')
+            process = MagicMock()
+            process.wait.return_value = 0
+            return process
+        with patch('treegen.runner.subprocess.Popen', side_effect=start), \
+                patch('treegen.runner.validate_result', return_value={'triangles': 1}):
+            result = execute(self.spec, self.path, render=False)
+        self.assertEqual(result['status'], 'completed')
+        self.assertEqual(set(result['files_sha256']), {'tree.glb', 'tree.blend'})
+        self.assertTrue(all(len(value) == 64 for value in result['files_sha256'].values()))
+        self.assertEqual(json.loads((self.path / 'manifest.json').read_text())['status'], 'completed')
+
     def test_api_async_and_invalid_input(self):
         release, entered = threading.Event(), threading.Event()
         def fake_execute(*args, **kwargs):
