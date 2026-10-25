@@ -1,9 +1,28 @@
 # Plan: sistema de blueprints de árboles
 
 Fecha: 2026-10-23.
-Estado: B0–B5 cerradas técnicamente el 2026-10-23. Dos tipos documentados y reproducibles; primer tipo preservado. Perfiles nuevos/columnar pendientes de aprobación artística. Lote RF5 no ejecutado.
+Estado: B0–B5 cerradas técnicamente el 2026-10-23. Primer tipo preservado. B3 revisada aprobada por el usuario después del cierre; copa columnar experimental. RF5 ejecutada/verificada y aprobada artísticamente después de B5; rediseño cerrado para la familia ensayada.
+
+## Decisión posterior al cierre B5
+
+El 2026-10-23 el usuario aprueba B3 revisada, incluida la hoja joven de .45 m,
+y autoriza ejecutar RF5. [Aprobación](../docs/evidence/blueprints/b3-revision/user-acceptance.json).
+La aprobación corresponde a los perfiles/casos B3 revisados; no incluye copa
+columnar ni aceptación anticipada de los treinta resultados RF5. B0–B5 y sus
+resultados históricos se conservan. La nueva ejecución se rige por
+[RF5](rediseno-follaje.md) y `configs/verification/rf5-v1.json`.
+[Resultado RF5](../docs/evidence/rediseno-follaje/rf5/informe.md): 30/30 correctos,
+regresión de madera, tres repeticiones idénticas y 360 capturas reales Godot.
+Sin modificar recetas ni predeterminados. Posteriormente el usuario aprueba el
+lote completo: [aceptación RF5](../docs/evidence/rediseno-follaje/rf5/user-acceptance.json).
 
 ## 1. Objetivo y decisión de alcance
+
+Ampliación posterior, solicitada por el usuario el 2026-10-23 y verificada el
+2026-10-24: [primer intento de pino cónico](blueprint-pino.md), con componentes
+específicos y contratos 1.1. Añade un tercer tipo registrado sin reabrir el cierre
+B5 ni alterar el roble aprobado. [Resultado](../docs/evidence/blueprints/pino/informe.md).
+Aceptación artística pendiente; F4–F6 permanecen fuera de este trabajo.
 
 Crear un sistema mínimo de recetas versionadas para generar familias de árboles,
 registrar la generación RF3 como primer blueprint y comprobar la reutilización
@@ -292,5 +311,6 @@ Primer blueprint registrado e integrado; referencia RF3 conservada. B3
 implementada y revisada: los pendientes joven/contacto están resueltos y
 verificados. B4 completada con segundo tipo distinguible y componentes
 reutilizados. B5 cierra el sistema mínimo y su documentación; dos tipos y
-versiones históricas disponibles. Faltan decisiones artísticas de perfiles/tipos
-nuevos y decisión posterior sobre lote RF5. No se cierra el objetivo v1 completo.
+versiones históricas disponibles. Después del cierre B5 se aprueban B3 revisada
+y el lote RF5 completo, ejecutado/verificado. La copa columnar sigue pendiente
+de aprobación artística. No se cierra el objetivo v1 completo.

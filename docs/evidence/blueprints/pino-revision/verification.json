@@ -1,0 +1,1202 @@
+{
+  "passed": true,
+  "version": "pine-matrix-2.0.0",
+  "matrix_sha256": "b66203dee0bef9a6ace0a9deb686a50cb61fbd6f44c2c19377e95aad42f9f447",
+  "sources_sha256": {
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+    "blender/generate_pine.py": "8564de938657e81f10c78881cb7137f4b33bc52d584a676a0bdd046103ea53eb",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blender/verify_pine_contacts.py": "c4de070611fc9f3366002b86fefd877d8dc3fecc824f2f1dfcbda1d7ec4ffd44",
+    "blueprints/arbol_copa_columnar/1.0.0.json": "5dc770bf8842b9912d2c346fec176cf57375ce3bf3ba50c8df4b229353faf193",
+    "blueprints/pino_conico/1.0.0.json": "a8248aab66a42d3d4790842f12f79942e503fafcca743765bc7989dba75ee959",
+    "blueprints/pino_conico/1.1.0.json": "c9250892c5178f328f01b229243d9dac9170aee1037b813981528784f2ddc93f",
+    "blueprints/roble_copa_ancha/1.0.0.json": "c43864c26748f38e72fe6a74e1d645783d1b5fd24fb86c2fdd28ce899c133f0c",
+    "blueprints/roble_copa_ancha/1.1.0.json": "2e164488970e7eef6c621d13491a1fff9ce903a0dbb9f337030ecf0aac996e38",
+    "blueprints/roble_copa_ancha/1.2.0.json": "d2edf70b89405cfdf5a7c4bf3a867849421fde08456794b2a46f7814788386ba",
+    "configs/verification/pine-v2.json": "f21065ec4002b23cf6bcc183cc7687fc4f72a3a170a142d6914f26392a7c0f27",
+    "godot/verify_addon_comparison.gd": "c6c11812c82b54f0ac9d426d4ed58dd858314a9a7cdb0e177d8c9660baa17ba2",
+    "godot/verify_foliage.gd": "640b4d99ddc5e6d4c323d123524683ea59be3164eddff82d5fa9a326336f7dd6",
+    "godot/verify_foliage_branch.gd": "22673f167c8d198f34ffe4411554ce7ae69cf29cb9effbab941c093f53b13b1b",
+    "godot/verify_foliage_molds.gd": "fff8c50b3c359fd50ab38c8bb77b9c73af232072c5fcae4dc8acc3997a802683",
+    "godot/verify_foliage_twigs.gd": "81075c2033ceac65864e27c617852cf3112d0cb4b9d2277337d426ae3a5197c4",
+    "godot/verify_fusion.gd": "ccf532928646c62bf8565e1c1fc77547d506869296db8941c5fb0de94234d86a",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "godot/verify_probe.gd": "6306a877341815adfdcddf6c8ef37f5b85de675d506209c3b1b365b571c7c4a4",
+    "plans/blueprint-pino.md": "cdc967580f6990ca5cd4a25a3e88d80f712edf602538f354b3f880992760c761",
+    "presets/blueprints/pino/control-01.json": "3693132c6d08d98ad65c1e376614aeb4b3c4fcceffc94e7d8965ef4ba5f97982",
+    "presets/blueprints/pino/control-02.json": "615a3b00da3f7bf0bcdb8175e7218bc8de31dff035bada6bd1c724193edaaba1",
+    "presets/blueprints/pino/control-03.json": "5399a27112172012ce699522c3d6ffcf1d0ebc22db780b492bdfae3a3624572c",
+    "presets/blueprints/pino/pilot.json": "2348adf65262c1024e7bb10d464bf52ffb76106237dcf9ad034d9e1198297a84",
+    "presets/blueprints/pino-v2/control-01.json": "91c0680a93c9d15361aad335fd18a8258e9eb1061e818da927139b97246c5e68",
+    "presets/blueprints/pino-v2/control-02.json": "6c54d51e7968cadb179d3baf8e96e6ffc8b6aee5c3bb89b6997c8dd19aa5bd75",
+    "presets/blueprints/pino-v2/control-03.json": "318f57c05dce5524cc26ee47d5d469c57372806927a27063100b88fbe0a5e3a2",
+    "presets/blueprints/pino-v2/pilot.json": "21a1aba5fd65d70adea87fca44f1630f38b34c33e12a7fb1703e9b3ceb6b2f51",
+    "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+    "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+    "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+    "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+    "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+    "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+    "schemas/tree-blueprint-pine.schema.json": "02efd04fc303278461883a4274be5106a3d38358a0238a972403c57aae21bb78",
+    "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+    "schemas/tree-instance-pine.schema.json": "952eac970a2b0305af0f97d719560636baca01166470b4366c37e560e2a4eb28",
+    "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+    "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+    "scripts/verify_pine.py": "041800052f997ef01f30e4db6c484f868a4b28b17a28ea0518829ed5a9a661da",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/blueprints.py": "602a6eaab626966b44eac5071f22d937603e1b72f3767bea5d6f1bc6c5114a11",
+    "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/evaluation.py": "215708237adfcf014842c525163590d56f45ccae87e24d4674ba4c8aab1a73d9",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "0ccff51aff608ca8be7d46cf041d4ed26320f72bc274f614c98ebaceb2ec6098",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd"
+  },
+  "cases": {
+    "pilot": {
+      "glb_sha256": "b4fa2aa8c4a4c806995281228ef5238aed7cef4d80cf4b887605904d36923601",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.000596,
+            -3.48069,
+            0.0
+          ],
+          [
+            3.529168,
+            3.332548,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "3634fff295cf997efcbc2b8f2ae9b59508ba48efcbf020c15cb535c6ea157ed6"
+      },
+      "duration_seconds": 1.324,
+      "glb_bytes": 795824,
+      "wood_sha256": "9c770dd5e6e38b1b343ed325af7b71a31523c29386c940b6c91d5327c5622b99",
+      "resolved_sha256": "3c27bd09422a7ad7fa248e90321edc15fa9f096dd59fa0f7a2a0303720ba0ed6"
+    },
+    "control-01": {
+      "glb_sha256": "24a94f5f74840b328960df71cc2eb642ec3f157563e279c264643f01bd7973ef",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.15133,
+            -4.066174,
+            0.0
+          ],
+          [
+            3.319781,
+            3.30754,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "f4afebcf4fec7f441dc737f45552638ea283d12b1fa5ac32c1090671a999ec42"
+      },
+      "duration_seconds": 1.222,
+      "glb_bytes": 797384,
+      "wood_sha256": "9ca579a7e1e545f810d9c9745a7a6c489d52c65d24bcc4629294c24c5cb84386",
+      "resolved_sha256": "bcff4f29a7e6b84257b86b46b772274453e27d60f56ff65d98cac1cf86b1e4b7"
+    },
+    "control-02": {
+      "glb_sha256": "e1cb5ce5f23e5133c01cbec94a1c59280defa331205412fb55a55d3d0aba1386",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.98342,
+            -3.152741,
+            0.0
+          ],
+          [
+            3.503165,
+            3.25348,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "397d0079505754ff6e760ac56556bfc819283d4798a070a0ff27319891532960"
+      },
+      "duration_seconds": 1.322,
+      "glb_bytes": 795680,
+      "wood_sha256": "b072f94df33f5c8a17a989cf3191ea4e94621bdb06fc9878dff28438b1cd55cd",
+      "resolved_sha256": "c55a906865197dcab7680e43b905b5935a2e6c8d1d6e19e0bd2e74a07aff9f74"
+    },
+    "control-03": {
+      "glb_sha256": "48d55053c96d9e6c3b68bf061588b4b1304a7c7c71d147523da8760d7717a301",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.880701,
+            -3.258387,
+            0.0
+          ],
+          [
+            4.29494,
+            3.478961,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "f3c54644755815eaa8c26adf68130cdd642af29dab653fb1979d69559e3647e6"
+      },
+      "duration_seconds": 1.324,
+      "glb_bytes": 795920,
+      "wood_sha256": "8640e43a55be17a0bb03d485f9c5d550713d92fb9d912d0e08da232148ca2b53",
+      "resolved_sha256": "b9247836853220a2b9f352e49be95f14a1c7405790323228e68bbbbbd029eae0"
+    },
+    "before-pilot": {
+      "glb_sha256": "79b26566cb4a4711109f67039662d46e7fa86b2de7617d546f20b1d0c34f7497",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.632256,
+            -3.388961,
+            0.0
+          ],
+          [
+            3.115905,
+            3.399079,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "8a69211e6180725bd985445d7b7c7fd2fe3b2d2b1bb3c098255621069cec4935"
+      },
+      "duration_seconds": 1.272,
+      "glb_bytes": 790012,
+      "wood_sha256": "86cc2e7ccaae78a58eee0ccd10cfa765ca393ebf17b4057d378f5b763e19c626",
+      "resolved_sha256": "9ae2cdd659fa847bd5cff6f6ea3ce00ae8288e57caa62f38d65e81dec8d8af1f"
+    },
+    "before-control-01": {
+      "glb_sha256": "99dd8f6b33ca98d2c55ab0db691c34893294df795d02f1128ee943ddea3a2012",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.414997,
+            -3.431242,
+            0.0
+          ],
+          [
+            3.249325,
+            3.377435,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "dbe431215c7c2cbdb5d41de228f63e899096f93709a081f22c7aa149b0b6887d"
+      },
+      "duration_seconds": 1.373,
+      "glb_bytes": 790616,
+      "wood_sha256": "31408a1bee4099f2d3ed7da0fe499b4083b580048e8df610499cb3badba893ef",
+      "resolved_sha256": "de9234ce02f4239cb0111107ff289e8f880621380f8c4cedec2e99d56e264f1c"
+    },
+    "before-control-02": {
+      "glb_sha256": "9cd527cb82b104341864b1eab73c4d91c9954c856103a52558e6856b3b2d9a92",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.499369,
+            -3.399019,
+            0.0
+          ],
+          [
+            3.150111,
+            3.95775,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "37ed7a10e9f1c1c1d2f7f8bac610c3a33a930e0824737d15c8f83fea01367478"
+      },
+      "duration_seconds": 1.271,
+      "glb_bytes": 790688,
+      "wood_sha256": "05adb0fff9a5ab45c0faead81930f7a99dab75b40eeed351aae8670d900789a8",
+      "resolved_sha256": "63ea3165758d7a83f7cedd11af08173bee5ae2a10107a93ad673373b5ec71422"
+    },
+    "before-control-03": {
+      "glb_sha256": "801a334a45be4cc0a048047bbb1d12360f1f567bbc44df986fda9aa989dd65b1",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.855074,
+            -3.509737,
+            0.0
+          ],
+          [
+            3.319954,
+            3.334215,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "05dc2c31d9c472c0e9b035875d4c361850b50e15f91e8609c15fa9242f417765"
+      },
+      "duration_seconds": 1.272,
+      "glb_bytes": 790784,
+      "wood_sha256": "9422f4af5c3c80884dcd4ad2fb621751f9353b8b3e0f823d866e3c32b20d0681",
+      "resolved_sha256": "ca6588d504be925c05fce8f62136d0f40f82029ea00ecfb1626f7388fdf5f044"
+    },
+    "pilot-repeat": {
+      "glb_sha256": "b4fa2aa8c4a4c806995281228ef5238aed7cef4d80cf4b887605904d36923601",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -3.000596,
+            -3.48069,
+            0.0
+          ],
+          [
+            3.529168,
+            3.332548,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "3634fff295cf997efcbc2b8f2ae9b59508ba48efcbf020c15cb535c6ea157ed6"
+      },
+      "duration_seconds": 1.271,
+      "glb_bytes": 795824,
+      "wood_sha256": "9c770dd5e6e38b1b343ed325af7b71a31523c29386c940b6c91d5327c5622b99",
+      "resolved_sha256": "3c27bd09422a7ad7fa248e90321edc15fa9f096dd59fa0f7a2a0303720ba0ed6"
+    },
+    "canopy-seed": {
+      "glb_sha256": "aa8cc598e9116976e01021264d23e80c08d7e60197c0827a3f4eb8e92661254a",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -2.964205,
+            -3.306976,
+            0.0
+          ],
+          [
+            3.40822,
+            3.336481,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "cfce75a3da3ecd19f6d58b699afc489162f66e0efefaa083b2d8a9430bc08e06"
+      },
+      "duration_seconds": 1.274,
+      "glb_bytes": 795968,
+      "wood_sha256": "9c770dd5e6e38b1b343ed325af7b71a31523c29386c940b6c91d5327c5622b99",
+      "resolved_sha256": "9c39f59ed7e412650a0ea513e0599d70aa8577781dad83a746a273553a774d6f"
+    },
+    "needle-size": {
+      "glb_sha256": "9482793bd1fe267b75ea8581693951d9f115d9b888672c8d80b35eea5959097a",
+      "metrics": {
+        "vertices": 15120,
+        "triangles": 11924,
+        "bounds_blender": [
+          [
+            -2.652975,
+            -3.064081,
+            0.0
+          ],
+          [
+            3.174783,
+            2.934011,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Pine_Bark": 6140,
+          "Pine_Needles": 5784
+        },
+        "geometry_sha256": "a95787cd59b79f23b380c053cc4ce9addbd9ddda0552eb6d3b72f180a1c1b1f6"
+      },
+      "duration_seconds": 1.325,
+      "glb_bytes": 807008,
+      "wood_sha256": "9c770dd5e6e38b1b343ed325af7b71a31523c29386c940b6c91d5327c5622b99",
+      "resolved_sha256": "e7ecd1c011f21c00f3e2fd33fa1c4bfc34f3dadc26051a258b02928f32d977d4"
+    },
+    "oak-reference": {
+      "glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            7.471208,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "5b8aeaa0488b61b94298f3533105531279c451119d28e5102ecbb0140bd2ed18"
+      },
+      "duration_seconds": 2.381,
+      "glb_bytes": 432232,
+      "wood_sha256": "446fb51eac314608b25feb423cbcadf2ccbf861f239bb6fc5b4623517efc5798",
+      "resolved_sha256": "1c1e787c1ea0bc5803c2ae698ed5c6a1dd52ba3ee111a3181dc6d5917fc470c2"
+    },
+    "columnar-reference": {
+      "glb_sha256": "c4a257dedf5de5f02dd840adca69d0eb35ef941a2ad0eb6c39389a2718b76efc",
+      "metrics": {
+        "vertices": 11976,
+        "triangles": 11756,
+        "bounds_blender": [
+          [
+            -2.155441,
+            -2.51214,
+            0.0
+          ],
+          [
+            2.350929,
+            2.534153,
+            12.0
+          ]
+        ],
+        "height_m": 12.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5756,
+          "RF1_Leaf": 3600,
+          "RF2_Twig": 2400
+        },
+        "geometry_sha256": "bb69d2e397de6e65a2bbd723ddcfd76abe0a9cc6b58df5fa3d5e3457c2c5392a"
+      },
+      "duration_seconds": 3.134,
+      "glb_bytes": 492956,
+      "wood_sha256": "fba00220eba991e901f023ae141054e8c6ed94738b7d8fc0cb9b6ffb749278ce",
+      "resolved_sha256": "c1bf60a3d897568810264155106254622f1498a0e9871de03381766e78a4728a"
+    }
+  },
+  "checks": {
+    "pilot-repeat-identical": true,
+    "pilot-same-parameters": true,
+    "pilot-height-budget": true,
+    "pilot-source-only": true,
+    "control-01-same-parameters": true,
+    "control-01-height-budget": true,
+    "control-01-source-only": true,
+    "control-02-same-parameters": true,
+    "control-02-height-budget": true,
+    "control-02-source-only": true,
+    "control-03-same-parameters": true,
+    "control-03-height-budget": true,
+    "control-03-source-only": true,
+    "four-distinct-geometries": true,
+    "pilot-before-identical-v1": true,
+    "pilot-same-counts": true,
+    "pilot-same-inputs": true,
+    "pilot-staggered-roots": true,
+    "pilot-mixed-slopes": true,
+    "control-01-before-identical-v1": true,
+    "control-01-same-counts": true,
+    "control-01-same-inputs": true,
+    "control-01-staggered-roots": true,
+    "control-01-mixed-slopes": true,
+    "control-02-before-identical-v1": true,
+    "control-02-same-counts": true,
+    "control-02-same-inputs": true,
+    "control-02-staggered-roots": true,
+    "control-02-mixed-slopes": true,
+    "control-03-before-identical-v1": true,
+    "control-03-same-counts": true,
+    "control-03-same-inputs": true,
+    "control-03-staggered-roots": true,
+    "control-03-mixed-slopes": true,
+    "canopy-seed-preserves-wood": true,
+    "canopy-seed-changes-foliage": true,
+    "needle-size-preserves-wood": true,
+    "needle-size-changes-foliage": true,
+    "oak-identical-b0": true,
+    "columnar-identical-b4": true,
+    "export-contacts": true,
+    "godot-0": true,
+    "godot-2": true,
+    "godot-4": true,
+    "godot-6": true,
+    "godot-8": true,
+    "godot-10": true,
+    "godot-12": true,
+    "godot-14": true,
+    "all-real-captures": true,
+    "sources-unchanged": true
+  },
+  "visual_requested": true,
+  "structure_comparison": {
+    "pilot": {
+      "before": {
+        "root_height_spread_by_level_m": [
+          0.15876645443307558,
+          0.12948614954059146,
+          0.14019255938162,
+          0.12568656873758233,
+          0.12485099713226866,
+          0.1282926825415167,
+          0.09755454330634805,
+          0.16032663465924202
+        ],
+        "primary_slope_min": 0.10999999999999806,
+        "primary_slope_max": 0.11000000000000229,
+        "descending_primaries": 0,
+        "ascending_primaries": 48
+      },
+      "after": {
+        "root_height_spread_by_level_m": [
+          0.8667058313856897,
+          0.9231154936024457,
+          0.8891210856843736,
+          0.9323876579720665,
+          0.90467835401122,
+          0.9294505371834099,
+          0.9260351614159585,
+          0.8941758133056901
+        ],
+        "primary_slope_min": -0.07247484627713256,
+        "primary_slope_max": 0.4053307429694651,
+        "descending_primaries": 7,
+        "ascending_primaries": 41
+      }
+    },
+    "control-01": {
+      "before": {
+        "root_height_spread_by_level_m": [
+          0.1697174194172777,
+          0.1238707030872348,
+          0.11544638134362817,
+          0.12864876577325646,
+          0.16118749057728898,
+          0.16997253002253032,
+          0.1486645486365923,
+          0.14571556791014473
+        ],
+        "primary_slope_min": 0.10999999999999825,
+        "primary_slope_max": 0.11000000000000186,
+        "descending_primaries": 0,
+        "ascending_primaries": 48
+      },
+      "after": {
+        "root_height_spread_by_level_m": [
+          0.8735754469220163,
+          0.8861301387264273,
+          0.8970649594912574,
+          0.8693014379037081,
+          0.8817417389370537,
+          0.8677365604128466,
+          0.9133650303672756,
+          0.8921519077342719
+        ],
+        "primary_slope_min": -0.09120962661736867,
+        "primary_slope_max": 0.41225763780319813,
+        "descending_primaries": 13,
+        "ascending_primaries": 35
+      }
+    },
+    "control-02": {
+      "before": {
+        "root_height_spread_by_level_m": [
+          0.15352655112925762,
+          0.12335041345843578,
+          0.17238863756832945,
+          0.12675242269873532,
+          0.14070182918187424,
+          0.10884103719191884,
+          0.13095236906629992,
+          0.13980059186133076
+        ],
+        "primary_slope_min": 0.10999999999999795,
+        "primary_slope_max": 0.11000000000000207,
+        "descending_primaries": 0,
+        "ascending_primaries": 48
+      },
+      "after": {
+        "root_height_spread_by_level_m": [
+          0.892007998648219,
+          0.8431694145133335,
+          0.8192931548772853,
+          0.8415332142708776,
+          0.8556276503050873,
+          0.863493198868226,
+          0.8682629761193805,
+          0.9048871736354549
+        ],
+        "primary_slope_min": -0.08537649031855579,
+        "primary_slope_max": 0.39967105234207784,
+        "descending_primaries": 9,
+        "ascending_primaries": 39
+      }
+    },
+    "control-03": {
+      "before": {
+        "root_height_spread_by_level_m": [
+          0.16857915126182954,
+          0.1480775720836931,
+          0.08700415168974462,
+          0.06120414532035223,
+          0.11287995398527606,
+          0.1726306985798196,
+          0.1091604083272184,
+          0.047194088556601343
+        ],
+        "primary_slope_min": 0.10999999999999854,
+        "primary_slope_max": 0.11000000000000205,
+        "descending_primaries": 0,
+        "ascending_primaries": 48
+      },
+      "after": {
+        "root_height_spread_by_level_m": [
+          0.8220890489691126,
+          0.8582951925069171,
+          0.8799140615285772,
+          0.9162810642648314,
+          0.8796062804209974,
+          0.8950885139959084,
+          0.8332691636097973,
+          0.9413464986078992
+        ],
+        "primary_slope_min": -0.08702500055103429,
+        "primary_slope_max": 0.3997877303767181,
+        "descending_primaries": 10,
+        "ascending_primaries": 38
+      }
+    }
+  },
+  "camera_protocol": {
+    "shared_by_all_assets": true,
+    "cameras": {
+      "front": {
+        "type": "ORTHO",
+        "location": [
+          -0.25817549228668213,
+          -35.99494171142578,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 15.6,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "side": {
+        "type": "ORTHO",
+        "location": [
+          35.741825103759766,
+          0.005059000104665756,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707963705062866,
+          -0.0,
+          1.5707963705062866
+        ],
+        "ortho_scale": 15.6,
+        "basis_columns": [
+          [
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            4.371138828673793e-08,
+            1.910685676922942e-15,
+            1.0
+          ],
+          [
+            1.0,
+            4.371138828673793e-08,
+            -4.371138828673793e-08
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "top": {
+        "type": "ORTHO",
+        "location": [
+          -0.25817549228668213,
+          0.005059000104665756,
+          42.0
+        ],
+        "rotation_euler": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 15.6,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "below": {
+        "type": "ORTHO",
+        "location": [
+          19.57162094116211,
+          -27.451583862304688,
+          -6.202951431274414
+        ],
+        "rotation_euler": [
+          1.9166191816329956,
+          2.6564300981135602e-08,
+          0.6254850029945374
+        ],
+        "ortho_scale": 15.6,
+        "basis_columns": [
+          [
+            0.8106792569160461,
+            0.5854905247688293,
+            -2.6564300981135602e-08
+          ],
+          [
+            0.1984642893075943,
+            -0.2747966945171356,
+            0.9407968521118164
+          ],
+          [
+            0.5508276224136353,
+            -0.7626844644546509,
+            -0.33897092938423157
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "perspective": {
+        "type": "ORTHO",
+        "location": [
+          19.57162094116211,
+          -27.451583862304688,
+          18.202951431274414
+        ],
+        "rotation_euler": [
+          1.2249735593795776,
+          2.9242528398754075e-08,
+          0.6254849433898926
+        ],
+        "ortho_scale": 15.6,
+        "basis_columns": [
+          [
+            0.8106792569160461,
+            0.5854904651641846,
+            -2.9242528398754075e-08
+          ],
+          [
+            -0.19846418499946594,
+            0.27479666471481323,
+            0.9407968521118164
+          ],
+          [
+            0.5508276224136353,
+            -0.7626845240592957,
+            0.3389708399772644
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "reverse": {
+        "type": "ORTHO",
+        "location": [
+          -20.087970733642578,
+          27.461700439453125,
+          -6.202951431274414
+        ],
+        "rotation_euler": [
+          1.916619062423706,
+          1.8246578292746563e-07,
+          -2.5161075592041016
+        ],
+        "ortho_scale": 15.6,
+        "basis_columns": [
+          [
+            -0.8106791973114014,
+            -0.5854905843734741,
+            -1.8246578292746563e-07
+          ],
+          [
+            -0.19846436381340027,
+            0.2747964859008789,
+            0.9407969117164612
+          ],
+          [
+            -0.55082768201828,
+            0.7626845240592957,
+            -0.338970810174942
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "near": {
+        "type": "ORTHO",
+        "location": [
+          -0.25817549228668213,
+          -59.99494171142578,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 24,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ],
+        "target_height_fraction": 0.5
+      },
+      "medium": {
+        "type": "ORTHO",
+        "location": [
+          -0.25817549228668213,
+          -59.99494171142578,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 48,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ],
+        "target_height_fraction": 0.25
+      },
+      "far": {
+        "type": "ORTHO",
+        "location": [
+          -0.25817549228668213,
+          -59.99494171142578,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 120,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ],
+        "target_height_fraction": 0.1
+      }
+    },
+    "light_rotation_deg": [
+      -35,
+      -25,
+      0
+    ],
+    "light_energy": 1.2,
+    "ambient_energy": 0.5
+  },
+  "real_captures": 144,
+  "study": "/home/tao/repos/procedural/arboles/artifacts/blueprints/pine-v1.1-review-01",
+  "contacts": {
+    "pilot": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "control-01": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "control-02": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "control-03": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "before-pilot": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "before-control-01": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "before-control-02": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "before-control-03": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "pilot-repeat": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "canopy-seed": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    },
+    "needle-size": {
+      "passed": true,
+      "branch_insertions": 240,
+      "needle_roots": 2892,
+      "all_parent_triangles_found_in_glb": true,
+      "max_vertex_error_m": 0,
+      "method": "GLB reimportado; triángulos reales por soporte, tres rayos con salida orientada"
+    }
+  },
+  "godot": [
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    },
+    {
+      "ambient_energy": 0.5,
+      "godot": "4.7.2-stable (official)",
+      "light_energy": 1.2,
+      "light_rotation_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "passed": true,
+      "renderer": "gl_compatibility"
+    }
+  ],
+  "artistic_acceptance": "pending_user_review"
+}

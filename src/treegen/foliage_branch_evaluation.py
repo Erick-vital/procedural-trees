@@ -8,7 +8,7 @@ from .evaluation import validate_glb
 from .foliage import cross, digest, dot, sub
 
 
-def inspect_branch_glb(path, metrics, *, triangle_limit=10000):
+def inspect_branch_glb(path, metrics, *, triangle_limit=10000, wood_material='Oak_Bark', leaf_material='RF1_Leaf'):
     report = validate_glb(path, {'parameters': {'height_m': metrics['height_m']}}, triangle_limit=triangle_limit)
     if report['triangles'] != metrics['triangles'] or report['materials'] != metrics['triangles_by_material']:
         raise ValueError('GLB distinto del manifiesto')
@@ -37,7 +37,7 @@ def inspect_branch_glb(path, metrics, *, triangle_limit=10000):
         if material.get('alphaMode', 'OPAQUE') != 'OPAQUE' or doc.get('textures'):
             raise ValueError('Material con transparencia o textura inesperada')
         name = material['name']
-        if name == 'RF1_Leaf' and not material.get('doubleSided'):
+        if name == leaf_material and not material.get('doubleSided'):
             raise ValueError('Se descarta el reverso de las hojas')
         positions = accessor(primitive['attributes']['POSITION'], 3)
         normals = accessor(primitive['attributes']['NORMAL'], 3)
@@ -50,9 +50,9 @@ def inspect_branch_glb(path, metrics, *, triangle_limit=10000):
             ids = indices[offset:offset+3]
             a, b, c = [positions[i] for i in ids]
             face_normal = cross(sub(b, a), sub(c, a))
-            if name == 'RF1_Leaf' and any(dot(face_normal, normals[i]) <= 0 for i in ids):
+            if name == leaf_material and any(dot(face_normal, normals[i]) <= 0 for i in ids):
                 raise ValueError('Normal de hoja invertida')
-            if name == 'Oak_Bark':
+            if name == wood_material:
                 # Coordenadas y normales por vértice: conserva también el
                 # sombreado exportado, sin depender del orden de los índices.
                 wood.append(sorted(tuple(round(x, 6) for x in positions[i]+normals[i]) for i in ids))

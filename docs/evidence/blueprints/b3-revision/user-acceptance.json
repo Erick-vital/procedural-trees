@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-23",
+  "decision": "approved",
+  "scope": "Perfiles joven, adulto y viejo de B3 revisada; incluye hoja joven de 0.45 m. Aprobación de los resultados revisados, sin garantía de todos los intervalos o semillas. No incluye copa columnar ni aprobación anticipada del lote RF5.",
+  "blueprint": "blueprints/roble_copa_ancha/1.2.0.json",
+  "verification": "configs/verification/b3-v3.json",
+  "user_statement": "estoy revisando b3 apruebo queda bien, veo que reduciste el follaje en arboles jovenes y me gusta como queda mas. creo que podemos ejecutar rf5",
+  "next_authorized_work": "Ejecutar y evaluar RF5: treinta robles; sin iniciar F4–F6, bosque, viento ni LOD.",
+  "historical_recipe_metadata": "Se conserva la receta 1.2.0 exacta, incluidos sus estados experimental históricos; esta decisión posterior documenta la aprobación."
+}

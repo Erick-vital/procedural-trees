@@ -12,7 +12,7 @@ PYTHONPATH=src python3 -m treegen blueprints
 
 La respuesta lista `id`, `version`, nombre, perfil predeterminado, ruta y hash
 canónico de cada receta registrada en `blueprints/<id>/<versión>.json`.
-Hay dos tipos y cuatro versiones registradas. No hay selección “latest”.
+Hay tres tipos y seis versiones registradas. No hay selección “latest”.
 El perfil predeterminado no elige el tipo: se aplica dentro de una receta
 seleccionada explícitamente.
 
@@ -22,6 +22,8 @@ seleccionada explícitamente.
 | Joven revisado | `blueprints/roble_copa_ancha/1.2.0.json` | `presets/blueprints/b3-v2/joven-00.json` |
 | Adulto revisado | `blueprints/roble_copa_ancha/1.2.0.json` | `presets/blueprints/b3-v2/adulto-00.json` |
 | Segundo tipo columnar | `blueprints/arbol_copa_columnar/1.0.0.json` | `presets/blueprints/columnar/pilot.json` |
+| Pino cónico experimental | `blueprints/pino_conico/1.0.0.json` | `presets/blueprints/pino/pilot.json` |
+| Pino con estructura revisada | `blueprints/pino_conico/1.1.0.json` | `presets/blueprints/pino-v2/pilot.json` |
 
 `roble_copa_ancha` 1.1.0 y `presets/blueprints/b3/` conservan el ensayo inicial
 con fallos documentados; para los controles corregidos usar 1.2.0. El nombre de
@@ -85,9 +87,11 @@ la madera base. Cambiar tamaño de hoja con planificación fija conserva soporte
 raíces y ejes en los controles verificados. No confundir `base.foliage_scale_m`
 (tamaño de moldes) con `canopy.leaf_length_m` (hoja visible).
 
-Solo viejo-09 de referencia está aprobado por el usuario. Otros perfiles de
-roble 1.2.0 y `columna` tienen comprobaciones técnicas y revisión de capturas,
-pero siguen `experimental`. La petición con cambios no hereda una aprobación
+Viejo-09 y los perfiles joven/adulto/viejo B3 revisados están aprobados por el
+usuario desde el 2026-10-23. [Decisión posterior a B5](evidence/blueprints/b3-revision/user-acceptance.json).
+Se conserva la receta 1.2.0 exacta y su metadato histórico `experimental`; la
+aprobación queda documentada aparte y abarca los casos revisados. `columna`
+continúa experimental. Cambios o nuevas semillas no heredan aprobación
 artística. [Contrato completo](contrato-blueprints.md).
 
 ## Repetir y comparar
@@ -187,12 +191,78 @@ la selección de Q3 desde una copia sin `docs/`/`artifacts/` previos:
 python3 scripts/verify_blueprint_closure.py --output artifacts/blueprints/otro-cierre
 ```
 
+Añadir un perfil de desarrollo mediante `profiles` y sus `overrides`, declarando
+los parámetros editables en `editable_ranges` y fijando controles por semilla.
+Si cambian los resultados de una receta publicada, crear otra versión; conservar
+la referencia anterior. Para otra representación del follaje, registrar una
+estrategia versionada en código y su compatibilidad en los contratos; verificar
+presupuesto previo al mallado, contactos, exportación y regresión del roble.
+Cambiar solo el identificador en JSON no implementa una representación.
+
 Añadir un tipo mediante `blueprints/<id>/<versión>.json` y ejemplares separados,
 reutilizando solo componentes registrados. Definir objetivo y controles antes
 de generar; no inventar un identificador de componente para activar código
 arbitrario. Si la arquitectura requiere otra estrategia, implementarla y
 versionarla explícitamente, con límites y regresión de los tipos anteriores.
 [Ejemplo de reutilización B4](evidence/blueprints/b4/informe.md).
+
+## Pino experimental
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/pino_conico/1.0.0.json --instance presets/blueprints/pino/pilot.json --output artifacts/blueprints/pino-a --no-render
+PYTHONPATH=src python3 -m treegen validate artifacts/blueprints/pino-a
+python3 scripts/verify_pine.py --output artifacts/blueprints/pino-matriz --visual
+```
+
+La receta y sus ejemplares usan contrato **1.1**, perfil `conico`, componentes
+propios de estructura por pisos, distribución distal y acículas radiales.
+No acepta parámetros de roble, ni se pueden mezclar sus componentes.
+Sus controles están en `presets/blueprints/pino/`; la matriz fija cuatro semillas
+con parámetros comunes y comprueba repetición, controles de follaje, contactos
+en GLB reimportados, regresión del roble/columnar y vistas reales Godot.
+
+`base` incluye altura/radio, inicio de copa, pisos, ramas por piso, anchura,
+ascenso, irregularidad y longitud relativa de ramillas. `canopy` controla
+cantidad par de acículas por soporte y sus dimensiones. Semilla de copa y
+tamaño de acícula conservan madera; cambiar estructura o longitud de ramilla
+puede cambiarla. La repetición desde manifiesto usa el mismo procedimiento
+de extracción de `blueprint_definition` e `instance_request` descrito arriba.
+El `base_spec` de pino es un dato interno del blueprint, **no un TreeSpec**
+para `generate`, `batch` o API histórica.
+
+[Resultado y límites](evidence/blueprints/pino/informe.md): 12 m, 11924 triángulos,
+dos materiales, cuatro semillas verificadas y aceptación artística pendiente.
+No se garantizan todas las combinaciones de rangos ni otras edades.
+
+La revisión estructural **1.1.0** conserva el follaje y los parámetros, con
+estructura `pine-whorls@0.2.0`: salidas desfasadas, inclinaciones variadas y
+ramillas menos simétricas. [Comparación y resultados](evidence/blueprints/pino-revision/informe.md).
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/pino_conico/1.1.0.json --instance presets/blueprints/pino-v2/pilot.json --output artifacts/blueprints/pino-revisado --no-render
+python3 scripts/verify_pine.py --matrix configs/verification/pine-v2.json --output artifacts/blueprints/comparacion-pino --visual
+```
+
+En la galería comparativa, `pilot` y `control-01/02/03` son la revisión 1.1.0;
+`before-` indica 1.0.0 y `-wood` muestra madera sin follaje. Los números de
+control identifican semillas. Ambas recetas siguen experimentales.
+
+## Lote RF5 de treinta robles
+
+Matriz explícita `configs/verification/rf5-v1.json`: los treinta casos Q3, diez
+por edad, receta 1.2.0 y copa 17 común. Usa el ejecutor de blueprints, no `batch`.
+
+```sh
+python3 scripts/verify_rf5.py --output artifacts/rediseno-follaje/otro-rf5 --visual
+python3 scripts/rf5_evidence.py --study artifacts/rediseno-follaje/otro-rf5 --output artifacts/rediseno-follaje/otra-evidencia-rf5
+```
+
+[RF5 ejecutada y verificada](evidence/rediseno-follaje/rf5/informe.md): treinta
+GLB correctos, sin ajustes por semilla, regresión contra Q3 y galería Godot.
+El informe incluye reconstrucción de referencias si falta `artifacts/` y
+distingue las vistas de escala física común de las relativas a la altura.
+El usuario aprobó el lote completo el 2026-10-23: [aceptación RF5](evidence/rediseno-follaje/rf5/user-acceptance.json).
+Se conserva como alternativa explícita; los predeterminados TreeSpec permanecen.
 
 ## Cierre y pendientes separados
 
@@ -202,6 +272,6 @@ blueprints y el valor histórico 10000 para TreeSpec. Las conexiones tienen
 cota de 2048 intentos y el muestreo 8192 candidatos. Sin viento, LOD, bosque,
 mediciones FPS ni generalización garantizada a todo el rango de parámetros.
 
-**Decisión RF5 en B5: no ejecutar el lote de treinta.** Su generación, promoción
-y aceptación quedan para una solicitud y decisión posterior, separadas de este
-cierre y de las decisiones artísticas pendientes. [Informe B5](evidence/blueprints/b5/informe.md).
+B5 no ejecutó el lote RF5. Después del cierre, el usuario aprobó B3 revisada y
+autorizó su ejecución el 2026-10-23. El lote ya está ejecutado/verificado y
+aprobado artísticamente; la aceptación posterior se registra aparte. [Cierre histórico B5](evidence/blueprints/b5/informe.md).

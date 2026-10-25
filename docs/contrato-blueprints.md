@@ -186,3 +186,48 @@ comparación y extracción de entradas desde manifiesto. La selección no resuel
 “latest”. Los alias TreeSpec sin versión seleccionan Q3 0.4.0; Q3b se conserva
 por rutas explícitas `presets/v0.4.1/`, sin alterar estos contratos de blueprint.
 [Decisiones y verificación de cierre](evidence/blueprints/b5/informe.md).
+
+## Ampliación 1.1: pino experimental
+
+El 2026-10-24 se añade `pino_conico` 1.0.0. Los esquemas
+`tree-blueprint-pine.schema.json` y `tree-instance-pine.schema.json` usan
+`schema_version=1.1` y conservan la identidad, precedencia, semillas explícitas,
+límites, carga estricta y resolución congelada del sistema. El contrato 1.0
+y las recetas anteriores permanecen intactos. Receta y petición deben usar la
+misma versión de contrato; 1.1 admite únicamente la combinación registrada
+`pine-whorls@0.1.0` / `pine-distal@0.1.0` / `pine-needle-pairs@0.1.0`.
+
+Parámetros de estructura en `base`: `height_m`, `base_radius_m`,
+`crown_base_ratio` (altura relativa del primer piso), `whorl_count`,
+`branches_per_whorl`, `crown_radius_ratio` (radio inferior relativo a altura),
+`branch_rise_ratio`, `irregularity` y `secondary_length_ratio` (relativa a
+la longitud de la primaria). Parámetros `canopy`: `needles_per_twig` (par),
+`needle_length_m` y `needle_width_m`. Metros para dimensiones, enteros para
+conteos y razones adimensionales para el resto. No hay moldes RF3 en esta ruta.
+
+Con `N = whorl_count × branches_per_whorl`, la cota exacta actual es
+`188 + N×124 + (N×5+1)×needles_per_twig×2`. Incluye tronco 12×8,
+primarias 4×6, cuatro ramillas 3×4 por primaria, tapas y dos triángulos por
+acícula. No hay muestreo por rechazo ni reintentos. Se rechaza superar el
+presupuesto, cantidad impar, anchura de acícula mayor del 25 % de su longitud
+o radio basal mayor del 4 % de la altura. Necesita dos materiales y mantiene
+los techos globales 12500 triángulos/3 materiales/120 s.
+
+La resolución 1.1 registra `base_spec` interno `pine-whorls@0.1.0`,
+`canopy_spec`, semillas derivadas por SHA256 con prefijo explícito `pine-v1`,
+parámetros y receta completos. No amplía TreeSpec ni la API histórica.
+`seed(base,'foliage')` se conserva como procedencia de la base; la distribución
+de acículas usa exclusivamente la semilla `canopy` explícita. La generación
+valida el resultado con los roles `Pine_Bark` y `Pine_Needles`; las funciones
+de evaluación conservan los roles históricos como predeterminados.
+
+[Plan](../plans/blueprint-pino.md), [guía](uso-blueprints.md#pino-experimental),
+[verificación y revisión visual](evidence/blueprints/pino/informe.md).
+
+Revisión estructural posterior: el contrato 1.1 también admite
+`pine-whorls@0.2.0` con la misma distribución/representación 0.1.0.
+`pino_conico` 1.1.0 lo selecciona explícitamente; 1.0.0 conserva la estructura
+0.1.0. La resolución registra la versión efectiva en `base_spec.algorithm_version`
+y el adaptador despacha únicamente estrategias registradas. Mismos parámetros,
+cota y semillas; no amplía los rangos ni incorpora otra representación de hoja.
+[Comparación reproducible y límites](evidence/blueprints/pino-revision/informe.md).

@@ -1,0 +1,212 @@
+{
+  "joven-00": {
+    "source": "artifacts/q3/acceptance/lote/joven-00",
+    "reference_glb_sha256": "eba606d1169017cb1d65e62930dabb1760774673dca9135eaba5218c2b80a5a0",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-01": {
+    "source": "artifacts/q3/acceptance/lote/joven-01",
+    "reference_glb_sha256": "c0e8658d0d4fcda2bb7ad011ca8bdc15ab71ecb01879d8ec6dd3289aa9017846",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-02": {
+    "source": "artifacts/q3/acceptance/lote/joven-02",
+    "reference_glb_sha256": "3d6c4984de80e5eacf4bd5145763f70fe510217fbfc8228c4ffde98c11659459",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-03": {
+    "source": "artifacts/q3/acceptance/lote/joven-03",
+    "reference_glb_sha256": "1e48554c4349a14f35cf482e3938e4fee2a560c4e3dd1ec880fa4a2b87b53848",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-04": {
+    "source": "artifacts/q3/acceptance/lote/joven-04",
+    "reference_glb_sha256": "6e203ffcec7fbec8a55c00f3280d2e4190e82169178f27aafd8f7df506e442ca",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-05": {
+    "source": "artifacts/q3/acceptance/lote/joven-05",
+    "reference_glb_sha256": "97d4a65950f28efa6dde5702d9ef1916562ad8ebe9b447f8c3a0e731f7c3eb14",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-06": {
+    "source": "artifacts/q3/acceptance/lote/joven-06",
+    "reference_glb_sha256": "8b03ceb97a0990aa79a13d0d58f782929ee2311edd8f9caabbfe66ce5d9f17c8",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-07": {
+    "source": "artifacts/q3/acceptance/lote/joven-07",
+    "reference_glb_sha256": "2c52e0b4d5ade5325092533f6236fe7c0c32abe81cb2c1525c68bb356bb6bce0",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-08": {
+    "source": "artifacts/q3/acceptance/lote/joven-08",
+    "reference_glb_sha256": "135cad22508675a256c68e9f91b52d7f746191d837d7cfd9535b76cc452f58fb",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "joven-09": {
+    "source": "artifacts/q3/acceptance/lote/joven-09",
+    "reference_glb_sha256": "f471bfcf7d2a7f7d37a4e24ea032dd2f2b8c00170122a768573a707d30bdfb52",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-00": {
+    "source": "artifacts/q3/acceptance/lote/adulto-00",
+    "reference_glb_sha256": "605e7033b2b51b6531e6b9df5c5197b57fcd0d34189de424cb373a2c84abc8b8",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-01": {
+    "source": "artifacts/q3/acceptance/lote/adulto-01",
+    "reference_glb_sha256": "0e8ac649a7a23e696447ed1b1610cb00f80a3fe655c47daa04941e0f4737e7ee",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-02": {
+    "source": "artifacts/q3/acceptance/lote/adulto-02",
+    "reference_glb_sha256": "36c2e7738bebab5d6386992f9675082b2a74917c7e1193fe83b37451bb93aec8",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-03": {
+    "source": "artifacts/q3/acceptance/lote/adulto-03",
+    "reference_glb_sha256": "6abe516b0994256106728e03e438793313dab5a7c45e6ca1e7dfb98c6a67f50d",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-04": {
+    "source": "artifacts/q3/acceptance/lote/adulto-04",
+    "reference_glb_sha256": "41e7063e5471e5263447b2740916aecfe81a2163e15925b0a310300797530f6b",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-05": {
+    "source": "artifacts/q3/acceptance/lote/adulto-05",
+    "reference_glb_sha256": "17568567616fd9ec479d5d8d364739581a91f406b4fa0726e5d1ba136a27056e",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-06": {
+    "source": "artifacts/q3/acceptance/lote/adulto-06",
+    "reference_glb_sha256": "751a4f40e670f6c029a1e5d240b2414b06b2c3490fcf6df3db527180f28e1add",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-07": {
+    "source": "artifacts/q3/acceptance/lote/adulto-07",
+    "reference_glb_sha256": "34807937972f86f8509bafad737efc6e903d6e1a9bc8f807bc788f4a2238850a",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-08": {
+    "source": "artifacts/q3/acceptance/lote/adulto-08",
+    "reference_glb_sha256": "5d0285e84069bf6767b4956b085be71f21b49afebbfb1a7fd24b81f6b8b6731f",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "adulto-09": {
+    "source": "artifacts/q3/acceptance/lote/adulto-09",
+    "reference_glb_sha256": "4bcdc3b9d50f261cb9e6fcffa8ff93ceaeb74a16f80ec4af224b523eb4337461",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-00": {
+    "source": "artifacts/q3/acceptance/lote/viejo-00",
+    "reference_glb_sha256": "7ef2bec1e6d8233fb5879bb65f0a123a31c875dea740ce58449f028ff20d6d9d",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-01": {
+    "source": "artifacts/q3/acceptance/lote/viejo-01",
+    "reference_glb_sha256": "762cdb8e11b6a8a3c86b146cffd98fb4bd1ace64d83666e0b47d0a83ff9d015b",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-02": {
+    "source": "artifacts/q3/acceptance/lote/viejo-02",
+    "reference_glb_sha256": "52a34793092f520d109a993f66f62b3c51c1a05e16a3c7bb3bd09100ff07cd4c",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-03": {
+    "source": "artifacts/q3/acceptance/lote/viejo-03",
+    "reference_glb_sha256": "f37d57f9b4da391041d146bef84b76546f08208c8ff88514c2a4b6274cbeef62",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-04": {
+    "source": "artifacts/q3/acceptance/lote/viejo-04",
+    "reference_glb_sha256": "ae0903ac1cec4458a2cf911db2fb92fa935cde864d9f5d2a40497c15a53ec253",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-05": {
+    "source": "artifacts/q3/acceptance/lote/viejo-05",
+    "reference_glb_sha256": "a423fd9b863e2b7b399a76a23f257563826542efbeee50facd60906212f3de55",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-06": {
+    "source": "artifacts/q3/acceptance/lote/viejo-06",
+    "reference_glb_sha256": "3fc69c6c918bd464ecbb23eef8cb2e8a70f9d28e32a36e5aee3aca87903498b9",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-07": {
+    "source": "artifacts/q3/acceptance/lote/viejo-07",
+    "reference_glb_sha256": "83a4f077995c60430c2d4f1b338fa6911637b681baf14ef52cbfcd2b68dff507",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-08": {
+    "source": "artifacts/q3/acceptance/lote/viejo-08",
+    "reference_glb_sha256": "122e3d54888ff18827d7f6160b20b388079a0cd57c97194de835b9d2a847d81f",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  },
+  "viejo-09": {
+    "source": "artifacts/q3/acceptance/lote/viejo-09",
+    "reference_glb_sha256": "f37632d345072c83b8c7a04b2162f25902ae180d134ac8d6d6fd14d035d1df23",
+    "same_base_spec": true,
+    "geometry_normals_equal": true,
+    "bark_material_equal": true
+  }
+}

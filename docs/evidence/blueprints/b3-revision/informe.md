@@ -1,5 +1,11 @@
 # B3: hojas jóvenes y contacto de 20 m resueltos
 
+**Decisión posterior, 2026-10-23:** el usuario aprueba los resultados B3 revisados,
+incluida la hoja joven de .45 m, y autoriza ejecutar RF5.
+[Aprobación y alcance](user-acceptance.json). El informe conserva abajo el estado
+y las comprobaciones del ensayo original; la aprobación no incluye copa columnar
+ni aceptación anticipada del lote RF5.
+
 Fecha: 2026-10-23. **Revisión implementada y verificada técnicamente.**
 La matriz termina con `passed=true`: 22 generaciones válidas, tres rechazos
 previstos, cuatro repeticiones idénticas y 84 comprobaciones de invariantes.

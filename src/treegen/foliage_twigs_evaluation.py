@@ -7,8 +7,9 @@ from .foliage import digest, cross, dot, sub
 from .foliage_branch_evaluation import inspect_branch_glb
 
 
-def inspect_twigs_glb(path, metrics, *, triangle_limit=10000):
-    report = inspect_branch_glb(path, metrics, triangle_limit=triangle_limit)
+def inspect_twigs_glb(path, metrics, *, triangle_limit=10000, wood_material='Oak_Bark', leaf_material='RF1_Leaf'):
+    report = inspect_branch_glb(path, metrics, triangle_limit=triangle_limit,
+                                wood_material=wood_material, leaf_material=leaf_material)
     raw = Path(path).read_bytes()
     size = struct.unpack_from('<I', raw, 12)[0]
     doc = json.loads(raw[20:20+size])

@@ -1,24 +1,46 @@
 # Estado del proyecto
 
-Última actualización: 2026-10-23.
+Última actualización: 2026-10-24.
 
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
-Dos tipos registrados y documentados; referencia del primero conservada.
+Dos tipos al cierre B5; catálogo ampliado ahora a tres con pino experimental.
+Plan activo: [blueprint de pino](plans/blueprint-pino.md), implementado y
+revisado en **1.1.0**, con ramas desfasadas e inclinaciones variadas.
+**Revisión artística del usuario pendiente**; acículas conservadas.
+[Comparación y resultados](docs/evidence/blueprints/pino-revision/informe.md).
 [Guía de uso](docs/uso-blueprints.md), [cierre B5](docs/evidence/blueprints/b5/informe.md).
-Solo viejo-09 RF3 está aprobado artísticamente por el usuario como referencia.
-Perfiles RF3 nuevos y copa columnar siguen experimentales, aunque verificados.
-**RF5: lote de treinta no ejecutado ni promovido al cerrar B5.**
+Viejo-09 RF3 y perfiles joven/adulto/viejo de B3 revisada aprobados por el usuario.
+Aprobación B3 del 2026-10-23, incluida hoja joven .45 m: [decisión](docs/evidence/blueprints/b3-revision/user-acceptance.json).
+Copa columnar sigue experimental. **RF5 ejecutada y verificada: 30/30**, receta
+1.2.0, diez por edad; **aprobación artística del lote registrada** el 2026-10-23.
+[Aceptación RF5](docs/evidence/rediseno-follaje/rf5/user-acceptance.json).
+[Informe y galería seleccionada](docs/evidence/rediseno-follaje/rf5/informe.md).
 
 Objetivo v1: treinta robles low-poly reproducibles/exportables a GLB y evaluación
 IA para parámetros/reglas/simplificación. Infraestructura F0–F2 verificada;
 F4–F6 IA pendientes. F3/bosques, mapa y terreno diferidos.
 El [plan v1](plans/v1-generador-arboles.md) conserva ese alcance separado.
 [Rediseño de follaje](plans/rediseno-follaje.md): RF3 aprobada; integración B2 y
-controles RF4/B3 verificados en matrices acotadas; lote/promoción RF5 pendientes.
+controles RF4/B3 y lote RF5 verificados y aprobados. **Rediseño cerrado para
+la familia ensayada**, como alternativa explícita a Q3.
 
 ## Avances verificados
+
+- Pino: `pino_conico` 1.0.0, eje y ocho pisos de ramas con acículas radiales;
+  componentes propios 0.1.0, contratos 1.1 y ejecutor común. Cuatro semillas
+  fijas, 12 m, 11924 triángulos/2 materiales y 2892 acículas. 94 pruebas,
+  27 comprobaciones, repetición idéntica y controles de follaje que conservan
+  madera. Siete GLB reimportados para contactos, ocho escenas Godot y 72
+  capturas reales revisadas. Roble B0 y columnar B4 idénticos byte por byte.
+  [Informe y reproducción](docs/evidence/blueprints/pino/informe.md).
+- Pino 1.1.0: estructura 0.2.0 con raíces desfasadas, inclinaciones mixtas y
+  ramillas menos simétricas; mismos parámetros, semillas, cantidades y coste.
+  97 pruebas, 51 comprobaciones, piloto repetido idéntico, once pinos
+  reimportados y 144 capturas reales de 16 escenas Godot. Cuatro GLB 1.0.0,
+  roble B0 y columnar B4 idénticos a sus referencias. Revisión visual realizada;
+  aprobación del usuario pendiente. [Informe](docs/evidence/blueprints/pino-revision/informe.md).
 
 - B0: referencia RF3 aprobada, congelada y reproducida. 133 archivos auditados,
   105 fuentes recuperables de Git. [Informe](docs/evidence/blueprints/b0/informe.md).
@@ -43,6 +65,14 @@ controles RF4/B3 verificados en matrices acotadas; lote/promoción RF5 pendiente
   [Cierre](docs/evidence/blueprints/b5/informe.md).
 - B5 corrigió finalización TreeSpec: inicializar `files_sha256` que no emitía
   el adaptador histórico. Regresión probada; GLB anterior/posterior idéntico.
+- RF5: treinta casos Q3 con follaje RF3, sin retoques por semilla ni fallos;
+  88 pruebas, 74 comprobaciones, tres repeticiones idénticas y viejo-09 igual a B0.
+  Madera/normales/corteza iguales a Q3 en treinta GLB; 7920 inserciones válidas
+  sobre GLB reimportados. 60 escenas Godot (30 copas/30 maderas), 360 capturas;
+  láminas de todos los casos revisadas. Joven/adulto/viejo: 7324/9644/10572
+  triángulos. Generación 2.584–3.994 s; receta y componentes intactos.
+  Lote completo aprobado por el usuario: conserva su identidad entre semillas.
+  [RF5](docs/evidence/rediseno-follaje/rf5/informe.md).
 - Base previa: Q1b y Q2 aprobadas; Q2 normaliza solo Z desde madera y conserva
   X/Y/radios. Q3 aprobada; Q3b rechazada. Fusión/addons comparados, sin ganador
   general ni sustitución del generador propio.
@@ -60,7 +90,9 @@ controles RF4/B3 verificados en matrices acotadas; lote/promoción RF5 pendiente
 - Receta/perfil/ejemplar separados; semillas explícitas y componentes registrados.
   CLI exige receta y petición; sin selección “latest”. Inicio rápido: roble 1.0.0
   y viejo-09 aprobado. Recetas 1.0.0/1.1.0/1.2.0 del primero conservadas;
-  perfiles nuevos y segundo tipo no promovidos por pasar pruebas técnicas.
+  aprobación B3 posterior documentada aparte sin alterar hashes de recetas.
+  Columnar y pino sin aprobación artística. Pino exige receta/ejemplar 1.1;
+  contratos y recetas históricas 1.0 conservados, componentes no intercambiables.
 - B5 resuelve los alias TreeSpec `presets/{joven,adulto,viejo}.json`: ahora
   idénticos a Q3 `presets/v0.4.0/`. Sus contenidos Q3b previos se conservaron
   byte por byte en `presets/v0.4.1/`; `q3b-cases.json` histórico intacto.
@@ -92,9 +124,20 @@ controles RF4/B3 verificados en matrices acotadas; lote/promoción RF5 pendiente
 
 ## Siguiente paso y pendientes
 
-No hay una fase de blueprints en ejecución tras B5. Decisiones separadas:
-aprobación artística de perfiles/tipo nuevos y si solicitar/evaluar lote RF5.
-No se ha autorizado ni ejecutado ese lote como parte del cierre.
+Revisar con el usuario el pino **1.1.0**: modelo
+`artifacts/blueprints/pine-v1.1-review-01/pilot/tree.glb` y galería
+`artifacts/blueprints/pine-v1.1-review-01/index.html`. `before-` muestra 1.0.0;
+`pilot` y `control-01/02/03` son la revisión. Aprobación artística pendiente.
+El usuario prefirió ramas desfasadas y autorizó esta revisión; no es aceptación
+del conjunto. Acículas grandes y grupos en estrella conservados para evaluar
+primero la estructura. Solo cuatro semillas de 12 m verificadas; rangos
+completos y otras edades sin garantía. 1.0.0 y su galería anterior conservadas.
+
+RF5 cerrado con aprobación artística del lote completo. Matriz
+`configs/verification/rf5-v1.json`; galería
+`artifacts/rediseno-follaje/rf5-lote-01/index.html`. RF3 aprobada como alternativa
+explícita a Q3; predeterminados conservados. F4 (lenguaje natural a parámetros)
+sigue pendiente de decisión de inicio y adaptación a blueprints.
 F4–F6 IA siguen pendientes; elegir proveedor/modelo al retomarlas.
 F5 conserva normalización Q2 solo Z y radios posiblemente elípticos, y deberá
 comparar estructura con/sin regla conservando ≥90 % de longitud; no fue sustituida.

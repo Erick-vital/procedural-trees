@@ -52,19 +52,27 @@ def execute(spec, output, render=True, timeout=120, job_id=None, *, blueprint=No
             manifest.update(kind='blueprint', resolved_blueprint=resolved)
         elif isinstance(spec, (str, Path)):
             spec = load_spec(spec)
-        validate_spec(spec)
-        job = {'spec': spec, 'spec_sha256': spec_hash(spec), 'output': str(output), 'render': render,
+        pine = resolved is not None and resolved['base_spec']['algorithm'] == 'pine-whorls'
+        if pine:
+            from .blueprints import canonical_hash
+            input_hash = canonical_hash(spec)
+        else:
+            validate_spec(spec)
+            input_hash = spec_hash(spec)
+        job = {'spec': spec, 'spec_sha256': input_hash, 'output': str(output), 'render': render,
                'runner_python': sys.version, 'jsonschema_version': version('jsonschema'),
                'seeds': {s: derive_seed(spec['seed'], s) for s in ('structure', 'foliage')}}
         if resolved is not None:
             job['resolved_blueprint'] = resolved
+            job['seeds'] = resolved['base_seeds']
         job['timeout_seconds'] = timeout
         write_json(output / 'input.json', job)
         manifest.update(spec=spec, spec_sha256=job['spec_sha256'])
         write_json(output / 'manifest.json', manifest)
         command = [os.environ.get('BLENDER_BIN', BLENDER), '--background', '--factory-startup',
                    '--threads', '1', '--python-exit-code', '1', '--python',
-                   str(ROOT / ('blender/generate_blueprint.py' if resolved else 'blender/generate_oak.py')),
+                   str(ROOT / ('blender/generate_pine.py' if pine else
+                               'blender/generate_blueprint.py' if resolved else 'blender/generate_oak.py')),
                    '--', str(output / 'input.json')]
         with (output / 'blender.log').open('w') as log:
             process = subprocess.Popen(command, cwd=ROOT, stdout=log, stderr=subprocess.STDOUT,

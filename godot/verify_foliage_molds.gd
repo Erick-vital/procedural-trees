@@ -11,7 +11,7 @@ func inspect_materials(node: Node) -> void:
 			if mat is StandardMaterial3D:
 				check(mat.transparency == BaseMaterial3D.TRANSPARENCY_DISABLED, "Transparencia inesperada")
 				check(mat.albedo_texture == null, "Textura inesperada")
-				if mat.resource_name == "RF1_Leaf":
+				if mat.resource_name in ["RF1_Leaf", "Pine_Needles"]:
 					check(mat.cull_mode == BaseMaterial3D.CULL_DISABLED, "Reverso descartado")
 	for child in node.get_children():
 		inspect_materials(child)

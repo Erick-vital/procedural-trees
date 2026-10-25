@@ -16,17 +16,27 @@ from .seeds import derive_seed
 MAX_DOCUMENT_BYTES = 65536
 SCHEMA = json.loads((ROOT / 'schemas/tree-blueprint.schema.json').read_text())
 INSTANCE_SCHEMA = json.loads((ROOT / 'schemas/tree-instance.schema.json').read_text())
+PINE_SCHEMA = json.loads((ROOT / 'schemas/tree-blueprint-pine.schema.json').read_text())
+PINE_INSTANCE_SCHEMA = json.loads((ROOT / 'schemas/tree-instance-pine.schema.json').read_text())
 StrictValidator = extend(Draft202012Validator, type_checker=Draft202012Validator.TYPE_CHECKER.redefine(
     'integer', lambda checker, value: type(value) is int))
 VALIDATOR = StrictValidator(SCHEMA)
 INSTANCE_VALIDATOR = StrictValidator(INSTANCE_SCHEMA)
 PARAMETERS_VALIDATOR = StrictValidator(SCHEMA['$defs']['parameters'])
 
+
+def _schema(document):
+    return PINE_SCHEMA if document.get('schema_version') == '1.1' else SCHEMA
+
+
+def _instance_validator(document):
+    return StrictValidator(PINE_INSTANCE_SCHEMA) if document.get('schema_version') == '1.1' else INSTANCE_VALIDATOR
+
 # Identificadores de capacidades, no rutas de importación ni código desde JSON.
 COMPONENTS = MappingProxyType({
-    'base': ('oak_geometry_nodes@0.4.0',),
-    'distribution': ('foliage-canopy@0.1.0', 'foliage-canopy@0.1.1'),
-    'representation': ('rf3-diamond-six@0.1.0',),
+    'base': ('oak_geometry_nodes@0.4.0', 'pine-whorls@0.1.0', 'pine-whorls@0.2.0'),
+    'distribution': ('foliage-canopy@0.1.0', 'foliage-canopy@0.1.1', 'pine-distal@0.1.0'),
+    'representation': ('rf3-diamond-six@0.1.0', 'pine-needle-pairs@0.1.0'),
 })
 
 
@@ -84,8 +94,8 @@ def _leaves(value, prefix=''):
             yield path, item
 
 
-def _rule(path):
-    rule = SCHEMA['$defs']['parameters']
+def _rule(path, schema=SCHEMA):
+    rule = schema['$defs']['parameters']
     for part in path.split('.'):
         rule = rule['properties'][part]
     return rule
@@ -111,6 +121,13 @@ def _patch(parameters, overrides, ranges):
 
 
 def _check_parameters(parameters, blueprint):
+    if blueprint['schema_version'] == '1.1':
+        _validate(StrictValidator(PINE_SCHEMA['$defs']['parameters']), parameters)
+        from .pine import check_parameters
+        for path, value in _leaves(parameters):
+            if path in blueprint['editable_ranges'] and not _in_range(value, blueprint['editable_ranges'][path]):
+                raise ValueError(f'Valor fuera del rango declarado: {path}')
+        return check_parameters(parameters, blueprint['limits'])
     _validate(PARAMETERS_VALIDATOR, parameters)
     for path, value in _leaves(parameters):
         interval = blueprint['editable_ranges'].get(path)
@@ -139,14 +156,22 @@ def _check_parameters(parameters, blueprint):
 
 
 def validate_blueprint(blueprint):
-    _validate(VALIDATOR, blueprint)
+    schema = _schema(blueprint)
+    _validate(StrictValidator(schema), blueprint)
     for role, identifier in blueprint['components'].items():
         if identifier not in COMPONENTS[role]:
             raise ValueError(f'Componente o versión no registrado: {role}={identifier}')
+    pine = blueprint['schema_version'] == '1.1'
+    expected = ({'base': blueprint['components']['base'], 'distribution': 'pine-distal@0.1.0',
+                 'representation': 'pine-needle-pairs@0.1.0'} if pine else None)
+    if (pine and (blueprint['components'] != expected or blueprint['components']['base'] not in
+                 ('pine-whorls@0.1.0', 'pine-whorls@0.2.0'))) or (not pine and any(
+            identifier.startswith('pine-') for identifier in blueprint['components'].values())):
+        raise ValueError('Combinación de componentes incompatible con el contrato')
     if blueprint['default_profile'] not in blueprint['profiles']:
         raise ValueError('Perfil predeterminado inexistente')
     for path, interval in blueprint['editable_ranges'].items():
-        rule = _rule(path)
+        rule = _rule(path, schema)
         low, high = interval['minimum'], interval['maximum']
         if low > high or low < rule['minimum'] or high > rule['maximum']:
             raise ValueError(f'Rango inválido o fuera del contrato del componente: {path}')
@@ -165,7 +190,7 @@ def load_blueprint(path):
 
 def load_instance(path):
     value = _load(path)
-    _validate(INSTANCE_VALIDATOR, value)
+    _validate(_instance_validator(value), value)
     return value
 
 
@@ -185,7 +210,9 @@ def registered_blueprints():
 def resolve_blueprint(blueprint, instance):
     """Resuelve valores y procedencia sin mutar entradas ni invocar un motor 3D."""
     validate_blueprint(blueprint)
-    _validate(INSTANCE_VALIDATOR, instance)
+    _validate(_instance_validator(instance), instance)
+    if instance['schema_version'] != blueprint['schema_version']:
+        raise ValueError('Versión de contrato distinta entre receta y ejemplar')
     if (instance['blueprint_id'], instance['blueprint_version']) != (blueprint['id'], blueprint['version']):
         raise ValueError('Identidad o versión del blueprint distinta de la solicitada')
     name = instance.get('profile', blueprint['default_profile'])
@@ -196,6 +223,9 @@ def resolve_blueprint(blueprint, instance):
     parameters = _patch(defaults, instance.get('overrides', {}), blueprint['editable_ranges'])
     budget = _check_parameters(parameters, blueprint)
     base_seed, canopy_seed = instance['seeds']['base'], instance['seeds']['canopy']
+    if blueprint['schema_version'] == '1.1':
+        from .pine import resolve_pine
+        return resolve_pine(blueprint, instance, name, profile, defaults, parameters, budget)
     base_spec = {'schema_version': '1.0', 'algorithm': 'oak_geometry_nodes',
                  'algorithm_version': '0.4.0', 'seed': base_seed, 'parameters': parameters['base']}
     validate_spec(base_spec)

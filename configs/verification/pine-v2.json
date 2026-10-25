@@ -1,0 +1,63 @@
+{
+  "version": "pine-matrix-2.0.0",
+  "objective": "plans/blueprint-pino.md",
+  "blueprint": "blueprints/pino_conico/1.1.0.json",
+  "cases": [
+    {
+      "id": "pilot",
+      "instance": {
+        "schema_version": "1.1",
+        "blueprint_id": "pino_conico",
+        "blueprint_version": "1.1.0",
+        "profile": "conico",
+        "seeds": {
+          "base": 5100,
+          "canopy": 97
+        }
+      }
+    },
+    {
+      "id": "control-01",
+      "instance": {
+        "schema_version": "1.1",
+        "blueprint_id": "pino_conico",
+        "blueprint_version": "1.1.0",
+        "profile": "conico",
+        "seeds": {
+          "base": 5101,
+          "canopy": 98
+        }
+      }
+    },
+    {
+      "id": "control-02",
+      "instance": {
+        "schema_version": "1.1",
+        "blueprint_id": "pino_conico",
+        "blueprint_version": "1.1.0",
+        "profile": "conico",
+        "seeds": {
+          "base": 5102,
+          "canopy": 99
+        }
+      }
+    },
+    {
+      "id": "control-03",
+      "instance": {
+        "schema_version": "1.1",
+        "blueprint_id": "pino_conico",
+        "blueprint_version": "1.1.0",
+        "profile": "conico",
+        "seeds": {
+          "base": 5103,
+          "canopy": 100
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "blueprint": "blueprints/pino_conico/1.0.0.json",
+    "evidence": "docs/evidence/blueprints/pino/verification.json"
+  }
+}

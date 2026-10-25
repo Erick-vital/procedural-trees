@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.1",
+  "id": "pino_conico",
+  "version": "1.0.0",
+  "name": "Pino estilizado de copa cónica",
+  "description": "Pino experimental de eje central y pseudovérticilos, ramillas laterales y acículas en pares exageradas para lectura low-poly. Interpretación artística de Pinus sin especie ni edad botánica. Objetivo: plans/blueprint-pino.md.",
+  "components": {
+    "base": "pine-whorls@0.1.0",
+    "distribution": "pine-distal@0.1.0",
+    "representation": "pine-needle-pairs@0.1.0"
+  },
+  "parameters": {
+    "base": {
+      "height_m": 12,
+      "base_radius_m": 0.23,
+      "crown_base_ratio": 0.2,
+      "whorl_count": 8,
+      "branches_per_whorl": 6,
+      "crown_radius_ratio": 0.24,
+      "branch_rise_ratio": 0.11,
+      "irregularity": 0.16,
+      "secondary_length_ratio": 0.34
+    },
+    "canopy": {
+      "needles_per_twig": 12,
+      "needle_length_m": 0.8,
+      "needle_width_m": 0.1
+    }
+  },
+  "appearance": {
+    "bark": {
+      "color_rgba": [
+        0.24,
+        0.105,
+        0.045,
+        1
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "double_sided": true
+    },
+    "leaf": {
+      "color_rgba": [
+        0.055,
+        0.23,
+        0.095,
+        1
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "double_sided": true
+    }
+  },
+  "editable_ranges": {
+    "base.height_m": {
+      "minimum": 4,
+      "maximum": 20
+    },
+    "base.base_radius_m": {
+      "minimum": 0.1,
+      "maximum": 0.5
+    },
+    "base.crown_base_ratio": {
+      "minimum": 0.12,
+      "maximum": 0.35
+    },
+    "base.whorl_count": {
+      "minimum": 4,
+      "maximum": 10
+    },
+    "base.branches_per_whorl": {
+      "minimum": 4,
+      "maximum": 8
+    },
+    "base.crown_radius_ratio": {
+      "minimum": 0.16,
+      "maximum": 0.32
+    },
+    "base.branch_rise_ratio": {
+      "minimum": 0.05,
+      "maximum": 0.18
+    },
+    "base.irregularity": {
+      "minimum": 0,
+      "maximum": 0.25
+    },
+    "canopy.needles_per_twig": {
+      "minimum": 8,
+      "maximum": 20
+    },
+    "canopy.needle_length_m": {
+      "minimum": 0.2,
+      "maximum": 0.8
+    },
+    "canopy.needle_width_m": {
+      "minimum": 0.015,
+      "maximum": 0.12
+    },
+    "base.secondary_length_ratio": {
+      "minimum": 0.22,
+      "maximum": 0.4
+    }
+  },
+  "default_profile": "conico",
+  "profiles": {
+    "conico": {
+      "description": "Piloto y tres semillas reservadas, 12 m. Perfil artístico experimental.",
+      "overrides": {},
+      "validation": {
+        "status": "experimental",
+        "evidence": [
+          "plans/blueprint-pino.md",
+          "configs/verification/pine-v1.json"
+        ]
+      }
+    }
+  },
+  "limits": {
+    "triangles": 12500,
+    "materials": 3,
+    "generation_seconds": 120
+  }
+}
