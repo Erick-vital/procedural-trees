@@ -358,3 +358,26 @@ Verificación: `configs/verification/pine-painted-cards-v1.json` mediante
 `artifacts/pino-pintado/pp4-cards-02/index.html`. `before-` = 2.2.0;
 `new-` = 2.3.0; `topology-` = soporte anterior con igual anchura nueva.
 [Resultados, reproducción y límites](evidence/pino-pintado/pp4-laminas/informe.md).
+
+### Comparación de rendimiento 1.1.0/2.3.0 en Godot
+
+El benchmark compara el pino geométrico anterior al pintado con el pino pintado
+aprobado. Configuración explícita: `configs/verification/pine-performance-v1.json`;
+no cambia materiales, mallas ni recetas de producción.
+
+```sh
+python3 scripts/benchmark_painted_pine.py --output artifacts/pino-pintado/mi-benchmark
+python3 scripts/pine_performance_evidence.py --study artifacts/pino-pintado/mi-benchmark --evidence artifacts/pino-pintado/mi-evidencia-rendimiento
+```
+
+Requiere sesión gráfica/GPU; no se acepta llvmpipe ni un render headless como
+medición. Por defecto reutiliza los GLB históricos con hashes verificados en
+`artifacts/blueprints/pine-v1.1-review-01/` y `artifacts/pino-pintado/pp4-cards-02/`.
+Si faltan, los regenera con recetas/semillas congeladas y Blender. Rutas alternativas
+mediante `--baseline-source` y `--source`. Calentamiento y captura se excluyen;
+VSync/límite FPS/LOD automático desactivados, render interno 1080p y ventana 720p.
+`--smoke` comprueba el arnés con cuatro árboles y tiempos breves, sin constituir
+benchmark. `--analyze-only` recalcula los resúmenes de una ejecución ya terminada.
+
+[Resultado medido, condiciones y límites](evidence/pino-pintado/rendimiento-v11/informe.md):
+128 árboles 353→589 FPS; 512, 126→228 FPS en RTX 5060/1080p/MSAA4/sombras.

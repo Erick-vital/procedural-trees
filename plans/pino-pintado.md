@@ -309,3 +309,32 @@ El usuario aprueba esta versión y solicita commit. Se cierra PP1–PP4 para el
 piloto y tres controles de 12 m, sin extender la aceptación a otras semillas,
 alturas/edades ni iniciar fases adicionales.
 [Aceptación y hashes](../docs/evidence/pino-pintado/pp4-laminas/user-acceptance.json).
+
+## Ampliación solicitada: prueba de rendimiento 2.3.0 frente a 1.1.0
+
+El usuario solicita ahora el benchmark antes excluido. Alcance: Godot real con
+GPU, mismo equipo/renderizador, 1920×1080, materiales PP3, MSAA 4× y sombras;
+1, 128 y 512 instancias estáticas, mismas posiciones/cámaras por pareja, cuatro
+mediciones por versión con orden alternado ABBA/BAAB y calentamiento previo.
+Comparar tiempo por cuadro/FPS, percentiles, CPU/GPU de render cuando disponibles,
+draw calls/primitivas y contexto de hardware. Desactivar VSync, límite de FPS y
+LOD automático para comparar la geometría completa. No modificar assets ni recetas.
+Las cargas múltiples son escenas sintéticas de estrés, no un sistema de bosque.
+La comparación incluye el estrechamiento de copa de 2.3.0: no atribuir el resultado
+exclusivamente al recuento de tris. Repetición independiente es la unidad de
+comparación; registrar dispersión y no confundir FPS sin límite con fluidez
+visible o rendimiento garantizado en otros equipos.
+
+Corrección explícita del usuario: la referencia principal es **1.1.0 geométrica,
+anterior a texturas y optimización**, no 2.2.0. El ensayo iniciado con 2.2.0
+solo completó 1 y 128 árboles; 512 fue interrumpido y no es resultado válido.
+Se conserva como diagnóstico parcial regenerable. La comparación solicitada
+se ejecutará de nuevo con 1.1.0 y 2.3.0 en las mismas condiciones; se conservan
+los materiales propios de cada asset (opacos sin textura frente a pintura/recorte).
+
+Resultado: comparación **1.1.0/2.3.0 implementada y verificada**. 24 mediciones,
+cuatro repeticiones por versión/carga, RTX 5060/1080p/MSAA4/sombras, sin cap/LOD:
+128 árboles 353→589 FPS y 512 árboles 126→228 FPS; tiempo por cuadro −40,0/−44,9 %,
+consistente en las cuatro parejas. Un árbol: sin ganancia útil. Tres pruebas de
+análisis, auditoría y seis capturas revisadas. Mide el rediseño completo, no aísla
+solo tris; sin cambios en assets. [Informe y límites](../docs/evidence/pino-pintado/rendimiento-v11/informe.md).

@@ -60,6 +60,11 @@ la familia ensayada**, como alternativa explícita a Q3.
   repetición y regresiones exactas, 144 capturas reales revisadas. Topología
   aislada: diferencia de máscara ≤0,151 % del área en 36 pares; sin identidad
   absoluta de píxeles. [Informe](docs/evidence/pino-pintado/pp4-laminas/informe.md).
+- Benchmark **1.1.0 → 2.3.0**: 24 mediciones Godot/RTX 5060, 1080p/MSAA4/sombras,
+  1/128/512 instancias, cuatro repeticiones. 128: 353→589 FPS; 512: 126→228 FPS,
+  tiempo por cuadro −40,0/−44,9 %, consistente en cuatro parejas. Un árbol sin
+  ganancia útil. Tres pruebas del arnés, auditoría y seis capturas revisadas.
+  [Informe, condiciones y reproducción](docs/evidence/pino-pintado/rendimiento-v11/informe.md).
 - Pino geométrico 1.0.0/1.1.0: cuatro semillas/12 m, 11924 tris y dos
   materiales, 2892 acículas. Revisión 1.1.0 conserva costes y parámetros con
   raíces desfasadas e inclinaciones mixtas; repetición/regresiones exactas,
@@ -131,7 +136,7 @@ la familia ensayada**, como alternativa explícita a Q3.
   Generación ≤120 s; pruebas/capturas ≤180 s por subproceso terminable.
 - Pino pintado: nuevo alcance permite texturas y sustituir ramillas
   completas para cambiar estilo y reducir triángulos. Conservar recetas históricas;
-  madera optimizada autorizada después; roble, LOD y benchmark siguen fuera.
+  madera y benchmark autorizados después; roble y LOD siguen fuera.
   PP4 usa contrato 1.2 y semilla paint separada; canopy identifica el caso histórico
   pero no aleatoriza anclajes. Filtrado/sombras Godot en `painted_pine_asset.gd`.
   Menos triángulos por sí solo no demuestra mejora de rendimiento.
@@ -158,7 +163,7 @@ estrecha; [aceptación](docs/evidence/pino-pintado/pp4-laminas/user-acceptance.j
 `wood-` madera idéntica, `topology-` anterior con igual estrechamiento nuevo.
 Cuatro casos de 12 m, regla común, sin overrides; 435 grupos y atlas conservados.
 −10 % de envolvente por grupo no equivale a −10 % de cobertura o unión de copa.
-Persisten huecos, faceteado y detalle lejano limitado; sin benchmark. PP1–PP4
+Persisten huecos, faceteado y detalle lejano limitado; benchmark verificado. PP1–PP4
 cerradas para estos cuatro casos; siguiente trabajo pendiente de solicitud.
 
 Referencia estructural conservada: pino **1.1.0**, modelo
@@ -183,7 +188,7 @@ Límites: B4 solo ensaya columna de 12 m/cuatro semillas; intervalos completos y
 edades no garantizados. Caso 2 m/moldes 3 m técnicamente válido pero visualmente
 inadecuado. Extremo de 20 m completa 2021/2048 intentos, cerca del límite de trabajo.
 Conexiones superpuestas a Q3, sin soldar ni resolver todas las intersecciones;
-hojas angulosas/solapadas. Sin pruebas FPS, viento, LOD ni bosque.
+hojas angulosas/solapadas. FPS solo medidos para pinos; sin viento, LOD ni bosque.
 
 Sin bloqueos técnicos fuera del sandbox. Dentro pueden fallar audio al cerrar
 Blender y sockets loopback; ejecución autorizada fuera. Capturas Godot en lotes

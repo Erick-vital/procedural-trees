@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "study": "artifacts/pino-pintado/performance-v11-01",
+  "counts": [
+    1,
+    128,
+    512
+  ],
+  "trials": 24,
+  "repetitions_per_version_and_count": 4,
+  "measurement_seconds": 6,
+  "gpu_samples": 229,
+  "gpu_ranges": {
+    " temperature.gpu": {
+      "min": 48.0,
+      "max": 67.0
+    },
+    " utilization.gpu [%]": {
+      "min": 1.0,
+      "max": 100.0
+    },
+    " clocks.current.graphics [MHz]": {
+      "min": 2595.0,
+      "max": 2767.0
+    },
+    " clocks.current.memory [MHz]": {
+      "min": 14001.0,
+      "max": 14001.0
+    },
+    " power.draw [W]": {
+      "min": 22.86,
+      "max": 112.31
+    },
+    " memory.used [MiB]": {
+      "min": 886.0,
+      "max": 1669.0
+    }
+  },
+  "capture_sha256": {
+    "1-baseline.jpg": "aaecadbad9a3f5cd2a9f92ea8581176c0a95182272839de92bd179ce1d6dcf8b",
+    "1-candidate.jpg": "4dc04932d11d5cc37586c50badcb2f9ee3df92f77e060129d62a13b93d133e3b",
+    "128-baseline.jpg": "656263b8dd3d55ab8bf7df3bd88c5369f392c72c885bc28fa1e30fd4aa75d5df",
+    "128-candidate.jpg": "9037c6c4ef1d50cd6ceba4714ecff55fe8d83cf1c6c4e5c93717e26c217be288",
+    "512-baseline.jpg": "48b7bb1aa9e31df55e35e29ced3876bab4602fac2b19a83439956e1a1662f33a",
+    "512-candidate.jpg": "57ad9d5e78bae1944013f8a8f564ff2901424275f5f9c53b0345cc74aeae8fdf"
+  },
+  "sources_verified": true,
+  "raw_verified": true,
+  "evidence_script_sha256": "c8babf32ab04c752b449db88dce92add2fad2773a0e50ed9c0916a65c204a653"
+}

@@ -1,0 +1,563 @@
+{
+  "1": {
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "renderer": "gl_compatibility",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "driver": "3.3.0 NVIDIA 595.99.02",
+    "actual_resolution": [
+      1920,
+      1080
+    ],
+    "window_size": [
+      1280,
+      720
+    ],
+    "actual_msaa": 2,
+    "actual_shadows": true,
+    "actual_vsync": 0,
+    "actual_max_fps": 0,
+    "actual_lod_threshold": 0.0,
+    "camera": {
+      "position": [
+        0.0,
+        27.7995357513428,
+        33.5377464294434
+      ],
+      "size": 18.0
+    },
+    "materials": {
+      "baseline": [
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ]
+      ],
+      "candidate": [
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ]
+      ]
+    }
+  },
+  "128": {
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "renderer": "gl_compatibility",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "driver": "3.3.0 NVIDIA 595.99.02",
+    "actual_resolution": [
+      1920,
+      1080
+    ],
+    "window_size": [
+      1280,
+      720
+    ],
+    "actual_msaa": 2,
+    "actual_shadows": true,
+    "actual_vsync": 0,
+    "actual_max_fps": 0,
+    "actual_lod_threshold": 0.0,
+    "camera": {
+      "position": [
+        0.0,
+        97.5580520629883,
+        140.858535766602
+      ],
+      "size": 112.080001831055
+    },
+    "materials": {
+      "baseline": [
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ]
+      ],
+      "candidate": [
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ]
+      ]
+    }
+  },
+  "512": {
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "renderer": "gl_compatibility",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "driver": "3.3.0 NVIDIA 595.99.02",
+    "actual_resolution": [
+      1920,
+      1080
+    ],
+    "window_size": [
+      1280,
+      720
+    ],
+    "actual_msaa": 2,
+    "actual_shadows": true,
+    "actual_vsync": 0,
+    "actual_max_fps": 0,
+    "actual_lod_threshold": 0.0,
+    "camera": {
+      "position": [
+        0.0,
+        181.486267089844,
+        269.978881835938
+      ],
+      "size": 198.320007324219
+    },
+    "materials": {
+      "baseline": [
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Pine_Bark",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Pine_Needles",
+            "roughness": 0.879999995231628,
+            "shadow_casting": 2,
+            "textured": false,
+            "transparency": 0
+          }
+        ]
+      ],
+      "candidate": [
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "cull_mode": 2,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "cull_mode": 2,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ]
+      ]
+    }
+  }
+}
