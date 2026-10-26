@@ -1,0 +1,439 @@
+{
+  "version": "pp1-review-0.1.0",
+  "status": "especificacion_no_ejecutada",
+  "purpose": "Comparar la representación futura con encuadres congelados; no configura hoy un verificador.",
+  "units": "metros",
+  "coordinates": "Blender Z arriba; convertir [x,y,z] a Godot [x,z,-y]",
+  "resolution": [
+    900,
+    900
+  ],
+  "lighting": {
+    "reference": {
+      "directional_rotation_godot_deg": [
+        -35,
+        -25,
+        0
+      ],
+      "energy": 1.2,
+      "ambient_energy": 0.5,
+      "ambient_color_srgb": "#FFFFFF"
+    },
+    "side": {
+      "directional_rotation_godot_deg": [
+        -35,
+        -90,
+        0
+      ],
+      "energy": 1.2,
+      "ambient_energy": 0.5
+    },
+    "back": {
+      "directional_rotation_godot_deg": [
+        -35,
+        155,
+        0
+      ],
+      "energy": 1.2,
+      "ambient_energy": 0.5
+    },
+    "exposure_multiplier": 1.0,
+    "tone_mapper": "linear",
+    "auto_exposure": false,
+    "fog": false
+  },
+  "backgrounds_srgb": [
+    "#EEE9DF",
+    "#1E2A35"
+  ],
+  "target_renderer": "gl_compatibility",
+  "runtime_version": "Registrar versión y ajustes reales al ejecutar PP3",
+  "branch": {
+    "selection": "PP2: identificador de rama primaria del piloto 5100/97, congelado antes de variantes",
+    "framing_bounds": "Caja conjunta de madera y acículas originales de esa rama; guardar coordenadas y hash en PP2",
+    "target": "centro de la caja original",
+    "span": "mayor dimensión de la caja original, en metros",
+    "projection": "orthographic",
+    "camera_distance_m": "3 * span",
+    "ortho_scale_m": "1.3 * span",
+    "reference_fill_max_axis": 0.7692307692307692,
+    "views_direction_from_target": {
+      "front": [
+        0,
+        -1,
+        0
+      ],
+      "side": [
+        1,
+        0,
+        0
+      ],
+      "three_quarter": [
+        1,
+        -1,
+        0.45
+      ],
+      "top": [
+        0,
+        0,
+        1
+      ],
+      "below": [
+        1,
+        -1,
+        -0.45
+      ]
+    },
+    "position_rule": "target + normalize(direction) * camera_distance_m; mirar a target, arriba Z salvo top (arriba +Y)",
+    "end_on": "PP2: añadir vista según tangente de la rama original, con vector congelado",
+    "scale_check": {
+      "ortho_scale_m": "2.6 * span",
+      "reference_fill_max_axis": 0.3846153846153846
+    },
+    "shared_framing": true
+  },
+  "whole_tree": {
+    "reference_recipe": "pino_conico@1.1.0",
+    "height_m": 12,
+    "base_seed": 5100,
+    "canopy_seed": 97,
+    "source_cameras": "artifacts/blueprints/pine-v1.1-review-01/pilot/cameras.json",
+    "source_cameras_sha256": "bad4a516a43f86a5fd37cbab3b49b2bd6ee6a5568b1378b2fe5f48f00d460aa1",
+    "cameras": {
+      "front": {
+        "type": "ORTHO",
+        "location": [
+          0.26428601145744324,
+          -36.07406997680664,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 15.600000000000001,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "side": {
+        "type": "ORTHO",
+        "location": [
+          36.264286041259766,
+          -0.0740709975361824,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707963705062866,
+          -0.0,
+          1.5707963705062866
+        ],
+        "ortho_scale": 15.600000000000001,
+        "basis_columns": [
+          [
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            4.371138828673793e-08,
+            1.910685676922942e-15,
+            1.0
+          ],
+          [
+            1.0,
+            4.371138828673793e-08,
+            -4.371138828673793e-08
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "top": {
+        "type": "ORTHO",
+        "location": [
+          0.26428601145744324,
+          -0.0740709975361824,
+          42.0
+        ],
+        "rotation_euler": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 15.600000000000001,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "below": {
+        "type": "ORTHO",
+        "location": [
+          20.09408187866211,
+          -27.53071403503418,
+          -6.202951431274414
+        ],
+        "rotation_euler": [
+          1.9166191816329956,
+          2.6564300981135602e-08,
+          0.6254850029945374
+        ],
+        "ortho_scale": 15.600000000000001,
+        "basis_columns": [
+          [
+            0.8106792569160461,
+            0.5854905247688293,
+            -2.6564300981135602e-08
+          ],
+          [
+            0.1984642893075943,
+            -0.2747966945171356,
+            0.9407968521118164
+          ],
+          [
+            0.5508276224136353,
+            -0.7626844644546509,
+            -0.33897092938423157
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "perspective": {
+        "type": "ORTHO",
+        "location": [
+          20.09408187866211,
+          -27.53071403503418,
+          18.202951431274414
+        ],
+        "rotation_euler": [
+          1.2249735593795776,
+          2.9242528398754075e-08,
+          0.6254849433898926
+        ],
+        "ortho_scale": 15.600000000000001,
+        "basis_columns": [
+          [
+            0.8106792569160461,
+            0.5854904651641846,
+            -2.9242528398754075e-08
+          ],
+          [
+            -0.19846418499946594,
+            0.27479666471481323,
+            0.9407968521118164
+          ],
+          [
+            0.5508276224136353,
+            -0.7626845240592957,
+            0.3389708399772644
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "reverse": {
+        "type": "ORTHO",
+        "location": [
+          -19.565509796142578,
+          27.382570266723633,
+          -6.202951431274414
+        ],
+        "rotation_euler": [
+          1.916619062423706,
+          1.8246578292746563e-07,
+          -2.5161075592041016
+        ],
+        "ortho_scale": 15.600000000000001,
+        "basis_columns": [
+          [
+            -0.8106791973114014,
+            -0.5854905843734741,
+            -1.8246578292746563e-07
+          ],
+          [
+            -0.19846436381340027,
+            0.2747964859008789,
+            0.9407969117164612
+          ],
+          [
+            -0.55082768201828,
+            0.7626845240592957,
+            -0.338970810174942
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ]
+      },
+      "near": {
+        "type": "ORTHO",
+        "location": [
+          0.26428601145744324,
+          -60.07406997680664,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 24.0,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ],
+        "target_height_fraction": 0.5
+      },
+      "medium": {
+        "type": "ORTHO",
+        "location": [
+          0.26428601145744324,
+          -60.07406997680664,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 48.0,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ],
+        "target_height_fraction": 0.25
+      },
+      "far": {
+        "type": "ORTHO",
+        "location": [
+          0.26428601145744324,
+          -60.07406997680664,
+          6.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 120.0,
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        ],
+        "lens_mm": 50,
+        "resolution": [
+          900,
+          900
+        ],
+        "target_height_fraction": 0.1
+      }
+    },
+    "note": "Todos estos encuadres son ortográficos, también el histórico llamado perspective. near/medium/far significan tamaño en pantalla (450/225/90 píxeles de altura), no distancia perspectiva."
+  },
+  "comparison_rules": [
+    "Mismas cámaras, luz, fondo y exposición por par original/nuevo",
+    "No reencuadrar variantes individualmente; registrar desbordamientos",
+    "Las ilustraciones A/B no se han generado con este rig ni son comparaciones geométricas",
+    "No ejecutar PP2 ni PP3 para cerrar PP1"
+  ]
+}

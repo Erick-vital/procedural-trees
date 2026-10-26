@@ -1,0 +1,7 @@
+{
+  "command": "PYTHONPATH=src python3 -m unittest discover -s tests -q",
+  "passed": true,
+  "tests": 119,
+  "duration_seconds": 7.661,
+  "execution": "Fuera del sandbox; socket API local autorizado. Suite final posterior a las tres pruebas nuevas de l\u00e1minas."
+}

@@ -71,7 +71,8 @@ def execute(spec, output, render=True, timeout=120, job_id=None, *, blueprint=No
         write_json(output / 'manifest.json', manifest)
         command = [os.environ.get('BLENDER_BIN', BLENDER), '--background', '--factory-startup',
                    '--threads', '1', '--python-exit-code', '1', '--python',
-                   str(ROOT / ('blender/generate_pine.py' if pine else
+                   str(ROOT / ('blender/generate_painted_pine.py' if resolved and resolved['resolved_version'] == '1.2' else
+                               'blender/generate_pine.py' if pine else
                                'blender/generate_blueprint.py' if resolved else 'blender/generate_oak.py')),
                    '--', str(output / 'input.json')]
         with (output / 'blender.log').open('w') as log:

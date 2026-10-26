@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "study": "artifacts/pino-pintado/pp4-wood-01",
+  "technical_checks": 51,
+  "real_captures": 144,
+  "fault_injection_rejections": {
+    "opaque-foliage": true,
+    "missing-uv": true,
+    "external-image": true,
+    "roughness": true,
+    "shifted-uv": true,
+    "zero-normal": true,
+    "historical-rejects-texture": true
+  },
+  "godot_adapter_applied": true,
+  "source_lock_verified": true,
+  "capture_hashes_verified": true,
+  "evidence_generator_sha256": "7e68738059691e7e9647b988897993339adde0e491e9704cbe443a4285571ca4",
+  "artistic_acceptance": "pending",
+  "visual_review": "Revisión del agente documentada en informe.md; no inferida de passed."
+}

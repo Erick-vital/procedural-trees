@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TreeInstance 1.2: pino pintado",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "blueprint_id",
+    "blueprint_version",
+    "seeds"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.2"
+    },
+    "blueprint_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "blueprint_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "maxLength": 32
+    },
+    "profile": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "seeds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "base",
+        "canopy",
+        "paint"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "canopy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483646
+        },
+        "paint": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483646
+        }
+      }
+    },
+    "overrides": {
+      "$ref": "#/$defs/overrides"
+    }
+  },
+  "$defs": {
+    "overrides": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "height_m": {
+              "type": "number",
+              "minimum": 4,
+              "maximum": 20
+            },
+            "base_radius_m": {
+              "type": "number",
+              "minimum": 0.1,
+              "maximum": 0.5
+            },
+            "crown_base_ratio": {
+              "type": "number",
+              "minimum": 0.12,
+              "maximum": 0.35
+            },
+            "whorl_count": {
+              "type": "integer",
+              "minimum": 4,
+              "maximum": 10
+            },
+            "branches_per_whorl": {
+              "type": "integer",
+              "minimum": 4,
+              "maximum": 8
+            },
+            "crown_radius_ratio": {
+              "type": "number",
+              "minimum": 0.16,
+              "maximum": 0.32
+            },
+            "branch_rise_ratio": {
+              "type": "number",
+              "minimum": 0.05,
+              "maximum": 0.18
+            },
+            "irregularity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.25
+            },
+            "secondary_length_ratio": {
+              "type": "number",
+              "minimum": 0.22,
+              "maximum": 0.4
+            }
+          }
+        },
+        "canopy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "width_scale": {
+              "type": "number",
+              "const": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TreeBlueprint 1.2: pino pintado",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "name",
+    "description",
+    "components",
+    "parameters",
+    "appearance",
+    "editable_ranges",
+    "default_profile",
+    "profiles",
+    "limits",
+    "resources"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.2"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "maxLength": 32
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1024
+    },
+    "components": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "base",
+        "distribution",
+        "representation"
+      ],
+      "properties": {
+        "base": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 96
+        },
+        "distribution": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 96
+        },
+        "representation": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 96
+        }
+      }
+    },
+    "parameters": {
+      "$ref": "#/$defs/parameters"
+    },
+    "appearance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bark",
+        "leaf"
+      ],
+      "properties": {
+        "bark": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "color_rgba",
+            "roughness",
+            "metallic",
+            "double_sided"
+          ],
+          "properties": {
+            "color_rgba": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 4,
+              "prefixItems": [
+                {
+                  "const": 1
+                },
+                {
+                  "const": 1
+                },
+                {
+                  "const": 1
+                },
+                {
+                  "const": 1
+                }
+              ],
+              "items": false
+            },
+            "roughness": {
+              "type": "number",
+              "const": 0.95
+            },
+            "metallic": {
+              "type": "number",
+              "const": 0
+            },
+            "double_sided": {
+              "const": true
+            }
+          }
+        },
+        "leaf": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "color_rgba",
+            "roughness",
+            "metallic",
+            "double_sided"
+          ],
+          "properties": {
+            "color_rgba": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 4,
+              "prefixItems": [
+                {
+                  "const": 1
+                },
+                {
+                  "const": 1
+                },
+                {
+                  "const": 1
+                },
+                {
+                  "const": 1
+                }
+              ],
+              "items": false
+            },
+            "roughness": {
+              "type": "number",
+              "const": 0.95
+            },
+            "metallic": {
+              "type": "number",
+              "const": 0
+            },
+            "double_sided": {
+              "const": true
+            }
+          }
+        }
+      }
+    },
+    "editable_ranges": {
+      "type": "object",
+      "maxProperties": 0,
+      "propertyNames": {
+        "enum": [
+          "base.height_m",
+          "base.base_radius_m",
+          "base.crown_base_ratio",
+          "base.whorl_count",
+          "base.branches_per_whorl",
+          "base.crown_radius_ratio",
+          "base.branch_rise_ratio",
+          "base.irregularity",
+          "base.secondary_length_ratio",
+          "canopy.width_scale"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "minimum",
+          "maximum"
+        ],
+        "properties": {
+          "minimum": {
+            "type": "number"
+          },
+          "maximum": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "default_profile": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "profiles": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 16,
+      "propertyNames": {
+        "pattern": "^[a-z][a-z0-9_]{0,63}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "description",
+          "overrides",
+          "validation"
+        ],
+        "properties": {
+          "description": {
+            "type": "string",
+            "maxLength": 512
+          },
+          "overrides": {
+            "$ref": "#/$defs/overrides"
+          },
+          "validation": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "evidence"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "reference_only",
+                  "experimental",
+                  "verified_cases"
+                ]
+              },
+              "evidence": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 16,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 256
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "triangles",
+        "materials",
+        "generation_seconds"
+      ],
+      "properties": {
+        "triangles": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12500
+        },
+        "materials": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "generation_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 120
+        }
+      }
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bark",
+        "foliage"
+      ],
+      "properties": {
+        "bark": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "const": "assets/pino-pintado/v0.1.0/bark.png"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        },
+        "foliage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "const": "assets/pino-pintado/v0.1.0/foliage.png"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "height_m": {
+              "type": "number",
+              "const": 12
+            },
+            "base_radius_m": {
+              "type": "number",
+              "minimum": 0.1,
+              "maximum": 0.5
+            },
+            "crown_base_ratio": {
+              "type": "number",
+              "minimum": 0.12,
+              "maximum": 0.35
+            },
+            "whorl_count": {
+              "type": "integer",
+              "minimum": 4,
+              "maximum": 10
+            },
+            "branches_per_whorl": {
+              "type": "integer",
+              "minimum": 4,
+              "maximum": 8
+            },
+            "crown_radius_ratio": {
+              "type": "number",
+              "minimum": 0.16,
+              "maximum": 0.32
+            },
+            "branch_rise_ratio": {
+              "type": "number",
+              "minimum": 0.05,
+              "maximum": 0.18
+            },
+            "irregularity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.25
+            },
+            "secondary_length_ratio": {
+              "type": "number",
+              "minimum": 0.22,
+              "maximum": 0.4
+            }
+          },
+          "required": [
+            "height_m",
+            "base_radius_m",
+            "crown_base_ratio",
+            "whorl_count",
+            "branches_per_whorl",
+            "crown_radius_ratio",
+            "branch_rise_ratio",
+            "irregularity",
+            "secondary_length_ratio"
+          ]
+        },
+        "canopy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "width_scale": {
+              "type": "number",
+              "const": 1
+            }
+          },
+          "required": [
+            "width_scale"
+          ]
+        }
+      },
+      "required": [
+        "base",
+        "canopy"
+      ]
+    },
+    "overrides": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "height_m": {
+              "type": "number",
+              "minimum": 4,
+              "maximum": 20
+            },
+            "base_radius_m": {
+              "type": "number",
+              "minimum": 0.1,
+              "maximum": 0.5
+            },
+            "crown_base_ratio": {
+              "type": "number",
+              "minimum": 0.12,
+              "maximum": 0.35
+            },
+            "whorl_count": {
+              "type": "integer",
+              "minimum": 4,
+              "maximum": 10
+            },
+            "branches_per_whorl": {
+              "type": "integer",
+              "minimum": 4,
+              "maximum": 8
+            },
+            "crown_radius_ratio": {
+              "type": "number",
+              "minimum": 0.16,
+              "maximum": 0.32
+            },
+            "branch_rise_ratio": {
+              "type": "number",
+              "minimum": 0.05,
+              "maximum": 0.18
+            },
+            "irregularity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.25
+            },
+            "secondary_length_ratio": {
+              "type": "number",
+              "minimum": 0.22,
+              "maximum": 0.4
+            }
+          }
+        },
+        "canopy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "width_scale": {
+              "type": "number",
+              "const": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

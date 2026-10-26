@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "variants": {
+    "original": {
+      "materials": [
+        "Original_Bark",
+        "Original_Needles"
+      ],
+      "images": [],
+      "glb_sha256": "1c823ed2c5d749dd63ddee7a91c24efdea961cc9858aa044b54157fd5fa85fe7",
+      "repeat_identical": true
+    },
+    "folded": {
+      "materials": [
+        "Painted_Bark",
+        "Painted_Foliage"
+      ],
+      "images": [
+        {
+          "name": "bark",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "bytes": 2135876,
+          "mode": "RGB"
+        },
+        {
+          "name": "foliage",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "bytes": 2071699,
+          "mode": "RGBA"
+        }
+      ],
+      "glb_sha256": "90de806f997825a920846056e560b193e376978a9aee82d423794f758e1c9828",
+      "repeat_identical": true
+    },
+    "crossed": {
+      "materials": [
+        "Painted_Bark",
+        "Painted_Foliage"
+      ],
+      "images": [
+        {
+          "name": "bark",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "bytes": 2135876,
+          "mode": "RGB"
+        },
+        {
+          "name": "foliage",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "bytes": 2071699,
+          "mode": "RGBA"
+        }
+      ],
+      "glb_sha256": "8f21a27efc57aed60be96de872038e844d975afb5bbba735665a7c8e4717a16e",
+      "repeat_identical": true
+    }
+  }
+}

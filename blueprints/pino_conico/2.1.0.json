@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.2",
+  "id": "pino_conico",
+  "version": "2.1.0",
+  "name": "Pino pintado con copa reforzada",
+  "description": "Revisión de volumen solicitada por el usuario: grupos más llenos hacia arriba, segunda cruzada en secundarias y tres grupos en el eje. Misma regla y madera para cuatro casos conocidos.",
+  "components": {
+    "base": "pine-whorls@0.2.0",
+    "distribution": "pine-path-groups@0.2.0",
+    "representation": "pine-painted-crossed@0.2.0"
+  },
+  "parameters": {
+    "base": {
+      "height_m": 12,
+      "base_radius_m": 0.23,
+      "crown_base_ratio": 0.2,
+      "whorl_count": 8,
+      "branches_per_whorl": 6,
+      "crown_radius_ratio": 0.24,
+      "branch_rise_ratio": 0.11,
+      "irregularity": 0.16,
+      "secondary_length_ratio": 0.34
+    },
+    "canopy": {
+      "width_scale": 1
+    }
+  },
+  "appearance": {
+    "bark": {
+      "color_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "double_sided": true
+    },
+    "leaf": {
+      "color_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "double_sided": true
+    }
+  },
+  "editable_ranges": {},
+  "default_profile": "conico",
+  "profiles": {
+    "conico": {
+      "description": "Piloto y tres controles conocidos, 12 m; aprobación artística pendiente.",
+      "overrides": {},
+      "validation": {
+        "status": "experimental",
+        "evidence": [
+          "plans/pino-pintado.md",
+          "configs/verification/pine-painted-volume-v1.json"
+        ]
+      }
+    }
+  },
+  "limits": {
+    "triangles": 12500,
+    "materials": 3,
+    "generation_seconds": 120
+  },
+  "resources": {
+    "bark": {
+      "path": "assets/pino-pintado/v0.1.0/bark.png",
+      "sha256": "1d68dad6d88d69a80c615f8ffb409e13f87cadc57cd3c2ec1e6c87ef9310799a"
+    },
+    "foliage": {
+      "path": "assets/pino-pintado/v0.1.0/foliage.png",
+      "sha256": "6b47402fa103be09286f7d7866998e56ffef344c9d69caa018f46fa2c643ae33"
+    }
+  }
+}

@@ -231,3 +231,71 @@ Revisión estructural posterior: el contrato 1.1 también admite
 y el adaptador despacha únicamente estrategias registradas. Mismos parámetros,
 cota y semillas; no amplía los rangos ni incorpora otra representación de hoja.
 [Comparación reproducible y límites](evidence/blueprints/pino-revision/informe.md).
+
+## Ampliación 1.2: pino pintado PP4
+
+`pino_conico` **2.0.0** usa los esquemas
+`tree-blueprint-painted-pine.schema.json` y
+`tree-instance-painted-pine.schema.json`, contrato **1.2**. Componentes exclusivos:
+`pine-whorls@0.2.0` / `pine-path-groups@0.1.0` /
+`pine-painted-crossed@0.1.0`. El ejecutor y la CLI son los comunes;
+resolución, representación, recursos, adaptador Blender y evaluación permanecen
+separados. Los contratos 1.0/1.1 y sus verificadores opacos no cambian.
+
+Esta receta congela los parámetros de los cuatro casos conocidos de 12 m;
+no permite overrides. `canopy.width_scale=1` sustituye a los parámetros de
+acículas geométricas. `seeds.base` conserva los recorridos históricos;
+`seeds.canopy` conserva la identificación de cada caso, pero no interviene en
+la colocación determinista de un grupo por recorrido. `seeds.paint`, obligatoria
+y separada, elige únicamente la fila del atlas mediante hash de semilla e ID
+del soporte. No altera madera ni posiciones. Valor común de PP4: **2718**.
+
+Con N primarias se retienen tronco y N tubos principales; se sustituyen las
+4N secundarias con su follaje y las acículas de las primarias y el eje.
+Hay `5N+1` grupos de 12 triángulos, sin billboard. Presupuesto:
+`188 + 44N + 12(5N+1)`; N=48 produce **5192**, dos materiales.
+Los anclajes usan t=0 en secundarias, .35 en primarias y .90 en el eje.
+El follaje del eje termina antes de H; el tronco mantiene 12 m exactos.
+
+`resources` fija rutas del catálogo y SHA256 de los PNG PP2. Se rechazan
+recursos ausentes, alterados, fuera del catálogo o mayores del presupuesto;
+la evaluación exige los mismos PNG embebidos, UV del atlas planificado,
+normales válidas y triángulos exactamente iguales a los grupos/anclajes
+resueltos. El manifiesto registra receta, parámetros, semillas, recursos,
+fuentes, placements y firmas exportadas. No hay contactos ficticios por acícula.
+
+El GLB lleva corteza opaca, follaje MASK .5, doble cara y rugosidad .95.
+El adaptador `godot/painted_pine_asset.gd`, adjunto a la raíz importada,
+aplica filtrado anisotrópico con mipmaps y sombras de ambas caras. Esos ajustes
+del motor no son propiedades portables de glTF. El visor usa MSAA 4×;
+el proyecto de destino debe configurarlo en su viewport si quiere reproducirlo.
+
+[Resultado y límites PP4](evidence/pino-pintado/pp4/informe.md).
+
+
+Revisión de volumen **2.1.0**: el contrato 1.2 también registra la pareja
+`pine-path-groups@0.2.0` / `pine-painted-crossed@0.2.0`, sin admitir mezclas con
+0.1.0. Mismos recursos, parámetros y madera; algoritmo de volumen puro separado.
+Presupuesto `188+44N+12(9N+3)`; N=48 produce 435 grupos/7520 triángulos.
+Múltiples grupos por soporte con IDs propios y `anchor_t` explícito; evaluación
+contrasta todos los grupos/anclajes y conserva repetición de 2.0.0.
+[Regla común, regresiones y revisión visual](evidence/pino-pintado/pp4-volumen/informe.md).
+
+
+**2.2.0** registra `pine-painted-crossed@0.3.0` con distribución 0.2.0 y
+optimizador `pine-wood-rings-0.1.0`: mismas guías, anillos adaptativos a 5 mm,
+tapas basales retiradas solo si están contenidas en el tronco. Los anclajes
+usan los recorridos originales, nunca la malla simplificada. UV de madera en
+los anillos retenidos conservan longitud/perímetro originales. El presupuesto
+7520 es una cota; coste real de madera variable por la misma tolerancia.
+El ajuste de copa separado .98 axial/.94 transversal conserva todos los grupos
+y registra el hash del grupo previo para verificar que no hay otras modificaciones.
+[Validación y comparación](evidence/pino-pintado/pp4-madera/informe.md).
+
+**2.3.0** registra `pine-painted-crossed@0.4.0` con distribución 0.2.0,
+madera 2.2.0 idéntica y pentágonos de tres tris por plano. Transformación UV afín
+conservada; expansión únicamente sobre transparencia del atlas congelado.
+Cota `188+44N+6(9N+3)`; 4910 con N=48. Ajuste de copa adicional explícito:
+longitud 1/anchura sqrt(.9), envolvente por grupo .9. Hash del grupo 2.2.0 y
+factores en placements. Sin afirmar volumen físico de las superficies o unión.
+[Validación y límites](evidence/pino-pintado/pp4-laminas/informe.md).

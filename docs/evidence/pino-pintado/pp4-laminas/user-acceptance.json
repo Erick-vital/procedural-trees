@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25",
+  "decision": "approved",
+  "scope": "Aceptación artística del pino pintado 2.3.0, piloto y tres controles de 12 m, cruzadas optimizadas y copa ligeramente estrechada. Cierre de PP1–PP4 para estos cuatro casos conocidos.",
+  "user_statement": "ok apruebo esta version realiza un commit",
+  "blueprint": "blueprints/pino_conico/2.3.0.json",
+  "matrix": "configs/verification/pine-painted-cards-v1.json",
+  "verification": "docs/evidence/pino-pintado/pp4-laminas/verification.json",
+  "study": "artifacts/pino-pintado/pp4-cards-02",
+  "approved_cases_glb_sha256": {
+    "pilot": "c69282eb0ba6103b40cd7139b9e56ec0aa9148934a206b6773c929a56815539e",
+    "control-01": "a70c86f06f8f805c1232418cba29a5f0eda5d0c82d86206fbce5b726fab65fa3",
+    "control-02": "afc38fd4b217a251dcc7054577f89425518e890e49fdb9e4f83fd52f7b98c025",
+    "control-03": "1ca5698d5a3511f1c2b287d05bd586d9de04cd1118d02c3fffd35a49b36c200f"
+  },
+  "limits": "No extiende aprobación a nuevas semillas, alturas o edades, ni acredita rendimiento, LOD o versiones históricas.",
+  "blueprint_file_sha256": "507423c05e3b9461a1f1f07b9b6683d4c24eb435f4c14e7faedac6449bb27943",
+  "matrix_file_sha256": "b03e57294e2134559c062b82711a384c73f246281e41e142a26cbaf7bc6f5cdd",
+  "verification_file_sha256": "40a27d2320bc555177a4a2322c8c0e7892dcf450870837b711af00ef796097d8"
+}

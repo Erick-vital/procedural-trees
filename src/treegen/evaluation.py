@@ -96,7 +96,11 @@ def validate_result(directory):
         from .foliage_twigs_evaluation import inspect_twigs_glb
         roles = ({'wood_material': 'Pine_Bark', 'leaf_material': 'Pine_Needles'}
                  if resolved['base_spec']['algorithm'] == 'pine-whorls' else {})
-        detailed = inspect_twigs_glb(directory / 'tree.glb', manifest['metrics'], triangle_limit=triangle_limit, **roles)
+        if resolved['resolved_version'] == '1.2':
+            from .pine_painted_evaluation import inspect_painted_glb
+            detailed = inspect_painted_glb(directory / 'tree.glb', manifest['metrics'], resolved)
+        else:
+            detailed = inspect_twigs_glb(directory / 'tree.glb', manifest['metrics'], triangle_limit=triangle_limit, **roles)
         if manifest.get('export_validation') and manifest['export_validation'] != detailed:
             raise ValueError('Firmas exportadas distintas de las registradas')
         report = detailed

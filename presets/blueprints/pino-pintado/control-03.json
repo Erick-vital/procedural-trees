@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.2",
+  "blueprint_id": "pino_conico",
+  "blueprint_version": "2.0.0",
+  "profile": "conico",
+  "seeds": {
+    "base": 5103,
+    "canopy": 100,
+    "paint": 2718
+  }
+}

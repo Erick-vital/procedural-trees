@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "length_scale": 0.98,
+  "width_scale": 0.94,
+  "ring_tolerance_m": 0.005,
+  "coverage_note": "Máscara RGB >20 del fondo, cámaras comunes; cobertura proyectada, no volumen físico.",
+  "cases": {
+    "pilot": {
+      "wood_before": 2300,
+      "wood_after": 1944,
+      "total_before": 7520,
+      "total_after": 7164,
+      "maximum_sampled_surface_error_m": 0.004456394490913955,
+      "views": {
+        "front": {
+          "before_pixels": 82651,
+          "after_pixels": 78858,
+          "ratio": 0.9541082382548306
+        },
+        "side": {
+          "before_pixels": 81001,
+          "after_pixels": 77217,
+          "ratio": 0.9532845273515141
+        },
+        "perspective": {
+          "before_pixels": 83486,
+          "after_pixels": 79836,
+          "ratio": 0.9562800948662051
+        }
+      }
+    },
+    "control-01": {
+      "wood_before": 2300,
+      "wood_after": 1920,
+      "total_before": 7520,
+      "total_after": 7140,
+      "maximum_sampled_surface_error_m": 0.0038313557272766753,
+      "views": {
+        "front": {
+          "before_pixels": 80950,
+          "after_pixels": 77644,
+          "ratio": 0.959159975293391
+        },
+        "side": {
+          "before_pixels": 86761,
+          "after_pixels": 83140,
+          "ratio": 0.9582646580837012
+        },
+        "perspective": {
+          "before_pixels": 86363,
+          "after_pixels": 82729,
+          "ratio": 0.9579217952132278
+        }
+      }
+    },
+    "control-02": {
+      "wood_before": 2300,
+      "wood_after": 1908,
+      "total_before": 7520,
+      "total_after": 7128,
+      "maximum_sampled_surface_error_m": 0.004902608554074506,
+      "views": {
+        "front": {
+          "before_pixels": 85796,
+          "after_pixels": 81820,
+          "ratio": 0.9536575131707772
+        },
+        "side": {
+          "before_pixels": 81648,
+          "after_pixels": 77829,
+          "ratio": 0.9532260435038212
+        },
+        "perspective": {
+          "before_pixels": 86583,
+          "after_pixels": 82657,
+          "ratio": 0.9546562258180012
+        }
+      }
+    },
+    "control-03": {
+      "wood_before": 2300,
+      "wood_after": 1932,
+      "total_before": 7520,
+      "total_after": 7152,
+      "maximum_sampled_surface_error_m": 0.004645933604716033,
+      "views": {
+        "front": {
+          "before_pixels": 89964,
+          "after_pixels": 85786,
+          "ratio": 0.9535592014583611
+        },
+        "side": {
+          "before_pixels": 80587,
+          "after_pixels": 77083,
+          "ratio": 0.9565190415327535
+        },
+        "perspective": {
+          "before_pixels": 83563,
+          "after_pixels": 79846,
+          "ratio": 0.9555185907638548
+        }
+      }
+    }
+  }
+}

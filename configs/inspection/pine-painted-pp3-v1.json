@@ -1,0 +1,17 @@
+{
+  "version": "pine-painted-pp3-materials-0.1.0",
+  "status": "propuesta_tecnica_revisada_en_rama; arbol_completo_pendiente",
+  "selected_by_user": "crossed",
+  "resource_version": "assets/pino-pintado/v0.1.0",
+  "branch_glb_sha256": "8f21a27efc57aed60be96de872038e844d975afb5bbba735665a7c8e4717a16e",
+  "renderer": "gl_compatibility",
+  "godot_version": "4.7.2-stable (official)",
+  "materials": {
+    "Painted_Bark": {"transparency": "disabled", "roughness": 0.95, "cull_mode": "disabled", "normal_map": false, "filter": "linear_mipmaps_anisotropic"},
+    "Painted_Foliage": {"transparency": "alpha_scissor", "alpha_scissor_threshold": 0.5, "alpha_antialiasing": "off", "roughness": 0.95, "cull_mode": "disabled", "normal_map": false, "filter": "linear_mipmaps_anisotropic"}
+  },
+  "geometry": {"mesh_normals": "conservar normales importadas, unitarias y finitas", "billboard": false, "cast_shadow": "double_sided"},
+  "viewport": {"resolution": [900,900], "msaa_3d": "4x"},
+  "limits": ["Dentado fino residual", "Pérdida de agujas individuales a escala lejana", "No demuestra rendimiento ni volumen de la copa completa", "Los modos de cobertura alfa ensayados no cambiaron píxeles en esta configuración"],
+  "evidence": "docs/evidence/pino-pintado/pp3/informe.md"
+}

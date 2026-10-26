@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "authoring": "image_gen.imagegen; PNG fuente conservado sin retoques",
+  "provenance": "Prompts completos en prompts.json; referencia propia de PP1 para follaje",
+  "files": {
+    "foliage.png": {
+      "sha256": "6b47402fa103be09286f7d7866998e56ffef344c9d69caa018f46fa2c643ae33",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "bytes": 2071699
+    },
+    "bark.png": {
+      "sha256": "1d68dad6d88d69a80c615f8ffb409e13f87cadc57cd3c2ec1e6c87ef9310799a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 2135876
+    }
+  },
+  "maps": [
+    "basecolor RGBA follaje",
+    "basecolor RGB corteza"
+  ],
+  "additional_maps": []
+}

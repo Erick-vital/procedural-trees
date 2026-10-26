@@ -1,0 +1,366 @@
+{
+  "center": [
+    0,
+    0,
+    6
+  ],
+  "span": 12,
+  "shots": [
+    {
+      "id": "front",
+      "camera": {
+        "location": [
+          0.0,
+          -35.821338847559616,
+          9.582133884755962
+        ],
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.09950371902099893,
+            0.9950371902099893
+          ],
+          [
+            0.0,
+            -0.9950371902099893,
+            0.09950371902099893
+          ]
+        ],
+        "ortho_scale": 15.6
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "side",
+      "camera": {
+        "location": [
+          35.821338847559616,
+          0.0,
+          9.582133884755962
+        ],
+        "basis_columns": [
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.09950371902099893,
+            0.0,
+            0.9950371902099893
+          ],
+          [
+            0.9950371902099893,
+            0.0,
+            0.09950371902099893
+          ]
+        ],
+        "ortho_scale": 15.6
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "perspective",
+      "camera": {
+        "location": [
+          24.257416339051527,
+          -24.257416339051527,
+          16.915837352573188
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.21440729484260865,
+            0.21440729484260865,
+            0.952921310411594
+          ],
+          [
+            0.6738171205292091,
+            -0.6738171205292091,
+            0.3032177042381441
+          ]
+        ],
+        "ortho_scale": 15.6
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "back",
+      "camera": {
+        "location": [
+          -24.901720699178686,
+          24.901720699178686,
+          13.470516209753605
+        ],
+        "basis_columns": [
+          [
+            -0.7071067811865476,
+            -0.7071067811865476,
+            0.0
+          ],
+          [
+            0.14673479641335554,
+            -0.14673479641335554,
+            0.978231976089037
+          ],
+          [
+            -0.6917144638660746,
+            0.6917144638660746,
+            0.20751433915982237
+          ]
+        ],
+        "ortho_scale": 15.6
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "top",
+      "camera": {
+        "location": [
+          0.0,
+          0.0,
+          42.0
+        ],
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "ortho_scale": 15.6
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "below",
+      "camera": {
+        "location": [
+          22.814073018881203,
+          -22.814073018881203,
+          -9.96985111321684
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            0.3136775004637546,
+            -0.3136775004637546,
+            0.8962214298964417
+          ],
+          [
+            0.6337242505244779,
+            -0.6337242505244779,
+            -0.4436069753671345
+          ]
+        ],
+        "ortho_scale": 15.6
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "near",
+      "camera": {
+        "location": [
+          24.257416339051527,
+          -24.257416339051527,
+          16.915837352573188
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.21440729484260865,
+            0.21440729484260865,
+            0.952921310411594
+          ],
+          [
+            0.6738171205292091,
+            -0.6738171205292091,
+            0.3032177042381441
+          ]
+        ],
+        "ortho_scale": 24
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "medium",
+      "camera": {
+        "location": [
+          24.257416339051527,
+          -24.257416339051527,
+          16.915837352573188
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.21440729484260865,
+            0.21440729484260865,
+            0.952921310411594
+          ],
+          [
+            0.6738171205292091,
+            -0.6738171205292091,
+            0.3032177042381441
+          ]
+        ],
+        "ortho_scale": 48
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "far",
+      "camera": {
+        "location": [
+          24.257416339051527,
+          -24.257416339051527,
+          16.915837352573188
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.21440729484260865,
+            0.21440729484260865,
+            0.952921310411594
+          ],
+          [
+            0.6738171205292091,
+            -0.6738171205292091,
+            0.3032177042381441
+          ]
+        ],
+        "ortho_scale": 120
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    }
+  ],
+  "resolution": [
+    900,
+    900
+  ],
+  "material_decision": {
+    "version": "pine-painted-pp3-materials-0.1.0",
+    "status": "propuesta_tecnica_revisada_en_rama; arbol_completo_pendiente",
+    "selected_by_user": "crossed",
+    "resource_version": "assets/pino-pintado/v0.1.0",
+    "branch_glb_sha256": "8f21a27efc57aed60be96de872038e844d975afb5bbba735665a7c8e4717a16e",
+    "renderer": "gl_compatibility",
+    "godot_version": "4.7.2-stable (official)",
+    "materials": {
+      "Painted_Bark": {
+        "transparency": "disabled",
+        "roughness": 0.95,
+        "cull_mode": "disabled",
+        "normal_map": false,
+        "filter": "linear_mipmaps_anisotropic"
+      },
+      "Painted_Foliage": {
+        "transparency": "alpha_scissor",
+        "alpha_scissor_threshold": 0.5,
+        "alpha_antialiasing": "off",
+        "roughness": 0.95,
+        "cull_mode": "disabled",
+        "normal_map": false,
+        "filter": "linear_mipmaps_anisotropic"
+      }
+    },
+    "geometry": {
+      "mesh_normals": "conservar normales importadas, unitarias y finitas",
+      "billboard": false,
+      "cast_shadow": "double_sided"
+    },
+    "viewport": {
+      "resolution": [
+        900,
+        900
+      ],
+      "msaa_3d": "4x"
+    },
+    "limits": [
+      "Dentado fino residual",
+      "Pérdida de agujas individuales a escala lejana",
+      "No demuestra rendimiento ni volumen de la copa completa",
+      "Los modos de cobertura alfa ensayados no cambiaron píxeles en esta configuración"
+    ],
+    "evidence": "docs/evidence/pino-pintado/pp3/informe.md"
+  }
+}

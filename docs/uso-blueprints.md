@@ -12,7 +12,7 @@ PYTHONPATH=src python3 -m treegen blueprints
 
 La respuesta lista `id`, `version`, nombre, perfil predeterminado, ruta y hash
 canónico de cada receta registrada en `blueprints/<id>/<versión>.json`.
-Hay tres tipos y seis versiones registradas. No hay selección “latest”.
+Hay tres tipos y nueve versiones registradas. No hay selección “latest”.
 El perfil predeterminado no elige el tipo: se aplica dentro de una receta
 seleccionada explícitamente.
 
@@ -24,6 +24,9 @@ seleccionada explícitamente.
 | Segundo tipo columnar | `blueprints/arbol_copa_columnar/1.0.0.json` | `presets/blueprints/columnar/pilot.json` |
 | Pino cónico experimental | `blueprints/pino_conico/1.0.0.json` | `presets/blueprints/pino/pilot.json` |
 | Pino con estructura revisada | `blueprints/pino_conico/1.1.0.json` | `presets/blueprints/pino-v2/pilot.json` |
+| Pino pintado con madera optimizada | `blueprints/pino_conico/2.2.0.json` | `presets/blueprints/pino-pintado-madera/pilot.json` |
+| Pino pintado con volumen reforzado | `blueprints/pino_conico/2.1.0.json` | `presets/blueprints/pino-pintado-volumen/pilot.json` |
+| Pino pintado con cruzadas | `blueprints/pino_conico/2.0.0.json` | `presets/blueprints/pino-pintado/pilot.json` |
 
 `roble_copa_ancha` 1.1.0 y `presets/blueprints/b3/` conservan el ensayo inicial
 con fallos documentados; para los controles corregidos usar 1.2.0. El nombre de
@@ -275,3 +278,83 @@ mediciones FPS ni generalización garantizada a todo el rango de parámetros.
 B5 no ejecutó el lote RF5. Después del cierre, el usuario aprobó B3 revisada y
 autorizó su ejecución el 2026-10-23. El lote ya está ejecutado/verificado y
 aprobado artísticamente; la aceptación posterior se registra aparte. [Cierre histórico B5](evidence/blueprints/b5/informe.md).
+
+## Pino pintado PP4
+
+La alternativa `pino_conico` **2.0.0** usa el contrato 1.2, el atlas/corteza
+versionados y la estructura 0.2.0. Piloto y tres controles conocidos de 12 m,
+sin overrides ni ajustes por semilla; aceptación artística pendiente.
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/pino_conico/2.0.0.json --instance presets/blueprints/pino-pintado/pilot.json --output artifacts/pino-pintado/mi-piloto --no-render
+python3 scripts/verify_painted_pine.py --output artifacts/pino-pintado/mi-pp4 --visual
+```
+
+La primera orden produce `tree.glb` autocontenido, `.blend` con pintura
+empaquetada, manifiesto, recursos resueltos y `placements.json`. La segunda
+genera cuatro pinos, cuatro referencias 1.1.0, repetición y cambio de semilla
+de pintura; comprueba también regresiones roble B0 y columnar B4. No necesita
+resultados anteriores en `artifacts/`. `BLENDER_BIN` y `GODOT_BIN` permiten
+seleccionar ejecutables; se mantienen límites 120/180 s. Las capturas requieren
+escritorio real. Sin `--visual` solo hay comprobación técnica.
+
+La galería muestra `before-` (1.1.0), `new-` (2.0.0) y `wood-` (madera retenida).
+Nueve cámaras comunes por asset, incluyendo escalas 24/48/120 m.
+En su proyecto Godot se incluyen escenas `new-pilot.tscn` y
+`new-control-01/02/03.tscn`, con `painted_pine_asset.gd` para aplicar filtrado
+anisotrópico y sombras dobles fuera del visor. Se pueden copiar las escenas,
+sus GLB y el script juntos. Para un GLB generado con la primera orden, copiar
+el script desde `godot/` y adjuntarlo a la raíz importada. Configurar MSAA 4×
+en el viewport de destino para reproducir las capturas. El GLB por sí mismo
+conserva PNG, UV, rugosidad, doble cara y MASK .5.
+
+La semilla `paint=2718` selecciona variantes sin mover geometría; `canopy`
+conserva la identidad histórica del caso y no añade aleatoriedad a los anclajes.
+Repetir desde manifiesto exige conservar los PNG con sus hashes registrados;
+no se regenera la pintura. Extracción de receta/petición igual al procedimiento
+común. [Informe, comparación y límites](evidence/pino-pintado/pp4/informe.md).
+
+
+Revisión de volumen solicitada: **2.1.0**, mismos recursos y madera, 435 grupos
+cruzados/7520 triángulos. Refuerzo creciente arriba, segunda cruzada por
+secundaria y tres grupos en el eje, sin cambios por caso. Para generar usar
+`blueprints/pino_conico/2.1.0.json` y
+`presets/blueprints/pino-pintado-volumen/pilot.json`. Comparación contra 2.0.0:
+
+```sh
+python3 scripts/verify_painted_pine.py --matrix configs/verification/pine-painted-volume-v1.json --output artifacts/pino-pintado/mi-volumen --visual
+python3 scripts/pine_volume_evidence.py --study artifacts/pino-pintado/mi-volumen --evidence artifacts/pino-pintado/mi-evidencia-volumen
+```
+
+En esta matriz `before-` es 2.0.0 y `new-` es 2.1.0. La matriz PP4 inicial
+sigue predeterminada para conservar su reproducción. [Resultados y límites](evidence/pino-pintado/pp4-volumen/informe.md).
+
+
+La revisión **2.2.0** optimiza la madera con anillos adaptativos a 5 mm y tapas
+interiores verificadas; conserva los recorridos. Aplica después un ajuste leve
+de copa (longitud .98/anchura .94), común a los cuatro casos, conservando los
+435 grupos y anclajes. Generar con `blueprints/pino_conico/2.2.0.json` y
+`presets/blueprints/pino-pintado-madera/pilot.json`.
+
+```sh
+python3 scripts/verify_painted_pine.py --matrix configs/verification/pine-painted-wood-v1.json --output artifacts/pino-pintado/mi-madera --visual
+python3 scripts/pine_wood_evidence.py --study artifacts/pino-pintado/mi-madera --evidence artifacts/pino-pintado/mi-evidencia-madera
+```
+
+En esta matriz `before-` = 2.1.0, `new-` = 2.2.0, `wood-` = madera nueva y
+`before-wood-` = madera anterior. [Resultados, tolerancias y límites](evidence/pino-pintado/pp4-madera/informe.md).
+
+La revisión **2.3.0** reduce cada cruzada de 12 a 6 tris, con la misma madera
+y pintura 2.2.0, y estrecha cada grupo por sqrt(.9): −10 % de envolvente por grupo,
+longitud/anclajes fijos. Piloto y tres controles: 4518–4554 tris, regla común.
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/pino_conico/2.3.0.json --instance presets/blueprints/pino-pintado-laminas/pilot.json --output artifacts/pino-pintado/mi-pino-laminas --no-render
+```
+
+Verificación: `configs/verification/pine-painted-cards-v1.json` mediante
+`scripts/verify_painted_pine.py --visual`; aislamiento de topología mediante
+`scripts/verify_pine_cards_topology.py --study RUTA`. Galería seleccionada:
+`artifacts/pino-pintado/pp4-cards-02/index.html`. `before-` = 2.2.0;
+`new-` = 2.3.0; `topology-` = soporte anterior con igual anchura nueva.
+[Resultados, reproducción y límites](evidence/pino-pintado/pp4-laminas/informe.md).

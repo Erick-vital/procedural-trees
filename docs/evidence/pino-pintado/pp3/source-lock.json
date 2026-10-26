@@ -1,0 +1,16 @@
+{
+  "source": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp2-sample-02",
+  "glbs": {
+    "original": "1c823ed2c5d749dd63ddee7a91c24efdea961cc9858aa044b54157fd5fa85fe7",
+    "folded": "90de806f997825a920846056e560b193e376978a9aee82d423794f758e1c9828",
+    "crossed": "8f21a27efc57aed60be96de872038e844d975afb5bbba735665a7c8e4717a16e"
+  },
+  "sources_sha256": {
+    "godot/review_pine_painted.gd": "b1f45aaf9d55d50ea87c8f7ee92f4d191776d34b16e9629715b29263c2015c41",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "godot/project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+    "scripts/review_pine_painted.py": "bb387c56923b6841703cef8069867adc42cf06d064385e8fdd5c0e3f5e57080f"
+  },
+  "pp2_reference_sha256": "f10d87c96216123deb9afa2ed9482f0cbeed28ec984331ae067042809b0da3e1",
+  "pp2_manifest_sha256": "210206cfb2d48811851b84d7780829940b0a6058daaa9da9c519936e86e46fa9"
+}

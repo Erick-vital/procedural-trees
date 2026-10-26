@@ -1,0 +1,63 @@
+{
+  "version": "pine-painted-cards-0.1.0",
+  "objective": "plans/pino-pintado.md",
+  "blueprint": "blueprints/pino_conico/2.3.0.json",
+  "cases": [
+    {
+      "id": "pilot",
+      "instance": {
+        "schema_version": "1.2",
+        "blueprint_id": "pino_conico",
+        "blueprint_version": "2.3.0",
+        "profile": "conico",
+        "seeds": {
+          "base": 5100,
+          "canopy": 97,
+          "paint": 2718
+        }
+      }
+    },
+    {
+      "id": "control-01",
+      "instance": {
+        "schema_version": "1.2",
+        "blueprint_id": "pino_conico",
+        "blueprint_version": "2.3.0",
+        "profile": "conico",
+        "seeds": {
+          "base": 5101,
+          "canopy": 98,
+          "paint": 2718
+        }
+      }
+    },
+    {
+      "id": "control-02",
+      "instance": {
+        "schema_version": "1.2",
+        "blueprint_id": "pino_conico",
+        "blueprint_version": "2.3.0",
+        "profile": "conico",
+        "seeds": {
+          "base": 5102,
+          "canopy": 99,
+          "paint": 2718
+        }
+      }
+    },
+    {
+      "id": "control-03",
+      "instance": {
+        "schema_version": "1.2",
+        "blueprint_id": "pino_conico",
+        "blueprint_version": "2.3.0",
+        "profile": "conico",
+        "seeds": {
+          "base": 5103,
+          "canopy": 100,
+          "paint": 2718
+        }
+      }
+    }
+  ]
+}

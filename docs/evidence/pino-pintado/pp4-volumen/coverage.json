@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "threshold_rgb_max": 20,
+  "background_rgb": [
+    238,
+    233,
+    223
+  ],
+  "upper_roi_pixels": [
+    0,
+    80,
+    900,
+    340
+  ],
+  "note": "Cobertura proyectada de madera y follaje, no volumen físico ni aceptación artística. ROI común en frente/perfil, aproximadamente tercio superior.",
+  "cases": {
+    "pilot": {
+      "front": {
+        "before_pixels": 41626,
+        "after_pixels": 82651,
+        "ratio": 1.9855619084226204,
+        "upper_before_pixels": 4378,
+        "upper_after_pixels": 19428,
+        "upper_ratio": 4.437642759250799
+      },
+      "side": {
+        "before_pixels": 40071,
+        "after_pixels": 81001,
+        "ratio": 2.0214369494147886,
+        "upper_before_pixels": 4490,
+        "upper_after_pixels": 19836,
+        "upper_ratio": 4.417817371937639
+      },
+      "perspective": {
+        "before_pixels": 42271,
+        "after_pixels": 83486,
+        "ratio": 1.9750183340824679
+      }
+    },
+    "control-01": {
+      "front": {
+        "before_pixels": 42658,
+        "after_pixels": 80950,
+        "ratio": 1.8976510853767172,
+        "upper_before_pixels": 4842,
+        "upper_after_pixels": 20239,
+        "upper_ratio": 4.179884345311855
+      },
+      "side": {
+        "before_pixels": 43856,
+        "after_pixels": 86761,
+        "ratio": 1.978315395840934,
+        "upper_before_pixels": 4594,
+        "upper_after_pixels": 21017,
+        "upper_ratio": 4.574880278624293
+      },
+      "perspective": {
+        "before_pixels": 44857,
+        "after_pixels": 86363,
+        "ratio": 1.9252959404329313
+      }
+    },
+    "control-02": {
+      "front": {
+        "before_pixels": 43596,
+        "after_pixels": 85796,
+        "ratio": 1.9679787136434534,
+        "upper_before_pixels": 4641,
+        "upper_after_pixels": 19899,
+        "upper_ratio": 4.2876535229476405
+      },
+      "side": {
+        "before_pixels": 41026,
+        "after_pixels": 81648,
+        "ratio": 1.990152586164871,
+        "upper_before_pixels": 4385,
+        "upper_after_pixels": 19236,
+        "upper_ratio": 4.386773090079817
+      },
+      "perspective": {
+        "before_pixels": 43635,
+        "after_pixels": 86583,
+        "ratio": 1.9842557579924374
+      }
+    },
+    "control-03": {
+      "front": {
+        "before_pixels": 45163,
+        "after_pixels": 89964,
+        "ratio": 1.9919845891548391,
+        "upper_before_pixels": 4682,
+        "upper_after_pixels": 20717,
+        "upper_ratio": 4.424818453652286
+      },
+      "side": {
+        "before_pixels": 41291,
+        "after_pixels": 80587,
+        "ratio": 1.951684386428035,
+        "upper_before_pixels": 4285,
+        "upper_after_pixels": 18775,
+        "upper_ratio": 4.381563593932322
+      },
+      "perspective": {
+        "before_pixels": 43835,
+        "after_pixels": 83563,
+        "ratio": 1.9063077449526633
+      }
+    }
+  }
+}

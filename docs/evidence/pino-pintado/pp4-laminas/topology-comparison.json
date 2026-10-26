@@ -1,0 +1,309 @@
+{
+  "passed": true,
+  "maximum_mask_difference_fraction": 0.002,
+  "cases": {
+    "pilot": {
+      "front": {
+        "pixels_rgb_delta_gt20": 3562,
+        "fraction": 0.0043975308641975306,
+        "maximum_rgb_delta": 202,
+        "silhouette_xor_pixels": 41,
+        "reference_covered_pixels": 76771
+      },
+      "side": {
+        "pixels_rgb_delta_gt20": 963,
+        "fraction": 0.0011888888888888889,
+        "maximum_rgb_delta": 207,
+        "silhouette_xor_pixels": 35,
+        "reference_covered_pixels": 75068
+      },
+      "perspective": {
+        "pixels_rgb_delta_gt20": 2379,
+        "fraction": 0.002937037037037037,
+        "maximum_rgb_delta": 197,
+        "silhouette_xor_pixels": 32,
+        "reference_covered_pixels": 77854
+      },
+      "back": {
+        "pixels_rgb_delta_gt20": 1242,
+        "fraction": 0.0015333333333333334,
+        "maximum_rgb_delta": 203,
+        "silhouette_xor_pixels": 46,
+        "reference_covered_pixels": 75972
+      },
+      "top": {
+        "pixels_rgb_delta_gt20": 1812,
+        "fraction": 0.002237037037037037,
+        "maximum_rgb_delta": 201,
+        "silhouette_xor_pixels": 13,
+        "reference_covered_pixels": 63999
+      },
+      "below": {
+        "pixels_rgb_delta_gt20": 1803,
+        "fraction": 0.002225925925925926,
+        "maximum_rgb_delta": 204,
+        "silhouette_xor_pixels": 38,
+        "reference_covered_pixels": 76424
+      },
+      "near": {
+        "pixels_rgb_delta_gt20": 328,
+        "fraction": 0.0004049382716049383,
+        "maximum_rgb_delta": 200,
+        "silhouette_xor_pixels": 19,
+        "reference_covered_pixels": 32737
+      },
+      "medium": {
+        "pixels_rgb_delta_gt20": 718,
+        "fraction": 0.0008864197530864198,
+        "maximum_rgb_delta": 196,
+        "silhouette_xor_pixels": 5,
+        "reference_covered_pixels": 8204
+      },
+      "far": {
+        "pixels_rgb_delta_gt20": 8,
+        "fraction": 9.876543209876543e-06,
+        "maximum_rgb_delta": 156,
+        "silhouette_xor_pixels": 2,
+        "reference_covered_pixels": 1325
+      }
+    },
+    "control-01": {
+      "front": {
+        "pixels_rgb_delta_gt20": 3233,
+        "fraction": 0.003991358024691358,
+        "maximum_rgb_delta": 202,
+        "silhouette_xor_pixels": 33,
+        "reference_covered_pixels": 75853
+      },
+      "side": {
+        "pixels_rgb_delta_gt20": 1101,
+        "fraction": 0.0013592592592592593,
+        "maximum_rgb_delta": 208,
+        "silhouette_xor_pixels": 46,
+        "reference_covered_pixels": 81055
+      },
+      "perspective": {
+        "pixels_rgb_delta_gt20": 9937,
+        "fraction": 0.012267901234567901,
+        "maximum_rgb_delta": 201,
+        "silhouette_xor_pixels": 43,
+        "reference_covered_pixels": 80679
+      },
+      "back": {
+        "pixels_rgb_delta_gt20": 1611,
+        "fraction": 0.001988888888888889,
+        "maximum_rgb_delta": 206,
+        "silhouette_xor_pixels": 38,
+        "reference_covered_pixels": 76540
+      },
+      "top": {
+        "pixels_rgb_delta_gt20": 10437,
+        "fraction": 0.012885185185185185,
+        "maximum_rgb_delta": 208,
+        "silhouette_xor_pixels": 21,
+        "reference_covered_pixels": 69880
+      },
+      "below": {
+        "pixels_rgb_delta_gt20": 6424,
+        "fraction": 0.007930864197530864,
+        "maximum_rgb_delta": 208,
+        "silhouette_xor_pixels": 36,
+        "reference_covered_pixels": 82368
+      },
+      "near": {
+        "pixels_rgb_delta_gt20": 2302,
+        "fraction": 0.0028419753086419753,
+        "maximum_rgb_delta": 207,
+        "silhouette_xor_pixels": 18,
+        "reference_covered_pixels": 33868
+      },
+      "medium": {
+        "pixels_rgb_delta_gt20": 956,
+        "fraction": 0.0011802469135802469,
+        "maximum_rgb_delta": 164,
+        "silhouette_xor_pixels": 5,
+        "reference_covered_pixels": 8470
+      },
+      "far": {
+        "pixels_rgb_delta_gt20": 14,
+        "fraction": 1.728395061728395e-05,
+        "maximum_rgb_delta": 194,
+        "silhouette_xor_pixels": 1,
+        "reference_covered_pixels": 1388
+      }
+    },
+    "control-02": {
+      "front": {
+        "pixels_rgb_delta_gt20": 1116,
+        "fraction": 0.0013777777777777777,
+        "maximum_rgb_delta": 212,
+        "silhouette_xor_pixels": 48,
+        "reference_covered_pixels": 79553
+      },
+      "side": {
+        "pixels_rgb_delta_gt20": 5039,
+        "fraction": 0.006220987654320988,
+        "maximum_rgb_delta": 203,
+        "silhouette_xor_pixels": 42,
+        "reference_covered_pixels": 75759
+      },
+      "perspective": {
+        "pixels_rgb_delta_gt20": 154,
+        "fraction": 0.00019012345679012346,
+        "maximum_rgb_delta": 202,
+        "silhouette_xor_pixels": 49,
+        "reference_covered_pixels": 80501
+      },
+      "back": {
+        "pixels_rgb_delta_gt20": 140,
+        "fraction": 0.0001728395061728395,
+        "maximum_rgb_delta": 207,
+        "silhouette_xor_pixels": 47,
+        "reference_covered_pixels": 81155
+      },
+      "top": {
+        "pixels_rgb_delta_gt20": 105,
+        "fraction": 0.00012962962962962963,
+        "maximum_rgb_delta": 199,
+        "silhouette_xor_pixels": 27,
+        "reference_covered_pixels": 69031
+      },
+      "below": {
+        "pixels_rgb_delta_gt20": 109,
+        "fraction": 0.0001345679012345679,
+        "maximum_rgb_delta": 203,
+        "silhouette_xor_pixels": 45,
+        "reference_covered_pixels": 86274
+      },
+      "near": {
+        "pixels_rgb_delta_gt20": 368,
+        "fraction": 0.000454320987654321,
+        "maximum_rgb_delta": 202,
+        "silhouette_xor_pixels": 19,
+        "reference_covered_pixels": 33869
+      },
+      "medium": {
+        "pixels_rgb_delta_gt20": 233,
+        "fraction": 0.0002876543209876543,
+        "maximum_rgb_delta": 142,
+        "silhouette_xor_pixels": 1,
+        "reference_covered_pixels": 8492
+      },
+      "far": {
+        "pixels_rgb_delta_gt20": 12,
+        "fraction": 1.4814814814814815e-05,
+        "maximum_rgb_delta": 171,
+        "silhouette_xor_pixels": 2,
+        "reference_covered_pixels": 1382
+      }
+    },
+    "control-03": {
+      "front": {
+        "pixels_rgb_delta_gt20": 1232,
+        "fraction": 0.0015209876543209877,
+        "maximum_rgb_delta": 206,
+        "silhouette_xor_pixels": 46,
+        "reference_covered_pixels": 83427
+      },
+      "side": {
+        "pixels_rgb_delta_gt20": 349,
+        "fraction": 0.0004308641975308642,
+        "maximum_rgb_delta": 204,
+        "silhouette_xor_pixels": 40,
+        "reference_covered_pixels": 75219
+      },
+      "perspective": {
+        "pixels_rgb_delta_gt20": 454,
+        "fraction": 0.0005604938271604939,
+        "maximum_rgb_delta": 207,
+        "silhouette_xor_pixels": 51,
+        "reference_covered_pixels": 77795
+      },
+      "back": {
+        "pixels_rgb_delta_gt20": 623,
+        "fraction": 0.0007691358024691358,
+        "maximum_rgb_delta": 204,
+        "silhouette_xor_pixels": 38,
+        "reference_covered_pixels": 79378
+      },
+      "top": {
+        "pixels_rgb_delta_gt20": 718,
+        "fraction": 0.0008864197530864198,
+        "maximum_rgb_delta": 186,
+        "silhouette_xor_pixels": 20,
+        "reference_covered_pixels": 69221
+      },
+      "below": {
+        "pixels_rgb_delta_gt20": 4301,
+        "fraction": 0.005309876543209876,
+        "maximum_rgb_delta": 204,
+        "silhouette_xor_pixels": 32,
+        "reference_covered_pixels": 83506
+      },
+      "near": {
+        "pixels_rgb_delta_gt20": 192,
+        "fraction": 0.00023703703703703704,
+        "maximum_rgb_delta": 189,
+        "silhouette_xor_pixels": 14,
+        "reference_covered_pixels": 32716
+      },
+      "medium": {
+        "pixels_rgb_delta_gt20": 14,
+        "fraction": 1.728395061728395e-05,
+        "maximum_rgb_delta": 187,
+        "silhouette_xor_pixels": 2,
+        "reference_covered_pixels": 8196
+      },
+      "far": {
+        "pixels_rgb_delta_gt20": 12,
+        "fraction": 1.4814814814814815e-05,
+        "maximum_rgb_delta": 163,
+        "silhouette_xor_pixels": 2,
+        "reference_covered_pixels": 1355
+      }
+    }
+  },
+  "note": "Misma anchura sqrt(.9) en referencia de 12 tris y cruzadas de 6; ninguna diferencia se atribuye al estrechamiento.",
+  "source_sha256": {
+    "scripts/verify_pine_cards_topology.py": "5ffc10feb838111e3db0501d4a875161203941e7803b8719ed34c7d9b7214088",
+    "blender/pine_cards_reference.py": "ee30f384357c84dff74763616dcfb32b2daf3111b5bf4b86962a0cc29b8f5c3f"
+  },
+  "capture_sha256": {
+    "topology-control-01--back.png": "41596bdf0091b629c2e066c13257095a19d78a981ce75dc7376c5ee50ee1d779",
+    "topology-control-01--below.png": "9f2751719becbed792aeb30c15226dd78f6e225ac102d7f7c728709d0471d9c3",
+    "topology-control-01--far.png": "3a78bbb14c5860982b42ef14504e4c01598e00829f08e04299b1491ff5e18e42",
+    "topology-control-01--front.png": "71eb86c0b2b6c4300900e35b890b5ed15d0e21a7aa9b7a15669ffb8be7f00d32",
+    "topology-control-01--medium.png": "4fbd2f268f83622998660337d469f8b3b394b323c5d3d4e3f728309bb8b70dd2",
+    "topology-control-01--near.png": "08fe9e4a06337dab3f32198825c414476c612602436d83613d9eed22540e2787",
+    "topology-control-01--perspective.png": "1cbd785c940d52be01db02c0e75dde15de4f670fee1b6e7cdd08fab03b05e4c8",
+    "topology-control-01--side.png": "c52c9012b6777102aafd93c044eec8740390124b28429d07f1c46f2d90b4f26e",
+    "topology-control-01--top.png": "876629112f86fa0a67397fd23d1b735007e0e4fdc54864691d25ca97bf961bc6",
+    "topology-control-02--back.png": "e0aa1c7b89074b76b72bdc056dc7cbfa8b6afbaa87633122bd26fe514751b594",
+    "topology-control-02--below.png": "6b05b3f41adbbbe4618bc6ee990c2b994bd82f9024c0c9cdb45c74c30996ad16",
+    "topology-control-02--far.png": "41b0686cefadc7c90c5bd7bfc66dc1f8979503efc86ed6ec2163215334a7121a",
+    "topology-control-02--front.png": "689e60977bf8fcd86f0d79b0e3f0599cc153a4c4c7c6fff9d3b69e8c217b0f4d",
+    "topology-control-02--medium.png": "e01444961278be7351327822c9a9b20afcc3cb94f66d2906e1d5f30bc987f63d",
+    "topology-control-02--near.png": "5522b5bd216002093d3fc37a03c57ed42969f67cd915e12649d831c2fe31b70b",
+    "topology-control-02--perspective.png": "0331c98f947d361d14769c01f945be2df7955d211adaec4166922e97a1223a65",
+    "topology-control-02--side.png": "dec40303990fe92fb33899406793e7d820cf65a174e950d3ebe05bca4d04249a",
+    "topology-control-02--top.png": "d073fbf157798beb78cf5f268818da0ecd5b207cb3e2505d587cee54fb3e697b",
+    "topology-control-03--back.png": "bdbde8499c5b17b3884caf78ecbee8b156c9936a61a31ea8e86e21bad495ca34",
+    "topology-control-03--below.png": "2fb91f43ec6c6c6eaac50aba549da54c821e23d409820e27a1b2fe862d31d32e",
+    "topology-control-03--far.png": "5683a93de24d8494fa780e357023bbd61329b4ef2752dd060c9ffca718c3a028",
+    "topology-control-03--front.png": "5f997df402d583bd999ead9c78e9d9efaeb406271599bebd8b8e16462763df0b",
+    "topology-control-03--medium.png": "3040c6be77df4fcfdaa94b728ad9f0d3c3fff6c81e7612279bf8c652979a6d0e",
+    "topology-control-03--near.png": "9e62f8a8b84aa94deead07eebd6e8046a88b5a9da737f24a7ecb0778f61d968c",
+    "topology-control-03--perspective.png": "6be50b7f0b3512a86910463531422c80193420e51c4aed0b2035f4af63c637ae",
+    "topology-control-03--side.png": "3d39abc9096beb41979560d594b8746fe40b60700a95283513e9c20646f3410e",
+    "topology-control-03--top.png": "5505347cb2e5fc1d013afeb9df1a8c48c5898081af948eb9823ee4ab60f3614b",
+    "topology-pilot--back.png": "47773eab3b521ab5882c9934e3228c787e7e9065c07ce9c2209946d67107d023",
+    "topology-pilot--below.png": "594f885f48c70ac6ae4533f8f4776671050bac5fb92e3c777c2d04e62742b658",
+    "topology-pilot--far.png": "eecced909d1b3e8fe178ac3e583b1833f9b447cc69ff8c01bc5b81678d5ec63c",
+    "topology-pilot--front.png": "dbf80d5436d222a4269125bfee29e93a579f9bbdf8826b3feb402b09159e6cbb",
+    "topology-pilot--medium.png": "a9af5433ed212f0d57031d881fc71e490433a169be06c6a8fb32b231aeccc0ef",
+    "topology-pilot--near.png": "f6c1573157f04907a308d855f9678ca58413778c2d11d15c301906d428c6d3cd",
+    "topology-pilot--perspective.png": "89c0c4bc20ff2b02b4940b24bd6d5ab59f3a99d43dd2ac54038e779ff5b4fc54",
+    "topology-pilot--side.png": "4594c19d4e46efc26fdedc22ac7b2b7beb195f68b3a783818d879524c7e7558b",
+    "topology-pilot--top.png": "83a278e40dd500959b7cc936d83a059c1168a1130b1fdcf34f1282374e73f98d"
+  }
+}

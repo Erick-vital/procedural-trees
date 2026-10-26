@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/pilot/tree.glb",
+      "triangles": 7164,
+      "materials": 2,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/before-pilot/tree.glb",
+      "triangles": 7520,
+      "materials": 2,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/pilot/wood.glb",
+      "triangles": 1944,
+      "materials": 1,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/before-pilot/wood.glb",
+      "triangles": 2300,
+      "materials": 1,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/control-01/tree.glb",
+      "triangles": 7140,
+      "materials": 2,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/before-control-01/tree.glb",
+      "triangles": 7520,
+      "materials": 2,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/control-01/wood.glb",
+      "triangles": 1920,
+      "materials": 1,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/before-control-01/wood.glb",
+      "triangles": 2300,
+      "materials": 1,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/control-02/tree.glb",
+      "triangles": 7128,
+      "materials": 2,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/before-control-02/tree.glb",
+      "triangles": 7520,
+      "materials": 2,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/control-02/wood.glb",
+      "triangles": 1908,
+      "materials": 1,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/before-control-02/wood.glb",
+      "triangles": 2300,
+      "materials": 1,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/control-03/tree.glb",
+      "triangles": 7152,
+      "materials": 2,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/before-control-03/tree.glb",
+      "triangles": 7520,
+      "materials": 2,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/control-03/wood.glb",
+      "triangles": 1932,
+      "materials": 1,
+      "uv_layers": 1
+    },
+    {
+      "path": "/home/tao/repos/procedural/arboles/artifacts/pino-pintado/pp4-wood-01/before-control-03/wood.glb",
+      "triangles": 2300,
+      "materials": 1,
+      "uv_layers": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "study": "artifacts/pino-pintado/pp4-full-05",
+  "technical_checks": 35,
+  "real_captures": 108,
+  "fault_injection_rejections": {
+    "opaque-foliage": true,
+    "missing-uv": true,
+    "external-image": true,
+    "roughness": true,
+    "shifted-uv": true,
+    "zero-normal": true,
+    "historical-rejects-texture": true
+  },
+  "godot_adapter_applied": true,
+  "source_lock_verified": true,
+  "capture_hashes_verified": true,
+  "evidence_generator_sha256": "c69276830e18295ba8373d42cdc763c1d69de1b159da882d102028f30a9cc18f",
+  "artistic_acceptance": "pending",
+  "visual_review": "Revisión del agente documentada en informe.md; no inferida de passed."
+}

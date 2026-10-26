@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25",
+  "stage": "PP1",
+  "kind": "conceptos_artisticos_generados_por_IA",
+  "tool": "image_gen.imagegen integrado",
+  "reference_image": "docs/evidence/blueprints/pino-revision/pilot.png",
+  "reference_sha256": "18f8a230bedb031a41e2928b01b51a4a369c1af7fa0883113a33297e4c60020f",
+  "external_images_used_as_input": [],
+  "selected_by_agent": "A",
+  "user_acceptance": "pendiente",
+  "visual_review": "Ambos conceptos inspeccionados: A favorece masas amplias; estrechar puntas y neutralizar claros de corteza antes de PP2. B tiene más trazo fino.",
+  "runtime_geometry_or_performance_validation": false,
+  "outputs": [
+    {
+      "file": "direccion-a.png",
+      "bytes": 2453484,
+      "size_px": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "sha256": "6053183106edeae53da32a9451637eb7e90c2105b37af666410628718f82119e"
+    },
+    {
+      "file": "direccion-b.png",
+      "bytes": 2557467,
+      "size_px": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "sha256": "3a428dd464e4539bf3f306c6f5d29b3ab5a3d7af53fe11bfec6cbbda886ec332"
+    }
+  ],
+  "supporting_files": [
+    {
+      "file": "prompts.json",
+      "sha256": "c979b68154ac523932df11bd637a0e9cf38cbff715b5ade3e9206010dc3b53ae"
+    },
+    {
+      "file": "review-config.json",
+      "sha256": "1d16e2831dd84c18bd71441c2438b530f59b8b35a6ae56d0cefe6a0a3691ee72"
+    },
+    {
+      "file": "direccion-artistica.md",
+      "sha256": "280191038f77a691cdee829e2f5789cb63c6a2c39e42f71616dd2949e42470e4"
+    }
+  ]
+}

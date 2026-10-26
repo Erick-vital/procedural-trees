@@ -1,14 +1,18 @@
 # Estado del proyecto
 
-Última actualización: 2026-10-24.
+Última actualización: 2026-10-25.
 
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
 Dos tipos al cierre B5; catálogo ampliado ahora a tres con pino experimental.
-Plan activo: [blueprint de pino](plans/blueprint-pino.md), implementado y
-revisado en **1.1.0**, con ramas desfasadas e inclinaciones variadas.
-**Revisión artística del usuario pendiente**; acículas conservadas.
+Plan activo: [pino pintado PP1–PP4](plans/pino-pintado.md), **PP1–PP4 cerradas y aprobadas**;
+pino pintado revisado **2.3.0** integrado en piloto y tres controles. Dirección A
+y cruzadas elegidas; conjunto aprobado por el usuario el 2026-10-25.
+El usuario solicita estilo pintado y menos triángulos; permite sustituir
+ramillas y acículas por láminas texturizadas. Cuatro GLB completos implementados.
+Base: [blueprint de pino](plans/blueprint-pino.md), implementado y revisado en
+**1.1.0**; revisión artística del usuario pendiente, acículas conservadas allí.
 [Comparación y resultados](docs/evidence/blueprints/pino-revision/informe.md).
 [Guía de uso](docs/uso-blueprints.md), [cierre B5](docs/evidence/blueprints/b5/informe.md).
 Viejo-09 RF3 y perfiles joven/adulto/viejo de B3 revisada aprobados por el usuario.
@@ -28,19 +32,40 @@ la familia ensayada**, como alternativa explícita a Q3.
 
 ## Avances verificados
 
-- Pino: `pino_conico` 1.0.0, eje y ocho pisos de ramas con acículas radiales;
-  componentes propios 0.1.0, contratos 1.1 y ejecutor común. Cuatro semillas
-  fijas, 12 m, 11924 triángulos/2 materiales y 2892 acículas. 94 pruebas,
-  27 comprobaciones, repetición idéntica y controles de follaje que conservan
-  madera. Siete GLB reimportados para contactos, ocho escenas Godot y 72
-  capturas reales revisadas. Roble B0 y columnar B4 idénticos byte por byte.
-  [Informe y reproducción](docs/evidence/blueprints/pino/informe.md).
-- Pino 1.1.0: estructura 0.2.0 con raíces desfasadas, inclinaciones mixtas y
-  ramillas menos simétricas; mismos parámetros, semillas, cantidades y coste.
-  97 pruebas, 51 comprobaciones, piloto repetido idéntico, once pinos
-  reimportados y 144 capturas reales de 16 escenas Godot. Cuatro GLB 1.0.0,
-  roble B0 y columnar B4 idénticos a sus referencias. Revisión visual realizada;
-  aprobación del usuario pendiente. [Informe](docs/evidence/blueprints/pino-revision/informe.md).
+- PP1/PP2: dirección A elegida, muestra cruzada de rama `pine:p:2:0`,
+  atlas/corteza 0.1.0 de 1254²; 244→104 triángulos, 99 pruebas y 21 renders.
+  [PP2 y selección](docs/evidence/pino-pintado/pp2/informe.md).
+- PP3: cruzadas elegidas, 282 capturas reales Godot/101 pruebas. Alpha Scissor
+  .5, doble cara, rugosidad .95, mipmaps anisotrópicos; dentado y pérdida de
+  detalle lejano pendientes. [Revisión](docs/evidence/pino-pintado/pp3/informe.md).
+- PP4 inicial 2.0.0: 241 grupos/5192 triángulos, 110 pruebas y 108 capturas.
+  El usuario considera la copa demasiado rala; referencia técnica conservada.
+  [PP4 inicial](docs/evidence/pino-pintado/pp4/informe.md).
+- PP4 volumen **2.1.0**, distribución/cruzadas 0.2.0: misma regla creciente
+  arriba para piloto/tres controles, 435 grupos/**7520 triángulos**, 12 m/dos
+  materiales. Madera, atlas y materiales idénticos. 113 pruebas, 43 comprobaciones,
+  repetición y regresiones 2.0.0/B0/B4 exactas; 108 capturas reales revisadas.
+  Más masa superior y ápice; aprobación artística pendiente.
+  [Informe y reproducción](docs/evidence/pino-pintado/pp4-volumen/informe.md).
+- Madera/copa **2.2.0**, representación 0.3.0: anillos adaptativos a 5 mm y
+  tapas interiores verificadas. Madera **1908–1944**, total **7128–7164** tris.
+  435 grupos conservados; ajuste leve posterior .98 longitud/.94 anchura,
+  sin mover anclajes; cobertura proyectada 4,1–4,7 % menor. 116 pruebas,
+  51 comprobaciones, repetición/regresiones 2.1.0/B0/B4 exactas y 144 capturas
+  reales y láminas revisadas. [Informe](docs/evidence/pino-pintado/pp4-madera/informe.md).
+- Cruzadas **2.3.0**, representación 0.4.0: **12→6 tris/grupo**, 435 grupos,
+  follaje 5220→2610 y total **4518–4554**. Madera/PNG/guías 2.2.0 idénticos.
+  Petición posterior: anchura sqrt(.9), longitud/anclajes fijos; −10 % de
+  envolvente por grupo (no volumen físico de unión). 119 pruebas y 51 checks;
+  repetición y regresiones exactas, 144 capturas reales revisadas. Topología
+  aislada: diferencia de máscara ≤0,151 % del área en 36 pares; sin identidad
+  absoluta de píxeles. [Informe](docs/evidence/pino-pintado/pp4-laminas/informe.md).
+- Pino geométrico 1.0.0/1.1.0: cuatro semillas/12 m, 11924 tris y dos
+  materiales, 2892 acículas. Revisión 1.1.0 conserva costes y parámetros con
+  raíces desfasadas e inclinaciones mixtas; repetición/regresiones exactas,
+  97 pruebas y 144 capturas reales. Aprobación artística pendiente.
+  [Base](docs/evidence/blueprints/pino/informe.md),
+  [revisión](docs/evidence/blueprints/pino-revision/informe.md).
 
 - B0: referencia RF3 aprobada, congelada y reproducida. 133 archivos auditados,
   105 fuentes recuperables de Git. [Informe](docs/evidence/blueprints/b0/informe.md).
@@ -91,7 +116,7 @@ la familia ensayada**, como alternativa explícita a Q3.
   CLI exige receta y petición; sin selección “latest”. Inicio rápido: roble 1.0.0
   y viejo-09 aprobado. Recetas 1.0.0/1.1.0/1.2.0 del primero conservadas;
   aprobación B3 posterior documentada aparte sin alterar hashes de recetas.
-  Columnar y pino sin aprobación artística. Pino exige receta/ejemplar 1.1;
+  Columnar y pino geométrico pendientes; pino pintado 2.3.0 aprobado. Contratos 1.1/1.2;
   contratos y recetas históricas 1.0 conservados, componentes no intercambiables.
 - B5 resuelve los alias TreeSpec `presets/{joven,adulto,viejo}.json`: ahora
   idénticos a Q3 `presets/v0.4.0/`. Sus contenidos Q3b previos se conservaron
@@ -104,9 +129,12 @@ la familia ensayada**, como alternativa explícita a Q3.
   RF3: hasta 360 grupos/2160 hojas, 8192 muestras y 2048 intentos antes de mallar.
   Columnar declara máximo 337 grupos; solo 300 comprobados geométricamente en B4.
   Generación ≤120 s; pruebas/capturas ≤180 s por subproceso terminable.
-- Conservar geometría actual, incluido tronco; sin reducción de polígonos ni
-  tarjetas texturizadas. Optimización futura al integrar en motor, con mediciones
-  de rendimiento: menos triángulos por sí solo no demuestra mejora.
+- Pino pintado: nuevo alcance permite texturas y sustituir ramillas
+  completas para cambiar estilo y reducir triángulos. Conservar recetas históricas;
+  madera optimizada autorizada después; roble, LOD y benchmark siguen fuera.
+  PP4 usa contrato 1.2 y semilla paint separada; canopy identifica el caso histórico
+  pero no aleatoriza anclajes. Filtrado/sombras Godot en `painted_pine_asset.gd`.
+  Menos triángulos por sí solo no demuestra mejora de rendimiento.
 - Referencia RF3: moldes Q3 invisibles, seis rombos por conexión, hoja nominal 1 m.
   Joven 1.2.0 usa .45 m con planificación 1 m y soportes conservados. Columnar
   usa .45 m y planificación .45 m. Sin cambios por semilla ni atribución botánica.
@@ -124,7 +152,16 @@ la familia ensayada**, como alternativa explícita a Q3.
 
 ## Siguiente paso y pendientes
 
-Revisar con el usuario el pino **1.1.0**: modelo
+**2.3.0 aprobada por el usuario**: cruzadas con mitad de tris y copa algo más
+estrecha; [aceptación](docs/evidence/pino-pintado/pp4-laminas/user-acceptance.json). Galería
+`artifacts/pino-pintado/pp4-cards-02/index.html`: `before-` 2.2.0, `new-` 2.3.0,
+`wood-` madera idéntica, `topology-` anterior con igual estrechamiento nuevo.
+Cuatro casos de 12 m, regla común, sin overrides; 435 grupos y atlas conservados.
+−10 % de envolvente por grupo no equivale a −10 % de cobertura o unión de copa.
+Persisten huecos, faceteado y detalle lejano limitado; sin benchmark. PP1–PP4
+cerradas para estos cuatro casos; siguiente trabajo pendiente de solicitud.
+
+Referencia estructural conservada: pino **1.1.0**, modelo
 `artifacts/blueprints/pine-v1.1-review-01/pilot/tree.glb` y galería
 `artifacts/blueprints/pine-v1.1-review-01/index.html`. `before-` muestra 1.0.0;
 `pilot` y `control-01/02/03` son la revisión. Aprobación artística pendiente.
