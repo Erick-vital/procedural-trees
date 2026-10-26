@@ -1,16 +1,16 @@
 # Estado del proyecto
 
-Última actualización: 2026-10-25.
+Última actualización: 2026-10-26.
 
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
 Dos tipos al cierre B5; catálogo ampliado ahora a tres con pino experimental.
-Plan activo: [pino pintado PP1–PP4](plans/pino-pintado.md), **PP1–PP4 cerradas y aprobadas**;
-pino pintado revisado **2.3.0** integrado en piloto y tres controles. Dirección A
-y cruzadas elegidas; conjunto aprobado por el usuario el 2026-10-25.
-El usuario solicita estilo pintado y menos triángulos; permite sustituir
-ramillas y acículas por láminas texturizadas. Cuatro GLB completos implementados.
+Plan activo: [roble pintado](plans/roble-pintado.md): **pintura aprobada; rama
+y tres láminas aprobadas; receta 2.1.0 integrada**. Cuatro casos verificados:
+piloto/joven/adulto/viejo: 7836/3996/6812/7780 tris.
+[Resultado y reproducción](docs/evidence/roble-pintado/implementacion-01/informe.md).
+Pino [PP1–PP4](plans/pino-pintado.md) cerrado: **2.3.0 aprobado**, cuatro casos.
 Base: [blueprint de pino](plans/blueprint-pino.md), implementado y revisado en
 **1.1.0**; revisión artística del usuario pendiente, acículas conservadas allí.
 [Comparación y resultados](docs/evidence/blueprints/pino-revision/informe.md).
@@ -32,12 +32,17 @@ la familia ensayada**, como alternativa explícita a Q3.
 
 ## Avances verificados
 
-- PP1/PP2: dirección A elegida, muestra cruzada de rama `pine:p:2:0`,
-  atlas/corteza 0.1.0 de 1254²; 244→104 triángulos, 99 pruebas y 21 renders.
-  [PP2 y selección](docs/evidence/pino-pintado/pp2/informe.md).
-- PP3: cruzadas elegidas, 282 capturas reales Godot/101 pruebas. Alpha Scissor
-  .5, doble cara, rugosidad .95, mipmaps anisotrópicos; dentado y pérdida de
-  detalle lejano pendientes. [Revisión](docs/evidence/pino-pintado/pp3/informe.md).
+- Pino PP1–PP3: dirección A y cruzadas elegidas; atlas/corteza 0.1.0 y
+  materiales Godot verificados. [Pintura](docs/evidence/pino-pintado/pp2/informe.md),
+  [materiales](docs/evidence/pino-pintado/pp3/informe.md).
+- Roble **2.1.0** integrado: contrato 1.4, tres láminas/6 tris por grupo; atlas
+  0.3.0 (2000²)/ocho plantillas fijas, corteza/fuente de pintura 0.2.0 aprobadas.
+  Cuatro casos: **7836/3996/6812/7780 tris**, dos materiales, 264 grupos/792 láminas.
+  Piloto coincide con candidato aprobado en geometría/UV/normales; GLB repetido
+  idéntico. 139 pruebas, regresiones pino/columnar exactas, rehorneado RGBA idéntico
+  (metadatos PNG distintos), 144 capturas reales y cinco láminas inspeccionadas.
+  Altura nominal sobre madera, bounds completos incluyen márgenes transparentes.
+  [Informe, métricas y límites](docs/evidence/roble-pintado/implementacion-01/informe.md).
 - PP4 inicial 2.0.0: 241 grupos/5192 triángulos, 110 pruebas y 108 capturas.
   El usuario considera la copa demasiado rala; referencia técnica conservada.
   [PP4 inicial](docs/evidence/pino-pintado/pp4/informe.md).
@@ -71,7 +76,6 @@ la familia ensayada**, como alternativa explícita a Q3.
   97 pruebas y 144 capturas reales. Aprobación artística pendiente.
   [Base](docs/evidence/blueprints/pino/informe.md),
   [revisión](docs/evidence/blueprints/pino-revision/informe.md).
-
 - B0: referencia RF3 aprobada, congelada y reproducida. 133 archivos auditados,
   105 fuentes recuperables de Git. [Informe](docs/evidence/blueprints/b0/informe.md).
 - B1/B2: contratos estrictos, registro, resolución determinista y ejecución
@@ -93,8 +97,7 @@ la familia ensayada**, como alternativa explícita a Q3.
   comparaciones exactas, incluida repetición desde manifiesto. Roble/columnar
   idénticos a B0/B4. Alias Q3 y versión explícita idénticos. Sin capturas nuevas.
   [Cierre](docs/evidence/blueprints/b5/informe.md).
-- B5 corrigió finalización TreeSpec: inicializar `files_sha256` que no emitía
-  el adaptador histórico. Regresión probada; GLB anterior/posterior idéntico.
+- B5: finalización TreeSpec inicializa `files_sha256`; regresión probada y GLB idéntico.
 - RF5: treinta casos Q3 con follaje RF3, sin retoques por semilla ni fallos;
   88 pruebas, 74 comprobaciones, tres repeticiones idénticas y viejo-09 igual a B0.
   Madera/normales/corteza iguales a Q3 en treinta GLB; 7920 inserciones válidas
@@ -108,10 +111,8 @@ la familia ensayada**, como alternativa explícita a Q3.
   general ni sustitución del generador propio.
   [Q2](docs/evidence/q2/informe.md), [Q3](docs/evidence/q3/informe.md),
   [fusión](docs/evidence/q3-fusion/informe.md), [addons](docs/evidence/comparacion-addons/informe.md).
-- RF2: rama de 144 hojas aprobada el 2026-10-23; RF3 construyó el piloto de
-  **9 m, 264 conexiones, 1584 hojas, 10572 triángulos y tres materiales**.
-  [RF2](docs/evidence/rediseno-follaje/rf2-densidad/informe.md),
-  [RF3](docs/evidence/rediseno-follaje/rf3/informe.md).
+- RF2/RF3: rama de 144 hojas aprobada; piloto de 9 m, 264 conexiones,
+  1584 hojas/10572 tris/3 materiales. [RF2](docs/evidence/rediseno-follaje/rf2-densidad/informe.md), [RF3](docs/evidence/rediseno-follaje/rf3/informe.md).
 - Entorno: Blender 5.2.1 LTS `9e2066aef7ef`, Python Blender 3.13.13,
   orquestación 3.14.4, jsonschema 4.19.2, Pillow 12.1.1 y Godot 4.7.2 `ed1daf0bf`.
 
@@ -136,7 +137,7 @@ la familia ensayada**, como alternativa explícita a Q3.
   Generación ≤120 s; pruebas/capturas ≤180 s por subproceso terminable.
 - Pino pintado: nuevo alcance permite texturas y sustituir ramillas
   completas para cambiar estilo y reducir triángulos. Conservar recetas históricas;
-  madera y benchmark autorizados después; roble y LOD siguen fuera.
+  madera/benchmark autorizados después; roble 2.1.0 con tres láminas integrado/aprobado; LOD fuera.
   PP4 usa contrato 1.2 y semilla paint separada; canopy identifica el caso histórico
   pero no aleatoriza anclajes. Filtrado/sombras Godot en `painted_pine_asset.gd`.
   Menos triángulos por sí solo no demuestra mejora de rendimiento.
@@ -157,32 +158,32 @@ la familia ensayada**, como alternativa explícita a Q3.
 
 ## Siguiente paso y pendientes
 
-**2.3.0 aprobada por el usuario**: cruzadas con mitad de tris y copa algo más
-estrecha; [aceptación](docs/evidence/pino-pintado/pp4-laminas/user-acceptance.json). Galería
-`artifacts/pino-pintado/pp4-cards-02/index.html`: `before-` 2.2.0, `new-` 2.3.0,
-`wood-` madera idéntica, `topology-` anterior con igual estrechamiento nuevo.
-Cuatro casos de 12 m, regla común, sin overrides; 435 grupos y atlas conservados.
-−10 % de envolvente por grupo no equivale a −10 % de cobertura o unión de copa.
-Persisten huecos, faceteado y detalle lejano limitado; benchmark verificado. PP1–PP4
-cerradas para estos cuatro casos; siguiente trabajo pendiente de solicitud.
+**Tres láminas implementadas en receta 2.1.0; verificación de cuatro casos terminada.**
+La instrucción «ok implementalo con 3 laminas» aprueba la variante del piloto.
+Generación por CLI sin resultados previos; plantillas y atlas congelados.
 
-Referencia estructural conservada: pino **1.1.0**, modelo
-`artifacts/blueprints/pine-v1.1-review-01/pilot/tree.glb` y galería
-`artifacts/blueprints/pine-v1.1-review-01/index.html`. `before-` muestra 1.0.0;
-`pilot` y `control-01/02/03` son la revisión. Aprobación artística pendiente.
-El usuario prefirió ramas desfasadas y autorizó esta revisión; no es aceptación
-del conjunto. Acículas grandes y grupos en estrella conservados para evaluar
-primero la estructura. Solo cuatro semillas de 12 m verificadas; rangos
-completos y otras edades sin garantía. 1.0.0 y su galería anterior conservadas.
+- Galería: `artifacts/roble-pintado/implementacion-02/index.html`; cada caso contiene
+  `tree.glb`/`tree.blend`. [Informe](docs/evidence/roble-pintado/implementacion-01/informe.md).
+- Usar `blueprints/roble_copa_ancha/2.1.0.json` con ejemplares de
+  `presets/blueprints/roble-cruzado/`. [Guía](docs/uso-blueprints.md).
+- Piloto aprobado; controles revisados técnicamente/por el agente, sin atribuir
+  aprobación artística del usuario. No hay pendientes de integración de esta receta.
+- Cambio de representación autorizado: no conserva planos de hojas individuales
+  ni identidad IoU .99; copa más tupida. Persisten repetición, trazos de canto,
+  costuras de corteza y posibles conexiones ausentes. Sin benchmark de roble.
+- Históricos/pino/alias conservados; 2.0.0 es ensayo técnico previo, no pintura aprobada.
+- Cambios de roble aún **sin commit**. No iniciar fases adicionales por rutina.
+
+Pino **2.3.0 aprobado y benchmark cerrado**; galería `artifacts/pino-pintado/pp4-cards-02/index.html`.
+Base geométrica 1.1.0 en `artifacts/blueprints/pine-v1.1-review-01/`, aceptación pendiente.
 
 RF5 cerrado con aprobación artística del lote completo. Matriz
 `configs/verification/rf5-v1.json`; galería
 `artifacts/rediseno-follaje/rf5-lote-01/index.html`. RF3 aprobada como alternativa
 explícita a Q3; predeterminados conservados. F4 (lenguaje natural a parámetros)
 sigue pendiente de decisión de inicio y adaptación a blueprints.
-F4–F6 IA siguen pendientes; elegir proveedor/modelo al retomarlas.
-F5 conserva normalización Q2 solo Z y radios posiblemente elípticos, y deberá
-comparar estructura con/sin regla conservando ≥90 % de longitud; no fue sustituida.
+F4–F6 IA pendientes; elegir proveedor/modelo al retomarlas. F5 conserva Q2 solo Z
+y radios posiblemente elípticos; comparar con/sin regla conservando ≥90 % de longitud.
 
 Límites: B4 solo ensaya columna de 12 m/cuatro semillas; intervalos completos y otras
 edades no garantizados. Caso 2 m/moldes 3 m técnicamente válido pero visualmente
@@ -194,7 +195,4 @@ Sin bloqueos técnicos fuera del sandbox. Dentro pueden fallar audio al cerrar
 Blender y sockets loopback; ejecución autorizada fuera. Capturas Godot en lotes
 de dos escenas, dos dibujos completados por vista.
 
-Referencias locales regenerables: B2 `artifacts/blueprints/b2-acceptance-01/`,
-B3 `artifacts/blueprints/b3-controls-05/`, B4 `artifacts/blueprints/b4-columnar-01/`,
-B5 `artifacts/blueprints/b5-closure-02/`. Evidencia durable y reproducción en los
-informes enlazados; [operación histórica](docs/operacion-historica.md).
+Referencias regenerables: [operación histórica](docs/operacion-historica.md); evidencia en informes enlazados.

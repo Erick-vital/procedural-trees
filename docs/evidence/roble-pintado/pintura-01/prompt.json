@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25",
+  "tool": "image_gen.imagegen (integrado)",
+  "status": "approved_direction_only",
+  "purpose": "Concepto artístico de pintura; integración y optimización pausadas por petición del usuario.",
+  "prompt": "Use case: stylized-concept / style-transfer.\nAsset type: art-direction review board for painted oak tree game textures, BEFORE any 3D integration. This is a concept painting for human approval.\nInput image 1 is the STRUCTURE reference: our existing low-poly oak. Input image 2 is the PAINTING reference only: our approved broad-brush pine direction. Do NOT copy pine needles or pine bark anatomy onto the oak.\nCreate one polished landscape art-direction sheet on warm off-white. Main left panel: repaint the oak from image 1, keeping its squat thick trunk, its exact broad asymmetrical canopy mass arrangement, broad width-to-height proportion, major branches, open gaps and general silhouette. Keep a recognizably low-poly game-asset feel, not a rounded generic tree. Change the surface painting, not its architecture. The oak must be an oak with broad leaves, not a pine.\nRight upper panel: a large close-up of a small oak twig carrying overlapping broad, softly lobed oak leaves, showing beautiful deliberately hand-painted texture with broad confident brush marks, a restrained central vein and a few secondary veins. A few individual face-on leaf paint swatches nearby. Make the paint readable at game distance, with clear large color shapes and breathing room, no tiny noisy photoreal detail.\nRight lower panel: an oak bark paint swatch showing irregular broad broken plates, soft brown-to-ochre changes following wood growth, darker restrained grooves, not pine's long peeling flakes.\nPalette: rich natural olive and warm oak greens, some sage and golden green accents; warm earthy oak bark. Matte, tasteful, cohesive with the broad-brush direction of image 2. Avoid the neon chartreuse of the raw reference, avoid white veins, avoid glossy plastic, avoid black baked shadows, avoid dramatic directional lighting painted into the textures, avoid excessive micro-cracks, moss, acorns, decorations, or background scenery.\nText: only a small elegant heading \"Roble · propuesta de pintura\" and subheading \"Concepto artístico · pendiente de aprobación\". No performance numbers, no acceptance marks, no claims that this is a Godot render. Prioritize the quality of the painting and the leaf/bark close-ups.",
+  "reference_images": [
+    {
+      "path": "artifacts/roble-pintado/review-02/captures/before-pilot--perspective.png",
+      "role": "Referencia estructural del roble aprobado; no textura externa."
+    },
+    {
+      "path": "docs/evidence/pino-pintado/pp1/direccion-a.png",
+      "role": "Referencia propia de dirección de pincelada aprobada para el pino; no anatomía de conífera."
+    }
+  ],
+  "output": "docs/evidence/roble-pintado/pintura-01/propuesta.png",
+  "output_sha256": "99d217e1c6d81a2988db59f85c045ceba0c3e8854b24f017082cb51d349bd417",
+  "user_acceptance": "user-acceptance.json"
+}

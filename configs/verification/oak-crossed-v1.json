@@ -1,0 +1,62 @@
+{
+  "version": "oak-crossed-implementation-0.1.0",
+  "blueprint": "blueprints/roble_copa_ancha/2.1.0.json",
+  "cases": [
+    {
+      "id": "pilot",
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.1.0",
+        "profile": "viejo_referencia",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17,
+          "paint": 2718
+        }
+      }
+    },
+    {
+      "id": "joven-07",
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.1.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 1007,
+          "canopy": 17,
+          "paint": 2718
+        }
+      }
+    },
+    {
+      "id": "adulto-00",
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.1.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        }
+      }
+    },
+    {
+      "id": "viejo-00",
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.1.0",
+        "profile": "viejo",
+        "seeds": {
+          "base": 3000,
+          "canopy": 17,
+          "paint": 2718
+        }
+      }
+    }
+  ]
+}

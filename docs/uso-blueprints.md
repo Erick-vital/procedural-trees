@@ -12,18 +12,40 @@ PYTHONPATH=src python3 -m treegen blueprints
 
 La respuesta lista `id`, `version`, nombre, perfil predeterminado, ruta y hash
 canónico de cada receta registrada en `blueprints/<id>/<versión>.json`.
-Hay tres tipos y nueve versiones registradas. No hay selección “latest”.
+Hay tres tipos y doce versiones registradas. No hay selección “latest”.
 El perfil predeterminado no elige el tipo: se aplica dentro de una receta
 seleccionada explícitamente.
+
+El roble pintado aprobado usa `roble_copa_ancha@2.1.0`, contrato 1.4 y componente
+`oak-painted-crossed@0.1.0`: tres láminas por grupo, atlas y ocho plantillas fijos,
+soportes solo en secundarias. No reemplaza los alias históricos. La receta 2.0.0
+conserva el ensayo técnico anterior de una hoja/un triángulo y atlas procedural;
+no corresponde a la pintura aprobada. [Validación de 2.1.0](evidence/roble-pintado/implementacion-01/informe.md).
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/roble_copa_ancha/2.1.0.json --instance presets/blueprints/roble-cruzado/pilot.json --output artifacts/blueprints/roble-cruzado-a --no-render
+PYTHONPATH=src python3 -m treegen validate artifacts/blueprints/roble-cruzado-a
+```
+
+Ejemplares de control en la misma carpeta: `joven-07.json`, `adulto-00.json` y
+`viejo-00.json`. Cada salida incluye GLB autocontenido, `.blend` editable,
+resolución/entradas, semillas, asignaciones, hashes de recursos y auditoría de
+exportación. Atlas congelado en `assets/roble-pintado/v0.3.0/`; se genera desde
+fuentes sin necesitar galerías o estudios anteriores. La altura nominal de esta
+representación se verifica sobre madera; los bounds completos incluyen márgenes
+transparentes de las tarjetas. Los perfiles mantienen estado experimental para
+no atribuir garantía visual a todos sus rangos/semillas.
 
 | Objetivo | Receta | Ejemplar existente |
 | --- | --- | --- |
 | Reproducir viejo-09 aprobado | `blueprints/roble_copa_ancha/1.0.0.json` | `presets/blueprints/roble-copa-ancha-viejo-09.json` |
+| Roble pintado con tres láminas por grupo | `blueprints/roble_copa_ancha/2.1.0.json` | `presets/blueprints/roble-cruzado/pilot.json` |
 | Joven revisado | `blueprints/roble_copa_ancha/1.2.0.json` | `presets/blueprints/b3-v2/joven-00.json` |
 | Adulto revisado | `blueprints/roble_copa_ancha/1.2.0.json` | `presets/blueprints/b3-v2/adulto-00.json` |
 | Segundo tipo columnar | `blueprints/arbol_copa_columnar/1.0.0.json` | `presets/blueprints/columnar/pilot.json` |
 | Pino cónico experimental | `blueprints/pino_conico/1.0.0.json` | `presets/blueprints/pino/pilot.json` |
 | Pino con estructura revisada | `blueprints/pino_conico/1.1.0.json` | `presets/blueprints/pino-v2/pilot.json` |
+| Pino aprobado con láminas reducidas | `blueprints/pino_conico/2.3.0.json` | `presets/blueprints/pino-pintado-laminas/pilot.json` |
 | Pino pintado con madera optimizada | `blueprints/pino_conico/2.2.0.json` | `presets/blueprints/pino-pintado-madera/pilot.json` |
 | Pino pintado con volumen reforzado | `blueprints/pino_conico/2.1.0.json` | `presets/blueprints/pino-pintado-volumen/pilot.json` |
 | Pino pintado con cruzadas | `blueprints/pino_conico/2.0.0.json` | `presets/blueprints/pino-pintado/pilot.json` |

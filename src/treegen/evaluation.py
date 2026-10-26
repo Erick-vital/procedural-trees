@@ -7,7 +7,7 @@ import struct
 import html
 
 
-def validate_glb(path, spec, *, triangle_limit=10000):
+def validate_glb(path, spec, *, triangle_limit=10000, height_materials=None):
     if type(triangle_limit) is not int or not 1 <= triangle_limit <= 12500:
         raise ValueError('Límite de triángulos inválido')
     data = Path(path).read_bytes()
@@ -44,7 +44,7 @@ def validate_glb(path, spec, *, triangle_limit=10000):
         if a['count'] < 1 or stride < size or end > view.get('byteOffset', 0) + view['byteLength'] or end > len(binary):
             raise ValueError('Accessor fuera del buffer')
         return [struct.unpack_from('<' + fmt * width, binary, start + i * stride) for i in range(a['count'])]
-    points, triangles, by_material = [], [], {}
+    points, triangles, by_material, height_points = [], [], {}, []
     for primitive in doc['meshes'][0]['primitives']:
         if primitive.get('mode', 4) != 4:
             raise ValueError('Primitiva distinta de triángulos')
@@ -57,6 +57,8 @@ def validate_glb(path, spec, *, triangle_limit=10000):
         material = doc['materials'][primitive['material']]['name']
         by_material[material] = by_material.get(material, 0) + len(indices) // 3
         points.extend(vertices)
+        if height_materials is None or material in height_materials:
+            height_points.extend(vertices)
         for i in range(0, len(indices), 3):
             a, b, c = [vertices[k] for k in indices[i:i + 3]]
             u, v = [b[k] - a[k] for k in range(3)], [c[k] - a[k] for k in range(3)]
@@ -68,7 +70,8 @@ def validate_glb(path, spec, *, triangle_limit=10000):
         raise ValueError('Presupuesto geométrico o materiales inválidos')
     bounds = [[fn(p[k] for p in points) for k in range(3)] for fn in (min, max)]
     dimensions = [bounds[1][k] - bounds[0][k] for k in range(3)]
-    if min(dimensions) <= 0 or abs(dimensions[1] / spec['parameters']['height_m'] - 1) > .1:
+    nominal_height = max(p[1] for p in height_points)-min(p[1] for p in height_points) if height_points else 0
+    if min(dimensions) <= 0 or abs(nominal_height / spec['parameters']['height_m'] - 1) > .1:
         raise ValueError('Dimensiones o altura exportada inválidas')
     return {'triangles': len(triangles), 'materials': by_material, 'bounds_gltf': bounds,
             'dimensions_m': dimensions, 'geometry_sha256': hashlib.sha256(
@@ -91,12 +94,19 @@ def validate_result(directory):
         if manifest['canopy_spec'] != resolved['canopy_spec'] or manifest['base_seeds'] != resolved['base_seeds']:
             raise ValueError('Entradas de generación distintas del blueprint resuelto')
         triangle_limit = resolved['limits']['triangles']
-    report = validate_glb(directory / 'tree.glb', manifest['spec'], triangle_limit=triangle_limit)
+    height_materials = {'Painted_Bark'} if manifest.get('kind') == 'blueprint' and resolved['resolved_version'] == '1.4' else None
+    report = validate_glb(directory / 'tree.glb', manifest['spec'], triangle_limit=triangle_limit, height_materials=height_materials)
     if manifest.get('kind') == 'blueprint':
         from .foliage_twigs_evaluation import inspect_twigs_glb
         roles = ({'wood_material': 'Pine_Bark', 'leaf_material': 'Pine_Needles'}
                  if resolved['base_spec']['algorithm'] == 'pine-whorls' else {})
-        if resolved['resolved_version'] == '1.2':
+        if resolved['resolved_version'] == '1.4':
+            from .oak_crossed_evaluation import inspect_crossed
+            detailed = inspect_crossed(directory / 'tree.glb',manifest,resolved)
+        elif resolved['resolved_version'] == '1.3':
+            from .oak_painted_evaluation import inspect_oak
+            detailed = inspect_oak(directory / 'tree.glb',manifest,resolved)
+        elif resolved['resolved_version'] == '1.2':
             from .pine_painted_evaluation import inspect_painted_glb
             detailed = inspect_painted_glb(directory / 'tree.glb', manifest['metrics'], resolved)
         else:

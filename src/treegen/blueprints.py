@@ -26,12 +26,20 @@ PARAMETERS_VALIDATOR = StrictValidator(SCHEMA['$defs']['parameters'])
 
 
 def _schema(document):
+    if document.get('schema_version') == '1.4':
+        return json.loads((ROOT / 'schemas/tree-blueprint-crossed-oak.schema.json').read_text())
+    if document.get('schema_version') == '1.3':
+        return json.loads((ROOT / 'schemas/tree-blueprint-painted-oak.schema.json').read_text())
     if document.get('schema_version') == '1.2':
         return json.loads((ROOT / 'schemas/tree-blueprint-painted-pine.schema.json').read_text())
     return PINE_SCHEMA if document.get('schema_version') == '1.1' else SCHEMA
 
 
 def _instance_validator(document):
+    if document.get('schema_version') == '1.4':
+        return StrictValidator(json.loads((ROOT / 'schemas/tree-instance-crossed-oak.schema.json').read_text()))
+    if document.get('schema_version') == '1.3':
+        return StrictValidator(json.loads((ROOT / 'schemas/tree-instance-painted-oak.schema.json').read_text()))
     if document.get('schema_version') == '1.2':
         return StrictValidator(json.loads((ROOT / 'schemas/tree-instance-painted-pine.schema.json').read_text()))
     return StrictValidator(PINE_INSTANCE_SCHEMA) if document.get('schema_version') == '1.1' else INSTANCE_VALIDATOR
@@ -40,7 +48,7 @@ def _instance_validator(document):
 COMPONENTS = MappingProxyType({
     'base': ('oak_geometry_nodes@0.4.0', 'pine-whorls@0.1.0', 'pine-whorls@0.2.0'),
     'distribution': ('foliage-canopy@0.1.0', 'foliage-canopy@0.1.1', 'pine-distal@0.1.0', 'pine-path-groups@0.1.0', 'pine-path-groups@0.2.0'),
-    'representation': ('rf3-diamond-six@0.1.0', 'pine-needle-pairs@0.1.0', 'pine-painted-crossed@0.1.0', 'pine-painted-crossed@0.2.0', 'pine-painted-crossed@0.3.0', 'pine-painted-crossed@0.4.0'),
+    'representation': ('rf3-diamond-six@0.1.0', 'oak-painted-single@0.1.0', 'oak-painted-crossed@0.1.0', 'pine-needle-pairs@0.1.0', 'pine-painted-crossed@0.1.0', 'pine-painted-crossed@0.2.0', 'pine-painted-crossed@0.3.0', 'pine-painted-crossed@0.4.0'),
 })
 
 
@@ -125,6 +133,12 @@ def _patch(parameters, overrides, ranges):
 
 
 def _check_parameters(parameters, blueprint):
+    if blueprint['schema_version'] == '1.4':
+        from .oak_crossed_production import check_parameters
+        return check_parameters(parameters,blueprint)
+    if blueprint['schema_version'] == '1.3':
+        from .oak_painted import check_parameters
+        return check_parameters(parameters,blueprint)
     if blueprint['schema_version'] == '1.2':
         _validate(StrictValidator(_schema(blueprint)['$defs']['parameters']), parameters)
         from .pine_painted import check_parameters, validate_resources
@@ -183,6 +197,10 @@ def validate_blueprint(blueprint):
                  ('pine-whorls@0.1.0', 'pine-whorls@0.2.0'))) or (not pine and any(
             identifier.startswith('pine-') for identifier in blueprint['components'].values())):
         raise ValueError('Combinación de componentes incompatible con el contrato')
+    if blueprint['schema_version'] == '1.3' and blueprint['components'] != {'base':'oak_geometry_nodes@0.4.0','distribution':'foliage-canopy@0.1.1','representation':'oak-painted-single@0.1.0'}:
+        raise ValueError('Componentes incompatibles con roble pintado')
+    if blueprint['schema_version'] == '1.4' and blueprint['components'] != {'base':'oak_geometry_nodes@0.4.0','distribution':'foliage-canopy@0.1.1','representation':'oak-painted-crossed@0.1.0'}:
+        raise ValueError('Componentes incompatibles con roble cruzado')
     if blueprint['default_profile'] not in blueprint['profiles']:
         raise ValueError('Perfil predeterminado inexistente')
     for path, interval in blueprint['editable_ranges'].items():
@@ -238,6 +256,12 @@ def resolve_blueprint(blueprint, instance):
     parameters = _patch(defaults, instance.get('overrides', {}), blueprint['editable_ranges'])
     budget = _check_parameters(parameters, blueprint)
     base_seed, canopy_seed = instance['seeds']['base'], instance['seeds']['canopy']
+    if blueprint['schema_version'] == '1.4':
+        from .oak_crossed_production import resolve
+        return resolve(blueprint,instance,name,profile,defaults,parameters,budget)
+    if blueprint['schema_version'] == '1.3':
+        from .oak_painted import resolve
+        return resolve(blueprint,instance,name,profile,defaults,parameters,budget)
     if blueprint['schema_version'] == '1.2':
         from .pine_painted import resolve
         return resolve(blueprint, instance, name, profile, defaults, parameters, budget)

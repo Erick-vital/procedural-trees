@@ -1,0 +1,985 @@
+{
+  "passed": true,
+  "matrix": {
+    "version": "oak-crossed-implementation-0.1.0",
+    "blueprint": "blueprints/roble_copa_ancha/2.1.0.json",
+    "cases": [
+      {
+        "id": "pilot",
+        "instance": {
+          "schema_version": "1.4",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "2.1.0",
+          "profile": "viejo_referencia",
+          "seeds": {
+            "base": 3009,
+            "canopy": 17,
+            "paint": 2718
+          }
+        }
+      },
+      {
+        "id": "joven-07",
+        "instance": {
+          "schema_version": "1.4",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "2.1.0",
+          "profile": "joven",
+          "seeds": {
+            "base": 1007,
+            "canopy": 17,
+            "paint": 2718
+          }
+        }
+      },
+      {
+        "id": "adulto-00",
+        "instance": {
+          "schema_version": "1.4",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "2.1.0",
+          "profile": "adulto",
+          "seeds": {
+            "base": 2000,
+            "canopy": 17,
+            "paint": 2718
+          }
+        }
+      },
+      {
+        "id": "viejo-00",
+        "instance": {
+          "schema_version": "1.4",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "2.1.0",
+          "profile": "viejo",
+          "seeds": {
+            "base": 3000,
+            "canopy": 17,
+            "paint": 2718
+          }
+        }
+      }
+    ]
+  },
+  "checks": {
+    "pilot-export": true,
+    "joven-07-export": true,
+    "adulto-00-export": true,
+    "viejo-00-export": true,
+    "repeat-identical": true,
+    "pilot-approved-geometry-uv-normals": true,
+    "pine-unchanged": true,
+    "columnar-unchanged": true,
+    "rebake-rgba-identical": true
+  },
+  "cases": {
+    "pilot": {
+      "metrics": {
+        "vertices": 6624,
+        "triangles": 7836,
+        "bounds_blender": [
+          [
+            -6.280159,
+            -8.033664,
+            0.0
+          ],
+          [
+            8.205399,
+            6.980155,
+            9.687451
+          ]
+        ],
+        "height_m": 9.687451,
+        "triangles_by_material": {
+          "Painted_Bark": 6252,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "d34743646f06841ea5e2cb5f06e21c0ba0edb430a20a8dd9f651f4cb2ec9caaf"
+      },
+      "reference_metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.779675,
+            -7.323271,
+            0.0
+          ],
+          [
+            7.471208,
+            6.493496,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "5b8aeaa0488b61b94298f3533105531279c451119d28e5102ecbb0140bd2ed18"
+      },
+      "glb_sha256": "37fb32951eb7032ab49f2f5b328219d09ebcf125e8f4bc77f4eca60b01336d71",
+      "reference_glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "duration_seconds": 3.951,
+      "export_validation": {
+        "triangles": 7836,
+        "materials": {
+          "Painted_Bark": 6252,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -6.280158519744873,
+            0.0,
+            -6.980154514312744
+          ],
+          [
+            8.205398559570312,
+            9.687451362609863,
+            8.033663749694824
+          ]
+        ],
+        "dimensions_m": [
+          14.485557079315186,
+          9.687451362609863,
+          15.013818264007568
+        ],
+        "geometry_sha256": "f6820cbee1b86498fe6173644f1ba558e9766793ce2276fc370a5589762328f9",
+        "glb_sha256": "37fb32951eb7032ab49f2f5b328219d09ebcf125e8f4bc77f4eca60b01336d71",
+        "crossed_panels_valid": true,
+        "wood_and_remaining_supports_exact": true,
+        "source_distribution_exact": true,
+        "groups": 264,
+        "panels": 792,
+        "kept_supports": 120,
+        "resource_sha256": {
+          "foliage": {
+            "path": "assets/roble-pintado/v0.3.0/foliage.png",
+            "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+          },
+          "bark": {
+            "path": "assets/roble-pintado/v0.2.0/bark.png",
+            "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+          },
+          "templates": {
+            "path": "assets/roble-pintado/v0.3.0/templates.json",
+            "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+          },
+          "source_foliage": {
+            "path": "assets/roble-pintado/v0.2.0/foliage.png",
+            "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+          },
+          "source_layout": {
+            "path": "assets/roble-pintado/v0.2.0/manifest.json",
+            "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+          }
+        },
+        "channel_sha256": {
+          "Painted_Bark": "822e02ff07ccb99a7d1a506ad9367ba484cfe594d63230bf5a163cbe30035397",
+          "Painted_Foliage": "d7d2e7e70a586bc1ec36b4041287ce715fe66c77839d1fb1b4992ffabcd4988e"
+        }
+      },
+      "groups_sha256": "167fff6cca20f76dc5610ef3978e916f33a003767196e717b9f45844de4907fa"
+    },
+    "joven-07": {
+      "metrics": {
+        "vertices": 4500,
+        "triangles": 3996,
+        "bounds_blender": [
+          [
+            -1.682642,
+            -2.028157,
+            0.0
+          ],
+          [
+            1.569776,
+            1.844885,
+            4.20719
+          ]
+        ],
+        "height_m": 4.20719,
+        "triangles_by_material": {
+          "Painted_Bark": 2412,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "66e87d7f8fb38e6577169a46b1ad607d5f977f9ab7bc9671fb8a5b04a31d7900"
+      },
+      "reference_metrics": {
+        "vertices": 8976,
+        "triangles": 7324,
+        "bounds_blender": [
+          [
+            -1.383955,
+            -1.733637,
+            0.0
+          ],
+          [
+            1.372668,
+            1.674073,
+            4.0
+          ]
+        ],
+        "height_m": 4.0,
+        "triangles_by_material": {
+          "Oak_Bark": 2044,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "6dc3ee29724e871a5c76d66ffddbd75c8faa53e87a66e8f3e682924921ff402e"
+      },
+      "glb_sha256": "0342fc12015c96d25d996f30981faef2010f6835711aed7009a9f89655eaee1f",
+      "reference_glb_sha256": "1bd20c40b9f38fbb2a154e2ca9898b2044994e694413db63ffc448bad6bc6176",
+      "duration_seconds": 3.711,
+      "export_validation": {
+        "triangles": 3996,
+        "materials": {
+          "Painted_Bark": 2412,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -1.682641625404358,
+            0.0,
+            -1.8448853492736816
+          ],
+          [
+            1.569775938987732,
+            4.207189559936523,
+            2.0281569957733154
+          ]
+        ],
+        "dimensions_m": [
+          3.25241756439209,
+          4.207189559936523,
+          3.873042345046997
+        ],
+        "geometry_sha256": "63dbb2d04c49135bcc7ef69c8c9a5f999e361338e850669de1e30822c442d991",
+        "glb_sha256": "0342fc12015c96d25d996f30981faef2010f6835711aed7009a9f89655eaee1f",
+        "crossed_panels_valid": true,
+        "wood_and_remaining_supports_exact": true,
+        "source_distribution_exact": true,
+        "groups": 264,
+        "panels": 792,
+        "kept_supports": 46,
+        "resource_sha256": {
+          "foliage": {
+            "path": "assets/roble-pintado/v0.3.0/foliage.png",
+            "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+          },
+          "bark": {
+            "path": "assets/roble-pintado/v0.2.0/bark.png",
+            "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+          },
+          "templates": {
+            "path": "assets/roble-pintado/v0.3.0/templates.json",
+            "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+          },
+          "source_foliage": {
+            "path": "assets/roble-pintado/v0.2.0/foliage.png",
+            "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+          },
+          "source_layout": {
+            "path": "assets/roble-pintado/v0.2.0/manifest.json",
+            "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+          }
+        },
+        "channel_sha256": {
+          "Painted_Bark": "75a9e7e41f7d1dab7e446766b306c9d7f8227eea3602ed7161376001f504e2e5",
+          "Painted_Foliage": "08ef8a7f2cc9ce8136fae26db20fb6fd479fd60d7b95a191cf182d6babc62fc8"
+        }
+      },
+      "groups_sha256": "01aac3e1036b775f84df2276ed3e92d5c0d71c57f26ad816cd508625b164be00"
+    },
+    "adulto-00": {
+      "metrics": {
+        "vertices": 6072,
+        "triangles": 6812,
+        "bounds_blender": [
+          [
+            -7.238227,
+            -6.023726,
+            0.0
+          ],
+          [
+            8.0343,
+            6.859629,
+            10.721216
+          ]
+        ],
+        "height_m": 10.721216,
+        "triangles_by_material": {
+          "Painted_Bark": 5228,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "b77c25121117b51efdb4010d81cbe5fd0e9aeeb82b92a1a3e81e6861e1f436d8"
+      },
+      "reference_metrics": {
+        "vertices": 10176,
+        "triangles": 9644,
+        "bounds_blender": [
+          [
+            -6.612331,
+            -5.631225,
+            0.0
+          ],
+          [
+            7.463594,
+            6.454381,
+            10.0
+          ]
+        ],
+        "height_m": 10.0,
+        "triangles_by_material": {
+          "Oak_Bark": 4364,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "fb2738aacbc633c5946b11f08d9646a3ebea3966641b24433b98df6ebd9af608"
+      },
+      "glb_sha256": "7d47ff6f804a5a3c97e467d68fdaf1dbb09ad80850697236da5249d19d5bc488",
+      "reference_glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+      "duration_seconds": 3.61,
+      "export_validation": {
+        "triangles": 6812,
+        "materials": {
+          "Painted_Bark": 5228,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -7.238226890563965,
+            0.0,
+            -6.859629154205322
+          ],
+          [
+            8.034299850463867,
+            10.721216201782227,
+            6.023725509643555
+          ]
+        ],
+        "dimensions_m": [
+          15.272526741027832,
+          10.721216201782227,
+          12.883354663848877
+        ],
+        "geometry_sha256": "f8967e5092ff4223728ef2e9991e29fb39d83f60330f2d08840ec273182d5f8e",
+        "glb_sha256": "7d47ff6f804a5a3c97e467d68fdaf1dbb09ad80850697236da5249d19d5bc488",
+        "crossed_panels_valid": true,
+        "wood_and_remaining_supports_exact": true,
+        "source_distribution_exact": true,
+        "groups": 264,
+        "panels": 792,
+        "kept_supports": 108,
+        "resource_sha256": {
+          "foliage": {
+            "path": "assets/roble-pintado/v0.3.0/foliage.png",
+            "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+          },
+          "bark": {
+            "path": "assets/roble-pintado/v0.2.0/bark.png",
+            "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+          },
+          "templates": {
+            "path": "assets/roble-pintado/v0.3.0/templates.json",
+            "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+          },
+          "source_foliage": {
+            "path": "assets/roble-pintado/v0.2.0/foliage.png",
+            "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+          },
+          "source_layout": {
+            "path": "assets/roble-pintado/v0.2.0/manifest.json",
+            "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+          }
+        },
+        "channel_sha256": {
+          "Painted_Bark": "dfd6c432a52e5db2f1e9f5883e44094105bbd447cc13f759726ee91fc29bdc4b",
+          "Painted_Foliage": "679f4fddd0f9803753f69d639fb2b52f7dc4b611f99513d7230cfa10acf5b118"
+        }
+      },
+      "groups_sha256": "576dae0089132b298261cc7abec78ca1b937feba448c9dc3f8889496163d04ab"
+    },
+    "viejo-00": {
+      "metrics": {
+        "vertices": 6582,
+        "triangles": 7780,
+        "bounds_blender": [
+          [
+            -6.668093,
+            -7.835924,
+            0.0
+          ],
+          [
+            7.652547,
+            7.897913,
+            9.910583
+          ]
+        ],
+        "height_m": 9.910583,
+        "triangles_by_material": {
+          "Painted_Bark": 6196,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "171a173df6feca2d3881b96c79fc477c4ca5cd97025453e5314436ba0e69749e"
+      },
+      "reference_metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -6.119922,
+            -7.20857,
+            0.0
+          ],
+          [
+            7.324534,
+            7.496101,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Oak_Bark": 5292,
+          "RF1_Leaf": 3168,
+          "RF2_Twig": 2112
+        },
+        "geometry_sha256": "9c2b92f4198c9242bb5c42ccf44633127fc58704f0e51ecd1388a15692cfda2f"
+      },
+      "glb_sha256": "b7fe57a1190104e2ba96adb6aa314585f7a4e91018fd6a7be3e97b26f789890f",
+      "reference_glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+      "duration_seconds": 3.991,
+      "export_validation": {
+        "triangles": 7780,
+        "materials": {
+          "Painted_Bark": 6196,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -6.668092727661133,
+            0.0,
+            -7.897912979125977
+          ],
+          [
+            7.652547359466553,
+            9.91058349609375,
+            7.83592414855957
+          ]
+        ],
+        "dimensions_m": [
+          14.320640087127686,
+          9.91058349609375,
+          15.733837127685547
+        ],
+        "geometry_sha256": "58f069dbfac92d1b76a34ceae2eec90cb94c169e7c9cf48731fdc425c1e94a5a",
+        "glb_sha256": "b7fe57a1190104e2ba96adb6aa314585f7a4e91018fd6a7be3e97b26f789890f",
+        "crossed_panels_valid": true,
+        "wood_and_remaining_supports_exact": true,
+        "source_distribution_exact": true,
+        "groups": 264,
+        "panels": 792,
+        "kept_supports": 113,
+        "resource_sha256": {
+          "foliage": {
+            "path": "assets/roble-pintado/v0.3.0/foliage.png",
+            "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+          },
+          "bark": {
+            "path": "assets/roble-pintado/v0.2.0/bark.png",
+            "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+          },
+          "templates": {
+            "path": "assets/roble-pintado/v0.3.0/templates.json",
+            "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+          },
+          "source_foliage": {
+            "path": "assets/roble-pintado/v0.2.0/foliage.png",
+            "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+          },
+          "source_layout": {
+            "path": "assets/roble-pintado/v0.2.0/manifest.json",
+            "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+          }
+        },
+        "channel_sha256": {
+          "Painted_Bark": "bad67fd0638f3e96ee8de8edd6326c2825b2a381b892e1c31f7cadbfbfc1c7aa",
+          "Painted_Foliage": "898b863f0ed16e171903ef36af3133530bc4bee3c8bcfbb5024ee0e4299cd376"
+        }
+      },
+      "groups_sha256": "52504d7c5c922b62169563cb050bca44724734034b87fc9e72fa27f7bbd164b2"
+    }
+  },
+  "mask_metrics": {
+    "pilot": {
+      "front": {
+        "old_pixels": 228158,
+        "new_pixels": 243753,
+        "coverage_ratio": 1.0683517562390974,
+        "iou": 0.8655853191859454,
+        "xor_pixels": 34001
+      },
+      "side": {
+        "old_pixels": 230635,
+        "new_pixels": 244066,
+        "coverage_ratio": 1.0582348732846272,
+        "iou": 0.8742439078317724,
+        "xor_pixels": 31851
+      },
+      "perspective": {
+        "old_pixels": 247342,
+        "new_pixels": 263504,
+        "coverage_ratio": 1.0653427238398654,
+        "iou": 0.8563662395616056,
+        "xor_pixels": 39526
+      },
+      "back": {
+        "old_pixels": 242298,
+        "new_pixels": 254911,
+        "coverage_ratio": 1.0520557330229716,
+        "iou": 0.8708103186189666,
+        "xor_pixels": 34335
+      },
+      "top": {
+        "old_pixels": 360986,
+        "new_pixels": 370516,
+        "coverage_ratio": 1.0263999157862078,
+        "iou": 0.8426439286119123,
+        "xor_pixels": 62468
+      },
+      "below": {
+        "old_pixels": 257345,
+        "new_pixels": 275388,
+        "coverage_ratio": 1.0701121063164234,
+        "iou": 0.8501913632985337,
+        "xor_pixels": 43135
+      },
+      "near": {
+        "old_pixels": 81793,
+        "new_pixels": 87104,
+        "coverage_ratio": 1.064932206912572,
+        "iou": 0.8569700834496938,
+        "xor_pixels": 13009
+      },
+      "medium": {
+        "old_pixels": 20396,
+        "new_pixels": 21725,
+        "coverage_ratio": 1.0651598352618161,
+        "iou": 0.8574326410018962,
+        "xor_pixels": 3233
+      },
+      "far": {
+        "old_pixels": 3234,
+        "new_pixels": 3455,
+        "coverage_ratio": 1.0683364254792826,
+        "iou": 0.8539356984478935,
+        "xor_pixels": 527
+      }
+    },
+    "joven-07": {
+      "front": {
+        "old_pixels": 185977,
+        "new_pixels": 199130,
+        "coverage_ratio": 1.0707237991794685,
+        "iou": 0.8928827721798968,
+        "xor_pixels": 21793
+      },
+      "side": {
+        "old_pixels": 208537,
+        "new_pixels": 221444,
+        "coverage_ratio": 1.0618930933119781,
+        "iou": 0.8943563309542691,
+        "xor_pixels": 23979
+      },
+      "perspective": {
+        "old_pixels": 198382,
+        "new_pixels": 207766,
+        "coverage_ratio": 1.0473026786704438,
+        "iou": 0.9035451153896628,
+        "xor_pixels": 20580
+      },
+      "back": {
+        "old_pixels": 196741,
+        "new_pixels": 210652,
+        "coverage_ratio": 1.0707071733903966,
+        "iou": 0.891086581131515,
+        "xor_pixels": 23463
+      },
+      "top": {
+        "old_pixels": 236316,
+        "new_pixels": 239272,
+        "coverage_ratio": 1.012508674825234,
+        "iou": 0.8965107468995493,
+        "xor_pixels": 25952
+      },
+      "below": {
+        "old_pixels": 209645,
+        "new_pixels": 222651,
+        "coverage_ratio": 1.0620382074459205,
+        "iou": 0.8875329109668293,
+        "xor_pixels": 25758
+      },
+      "near": {
+        "old_pixels": 65629,
+        "new_pixels": 68709,
+        "coverage_ratio": 1.0469304728092763,
+        "iou": 0.9033167566342217,
+        "xor_pixels": 6824
+      },
+      "medium": {
+        "old_pixels": 16396,
+        "new_pixels": 17177,
+        "coverage_ratio": 1.0476335691632106,
+        "iou": 0.9050672416728139,
+        "xor_pixels": 1673
+      },
+      "far": {
+        "old_pixels": 2599,
+        "new_pixels": 2737,
+        "coverage_ratio": 1.0530973451327434,
+        "iou": 0.9077583124776546,
+        "xor_pixels": 258
+      }
+    },
+    "adulto-00": {
+      "front": {
+        "old_pixels": 232246,
+        "new_pixels": 241728,
+        "coverage_ratio": 1.0408273985343128,
+        "iou": 0.8545760457017647,
+        "xor_pixels": 37166
+      },
+      "side": {
+        "old_pixels": 202656,
+        "new_pixels": 215259,
+        "coverage_ratio": 1.0621891283751776,
+        "iou": 0.8754543741080805,
+        "xor_pixels": 27753
+      },
+      "perspective": {
+        "old_pixels": 207484,
+        "new_pixels": 223109,
+        "coverage_ratio": 1.0753070116249928,
+        "iou": 0.8514634366575081,
+        "xor_pixels": 34545
+      },
+      "back": {
+        "old_pixels": 228799,
+        "new_pixels": 234672,
+        "coverage_ratio": 1.0256688184825982,
+        "iou": 0.8688045354107192,
+        "xor_pixels": 32537
+      },
+      "top": {
+        "old_pixels": 314984,
+        "new_pixels": 332690,
+        "coverage_ratio": 1.056212379041475,
+        "iou": 0.8262806612884579,
+        "xor_pixels": 61608
+      },
+      "below": {
+        "old_pixels": 244211,
+        "new_pixels": 249837,
+        "coverage_ratio": 1.0230374553152806,
+        "iou": 0.8422940671961815,
+        "xor_pixels": 42292
+      },
+      "near": {
+        "old_pixels": 68590,
+        "new_pixels": 73752,
+        "coverage_ratio": 1.0752587840793117,
+        "iou": 0.8518682348043297,
+        "xor_pixels": 11386
+      },
+      "medium": {
+        "old_pixels": 17108,
+        "new_pixels": 18395,
+        "coverage_ratio": 1.075227963525836,
+        "iou": 0.8521049611351662,
+        "xor_pixels": 2835
+      },
+      "far": {
+        "old_pixels": 2701,
+        "new_pixels": 2930,
+        "coverage_ratio": 1.0847834135505368,
+        "iou": 0.8510848126232742,
+        "xor_pixels": 453
+      }
+    },
+    "viejo-00": {
+      "front": {
+        "old_pixels": 185948,
+        "new_pixels": 195057,
+        "coverage_ratio": 1.0489868135177576,
+        "iou": 0.872426062256121,
+        "xor_pixels": 25959
+      },
+      "side": {
+        "old_pixels": 218665,
+        "new_pixels": 232043,
+        "coverage_ratio": 1.0611803443623808,
+        "iou": 0.8652970682205705,
+        "xor_pixels": 32548
+      },
+      "perspective": {
+        "old_pixels": 211498,
+        "new_pixels": 226345,
+        "coverage_ratio": 1.070199245382935,
+        "iou": 0.8513602652030884,
+        "xor_pixels": 35153
+      },
+      "back": {
+        "old_pixels": 213309,
+        "new_pixels": 225810,
+        "coverage_ratio": 1.058605122146745,
+        "iou": 0.8577689967804577,
+        "xor_pixels": 33619
+      },
+      "top": {
+        "old_pixels": 322427,
+        "new_pixels": 329791,
+        "coverage_ratio": 1.0228392783482774,
+        "iou": 0.8387825238722192,
+        "xor_pixels": 57184
+      },
+      "below": {
+        "old_pixels": 223596,
+        "new_pixels": 235708,
+        "coverage_ratio": 1.0541691264602229,
+        "iou": 0.8517037299833901,
+        "xor_pixels": 36784
+      },
+      "near": {
+        "old_pixels": 69904,
+        "new_pixels": 74805,
+        "coverage_ratio": 1.0701104371709773,
+        "iou": 0.8512089036714853,
+        "xor_pixels": 11631
+      },
+      "medium": {
+        "old_pixels": 17457,
+        "new_pixels": 18649,
+        "coverage_ratio": 1.0682820645013462,
+        "iou": 0.8514947951387108,
+        "xor_pixels": 2896
+      },
+      "far": {
+        "old_pixels": 2777,
+        "new_pixels": 2955,
+        "coverage_ratio": 1.064097947425279,
+        "iou": 0.8502259522272434,
+        "xor_pixels": 464
+      }
+    }
+  },
+  "capture_sha256": {
+    "new-adulto-00--mask-perspective.png": "2b217910c1dc82992a016b1b36bfda5f09e1509f81bb82462ea6effe48b30ee6",
+    "before-viejo-00--below.png": "fc0691ae4c497d4bdcf0d081064679310f836f37bc19889bd33bd235de3ca146",
+    "new-pilot--mask-front.png": "df9769db0bc08f51663e2433f9dca952c689020f7b4753e3cb5f3d231f47a2c1",
+    "before-pilot--mask-perspective.png": "30d29281f11b74ec0133aa1b239016e4b62e5f6a70ce8d2bbfd0628b019dfb73",
+    "new-joven-07--mask-perspective.png": "a24d0a5dad522300e2ab10e4f55859708aa0dceb7deaabe614223e9eb85da311",
+    "before-adulto-00--mask-back.png": "35b2d2994a35521416f367f3d7d813f2e81fecb4498788a972377923cbcbc4f6",
+    "new-pilot--top.png": "cd2181a2b148e27a784e75e6bfac1bb3fc0910a161a4dc99439f47a050b089f9",
+    "before-viejo-00--medium.png": "9c027f0c5b8f5f58aec5028f7f38c259b49222a2e8ecabdc57b504aa228c50e4",
+    "before-adulto-00--below.png": "b49a288fe751676e5ee7f7f1201adf932dbbed70b438ce07d8ff4988ee3c5b57",
+    "new-adulto-00--near.png": "e57838efb926af887a442bdd08c744c4063f8e4db3aaf7e0f5d698027e59eb3a",
+    "new-adulto-00--mask-below.png": "3752e620cf8b224905098c091b9af8b32cd73b9482b9fc6f498eeaf15d1ab3c1",
+    "new-adulto-00--medium.png": "2f902f803580b0089c99182d5595e943bf231e98e9c2717200c5b6fd98738b17",
+    "new-viejo-00--top.png": "f66425eadf2466b3bd40c51c1b4e578df4f74589937a3f99fa0a1c60a93eaf23",
+    "before-adulto-00--side.png": "f6cb99c3e7692d1dafb9140b3dc3ff4b2f79882e2e5916d1ee3fe2767fb9284f",
+    "before-adulto-00--mask-far.png": "4cbdf8b88902daec6ba3d24e3c85c11ded0caf2fc30b0b68c7e155e9b470a91d",
+    "before-joven-07--far.png": "91cfa42dbe52e08b75f04fa71d38601d19f85ca6764f27730e9d9a7d55ffc530",
+    "new-pilot--far.png": "044d98aaf41cbe908fc4585541baa927cd9c0edb62e2b315da811e2b05ee5003",
+    "new-viejo-00--near.png": "b2033c931d2db8893ab8884c214ed4e1321c84d046cda30b5afc8f2c99d2083e",
+    "before-pilot--mask-top.png": "45183831a8860450cd42f1566b681cc44fa9bb120319fba76b12da1fc4cc5508",
+    "before-pilot--mask-back.png": "a1142fe24f880497e4b99abbf99f2d7d1118269ccee8cc6a45f2bf409c62e2c7",
+    "new-viejo-00--medium.png": "eda5245510397baa3fe99d45fddb519f0df0f4ad567b1112ad1067be2d10ae4a",
+    "new-pilot--perspective.png": "49fe851015eae3e88e5a29e95744ef458fa1791bfea9c982b84d6840d9207aa7",
+    "before-pilot--perspective.png": "0d7f2a61fe355f524cadbcccee3aca3b4e018da3a7cd40ad866eb6503d79489d",
+    "before-adulto-00--mask-near.png": "7d73c6ee413fb2bc593b981058e51a487b16c5014053bd9e39749958633a6c64",
+    "before-joven-07--near.png": "285b1052f034f3cb511c7296bdb9b3f7e7309e5ac1401f3569babf1913b365aa",
+    "new-viejo-00--side.png": "7f68ee1dd08a7d69eb0778edc56fd0f08e3cb95c20625f84658f5698fee82fec",
+    "new-pilot--mask-near.png": "43bbc382131131429ffca783fbf0de9ce22ae2a7be190fda6c9deb7e916e86d7",
+    "new-joven-07--below.png": "b08ddba96fb60673a93eab9d519b0bdc04de0f9614293671ecbcc4625e773c5a",
+    "new-joven-07--front.png": "19623a041e07bc6ff204402b6f009d5542984587dfea4dd56ca68f6503a2042f",
+    "new-pilot--mask-top.png": "0a1bf00c0178377d0884278c8622428defaa0cab8cf11ad166d4d42180c3ba9a",
+    "before-adulto-00--mask-top.png": "b2088e928bee85dcba89393faf8f7efaba15ccd4c825aad8d139a5220b4bcea1",
+    "new-adulto-00--far.png": "3b67cb0f4004a1c0980ae66e3aca2cf4a8ccec697e9716d787cd8f92cb52862a",
+    "before-joven-07--mask-back.png": "918c6a8941235b4c551e779b454161277a41b622a7864637cbd752f77b8a5829",
+    "before-joven-07--mask-side.png": "2ddf5daac3df888e80da2e82d18883a2f9a224469556c5e20f39e54bf25c50af",
+    "new-viejo-00--mask-perspective.png": "77e5cbf31244d98f9aa2b4183e738713b7887292ce305664c9f8f5a7740232ad",
+    "before-viejo-00--mask-far.png": "8c9fd3f695076b92f18fbd3db9b25e38146a4582cb1a0fffc098549f9f167f28",
+    "before-joven-07--below.png": "7b235a35cbfc5318a8a549441641c1648b2c77dadb5390ad4c108b21630e3d68",
+    "before-pilot--back.png": "476925b5d6d1441f32fedb6779d3cbb5632e1f018222f665caab62f10ff7b13a",
+    "new-joven-07--mask-far.png": "6d2f9d3e0b95101f466c5b5ed493dae92e1422bbc79f495dcb540153d687000e",
+    "before-adulto-00--mask-medium.png": "804f07933d9b17054a9398ac3aec4bb957740f78ae648ed86cff27720c99862f",
+    "before-joven-07--medium.png": "f3fdcbb5a7c937850cbed2436cdcd7473b914e700ea6021677d8add0ae38caae",
+    "before-joven-07--side.png": "d23c72e4f985108d2f464b25e7dce1adc6921e6edff9146722066e44c3501f53",
+    "new-viejo-00--far.png": "50daaf4ee279b41fa0b58648d1241e4d8a5b81c2654a6fc11823d34bbce9f2e9",
+    "before-pilot--medium.png": "f588df6fbb6d49c171fa8f6f4be3dd950b987a83ac804c7d310541d6fb9dbe0a",
+    "new-pilot--mask-far.png": "19d4a9e491de089360df176db00aa4a5df5f80bb17000375c41ec2daadb47d6f",
+    "new-joven-07--near.png": "4e90de95eeb303bba7e132cf5ddc79a859bae788dd4ae42a1ae5debcc01f1b9c",
+    "new-viejo-00--mask-below.png": "474f53872c4c99d7120a463bd42eb2084a9483d8d7b902d76f3babd1c2e59bc2",
+    "before-adulto-00--perspective.png": "a351d07c42def5ea4e88732c2a06c2eefc5d26a7390bfe34883ac06445a71e0b",
+    "before-joven-07--mask-below.png": "97762270194a2280ba71dc4403b9ab50d6320b6f0e3e5f0a797abc3a1232add2",
+    "before-viejo-00--mask-side.png": "5eda0146a9386f1007c8340ac8a4a8741457c8a09681bd6c4e2a659661617463",
+    "new-pilot--front.png": "35433893b5cb011c7d4898e1accd7c0ecc34445677bd3ce947ede84692a95d60",
+    "before-adulto-00--back.png": "9ae0af8d611a22a23ace2fcf68f0c31e94fd57789615c58ffdb5da608841a0e6",
+    "before-pilot--mask-far.png": "064d82c0f6b120f3d74eca5712869347b3cb7534352cd75270dec1afc8891af7",
+    "before-viejo-00--side.png": "105ab32b8e15590dbb24dbd768eb7ea74b4f51b94b796a2bd8e65abf53acb3a3",
+    "new-joven-07--medium.png": "6e92f5c7f51c160990933ecf273807f95466e2e61fc6322d4959a956bd25c4f3",
+    "before-adulto-00--mask-perspective.png": "e575bd1ece1d1473d7c0bc650a4c188c13612711645b73ea46f45e41ca5ceffb",
+    "new-viejo-00--mask-front.png": "83e6cc6411ce19970ddfb6c33bae4558f744cf78b6b217223bce066f690c5e89",
+    "before-joven-07--mask-medium.png": "40bc7010739d21daed54e2c96dbb76c2e9e992175243eb64ab018cd2adf6ab61",
+    "new-pilot--mask-back.png": "b896a85acb01c2447cde95eef2990731019a43a6615237994d1be3b5694e07e4",
+    "before-viejo-00--far.png": "d5573676c333a473d0268e93e7e5b548a641553e862c1f18d923f9cb63ece3bb",
+    "new-viejo-00--mask-back.png": "76248378ce2f567ae8ecd6bcdcfaff4dd50d2b05c311768644683c74314bbdc3",
+    "new-adulto-00--perspective.png": "df542a15f15a1d7da07165bcde901d88b2cea4c0c71d41f9d8d8c2728f639363",
+    "new-adulto-00--mask-top.png": "75a706d540af0374d72905cf4860e13b367af1b2891d58ddf70be736c88b42b7",
+    "new-joven-07--side.png": "68c4b82dbf6b2ff64ed5dfcac76579054044a6eff05bf156a3b48e3740e8203c",
+    "before-viejo-00--top.png": "8f5f36d3030283860b3dca7e0224af034c15bc27388353d5642ea15ec28d8e8f",
+    "new-viejo-00--mask-medium.png": "2f7feace3ffd0c75455b1f2286384d1a27e846c097cc900e93d33b68861ba8fa",
+    "new-viejo-00--below.png": "ca334d8cb56e0870e1267b48e27a73bed5abd02886c1615c5763a7bebb10aa95",
+    "before-joven-07--mask-far.png": "d0184abbe486f292dff7ece6cf5b2e0f4c714fadcd6da696a59f38bad37a4f3a",
+    "before-pilot--front.png": "b2ea5d13c8f0bce13834f45211df69c9eaee7defb5d7670bd1158f47f4e544a5",
+    "new-viejo-00--mask-side.png": "98fc61b9b3b6cc43a3cd6b9ee37a3228365620c135a25456eafba2659b2f560f",
+    "new-viejo-00--back.png": "4661f3bb7046c249df8fc5013b8063cebbffce6ad5fc45e8ce2ddb877d9c360b",
+    "before-pilot--far.png": "23a36fe17f4eec8e6600e5b74e9169c92ff3654465b62e7699570350331fdb34",
+    "before-adulto-00--far.png": "f02dc5e453629b0486584ba8c7c6e431ba723698af39561ec1bad0f46ccc7989",
+    "before-joven-07--top.png": "37ae14dbceb5f45462e90d9ffa647507611bdbc241bb661612b38d82369ffc7b",
+    "before-pilot--below.png": "631f92fc1a3c0417cb3e6e9622cf29ab0e3af875afe65df114c0bc9688087c8e",
+    "before-joven-07--back.png": "5b2d909f9a1884c09426e694429c469a3277d5cca24c7fcdc2ebe9dc720094c2",
+    "new-pilot--medium.png": "8682302c162e1142ea54697e964f4dad7ba6c97b3aa5eef6a3992d3df88879f4",
+    "before-viejo-00--mask-near.png": "02a83994396bdac5993960145ab9b53636cb4e32a1e642d71b4ad708e95e9727",
+    "new-adulto-00--mask-back.png": "42ff0dc9f8ae9f25ae912d60a9b51a0da236f1ee83a504addbacda67c7cd50f7",
+    "before-adulto-00--top.png": "470422695db0619c2e7878162826128c775a70317e96cab64ef4c54de7d812a0",
+    "before-pilot--side.png": "facda696cb8ae3cdeb2f40e1b473d04080f30b87a04210e540c9f78b2a8b2de9",
+    "new-pilot--mask-medium.png": "ec66787dbaa83c501447fae3ee55a728558884b46e7da28471788d92f77bf31f",
+    "new-adulto-00--mask-front.png": "f5e6b94b4b18bdce31e273e6406c95e0795765d8988b2ca37477d05122670a55",
+    "before-pilot--mask-side.png": "6fa95acd86913cb960db1d617652c435a1fda5db222822efacdfd6b6d598a414",
+    "new-viejo-00--mask-far.png": "b5c034265d118daf56e81b7836c01a4419c171ab94eef53408132892920ed5b4",
+    "before-joven-07--perspective.png": "44f5f92ed2b64ef6521dcad3581ff868f08f4cc1c814d960001854ad67ebb1f9",
+    "new-viejo-00--perspective.png": "6db4d350686ae3f099b5ac5f7173d0eb049ceaf594f2fd31245b1dafda6d4c01",
+    "new-adulto-00--mask-side.png": "1877e7e2b4d1b9b293bf118f364e096e998772b0cce00db4cc80b36183001485",
+    "before-adulto-00--mask-side.png": "bec16056339f0833d4eb3db7d1fb614b9494dd7d9fcecab4de978ffbee535533",
+    "before-joven-07--front.png": "cca0ee1184370569ebeb8fc78ada617688eb51090655b2876ff5065ad257ecb6",
+    "new-joven-07--mask-back.png": "59e7495d7e0f2c8734b2835b502dc289d6edddd41be2b6f079512c122ce5e885",
+    "new-joven-07--top.png": "5f76b4eae60b83e9a8aacde4757279578006e5359052324e90a77bd81fedaf4f",
+    "before-pilot--near.png": "dce8a45fec8ea24ea65994f82aafd665d770ace28c5d0a1226942fb96c21cb88",
+    "before-viejo-00--near.png": "25826e26a8a4207618a0e0375a67b8e013f42afa3932d54cec6d5f6267e0b3c9",
+    "before-pilot--mask-front.png": "b8e0036ffb4c4b5321de777e50699fddf411195440361bf716aa16386609d215",
+    "before-joven-07--mask-top.png": "2b93e9194a6cb2cc1cc5d74e301b74e0fd03a83387904b496b9c4aa31ee69144",
+    "new-adulto-00--mask-far.png": "7aaacb123b4bbcfef6e146f78ad7ec680570502bd792933246914bc705f29dfe",
+    "new-adulto-00--back.png": "536282618f32e60159d152537bc12f8c2195ac36f6247654dd722a4940917655",
+    "before-viejo-00--mask-below.png": "24421f9a2194cde52acae93bcba001d51407c7d173eb73dc50bfb5262a079e0d",
+    "before-adulto-00--medium.png": "37abfaef2ba15ec707451f94a4fd48564a5ee1e93523cede423a9551266f016e",
+    "new-adulto-00--front.png": "8739d963ca22d891f4904518dd4f259d3d7028182ae73c0e0ea0653c659f7a0e",
+    "new-joven-07--mask-front.png": "559a341f2cb1b4415fe37534fe8add68ef2ca6ca8d7326300dbdf7f31ca8a615",
+    "before-pilot--top.png": "b03fa580dcd5b64e846397ea5ddd8ba34b2784014cc2e1acf70321fdf8a8434f",
+    "before-viejo-00--mask-top.png": "2afec1adcb0e8c24cb30526eaf292ca08b8c388cf5372ac638ab3fdbc393a27a",
+    "before-viejo-00--mask-medium.png": "8bedc4770cd081cacc60de4f66457a608ff0dc8990efa4467fb222f13b8a2f30",
+    "new-joven-07--mask-near.png": "5b479be4487623176ca020cad28f94fd1a4d6e85877a0d84cb1a6a3d34e34da3",
+    "before-viejo-00--front.png": "51b0e6c3a19468d018b7f2910212b3db091d1e0f1a56e425cffe496eb9570601",
+    "new-pilot--mask-side.png": "d9a45b9b66cdb344bfbb65de02b748e5ac44b5d40a1099360487efd493510249",
+    "new-joven-07--mask-medium.png": "98db014d4f17f4e8a83ebbdfa4014c3e95940003577600bdd3f378687ca6a981",
+    "new-adulto-00--below.png": "b5567f70fc8c906fef86998a147c96b557c00aeb4930aa533815d1234b98fa26",
+    "new-joven-07--mask-below.png": "34d7877ce2f0a0b668b38b292abac3f74cf7471e605efc294dfe9fca8f37ff22",
+    "before-pilot--mask-near.png": "67a258c15519489dc4cfdabf55cfc01cdcfd4a1e7493acd8b793621e48c68fb9",
+    "new-pilot--near.png": "0ba58ff5443521aa7e98d3aa3dcba5996952733cc5d0c4b37cf18f88b5a36fe9",
+    "before-adulto-00--mask-front.png": "4e21072bd8d918f838b1f7af05ad6b602b699721f6203b8c2a9d1dca52340cf7",
+    "before-adulto-00--near.png": "49cce5c359317fb55ed3181630c72fc8e986c774cbe32db8cd22c9f41722ca4d",
+    "before-pilot--mask-medium.png": "ce5707ddcd64ebcc5fc23730a4f95b4029fce50b31e957c4449c15cd590ccc23",
+    "before-pilot--mask-below.png": "d4aa6139212903974062df3b94119fe042de135fe7003870b2a139fd7fd84b15",
+    "new-pilot--side.png": "f6e3a9af7d2ae9fe5c23a280926c27daf3def030c98b8b4d11a6c7d08588a598",
+    "new-adulto-00--side.png": "b7a62d20e7aa7ae75ad7c3ef504b38e56b4bbc18b92885ef83d42cd3b26f0007",
+    "new-viejo-00--front.png": "f08db5ec0524a8b24cbedc40ab4bc7f7af2cc1988272e6d8b6e67c08ac4ecb07",
+    "before-joven-07--mask-perspective.png": "42e1b1321eff756bd41075dd01bc763cbf52f58bba40a7ecc52d70f63dac7ac7",
+    "before-joven-07--mask-near.png": "620ea64b1732c4da14ac659062cce4ae932bf90e3ecbbca61d3f9a0f31e97e24",
+    "new-adulto-00--mask-medium.png": "071d2130f0be4f773db6c588cc3a41794cce663fb43cd916dce5e7a38c1aadf2",
+    "new-joven-07--mask-top.png": "1828431f27fbd6b943fb828de8dc42bf207c8f083cdb1435f6957dc719de59b1",
+    "new-adulto-00--top.png": "b0ed6f99a47161bdd04d5ba2073dd3cb4755b90bf2390012ea39e3ab2b3f5c86",
+    "before-adulto-00--mask-below.png": "4af2338fac0e13cf6e39cb1c810642c5d6b12867d0c21d34de038b3ea13494fa",
+    "new-joven-07--back.png": "530eedb91c5aa2dc58f0c7895d3b5c69c355c8f3c6f1a19c7e6ccb05c53ff1a9",
+    "new-joven-07--far.png": "4f1f226fb7b5d926902076adc682cbb1db5a991bb6e2400aba59af10171631b5",
+    "new-viejo-00--mask-top.png": "d19c3ec55e6d0ae3043d29fb1dc05220a40d2b3e2ca739db730c2781d8d46f90",
+    "new-adulto-00--mask-near.png": "9ca7efa7eaec89b2fc901d85351e1a6f65e4d72124a597e3d69cd43bd66a78c2",
+    "before-viejo-00--back.png": "8931e1c89b7bc46d1bd2072202cd72bcd319a3eb5ff88fc256b40f071304af8c",
+    "new-pilot--back.png": "bba3b9e67df95cfe585e79b9d3aa77a3b726aa152b5e3e3acbe8847a94a23a6b",
+    "before-viejo-00--perspective.png": "0d60882d4a6e67ca2def906e68ca1fa1739e215037a89de7c8964cd00b36a206",
+    "before-joven-07--mask-front.png": "d3ba34bf0c90a100f67e2ccfca07323daa2af17d44a0d88b2b44604a956e085e",
+    "before-viejo-00--mask-front.png": "787055589792272ce233b9e98e799ba5b5722cd8b21430e52f6c012178323790",
+    "new-joven-07--perspective.png": "305b9065644167851f5942f65ad66d8f516281b18d442155347dd69e72e4a7cf",
+    "new-pilot--mask-perspective.png": "224232677ed98300409c02cf1d401cf445919a7f31cc36394f522535aed02be1",
+    "before-viejo-00--mask-back.png": "98ed05c3a194d918cc08189dc8aadf012e8bc9ef68c2319696e02362a22ffbef",
+    "new-pilot--below.png": "3da03ea71a30944c66728bd18444481c3fe8fc3a486af4c26cc2a1b9cd1f3fa0",
+    "before-viejo-00--mask-perspective.png": "8d7d94f61e80aa349e97bd0a204ec7aabd8d2eb7d19de7f3f8387836dcfc311c",
+    "before-adulto-00--front.png": "4bb1797994004e867b825fc3f9a39fdad60f20e1fcd6079712079c0f6ee8cf00",
+    "new-viejo-00--mask-near.png": "2c15fb112b4e57d4894e8f62f61ad59b4ee2923c5f71a52a212f4f2fc9c2a4b5",
+    "new-pilot--mask-below.png": "ca6804373fdc0a3164cbf7cfe4dc3314181899b1589f77c2d1f12f7226899e96",
+    "new-joven-07--mask-side.png": "51879ddde10b929f37c186a817b788b01eea688c7c75370bd4097af05bd4a70e"
+  },
+  "source_lock": {
+    "blueprints/roble_copa_ancha/2.1.0.json": "a0c069ad24fa6d1b8887a39744a9a99daa18df385be5b691ab89de1d707cfc95",
+    "configs/verification/oak-crossed-v1.json": "b7e64d35aaf9591594480f3f7baa0a139723d89023e5e905815bad68ac816550",
+    "scripts/verify_oak_crossed.py": "dc1e4f8567001c11cc86b35d6e62d3c748af8439f5478dfa03d38c09bb6c4360",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/blueprints.py": "325deabebe4223ce819e595d2ade0124853aced7bc421d4639309a6ffcd8359e",
+    "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/evaluation.py": "8bfcae7e08b35f838e270f7001c884a9b371723e83b4101d783bfce0882cb2dd",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/oak_crossed_evaluation.py": "0777e9a2c4d7d8669b9530057f85c4a4ce6f4c991ea067fa7205f85585823475",
+    "src/treegen/oak_crossed_production.py": "75a0afad9092e0806b369681120095f5edff108ab3f5e3fcaa1590339403f28c",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "f3df8ec34d7ac06dc6c34d260ca782de2e63aa9a2f45f8ce716c3ea0258985c3",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "assets/roble-pintado/v0.3.0/foliage.png": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1",
+    "assets/roble-pintado/v0.3.0/templates.json": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f",
+    "blender/generate_crossed_oak.py": "57ba1d479752137533bad0f23133c07883dddcf0197fa3e5ca49a2921fee49b5",
+    "blender/oak_crossed_reference.py": "824daf84cb3ad034cdfd286d7f4cd3d9ae5eb666e90e4702799e81d69a0842f9",
+    "blender/rebake_oak_crossed.py": "75284275a4cfe7c4c3e3b5fbf6db88fe75192d8b4dd16d4cce9d74f99b907b16",
+    "blender/oak_crossed_trial.py": "4c7eae600da0aac401ee9a831a8df2a7e1256292735257b1cd05d356dfc58be6",
+    "schemas/tree-blueprint-crossed-oak.schema.json": "7820af4e24d47bf8fad27f3d35ed7dcdf3139be1f3649a29e6cb6173afa8d163",
+    "schemas/tree-instance-crossed-oak.schema.json": "baa3135d46c4326abeeadf3b7c69e7036f296c5f9e4d34c433b2ec4a6afd9d82"
+  },
+  "rebake_png_bytes_identical": false,
+  "study": "artifacts/roble-pintado/implementacion-02",
+  "tests": {
+    "passed": true,
+    "count": 139,
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+    "environment": "Fuera del sandbox; el socket loopback de la prueba API se bloquea dentro."
+  },
+  "real_captures": 144,
+  "artistic_acceptance": {
+    "pilot": "approved",
+    "controls": "technical_and_agent_visual_review; user artistic approval not claimed"
+  }
+}

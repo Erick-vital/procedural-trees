@@ -1,0 +1,38 @@
+{
+  "version": "oak-painted-branch-0.1.0",
+  "branch_id": "q3:primary:100",
+  "source_glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+  "base_blueprint": "roble_copa_ancha@1.2.0",
+  "seeds": {
+    "base": 3009,
+    "canopy": 17
+  },
+  "paint_seed": 2718,
+  "wood_ids": [
+    "q3:primary:100",
+    "q3:secondary:200",
+    "q3:secondary:201",
+    "q3:secondary:202"
+  ],
+  "support_count": 32,
+  "leaf_count": 192,
+  "source_subset_sha256": "6e022b57bc55e91e85e76ff9b267e917a30299f0cd73d040039565d541f684f7",
+  "textures": {
+    "foliage.png": {
+      "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    "bark.png": {
+      "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    }
+  }
+}

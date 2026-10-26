@@ -1,0 +1,125 @@
+{
+  "version": "oak-painted-sample-0.2.0",
+  "direction_approval": "docs/evidence/roble-pintado/pintura-01/user-acceptance.json",
+  "source": "image_gen.imagegen integrado; concepto propio aprobado como referencia; alpha original conservado, sin retoque de píxeles.",
+  "files": {
+    "foliage.png": {
+      "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    "bark.png": {
+      "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    }
+  },
+  "leaf_regions": [
+    {
+      "variant": 0,
+      "cell_px": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "opaque_bbox_px": [
+        100,
+        40,
+        576,
+        619
+      ],
+      "root_px": [
+        346.84,
+        618
+      ],
+      "uv_crop_px": [
+        97,
+        37,
+        579,
+        622
+      ]
+    },
+    {
+      "variant": 1,
+      "cell_px": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "opaque_bbox_px": [
+        692,
+        41,
+        1171,
+        615
+      ],
+      "root_px": [
+        939.1600000000001,
+        614
+      ],
+      "uv_crop_px": [
+        689,
+        38,
+        1174,
+        618
+      ]
+    },
+    {
+      "variant": 2,
+      "cell_px": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "opaque_bbox_px": [
+        91,
+        642,
+        572,
+        1222
+      ],
+      "root_px": [
+        341.0,
+        1221
+      ],
+      "uv_crop_px": [
+        88,
+        639,
+        575,
+        1225
+      ]
+    },
+    {
+      "variant": 3,
+      "cell_px": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "opaque_bbox_px": [
+        688,
+        637,
+        1184,
+        1224
+      ],
+      "root_px": [
+        939.6,
+        1223
+      ],
+      "uv_crop_px": [
+        685,
+        634,
+        1187,
+        1227
+      ]
+    }
+  ]
+}

@@ -56,6 +56,24 @@ class EvaluationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_glb(self.path, self.spec)
 
+    def test_explicit_height_channel_keeps_card_bounds_and_checks_wood(self):
+        self.write_glb();raw=self.path.read_bytes();length=struct.unpack_from('<I',raw,12)[0]
+        doc=json.loads(raw[20:20+length]);binary=raw[28+length:]
+        offset=len(binary);binary+=struct.pack('<9f',0,0,0,1,12,0,0,0,1)
+        doc['bufferViews'].append({'buffer':0,'byteOffset':offset,'byteLength':36})
+        doc['accessors'].append({'bufferView':2,'componentType':5126,'count':3,'type':'VEC3'})
+        doc['materials'].append({'name':'Leaf'})
+        doc['meshes'][0]['primitives'].append({'attributes':{'POSITION':2},'indices':1,'material':1})
+        doc['buffers'][0]['byteLength']=len(binary)
+        encoded=json.dumps(doc).encode();encoded+=b' '*(-len(encoded)%4)
+        chunks=struct.pack('<II',len(encoded),0x4e4f534a)+encoded+struct.pack('<II',len(binary),0x004e4942)+binary
+        self.path.write_bytes(struct.pack('<4sII',b'glTF',2,12+len(chunks))+chunks)
+        with self.assertRaises(ValueError):validate_glb(self.path,self.spec)
+        report=validate_glb(self.path,self.spec,height_materials={'Oak_Bark'})
+        self.assertEqual(report['dimensions_m'][1],12)
+        with self.assertRaises(ValueError):validate_glb(self.path,self.spec,height_materials={'missing'})
+        self.spec['parameters']['height_m']=4
+        with self.assertRaises(ValueError):validate_glb(self.path,self.spec,height_materials={'Oak_Bark'})
     def test_explicit_rf3_budget_preserves_historical_default(self):
         self.write_glb()
         raw = self.path.read_bytes()

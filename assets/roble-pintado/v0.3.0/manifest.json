@@ -1,0 +1,13 @@
+{
+  "version": "oak-crossed-assets-0.1.0",
+  "atlas_sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1",
+  "templates_sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f",
+  "size": [
+    2000,
+    2000
+  ],
+  "source_foliage": "assets/roble-pintado/v0.2.0/foliage.png",
+  "provenance": "Proyecciones ortográficas de ocho grupos del piloto pintado aprobado; 24 celdas, sin iluminación, Cycles CPU 8 muestras/seed 2718. Ver templates.json para datos de horneado.",
+  "approval": "docs/evidence/roble-pintado/implementacion-01/user-acceptance.json",
+  "rebake": "Píxeles RGBA idénticos verificados; PNG conserva fecha/tiempo del horneado original, diferentes al rehornear. Reutilizar PNG congelado para GLB idénticos."
+}

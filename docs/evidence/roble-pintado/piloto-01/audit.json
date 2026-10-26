@@ -1,0 +1,720 @@
+{
+  "version": "oak-painted-tree-pilot-0.1.0",
+  "source_blueprint": "roble_copa_ancha@1.2.0",
+  "seeds": {
+    "base": 3009,
+    "canopy": 17
+  },
+  "paint_seed": 2718,
+  "source_glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+  "source_placements_sha256": "8cc291fd1a88991ede763b33258ef96a825cbfaab1790c3ba5484c5dcf30aa84",
+  "source_supports_sha256": "5ef4d1ebbe2741c820156d9930bf1b14f338b43dd94237f29c1f87c2ef14b28c",
+  "cards_sha256": "868780cd20b0ab4ecaa512d54c8f3e49b94b35fc9e93965b3bd64c9e837e8e23",
+  "leaf_count": 1584,
+  "kept_support_ids": [
+    "q3:secondary:226:mold:00980:canopy:surface:3639:support",
+    "q3:secondary:214:mold:00200:canopy:surface:0217:support",
+    "q3:secondary:224:mold:00920:canopy:surface:0017:support",
+    "q3:secondary:212:mold:00720:canopy:surface:5365:support",
+    "q3:secondary:218:mold:00860:canopy:surface:1845:support",
+    "q3:secondary:219:mold:00260:canopy:surface:2481:support",
+    "q3:secondary:214:mold:00200:canopy:surface:4935:support",
+    "q3:secondary:220:mold:00300:canopy:surface:6178:support",
+    "q3:secondary:218:mold:00240:canopy:surface:1145:support",
+    "q3:secondary:230:mold:00420:canopy:surface:2659:support",
+    "q3:secondary:226:mold:00980:canopy:surface:3040:support",
+    "q3:secondary:226:mold:00980:canopy:surface:6128:support",
+    "q3:secondary:213:mold:00180:canopy:surface:1749:support",
+    "q3:secondary:214:mold:00200:canopy:surface:5402:support",
+    "q3:secondary:213:mold:00740:canopy:surface:4411:support",
+    "q3:secondary:208:mold:00620:canopy:surface:1530:support",
+    "q3:secondary:214:mold:00200:canopy:surface:0751:support",
+    "q3:secondary:220:mold:00300:canopy:surface:4251:support",
+    "q3:secondary:219:mold:00260:canopy:surface:2131:support",
+    "q3:secondary:226:mold:00980:canopy:surface:4983:support",
+    "q3:secondary:213:mold:00180:canopy:surface:4004:support",
+    "q3:secondary:214:mold:00200:canopy:surface:6365:support",
+    "q3:secondary:218:mold:00860:canopy:surface:7132:support",
+    "q3:secondary:220:mold:00300:canopy:surface:0614:support",
+    "q3:secondary:219:mold:00260:canopy:surface:1600:support",
+    "q3:secondary:208:mold:00620:canopy:surface:6402:support",
+    "q3:secondary:207:mold:00100:canopy:surface:0508:support",
+    "q3:secondary:214:mold:00200:canopy:surface:1819:support",
+    "q3:secondary:220:mold:00300:canopy:surface:0708:support",
+    "q3:secondary:220:mold:00300:canopy:surface:6924:support",
+    "q3:secondary:230:mold:00420:canopy:surface:0999:support",
+    "q3:secondary:224:mold:00380:canopy:surface:7418:support",
+    "q3:secondary:218:mold:00860:canopy:surface:1173:support",
+    "q3:secondary:226:mold:00980:canopy:surface:6589:support",
+    "q3:secondary:218:mold:00240:canopy:surface:2368:support",
+    "q3:secondary:223:mold:00360:canopy:surface:7257:support",
+    "q3:secondary:200:mold:00000:canopy:surface:6467:support",
+    "q3:secondary:229:mold:01060:canopy:surface:6367:support",
+    "q3:secondary:208:mold:00620:canopy:surface:0355:support",
+    "q3:secondary:202:mold:00500:canopy:surface:6488:support",
+    "q3:secondary:206:mold:00060:canopy:surface:2453:support",
+    "q3:secondary:227:mold:00400:canopy:surface:5692:support",
+    "q3:secondary:201:mold:00480:canopy:surface:5224:support",
+    "q3:secondary:200:mold:00440:canopy:surface:1955:support",
+    "q3:secondary:202:mold:00500:canopy:surface:3855:support",
+    "q3:secondary:208:mold:00620:canopy:surface:7496:support",
+    "q3:secondary:229:mold:01060:canopy:surface:0763:support",
+    "q3:secondary:201:mold:00460:canopy:surface:2554:support",
+    "q3:secondary:223:mold:00360:canopy:surface:2390:support",
+    "q3:secondary:202:mold:00500:canopy:surface:2786:support",
+    "q3:secondary:223:mold:00360:canopy:surface:6760:support",
+    "q3:secondary:200:mold:00440:canopy:surface:7886:support",
+    "q3:secondary:208:mold:00620:canopy:surface:3003:support",
+    "q3:secondary:202:mold:00500:canopy:surface:2567:support",
+    "q3:secondary:223:mold:00360:canopy:surface:4169:support",
+    "q3:secondary:200:mold:00000:canopy:surface:5283:support",
+    "q3:secondary:202:mold:00500:canopy:surface:7970:support",
+    "q3:secondary:223:mold:00360:canopy:surface:4873:support",
+    "q3:secondary:227:mold:01000:canopy:surface:3070:support",
+    "q3:secondary:200:mold:00440:canopy:surface:3346:support",
+    "q3:secondary:206:mold:00600:canopy:surface:5249:support",
+    "q3:secondary:202:mold:00520:canopy:surface:1578:support",
+    "q3:secondary:206:mold:00060:canopy:surface:4984:support",
+    "q3:secondary:208:mold:00620:canopy:surface:0462:support",
+    "q3:secondary:223:mold:00360:canopy:surface:7847:support",
+    "q3:secondary:210:mold:00140:canopy:surface:0693:support",
+    "q3:secondary:222:mold:00900:canopy:surface:8083:support",
+    "q3:secondary:211:mold:00680:canopy:surface:4544:support",
+    "q3:secondary:216:mold:00800:canopy:surface:7969:support",
+    "q3:secondary:217:mold:00840:canopy:surface:1378:support",
+    "q3:secondary:216:mold:00820:canopy:surface:1081:support",
+    "q3:secondary:223:mold:00360:canopy:surface:0317:support",
+    "q3:secondary:215:mold:00780:canopy:surface:5500:support",
+    "q3:secondary:211:mold:00680:canopy:surface:1937:support",
+    "q3:secondary:223:mold:00360:canopy:surface:1335:support",
+    "q3:secondary:216:mold:00800:canopy:surface:2313:support",
+    "q3:secondary:216:mold:00800:canopy:surface:1022:support",
+    "q3:secondary:217:mold:00840:canopy:surface:6284:support",
+    "q3:secondary:210:mold:00660:canopy:surface:1315:support",
+    "q3:secondary:217:mold:00840:canopy:surface:5141:support",
+    "q3:secondary:217:mold:00840:canopy:surface:3637:support",
+    "q3:secondary:215:mold:00760:canopy:surface:3492:support",
+    "q3:secondary:211:mold:00680:canopy:surface:3384:support",
+    "q3:secondary:223:mold:00360:canopy:surface:2401:support",
+    "q3:secondary:211:mold:00160:canopy:surface:3875:support",
+    "q3:secondary:222:mold:00340:canopy:surface:1764:support",
+    "q3:secondary:216:mold:00800:canopy:surface:5445:support",
+    "q3:secondary:216:mold:00800:canopy:surface:5497:support",
+    "q3:secondary:215:mold:00780:canopy:surface:4838:support",
+    "q3:secondary:223:mold:00360:canopy:surface:3226:support",
+    "q3:secondary:223:mold:00360:canopy:surface:1406:support",
+    "q3:secondary:211:mold:00680:canopy:surface:6387:support",
+    "q3:secondary:211:mold:00160:canopy:surface:0770:support",
+    "q3:secondary:210:mold:00660:canopy:surface:0661:support",
+    "q3:secondary:217:mold:00840:canopy:surface:6465:support",
+    "q3:secondary:217:mold:00840:canopy:surface:0937:support",
+    "q3:secondary:226:mold:00980:canopy:surface:0654:support",
+    "q3:secondary:231:mold:01100:canopy:surface:1572:support",
+    "q3:secondary:210:mold:00660:canopy:surface:6724:support",
+    "q3:secondary:230:mold:01080:canopy:surface:4619:support",
+    "q3:secondary:225:mold:00960:canopy:surface:4119:support",
+    "q3:secondary:205:mold:00040:canopy:surface:7593:support",
+    "q3:secondary:204:mold:00580:canopy:surface:4971:support",
+    "q3:secondary:226:mold:00980:canopy:surface:3699:support",
+    "q3:secondary:210:mold:00660:canopy:surface:2144:support",
+    "q3:secondary:205:mold:00040:canopy:surface:7636:support",
+    "q3:secondary:210:mold:00140:canopy:surface:3236:support",
+    "q3:secondary:204:mold:00580:canopy:surface:2570:support",
+    "q3:secondary:231:mold:01100:canopy:surface:6626:support",
+    "q3:secondary:231:mold:01100:canopy:surface:4919:support",
+    "q3:secondary:204:mold:00560:canopy:surface:6873:support",
+    "q3:secondary:205:mold:00040:canopy:surface:1027:support",
+    "q3:secondary:205:mold:00040:canopy:surface:4064:support",
+    "q3:secondary:225:mold:00940:canopy:surface:0871:support",
+    "q3:secondary:230:mold:00420:canopy:surface:4340:support",
+    "q3:secondary:225:mold:00940:canopy:surface:1769:support",
+    "q3:secondary:232:mold:01120:canopy:surface:5554:support",
+    "q3:secondary:204:mold:00560:canopy:surface:5169:support",
+    "q3:secondary:205:mold:00040:canopy:surface:1422:support",
+    "q3:secondary:225:mold:00960:canopy:surface:0952:support"
+  ],
+  "removed_support_ids": [
+    "q3:primary:100:mold:01860:canopy:surface:0135:support",
+    "q3:trunk:0:mold:03060:canopy:surface:3973:support",
+    "q3:primary:106:mold:02180:canopy:surface:6840:support",
+    "q3:trunk:0:mold:03140:canopy:surface:2604:support",
+    "q3:primary:106:mold:02260:canopy:surface:1333:support",
+    "q3:primary:104:mold:01620:canopy:surface:6186:support",
+    "q3:primary:102:mold:02580:canopy:surface:6470:support",
+    "q3:primary:102:mold:01160:canopy:surface:4694:support",
+    "q3:primary:104:mold:01620:canopy:surface:4186:support",
+    "q3:primary:102:mold:02580:canopy:surface:4265:support",
+    "q3:primary:104:mold:02740:canopy:surface:4564:support",
+    "q3:primary:104:mold:01620:canopy:surface:3685:support",
+    "q3:primary:104:mold:01620:canopy:surface:1763:support",
+    "q3:primary:100:mold:01860:canopy:surface:3373:support",
+    "q3:primary:102:mold:02580:canopy:surface:1597:support",
+    "q3:trunk:0:mold:03060:canopy:surface:6226:support",
+    "q3:primary:104:mold:02740:canopy:surface:4111:support",
+    "q3:primary:102:mold:02580:canopy:surface:0632:support",
+    "q3:primary:104:mold:01620:canopy:surface:6230:support",
+    "q3:primary:102:mold:02660:canopy:surface:3209:support",
+    "q3:trunk:0:mold:03060:canopy:surface:6515:support",
+    "q3:primary:110:mold:02500:canopy:surface:3780:support",
+    "q3:primary:106:mold:02180:canopy:surface:2775:support",
+    "q3:primary:104:mold:01620:canopy:surface:1184:support",
+    "q3:primary:102:mold:02660:canopy:surface:0205:support",
+    "q3:primary:104:mold:01620:canopy:surface:0108:support",
+    "q3:primary:106:mold:02260:canopy:surface:1037:support",
+    "q3:primary:110:mold:02500:canopy:surface:6257:support",
+    "q3:primary:102:mold:02580:canopy:surface:2885:support",
+    "q3:primary:104:mold:01620:canopy:surface:0715:support",
+    "q3:primary:106:mold:02260:canopy:surface:0667:support",
+    "q3:primary:100:mold:01860:canopy:surface:0009:support",
+    "q3:trunk:0:mold:03060:canopy:surface:1621:support",
+    "q3:primary:102:mold:02580:canopy:surface:8092:support",
+    "q3:primary:109:mold:02900:canopy:surface:0163:support",
+    "q3:primary:100:mold:01860:canopy:surface:2823:support",
+    "q3:primary:107:mold:01460:canopy:surface:2877:support",
+    "q3:primary:107:mold:01460:canopy:surface:2991:support",
+    "q3:primary:100:mold:01940:canopy:surface:0879:support",
+    "q3:primary:109:mold:02980:canopy:surface:8103:support",
+    "q3:primary:109:mold:02900:canopy:surface:2150:support",
+    "q3:primary:106:mold:02180:canopy:surface:1439:support",
+    "q3:primary:109:mold:02980:canopy:surface:3665:support",
+    "q3:primary:109:mold:02900:canopy:surface:6715:support",
+    "q3:primary:102:mold:02660:canopy:surface:7392:support",
+    "q3:primary:100:mold:01940:canopy:surface:7233:support",
+    "q3:primary:109:mold:02900:canopy:surface:2252:support",
+    "q3:primary:109:mold:02900:canopy:surface:7650:support",
+    "q3:primary:109:mold:02900:canopy:surface:3620:support",
+    "q3:primary:100:mold:01860:canopy:surface:4810:support",
+    "q3:primary:100:mold:01860:canopy:surface:4311:support",
+    "q3:primary:100:mold:01860:canopy:surface:0639:support",
+    "q3:primary:107:mold:01460:canopy:surface:2829:support",
+    "q3:primary:102:mold:01160:canopy:surface:3289:support",
+    "q3:trunk:0:mold:03060:canopy:surface:5812:support",
+    "q3:primary:100:mold:01940:canopy:surface:0452:support",
+    "q3:primary:100:mold:01860:canopy:surface:1066:support",
+    "q3:primary:109:mold:02980:canopy:surface:7948:support",
+    "q3:primary:100:mold:01940:canopy:surface:0383:support",
+    "q3:primary:100:mold:01940:canopy:surface:4047:support",
+    "q3:primary:109:mold:02900:canopy:surface:4882:support",
+    "q3:primary:107:mold:01460:canopy:surface:1051:support",
+    "q3:primary:107:mold:01460:canopy:surface:4537:support",
+    "q3:primary:109:mold:02900:canopy:surface:1154:support",
+    "q3:primary:102:mold:02580:canopy:surface:1903:support",
+    "q3:primary:100:mold:01860:canopy:surface:4830:support",
+    "q3:primary:107:mold:01460:canopy:surface:0863:support",
+    "q3:primary:100:mold:01860:canopy:surface:7195:support",
+    "q3:primary:107:mold:01460:canopy:surface:2186:support",
+    "q3:primary:100:mold:01860:canopy:surface:1793:support",
+    "q3:primary:100:mold:01860:canopy:surface:5341:support",
+    "q3:primary:109:mold:02900:canopy:surface:3006:support",
+    "q3:primary:100:mold:01860:canopy:surface:1141:support",
+    "q3:trunk:0:mold:03060:canopy:surface:2744:support",
+    "q3:primary:105:mold:01380:canopy:surface:1233:support",
+    "q3:primary:103:mold:02100:canopy:surface:3398:support",
+    "q3:primary:107:mold:01460:canopy:surface:5747:support",
+    "q3:primary:105:mold:02820:canopy:surface:1172:support",
+    "q3:primary:105:mold:02820:canopy:surface:3578:support",
+    "q3:primary:103:mold:02100:canopy:surface:5881:support",
+    "q3:primary:103:mold:01300:canopy:surface:1385:support",
+    "q3:primary:101:mold:01540:canopy:surface:6538:support",
+    "q3:primary:107:mold:01460:canopy:surface:3470:support",
+    "q3:primary:105:mold:02820:canopy:surface:0906:support",
+    "q3:primary:109:mold:02900:canopy:surface:4535:support",
+    "q3:primary:103:mold:02100:canopy:surface:2634:support",
+    "q3:primary:108:mold:01700:canopy:surface:5070:support",
+    "q3:primary:103:mold:02100:canopy:surface:0984:support",
+    "q3:primary:105:mold:02820:canopy:surface:2819:support",
+    "q3:primary:103:mold:02100:canopy:surface:6337:support",
+    "q3:primary:105:mold:02820:canopy:surface:6911:support",
+    "q3:primary:107:mold:01460:canopy:surface:6850:support",
+    "q3:primary:101:mold:01540:canopy:surface:7927:support",
+    "q3:primary:103:mold:01300:canopy:surface:7781:support",
+    "q3:primary:107:mold:02340:canopy:surface:4922:support",
+    "q3:primary:103:mold:02100:canopy:surface:1463:support",
+    "q3:primary:107:mold:02340:canopy:surface:0446:support",
+    "q3:primary:107:mold:01460:canopy:surface:1884:support",
+    "q3:primary:100:mold:01860:canopy:surface:7474:support",
+    "q3:primary:105:mold:02820:canopy:surface:1449:support",
+    "q3:primary:103:mold:01180:canopy:surface:7687:support",
+    "q3:primary:103:mold:02100:canopy:surface:7943:support",
+    "q3:primary:105:mold:01200:canopy:surface:2947:support",
+    "q3:primary:103:mold:01300:canopy:surface:6009:support",
+    "q3:primary:103:mold:02100:canopy:surface:4130:support",
+    "q3:primary:101:mold:01140:canopy:surface:0439:support",
+    "q3:primary:107:mold:01460:canopy:surface:4358:support",
+    "q3:primary:101:mold:01540:canopy:surface:5463:support",
+    "q3:primary:106:mold:02180:canopy:surface:3681:support",
+    "q3:primary:101:mold:02020:canopy:surface:3846:support",
+    "q3:primary:101:mold:01540:canopy:surface:6161:support",
+    "q3:primary:110:mold:02500:canopy:surface:5016:support",
+    "q3:primary:103:mold:02100:canopy:surface:3663:support",
+    "q3:primary:101:mold:01540:canopy:surface:2151:support",
+    "q3:primary:106:mold:02180:canopy:surface:6769:support",
+    "q3:primary:108:mold:02420:canopy:surface:7487:support",
+    "q3:primary:110:mold:02500:canopy:surface:7261:support",
+    "q3:primary:110:mold:02500:canopy:surface:0249:support",
+    "q3:primary:108:mold:01700:canopy:surface:5998:support",
+    "q3:primary:101:mold:01540:canopy:surface:5371:support",
+    "q3:primary:103:mold:02100:canopy:surface:1312:support",
+    "q3:primary:101:mold:01540:canopy:surface:3146:support",
+    "q3:primary:101:mold:01540:canopy:surface:8018:support",
+    "q3:primary:110:mold:01780:canopy:surface:3595:support",
+    "q3:primary:108:mold:01700:canopy:surface:6821:support",
+    "q3:primary:101:mold:01540:canopy:surface:4683:support",
+    "q3:primary:108:mold:01700:canopy:surface:4266:support",
+    "q3:primary:103:mold:02100:canopy:surface:0347:support",
+    "q3:primary:101:mold:02020:canopy:surface:4202:support",
+    "q3:trunk:0:mold:03140:canopy:surface:5599:support",
+    "q3:primary:108:mold:01280:canopy:surface:4860:support",
+    "q3:primary:110:mold:01780:canopy:surface:2107:support",
+    "q3:primary:108:mold:01700:canopy:surface:4019:support",
+    "q3:primary:106:mold:02180:canopy:surface:1644:support",
+    "q3:primary:108:mold:01700:canopy:surface:5862:support",
+    "q3:primary:110:mold:02500:canopy:surface:4809:support",
+    "q3:primary:103:mold:02100:canopy:surface:5708:support",
+    "q3:primary:101:mold:01540:canopy:surface:0140:support",
+    "q3:primary:110:mold:02500:canopy:surface:6147:support",
+    "q3:primary:108:mold:01700:canopy:surface:0575:support",
+    "q3:primary:101:mold:01540:canopy:surface:7349:support",
+    "q3:primary:101:mold:01540:canopy:surface:1699:support",
+    "q3:primary:101:mold:01540:canopy:surface:7020:support",
+    "q3:primary:101:mold:01540:canopy:surface:8191:support"
+  ],
+  "variants": {
+    "wood-full": {
+      "metrics": {
+        "vertices": 4320,
+        "triangles": 7404,
+        "bounds_blender": [
+          [
+            -4.953007,
+            -6.795166,
+            0.0
+          ],
+          [
+            6.966326,
+            5.753331,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Painted_Bark": 7404
+        },
+        "geometry_sha256": "493e1e411b1d94263e2b72553191accfbd0b802c36800bf49dab033e9c681e75"
+      },
+      "glb_sha256": "b87bfda36c4c80989d6580480ea7fdc94b1bd584868d33eeccc9a9c1026f2b1b",
+      "bytes": 3122232
+    },
+    "wood": {
+      "metrics": {
+        "vertices": 3456,
+        "triangles": 6252,
+        "bounds_blender": [
+          [
+            -4.887734,
+            -6.795166,
+            0.0
+          ],
+          [
+            6.966326,
+            5.753331,
+            9.0
+          ]
+        ],
+        "height_m": 9.0,
+        "triangles_by_material": {
+          "Painted_Bark": 6252
+        },
+        "geometry_sha256": "15ee91674290cbacec939a257cc1b2cfa2d4a42e9b1656d53185f1a8545350d7"
+      },
+      "glb_sha256": "cd9d1dccebcc4da1dce072cf88e92ca33f69766b24f9381d9160acc3a846f50e",
+      "bytes": 3021624
+    },
+    "painted-full": {
+      "metrics": {
+        "vertices": 10656,
+        "triangles": 10572,
+        "bounds_blender": [
+          [
+            -5.859375,
+            -7.491945,
+            0.0
+          ],
+          [
+            7.494364,
+            6.6797,
+            9.086476
+          ]
+        ],
+        "height_m": 9.086476,
+        "triangles_by_material": {
+          "Painted_Bark": 7404,
+          "Painted_Foliage": 3168
+        },
+        "geometry_sha256": "19030cac8a42b3e3d43192713dd03f9b36affa3549a203db898e749b5af192ea"
+      },
+      "glb_sha256": "e2ddbb9c98d722a744d3c06169cc097fcf6919d06b871ab6b57336b4a9084ed8",
+      "bytes": 4762448
+    },
+    "painted": {
+      "metrics": {
+        "vertices": 9792,
+        "triangles": 9420,
+        "bounds_blender": [
+          [
+            -5.859375,
+            -7.491945,
+            0.0
+          ],
+          [
+            7.494364,
+            6.6797,
+            9.086476
+          ]
+        ],
+        "height_m": 9.086476,
+        "triangles_by_material": {
+          "Painted_Bark": 6252,
+          "Painted_Foliage": 3168
+        },
+        "geometry_sha256": "ae439aaa04fa1696df10fc39e631f6fed8990e4b646a2583a584637e9d9f8937"
+      },
+      "glb_sha256": "7ac37242eca4d4f52bbc9c327e82590309e99beb6a85133b674f7528b2c2c85b",
+      "bytes": 4661840
+    }
+  },
+  "resources": {
+    "foliage.png": {
+      "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    "bark.png": {
+      "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    }
+  },
+  "repeat_glb_identical": {
+    "wood-full": true,
+    "wood": true,
+    "painted-full": true,
+    "painted": true
+  },
+  "export_validation": {
+    "wood-full": {
+      "passed": true,
+      "glb_sha256": "b87bfda36c4c80989d6580480ea7fdc94b1bd584868d33eeccc9a9c1026f2b1b",
+      "embedded_images_sha256": [
+        "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+      ],
+      "materials": [
+        "Painted_Bark"
+      ]
+    },
+    "wood": {
+      "passed": true,
+      "glb_sha256": "cd9d1dccebcc4da1dce072cf88e92ca33f69766b24f9381d9160acc3a846f50e",
+      "embedded_images_sha256": [
+        "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+      ],
+      "materials": [
+        "Painted_Bark"
+      ]
+    },
+    "painted-full": {
+      "passed": true,
+      "glb_sha256": "e2ddbb9c98d722a744d3c06169cc097fcf6919d06b871ab6b57336b4a9084ed8",
+      "embedded_images_sha256": [
+        "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+        "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+      ],
+      "materials": [
+        "Painted_Bark",
+        "Painted_Foliage"
+      ]
+    },
+    "painted": {
+      "passed": true,
+      "glb_sha256": "7ac37242eca4d4f52bbc9c327e82590309e99beb6a85133b674f7528b2c2c85b",
+      "embedded_images_sha256": [
+        "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+        "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+      ],
+      "materials": [
+        "Painted_Bark",
+        "Painted_Foliage"
+      ]
+    }
+  },
+  "geometry_audit": {
+    "remaining_wood_positions_normals_exact": true,
+    "historical_main_wood_positions_normals_exact": true,
+    "main_wood_triangles": 5292,
+    "removed_twig_triangles": 1152,
+    "painted_leaf_geometry_normals_exact_across_pruning": true,
+    "all_placements_unchanged": true,
+    "known_leaf_groups_without_original_support": 144
+  },
+  "mask_metrics": {
+    "painting": {
+      "front": {
+        "old_pixels": 221896,
+        "new_pixels": 228354,
+        "coverage_ratio": 1.0291037242672243,
+        "iou": 0.9562308287206402,
+        "xor_pixels": 10074
+      },
+      "side": {
+        "old_pixels": 224852,
+        "new_pixels": 230772,
+        "coverage_ratio": 1.0263284293668724,
+        "iou": 0.9586706158998191,
+        "xor_pixels": 9614
+      },
+      "perspective": {
+        "old_pixels": 241063,
+        "new_pixels": 247562,
+        "coverage_ratio": 1.0269597574078146,
+        "iou": 0.9562684666938913,
+        "xor_pixels": 10923
+      },
+      "back": {
+        "old_pixels": 236118,
+        "new_pixels": 242590,
+        "coverage_ratio": 1.0274100238016586,
+        "iou": 0.9562976857470954,
+        "xor_pixels": 10694
+      },
+      "top": {
+        "old_pixels": 348865,
+        "new_pixels": 361342,
+        "coverage_ratio": 1.0357645507574562,
+        "iou": 0.9463645108512452,
+        "xor_pixels": 19571
+      },
+      "below": {
+        "old_pixels": 250001,
+        "new_pixels": 257649,
+        "coverage_ratio": 1.0305918776324894,
+        "iou": 0.9525826092642381,
+        "xor_pixels": 12328
+      },
+      "near": {
+        "old_pixels": 80163,
+        "new_pixels": 81875,
+        "coverage_ratio": 1.0213564861594502,
+        "iou": 0.960081771885471,
+        "xor_pixels": 3300
+      },
+      "medium": {
+        "old_pixels": 20238,
+        "new_pixels": 20418,
+        "coverage_ratio": 1.008894159501927,
+        "iou": 0.9651022282372275,
+        "xor_pixels": 722
+      },
+      "far": {
+        "old_pixels": 3307,
+        "new_pixels": 3234,
+        "coverage_ratio": 0.977925612337466,
+        "iou": 0.9455681142177276,
+        "xor_pixels": 183
+      }
+    },
+    "pruning": {
+      "front": {
+        "old_pixels": 228354,
+        "new_pixels": 228158,
+        "coverage_ratio": 0.9991416835264545,
+        "iou": 0.9991416835264545,
+        "xor_pixels": 196
+      },
+      "side": {
+        "old_pixels": 230772,
+        "new_pixels": 230635,
+        "coverage_ratio": 0.9994063404572479,
+        "iou": 0.9994063404572479,
+        "xor_pixels": 137
+      },
+      "perspective": {
+        "old_pixels": 247562,
+        "new_pixels": 247342,
+        "coverage_ratio": 0.9991113337265008,
+        "iou": 0.9991113337265008,
+        "xor_pixels": 220
+      },
+      "back": {
+        "old_pixels": 242590,
+        "new_pixels": 242298,
+        "coverage_ratio": 0.9987963230141391,
+        "iou": 0.9987963230141391,
+        "xor_pixels": 292
+      },
+      "top": {
+        "old_pixels": 361342,
+        "new_pixels": 360986,
+        "coverage_ratio": 0.9990147837782488,
+        "iou": 0.9990147837782488,
+        "xor_pixels": 356
+      },
+      "below": {
+        "old_pixels": 257649,
+        "new_pixels": 257345,
+        "coverage_ratio": 0.9988201002138568,
+        "iou": 0.9988201002138568,
+        "xor_pixels": 304
+      },
+      "near": {
+        "old_pixels": 81875,
+        "new_pixels": 81793,
+        "coverage_ratio": 0.9989984732824427,
+        "iou": 0.9989984732824427,
+        "xor_pixels": 82
+      },
+      "medium": {
+        "old_pixels": 20418,
+        "new_pixels": 20396,
+        "coverage_ratio": 0.9989225193456753,
+        "iou": 0.9989225193456753,
+        "xor_pixels": 22
+      },
+      "far": {
+        "old_pixels": 3234,
+        "new_pixels": 3234,
+        "coverage_ratio": 1.0,
+        "iou": 1.0,
+        "xor_pixels": 0
+      }
+    }
+  },
+  "source_lock": {
+    "scripts/oak_painted_tree_pilot.py": "d51a0077f828d87d12a86a2a94af7036db8825b95ed827c2e66e8098017b34ad",
+    "scripts/oak_painted_sample.py": "7d5232c9b44abea8fe27d265da00b2afd4cf9f4a4ba7e570b0b9e3f30bdfca2f",
+    "scripts/oak_sample_evidence.py": "d826788caeb37fefd8b2a17e510721e9ed33e7a7452e257e3d22071c2cdc575a",
+    "scripts/verify_painted_oak.py": "db10b972622ecb831a40f63aa71ddaeebba473c623060e83e3c8d0ef5994898f",
+    "scripts/review_pine_painted.py": "bb387c56923b6841703cef8069867adc42cf06d064385e8fdd5c0e3f5e57080f",
+    "scripts/foliage_evidence.py": "7404f90b3942604cb6e3e3eee6889d4f2622a2740cab311fe6e04bc4f97a7ae4",
+    "blender/oak_painted_tree_pilot.py": "224df5283e5395ab2696b93d8bc89c4e44f86bb26dd7433afae31c6221122eb7",
+    "blender/oak_painted_sample.py": "ee7d0bd42e3d533734228de8bc61b177a7e367414cf5c39ede4ab64ecb70e244",
+    "blender/pine_painted_sample.py": "6ab7d003cdc2a1b938fad4bead9332ae6d21f133b24c6302781d467771006f97",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "godot/review_painted_oak_pilot.gd": "0152c9300d49f20c78c7d10b2d7c7648fba9e86bb7cc46b0d8138129e9aae24c",
+    "godot/review_painted_pine.gd": "bed67a6165a424d698c6f74be08aa2d631294e22da9fd6da4916ff67bb746439",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "godot/project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+    "assets/roble-pintado/v0.2.0/README.md": "c827be8bba0e1b09eaf10763c08554c76818add1f8ee5133e130e7d550f70090",
+    "assets/roble-pintado/v0.2.0/bark.png": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+    "assets/roble-pintado/v0.2.0/foliage.png": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+    "assets/roble-pintado/v0.2.0/manifest.json": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250",
+    "assets/roble-pintado/v0.2.0/prompts.json": "90f34ad4ca670285dd8005f6b1c7fd25ed0f2472dd99aacb8124781d7aa4aec8"
+  },
+  "capture_sha256": {
+    "painted--side.png": "facda696cb8ae3cdeb2f40e1b473d04080f30b87a04210e540c9f78b2a8b2de9",
+    "wood-full--back.png": "b629a6f405b6d08320074a2d4a182e340f214dc185b947ad62a4f9d0f1764afc",
+    "wood--medium.png": "dc2b159faa45fc445df2a711b5c24e0f4721aa74343ce3a33cfa857ec5110fe8",
+    "wood-full--side.png": "b3ecd9e1c4c6386f0c2cfe71552fc04927e9ff301c2d43ae7a8722a55064b15c",
+    "historical--mask-far.png": "d0ddf60a6fa581287f27d9cb01b3729b6fde717e30c6c5192e914bcc2c9a7bcf",
+    "historical--below.png": "351b1131f45b44dede90121458c39b38953d047760135261eed7ea20c932684c",
+    "painted--mask-front.png": "b8e0036ffb4c4b5321de777e50699fddf411195440361bf716aa16386609d215",
+    "historical--back.png": "fe4432f6ab8e6fe58ff2d7393ffcc9119184f38df37aef896252489de9b3005e",
+    "painted-full--mask-back.png": "f4a8e250e4bbc07d4c5827ae8f6f39dbf02433ebb54453990da491e449db3143",
+    "historical--mask-medium.png": "2251654ff8fa016403d02181bd2558b6810808c342a78fdf962a904ff4d4f565",
+    "wood--trunk-close.png": "ad273c697a9cc5067e2acded6ff51af1c8bf288dfca57aaa78d8880f629b2c9a",
+    "painted-full--trunk-close.png": "a56167f181d4480aed1ab323b476199a156ec2e7a7a3ef604945aaed729587d6",
+    "wood--back.png": "f1076b7ce88be8433a39fd4d528d41f95b2030a87dfbefc488dcd21ad01771fc",
+    "wood-full--below.png": "2b0167c4a19a85415777ba52f4f22f263263cd7d0ceba276578d17b2c0fc1ec5",
+    "painted-full--mask-perspective.png": "fe4b3b95620c005f2d71fc349d3abdd3f37854bdb19785b8d720754565df8a3b",
+    "painted--near.png": "dce8a45fec8ea24ea65994f82aafd665d770ace28c5d0a1226942fb96c21cb88",
+    "wood-full--top.png": "3566be957c82edcde7849af578ae184f28bf6d61a0d838f5e844b7be1d0e5e39",
+    "wood-full--far.png": "db5038ab755b0b625db5883e006f3bd9205b655f8532ce88e850a35cb8d95595",
+    "painted-full--mask-medium.png": "093ac4ee0b900069c163a14fa022244b9ceedaa660b1adc1a9791533b62c4c99",
+    "painted--branch-close.png": "e5970114edebfef7d64042bf2c8da07a73055c80e2a8bcbb4e256abf706d5850",
+    "historical--mask-top.png": "36b028a6c8fe492b7d85634266b754431641afdeccdb1666861fa0941fd0ebf1",
+    "painted-full--mask-below.png": "e487c543a023f3d95cf0d5ff74ed913551bbfe64c3f994dc834104c424c9a24f",
+    "historical--mask-below.png": "bf4cd5b308e4d04093ae226f6d0e30d082935135082a4bed03fd61d9f1212bbf",
+    "wood--near.png": "e62dfae7b9087e4416c41a2d74a2b4010e0b5e23e53c897306aebaabbe9b8c80",
+    "wood-full--perspective.png": "4880532c988d24a601383e0038ffdb05e8557c31feae4f83c9bdb578e01960d0",
+    "painted-full--below.png": "8d44576f6b05bdb60fd59577916483534b139a0efd62133918f4f7d85f9e9371",
+    "painted--mask-medium.png": "ce5707ddcd64ebcc5fc23730a4f95b4029fce50b31e957c4449c15cd590ccc23",
+    "painted-full--mask-far.png": "92780b2aa36ec2cb5f76cbe163e680378d427441a71511ed9393329cf5a39601",
+    "wood-full--front.png": "d3b83ebc87fbb12aee2c4717469d8ef7e81aa6e788dbf12144c803aff307088a",
+    "historical--perspective.png": "689ef61027b3914ff206e12dafa7dd442c9eec36fcebdbc0ebbda0886b1e5aa8",
+    "painted--mask-near.png": "67a258c15519489dc4cfdabf55cfc01cdcfd4a1e7493acd8b793621e48c68fb9",
+    "painted-full--branch-close.png": "f886cb89fc3460ae1c517d3e1ae101b89df82c98c1c81a2e14d8e0d813d0e132",
+    "painted-full--mask-front.png": "98de248eff0f18cb320f9d6951d65b36e9cedc4ac98337b92dcfab4e5562ea9f",
+    "painted--mask-far.png": "064d82c0f6b120f3d74eca5712869347b3cb7534352cd75270dec1afc8891af7",
+    "painted-full--front.png": "3e824a42b6d16259fc69f9f049d8a713057e884a5fb3749135b78b380b77b155",
+    "painted--mask-below.png": "d4aa6139212903974062df3b94119fe042de135fe7003870b2a139fd7fd84b15",
+    "painted--far.png": "23a36fe17f4eec8e6600e5b74e9169c92ff3654465b62e7699570350331fdb34",
+    "painted-full--mask-side.png": "f72f158808bea0c780240d17f1065118a51bb21318c0f8388fb4c1a1131f2ffd",
+    "wood--side.png": "36b5f2925b0cfc371d765de2dd9d1a3dfa496ea4b847093e9b3f3c72e3446684",
+    "painted--below.png": "631f92fc1a3c0417cb3e6e9622cf29ab0e3af875afe65df114c0bc9688087c8e",
+    "historical--near.png": "8029c1955a8b998e79a359b48beb73afeaa8a88bb9a6fb4544c236fdf60f148b",
+    "wood--perspective.png": "96b0e7b7efde0566d23037972e247cc55bf235a8e713ed0a9030519d2598b248",
+    "wood-full--near.png": "ae79151cc2d00f8c6206b3b92cc9ec65805f3dfe000f3bd8ef7c63a6f4ea1b06",
+    "historical--top.png": "837db2a8175acaa980c159ec334607eafb9e0fba7e1254e7bc5fccceda2e0658",
+    "painted--front.png": "b2ea5d13c8f0bce13834f45211df69c9eaee7defb5d7670bd1158f47f4e544a5",
+    "painted--mask-back.png": "a1142fe24f880497e4b99abbf99f2d7d1118269ccee8cc6a45f2bf409c62e2c7",
+    "painted-full--mask-top.png": "55791a8c9aaf15b94d0f466d04ef1e39a8da9e2569053c8c156990372d098903",
+    "historical--front.png": "c965662a14376087ce913b9a561887552ecd1bee33c6b49f0df3595b8fadd32d",
+    "historical--far.png": "bec4f5ec603b655f4d7819262483454b5b9aeddc8af1783155950f26d1fc8e9e",
+    "painted-full--perspective.png": "b34be9ad7d6ba9256bcecaec4baab934f8b64c2d4ddb57c57b46c4852e264370",
+    "painted--back.png": "476925b5d6d1441f32fedb6779d3cbb5632e1f018222f665caab62f10ff7b13a",
+    "painted--mask-top.png": "45183831a8860450cd42f1566b681cc44fa9bb120319fba76b12da1fc4cc5508",
+    "painted--mask-perspective.png": "30d29281f11b74ec0133aa1b239016e4b62e5f6a70ce8d2bbfd0628b019dfb73",
+    "painted-full--medium.png": "22339c6272c2648e6b53ab2fa9eae48210e0167ce789cf64205ed2a9f330586e",
+    "painted-full--top.png": "9e9be2df6bb5cc9255d776c5b541451c91f1b6a76d0933c9dff2a180a695951a",
+    "historical--mask-side.png": "6c7e01b75cb2ff4c2ce0ee47f1a2152b71542dafe9768b06ff920597e026b530",
+    "historical--trunk-close.png": "dfc22f2e6ee359b2abb774eab9f2eb977f0c7f46dbb28ded56de2cdd5b0812dc",
+    "painted-full--side.png": "6b93cebadc28711fcc5422f8f846c68ca99f52bb541eb5a9342da38d3ab462ad",
+    "wood-full--trunk-close.png": "4e18dadc4fb784e4b6366439bf920ff01d2ae61db00d176cf097aad11d385bf9",
+    "wood--front.png": "21508dc8920b584b64d07a6ca6cfde90d8999a359a9a0c2c4fd64258ef727bd0",
+    "painted--medium.png": "f588df6fbb6d49c171fa8f6f4be3dd950b987a83ac804c7d310541d6fb9dbe0a",
+    "historical--mask-perspective.png": "cefbacb7b855720086e9b552352b3ca8c7557dcf9e5f9ca57e11135a4ed6213c",
+    "wood--branch-close.png": "bea294687b3cfebed269588e2dc01196a1d58bbf6e83b211098cac9d62c6010c",
+    "historical--mask-near.png": "f0e8636340bcb5f60e07af3bfdc50f71fe598c654fd4a26d442e082ba8b28c64",
+    "historical--mask-back.png": "4398be9e7e7e224259edf8fed8df998ef581b3f63a19de5804af565bb6acc882",
+    "painted--top.png": "b03fa580dcd5b64e846397ea5ddd8ba34b2784014cc2e1acf70321fdf8a8434f",
+    "painted-full--back.png": "aa504f5ee7ee54b5d40d5254bfedb9f03dbe7e8515e979d84f572512c436a8e7",
+    "painted--perspective.png": "0d7f2a61fe355f524cadbcccee3aca3b4e018da3a7cd40ad866eb6503d79489d",
+    "historical--medium.png": "be6f09743ef735090e600cfd875df940fa3373161c9f3fd3f64697ce1739389c",
+    "painted--mask-side.png": "6fa95acd86913cb960db1d617652c435a1fda5db222822efacdfd6b6d598a414",
+    "painted-full--mask-near.png": "fdaf7786e56e2fc415077e351125131c5424cd939665a28995c050e0e5b8eb17",
+    "wood--below.png": "c0f9fcaa51d26bf521dbf6d8c18cd68f017b0831a6fa2a8b159180c2386ff851",
+    "painted-full--far.png": "bbdbf72650e04591c3c0a0c121ef61e12e112f42bebbe92bfb7178c0b085a13a",
+    "painted-full--near.png": "f2bc818566f5ff31ed268cd59b3f196934c611a60a8371100c9573bcb362587b",
+    "wood--far.png": "2cf128205438fc7f1f9881b36b6ecd686911954d226a5ecd19b507d6d4b1ce8a",
+    "historical--side.png": "753952bb2c2338f047c278598cc00a02ad86b1a24a571c96a554c5f929ffe476",
+    "wood-full--branch-close.png": "b7f718809c49e0271a555a002fe25bd806bf207fc4fc12ee28a2789e7b9f2f40",
+    "painted--trunk-close.png": "cb8fe2c795c8daae21cb9b54f36a4e9df660f640ce05eb1b87773557226fa0db",
+    "wood-full--medium.png": "be05b5fa622e42e284f834070a2aba748b5ad1e6472ab9c858df2aaebd7e0445",
+    "historical--mask-front.png": "64372637d8f53b6b2ad9a233f15c2c2eb5e3758006fa1d243167e682b7a53a13",
+    "wood--top.png": "2defb69a6953ebc048fb7703684cd623e665fefb6a0c23c7157af617797e0dc0",
+    "historical--branch-close.png": "bf9b3ae1b5d75a09be77a08d38786f4c55e1eb5cc895cf94e31f73293b1e3407"
+  },
+  "study": "artifacts/roble-pintado/piloto-completo-01",
+  "technical_checks_passed": true,
+  "real_captures": 82,
+  "shape_target_iou_99_coverage_1percent": {
+    "painting": false,
+    "pruning": true
+  },
+  "artistic_acceptance": "pending",
+  "controls": "not_run",
+  "tests": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_oak_painted*.py' -v",
+    "passed": true,
+    "count": 12
+  },
+  "evidence_script_sha256": "aa96c4b22084b0e40821a329ec936bf1e79c838c66c24315805d0cbcd9e6f708"
+}

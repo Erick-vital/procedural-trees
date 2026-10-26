@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TreeInstance 1.3: roble pintado",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "blueprint_id",
+    "blueprint_version",
+    "seeds"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.3"
+    },
+    "blueprint_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "blueprint_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "maxLength": 32
+    },
+    "profile": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "seeds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "base",
+        "canopy",
+        "paint"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "canopy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483646
+        },
+        "paint": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483646
+        }
+      }
+    },
+    "overrides": {
+      "$ref": "#/$defs/overrides"
+    }
+  },
+  "$defs": {
+    "overrides": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "height_m": {
+              "type": "number",
+              "minimum": 2,
+              "maximum": 20
+            },
+            "base_radius_m": {
+              "type": "number",
+              "minimum": 0.05,
+              "maximum": 1
+            },
+            "curvature": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.3,
+              "description": "Desplazamiento lateral relativo a altura"
+            },
+            "primary_branches": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "max_depth": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2
+            },
+            "branch_length_ratio": {
+              "type": "number",
+              "minimum": 0.1,
+              "maximum": 0.6
+            },
+            "inclination_deg": {
+              "type": "number",
+              "minimum": 10,
+              "maximum": 80,
+              "description": "\u00c1ngulo desde la vertical"
+            },
+            "asymmetry": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "foliage_density": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "0.1/0.2: masas por extremo; 0.3: por tramo distal; 0.4: control de cantidad por longitud/nivel (m\u00e1ximos tronco/primaria/secundaria 2/3/2); 0 sin follaje; 0.4.1: cantidad por longitud y radio, con secundarias intermedias sin hojas"
+            },
+            "foliage_scale_m": {
+              "type": "number",
+              "minimum": 0.2,
+              "maximum": 3
+            }
+          }
+        },
+        "canopy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "group_count": {
+              "type": "integer",
+              "minimum": 24,
+              "maximum": 360
+            },
+            "leaf_length_m": {
+              "type": "number",
+              "minimum": 0.2,
+              "maximum": 1
+            },
+            "shell_depth_m": {
+              "type": "number",
+              "minimum": 0.02,
+              "maximum": 0.3
+            },
+            "twig_radius_m": {
+              "type": "number",
+              "minimum": 0.008,
+              "maximum": 0.03
+            },
+            "tip_radius_ratio": {
+              "type": "number",
+              "minimum": 0.2,
+              "maximum": 0.5
+            },
+            "profile_width_scale": {
+              "type": "number",
+              "minimum": 0.85,
+              "maximum": 1.15
+            },
+            "region_weights": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "north": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "east": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "south": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "west": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            },
+            "layout_leaf_length_m": {
+              "type": "number",
+              "minimum": 0.2,
+              "maximum": 1,
+              "description": "Escala de planificaci\u00f3n de soportes, separada de la representaci\u00f3n."
+            }
+          }
+        }
+      }
+    }
+  }
+}

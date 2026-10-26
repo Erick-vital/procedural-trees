@@ -1,0 +1,267 @@
+{
+  "passed": true,
+  "study": "artifacts/roble-pintado/rama-muestra-01",
+  "repeat": "artifacts/roble-pintado/rama-muestra-repeat-01",
+  "reference": {
+    "version": "oak-painted-branch-0.1.0",
+    "branch_id": "q3:primary:100",
+    "source_glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+    "base_blueprint": "roble_copa_ancha@1.2.0",
+    "seeds": {
+      "base": 3009,
+      "canopy": 17
+    },
+    "paint_seed": 2718,
+    "wood_ids": [
+      "q3:primary:100",
+      "q3:secondary:200",
+      "q3:secondary:201",
+      "q3:secondary:202"
+    ],
+    "support_count": 32,
+    "leaf_count": 192,
+    "source_subset_sha256": "6e022b57bc55e91e85e76ff9b267e917a30299f0cd73d040039565d541f684f7",
+    "textures": {
+      "foliage.png": {
+        "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA"
+      },
+      "bark.png": {
+        "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGB"
+      }
+    }
+  },
+  "variants": {
+    "original": {
+      "metrics": {
+        "vertices": 1200,
+        "triangles": 1104,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.495856,
+            1.052914
+          ],
+          [
+            7.471208,
+            3.207516,
+            5.807189
+          ]
+        ],
+        "height_m": 4.754275,
+        "triangles_by_material": {
+          "Original_Bark": 720,
+          "Original_Leaf": 384
+        },
+        "geometry_sha256": "65280af089f9eed74401a42f2d2eba194c60396ea44ef81613cb6e31db9b7a2c"
+      },
+      "glb_sha256": "48fc1fe3c31a4aca13a3dff2d804883577733f29615b9a1d89f42180aacfca63",
+      "bytes": 63980
+    },
+    "painted": {
+      "metrics": {
+        "vertices": 1200,
+        "triangles": 1104,
+        "bounds_blender": [
+          [
+            0.052485,
+            -2.524422,
+            0.924737
+          ],
+          [
+            7.494364,
+            3.460446,
+            5.826452
+          ]
+        ],
+        "height_m": 4.901714999999999,
+        "triangles_by_material": {
+          "Painted_Bark": 720,
+          "Painted_Foliage": 384
+        },
+        "geometry_sha256": "d24aad3bfd7f3595ea06b755b9bce64771bfbed4ebb7283bc4064e915c9289b5"
+      },
+      "glb_sha256": "5aa5fe86427d39f2cb2ae97f118350816aa5b9284fdb1e07c5c3ed26080c65fc",
+      "bytes": 4263228
+    },
+    "wood": {
+      "metrics": {
+        "vertices": 432,
+        "triangles": 720,
+        "bounds_blender": [
+          [
+            0.052485,
+            -1.555079,
+            1.711404
+          ],
+          [
+            6.966326,
+            2.730797,
+            4.941986
+          ]
+        ],
+        "height_m": 3.230582,
+        "triangles_by_material": {
+          "Painted_Bark": 720
+        },
+        "geometry_sha256": "cb29526035a89a48aeff2dfe6afbf44e9402c795dc15c55112ebc14a7d403226"
+      },
+      "glb_sha256": "5767d66e8e902ed2d2f9309f9ac7572819f76ab4e9125e99359cd0c6e7403ce7",
+      "bytes": 2819944
+    },
+    "swatches": {
+      "metrics": {
+        "vertices": 16,
+        "triangles": 8,
+        "bounds_blender": [
+          [
+            -0.315593,
+            0.0,
+            -0.006969
+          ],
+          [
+            1.299274,
+            0.0,
+            2.203448
+          ]
+        ],
+        "height_m": 2.2104169999999996,
+        "triangles_by_material": {
+          "Painted_Foliage": 8
+        },
+        "geometry_sha256": "443ccfb1261d838e1c417a82b888140f058457142c9a29831b8c94a86928cd75"
+      },
+      "glb_sha256": "d4a340415d5b76db7c4ce6caca08532271657106b682254afe3dd6afab1a4288",
+      "bytes": 1416984
+    }
+  },
+  "resources": {
+    "foliage.png": {
+      "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    "bark.png": {
+      "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    }
+  },
+  "export_validation": {
+    "original": {
+      "passed": true,
+      "glb_sha256": "48fc1fe3c31a4aca13a3dff2d804883577733f29615b9a1d89f42180aacfca63",
+      "embedded_images_sha256": [],
+      "materials": [
+        "Original_Bark",
+        "Original_Leaf"
+      ]
+    },
+    "painted": {
+      "passed": true,
+      "glb_sha256": "5aa5fe86427d39f2cb2ae97f118350816aa5b9284fdb1e07c5c3ed26080c65fc",
+      "embedded_images_sha256": [
+        "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+        "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+      ],
+      "materials": [
+        "Painted_Bark",
+        "Painted_Foliage"
+      ]
+    },
+    "wood": {
+      "passed": true,
+      "glb_sha256": "5767d66e8e902ed2d2f9309f9ac7572819f76ab4e9125e99359cd0c6e7403ce7",
+      "embedded_images_sha256": [
+        "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+      ],
+      "materials": [
+        "Painted_Bark"
+      ]
+    },
+    "swatches": {
+      "passed": true,
+      "glb_sha256": "d4a340415d5b76db7c4ce6caca08532271657106b682254afe3dd6afab1a4288",
+      "embedded_images_sha256": [
+        "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+      ],
+      "materials": [
+        "Painted_Foliage"
+      ]
+    }
+  },
+  "repeated_glb_identical": {
+    "original": true,
+    "painted": true,
+    "wood": true,
+    "swatches": true
+  },
+  "wood_and_twig_geometry_normals_exact": true,
+  "source_lock_verified": true,
+  "real_captures": 29,
+  "capture_sha256": {
+    "painted--side.png": "9f520a782f2c49699c81e8d84a250b7b2fc586be68dd00db1ca57c93685cf4dd",
+    "original--perspective.png": "42a6b4fed8bc10eaa3e453f82780429ba21d1d4f858604235a175d1d32b20644",
+    "original--side.png": "fda407f7fb382156cd228fa44d05dc9d7329cc9099539734d3d5142e18302ab1",
+    "original--far.png": "bb07b51dbb48afc8b78a13f0c0497d52e58f67b180807004d6ff292e19479a6b",
+    "swatches--front.png": "16fc87098010cc74394b4fddaf48263ae20ef1c289449d6079c31286366348bf",
+    "swatches--leaf-dark.png": "9154b67d27a329728941f3a4ed660579ca843165c31dc6eb3b8c4b96c8a9fa3a",
+    "painted--far.png": "702e123ee0e3a3264e441dd466f10ae89c83b29954e23dbaea79139a20bf7bb0",
+    "swatches--side.png": "838c6dcbcdc445e94e87df98861d493f591dc624a8cdf0882febe716c9a5e519",
+    "swatches--below.png": "f252524990157e030aaa7e978ce2a778a40b49ee2948de4f04ec2c4225a1306d",
+    "wood--side.png": "87e3dbbcf1ed52c004862e9604362ba66781a65eaadc7cfa980187bbbf595ad1",
+    "original--back.png": "bc731be1cb6d7a4ec3861e6989522561fb19cab17f7fb441305e9dfa28495242",
+    "painted--below.png": "becdb8f10e8f945133f9eb9a979ca85b70c25ba549c46b658ee5698dee133826",
+    "wood--perspective.png": "94a30574a7db91cc3b39778c2afeb38b9e88d85af36f8bafcfe27d6c4eec5639",
+    "painted--front.png": "a31597f5118066a1e99701dfd89922cde87301e0213f1aaa498ebc1a63af718f",
+    "swatches--top.png": "838c6dcbcdc445e94e87df98861d493f591dc624a8cdf0882febe716c9a5e519",
+    "original--front.png": "a6de12759157e762f3f6771c837bd40375afa117bfe96e842fcadd01b1f9bb2d",
+    "painted--back.png": "91ddd0fb48cd26b27257bd237f93429b7e3f6b6baa4d7aff1632e60f11cab8a2",
+    "wood--front.png": "c5c99f6d19dcd6e284447ea4a68dc5afafc6f856626376c85044fd39e9b0eb65",
+    "painted--medium.png": "902da232651b727d41a5798958063a333f3beb5489880a857d2c923a1f26e4fd",
+    "painted--top.png": "a8a56e2cf3cb1cebc83b91d17f2a9137074c56e3485180988f7baffabd725724",
+    "original--medium.png": "fdb8b0d3e3f8ffcf4299ad149351e8af8faffda114deaf6fe25b36ea73bbe834",
+    "painted--perspective.png": "afab8a53bde094bdfe8c454c170bdf57907a258d3c35fb13348bac439a7496eb",
+    "wood--bark-close.png": "2967ee7a3cb90da89130b4663fed6cac0a2524a3b8c4f79dcedb872eaf59a03c",
+    "swatches--perspective.png": "b4dd278cadecbee164d430cc36d2202ac3971febd1aa7dcb6c269a2c8587121a",
+    "wood--below.png": "d9de4bcdf658e1d8f6353f9e722bf3667533b5ed2b500de4ecda4ba9d2456dbb",
+    "original--top.png": "2a1426b388448d319fdc19a823f46995d70f6b3842939a8e5778da7476c08682",
+    "swatches--leaf-colors.png": "e58d91e3cd3f9016c97fb8490bc1d76bda84f44f17316ef3d83046559d456ce2",
+    "original--below.png": "ad56ddfef9afb7401397d9bd4240b2d23e6e046e1ecaca9411699c07abd83234",
+    "wood--top.png": "db54397e3d2542566b2c8e895975b34414165e189bdf8e88826691cd4118a865"
+  },
+  "source_lock": {
+    "scripts/oak_painted_sample.py": "d06c3b9dc534ede730d796a6b33b7de6405f8811ff7f7783172df0cc1252b067",
+    "blender/oak_painted_sample.py": "6023a70fa3b172a680c8a3ffc43c622c1e42c8ba2c8694523b0221bd1db8f545",
+    "src/treegen/oak_painted_sample.py": "2d270f3e95446c52732f3579d1f0c4e1d406f0766b1ba6598b02839c7c51ebb6",
+    "godot/review_painted_pine.gd": "bed67a6165a424d698c6f74be08aa2d631294e22da9fd6da4916ff67bb746439",
+    "godot/painted_pine_asset.gd": "3c39d07732f1885c02c351b41261965e4193102b86906b4089cf788f93ae3cad",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "assets/roble-pintado/v0.2.0/bark.png": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+    "assets/roble-pintado/v0.2.0/foliage.png": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+    "assets/roble-pintado/v0.2.0/manifest.json": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250",
+    "assets/roble-pintado/v0.2.0/prompts.json": "90f34ad4ca670285dd8005f6b1c7fd25ed0f2472dd99aacb8124781d7aa4aec8"
+  },
+  "sample_tests": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests -p test_oak_painted_sample.py -v",
+    "passed": true,
+    "tests": 2
+  },
+  "artistic_acceptance": "pending",
+  "evidence_script_sha256": "d826788caeb37fefd8b2a17e510721e9ed33e7a7452e257e3d22071c2cdc575a"
+}

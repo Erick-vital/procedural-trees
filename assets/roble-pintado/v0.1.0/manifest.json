@@ -1,0 +1,42 @@
+{
+  "version": "oak-painted-atlas-0.1.0",
+  "source": "scripts/build_oak_atlas.py",
+  "source_sha256": "b14026f45079eb7a85a39acd794e7ad562c067fbdcd3097ee871d9c5282917e4",
+  "method": "Procedural propio: rombo analítico RF3, cuatro variantes de pintura/nervaduras; sin IA ni recursos externos.",
+  "size": [
+    1024,
+    1024
+  ],
+  "tiles": 4,
+  "tile_size": 512,
+  "padding_px": 8,
+  "shape_local": [
+    [
+      0,
+      0
+    ],
+    [
+      0.48,
+      -0.3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0.48,
+      0.3
+    ]
+  ],
+  "local_extent": [
+    [
+      -0.04,
+      -0.6
+    ],
+    [
+      1.04,
+      0.6
+    ]
+  ],
+  "foliage_sha256": "4933ce70b2462a7a66642e12584af68fe6779eaefc49a03b30e58731371a5934"
+}
