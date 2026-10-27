@@ -12,6 +12,17 @@ PATHS={'foliage':'assets/roble-pintado/v0.3.0/foliage.png','bark':'assets/roble-
     'templates':'assets/roble-pintado/v0.3.0/templates.json','source_foliage':'assets/roble-pintado/v0.2.0/foliage.png','source_layout':'assets/roble-pintado/v0.2.0/manifest.json'}
 
 
+def optimized_wood(resolved):
+    return resolved['blueprint_definition']['components']['representation']=='oak-painted-crossed@0.2.0'
+
+
+def wood_model(reference, wood, resolved):
+    if not optimized_wood(resolved):
+        return wood, reference['branches']
+    from .oak_wood import build as build_wood
+    return build_wood(wood,reference['branches'],.02,secondary_only=True)
+
+
 def validate_resources(resources):
     if set(resources)!=set(PATHS):raise ValueError('Recursos de cruzadas incompletos')
     for key,path in PATHS.items():
@@ -51,4 +62,5 @@ def build(reference,source,resolved):
     for g in items:
         index=min(range(8),key=lambda i:sum((x-y)**2 for x,y in zip(g['descriptor'],templates[i]['descriptor'])))
         assignments[g['id']]=index;crossed.extend(panels(g,index,3))
-    return old['wood'],crossed,items,assignments,kept
+    wood,_=wood_model(reference,old['wood'],resolved)
+    return wood,crossed,items,assignments,kept

@@ -28,5 +28,31 @@ class OakCrossedProductionTests(unittest.TestCase):
         b['components']['representation']='oak-painted-single@0.1.0'
         with self.assertRaises(ValueError):validate_blueprint(b)
 
+    def test_selective_recipe_is_explicit_and_keeps_historical_inputs(self):
+        b=load_blueprint(ROOT/'blueprints/roble_copa_ancha/2.2.0.json')
+        for name in ('pilot','joven-07','adulto-00','viejo-00'):
+            instance=load_instance(ROOT/f'presets/blueprints/roble-madera/{name}.json')
+            r=resolve_blueprint(b,instance)
+            old=resolve_blueprint(self.recipe(),load_instance(ROOT/f'presets/blueprints/roble-cruzado/{name}.json'))
+            self.assertEqual(r['source_resolved_blueprint'],old['source_resolved_blueprint'])
+            self.assertEqual(r['resources'],old['resources'])
+            self.assertEqual(r['blueprint_definition']['components']['representation'],'oak-painted-crossed@0.2.0')
+            self.assertEqual(r,resolve_blueprint(b,instance))
+        b['components']['distribution']='foliage-canopy@0.1.0'
+        with self.assertRaises(ValueError):validate_blueprint(b)
+
+    def test_wood_export_rejects_changed_vertices_uv_or_duplicate_triangles(self):
+        from treegen.oak_crossed_evaluation import validate_wood_faces
+        wood=[({'vertices':[[0,0,0],[1,0,0],[1,1,0],[0,1,0]],'polygons':[[0,1,2,3]]},0,[[0,0]]*4)]
+        points=[(0.,0.,0.,0.,1.),(1.,0.,0.,0.,1.),(1.,0.,-1.,0.,1.),(0.,0.,-1.,0.,1.)]
+        rows=[tuple(sorted(points[i] for i in tri)) for tri in ((0,1,2),(0,2,3))]
+        validate_wood_faces(rows,wood)
+        with self.assertRaises(ValueError):validate_wood_faces([rows[0],rows[0]],wood)
+        with self.assertRaises(ValueError):validate_wood_faces(rows+rows,wood)
+        for index in (0,4):
+            bad=copy.deepcopy(wood);bad[0][0]['vertices'][0][0]+=.01 if index==0 else 0
+            if index==4:bad[0][2][0][1]+=.01
+            with self.assertRaises(ValueError):validate_wood_faces(rows,bad)
+
 
 if __name__=='__main__':unittest.main()

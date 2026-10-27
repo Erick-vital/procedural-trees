@@ -3,8 +3,8 @@
 Fecha: 2026-10-25. Solicitud del usuario: trasladar al roble el enfoque de láminas
 texturizadas y reducción de tris, conservando silueta y volumen. Amplía la exclusión
 previa del roble en el plan de pino. Estado vigente: piloto con pintura 0.2.0 y
-ajuste de ramillas y tres láminas aprobados; **receta 2.1.0 integrada y cuatro casos
-verificados**. Los apartados iniciales conservan el alcance
+ajuste de ramillas y tres láminas aprobados; **madera selectiva aprobada y receta 2.2.0 integrada;
+cuatro casos verificados**. Los apartados iniciales conservan el alcance
 original; las ampliaciones posteriores documentan las decisiones del usuario.
 
 Referencia: `roble_copa_ancha@1.2.0`, RF3/B3 y RF5 aprobados. Piloto viejo-09
@@ -162,3 +162,54 @@ no confundir márgenes transparentes con altura nominal; regla histórica intact
 [Informe y reproducción](../docs/evidence/roble-pintado/implementacion-01/informe.md).
 No se atribuye aprobación artística del usuario a los controles ni garantía
 general de rangos; perfiles experimentales. Sin benchmark ni fases adicionales.
+
+## Ensayo autorizado de simplificación de madera (2026-10-26)
+
+El usuario solicita intentar reducir la madera después de guardar los cambios
+actuales en un commit (`2d1ed43`), y precisa que debe afectar lo mínimo posible
+al aspecto aprobado. Se permite estudiar ramillas incorporadas a la pintura,
+pero no es obligatorio sustituirlas si el cambio visual no compensa el ahorro.
+
+Primera operación aislada: eliminar anillos intermedios de tronco/ramas con
+cota de correspondencia de vértices radiales de 5/10/20 mm por tramo completo.
+Conservar ocho lados, extremos, tapas, UV de los anillos retenidos, guías,
+soportes, anclajes y follaje. No acumular errores locales ni modificar atlas.
+Comparar piloto en Godot con cámaras/luz comunes, árbol completo y madera sola,
+seis orientaciones, detalle y dos distancias; controles medidos numéricamente.
+La cota de correspondencia no es una prueba de identidad de superficie, normales,
+conexiones o píxeles. Las conexiones deben revisarse visualmente.
+
+Ensayo separado de catálogo/recetas; resultado y aceptación artística pendientes
+durante su ejecución. No se inicia benchmark, LOD ni sustitución de ramillas
+por pintura en esta primera comparación.
+
+Refinamiento del mismo ensayo: variante selectiva de 20 mm solo en secundarias;
+tronco y primarias conservados exactamente, sin simplificación ni cambio de
+normales/UV. Piloto: 6812 tris (−1024; −13,1 %) frente a 7836. La variante global
+20 mm (6652) se conserva como comparación técnica, no como recomendación.
+143 pruebas pasan; el resultado visual y sus límites se documentan en
+[el informe de madera](../docs/evidence/roble-pintado/madera-01/informe.md).
+
+## Madera selectiva aprobada e integración autorizada (2026-10-26)
+
+El usuario indica «ok me gusta, integra la variante de 6812 tris al blueprint».
+Se adopta la variante selectiva: solo secundarias a 20 mm, tronco/primarias,
+soportes y follaje conservados. [Aceptación](../docs/evidence/roble-pintado/integracion-madera-01/user-acceptance.json).
+Receta nueva `roble_copa_ancha@2.2.0`, representación
+`oak-painted-crossed@0.2.0`, mismo contrato 1.4 y recursos aprobados.
+Conservar históricos y alias; el ahorro no se descuenta de la cota presupuestaria
+previa porque depende de la geometría. Registrar anillos/error por rama en cada
+manifiesto y auditar la madera exportada, además de conservación de copa.
+
+Verificar piloto y tres controles por CLI, repetición del piloto, coincidencia
+con la candidata aprobada y regresiones exactas de 2.1.0/pino/columnar. Revisar
+árbol y madera sola en Godot con cámaras/luz comunes; no atribuir aprobación
+artística del usuario a los controles. Sin benchmark ni nuevas fases.
+
+Integración terminada: piloto/joven/adulto/viejo **6812/3132/5820/6900 tris**;
+145 pruebas, 16 checks, repetición y generación CLI con GLB idéntico. Piloto
+coincide con candidata aprobada; 2.1.0/pino/columnar mantienen GLB idénticos.
+288 capturas reales Godot y nueve láminas inspeccionadas, árbol/madera.
+[Resultado y reproducción](../docs/evidence/roble-pintado/integracion-madera-01/informe.md).
+No hay pendientes de integración; controles revisados por el agente, no aprobados
+artísticamente por el usuario. La tolerancia no certifica todos los contactos.

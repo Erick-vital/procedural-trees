@@ -1,0 +1,4350 @@
+{
+  "passed": true,
+  "matrix": {
+    "version": "oak-selective-wood-implementation-0.1.0",
+    "blueprint": "blueprints/roble_copa_ancha/2.2.0.json",
+    "cases": [
+      {
+        "id": "pilot",
+        "instance": {
+          "schema_version": "1.4",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "2.2.0",
+          "profile": "viejo_referencia",
+          "seeds": {
+            "base": 3009,
+            "canopy": 17,
+            "paint": 2718
+          }
+        }
+      },
+      {
+        "id": "joven-07",
+        "instance": {
+          "schema_version": "1.4",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "2.2.0",
+          "profile": "joven",
+          "seeds": {
+            "base": 1007,
+            "canopy": 17,
+            "paint": 2718
+          }
+        }
+      },
+      {
+        "id": "adulto-00",
+        "instance": {
+          "schema_version": "1.4",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "2.2.0",
+          "profile": "adulto",
+          "seeds": {
+            "base": 2000,
+            "canopy": 17,
+            "paint": 2718
+          }
+        }
+      },
+      {
+        "id": "viejo-00",
+        "instance": {
+          "schema_version": "1.4",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "2.2.0",
+          "profile": "viejo",
+          "seeds": {
+            "base": 3000,
+            "canopy": 17,
+            "paint": 2718
+          }
+        }
+      }
+    ]
+  },
+  "checks": {
+    "pilot-historical-2.1-exact": true,
+    "pilot-foliage-exact": true,
+    "pilot-export": true,
+    "joven-07-historical-2.1-exact": true,
+    "joven-07-foliage-exact": true,
+    "joven-07-export": true,
+    "adulto-00-historical-2.1-exact": true,
+    "adulto-00-foliage-exact": true,
+    "adulto-00-export": true,
+    "viejo-00-historical-2.1-exact": true,
+    "viejo-00-foliage-exact": true,
+    "viejo-00-export": true,
+    "repeat-identical": true,
+    "approved-pilot-geometry-uv-normals": true,
+    "pine-regression-exact": true,
+    "columnar-regression-exact": true
+  },
+  "cases": {
+    "pilot": {
+      "metrics": {
+        "vertices": 6112,
+        "triangles": 6812,
+        "bounds_blender": [
+          [
+            -6.280159,
+            -8.033664,
+            0.0
+          ],
+          [
+            8.205399,
+            6.980155,
+            9.687451
+          ]
+        ],
+        "height_m": 9.687451,
+        "triangles_by_material": {
+          "Painted_Bark": 5228,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "dad7665061d3cfb92f1b5375df8c4b37dbbb8eb1537911c82dd235fff4f7cbeb"
+      },
+      "glb_sha256": "5d67741ffd00a394133742d7077687cec08823c9b9f36f3395a6104db93ca74d",
+      "duration_seconds": 4.518,
+      "export_validation": {
+        "triangles": 6812,
+        "materials": {
+          "Painted_Bark": 5228,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -6.280158519744873,
+            0.0,
+            -6.980154514312744
+          ],
+          [
+            8.205398559570312,
+            9.687451362609863,
+            8.033663749694824
+          ]
+        ],
+        "dimensions_m": [
+          14.485557079315186,
+          9.687451362609863,
+          15.013818264007568
+        ],
+        "geometry_sha256": "8d40afe74a7d909022fdd5f4c71fa88030189323bcdece1d2a6fc9a08e4229f2",
+        "glb_sha256": "5d67741ffd00a394133742d7077687cec08823c9b9f36f3395a6104db93ca74d",
+        "crossed_panels_valid": true,
+        "wood_and_remaining_supports_exact": false,
+        "source_distribution_exact": true,
+        "groups": 264,
+        "panels": 792,
+        "kept_supports": 120,
+        "resource_sha256": {
+          "foliage": {
+            "path": "assets/roble-pintado/v0.3.0/foliage.png",
+            "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+          },
+          "bark": {
+            "path": "assets/roble-pintado/v0.2.0/bark.png",
+            "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+          },
+          "templates": {
+            "path": "assets/roble-pintado/v0.3.0/templates.json",
+            "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+          },
+          "source_foliage": {
+            "path": "assets/roble-pintado/v0.2.0/foliage.png",
+            "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+          },
+          "source_layout": {
+            "path": "assets/roble-pintado/v0.2.0/manifest.json",
+            "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+          }
+        },
+        "channel_sha256": {
+          "Painted_Bark": "871de10fd8a0cc15dda2345fad543c5154e7dddf92a817b61a189154efde349d",
+          "Painted_Foliage": "d7d2e7e70a586bc1ec36b4041287ce715fe66c77839d1fb1b4992ffabcd4988e"
+        },
+        "selective_wood_valid": true,
+        "trunk_primary_remaining_supports_exact": true,
+        "wood_optimization_version": "oak-wood-rings-0.1.0",
+        "wood_tolerance_m": 0.02
+      },
+      "wood_optimization": [
+        {
+          "id": "q3:trunk:0",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "original_ring_count": 12,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:100",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:101",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:102",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:103",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:104",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:105",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:106",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:107",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:108",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:109",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:110",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:secondary:200",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:201",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01845339863152558
+        },
+        {
+          "id": "q3:secondary:202",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.013225127232408424
+        },
+        {
+          "id": "q3:secondary:203",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:204",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.018514277796728616
+        },
+        {
+          "id": "q3:secondary:205",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.014922360057288458
+        },
+        {
+          "id": "q3:secondary:206",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:207",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.016313809605021243
+        },
+        {
+          "id": "q3:secondary:208",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.013979885068182716
+        },
+        {
+          "id": "q3:secondary:209",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:210",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.017557970201312265
+        },
+        {
+          "id": "q3:secondary:211",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.014569353386455786
+        },
+        {
+          "id": "q3:secondary:212",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:213",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.017782690582018014
+        },
+        {
+          "id": "q3:secondary:214",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0144274288182752
+        },
+        {
+          "id": "q3:secondary:215",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:216",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.016336192188400066
+        },
+        {
+          "id": "q3:secondary:217",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.013825421285089241
+        },
+        {
+          "id": "q3:secondary:218",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01984587274293024
+        },
+        {
+          "id": "q3:secondary:219",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.013487994865066482
+        },
+        {
+          "id": "q3:secondary:220",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.008310546031539145
+        },
+        {
+          "id": "q3:secondary:221",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01552130158494066
+        },
+        {
+          "id": "q3:secondary:222",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.014724251981546324
+        },
+        {
+          "id": "q3:secondary:223",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.009529225417229266
+        },
+        {
+          "id": "q3:secondary:224",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:225",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.014908855687523894
+        },
+        {
+          "id": "q3:secondary:226",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.013442651814676831
+        },
+        {
+          "id": "q3:secondary:227",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.017618521890831962
+        },
+        {
+          "id": "q3:secondary:228",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01219435790965555
+        },
+        {
+          "id": "q3:secondary:229",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.008276339814752736
+        },
+        {
+          "id": "q3:secondary:230",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.016553183448155193
+        },
+        {
+          "id": "q3:secondary:231",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.013862885968191253
+        },
+        {
+          "id": "q3:secondary:232",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0070770183080724695
+        }
+      ],
+      "reference_glb_sha256": "759f18aa259decf34dc6135000b07560eb730eacb29b001517deaf12f5876b5b",
+      "before_metrics": {
+        "vertices": 6624,
+        "triangles": 7836,
+        "bounds_blender": [
+          [
+            -6.280159,
+            -8.033664,
+            0.0
+          ],
+          [
+            8.205399,
+            6.980155,
+            9.687451
+          ]
+        ],
+        "height_m": 9.687451,
+        "triangles_by_material": {
+          "Painted_Bark": 6252,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "d34743646f06841ea5e2cb5f06e21c0ba0edb430a20a8dd9f651f4cb2ec9caaf"
+      }
+    },
+    "joven-07": {
+      "metrics": {
+        "vertices": 4068,
+        "triangles": 3132,
+        "bounds_blender": [
+          [
+            -1.682642,
+            -2.028157,
+            0.0
+          ],
+          [
+            1.569776,
+            1.844885,
+            4.20719
+          ]
+        ],
+        "height_m": 4.20719,
+        "triangles_by_material": {
+          "Painted_Bark": 1548,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "bd6ec3dc1849360e3ababfa8157fbf235b17a544ed3cb9b2a19d75c5113fe190"
+      },
+      "glb_sha256": "ba53154416f638d105694f569792334ab5e99b6e8c8725e3abfed5878c28a741",
+      "duration_seconds": 3.621,
+      "export_validation": {
+        "triangles": 3132,
+        "materials": {
+          "Painted_Bark": 1548,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -1.682641625404358,
+            0.0,
+            -1.8448853492736816
+          ],
+          [
+            1.569775938987732,
+            4.207189559936523,
+            2.0281569957733154
+          ]
+        ],
+        "dimensions_m": [
+          3.25241756439209,
+          4.207189559936523,
+          3.873042345046997
+        ],
+        "geometry_sha256": "7047781a05391afc1ca65479078203d0f306b065d6b6c7a79af4312fa9829ad1",
+        "glb_sha256": "ba53154416f638d105694f569792334ab5e99b6e8c8725e3abfed5878c28a741",
+        "crossed_panels_valid": true,
+        "wood_and_remaining_supports_exact": false,
+        "source_distribution_exact": true,
+        "groups": 264,
+        "panels": 792,
+        "kept_supports": 46,
+        "resource_sha256": {
+          "foliage": {
+            "path": "assets/roble-pintado/v0.3.0/foliage.png",
+            "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+          },
+          "bark": {
+            "path": "assets/roble-pintado/v0.2.0/bark.png",
+            "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+          },
+          "templates": {
+            "path": "assets/roble-pintado/v0.3.0/templates.json",
+            "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+          },
+          "source_foliage": {
+            "path": "assets/roble-pintado/v0.2.0/foliage.png",
+            "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+          },
+          "source_layout": {
+            "path": "assets/roble-pintado/v0.2.0/manifest.json",
+            "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+          }
+        },
+        "channel_sha256": {
+          "Painted_Bark": "51935bfb7d93a923803cc8402221e61ac996c88f3756c217aaed0b105b310458",
+          "Painted_Foliage": "08ef8a7f2cc9ce8136fae26db20fb6fd479fd60d7b95a191cf182d6babc62fc8"
+        },
+        "selective_wood_valid": true,
+        "trunk_primary_remaining_supports_exact": true,
+        "wood_optimization_version": "oak-wood-rings-0.1.0",
+        "wood_tolerance_m": 0.02
+      },
+      "wood_optimization": [
+        {
+          "id": "q3:trunk:0",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "original_ring_count": 12,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:100",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:101",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:102",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:103",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:secondary:200",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.018559686638204155
+        },
+        {
+          "id": "q3:secondary:201",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.012055645239948318
+        },
+        {
+          "id": "q3:secondary:202",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.018108972901875037
+        },
+        {
+          "id": "q3:secondary:203",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.009084507651006513
+        },
+        {
+          "id": "q3:secondary:204",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            3,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.006756213753769083
+        },
+        {
+          "id": "q3:secondary:205",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.019444811312009386
+        },
+        {
+          "id": "q3:secondary:206",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.010126776766861821
+        },
+        {
+          "id": "q3:secondary:207",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.014010574254393048
+        },
+        {
+          "id": "q3:secondary:208",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.011470427517232557
+        },
+        {
+          "id": "q3:secondary:209",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            3,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.005078676192533775
+        },
+        {
+          "id": "q3:secondary:210",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.017037888564896166
+        },
+        {
+          "id": "q3:secondary:211",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.011392803482586561
+        }
+      ],
+      "reference_glb_sha256": "1bd20c40b9f38fbb2a154e2ca9898b2044994e694413db63ffc448bad6bc6176",
+      "before_metrics": {
+        "vertices": 4500,
+        "triangles": 3996,
+        "bounds_blender": [
+          [
+            -1.682642,
+            -2.028157,
+            0.0
+          ],
+          [
+            1.569776,
+            1.844885,
+            4.20719
+          ]
+        ],
+        "height_m": 4.20719,
+        "triangles_by_material": {
+          "Painted_Bark": 2412,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "66e87d7f8fb38e6577169a46b1ad607d5f977f9ab7bc9671fb8a5b04a31d7900"
+      }
+    },
+    "adulto-00": {
+      "metrics": {
+        "vertices": 5576,
+        "triangles": 5820,
+        "bounds_blender": [
+          [
+            -7.238227,
+            -6.023726,
+            0.0
+          ],
+          [
+            8.0343,
+            6.859629,
+            10.721216
+          ]
+        ],
+        "height_m": 10.721216,
+        "triangles_by_material": {
+          "Painted_Bark": 4236,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "7da65386422fd127ac796a18c3738036ad7cd2dbb81b34e542d5a76ac95a1f12"
+      },
+      "glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397",
+      "duration_seconds": 4.115,
+      "export_validation": {
+        "triangles": 5820,
+        "materials": {
+          "Painted_Bark": 4236,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -7.238226890563965,
+            0.0,
+            -6.859629154205322
+          ],
+          [
+            8.034299850463867,
+            10.721216201782227,
+            6.023725509643555
+          ]
+        ],
+        "dimensions_m": [
+          15.272526741027832,
+          10.721216201782227,
+          12.883354663848877
+        ],
+        "geometry_sha256": "26836e7b14bb8744824737493518dd325a3a2c442d8c949ec506c1a648e942fc",
+        "glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397",
+        "crossed_panels_valid": true,
+        "wood_and_remaining_supports_exact": false,
+        "source_distribution_exact": true,
+        "groups": 264,
+        "panels": 792,
+        "kept_supports": 108,
+        "resource_sha256": {
+          "foliage": {
+            "path": "assets/roble-pintado/v0.3.0/foliage.png",
+            "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+          },
+          "bark": {
+            "path": "assets/roble-pintado/v0.2.0/bark.png",
+            "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+          },
+          "templates": {
+            "path": "assets/roble-pintado/v0.3.0/templates.json",
+            "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+          },
+          "source_foliage": {
+            "path": "assets/roble-pintado/v0.2.0/foliage.png",
+            "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+          },
+          "source_layout": {
+            "path": "assets/roble-pintado/v0.2.0/manifest.json",
+            "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+          }
+        },
+        "channel_sha256": {
+          "Painted_Bark": "e11d5722601ca0b9ecd111fc7f03946015a4813a7f65782d34cd7f3ac43b1deb",
+          "Painted_Foliage": "679f4fddd0f9803753f69d639fb2b52f7dc4b611f99513d7230cfa10acf5b118"
+        },
+        "selective_wood_valid": true,
+        "trunk_primary_remaining_supports_exact": true,
+        "wood_optimization_version": "oak-wood-rings-0.1.0",
+        "wood_tolerance_m": 0.02
+      },
+      "wood_optimization": [
+        {
+          "id": "q3:trunk:0",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "original_ring_count": 12,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:100",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:101",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:102",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:103",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:104",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:105",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:106",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:107",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:108",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:secondary:200",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:201",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:202",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01641252141335059
+        },
+        {
+          "id": "q3:secondary:203",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:204",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.016504971965232967
+        },
+        {
+          "id": "q3:secondary:205",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.014562152131158641
+        },
+        {
+          "id": "q3:secondary:206",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:207",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.019688196990565395
+        },
+        {
+          "id": "q3:secondary:208",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.010267252260322829
+        },
+        {
+          "id": "q3:secondary:209",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:210",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01988334161220758
+        },
+        {
+          "id": "q3:secondary:211",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.010472274854803246
+        },
+        {
+          "id": "q3:secondary:212",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.019338930815918212
+        },
+        {
+          "id": "q3:secondary:213",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.015743537818113468
+        },
+        {
+          "id": "q3:secondary:214",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.008162025032967899
+        },
+        {
+          "id": "q3:secondary:215",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:216",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.016359982693908565
+        },
+        {
+          "id": "q3:secondary:217",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.009691376407443464
+        },
+        {
+          "id": "q3:secondary:218",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.018328501493052814
+        },
+        {
+          "id": "q3:secondary:219",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01652577387375994
+        },
+        {
+          "id": "q3:secondary:220",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.009188704219748454
+        },
+        {
+          "id": "q3:secondary:221",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.015167978168594531
+        },
+        {
+          "id": "q3:secondary:222",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.012582973949292822
+        },
+        {
+          "id": "q3:secondary:223",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.007382693406764403
+        },
+        {
+          "id": "q3:secondary:224",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.012640564776972903
+        },
+        {
+          "id": "q3:secondary:225",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.010215629976401032
+        },
+        {
+          "id": "q3:secondary:226",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.008436461000184298
+        }
+      ],
+      "reference_glb_sha256": "03614689d20a03eade34090219d139bf5065e4f9ae112079e7dfa940d754477b",
+      "before_metrics": {
+        "vertices": 6072,
+        "triangles": 6812,
+        "bounds_blender": [
+          [
+            -7.238227,
+            -6.023726,
+            0.0
+          ],
+          [
+            8.0343,
+            6.859629,
+            10.721216
+          ]
+        ],
+        "height_m": 10.721216,
+        "triangles_by_material": {
+          "Painted_Bark": 5228,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "b77c25121117b51efdb4010d81cbe5fd0e9aeeb82b92a1a3e81e6861e1f436d8"
+      }
+    },
+    "viejo-00": {
+      "metrics": {
+        "vertices": 6142,
+        "triangles": 6900,
+        "bounds_blender": [
+          [
+            -6.668093,
+            -7.835924,
+            0.0
+          ],
+          [
+            7.652547,
+            7.897913,
+            9.910583
+          ]
+        ],
+        "height_m": 9.910583,
+        "triangles_by_material": {
+          "Painted_Bark": 5316,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "5181408ebd84095e306175ba9537eee8e806573b5a697a196ed56284a125b013"
+      },
+      "glb_sha256": "c5fde69a0cc46d7135bcf9a8d52c6f253de75b66d87f7c17c056f252a2a316ae",
+      "duration_seconds": 4.57,
+      "export_validation": {
+        "triangles": 6900,
+        "materials": {
+          "Painted_Bark": 5316,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -6.668092727661133,
+            0.0,
+            -7.897912979125977
+          ],
+          [
+            7.652547359466553,
+            9.91058349609375,
+            7.83592414855957
+          ]
+        ],
+        "dimensions_m": [
+          14.320640087127686,
+          9.91058349609375,
+          15.733837127685547
+        ],
+        "geometry_sha256": "4b160be26894c20021032c51d44a8a03e076df8ce573c49aa011c12382c2cd74",
+        "glb_sha256": "c5fde69a0cc46d7135bcf9a8d52c6f253de75b66d87f7c17c056f252a2a316ae",
+        "crossed_panels_valid": true,
+        "wood_and_remaining_supports_exact": false,
+        "source_distribution_exact": true,
+        "groups": 264,
+        "panels": 792,
+        "kept_supports": 113,
+        "resource_sha256": {
+          "foliage": {
+            "path": "assets/roble-pintado/v0.3.0/foliage.png",
+            "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+          },
+          "bark": {
+            "path": "assets/roble-pintado/v0.2.0/bark.png",
+            "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+          },
+          "templates": {
+            "path": "assets/roble-pintado/v0.3.0/templates.json",
+            "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+          },
+          "source_foliage": {
+            "path": "assets/roble-pintado/v0.2.0/foliage.png",
+            "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+          },
+          "source_layout": {
+            "path": "assets/roble-pintado/v0.2.0/manifest.json",
+            "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+          }
+        },
+        "channel_sha256": {
+          "Painted_Bark": "90df89418c8382b7ab3f4a9e6c39e8c0566fecbf519a33ed16ee0ebb2b32b0c1",
+          "Painted_Foliage": "898b863f0ed16e171903ef36af3133530bc4bee3c8bcfbb5024ee0e4299cd376"
+        },
+        "selective_wood_valid": true,
+        "trunk_primary_remaining_supports_exact": true,
+        "wood_optimization_version": "oak-wood-rings-0.1.0",
+        "wood_tolerance_m": 0.02
+      },
+      "wood_optimization": [
+        {
+          "id": "q3:trunk:0",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "original_ring_count": 12,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:100",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:101",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:102",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:103",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:104",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:105",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:106",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:107",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:108",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:109",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:primary:110",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "original_ring_count": 9,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0,
+          "preserved_exact": true
+        },
+        {
+          "id": "q3:secondary:200",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:201",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:202",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.012632622995086489
+        },
+        {
+          "id": "q3:secondary:203",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:204",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:205",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01289114332450162
+        },
+        {
+          "id": "q3:secondary:206",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01792735828496759
+        },
+        {
+          "id": "q3:secondary:207",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.015949334876415318
+        },
+        {
+          "id": "q3:secondary:208",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01337031310631515
+        },
+        {
+          "id": "q3:secondary:209",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:210",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:211",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.011808765524327865
+        },
+        {
+          "id": "q3:secondary:212",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:213",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.019877897208433113
+        },
+        {
+          "id": "q3:secondary:214",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.015710775045557096
+        },
+        {
+          "id": "q3:secondary:215",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:216",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.013414012805743898
+        },
+        {
+          "id": "q3:secondary:217",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            3,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01679704156841281
+        },
+        {
+          "id": "q3:secondary:218",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01662724846507945
+        },
+        {
+          "id": "q3:secondary:219",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.011969503158510399
+        },
+        {
+          "id": "q3:secondary:220",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.008513046000648842
+        },
+        {
+          "id": "q3:secondary:221",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:222",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.014155899810516112
+        },
+        {
+          "id": "q3:secondary:223",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.010608235562821646
+        },
+        {
+          "id": "q3:secondary:224",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:225",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01869887401111331
+        },
+        {
+          "id": "q3:secondary:226",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01176846527551204
+        },
+        {
+          "id": "q3:secondary:227",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0144742171652894
+        },
+        {
+          "id": "q3:secondary:228",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.012410256214177101
+        },
+        {
+          "id": "q3:secondary:229",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.009719312880949993
+        },
+        {
+          "id": "q3:secondary:230",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.0
+        },
+        {
+          "id": "q3:secondary:231",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01668706689330483
+        },
+        {
+          "id": "q3:secondary:232",
+          "version": "oak-wood-rings-0.1.0",
+          "tolerance_m": 0.02,
+          "retained_rings": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "original_ring_count": 7,
+          "sides": 8,
+          "caps_preserved": true,
+          "max_correspondence_error_m": 0.01106484612204495
+        }
+      ],
+      "reference_glb_sha256": "8ec1cd7746415c7b0a25d6836933c4ab7683eeccd040cc8cfe4018c34aa02864",
+      "before_metrics": {
+        "vertices": 6582,
+        "triangles": 7780,
+        "bounds_blender": [
+          [
+            -6.668093,
+            -7.835924,
+            0.0
+          ],
+          [
+            7.652547,
+            7.897913,
+            9.910583
+          ]
+        ],
+        "height_m": 9.910583,
+        "triangles_by_material": {
+          "Painted_Bark": 6196,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "171a173df6feca2d3881b96c79fc477c4ca5cd97025453e5314436ba0e69749e"
+      }
+    }
+  },
+  "godot": [
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    },
+    {
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "msaa": 2,
+      "passed": true,
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "capture_count": 18
+    }
+  ],
+  "mask_metrics": {
+    "pilot": {
+      "tree": {
+        "front": {
+          "old_pixels": 206485,
+          "new_pixels": 206478,
+          "coverage_ratio": 0.9999660992323898,
+          "iou": 0.9999273569052104,
+          "xor_pixels": 15
+        },
+        "side": {
+          "old_pixels": 206707,
+          "new_pixels": 206706,
+          "coverage_ratio": 0.9999951622344672,
+          "iou": 0.99993711087353,
+          "xor_pixels": 13
+        },
+        "perspective": {
+          "old_pixels": 223134,
+          "new_pixels": 223134,
+          "coverage_ratio": 1.0,
+          "iou": 0.9999282967796291,
+          "xor_pixels": 16
+        },
+        "back": {
+          "old_pixels": 215835,
+          "new_pixels": 215834,
+          "coverage_ratio": 0.9999953668311442,
+          "iou": 0.9999675682687942,
+          "xor_pixels": 7
+        },
+        "top": {
+          "old_pixels": 313788,
+          "new_pixels": 313785,
+          "coverage_ratio": 0.9999904394049486,
+          "iou": 0.9999904394049486,
+          "xor_pixels": 3
+        },
+        "below": {
+          "old_pixels": 233154,
+          "new_pixels": 233157,
+          "coverage_ratio": 1.0000128670320905,
+          "iou": 0.9997898619092547,
+          "xor_pixels": 49
+        },
+        "close": {
+          "old_pixels": 754076,
+          "new_pixels": 754063,
+          "coverage_ratio": 0.9999827603583724,
+          "iou": 0.9999774559130488,
+          "xor_pixels": 17
+        },
+        "medium": {
+          "old_pixels": 18395,
+          "new_pixels": 18395,
+          "coverage_ratio": 1.0,
+          "iou": 1.0,
+          "xor_pixels": 0
+        },
+        "far": {
+          "old_pixels": 2924,
+          "new_pixels": 2920,
+          "coverage_ratio": 0.9986320109439124,
+          "iou": 0.9986320109439124,
+          "xor_pixels": 4
+        }
+      },
+      "wood": {
+        "front": {
+          "old_pixels": 50030,
+          "new_pixels": 50066,
+          "coverage_ratio": 1.0007195682590446,
+          "iou": 0.9899801192842942,
+          "xor_pixels": 504
+        },
+        "side": {
+          "old_pixels": 51413,
+          "new_pixels": 51437,
+          "coverage_ratio": 1.0004668080057573,
+          "iou": 0.9868253293667658,
+          "xor_pixels": 682
+        },
+        "perspective": {
+          "old_pixels": 53126,
+          "new_pixels": 53143,
+          "coverage_ratio": 1.0003199939765839,
+          "iou": 0.9896463275355264,
+          "xor_pixels": 553
+        },
+        "back": {
+          "old_pixels": 56581,
+          "new_pixels": 56561,
+          "coverage_ratio": 0.999646524451671,
+          "iou": 0.9888203343352845,
+          "xor_pixels": 636
+        },
+        "top": {
+          "old_pixels": 61303,
+          "new_pixels": 61278,
+          "coverage_ratio": 0.9995921896155163,
+          "iou": 0.9995921896155163,
+          "xor_pixels": 25
+        },
+        "below": {
+          "old_pixels": 57456,
+          "new_pixels": 57399,
+          "coverage_ratio": 0.9990079365079365,
+          "iou": 0.9907270994020279,
+          "xor_pixels": 535
+        },
+        "close": {
+          "old_pixels": 277267,
+          "new_pixels": 277374,
+          "coverage_ratio": 1.000385909610592,
+          "iou": 0.9951043341570713,
+          "xor_pixels": 1361
+        },
+        "medium": {
+          "old_pixels": 4524,
+          "new_pixels": 4520,
+          "coverage_ratio": 0.9991158267020336,
+          "iou": 0.9898789878987899,
+          "xor_pixels": 46
+        },
+        "far": {
+          "old_pixels": 740,
+          "new_pixels": 742,
+          "coverage_ratio": 1.0027027027027027,
+          "iou": 0.9448818897637795,
+          "xor_pixels": 42
+        }
+      }
+    },
+    "joven-07": {
+      "tree": {
+        "front": {
+          "old_pixels": 180058,
+          "new_pixels": 180058,
+          "coverage_ratio": 1.0,
+          "iou": 0.9999555708589264,
+          "xor_pixels": 8
+        },
+        "side": {
+          "old_pixels": 200187,
+          "new_pixels": 200195,
+          "coverage_ratio": 1.0000399626349363,
+          "iou": 0.999960038962012,
+          "xor_pixels": 8
+        },
+        "perspective": {
+          "old_pixels": 187891,
+          "new_pixels": 187891,
+          "coverage_ratio": 1.0,
+          "iou": 1.0,
+          "xor_pixels": 0
+        },
+        "back": {
+          "old_pixels": 190458,
+          "new_pixels": 190462,
+          "coverage_ratio": 1.0000210020056914,
+          "iou": 0.999957997311828,
+          "xor_pixels": 8
+        },
+        "top": {
+          "old_pixels": 216297,
+          "new_pixels": 216297,
+          "coverage_ratio": 1.0,
+          "iou": 1.0,
+          "xor_pixels": 0
+        },
+        "below": {
+          "old_pixels": 201291,
+          "new_pixels": 201291,
+          "coverage_ratio": 1.0,
+          "iou": 1.0,
+          "xor_pixels": 0
+        },
+        "close": {
+          "old_pixels": 523296,
+          "new_pixels": 523293,
+          "coverage_ratio": 0.9999942671069528,
+          "iou": 0.9999942671069528,
+          "xor_pixels": 3
+        },
+        "medium": {
+          "old_pixels": 15515,
+          "new_pixels": 15515,
+          "coverage_ratio": 1.0,
+          "iou": 1.0,
+          "xor_pixels": 0
+        },
+        "far": {
+          "old_pixels": 2502,
+          "new_pixels": 2504,
+          "coverage_ratio": 1.0007993605115908,
+          "iou": 0.9992012779552716,
+          "xor_pixels": 2
+        }
+      },
+      "wood": {
+        "front": {
+          "old_pixels": 29095,
+          "new_pixels": 29040,
+          "coverage_ratio": 0.998109640831758,
+          "iou": 0.9537892791127541,
+          "xor_pixels": 1375
+        },
+        "side": {
+          "old_pixels": 30068,
+          "new_pixels": 30048,
+          "coverage_ratio": 0.9993348410270054,
+          "iou": 0.9665031076218515,
+          "xor_pixels": 1024
+        },
+        "perspective": {
+          "old_pixels": 29196,
+          "new_pixels": 29247,
+          "coverage_ratio": 1.0017468146321413,
+          "iou": 0.9559236947791164,
+          "xor_pixels": 1317
+        },
+        "back": {
+          "old_pixels": 29566,
+          "new_pixels": 29596,
+          "coverage_ratio": 1.0010146790232024,
+          "iou": 0.9502241561181435,
+          "xor_pixels": 1510
+        },
+        "top": {
+          "old_pixels": 15573,
+          "new_pixels": 15536,
+          "coverage_ratio": 0.9976240929814423,
+          "iou": 0.9976240929814423,
+          "xor_pixels": 37
+        },
+        "below": {
+          "old_pixels": 28840,
+          "new_pixels": 28848,
+          "coverage_ratio": 1.0002773925104023,
+          "iou": 0.9533403311549792,
+          "xor_pixels": 1378
+        },
+        "close": {
+          "old_pixels": 111046,
+          "new_pixels": 111351,
+          "coverage_ratio": 1.0027466095131747,
+          "iou": 0.9745804847731511,
+          "xor_pixels": 2863
+        },
+        "medium": {
+          "old_pixels": 2558,
+          "new_pixels": 2567,
+          "coverage_ratio": 1.0035183737294762,
+          "iou": 0.9620980091883614,
+          "xor_pixels": 99
+        },
+        "far": {
+          "old_pixels": 433,
+          "new_pixels": 432,
+          "coverage_ratio": 0.9976905311778291,
+          "iou": 0.9525959367945824,
+          "xor_pixels": 21
+        }
+      }
+    },
+    "adulto-00": {
+      "tree": {
+        "front": {
+          "old_pixels": 205339,
+          "new_pixels": 205343,
+          "coverage_ratio": 1.0000194799818836,
+          "iou": 0.9999318230516002,
+          "xor_pixels": 14
+        },
+        "side": {
+          "old_pixels": 182841,
+          "new_pixels": 182840,
+          "coverage_ratio": 0.9999945307671693,
+          "iou": 0.9999726541349683,
+          "xor_pixels": 5
+        },
+        "perspective": {
+          "old_pixels": 189480,
+          "new_pixels": 189483,
+          "coverage_ratio": 1.000015832805573,
+          "iou": 0.9999419485241732,
+          "xor_pixels": 11
+        },
+        "back": {
+          "old_pixels": 199301,
+          "new_pixels": 199306,
+          "coverage_ratio": 1.0000250876814467,
+          "iou": 0.9998244038510744,
+          "xor_pixels": 35
+        },
+        "top": {
+          "old_pixels": 282608,
+          "new_pixels": 282607,
+          "coverage_ratio": 0.9999964615297514,
+          "iou": 0.9999964615297514,
+          "xor_pixels": 1
+        },
+        "below": {
+          "old_pixels": 212272,
+          "new_pixels": 212279,
+          "coverage_ratio": 1.000032976558378,
+          "iou": 0.9999010768491563,
+          "xor_pixels": 21
+        },
+        "close": {
+          "old_pixels": 757328,
+          "new_pixels": 757313,
+          "coverage_ratio": 0.9999801935224896,
+          "iou": 0.9999669894220904,
+          "xor_pixels": 25
+        },
+        "medium": {
+          "old_pixels": 15638,
+          "new_pixels": 15638,
+          "coverage_ratio": 1.0,
+          "iou": 1.0,
+          "xor_pixels": 0
+        },
+        "far": {
+          "old_pixels": 2483,
+          "new_pixels": 2487,
+          "coverage_ratio": 1.0016109544905356,
+          "iou": 0.9983916365098512,
+          "xor_pixels": 4
+        }
+      },
+      "wood": {
+        "front": {
+          "old_pixels": 37389,
+          "new_pixels": 37391,
+          "coverage_ratio": 1.0000534916686725,
+          "iou": 0.9798782102197511,
+          "xor_pixels": 760
+        },
+        "side": {
+          "old_pixels": 32582,
+          "new_pixels": 32588,
+          "coverage_ratio": 1.0001841507580873,
+          "iou": 0.9786258614931536,
+          "xor_pixels": 704
+        },
+        "perspective": {
+          "old_pixels": 33704,
+          "new_pixels": 33687,
+          "coverage_ratio": 0.9994956088298125,
+          "iou": 0.9810976864508922,
+          "xor_pixels": 643
+        },
+        "back": {
+          "old_pixels": 33247,
+          "new_pixels": 33276,
+          "coverage_ratio": 1.0008722591512016,
+          "iou": 0.9795566135991668,
+          "xor_pixels": 687
+        },
+        "top": {
+          "old_pixels": 36724,
+          "new_pixels": 36704,
+          "coverage_ratio": 0.9994553970155756,
+          "iou": 0.9994553970155756,
+          "xor_pixels": 20
+        },
+        "below": {
+          "old_pixels": 32753,
+          "new_pixels": 32749,
+          "coverage_ratio": 0.9998778737825542,
+          "iou": 0.980527923079249,
+          "xor_pixels": 644
+        },
+        "close": {
+          "old_pixels": 184244,
+          "new_pixels": 184227,
+          "coverage_ratio": 0.9999077310523002,
+          "iou": 0.9872128831146418,
+          "xor_pixels": 2371
+        },
+        "medium": {
+          "old_pixels": 2897,
+          "new_pixels": 2883,
+          "coverage_ratio": 0.9951674145667933,
+          "iou": 0.9753930280246069,
+          "xor_pixels": 72
+        },
+        "far": {
+          "old_pixels": 466,
+          "new_pixels": 464,
+          "coverage_ratio": 0.9957081545064378,
+          "iou": 0.9375,
+          "xor_pixels": 30
+        }
+      }
+    },
+    "viejo-00": {
+      "tree": {
+        "front": {
+          "old_pixels": 170376,
+          "new_pixels": 170369,
+          "coverage_ratio": 0.9999589144010893,
+          "iou": 0.9998884858729209,
+          "xor_pixels": 19
+        },
+        "side": {
+          "old_pixels": 202731,
+          "new_pixels": 202731,
+          "coverage_ratio": 1.0,
+          "iou": 0.9999112163361942,
+          "xor_pixels": 18
+        },
+        "perspective": {
+          "old_pixels": 197686,
+          "new_pixels": 197692,
+          "coverage_ratio": 1.0000303511629554,
+          "iou": 0.9999696497582098,
+          "xor_pixels": 6
+        },
+        "back": {
+          "old_pixels": 197218,
+          "new_pixels": 197213,
+          "coverage_ratio": 0.9999746473445629,
+          "iou": 0.9998935231663169,
+          "xor_pixels": 21
+        },
+        "top": {
+          "old_pixels": 288097,
+          "new_pixels": 288097,
+          "coverage_ratio": 1.0,
+          "iou": 1.0,
+          "xor_pixels": 0
+        },
+        "below": {
+          "old_pixels": 205853,
+          "new_pixels": 205849,
+          "coverage_ratio": 0.9999805686582173,
+          "iou": 0.9998834176126842,
+          "xor_pixels": 24
+        },
+        "close": {
+          "old_pixels": 786931,
+          "new_pixels": 786938,
+          "coverage_ratio": 1.0000088953161077,
+          "iou": 0.9999911047630182,
+          "xor_pixels": 7
+        },
+        "medium": {
+          "old_pixels": 16271,
+          "new_pixels": 16272,
+          "coverage_ratio": 1.0000614590375514,
+          "iou": 0.9999385447394297,
+          "xor_pixels": 1
+        },
+        "far": {
+          "old_pixels": 2588,
+          "new_pixels": 2589,
+          "coverage_ratio": 1.000386398763524,
+          "iou": 0.9988416988416988,
+          "xor_pixels": 3
+        }
+      },
+      "wood": {
+        "front": {
+          "old_pixels": 44396,
+          "new_pixels": 44368,
+          "coverage_ratio": 0.9993693125506803,
+          "iou": 0.9905812701829925,
+          "xor_pixels": 420
+        },
+        "side": {
+          "old_pixels": 52012,
+          "new_pixels": 51994,
+          "coverage_ratio": 0.999653926017073,
+          "iou": 0.9904311714159952,
+          "xor_pixels": 500
+        },
+        "perspective": {
+          "old_pixels": 46127,
+          "new_pixels": 46153,
+          "coverage_ratio": 1.0005636611962625,
+          "iou": 0.9913251764096588,
+          "xor_pixels": 402
+        },
+        "back": {
+          "old_pixels": 47296,
+          "new_pixels": 47306,
+          "coverage_ratio": 1.0002114343707713,
+          "iou": 0.991118033338946,
+          "xor_pixels": 422
+        },
+        "top": {
+          "old_pixels": 56541,
+          "new_pixels": 56531,
+          "coverage_ratio": 0.9998231371924798,
+          "iou": 0.9998231371924798,
+          "xor_pixels": 10
+        },
+        "below": {
+          "old_pixels": 49465,
+          "new_pixels": 49481,
+          "coverage_ratio": 1.0003234610330536,
+          "iou": 0.9923083118556701,
+          "xor_pixels": 382
+        },
+        "close": {
+          "old_pixels": 263527,
+          "new_pixels": 263393,
+          "coverage_ratio": 0.9994915132035807,
+          "iou": 0.9930101670297748,
+          "xor_pixels": 1848
+        },
+        "medium": {
+          "old_pixels": 3903,
+          "new_pixels": 3903,
+          "coverage_ratio": 1.0,
+          "iou": 0.9887898089171975,
+          "xor_pixels": 44
+        },
+        "far": {
+          "old_pixels": 650,
+          "new_pixels": 646,
+          "coverage_ratio": 0.9938461538461538,
+          "iou": 0.9606656580937972,
+          "xor_pixels": 26
+        }
+      }
+    }
+  },
+  "capture_sha256": {
+    "new-joven-07-wood--close.png": "8b88a902e08ff9c35d61d8844e2554534495c58f9e7a16861c14c44c15b1f8c8",
+    "new-adulto-00-wood--below.png": "09ee3a7bcbd53264333dbf8e52d061085898b174cb2a42f2ab93560448c1391f",
+    "new-pilot-tree--back.png": "45bb6968f3eae2c9f77df1cfab77987872d88c8a9614e9672cd29218a35807a2",
+    "before-joven-07-tree--mask-below.png": "ed4300a6cd2e3e4089c9acdba9d4704d507d29d66e38df3e4f0a05c06a38c3fc",
+    "before-joven-07-wood--mask-close.png": "f75bcf16000942ef6d1d98537e281c113aea502e386ee94d6e09baf2b080a387",
+    "before-pilot-wood--front.png": "9330bf80e0f7d4210f92bcfd1f018d7b17149f4e62331edf16dbf0f5cb158db9",
+    "new-viejo-00-tree--mask-side.png": "5ccd62c69550548cf8e0d3d33a94158ca98ebdc113b654c4bf10b4c5b0cd6c9d",
+    "new-adulto-00-tree--mask-front.png": "51a61043e01dec6d80427ad12d4a4f1c688a11469d2ab873dbba9c850d2da500",
+    "before-pilot-wood--close.png": "3733078a93e7e11aafc414552722d372bbe75f78014beb404f300af695c0a991",
+    "before-adulto-00-wood--mask-front.png": "ad826269ced45ee85712a3d01548b0d38d06354c2fba800d2c34406ba534980b",
+    "before-pilot-tree--below.png": "d7ef9e3053bf31918f48fffebe80343a36daf129b24ec0da5d339f5655d836d4",
+    "before-pilot-wood--mask-medium.png": "ec7282454701f075ef67e28426ecd70b2dc244c6db338c6e4e9bcffd98415ddc",
+    "before-viejo-00-wood--mask-below.png": "5e2d5180a993ba16d4267384e8fe48135f58c1d8b2f6f38421a1a61584cd6b22",
+    "before-joven-07-wood--mask-far.png": "86d8145844ebddfb28cbc96707ed4cb2ff02bf928e05a62542123a51bac5bd6b",
+    "before-viejo-00-wood--below.png": "11bd4f8101e963094171d148ef5b0c7f5d8b5971a38c6f95810c298c857fcd35",
+    "before-viejo-00-tree--perspective.png": "78b6c15394343a2e6e76b5b190a2bc8ebca684b29693c7c3cec013906b9ec4f5",
+    "new-viejo-00-wood--below.png": "30c33004a90adaa79dbbb62d73745861254c933e06c84354b463ffbda1156960",
+    "new-viejo-00-wood--perspective.png": "8fe14f7527523d04d79fdc8f890fd706d6bfdf8c04c16c75c374aec7ae3c52c6",
+    "before-viejo-00-tree--side.png": "dc95c32f3afae65365195815ebb738952a2f440381c1fbabe411c796ac70ed34",
+    "before-joven-07-wood--mask-back.png": "e1c76391ec68a4a889ba64e3727c32ffab9f07b7065f88c5b7156146d6ddde9e",
+    "new-joven-07-wood--mask-back.png": "2f97c6de08618fff70d5d9294c2acc6fccdc0451413ae0dbdd57254e93743595",
+    "new-adulto-00-tree--mask-below.png": "d0320233cfd82bbb29e4a29d2c92f8d4e00d41022b9e12df87886b9061b7adf9",
+    "before-joven-07-tree--mask-close.png": "86c1adb39c6d2d23593846db52bb5c24ca74f80e54dd0c94439b32ae44c623fd",
+    "before-joven-07-tree--far.png": "57e1090d4e9d7f9048046356a525220802f8879900b953df4f1d4a68fc198301",
+    "new-adulto-00-wood--mask-below.png": "f4605affae0656545d34716344cf03c2b33155533932311bad2779a28ab907a4",
+    "new-viejo-00-tree--mask-far.png": "8e4fbb7216991ddfa4a03c34ebbcad1b7ed3db36368deb68cc853aa3a8f0e15f",
+    "new-pilot-wood--side.png": "9dac23b2f23f421eefe204d5de6ab266f05705c0cd63a0d338ea3f10dac40b9b",
+    "before-pilot-wood--perspective.png": "6fd0ab2c89e2db1982e198efe58e36f696e87aa52b3fc4c7bd6e665e42030001",
+    "before-viejo-00-wood--front.png": "8ec300cc68b03c58c3de1bbcdf8ccc94ba5a8048181e158d08728060a793c81a",
+    "new-adulto-00-wood--far.png": "af4a0bc43fe5b36143531d782ef7a0dfd6eaa60c03c755752ab5906d1988c838",
+    "new-joven-07-tree--close.png": "9fa19000b0ca3aa6d6425f91807580221ec33bf7d3801859e03c661ca52ab9c6",
+    "before-pilot-wood--medium.png": "61da42590db4c9db9bb3101128170bc584a8353680b8c2a20172c53983be8bc7",
+    "before-adulto-00-tree--close.png": "bde2aefc2cf369c9f6fb1606bd59fe05cb35bd64cdfce01c0467a25d8b3fca98",
+    "new-viejo-00-tree--mask-perspective.png": "7f7ac1e2f0b6afa4baec49e35b2fd5917e09f5d7f63e287985ff9b67992197d1",
+    "before-pilot-tree--side.png": "70033fcdb9a6820c1a9b107914188cd7bf96edb6293b2ea0eb207d0a52199f73",
+    "new-pilot-tree--perspective.png": "7f7381e68edd9914c5e06ea026e2a7bb5f71dd8085226cb59441587b3aa53547",
+    "new-viejo-00-tree--mask-below.png": "979ccf57f441389c8b9e72b7331f0c871e5fdb7ea80e97ecaf261104d5cee5e0",
+    "new-pilot-wood--close.png": "a7d2f0e9f629d205bdd3e2a4a36d3aa917bce9c649fc6f6717831d5edc7e46b3",
+    "new-viejo-00-wood--front.png": "3d89ee272a6e1d0e8813db43f6a525d9e719e8f994552e38584fa613610fb960",
+    "new-joven-07-tree--back.png": "932d5d96ac57f3aa5384b5f3d92af2d6ed4cf557245919bde3d85612a6f95a89",
+    "before-viejo-00-wood--mask-medium.png": "eeda9b201b8cb937f630bff1c696b1794d98bc5061ea7b9317f457eb58e0f910",
+    "new-adulto-00-wood--side.png": "8a11ae180b05e8c3e35344a71377957e199fa24c2bc204a098cb293c1fc20c0d",
+    "before-joven-07-wood--medium.png": "f49e7008dc3c866a463989ff2c32dbe3f57129b4fed3602f03290fd40dafa4c7",
+    "before-joven-07-tree--front.png": "76b226880a946fe103ec7c3ea62d91e7cf365516bff803ee7d661b4282a93023",
+    "new-viejo-00-wood--mask-top.png": "df560a22c9c35ceb5b440c1d80aeae18e0b93c8c989c51588fb95a3ae03f34de",
+    "before-joven-07-tree--close.png": "31a675bce882a52b61e6630bbdb32aa726a2f391222b0b8179fbfc025935d840",
+    "new-joven-07-tree--medium.png": "44ae9528e0e4dfbd2a10baa8ba2756b3f25699b9982b1c03cfef75af36595f5c",
+    "before-adulto-00-wood--mask-below.png": "f67c886a76376cafa8de62a607cfa264aef05ed19712c615626d6fae5e42f325",
+    "before-pilot-tree--back.png": "adffc32d95ae0ec1910102ef990a46e0179afd624d0890775e95a46d11d4eb12",
+    "new-joven-07-wood--side.png": "7d0a19057e9cf9d26dc2e9f42fd66abd420b9f923999ab106a880edcf7f92a30",
+    "new-pilot-wood--mask-far.png": "1248b0cb8bf96a1c3c92bc5b60cdaffd742f0d03a1b4bff061d35350eb7d12b2",
+    "before-pilot-tree--mask-back.png": "9931d7da1c25ba2644171b2d1ebe5548afa86c1b9ff9771ddcbb71c39861669d",
+    "new-joven-07-wood--mask-medium.png": "7eae6314ec2cd4028aabcda1f7c6aeee5ea3d8486f9e0ca5af344c2332d74f9c",
+    "new-adulto-00-tree--below.png": "b64ddffe76c97182ce41c10686500981773ef220279cf1bd3ee0c2099d9bf4d1",
+    "new-viejo-00-tree--far.png": "99e0f45732a40ef0b120d1bc40cd7910c0827cddbf1d995f853fcda5bb7119c2",
+    "before-viejo-00-tree--back.png": "8a35e88e1f5c651a8574576cb349ffd5ae36b946c4dc4d5c0a1bc8efe6f301a0",
+    "before-joven-07-tree--mask-front.png": "1e642bd947393da7cfcaf48b5065a5e908e6c37778b2bf31e59395af1705aa8f",
+    "before-viejo-00-tree--mask-side.png": "e80056ad12e672e524ddc2713279b8f32c914440d89b9f130508cd15b6af86d9",
+    "before-adulto-00-wood--far.png": "38c5da19244c3d1a0cd8e6c5dee9d0efdecd958553d1f624b1fcbc3f8928293e",
+    "before-adulto-00-wood--below.png": "353e7b0b1ec4e50624fd547c1ca6f471ac10ddea102da5f5a55ed84591638641",
+    "new-adulto-00-tree--mask-medium.png": "f7b616f19c33256ff2aa0063f7c8b9aefc173a2751fedaa7200369bbb68af872",
+    "before-pilot-wood--back.png": "8bd81e8e647b48b1d9f797a9c4e090204cc6339efe988fdff8994af24295e94c",
+    "new-adulto-00-wood--mask-far.png": "59625ba76382e4dcbab363b8efceb220b18ff5526252dcae3f285a3d7a79d203",
+    "before-adulto-00-wood--mask-far.png": "5af93a0c924723bbb817eb8752b28ce530753f14df3006ca6219d230e209d5f3",
+    "before-joven-07-wood--mask-side.png": "9c1d100a7d1f8a02750e1a21c85992ecac959f5d76495b684dbaee09b897c37d",
+    "new-joven-07-wood--medium.png": "0595c17ccb1a3494b09f30137697446c8169a76a4cbcee4ee101b2efdbca11bd",
+    "new-joven-07-wood--mask-far.png": "88132249f8003fbd284cd270b323bc97c5be39144662c3fc8c327a1c03c113e2",
+    "new-viejo-00-tree--mask-top.png": "e6b828a704a5ae695cf52b26e1324d2abe7ce8c50a1e22b1841fd6afbcbe62a6",
+    "new-viejo-00-wood--far.png": "7282a489ee52031ced66f407fd480c2bc09558f3a7a3e8e24290db551a5a6f36",
+    "before-joven-07-wood--mask-top.png": "a250601bd8ebfbeadbcdba7246adb5a6eea6b7129737a044cfb7f39ce7373fd9",
+    "new-joven-07-tree--below.png": "ceab831fff34eade753a1f885e46de7a80cf5776e49c5ffe5436e1971256a446",
+    "before-viejo-00-wood--far.png": "55a4171248131fc78e6823b650ee9d19ae93a8a6abc18bf39863e1fdf17118e1",
+    "before-viejo-00-tree--top.png": "68a089e1d6a61c2e7d09e2dc5ad05c13da6b8797077b848ba6712a1b7b0c9b6e",
+    "before-viejo-00-tree--close.png": "e0304973f59537cd216240227561ba39e4e5d2343c582346ef7e699b78f64d94",
+    "new-adulto-00-wood--front.png": "3257be519f59a294f4c70e9718a621c7501d08c2b3b63081f7bde9e6c72bbf78",
+    "new-adulto-00-tree--front.png": "6068b40fc46891c3ccc7a4f2639b77a80ef82420c61bfc2876c76cbafcaf4730",
+    "before-adulto-00-wood--medium.png": "736e0af4577462cdbfd8c6bf09a3f3898be9806b1a963ba6daac0d6be93319cc",
+    "before-viejo-00-wood--top.png": "93303cfa43e8cfcaf2da212ef302e33447b504508205f383e7fd60bde9fd4e04",
+    "before-viejo-00-wood--mask-perspective.png": "977e14e1be79337cdcba63c20547fae293f7b85bdb54053642ed4047b9ad5b3a",
+    "new-pilot-wood--front.png": "2c9081b440b35f158653c29ef599fbab7e7718ca69c317c08c10eafca2ae9ee2",
+    "before-pilot-tree--medium.png": "d289e404d0899d21e70cff9659de6e8c38a23f42cc3650af6c81c58e54d1239d",
+    "before-joven-07-tree--side.png": "8560c5c1b72eaa474e51afdc3dde9f536c727178169679a7d5d53f8e5cff9dc1",
+    "new-pilot-wood--perspective.png": "e2055323396ec987e2db273d041018ff735beef870f0e8f4d88afe681fcad35a",
+    "before-viejo-00-wood--side.png": "d64fbdd0e6e4fdc9b05a08ac382cf010aa771c346aab196ef2396301b125c017",
+    "before-adulto-00-tree--mask-front.png": "e683a7c84d8a908f059dc09f4cfa97ffb5b843ad4c736e8eafb0fe1e231c2af3",
+    "before-joven-07-wood--front.png": "15403bfa3f289117c376413baddf7b67817261c55eccbf3055008cbcfc31de80",
+    "before-adulto-00-tree--mask-side.png": "d52dbca2979a712463ea033aa580db2e211d1c09512d111305774eba5af08b8f",
+    "before-adulto-00-wood--mask-perspective.png": "8f6123e5093ac985b6638a368604925b2622275ff3a1487bd3893e9e2bf0aaf0",
+    "new-viejo-00-tree--back.png": "453fc43e2a360c728a740bd36f01cdf2bb143a096164d91cb168240d9b549617",
+    "before-joven-07-tree--mask-far.png": "5cb3ab646f42f9fee8a817348bd89a7f4183e63509f14d783d9b5c6721de9a27",
+    "before-pilot-tree--mask-perspective.png": "39915347aa432c85d6942e57bc052a8c681dfbb39bc459374faac310399681b6",
+    "new-pilot-tree--mask-medium.png": "ffea592af4670edd8eb8d8fbf5967f667c44a523018e4537a22fe568417ba3a3",
+    "new-pilot-wood--mask-perspective.png": "813f82ec18717326f627f702bfe31b0ea2e961dc00ca9fac6da955f042663fa7",
+    "new-joven-07-wood--mask-front.png": "a30b525bf71079bb74b34c8c24324d997f0e74287ca10a89a3dfeb73ae30b08f",
+    "before-viejo-00-wood--mask-back.png": "34e86d59ab49abbcf429edfaad6957ba17a88d0d2c2f4b8a55c0290e28ad9ddd",
+    "new-pilot-tree--front.png": "19c624812cd708370e65b50d435fcafd473abd8779d500b9fdefefa55f7f5aee",
+    "new-pilot-wood--top.png": "665dca42c75d4ba8d27e96c4ae3dc058d87dca16347b3eb3a44d439578b81067",
+    "before-joven-07-wood--mask-perspective.png": "92f3a48f835f966473625e07048d42b0deef25555c25bd6934da24dc379cc533",
+    "before-adulto-00-wood--perspective.png": "a43840f5ae22c98cce2a6e08b64dfa5f2c94d91909661ed9ff58bcb582530a2c",
+    "new-viejo-00-tree--medium.png": "509601ded8cb7a648ada7efea1e6a54e80638ae7a5e60cdef97036b82907e76a",
+    "before-viejo-00-tree--medium.png": "a803af7dc9b28adf5e49fc4bcdab2459cf2091071591a111cf55e5191aa07683",
+    "before-adulto-00-tree--mask-medium.png": "fa45e8c3da0eb68f6b6edf40f0fbaa528f2a1315b83da22574b0c839c4bb16f3",
+    "before-adulto-00-tree--mask-top.png": "ab91dfba95fa397a7dba08969a319cdeee2da218ae2cc55d8d20336144163422",
+    "new-adulto-00-tree--far.png": "4518743699d710500c0ee21713a4789ffd81e9c476e81b073b441b6e43ce71f3",
+    "new-adulto-00-wood--mask-close.png": "fc1b66eba23da0cf1ee65c17cefd36655cae26fcd5eda7988cd736f6f416954c",
+    "new-joven-07-tree--side.png": "d83a8b9e4f39f0f801dc9e9bd587f53747f8a0eca73f63920a94fca64a4af6b2",
+    "before-pilot-tree--top.png": "3c4b05937657aec927fa60aade11eb80cdf41d594eea7bb18d7fbbcb95afab20",
+    "new-pilot-wood--back.png": "3d970f0d227528985aefb6df3a159e3061db82d2388f0c1ec2f792c8781c9e26",
+    "new-adulto-00-wood--mask-side.png": "1f52e57082f909d9a29c827c318465520488cb0f44aa6c089564108b48685a8d",
+    "before-viejo-00-wood--mask-front.png": "385a205d6c5fb088bc85737d8e78ac87fdf0db2d26e5e6fc886a1954a47c9da6",
+    "before-adulto-00-wood--close.png": "86ba276bf146f9c1cbe06809dfa63624a7a1b89064d9bb0af2f55e66cc304d6d",
+    "before-adulto-00-tree--back.png": "9d6f27c8c54e22299a4caefa4f344dc8d04dd75f3f285cf5825211bab54efcd4",
+    "new-joven-07-wood--far.png": "2c4bfb4d128082e10f73cb9aec1cbb894fc50f24cbdeb1225fcabb7101ec2456",
+    "new-viejo-00-wood--top.png": "db0cc2293b8aa1ca85236e679eaeb676f4a5e67729b6fc3180c44b574d89eab6",
+    "new-pilot-wood--mask-medium.png": "adc60103e265247988358bd988da57e78e53396ec336d7a08321b12cbdaa2c49",
+    "new-joven-07-tree--mask-far.png": "6b57656bb997252d0ecaabdc84546d21b9a83050832a3bca1eb04f8a35c987ec",
+    "before-pilot-tree--mask-top.png": "e5fc3c46295b79d7c6d19a39243526cef610674d0dcfae632dd42156d3d58abc",
+    "before-joven-07-wood--side.png": "47af4c9029176cb612830801887100005042771b812ecf50fa0a116025f6cf2e",
+    "new-joven-07-wood--mask-top.png": "eb6ea7575354b97a2dd765149714b7b2e9f6a18c7238957964a5a83f175af9fd",
+    "before-viejo-00-wood--mask-close.png": "53112c2a5a5e9db482c9f901a5f63b2011ef0b3d72ac3bb8a417e67f4271d033",
+    "before-adulto-00-wood--mask-back.png": "512ea6eb0327ace122ef9ac195d3d4431efded045afeffdbafab9e569c97c274",
+    "before-pilot-tree--mask-close.png": "56896a5d370e87888f3272302574bff2fe9e2534242a06f5314d05d1ac336679",
+    "new-viejo-00-wood--mask-close.png": "f5dcdc9663e455e5b9301084f709cea3a44ff26c7f76c968a4bbab45e4ab3015",
+    "before-pilot-tree--close.png": "bb84528d191d9ffa66167bd53f5aa4be69e9b024ba7283c2b4c2fea10d466612",
+    "before-viejo-00-tree--mask-below.png": "2f474614c883dba0777630798ef3a244eed45a727532516a573c30de5e81f65a",
+    "new-adulto-00-wood--mask-medium.png": "0d63d2ebd3eac959161b52baf82833e122291df08e862c8cba5777a5e5b04b4b",
+    "before-pilot-wood--mask-side.png": "650468dd0f6ddd4f47641e8a48d70e72a44fb03b9bcce21ad8f64121e14e974d",
+    "before-joven-07-wood--perspective.png": "ca01e33794097d9e6913683f7f80d3ea2d30ac8cc2e672b666fa5b11d3b58330",
+    "new-pilot-tree--mask-below.png": "3055b8f421a85bbd33bed082eda26dfc3ece2da52349d9541ee33c1cf6b479bb",
+    "before-pilot-wood--mask-front.png": "736419611ba19f94efece9a52f005d4b8dcd3e985fddc7a3936382bc88390be5",
+    "before-pilot-tree--far.png": "6c22d3489a94cfc93eeb7d6dcd23599b15848d4b79c8b1f5efc03921efbcf509",
+    "new-adulto-00-wood--close.png": "e39a5176b31d2cebfbbf3a9377d00b576e83799d8ec33da64b84489670ce2c95",
+    "new-viejo-00-tree--mask-medium.png": "b970f70a39d51645c1d2bb134cde5f49a8a428930b891f3ad618f5f3df4c2a11",
+    "new-viejo-00-tree--below.png": "eee7bc2dbb43065ab943298e8b7a49f2923d8ea6cb60c3cf07bfb639603a6518",
+    "before-adulto-00-tree--mask-close.png": "35e5ca8daf69fbf475e44f04a2da384b7b57022d34fa3eefe2bddb77555af5bf",
+    "new-viejo-00-wood--mask-perspective.png": "085b6dbf269c59b8e26bab936795554ee7722030f8f2c0f7de178ba7d382399f",
+    "new-pilot-tree--side.png": "947137d1847a660d8df0e5e580ae0af94c38dd2fbcc4f1abce830603df7f1830",
+    "before-pilot-wood--top.png": "072f141923e993d68eb5d937078900399c8f19feefadbd440a54fa0f56ce4447",
+    "new-adulto-00-tree--close.png": "cb9e220252625cfdbcf967bc0693172825b1699a560be1b37b19123825d09bfb",
+    "new-adulto-00-wood--mask-back.png": "f3b4cad27ee3eb54ca7cbbf2cffc7c25f49dd1f0edde23b8e82384be89037566",
+    "before-joven-07-wood--close.png": "06b21a0164343210d939799ac9ccb470b107d9cd25613de759ba94bbebdeb4ce",
+    "before-viejo-00-wood--mask-far.png": "d884c704e2c5f2cd2d082de209831bad07d66eac2c2fcf7e54718fbf16290cf0",
+    "new-viejo-00-wood--mask-side.png": "34e3ca636b2d48c1205541e020ab8e88d2c4d85bed808457bd2db23c26f536cb",
+    "new-joven-07-tree--front.png": "fdd252d65a87cb95180fd953b22d61fc069fbd2f1fd9b429a52b5337ea01cd6b",
+    "new-viejo-00-wood--close.png": "d613c6a5a4b0325e6ceaa31e70012a062c2502c54aac74f57264c41c74574a67",
+    "before-joven-07-wood--mask-below.png": "1ba0347c9288e585402f278a7c1568e3b73e9cd66cb8a717e97d4cf73b96f390",
+    "before-adulto-00-wood--side.png": "61c47290a7409bde50b534c02511bf2bd58c9f451f53293414a542e8f532acdc",
+    "before-viejo-00-tree--mask-front.png": "0d0ea65a5203be39983dbbf8d655810f85a859ff5365fca49ce73d63a49705f0",
+    "before-pilot-tree--perspective.png": "5cbdceb131e3bfea0128ca89fedaba38e3504fec17451daa027b05d300dca7b0",
+    "before-viejo-00-tree--far.png": "05705981060c667154cd769580e24da2dafb2fd9a76553cc0279a2102a4bf90d",
+    "new-pilot-wood--mask-back.png": "035e7e7cae1b36abee1ffe8d8c2a0906d9e30353b9d7c35cd82563803b9330a8",
+    "before-joven-07-tree--below.png": "b73b3b79ecdf0fecde74e857f912022de82cfad8256b0721fd932db1fdf88486",
+    "before-viejo-00-wood--close.png": "584206af3b10c644f406802469adde3cb5409d06aad07d5517fbcc66d6cca6d6",
+    "new-viejo-00-tree--perspective.png": "d311f7ebc39906e9dbbbe6a244881c2d77ce5a74c960df79e7c97cf8f7004cfa",
+    "before-adulto-00-wood--back.png": "e8df8ed7d116f5629704c6c1d93479fe2d2d66c013fc07633b4a0e0a186fccb0",
+    "before-joven-07-wood--far.png": "bdfc271aef0a0a135d577d1d3da27d728278022bca50c59ae8a8a26b40f14caf",
+    "before-viejo-00-tree--mask-perspective.png": "615d252997f1e4bfc3d41028b96aa7be22b7ea66eb4b912125bf8ac779cf351e",
+    "new-joven-07-tree--mask-top.png": "f95184f45fa05baf6c875c267aa47ff592cfbf9e830afadd0b0beff9fb52ffed",
+    "before-viejo-00-wood--medium.png": "7714f9ea08d3c6b4d05ff9e74f9dfee1f1adcd7b4a5103e99bf5408c4e701169",
+    "new-adulto-00-tree--mask-perspective.png": "adae1b802f5288701c6d27cff664334ece7211fd0f48a1401180571f3563ecff",
+    "new-adulto-00-wood--mask-perspective.png": "2888bf096e69a725079704bbff0a82a793c0d73b3f54744f0746ee9d74e4105b",
+    "new-pilot-tree--mask-front.png": "7e39ebd3b9ebcab23b1af93295265f430d6989c852bf20d84df4a1e7ddc37e38",
+    "before-joven-07-tree--mask-perspective.png": "59f44bc627f35fa38701ce41e5129678b15ee338c96eb37500bb0d3cff45401a",
+    "new-viejo-00-tree--mask-front.png": "f81c70092468707615abdf0005a312fe54d49fc1ae38e58fbd10928917b3b0bb",
+    "new-viejo-00-wood--back.png": "040d47fc9acadff909c1156a0de63ad2e4f01a6d11dbe0efb32feb2cac7607d6",
+    "new-joven-07-wood--mask-close.png": "ae9f0a311706f7c787de1049f4ff6f964523fe14efff321b09a6670c13c56809",
+    "new-joven-07-wood--below.png": "e2c07b11bb2f519975f8631fff3ee8d24d00c298552d0d760f234e4d8c0b4ea1",
+    "new-pilot-wood--mask-front.png": "dc5b55cf97532cba69120ed815533aa0a841a8f665b0f10182a2fcc953f6617b",
+    "new-viejo-00-tree--mask-back.png": "fd04e65efae5e32a8a2a56d2e285fda77a2609108b769dc7bbfe0ddd18af4617",
+    "before-adulto-00-tree--mask-back.png": "4f5eee6d8035e45f23f156aef6251329f5f0f688881340b729b64e3328d5357e",
+    "new-pilot-tree--close.png": "7bbfe287d66fe86ad72bed6d33e8e229c4eafaccd3f7926355316c5fa702cb3c",
+    "before-adulto-00-wood--front.png": "b40a8cca05b37dd8ec68e0acf8df9a9f4aeefdb7e1b59ac6144489fca7485464",
+    "new-joven-07-tree--mask-below.png": "ed4300a6cd2e3e4089c9acdba9d4704d507d29d66e38df3e4f0a05c06a38c3fc",
+    "new-joven-07-wood--perspective.png": "a4e095f6837f3f8ba1f7d1db1621a9ade5cbff7a1ed1068df11a1790ad093dd0",
+    "before-adulto-00-tree--top.png": "bfa99a22dd127a22e83b585164e997030f6408676ec61bf3a37bf96ff1249a80",
+    "new-joven-07-wood--mask-below.png": "e401b6c8971cc143fb4301a0cad257098d23b75e6c28c5883b4a6f2493aa05c0",
+    "new-pilot-tree--mask-close.png": "d2e3f0add46b1fee2833ed117b8d11f778566015c2e4c08e94a4bd9d0cd2a556",
+    "before-joven-07-tree--top.png": "59545f0b3b670c080ff699b96c52850a4466c84c8b5147ae5e465495ff018525",
+    "before-joven-07-wood--mask-medium.png": "6b3ab1851f3afcf5bfa1b1d5d914d46d5fcbc6e9e2380e1db6310d0a5468d95e",
+    "new-adulto-00-wood--medium.png": "7cc16216b5d4b04893849d36de1c291dcdbd38d0ad7251c7e3f9709c2570a6d9",
+    "new-pilot-wood--below.png": "eb0ffb285af96faf696394cea7c7cc99d408ed34f636520b2a81132f801674b0",
+    "new-joven-07-tree--mask-close.png": "408a11c3f59599e52e4588d7e84cf350232f7de4a43faec84b92f191f39d7f53",
+    "new-adulto-00-tree--back.png": "aa9f7ceae169827f0c4e28f535eee69f6077c85dcda0914ba2aa5a9af2891dc7",
+    "before-pilot-tree--mask-far.png": "2885e41cad8cd5a7b165060e4f4c77d9da69fb3ee5f563389c76235a15771be6",
+    "before-pilot-wood--mask-below.png": "46dc712e719aa2fd8788cf803e7cbf0188ceadcf28ae326a8060c4051ff98abf",
+    "before-adulto-00-tree--perspective.png": "2c665c65ddf068649f74ba79eca424a894075d542d54618f68d3fbbca2ad16eb",
+    "before-joven-07-tree--mask-medium.png": "b5636f246bde92aa016082570d1542dbe1ba743eada54240ff1824db1beb7a95",
+    "new-pilot-tree--mask-back.png": "ed9e2c75dd88b4e6935957119d6e71777d4bbde6826c1637d488a73c8c839a5b",
+    "before-joven-07-wood--back.png": "6cc549179d72c6947b0a9b3addfd6d04bfe4366955374a38d957ff66d22eff7c",
+    "new-joven-07-tree--mask-medium.png": "b5636f246bde92aa016082570d1542dbe1ba743eada54240ff1824db1beb7a95",
+    "new-viejo-00-tree--top.png": "f4a4def82e492e44be8967acf5195c17da2e15606268cd8d78906c81cd3d6506",
+    "new-joven-07-tree--mask-perspective.png": "354a8e0e79f1c0a68a1f0940edf25ff1b97de5111da498e6a2727efa47eb01be",
+    "new-adulto-00-tree--mask-side.png": "20a38a35a48bd1d512fea819e5e48a256e5f58e38b4de87f73a36fad28a16431",
+    "new-pilot-wood--mask-below.png": "cdb284673f3fa8167435968d62442e16e7e32b96df23ccda457f2ec6572b6b0a",
+    "before-pilot-wood--mask-back.png": "f96c3a5036b883f3a92cd7b74240c829396367480379883f409846772228275d",
+    "before-joven-07-wood--top.png": "3d2b944c6fc1772f6e0a9bb64a9a9c897d9a9365d24a001c49424a0d4c06d30c",
+    "new-viejo-00-wood--mask-front.png": "f3a45c2f888f7ebac7bb33a6cff4abefcaee46d6b7213945d24a58432395bea3",
+    "new-joven-07-tree--mask-side.png": "473c0c43de82231eec40de7c61a3536195b37571ee0340f797fd553306081385",
+    "before-joven-07-wood--below.png": "28a1055e0736dc5a105481095e69b4d7910fe375e366cbcb450e8fbe15577630",
+    "new-viejo-00-tree--front.png": "22090630b545fc6779ddd5519ac0f2fc5436b6214b9eaa157e8473fc7b946d41",
+    "before-adulto-00-wood--mask-medium.png": "ebe72cc9c41f172333b0742abdb869ad24e8e70313b6ab6acd4912a97cc783e8",
+    "before-adulto-00-tree--side.png": "0909554f25b61b64f622916d28f6fd35fe68a8572c0cc7f7f03565a4c1b0a991",
+    "before-joven-07-tree--perspective.png": "50c904a900af7786d7f343e06561714266704eccd1f378c20d73fd4a23a2b04f",
+    "new-pilot-wood--mask-side.png": "7545ff25ed296e649326d2a61e8ff12e166933a1b070f1034dd7a92f1b388895",
+    "before-viejo-00-tree--mask-close.png": "9e7b2c5aea1047bfe2cb1850e13c582ae3743d050504fd3d5fa454b25259644d",
+    "before-viejo-00-tree--below.png": "941575ae083c5baf8f7ab3586f0f8db8380fdaeb7d3434fe1b4cd6376c9ef314",
+    "new-joven-07-wood--top.png": "da0c26475cbf9d5bb95f375a8033ac4b68eb7789aa594d31b32d19091c4c0c5e",
+    "new-viejo-00-wood--mask-back.png": "2c441734f93326114d7ea12a948860a4ef33590cb1d4e804b325f0db4a8e1129",
+    "before-viejo-00-tree--mask-medium.png": "3e0dc9b2f774d89aa938ee58f65510bd9833afb94cae0a67129c10ec40d8d8a6",
+    "new-pilot-wood--far.png": "e1ac78c1b48b5c78e63231330ba3ee0293c9fed9e1a606570cc7a36ba97df49f",
+    "before-pilot-wood--below.png": "c94aa04538010f9a56aea763c189e20f0aa2a4a5649b602a152b56e63d978c80",
+    "before-viejo-00-wood--mask-top.png": "b09b88c894d7a889fddf71be1d957f62a5ce45b9db167f31537de67f66520fd8",
+    "new-adulto-00-wood--back.png": "42bdc0ec5dc2ac1ca16a6c4ed708f29705968f6b6cbe738ceae87928a0e1c9d8",
+    "new-adulto-00-tree--mask-far.png": "3e1b871c20cfa78eac6c6a0f8bbcb5e6a8a33730d1f7c794e738228dc8df2912",
+    "before-adulto-00-tree--mask-perspective.png": "2cd443cc81024a984ac01df93c7f8f7f2ee568dd4e491112344fc13083b8abc7",
+    "new-joven-07-wood--front.png": "de80bda65c238238d48ed27e0ca5f94daf6f7fe1d253cb8e9ac41cc18f93f8d7",
+    "before-pilot-wood--mask-top.png": "e8fa9524317338f1155664449674c463be6736246393582353bf279b103405ea",
+    "new-adulto-00-tree--mask-top.png": "bd13ee9a3cdb5223b28c46a82950a118a4ef50fe74e7585842342b50b2490110",
+    "new-joven-07-tree--perspective.png": "a4e8303a4cd2738abcfd57420edad4e13c6210b72288117e4df4d3b1974aaa3a",
+    "new-viejo-00-wood--medium.png": "1a2291d050fe7fa7d6f26b2869a29305918d3f3f4df377a9fd7ea033d959a8b3",
+    "new-joven-07-wood--back.png": "d3251971ed904e2df1f5dff9cf6e82a218fe6e1da3f91b05bcea5a984cdf35c2",
+    "new-pilot-tree--below.png": "7334f4c510b86a957b326151e752b6cdada2331a5eba63c81b60b9622f35f1a3",
+    "before-joven-07-tree--mask-back.png": "ab57770888377614290a91e768fb86ba5e80d550c6e983a2e2853332154edfae",
+    "before-pilot-wood--mask-perspective.png": "f20ba8324dab775d996775bc0fe3a6e0eafcde1cfb4fba6ee5882eaea148f3f4",
+    "before-pilot-tree--mask-medium.png": "ffea592af4670edd8eb8d8fbf5967f667c44a523018e4537a22fe568417ba3a3",
+    "before-adulto-00-tree--medium.png": "24e6c42c0837e76a76c60025469bfd98698603673bbd0d158f434260b314ff39",
+    "before-pilot-tree--mask-side.png": "9b49fcf3109358fd93cdc7e7b8a945dec26373c76e7a7d3300bc0808c310bd5e",
+    "before-joven-07-tree--medium.png": "447d23741a067bb1dd1aefb5ee3c4a41d42d4e8fb6adfc7e4e44073395576af2",
+    "new-viejo-00-wood--mask-far.png": "4a61fbe4f6f6f1c8aa8dd6b0a3b66c82b91e37e8f063800b109948b07ff953e2",
+    "before-pilot-wood--mask-close.png": "17c9651380289c6f2341a37287013214f99be129775cb086519858fc966bcf8f",
+    "new-pilot-tree--mask-side.png": "d8eaba5761d87d907763f8b12dcc9c4155314c513d56b8be56908b8c2d802dc8",
+    "before-joven-07-wood--mask-front.png": "f020c3f9f5534f3ba07ab1fc694fc56f57291fc83892f98c1988d9c8692838e4",
+    "new-joven-07-wood--mask-perspective.png": "c266965c5aee6471dbc65c8be49a79c507f6b7cfde3279be279334394de7d7f6",
+    "new-pilot-tree--far.png": "e4202d065bf5235b3314f25ebb8715f298fdc1834ea4249ba2f5692a361de073",
+    "before-viejo-00-tree--front.png": "b41087f1c5113faa6e525cb67bdd8548f23bdadfd5d41649d7546163cd04360f",
+    "new-viejo-00-tree--mask-close.png": "7c63a80492b0c878be1df1d9cb04d70eae0bc4f790db17d7d6952855f3fedc8b",
+    "new-pilot-wood--medium.png": "3c824ebc08a640fba52c4d1dd7d5e64d7ce19596a91a41c45ae2fc29371c09e1",
+    "before-pilot-tree--mask-front.png": "63359c79f8c6ae9b4a1e804ec1c7694acabaa44db0bf03035829b006a4dcf6ff",
+    "new-pilot-tree--top.png": "068ad7102928fc294a36d9cd23a6f42be7a9aaa953dcbb5f9e5a2394bc5c9ff0",
+    "new-viejo-00-tree--close.png": "d1e6b79e1322647ecbfbd9f6c82e7f4a3b063d3ca25f4e4897fcbd11d902481f",
+    "before-viejo-00-tree--mask-far.png": "675b62c92dc089bf9d9da7eb696751dbf72244f04a0553e36355e4093e973384",
+    "before-adulto-00-tree--front.png": "8ba31560c89d83e328d0dd911f636dd00b79cc19d39ebb8e666925730f3d7242",
+    "new-pilot-tree--medium.png": "26611092329a855cc6d72e1be41e512fd79aab70facb850c336f128618313c0b",
+    "before-adulto-00-wood--top.png": "04a2877a7af39c1d6cd2c43a30e5753fdb3d2338cfd3d355e5bcd68ba11ab22f",
+    "before-viejo-00-wood--mask-side.png": "ed7ff9afb5c32d3efd7e15193cd69407eff5c3ab485941e3e24c8a76f9a1ed83",
+    "new-pilot-wood--mask-top.png": "af7d8ff492bb1bbaa1389a1a2fdc39ab0c6cae53f7cf7974f69f46c4119a2bf0",
+    "new-viejo-00-wood--mask-below.png": "07c99363bd933bb93b56746ec29107b21fec180d3f94cdfeebd77c100c03e19e",
+    "before-pilot-wood--side.png": "2342fb5c5e63bb4f10372a45c29fffbdd2a49381628ed34272fc2d01eb3c20b2",
+    "before-adulto-00-tree--below.png": "d8ed396baa89a5ecefab79c9261ec547f44fe4a425a2f94e084dd572677156a1",
+    "new-adulto-00-tree--mask-close.png": "76ac453ce4d493f8d3adf8f08bf9258555b001597f7deeaf179475fd1692634d",
+    "before-pilot-wood--far.png": "4dd9ce32821774d52d52a02e9da8b41f2bd4ee864448a76d307d0af3b9868ee3",
+    "before-viejo-00-tree--mask-top.png": "1bf9e62ac097e4490132b9f808c97517dc44acfa3e3ac11f2b61582cc942ac05",
+    "new-joven-07-tree--far.png": "4842768c1b8f8351e0b99adbe1e5035cf155392eb58150bd8a2258c7ba294dea",
+    "new-viejo-00-wood--mask-medium.png": "81fba72eb1b619bf5243a2b3a5ece5ca5eb35223a5dbbc8a70efb6d8b1b5f441",
+    "new-joven-07-wood--mask-side.png": "32efb0353a213c374d0df5f00e207f060624efb05e2f045781e4e2d634458ed1",
+    "new-adulto-00-tree--mask-back.png": "b7d13b7e501c49ffa0688acab9377651247fb292a06207e96c964c64ab2a9b4f",
+    "before-pilot-tree--front.png": "2050f086353a7cc728682ed9ada2473b5c5416c42af9680d30b79c762eb0d88b",
+    "new-adulto-00-tree--side.png": "d3be9536b4b9528729f870d63c8fd25e4086ba89b547231d52c2facfcb0566af",
+    "before-pilot-tree--mask-below.png": "e4ec22977c7e756e06f4e197912ef14a126c31b690448a3d46204d1416cc0c95",
+    "before-adulto-00-tree--mask-far.png": "d67dbcac8c678937ee7c7744a5b71d5f11adab580dd8689769185d92e4039993",
+    "new-adulto-00-wood--perspective.png": "08805257058e14093ddb682a1b6d7a1c0b2fda229cf776b8b8fdb2fe46966e6c",
+    "new-adulto-00-tree--perspective.png": "d304987fa7f2696eb6ab9d3c1ae01206ea6e174856c8b66db88b9264db02ad04",
+    "new-pilot-tree--mask-top.png": "928de547578ff4e513fa9fee8d0c2d4ed482a918b86c6b322382639fe734aef6",
+    "new-adulto-00-wood--top.png": "31b1b0bc83eeca1356f0321f04596d58d2ed0b50729a7864d9f577d63aa3ebb8",
+    "before-viejo-00-tree--mask-back.png": "49a1d897ad97248088e91e6a664a24ed8cf3f40a1f63826124cdf673c3b3befe",
+    "new-viejo-00-wood--side.png": "f3f8ae1167ca03b3e30fdd5c8ee4574af3c9d7b5fedde640b8caff67470cd160",
+    "before-adulto-00-wood--mask-side.png": "4beed403676ed68e813b78f489d8dd10fa78e9ec5edcd1a46844004db5469862",
+    "new-adulto-00-tree--top.png": "aebe06a4abc5b3e7793b8a0ba62e30d8684087197f95165d3d388eb2898cecb7",
+    "new-pilot-tree--mask-perspective.png": "5abf123dffff0a37e9846a10a177b2919da7668ad2e3341d3c28f86044aceacb",
+    "before-joven-07-tree--back.png": "cfe83b3203a09021c348833dc194fff571d31e6ca2be8ee4f002962caa58725a",
+    "before-adulto-00-wood--mask-top.png": "75b39a449903bc4ba16ca5f0969333c03698a4fb7661a63fe763f11becb0dbf2",
+    "new-viejo-00-tree--side.png": "7ce28247371170e88f116001c4094390f96229439bf6d8e50364813b8de2f54f",
+    "before-adulto-00-tree--far.png": "07d591b85839ba05894ef89682892ab0b1a262fdafd42b07d0ea734a4eedef74",
+    "new-joven-07-tree--mask-front.png": "01734560f251952eccf020b512aa692865e6a28e882533f3435c27176c602ad1",
+    "before-joven-07-tree--mask-top.png": "f95184f45fa05baf6c875c267aa47ff592cfbf9e830afadd0b0beff9fb52ffed",
+    "before-pilot-wood--mask-far.png": "d69dfe76e124eff6ccd48c46ea255717084f02e97993b6472e60f7c4375ab2a7",
+    "new-joven-07-tree--mask-back.png": "3ad65b94aa4e563798030fa6ab239b599d14b74b1f574e1f802ef338a140f303",
+    "new-adulto-00-tree--medium.png": "b4299034e25a4d00ae78c958040ea3758d53274aca52e699e76e129100a872f5",
+    "new-adulto-00-wood--mask-top.png": "9c06e0cb6d92d2868090da8797d203bf591403339a618a7e4d55d96224902adb",
+    "before-viejo-00-wood--back.png": "2de8e11a1b7a2f81fe2032d21a3f0d70a6a22c086465d086b5ebff086fb0c65c",
+    "before-adulto-00-wood--mask-close.png": "1002a8a9dc9e657266e3f42bd7621ebd6352cd63c60df13425dceb3fa29ebea5",
+    "new-adulto-00-wood--mask-front.png": "6825607b9248f84c4878485f0ea3fb28f37f28f5df799e36cfb36cdc16b293aa",
+    "new-pilot-tree--mask-far.png": "36e57a122e329229c575456d85cda43ce8dbfd58979158d97ac0fd6813e3de4c",
+    "new-pilot-wood--mask-close.png": "d6475fcb85d8aa31888b195c6bb685e074f87131848a2fa8180ee00db3c91f2e",
+    "before-joven-07-tree--mask-side.png": "e9e110112b59c206f82c5f20929b065bc8125dd8ca16cfb03c3589a08241f8ce",
+    "before-viejo-00-wood--perspective.png": "2dac26ab86a390fa3c6c26cd8af36d13cc46c041da2b6c151491637a43471207",
+    "before-adulto-00-tree--mask-below.png": "758abc28fedc11bfd454b037008bc94ae71defe71ff301f6fc206f084b797533",
+    "new-joven-07-tree--top.png": "5d739f73bc12bd1a67c798a32f29526b9e6ac71ae0977d23dd1296a41246fcc4"
+  },
+  "source_lock": {
+    "scripts/verify_oak_wood.py": "462f800222998fed69902c6964c7b9c9788c29c73f23eea7c416251e00b965e1",
+    "blender/export_oak_wood.py": "2829d53c0788ceeb4ac10036483ba7b9ec3bb0c51abbefe4046b7f932c8f96cf",
+    "blender/generate_crossed_oak.py": "695322e6649466718ea0222471c4e4ed9e04726d57369c6f860ca35527205187",
+    "blueprints/roble_copa_ancha/2.2.0.json": "826bb39901fc32483d5b0f35e7248e77d4743b069dae4f445c6e823360c40ba0",
+    "configs/verification/oak-wood-v1.json": "779db78f74041cf0d4ffd2fab7ff6db7b3872074bbb9553e228344db7f3b72a0",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/blueprints.py": "e53592f8eca3b0ec76e6a44bebd45fe780ee3874c1370b0fd26ca1b1c6898980",
+    "src/treegen/cli.py": "b133caea081abd52742698c45cceb8bbf5d8306140a6b819f50be3459db0ff08",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/evaluation.py": "8bfcae7e08b35f838e270f7001c884a9b371723e83b4101d783bfce0882cb2dd",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+    "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "f3df8ec34d7ac06dc6c34d260ca782de2e63aa9a2f45f8ce716c3ea0258985c3",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd"
+  },
+  "cli_check": {
+    "command": "PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/roble_copa_ancha/2.2.0.json --instance presets/blueprints/roble-madera/pilot.json --output artifacts/roble-pintado/integracion-madera-01/cli-pilot --no-render",
+    "exit_code": 0,
+    "validated": true,
+    "glb_identical_to_pilot": true,
+    "triangles": 6812
+  },
+  "tests": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests",
+    "passed": 145,
+    "failed": 0,
+    "outside_sandbox": true
+  },
+  "visual_review": {
+    "inspected_sheets": [
+      "controls.jpg",
+      "pilot-tree.jpg",
+      "pilot-wood.jpg",
+      "joven-07-tree.jpg",
+      "joven-07-wood.jpg",
+      "adulto-00-tree.jpg",
+      "adulto-00-wood.jpg",
+      "viejo-00-tree.jpg",
+      "viejo-00-wood.jpg"
+    ],
+    "result": "Aspecto del árbol muy próximo en las vistas revisadas. Cambios pequeños de facetas/bordes en secundarias con madera sola; sin certificación universal de contactos.",
+    "user_acceptance": "Piloto aprobado; revisión de controles por el agente."
+  }
+}

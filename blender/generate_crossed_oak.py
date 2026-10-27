@@ -8,7 +8,7 @@ import time
 import bpy
 ROOT=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(ROOT/'src'),str(ROOT/'blender')]
-from treegen.oak_crossed_production import build,validate_resources
+from treegen.oak_crossed_production import build,validate_resources,optimized_wood,wood_model
 from treegen.pine_painted_sample import canonical_hash
 from generate_blueprint import generate as historical_generate
 from oak_painted_sample import painted
@@ -32,10 +32,12 @@ def generate(job):
     for mat in list(bpy.data.materials):bpy.data.materials.remove(mat)
     bark=painted('Painted_Bark','bark.png');leaf=atlas_material(ROOT/r['resources']['foliage']['path']);leaf.name='Painted_Foliage'
     obj=create('PaintedOakCrossed',wood+[(p,1,p['uv']) for p in crossed],[bark,leaf])
-    for polygon,flag in zip(obj.data.polygons,[f for b in ref['branches'] for f in b['mesh']['smooth']]):polygon.use_smooth=flag
+    flags=([f for mesh,_,_ in wood for f in mesh.get('smooth',[False]*len(mesh['polygons']))] if optimized_wood(r)
+           else [f for b in ref['branches'] for f in b['mesh']['smooth']])
+    for polygon,flag in zip(obj.data.polygons,flags):polygon.use_smooth=flag
     metrics=mesh_report(obj.data,triangle_limit=r['limits']['triangles'])
     assert metrics['triangles']<=r['budget_upper_bound']['triangles_max']
-    assert metrics['triangles']==old['metrics']['triangles']-8*(len(old['supports'])-len(kept))-6*len(old['supports'])
+    assert metrics['triangles']==sum(len(f)-2 for mesh,_,_ in wood for f in mesh['polygons'])+6*len(items)
     configure()
     if job['render']:render(obj,out,ref['cameras'])
     for image in bpy.data.images:
@@ -52,6 +54,10 @@ def generate(job):
         'sources_sha256':{str(p.relative_to(ROOT)):sha(p) for p in sources if p.is_relative_to(ROOT)},
         'glb_sha256':sha(out/'tree.glb'),'glb_bytes':(out/'tree.glb').stat().st_size,'generation_before_render_export_s':time.monotonic()-started,
         'files_sha256':{name:sha(out/name) for name in ('tree.glb','tree.blend','placements.json')}}
+    if optimized_wood(r):
+        _,branches=wood_model(ref,wood,r)
+        manifest.update(version='oak-painted-crossed-0.2.0',adapter_version='oak-crossed-blender-0.2.0',
+                        wood_optimization=[dict(id=b['id'],**b['optimization']) for b in branches])
     write(out/'manifest.json',manifest)
 
 

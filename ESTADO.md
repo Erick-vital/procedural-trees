@@ -7,9 +7,9 @@
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
 Dos tipos al cierre B5; catálogo ampliado ahora a tres con pino experimental.
 Plan activo: [roble pintado](plans/roble-pintado.md): **pintura aprobada; rama
-y tres láminas aprobadas; receta 2.1.0 integrada**. Cuatro casos verificados:
-piloto/joven/adulto/viejo: 7836/3996/6812/7780 tris.
-[Resultado y reproducción](docs/evidence/roble-pintado/implementacion-01/informe.md).
+y tres láminas aprobadas; madera selectiva aprobada; receta 2.2.0 integrada**.
+Cuatro casos verificados: piloto/joven/adulto/viejo **6812/3132/5820/6900 tris**.
+[Resultado y reproducción](docs/evidence/roble-pintado/integracion-madera-01/informe.md).
 Pino [PP1–PP4](plans/pino-pintado.md) cerrado: **2.3.0 aprobado**, cuatro casos.
 Base: [blueprint de pino](plans/blueprint-pino.md), implementado y revisado en
 **1.1.0**; revisión artística del usuario pendiente, acículas conservadas allí.
@@ -35,14 +35,15 @@ la familia ensayada**, como alternativa explícita a Q3.
 - Pino PP1–PP3: dirección A y cruzadas elegidas; atlas/corteza 0.1.0 y
   materiales Godot verificados. [Pintura](docs/evidence/pino-pintado/pp2/informe.md),
   [materiales](docs/evidence/pino-pintado/pp3/informe.md).
-- Roble **2.1.0** integrado: contrato 1.4, tres láminas/6 tris por grupo; atlas
-  0.3.0 (2000²)/ocho plantillas fijas, corteza/fuente de pintura 0.2.0 aprobadas.
-  Cuatro casos: **7836/3996/6812/7780 tris**, dos materiales, 264 grupos/792 láminas.
-  Piloto coincide con candidato aprobado en geometría/UV/normales; GLB repetido
-  idéntico. 139 pruebas, regresiones pino/columnar exactas, rehorneado RGBA idéntico
-  (metadatos PNG distintos), 144 capturas reales y cinco láminas inspeccionadas.
-  Altura nominal sobre madera, bounds completos incluyen márgenes transparentes.
-  [Informe, métricas y límites](docs/evidence/roble-pintado/implementacion-01/informe.md).
+- Roble **2.2.0** integrado: contrato 1.4, representación 0.2.0; solo secundarias
+  simplificadas a 20 mm. Cuatro casos **6812/3132/5820/6900 tris**; dos materiales,
+  264 grupos/792 láminas. Tronco/primarias/soportes/follaje exactos; atlas y pintura
+  conservados. 145 pruebas, 16 checks, repetición y CLI con GLB idéntico;
+  piloto coincide con candidata aprobada, regresiones 2.1.0/pino/columnar exactas.
+  288 capturas Godot; nueve láminas inspeccionadas. Cambios leves de secundarias,
+  contactos no certificados universalmente. [Informe](docs/evidence/roble-pintado/integracion-madera-01/informe.md).
+  Histórica 2.1.0: 7836/3996/6812/7780, atlas rehorneado RGBA idéntico;
+  [integración de tres láminas](docs/evidence/roble-pintado/implementacion-01/informe.md).
 - PP4 inicial 2.0.0: 241 grupos/5192 triángulos, 110 pruebas y 108 capturas.
   El usuario considera la copa demasiado rala; referencia técnica conservada.
   [PP4 inicial](docs/evidence/pino-pintado/pp4/informe.md).
@@ -137,7 +138,7 @@ la familia ensayada**, como alternativa explícita a Q3.
   Generación ≤120 s; pruebas/capturas ≤180 s por subproceso terminable.
 - Pino pintado: nuevo alcance permite texturas y sustituir ramillas
   completas para cambiar estilo y reducir triángulos. Conservar recetas históricas;
-  madera/benchmark autorizados después; roble 2.1.0 con tres láminas integrado/aprobado; LOD fuera.
+  madera/benchmark autorizados después; roble 2.2.0 selectivo integrado/aprobado; LOD fuera.
   PP4 usa contrato 1.2 y semilla paint separada; canopy identifica el caso histórico
   pero no aleatoriza anclajes. Filtrado/sombras Godot en `painted_pine_asset.gd`.
   Menos triángulos por sí solo no demuestra mejora de rendimiento.
@@ -158,21 +159,18 @@ la familia ensayada**, como alternativa explícita a Q3.
 
 ## Siguiente paso y pendientes
 
-**Tres láminas implementadas en receta 2.1.0; verificación de cuatro casos terminada.**
-La instrucción «ok implementalo con 3 laminas» aprueba la variante del piloto.
-Generación por CLI sin resultados previos; plantillas y atlas congelados.
-
-- Galería: `artifacts/roble-pintado/implementacion-02/index.html`; cada caso contiene
-  `tree.glb`/`tree.blend`. [Informe](docs/evidence/roble-pintado/implementacion-01/informe.md).
-- Usar `blueprints/roble_copa_ancha/2.1.0.json` con ejemplares de
-  `presets/blueprints/roble-cruzado/`. [Guía](docs/uso-blueprints.md).
-- Piloto aprobado; controles revisados técnicamente/por el agente, sin atribuir
-  aprobación artística del usuario. No hay pendientes de integración de esta receta.
-- Cambio de representación autorizado: no conserva planos de hojas individuales
-  ni identidad IoU .99; copa más tupida. Persisten repetición, trazos de canto,
-  costuras de corteza y posibles conexiones ausentes. Sin benchmark de roble.
-- Históricos/pino/alias conservados; 2.0.0 es ensayo técnico previo, no pintura aprobada.
-- Cambios de roble aún **sin commit**. No iniciar fases adicionales por rutina.
+**Madera selectiva integrada en receta 2.2.0; cuatro casos verificados.**
+- Solicitud «ok me gusta, integra la variante de 6812 tris al blueprint» aprueba
+  el piloto. Controles revisados por el agente; no atribuir aprobación artística.
+- Usar `blueprints/roble_copa_ancha/2.2.0.json` y ejemplares de
+  `presets/blueprints/roble-madera/`. Generación por CLI sin estudios anteriores.
+- Galería: `artifacts/roble-pintado/integracion-madera-01/index.html`; cada caso
+  contiene `tree.glb`/`tree.blend`. [Informe](docs/evidence/roble-pintado/integracion-madera-01/informe.md).
+- No hay pendientes de integración. No iniciar fases adicionales por rutina.
+  Tronco/primarias/soportes/follaje exactos; pequeñas variaciones de secundarias.
+  Persisten posibles separaciones, trazos de canto, costuras y bounds transparentes.
+- Sin benchmark de roble ni garantía de rangos completos; históricos conservados.
+- Base de pintura en commit `2d1ed43`; ensayo e integración selectiva documentados.
 
 Pino **2.3.0 aprobado y benchmark cerrado**; galería `artifacts/pino-pintado/pp4-cards-02/index.html`.
 Base geométrica 1.1.0 en `artifacts/blueprints/pine-v1.1-review-01/`, aceptación pendiente.

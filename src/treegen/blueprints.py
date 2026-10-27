@@ -48,7 +48,7 @@ def _instance_validator(document):
 COMPONENTS = MappingProxyType({
     'base': ('oak_geometry_nodes@0.4.0', 'pine-whorls@0.1.0', 'pine-whorls@0.2.0'),
     'distribution': ('foliage-canopy@0.1.0', 'foliage-canopy@0.1.1', 'pine-distal@0.1.0', 'pine-path-groups@0.1.0', 'pine-path-groups@0.2.0'),
-    'representation': ('rf3-diamond-six@0.1.0', 'oak-painted-single@0.1.0', 'oak-painted-crossed@0.1.0', 'pine-needle-pairs@0.1.0', 'pine-painted-crossed@0.1.0', 'pine-painted-crossed@0.2.0', 'pine-painted-crossed@0.3.0', 'pine-painted-crossed@0.4.0'),
+    'representation': ('rf3-diamond-six@0.1.0', 'oak-painted-single@0.1.0', 'oak-painted-crossed@0.1.0', 'oak-painted-crossed@0.2.0', 'pine-needle-pairs@0.1.0', 'pine-painted-crossed@0.1.0', 'pine-painted-crossed@0.2.0', 'pine-painted-crossed@0.3.0', 'pine-painted-crossed@0.4.0'),
 })
 
 
@@ -199,7 +199,7 @@ def validate_blueprint(blueprint):
         raise ValueError('Combinación de componentes incompatible con el contrato')
     if blueprint['schema_version'] == '1.3' and blueprint['components'] != {'base':'oak_geometry_nodes@0.4.0','distribution':'foliage-canopy@0.1.1','representation':'oak-painted-single@0.1.0'}:
         raise ValueError('Componentes incompatibles con roble pintado')
-    if blueprint['schema_version'] == '1.4' and blueprint['components'] != {'base':'oak_geometry_nodes@0.4.0','distribution':'foliage-canopy@0.1.1','representation':'oak-painted-crossed@0.1.0'}:
+    if blueprint['schema_version'] == '1.4' and (blueprint['components']['representation'] not in ('oak-painted-crossed@0.1.0','oak-painted-crossed@0.2.0') or blueprint['components'] != {'base':'oak_geometry_nodes@0.4.0','distribution':'foliage-canopy@0.1.1','representation':blueprint['components']['representation']}):
         raise ValueError('Componentes incompatibles con roble cruzado')
     if blueprint['default_profile'] not in blueprint['profiles']:
         raise ValueError('Perfil predeterminado inexistente')

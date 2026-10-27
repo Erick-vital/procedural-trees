@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-26",
+  "user_statement": "ok me gusta, integra la variante de 6812 tris al blueprint",
+  "accepted_pilot": "artifacts/roble-pintado/madera-03/after/secondary20mm-tree/branch.glb",
+  "scope": "Integrar la variante selectiva de secundarias a 20 mm en receta versionada; conservar tronco, primarias, soportes, pintura y follaje. La aceptación se refiere al piloto mostrado, no a todos los controles o rangos.",
+  "blueprint": "roble_copa_ancha@2.2.0"
+}
