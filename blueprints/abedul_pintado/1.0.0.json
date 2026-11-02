@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.5",
+  "id": "abedul_pintado",
+  "version": "1.0.0",
+  "name": "Abedul pintado de copa ligera",
+  "description": "Primer perfil adulto de 10 m; ramillas colgantes y grupos de tres planos inclinados con pintura aprobada. Cuatro semillas de control; aceptación artística del árbol completo pendiente. Menos de 7000 tris totales y dos materiales.",
+  "components": {
+    "base": "birch-crown@0.1.0",
+    "distribution": "birch-twig-groups@0.1.0",
+    "representation": "birch-painted-crossed@0.1.0"
+  },
+  "parameters": {
+    "base": {
+      "height_m": 10,
+      "base_radius_m": 0.16,
+      "crown_base_ratio": 0.3,
+      "primary_count": 18,
+      "secondary_count": 5,
+      "crown_radius_ratio": 0.22,
+      "droop_ratio": 0.62,
+      "irregularity": 0.16
+    },
+    "canopy": {
+      "group_length_m": 0.65,
+      "groups_per_secondary": 4
+    }
+  },
+  "appearance": {
+    "bark": {
+      "color_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "double_sided": true
+    },
+    "leaf": {
+      "color_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "double_sided": true
+    }
+  },
+  "editable_ranges": {},
+  "default_profile": "adulto",
+  "profiles": {
+    "adulto": {
+      "description": "Perfil inicial de 10 m, parámetros cerrados; arte del árbol completo pendiente de aceptación.",
+      "overrides": {},
+      "validation": {
+        "status": "experimental",
+        "evidence": [
+          "plans/abedul-pintado.md",
+          "configs/verification/birch-v1.json"
+        ]
+      }
+    }
+  },
+  "limits": {
+    "triangles": 6999,
+    "materials": 2,
+    "generation_seconds": 120
+  },
+  "resources": {
+    "bark": {
+      "path": "assets/abedul-pintado/v0.1.0/bark.png",
+      "sha256": "f3c10c3608b10e44a683baed82074a82a4fc996936ba2ea3216a36abd76529e0"
+    },
+    "foliage": {
+      "path": "assets/abedul-pintado/v0.1.0/foliage.png",
+      "sha256": "d8073caf5f1b220f702e654392340a7defa8974b168cc8562fb1ae2430c388b7"
+    },
+    "atlas": {
+      "path": "assets/abedul-pintado/v0.1.0/manifest.json",
+      "sha256": "97487c0fb3c0b153db811e6468e97ee864937d6d5d3ed67c5762c83ade6f044f"
+    }
+  }
+}

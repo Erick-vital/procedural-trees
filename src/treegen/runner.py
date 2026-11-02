@@ -53,7 +53,8 @@ def execute(spec, output, render=True, timeout=120, job_id=None, *, blueprint=No
         elif isinstance(spec, (str, Path)):
             spec = load_spec(spec)
         pine = resolved is not None and resolved['base_spec']['algorithm'] == 'pine-whorls'
-        if pine:
+        birch = resolved is not None and resolved['base_spec']['algorithm'] == 'birch-crown'
+        if pine or birch:
             from .blueprints import canonical_hash
             input_hash = canonical_hash(spec)
         else:
@@ -71,7 +72,8 @@ def execute(spec, output, render=True, timeout=120, job_id=None, *, blueprint=No
         write_json(output / 'manifest.json', manifest)
         command = [os.environ.get('BLENDER_BIN', BLENDER), '--background', '--factory-startup',
                    '--threads', '1', '--python-exit-code', '1', '--python',
-                   str(ROOT / ('blender/generate_crossed_oak.py' if resolved and resolved['resolved_version'] == '1.4' else
+                   str(ROOT / ('blender/generate_birch.py' if birch else
+                               'blender/generate_crossed_oak.py' if resolved and resolved['resolved_version'] == '1.4' else
                                'blender/generate_painted_oak.py' if resolved and resolved['resolved_version'] == '1.3' else
                                'blender/generate_painted_pine.py' if resolved and resolved['resolved_version'] == '1.2' else
                                'blender/generate_pine.py' if pine else

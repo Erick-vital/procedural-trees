@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "source_glb_sha256": "296d4d0cb180871d7258a15f02dba50f48a1c25f4686364615c5ec874a3e32ac",
+  "auditor_sha256": "ba87cf7d608b7723e13fa1e1c1df687140689c96cd5a0c99961b6b840dc6d254",
+  "resolved_sha256": "57490e52b5e90e859c32eeac3791ef2f5b4bddd358f2b80d9dd6919197edb99e",
+  "defects": {
+    "alpha-cutoff": {
+      "rejected": true,
+      "reason": "Umbral alfa incorrecto"
+    },
+    "single-sided": {
+      "rejected": true,
+      "reason": "Transparencia o reversos inválidos"
+    },
+    "wrong-image-channel": {
+      "rejected": true,
+      "reason": "Imagen asignada a canal incorrecto"
+    },
+    "moved-leaf": {
+      "rejected": true,
+      "reason": "Cruzadas o UV distintas de los anclajes planificados"
+    },
+    "uv-outside-atlas": {
+      "rejected": true,
+      "reason": "Cruzadas o UV distintas de los anclajes planificados"
+    },
+    "nan-normal": {
+      "rejected": true,
+      "reason": "Normales inválidas"
+    },
+    "missing-wood-face": {
+      "rejected": true,
+      "reason": "Caras o UV de madera selectiva distintas"
+    },
+    "changed-placement-hash": {
+      "rejected": true,
+      "reason": "Distribución registrada alterada"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "cli_render": {
+    "path": "artifacts/abedul-pintado/render-cli-01",
+    "glb_identical": true,
+    "glb_sha256": "296d4d0cb180871d7258a15f02dba50f48a1c25f4686364615c5ec874a3e32ac",
+    "duration_seconds": 7.814,
+    "blender_views": [
+      "front",
+      "side",
+      "top",
+      "below",
+      "perspective",
+      "reverse",
+      "near",
+      "medium",
+      "far"
+    ]
+  },
+  "tests": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests",
+    "count": 155,
+    "passed": true,
+    "duration_seconds": 9.237
+  },
+  "selected_images_sha256": {
+    "piloto.png": "a9c9c457bc7ea3f82af650090e3d8f7b02665c28f386e9245a8800e3db5f1468"
+  }
+}

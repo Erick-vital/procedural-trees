@@ -299,3 +299,51 @@ Cota `188+44N+6(9N+3)`; 4910 con N=48. Ajuste de copa adicional explícito:
 longitud 1/anchura sqrt(.9), envolvente por grupo .9. Hash del grupo 2.2.0 y
 factores en placements. Sin afirmar volumen físico de las superficies o unión.
 [Validación y límites](evidence/pino-pintado/pp4-laminas/informe.md).
+
+## Ampliación 1.5: abedul pintado
+
+Receta `abedul_pintado@1.0.0`, esquemas
+`tree-blueprint-birch.schema.json` / `tree-instance-birch.schema.json`.
+Componentes exclusivos `birch-crown@0.1.0`, `birch-twig-groups@0.1.0` y
+`birch-painted-crossed@0.1.0`. Ejecutor/CLI compartidos, algoritmos puros,
+adaptador Blender y auditoría de exportación separados. Contratos anteriores
+conservados; mezclar componentes con otras familias se rechaza.
+
+Perfil inicial `adulto`, altura fija 10 m y `editable_ranges={}`; no se aceptan
+overrides. Base: radio, inicio/anchura de copa, cantidad de primarias y
+secundarias, caída e irregularidad. Copa: longitud y grupos por secundaria.
+Las cotas individuales del esquema no autorizan superar el presupuesto conjunto.
+
+Para N primarias, S secundarias por primaria y G grupos por secundaria:
+
+`T_max = 204 + 104 + N(108 + 20S) + 6[N(2 + SG) + 3]`.
+
+Incluye tronco 13 anillos/8 lados, cuatro raíces 3/5, primarias 9/6,
+secundarias 3/4, tapas y tres planos de dos tris por grupo. N=18/S=5/G=4:
+**6446 tris de cota**, 399 grupos y dos materiales. Contrato exige ≤6999 tris,
+exactamente dos materiales y ≤120 s/generación. Simplificar anillos puede
+reducir el coste, pero no se descuenta ese ahorro de la cota previa.
+
+Semilla `base` deriva streams por el protocolo SHA256 existente `oak-v1`;
+el nombre histórico del protocolo no implica reutilizar estructura de roble.
+`canopy` controla anclajes, longitudes y orientación de grupos sin tocar madera.
+`paint` elige variante de atlas por ID. Cambiar pintura conserva ejes/anclajes
+y madera; puede cambiar soportes transparentes y su recorte por variante.
+Los tres streams quedan explícitos en resolución/manifiesto.
+
+Recursos fijos con SHA256: corteza, atlas RGBA y metadatos de regiones/anclajes
+en `assets/abedul-pintado/v0.1.0/`. Repetición reutiliza esos PNG congelados.
+Representación de la rama aprobada: tres planos con inclinación .44 rad,
+recorte .5, doble cara, rugosidad .95; Godot aplica mipmaps, filtrado y sombras.
+Los grupos próximos al ápice limitan longitud para mantenerse bajo la altura.
+
+Madera de copa: eliminación selectiva de anillos con error de correspondencia
+radial ≤5 mm contra todo el tramo, extremos/tapas/UV retenidos. Tronco y raíces
+sin simplificar. Los recorridos de anclaje permanecen originales; esta cota
+no certifica identidad de superficies ni todos sus contactos.
+
+La auditoría reconstruye la receta y exige caras/UV de madera y follaje exactos,
+PNG embebidos, materiales, normales unitarias y conteos. Altura se comprueba
+sobre madera. Cuatro semillas verificadas no acreditan naturalidad para todos
+los casos; aceptación de pintura/rama separada de la del árbol completo.
+[Resultados y reproducción](evidence/abedul-pintado/arbol-01/informe.md).

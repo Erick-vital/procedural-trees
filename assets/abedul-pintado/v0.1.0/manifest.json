@@ -1,0 +1,70 @@
+{
+  "version": "birch-paint-0.1.0",
+  "date": "2026-10-26",
+  "tool": "image_gen.imagegen",
+  "reference": "docs/evidence/abedul-pintado/pintura-01/propuesta.png",
+  "style": "Pintura de estilo manual generada por IA; sin retoque de píxeles.",
+  "prompts": {
+    "foliage": "Use case: stylized-concept. Create a PRODUCTION DIFFUSE FOLIAGE ATLAS, square, genuinely transparent RGBA background, four separate small BIRCH leafy sprigs in an exact regular 2x2 grid of equal square cells. Reference image is approved birch art direction ONLY; match its matte broad hand-painted gouache brushwork and green moss/sage/yellow-green palette. No text, labels, borders, shadows, ground or backdrop.\nEach cell contains ONE compact birch twig sprig with 9 to 13 small pointed triangular/rhombic birch leaves with subtly serrated edges and simple veins, attached by short petioles to a very thin warm grey-brown branching stem. Main stem runs from BOTTOM CENTER toward TOP CENTER within each cell. Start bare stem at 50% of cell width, 90% of cell height, and tip ends near 12% of cell height. Keep the lowest 15% of each sprig stem bare so it can attach to real 3D wood. Leaves branch asymmetrically left/right in the upper 75%, with readable gaps, mostly medium moss greens with sage patches, few warm yellow-green accents; avoid all-yellow sprigs. Four distinct arrangements, similar scale and leaf count, not four different seasons.\nFit each entire sprig inside its cell leaving at least 8% cell-width transparent padding on ALL cell edges. Nothing touches another cell. No disconnected leaves, no floating petals. Leaf shapes NOT oak-lobed, not long needles, not fern. All foliage and stems sharply cut out on transparent alpha; preserve small stem and leaf connections. Soft matte color painting without baked directional illumination, ambient shadows or cast shadows. Useful game asset basecolor for fixed crossed cards, not an illustrated page or tree picture. Do not include the reference board or a whole tree.",
+    "bark": "Use case: stylized-concept. Production basecolor bark texture for a stylized hand-painted silver BIRCH game asset. Square opaque texture completely filled edge to edge, flat orthographic 2D surface with no trunk cylinder, no lighting gradients, no borders, no labels.\nReference is approved birch art direction. Match its broad matte gouache brushwork, creamy ivory-white bark, soft pale grey and beige papery irregular patches, broken thin horizontal charcoal lenticel dashes and very few small dark knots. Clearly white birch, not brown oak or zebra stripes. Medium scale features with calm areas, subtle vertical papery peeling, restrained contrast. Horizontal marks vary in length, spacing and darkness; no repeated stripe pattern. Suitable on slender branches too; no oversized black cavities.\nSeamless wrapping left/right and top/bottom. Uniform neutral unlit basecolor with no baked shadows, no bright side, no ambient occlusion, no cast shadows, no specular highlights, no normal map. Painterly rather than photorealistic, no microdetail noise, no moss, leaves, scene, text, palette or whole tree."
+  },
+  "atlas_size": [
+    1254,
+    1254
+  ],
+  "regions": [
+    {
+      "box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "anchor": [
+        346,
+        610
+      ],
+      "tip_y": 39
+    },
+    {
+      "box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "anchor": [
+        961.5,
+        610
+      ],
+      "tip_y": 40
+    },
+    {
+      "box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "anchor": [
+        360.5,
+        1212
+      ],
+      "tip_y": 636
+    },
+    {
+      "box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "anchor": [
+        961.5,
+        1212
+      ],
+      "tip_y": 636
+    }
+  ],
+  "note": "Coordenadas en píxeles origen superior izquierdo; anclajes medidos en base del tallo alfa >= .5."
+}

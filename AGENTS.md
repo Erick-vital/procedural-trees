@@ -21,6 +21,15 @@ Desarrollar un generador procedural de robles low-poly como primer experimento d
 - No guardar credenciales ni salidas voluminosas regenerables en el repositorio. Conservar evidencia seleccionada y rutas de reproducción.
 - No implementar fases adicionales solo por actualizar documentación o elaborar planes.
 
+## Política para nuevos árboles
+
+- Aplicar [la política de árboles optimizados](docs/politica-arboles-optimizados.md) a toda nueva especie, incluido el abedul propuesto.
+- Follaje por grupos de láminas cruzadas fijas, pintura de estilo manual para follaje y corteza, atlas compartidos y máximo dos materiales por árbol.
+- Cada árbol completo exportado debe tener **menos de 7000 triángulos (máximo 6999)**, incluida toda su madera y follaje. Diseñar y validar el presupuesto desde el comienzo para los perfiles admitidos.
+- Optimizar topología de láminas y madera conservando silueta, plenitud, carácter y conexiones; comprobar transparencias, sombras y aspecto en Godot. Elegir cantidad y forma de láminas según la especie, sin imponer una solución que aplaste la copa.
+- Aprobar pintura y rama de muestra antes de integrar el árbol completo; distinguir verificación técnica de aceptación artística del usuario. Medir rendimiento antes de afirmar mejoras de FPS.
+- Esta política rige nuevos desarrollos; conservar recetas y contratos históricos. Una excepción requiere decisión explícita del usuario y registro en el plan.
+
 ## Política de ESTADO.md
 
 `ESTADO.md` es una síntesis del estado vigente, no una bitácora ni un almacén ilimitado de contexto.

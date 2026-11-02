@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "species": "roble_copa_ancha",
+  "blueprint_version": "2.2.0",
+  "season": "autumn",
+  "phase": "full_canopy",
+  "foliage_material": "Painted_Foliage",
+  "amount": 1.0,
+  "seed": 1101,
+  "patch_scale_m": 1.7,
+  "green_retention": 0.10,
+  "palette_srgb": ["#756449", "#A88A60", "#C5B273"],
+  "limits": {"triangles": 6999, "materials": 2}
+}

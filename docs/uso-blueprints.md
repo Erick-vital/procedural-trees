@@ -12,7 +12,7 @@ PYTHONPATH=src python3 -m treegen blueprints
 
 La respuesta lista `id`, `version`, nombre, perfil predeterminado, ruta y hash
 canónico de cada receta registrada en `blueprints/<id>/<versión>.json`.
-Hay tres tipos y trece versiones registradas. No hay selección “latest”.
+Hay cuatro tipos y catorce versiones registradas. No hay selección “latest”.
 El perfil predeterminado no elige el tipo: se aplica dentro de una receta
 seleccionada explícitamente.
 
@@ -40,6 +40,7 @@ no atribuir garantía visual a todos sus rangos/semillas.
 
 | Objetivo | Receta | Ejemplar existente |
 | --- | --- | --- |
+| Abedul pintado completo, arte pendiente de aprobación | `blueprints/abedul_pintado/1.0.0.json` | `presets/blueprints/abedul-pintado/pilot.json` |
 | Reproducir viejo-09 aprobado | `blueprints/roble_copa_ancha/1.0.0.json` | `presets/blueprints/roble-copa-ancha-viejo-09.json` |
 | Roble aprobado con madera selectiva | `blueprints/roble_copa_ancha/2.2.0.json` | `presets/blueprints/roble-madera/pilot.json` |
 | Roble pintado con tres láminas por grupo | `blueprints/roble_copa_ancha/2.1.0.json` | `presets/blueprints/roble-cruzado/pilot.json` |
@@ -60,6 +61,24 @@ solicita explícitamente 1.2.0. `configs/verification/b3-v3.json` es la matriz
 final correspondiente. El cierre no renombra esas entradas históricas.
 
 ## Generar y validar
+
+Abedul pintado: perfil inicial adulto de 10 m, cuatro semillas verificadas,
+**6254–6278 tris/2 materiales**, tres planos inclinados por grupo. Usa contrato
+1.5, recursos pintados 0.1.0 aprobados y cota previa de 6446 tris. El árbol
+completo continúa pendiente de aprobación artística. Parámetros cerrados;
+pueden cambiarse las semillas explícitas sin prometer aceptación de otros casos.
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/abedul_pintado/1.0.0.json --instance presets/blueprints/abedul-pintado/pilot.json --output artifacts/abedul-pintado/mi-abedul --no-render
+PYTHONPATH=src python3 -m treegen validate artifacts/abedul-pintado/mi-abedul
+python3 scripts/verify_birch.py --output artifacts/abedul-pintado/otra-matriz --stage all
+```
+
+La matriz genera piloto/tres controles, repetición y regresiones exactas de
+roble/pino/columnar; después crea 80 capturas y un visor Godot. Requiere escritorio
+real para esa revisión. Proyecto seleccionado: `artifacts/abedul-pintado/arbol-02/godot/`.
+Arrastrar/rueda para cámara, `N` para cambiar semilla, `1` árbol, `2` madera,
+`B` fondo y `L` luz. [Resultado, archivos y reproducción](evidence/abedul-pintado/arbol-01/informe.md).
 
 Referencia aprobada:
 

@@ -1,14 +1,14 @@
 # Estado del proyecto
 
-Última actualización: 2026-10-26.
+Última actualización: 2026-11-01.
 
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
-Dos tipos al cierre B5; catálogo ampliado ahora a tres con pino experimental.
-Plan activo: [roble pintado](plans/roble-pintado.md): **pintura aprobada; rama
-y tres láminas aprobadas; madera selectiva aprobada; receta 2.2.0 integrada**.
-Cuatro casos verificados: piloto/joven/adulto/viejo **6812/3132/5820/6900 tris**.
+Dos tipos al cierre B5; catálogo actual: cuatro tipos/catorce recetas, incluido abedul.
+Plan activo: [estaciones](plans/estaciones.md): **primer otoño del roble 2.2.0**.
+[Abedul](plans/abedul-pintado.md) 1.0.0 integrado/verificado; arte pendiente.
+Roble 2.2.0 cerrado: piloto/joven/adulto/viejo **6812/3132/5820/6900 tris**.
 [Resultado y reproducción](docs/evidence/roble-pintado/integracion-madera-01/informe.md).
 Pino [PP1–PP4](plans/pino-pintado.md) cerrado: **2.3.0 aprobado**, cuatro casos.
 Base: [blueprint de pino](plans/blueprint-pino.md), implementado y revisado en
@@ -32,9 +32,13 @@ la familia ensayada**, como alternativa explícita a Q3.
 
 ## Avances verificados
 
-- Pino PP1–PP3: dirección A y cruzadas elegidas; atlas/corteza 0.1.0 y
-  materiales Godot verificados. [Pintura](docs/evidence/pino-pintado/pp2/informe.md),
-  [materiales](docs/evidence/pino-pintado/pp3/informe.md).
+- Abedul **1.0.0**, contrato 1.5: adulto 10 m, cuatro semillas **6278/6278/6278/6254
+  tris**, 399 grupos/1197 planos, dos materiales, PNG de rama 0.1.0 conservados.
+  155 pruebas, ocho defectos rechazados, repetición/CLI con GLB idéntico,
+  regresiones roble/pino/columnar exactas y 80 capturas Godot inspeccionadas.
+  [Informe y visor](docs/evidence/abedul-pintado/arbol-01/informe.md). Arte pendiente.
+- Pino PP1–PP3: dirección A/cruzadas elegidas; atlas/corteza 0.1.0 y materiales
+  Godot verificados. [Pintura](docs/evidence/pino-pintado/pp2/informe.md), [materiales](docs/evidence/pino-pintado/pp3/informe.md).
 - Roble **2.2.0** integrado: contrato 1.4, representación 0.2.0; solo secundarias
   simplificadas a 20 mm. Cuatro casos **6812/3132/5820/6900 tris**; dos materiales,
   264 grupos/792 láminas. Tronco/primarias/soportes/follaje exactos; atlas y pintura
@@ -114,11 +118,14 @@ la familia ensayada**, como alternativa explícita a Q3.
   [fusión](docs/evidence/q3-fusion/informe.md), [addons](docs/evidence/comparacion-addons/informe.md).
 - RF2/RF3: rama de 144 hojas aprobada; piloto de 9 m, 264 conexiones,
   1584 hojas/10572 tris/3 materiales. [RF2](docs/evidence/rediseno-follaje/rf2-densidad/informe.md), [RF3](docs/evidence/rediseno-follaje/rf3/informe.md).
-- Entorno: Blender 5.2.1 LTS `9e2066aef7ef`, Python Blender 3.13.13,
-  orquestación 3.14.4, jsonschema 4.19.2, Pillow 12.1.1 y Godot 4.7.2 `ed1daf0bf`.
+- Entorno: Blender 5.2.1 LTS `9e2066aef7ef`, Python Blender 3.13.13, orquestación
+  3.14.4, jsonschema 4.19.2, Pillow 12.1.1 y Godot 4.7.2 `ed1daf0bf`.
 
 ## Decisiones vigentes
 
+- **Nuevos árboles:** [política de producción optimizada](docs/politica-arboles-optimizados.md)
+  vigente: cruzadas, pintura manual, ≤2 materiales y **<7000 tris totales**;
+  madera simplificada y revisión Godot. Abedul completo: aceptación pendiente.
 - Receta/perfil/ejemplar separados; semillas explícitas y componentes registrados.
   CLI exige receta y petición; sin selección “latest”. Inicio rápido: roble 1.0.0
   y viejo-09 aprobado. Recetas 1.0.0/1.1.0/1.2.0 del primero conservadas;
@@ -158,19 +165,16 @@ la familia ensayada**, como alternativa explícita a Q3.
   ocupación o silueta no acreditan naturalidad, rendimiento o aprobación estética.
 
 ## Siguiente paso y pendientes
-
-**Madera selectiva integrada en receta 2.2.0; cuatro casos verificados.**
-- Solicitud «ok me gusta, integra la variante de 6812 tris al blueprint» aprueba
-  el piloto. Controles revisados por el agente; no atribuir aprobación artística.
-- Usar `blueprints/roble_copa_ancha/2.2.0.json` y ejemplares de
-  `presets/blueprints/roble-madera/`. Generación por CLI sin estudios anteriores.
-- Galería: `artifacts/roble-pintado/integracion-madera-01/index.html`; cada caso
-  contiene `tree.glb`/`tree.blend`. [Informe](docs/evidence/roble-pintado/integracion-madera-01/informe.md).
-- No hay pendientes de integración. No iniciar fases adicionales por rutina.
-  Tronco/primarias/soportes/follaje exactos; pequeñas variaciones de secundarias.
-  Persisten posibles separaciones, trazos de canto, costuras y bounds transparentes.
-- Sin benchmark de roble ni garantía de rangos completos; históricos conservados.
-- Base de pintura en commit `2d1ed43`; ensayo e integración selectiva documentados.
+**Revisar el [roble otoñal](docs/evidence/estaciones/roble-otono-01/informe.md).**
+- Perfil 1.0.0: copa llena, ocres/cobres y verde residual; sin caída de hojas.
+- 19 checks y 7 pruebas; 64 capturas Godot, selección revisada; arte pendiente.
+- Visor: `artifacts/estaciones/roble-otono-04/godot/`; O estación, N ejemplar.
+- Shader/reglas por especie; GLB original verde intacto. [Uso](docs/estaciones.md).
+- Abedul completo sigue pendiente de valoración artística; sin nuevas edades.
+- Roble 2.2.0 cerrado; usar `blueprints/roble_copa_ancha/2.2.0.json` y
+  `presets/blueprints/roble-madera/`; galería `artifacts/roble-pintado/integracion-madera-01/index.html`.
+- Piloto aprobado; controles revisados por el agente. Sin benchmark de roble
+  ni garantía de rangos completos; posibles separaciones, cantos y costuras.
 
 Pino **2.3.0 aprobado y benchmark cerrado**; galería `artifacts/pino-pintado/pp4-cards-02/index.html`.
 Base geométrica 1.1.0 en `artifacts/blueprints/pine-v1.1-review-01/`, aceptación pendiente.
@@ -193,4 +197,4 @@ Sin bloqueos técnicos fuera del sandbox. Dentro pueden fallar audio al cerrar
 Blender y sockets loopback; ejecución autorizada fuera. Capturas Godot en lotes
 de dos escenas, dos dibujos completados por vista.
 
-Referencias regenerables: [operación histórica](docs/operacion-historica.md); evidencia en informes enlazados.
+Referencias: [operación histórica](docs/operacion-historica.md).

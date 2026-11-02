@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.5",
+  "blueprint_id": "abedul_pintado",
+  "blueprint_version": "1.0.0",
+  "profile": "adulto",
+  "seeds": {
+    "base": 6103,
+    "canopy": 200,
+    "paint": 2718
+  }
+}
