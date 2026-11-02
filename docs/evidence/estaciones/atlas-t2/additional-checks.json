@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "source_locks_current": true,
+    "published_png_exact": true,
+    "published_alpha_common_exact": true,
+    "six_external_importers_explicit": true,
+    "72_capture_hashes_current": true,
+    "final_and_previous_valid_captures_exact": true,
+    "181_tests_passed_outside_sandbox": true
+  },
+  "note": "181 pruebas pasan fuera del sandbox. La repetición dentro falló solo al abrir socket loopback; no se contó como éxito."
+}

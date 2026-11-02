@@ -1,0 +1,32 @@
+{
+  "metrics": {
+    "vertices": 670,
+    "triangles": 696,
+    "bounds_blender": [
+      [
+        0.052485,
+        -3.027938,
+        0.63827
+      ],
+      [
+        8.205399,
+        3.722326,
+        6.028687
+      ]
+    ],
+    "height_m": 5.390416999999999,
+    "triangles_by_material": {
+      "Painted_Bark": 504,
+      "Painted_Foliage": 192
+    },
+    "geometry_sha256": "c20a154fe201feccbfa2dbedd5cb9eb2695a53edc4ac08d4953ff73b2df20202"
+  },
+  "glb_sha256": "2a3ee610f6e179de16c5ff52f16e1ef1c6b994a768563d8305e217fbe1d8e528",
+  "bytes": 6284696,
+  "branch_id": "q3:primary:100",
+  "groups": 32,
+  "parts_sha256": "6addbeff9159446ee95990a066b323fdab34cfb6f37f13993e9cf0a8fc7967dc",
+  "cards_exact_subset": true,
+  "wood_exact_subset": true,
+  "blender": "5.2.1 LTS"
+}

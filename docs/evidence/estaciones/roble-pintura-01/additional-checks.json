@@ -1,0 +1,15 @@
+{
+  "rebake_rgba_exact": true,
+  "rebake_reproduction": "blender/bake_autumn_oak.py con Cycles CPU, 8 muestras, semilla 2718 y plantillas congeladas",
+  "tests": {
+    "test_seasonal_paint": 3,
+    "test_seasons": 3
+  },
+  "inspection": [
+    "comparison.jpg",
+    "controls.jpg",
+    "distances.jpg",
+    "captures/pilot-painted-perspective.png"
+  ],
+  "checkpoint_commit": "4187776"
+}

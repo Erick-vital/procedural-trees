@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "blender": "5.2.1 LTS",
+  "cases": [
+    {
+      "id": "branch-original",
+      "triangles": 696,
+      "groups": 32,
+      "corners": 576,
+      "max_normal_error": 5.59687614440918e-05,
+      "max_normal_angle_error_deg": 0.022533929550228943,
+      "normal_angle_limit_deg": 0.6,
+      "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/normales-t4-06/godot/roundtrip-branch-original.glb"
+    },
+    {
+      "id": "branch-n35",
+      "triangles": 696,
+      "groups": 32,
+      "corners": 576,
+      "max_normal_error": 0.0031675100326538086,
+      "max_normal_angle_error_deg": 0.25591643875745734,
+      "normal_angle_limit_deg": 0.6,
+      "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/normales-t4-06/godot/roundtrip-branch-n35.glb"
+    },
+    {
+      "id": "branch-n65",
+      "triangles": 696,
+      "groups": 32,
+      "corners": 576,
+      "max_normal_error": 0.00559002161026001,
+      "max_normal_angle_error_deg": 0.44799779312377175,
+      "normal_angle_limit_deg": 0.6,
+      "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/normales-t4-06/godot/roundtrip-branch-n65.glb"
+    },
+    {
+      "id": "pilot-original",
+      "triangles": 6812,
+      "groups": 264,
+      "corners": 4752,
+      "max_normal_error": 6.175041198730469e-05,
+      "max_normal_angle_error_deg": 0.023708751064728674,
+      "normal_angle_limit_deg": 0.6,
+      "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/normales-t4-06/godot/roundtrip-pilot-original.glb"
+    },
+    {
+      "id": "pilot-n35",
+      "triangles": 6812,
+      "groups": 264,
+      "corners": 4752,
+      "max_normal_error": 0.003295985981822014,
+      "max_normal_angle_error_deg": 0.2663602981024847,
+      "normal_angle_limit_deg": 0.6,
+      "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/normales-t4-06/godot/roundtrip-pilot-n35.glb"
+    },
+    {
+      "id": "pilot-n65",
+      "triangles": 6812,
+      "groups": 264,
+      "corners": 4752,
+      "max_normal_error": 0.00586913526058197,
+      "max_normal_angle_error_deg": 0.4687193377922582,
+      "normal_angle_limit_deg": 0.6,
+      "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/normales-t4-06/godot/roundtrip-pilot-n65.glb"
+    }
+  ]
+}

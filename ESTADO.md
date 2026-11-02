@@ -1,12 +1,12 @@
 # Estado del proyecto
 
-Última actualización: 2026-11-01.
-
+Última actualización: 2026-11-02.
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
 Dos tipos al cierre B5; catálogo actual: cuatro tipos/catorce recetas, incluido abedul.
-Plan activo: [estaciones](plans/estaciones.md): **primer otoño del roble 2.2.0**.
+Plan activo: [sauce pintado](plans/sauce-pintado.md): **propuesta de pintura; aceptación pendiente**.
+[Transiciones](plans/transiciones-estacionales.md): **T0–T6 cerradas y lote aprobado; entrega 0.1.0**.
 [Abedul](plans/abedul-pintado.md) 1.0.0 integrado/verificado; arte pendiente.
 Roble 2.2.0 cerrado: piloto/joven/adulto/viejo **6812/3132/5820/6900 tris**.
 [Resultado y reproducción](docs/evidence/roble-pintado/integracion-madera-01/informe.md).
@@ -165,19 +165,19 @@ la familia ensayada**, como alternativa explícita a Q3.
   ocupación o silueta no acreditan naturalidad, rendimiento o aprobación estética.
 
 ## Siguiente paso y pendientes
-**Revisar el [roble otoñal](docs/evidence/estaciones/roble-otono-01/informe.md).**
-- Perfil 1.0.0: copa llena, ocres/cobres y verde residual; sin caída de hojas.
-- 19 checks y 7 pruebas; 64 capturas Godot, selección revisada; arte pendiente.
-- Visor: `artifacts/estaciones/roble-otono-04/godot/`; O estación, N ejemplar.
-- Shader/reglas por especie; GLB original verde intacto. [Uso](docs/estaciones.md).
+**Sauce autorizado como nueva variante; empezar por pintura.** [Propuesta](docs/evidence/sauce-pintado/pintura-01/ficha.md) generada, pendiente de aceptación artística. Después: atlas y rama de muestra aprobada antes del árbol completo; máximo 6999 tris/dos materiales. **F4 queda pendiente para después de terminar el sauce**, sin inicio automático.
+T6 cerrada: [entrega de transiciones](docs/entrega-transiciones.md), lote aprobado.
+- [T5 verificada](docs/evidence/estaciones/integracion-t5/informe.md): candidata 0.1.0; 194 pruebas, 2377 capturas más cuatro en copia limpia.
+- Cuatro casos 6812/3132/5820/6900 tris; dos materiales/tres texturas compartidas; 16 extremos estándar Blender/Godot y visor común.
+- T6: `artifacts/estaciones/cierre-t6-02/`; galería, inventario de 266 fuentes/entradas y reconstrucción aislada idéntica. [Auditoría](docs/evidence/estaciones/cierre-t6/informe.md).
+- Pintura/calendario T3, normales .35 T4 y **lote T5/T6 aprobados**. [Aceptación final](docs/evidence/estaciones/cierre-t6/user-acceptance.json). Caída sin iniciar; sin benchmark.
 - Abedul completo sigue pendiente de valoración artística; sin nuevas edades.
 - Roble 2.2.0 cerrado; usar `blueprints/roble_copa_ancha/2.2.0.json` y
   `presets/blueprints/roble-madera/`; galería `artifacts/roble-pintado/integracion-madera-01/index.html`.
 - Piloto aprobado; controles revisados por el agente. Sin benchmark de roble
   ni garantía de rangos completos; posibles separaciones, cantos y costuras.
 
-Pino **2.3.0 aprobado y benchmark cerrado**; galería `artifacts/pino-pintado/pp4-cards-02/index.html`.
-Base geométrica 1.1.0 en `artifacts/blueprints/pine-v1.1-review-01/`, aceptación pendiente.
+Pino **2.3.0 aprobado y benchmark cerrado**; `artifacts/pino-pintado/pp4-cards-02/index.html`. Base geométrica 1.1.0 en `artifacts/blueprints/pine-v1.1-review-01/`, aceptación pendiente.
 
 RF5 cerrado con aprobación artística del lote completo. Matriz
 `configs/verification/rf5-v1.json`; galería
@@ -194,7 +194,7 @@ Conexiones superpuestas a Q3, sin soldar ni resolver todas las intersecciones;
 hojas angulosas/solapadas. FPS solo medidos para pinos; sin viento, LOD ni bosque.
 
 Sin bloqueos técnicos fuera del sandbox. Dentro pueden fallar audio al cerrar
-Blender y sockets loopback; ejecución autorizada fuera. Capturas Godot en lotes
-de dos escenas, dos dibujos completados por vista.
+Blender y sockets loopback; ejecución autorizada fuera. T5 captura por lotes acotados,
+bucle automático desactivado y dos dibujos explícitos por vista.
 
-Referencias: [operación histórica](docs/operacion-historica.md).
+Referencias: [operación histórica](docs/operacion-historica.md); [estudio just-a-simple-tree](docs/evidence/estaciones/referencia-just-a-simple-tree/informe.md), referencia de diseño.

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-02",
+  "decision": "approved",
+  "selected_variant": "n35",
+  "strength": 0.35,
+  "maximum_deviation_degrees": 21,
+  "user_statement": "no importa aprueba la que sea de las 2 ninguna se ve mal y continua con t5",
+  "selection_authority": "El usuario autoriza cualquiera de las dos candidatas y delega la elección; el agente elige .35 por menor desviación respecto a originales.",
+  "scope": "Normales locales .35 del ensayo T4 del piloto, para aplicar las mismas reglas a los cuatro casos en T5. No afirma mejora artística ni de FPS ni aprobación anticipada de controles T5.",
+  "verification": "docs/evidence/estaciones/normales-t4/verification.json",
+  "verification_sha256": "f3b5a2ec2e6e473fa332b5e2552fe3f24b9977d5032f4ed5beb7f57c6629581d",
+  "next_authorized_work": "T5: cuatro casos, transición, extremos estáticos y paquete candidato versionado. T6 no iniciado."
+}

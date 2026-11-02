@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Datos de calendario por grupo 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "algorithm_version",
+    "profile_sha256",
+    "groups_sha256",
+    "species",
+    "phase",
+    "seed",
+    "groups"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "algorithm_version": {
+      "const": "season-calendar-0.1.0"
+    },
+    "profile_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "groups_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "species": {
+      "const": "roble_copa_ancha"
+    },
+    "phase": {
+      "const": "summer_to_autumn_full_canopy"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "groups": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 360,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "start",
+          "duration",
+          "exposure",
+          "variation",
+          "order",
+          "neighbors"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "start": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "duration": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "exposure": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "variation": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "order": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "neighbors": {
+            "type": "array",
+            "maxItems": 24,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

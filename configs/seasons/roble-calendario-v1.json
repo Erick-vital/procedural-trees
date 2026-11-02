@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "roble-verano-otono",
+  "version": "0.1.0",
+  "species": "roble_copa_ancha",
+  "blueprint_version": "2.2.0",
+  "phase": "summer_to_autumn_full_canopy",
+  "seed": 1101,
+  "resources": {
+    "summer": {
+      "path": "assets/roble-pintado/v0.3.0/foliage.png",
+      "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+    },
+    "autumn": {
+      "path": "assets/roble-otono-pintado/v0.1.0/crossed-atlas.png",
+      "sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf"
+    },
+    "bark": {
+      "path": "assets/roble-pintado/v0.2.0/bark.png",
+      "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+    }
+  },
+  "exposure": {
+    "neighbors": 24,
+    "rays": 12,
+    "reach_scale": 4.0,
+    "density": 1.15
+  },
+  "calendar": {
+    "start_min": 0.06,
+    "start_max": 0.7,
+    "duration_min": 0.16,
+    "duration_max": 0.26,
+    "exposure_weight": 0.6,
+    "correlation": 0.5
+  },
+  "limits": {
+    "groups": 360,
+    "triangles": 6999,
+    "materials": 2
+  }
+}

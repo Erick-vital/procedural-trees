@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": {
+    "185_tests_passed": true,
+    "all_input_and_runtime_sources_current": true,
+    "review_script_current": true,
+    "all_capture_hashes_current": true,
+    "fixed_orbit_raw_sequence_02_03_04_exact": true,
+    "three_imported_texture_paths": true,
+    "all_import_settings_explicit": true,
+    "517_real_captures": true,
+    "runtime_and_source_bark_pixels_exact": true
+  },
+  "evidence_script_sha256": "2c79c0c447d995f63937b795e5c09db2799643aeb1b6b5d147edff1a00f498ad",
+  "selected_files_sha256": {
+    "orbit-largest-change.jpg": "e485a64b56ed4e34518da290f212c609f6ff1029170d7632406b5839908f1be6",
+    "orbit-timeline.jpg": "3d62e8d8b229ae00231b32b2313941edfcba98f780643bd31d0e97efff6843de",
+    "manifest.json": "a2c0cfa52d81a49204769bb0dd2a3842a50924b94a71f144074572f8534ddf1d",
+    "fixed-timeline.jpg": "15042a582ad1743e274235ef49d5f6ed06cfc7a7bdf0ec371833b82783ab52ce",
+    "viewer.png": "0a86d229d70be27e6b145ff1bf791918997ff52a0c2583ad2ab7faaf8c0376bd",
+    "fixed.webp": "f9e8da1f753ca0111cfc58c7d58e780998a05dc9f17a95e3d38cd52040a08de1",
+    "comparison.jpg": "cef9018a969065c5bb9df84f76fda5e16f341d11826279345c5ec3b4f8234d36",
+    "fixed-largest-change.jpg": "ca2396b325e51ee3ca85c5f11b5445013cc24152df21e097a9a7172b78d1e35d",
+    "verification.json": "3ee468bece6071fcf983667236d3f856bf4586a7d757a207882479a8e0a626ec",
+    "informe.md": "21c8b9c715a87d4afa1304b156d055c0ec4389dd50203e40d386825eedaf8a78"
+  }
+}

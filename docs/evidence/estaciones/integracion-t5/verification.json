@@ -1,0 +1,2437 @@
+{
+  "version": "season-bundle-0.1.0",
+  "passed": true,
+  "checks": {
+    "all_four_case_godot": true,
+    "16_blender_endpoints": true,
+    "viewer_passed": true,
+    "three_textures_two_shared_materials": true,
+    "clean_external_copy_passed": true,
+    "1928_sequence_frames": true,
+    "historical_catalog_exact": true,
+    "final_locks_exact": true
+  },
+  "manifest": {
+    "version": "season-bundle-0.1.0",
+    "bundle": {
+      "version": "season-bundle-0.1.0",
+      "profile": {
+        "version": "season-bundle-0.1.0",
+        "blueprint": "blueprints/roble_copa_ancha/2.2.0.json",
+        "matrix": "configs/verification/oak-wood-v1.json",
+        "paint_profile": "configs/seasons/roble-mezcla-v1.json",
+        "calendar_profile": "configs/seasons/roble-calendario-v1.json",
+        "normal_algorithm": "canopy-local-normals-0.1.0",
+        "normal_strength": 0.35,
+        "normal_approval": "docs/evidence/estaciones/normales-t4/user-acceptance.json",
+        "phase": "summer_to_autumn_full_canopy",
+        "max_triangles": 6999,
+        "max_materials": 2
+      },
+      "cases": [
+        {
+          "id": "pilot",
+          "triangles": 6812,
+          "materials": 2,
+          "groups": 264,
+          "planes": 792,
+          "seeds": {
+            "base": 3009,
+            "canopy": 17,
+            "paint": 2718,
+            "season": 1101
+          },
+          "bounds": {
+            "center": [
+              0.9626200199127197,
+              4.843725681304932,
+              0.52675461769104
+            ],
+            "span": 15.013818264007568
+          },
+          "exports": {
+            "summer-original": "cases/pilot/summer-original.glb",
+            "autumn-original": "cases/pilot/autumn-original.glb",
+            "summer-selected": "cases/pilot/summer-selected.glb",
+            "autumn-selected": "cases/pilot/autumn-selected.glb"
+          },
+          "calendar": "cases/pilot/calendar.json",
+          "fields": "cases/pilot/fields.json",
+          "binding": "cases/pilot/binding.json",
+          "calendar_sha256": "1071ad4f52c7d68501da4fde800c2334eb9007cc19bf070faeeda2ba4982265d",
+          "fields_sha256": "355fac90b3bb614f003f832361038b1a63a6bd956bf95d1188108530055fb614",
+          "normal_max_angle_deg": 21.000000000000036
+        },
+        {
+          "id": "joven-07",
+          "triangles": 3132,
+          "materials": 2,
+          "groups": 264,
+          "planes": 792,
+          "seeds": {
+            "base": 1007,
+            "canopy": 17,
+            "paint": 2718,
+            "season": 1101
+          },
+          "bounds": {
+            "center": [
+              -0.05643284320831299,
+              2.1035947799682617,
+              0.0916358232498169
+            ],
+            "span": 4.207189559936523
+          },
+          "exports": {
+            "summer-original": "cases/joven-07/summer-original.glb",
+            "autumn-original": "cases/joven-07/autumn-original.glb",
+            "summer-selected": "cases/joven-07/summer-selected.glb",
+            "autumn-selected": "cases/joven-07/autumn-selected.glb"
+          },
+          "calendar": "cases/joven-07/calendar.json",
+          "fields": "cases/joven-07/fields.json",
+          "binding": "cases/joven-07/binding.json",
+          "calendar_sha256": "e1555b28c4345d57db7d07e19da9a1abd2e1a8972157de06ff8e44bbdacf0a76",
+          "fields_sha256": "0467097c4dca275b0991432b8ee3ad10a85f7a827c04284d886d6c6e76c30119",
+          "normal_max_angle_deg": 21.000000000000036
+        },
+        {
+          "id": "adulto-00",
+          "triangles": 5820,
+          "materials": 2,
+          "groups": 264,
+          "planes": 792,
+          "seeds": {
+            "base": 2000,
+            "canopy": 17,
+            "paint": 2718,
+            "season": 1101
+          },
+          "bounds": {
+            "center": [
+              0.39803647994995117,
+              5.360608100891113,
+              -0.4179518222808838
+            ],
+            "span": 15.272526741027832
+          },
+          "exports": {
+            "summer-original": "cases/adulto-00/summer-original.glb",
+            "autumn-original": "cases/adulto-00/autumn-original.glb",
+            "summer-selected": "cases/adulto-00/summer-selected.glb",
+            "autumn-selected": "cases/adulto-00/autumn-selected.glb"
+          },
+          "calendar": "cases/adulto-00/calendar.json",
+          "fields": "cases/adulto-00/fields.json",
+          "binding": "cases/adulto-00/binding.json",
+          "calendar_sha256": "ea45cdcf8c993ad1b2ec7a67e445f148d6a68c1883e8ff089bc4953e47c410be",
+          "fields_sha256": "53146e307a574e251cf2d1e12c799209e379d7ab31be688652563acaf8c7c193",
+          "normal_max_angle_deg": 21.000000000000036
+        },
+        {
+          "id": "viejo-00",
+          "triangles": 6900,
+          "materials": 2,
+          "groups": 264,
+          "planes": 792,
+          "seeds": {
+            "base": 3000,
+            "canopy": 17,
+            "paint": 2718,
+            "season": 1101
+          },
+          "bounds": {
+            "center": [
+              0.49222731590270996,
+              4.955291748046875,
+              -0.030994415283203125
+            ],
+            "span": 15.733837127685547
+          },
+          "exports": {
+            "summer-original": "cases/viejo-00/summer-original.glb",
+            "autumn-original": "cases/viejo-00/autumn-original.glb",
+            "summer-selected": "cases/viejo-00/summer-selected.glb",
+            "autumn-selected": "cases/viejo-00/autumn-selected.glb"
+          },
+          "calendar": "cases/viejo-00/calendar.json",
+          "fields": "cases/viejo-00/fields.json",
+          "binding": "cases/viejo-00/binding.json",
+          "calendar_sha256": "0f0050e2a179d3fc5c02d67dd7bf63785132605d828a2a60af7380f8a4203901",
+          "fields_sha256": "f16e9f289cd61573b966e939d701dbb7e6d2a7b415c335066e4dd09e6b5c621d",
+          "normal_max_angle_deg": 21.000000000000036
+        }
+      ],
+      "normal_selection": ".35 selected; originals preserved as controls",
+      "phase_portability": "Static endpoints are standard GLB. Animated group mix requires Godot adapter. Intermediate static export is not implemented.",
+      "memory_estimate_rgba8_bytes": {
+        "two_foliage_atlases_base": 32000000,
+        "two_foliage_atlases_mips": 42665712,
+        "all_three_textures_base": 38290064,
+        "all_three_textures_mips": 51049784
+      },
+      "foliage_samples_per_fragment_evaluation": 2,
+      "status": "candidate_four_case_review_pending",
+      "resource_pixels_sha256": {
+        "summer": "bc5bb952e08eb7b330d840eccbd51dcf49900cd88cf551c82c3018ce16ad8a6e",
+        "autumn": "8d31706f5de39c696117e891a05b7143f068128830d4fcf33008c68b4c5e6a80",
+        "bark": "2ea0d0ac6b9bbc9fd97c7d7b3a15b93ff2f833ebb196b4406288b39124ba3b92"
+      },
+      "files_sha256": {
+        "cases/adulto-00/autumn-original.glb": "8cf403c521ae83dacfb11ea0d9b7895e0c32667efbd9a853a50b8a81290754bb",
+        "cases/adulto-00/autumn-selected.glb": "884e9022110e969b6842f40d2e6543b4eec180dccc7757cabe62f548f72d760f",
+        "cases/adulto-00/binding.json": "171ac62b353537975b4cc25f630f4ef84142ce2d685921fac4838c63cc8ea870",
+        "cases/adulto-00/calendar.json": "aa92c3107917ca4d72ac5fe3650a1885491cc8eb4f33af8fe44558e123aeb95c",
+        "cases/adulto-00/fields.json": "36a0c63df3bc155c4f20e43c6a8120f06d7aaa902ab0f775342cb1dee27d9e14",
+        "cases/adulto-00/summer-original.glb": "50210b6a56264d108885a8de5949f7a92ac632c5faa9f54f53bc00b7522bcf95",
+        "cases/adulto-00/summer-selected.glb": "3487396693e8649bb3d0c2094abfa52e3fab11fb4051fb83ee9679b6d9491319",
+        "cases/joven-07/autumn-original.glb": "68dbd8ef0f8014fb86dc848f43eac83a7a60dfe35f5591c2e866559a788a6cad",
+        "cases/joven-07/autumn-selected.glb": "9e4e2b9ce5908e4d7ca9d4915abf7281ebc3419bc5dadad15edd9a5c21515a45",
+        "cases/joven-07/binding.json": "e3bf05a887ad8e6ef8fee340f2c863d183db900745478bdfbde2d024de539a18",
+        "cases/joven-07/calendar.json": "1a8432a7c3621fba944b012a1f7742e3ec20687206f6b50353fb16cd9bb6f007",
+        "cases/joven-07/fields.json": "db958275511b1ee3347dc4911eae1cccbc530d6be65aeb214edc752119a3f474",
+        "cases/joven-07/summer-original.glb": "6c3d5b90e15dfa6c7de4a0e98f1f87bebd2286d30e0c50bbf294fee4405eda98",
+        "cases/joven-07/summer-selected.glb": "af171928b680079a028faaa4ef4f5b709391f99dc3cc68e6c3e92a90200a3001",
+        "cases/pilot/autumn-original.glb": "93e6ecb732502bb89a79cb46b15e9dd856565dbb0a786883d758afa3e5fa7cc8",
+        "cases/pilot/autumn-selected.glb": "e14c1dd2a3d53ab9c78ae1f45ef031ae0354da1f57fc91bdd912cd20fdc81c98",
+        "cases/pilot/binding.json": "74b69e414dec9bfd0cbd33c7b283a79146f4c52273627a6b8cced7f1d25d9c25",
+        "cases/pilot/calendar.json": "2d48c513b9c4f1e2a55853c436731ae29771d12363a348fda0605f6709d7225a",
+        "cases/pilot/fields.json": "eeb3746bba42edf60a9188d25ce80f90f5f836d433addcd26f60f812a5d30157",
+        "cases/pilot/summer-original.glb": "5eaf9dc6c8e6dbfe8afce23119b5aa95fe84e71f71713965d107945532c8d1f1",
+        "cases/pilot/summer-selected.glb": "7986d83dbd1a63c9299f709b84df9e2e628c032062058fa1e732b3a67d84ed59",
+        "cases/viejo-00/autumn-original.glb": "7833268fb0a2f89182bf18a0d86adedd3c3846069e3497317d49f511d5587568",
+        "cases/viejo-00/autumn-selected.glb": "2754b7e47fed4d1753a85263dad014137e86fb5a464ce3f57f0816b907e82b78",
+        "cases/viejo-00/binding.json": "9188c22a5b2159df5d28a1b7909fdc4e4ee5c487d1040cc6b490c0b0424e8307",
+        "cases/viejo-00/calendar.json": "12ac0c0f1b237a99b3b605065d58164b07a85a5a5ce9b1a320a27850b2269aff",
+        "cases/viejo-00/fields.json": "edcd2a3e758d7bb3c4c08e0c36f00a9f93395cef011d935ef5779fcbce7b37de",
+        "cases/viejo-00/summer-original.glb": "cec7f910db60a9bb60918104b131ee9bc92062d806a60a7b3a3e8cd1deac888e",
+        "cases/viejo-00/summer-selected.glb": "7f5d9550e275a15e1d2c856a4f8c42c2e2418706aa21596fdf6db15d3b68716c",
+        "resources/autumn.png": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+        "resources/bark.png": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+        "resources/summer.png": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+        "README.txt": "e0dda6024674b0e367ff3bf8d1370337d99e4d15fe7a1e5b2656287c3c8374fe"
+      }
+    },
+    "source_lock": {
+      "scripts/build_season_bundle.py": "1247ad837853d72994aa8b5d754186efd9888426a7b007cb284e73ed83e5b81d",
+      "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+      "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+      "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+      "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+      "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+      "blender/verify_canopy_normals.py": "2a66a50e0a9030d24eb525253508bb9b007ddcd03ac567e7adb4c108bfd23099",
+      "godot/season_bundle_tree.gd": "f3f36553dae6d9dfb580601de037fbd44ea4a9b22951d017f0431ff1119ed349",
+      "godot/season_bundle_viewer.gd": "fc939539c24236d275d5e3a4ed64942b09396de27c299c8defc340ac3174a982",
+      "godot/season_bundle_scene.gd": "dfcc56b84c41eda7ce0b15c76b6485e875d87dc5b8a7f21f0528dcb4db058d36",
+      "godot/review_season_bundle.gd": "74cc81dc80184efd78568660eecae00cbd2bd304b294a8b69e36d5debe206a69",
+      "godot/review_season_bundle_resources.gd": "85ff86c391e8d4168315c9354b9ecb6163c69843f05fcffc04d893ef7ae2226b",
+      "godot/paint_transition.gdshader": "66d7186f08cf23f6211efccebcb41f3c6278605ace220f1e9b4223297328d362",
+      "godot/review_season_calendar.gd": "796ed50fc6e1efd1a3d4a1328882902366f26f8f790f8eadf12ffdebb417a5e1",
+      "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0"
+    },
+    "input_lock": {
+      "configs/seasons/roble-integracion-v1.json": "d8dd19c872998f840724df06ab13552e8aef3a0cc477fd36a8162aae067da1b6",
+      "docs/evidence/estaciones/normales-t4/user-acceptance.json": "3cc5d2b3ebc804451416bf1032e1813d90d1505d19077f634a23895144407a93",
+      "docs/evidence/estaciones/mezcla-t3/user-acceptance.json": "6069152b34be9c241a08ba8b6e083c367c06d65292e2320d7edfa5ead0bf2a63",
+      "artifacts/estaciones/calendario-t01-03/verification.json": "caab70a2e699ac424a77c779f26554d7a4bb21ff4deb721ba6288414b9eda80d",
+      "configs/verification/oak-wood-v1.json": "779db78f74041cf0d4ffd2fab7ff6db7b3872074bbb9553e228344db7f3b72a0",
+      "blueprints/roble_copa_ancha/2.2.0.json": "826bb39901fc32483d5b0f35e7248e77d4743b069dae4f445c6e823360c40ba0",
+      "configs/seasons/roble-calendario-v1.json": "29fe9c9eac1637d4b0349fa8d2bee792d097cc1e6ace892c064fdefa6db04d4d",
+      "configs/seasons/roble-mezcla-v1.json": "b45e5f33e8fe9881173e8fa2a49f6c5f071848957cd565ee4966917c9ac4dd29",
+      "assets/roble-estacional/v0.1.0/manifest.json": "e52e176a5f9ea022fdf4d1ec6196c47a678daf317bf9e3141b1957b4c123304b",
+      "assets/roble-estacional/v0.1.0/summer.png": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+      "assets/roble-estacional/v0.1.0/autumn.png": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+      "assets/roble-pintado/v0.2.0/bark.png": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+      "godot/seasonal_foliage.gdshader": "cf19e2db6ecac47b0b458edf4fcf1ac7b9bad5a28445081ffa93ac61241641c6",
+      "configs/seasons/roble-otono-v1.json": "42092d78a454d23d2cab5fca2e2f1e69438a3f1f3d071a3335df160bf3130b50",
+      "artifacts/estaciones/calendario-t01-03/pilot/tree.glb": "c40ac7e5c44a5c2a898bb67fc89ce8ebb1348530960f0b151eff201493aaf141",
+      "artifacts/estaciones/calendario-t01-03/pilot/binding.json": "74b69e414dec9bfd0cbd33c7b283a79146f4c52273627a6b8cced7f1d25d9c25",
+      "artifacts/estaciones/calendario-t01-03/pilot/volumes.json": "fcc67a2f851ac3faa35cc630491e727f5eb59adb88a399ce88f9fffda85632ed",
+      "artifacts/estaciones/calendario-t01-03/pilot/calendar.json": "2d48c513b9c4f1e2a55853c436731ae29771d12363a348fda0605f6709d7225a",
+      "artifacts/roble-pintado/integracion-madera-01/pilot/manifest.json": "adef88b43a3758e345eee1f1be127d6ad786217c7f3a1bb2829bcf698b9320b2",
+      "artifacts/estaciones/normales-t4-06/godot/pilot-n35-summer.glb": "7986d83dbd1a63c9299f709b84df9e2e628c032062058fa1e732b3a67d84ed59",
+      "artifacts/estaciones/calendario-t01-03/joven-07/tree.glb": "906cd255559a50c0a0db70f8ce3e57cd05ab6466b14367fec18d34247f54906c",
+      "artifacts/estaciones/calendario-t01-03/joven-07/binding.json": "e3bf05a887ad8e6ef8fee340f2c863d183db900745478bdfbde2d024de539a18",
+      "artifacts/estaciones/calendario-t01-03/joven-07/volumes.json": "510f498e4108f4a936c3e24d7ab7b0b705af3be669d74325aa87f5d895a89444",
+      "artifacts/estaciones/calendario-t01-03/joven-07/calendar.json": "1a8432a7c3621fba944b012a1f7742e3ec20687206f6b50353fb16cd9bb6f007",
+      "artifacts/roble-pintado/integracion-madera-01/joven-07/manifest.json": "0c6cc82dc219ebe9071b2e3cf5bc9dc27df81e67a185a53b6a3059596831389e",
+      "artifacts/estaciones/calendario-t01-03/adulto-00/tree.glb": "028670e5bcac07422ace18a27401095b5533285bb95333f4b93ec4c3be128e99",
+      "artifacts/estaciones/calendario-t01-03/adulto-00/binding.json": "171ac62b353537975b4cc25f630f4ef84142ce2d685921fac4838c63cc8ea870",
+      "artifacts/estaciones/calendario-t01-03/adulto-00/volumes.json": "11c091fa5402765b5c20a46d80f8bfac62567c9b57b620e9b39fd4f80c663943",
+      "artifacts/estaciones/calendario-t01-03/adulto-00/calendar.json": "aa92c3107917ca4d72ac5fe3650a1885491cc8eb4f33af8fe44558e123aeb95c",
+      "artifacts/roble-pintado/integracion-madera-01/adulto-00/manifest.json": "4958f79196f939c347c1c7ad3327d6f286107adb2f3ff98fcb41a07a278c4fbb",
+      "artifacts/estaciones/calendario-t01-03/viejo-00/tree.glb": "30b9e43b093cc35ca365e64ded27f02ff01c2a84224e8aefedad5aae7db2805e",
+      "artifacts/estaciones/calendario-t01-03/viejo-00/binding.json": "9188c22a5b2159df5d28a1b7909fdc4e4ee5c487d1040cc6b490c0b0424e8307",
+      "artifacts/estaciones/calendario-t01-03/viejo-00/volumes.json": "d732bd87eb425196feb27d9b2c8e78c52666120b5357fbf31f2724632014c758",
+      "artifacts/estaciones/calendario-t01-03/viejo-00/calendar.json": "12ac0c0f1b237a99b3b605065d58164b07a85a5a5ce9b1a320a27850b2269aff",
+      "artifacts/roble-pintado/integracion-madera-01/viejo-00/manifest.json": "f2dd6f3f02cb1f4ce1b5a68fd9a4fb01a26a6432314e77b838588280f8eeb7e7"
+    },
+    "project_lock": {
+      "adulto-00-original.tscn": "dfbfd15f48cf6cd8925e41075bd251979733a2b24f7a182351a58b7dc10e4f0c",
+      "adulto-00-selected.tscn": "7b7ad6d24ca1442c636fc3031b3751aab52740f59bcdb043ab32697bcc332bd4",
+      "bark.tres": "b2712e3b46ec32932543ec915b7a58a76ff9d8c99bb0d975d1412eb22ab050d3",
+      "bundle-config.json": "5cbf114c8d8f4019b2ba88b2b6d2473f32e2bc827f481e2830d0841a41d008e7",
+      "data/adulto-00/binding.json": "171ac62b353537975b4cc25f630f4ef84142ce2d685921fac4838c63cc8ea870",
+      "data/adulto-00/calendar.json": "aa92c3107917ca4d72ac5fe3650a1885491cc8eb4f33af8fe44558e123aeb95c",
+      "data/adulto-00/fields.json": "36a0c63df3bc155c4f20e43c6a8120f06d7aaa902ab0f775342cb1dee27d9e14",
+      "data/adulto-00/original-normals.json": "509a6b180f0c41f7abb6f42c61fa652ab22ad589dda67d7426dd2ec5bc14054d",
+      "data/adulto-00/selected-normals.json": "bf3fb21b7ef030854729ace59306c1c2515c2ed00adb6706d307a1af113bdbc9",
+      "data/joven-07/binding.json": "e3bf05a887ad8e6ef8fee340f2c863d183db900745478bdfbde2d024de539a18",
+      "data/joven-07/calendar.json": "1a8432a7c3621fba944b012a1f7742e3ec20687206f6b50353fb16cd9bb6f007",
+      "data/joven-07/fields.json": "db958275511b1ee3347dc4911eae1cccbc530d6be65aeb214edc752119a3f474",
+      "data/joven-07/original-normals.json": "dc67ecb5e47f22738a11cf6cfa83d6319e7b2ffd51009b7804276059fb4a548a",
+      "data/joven-07/selected-normals.json": "6295bfcbd87e8f1a1e83fee08a4c12f3d3355ee176fb800031915ed90c28b56d",
+      "data/pilot/binding.json": "74b69e414dec9bfd0cbd33c7b283a79146f4c52273627a6b8cced7f1d25d9c25",
+      "data/pilot/calendar.json": "2d48c513b9c4f1e2a55853c436731ae29771d12363a348fda0605f6709d7225a",
+      "data/pilot/fields.json": "eeb3746bba42edf60a9188d25ce80f90f5f836d433addcd26f60f812a5d30157",
+      "data/pilot/original-normals.json": "3682a129e14bad89cb7a2716d10f0b306860a272d357f75d44b0eee7f6691a54",
+      "data/pilot/selected-normals.json": "70d8b21871c3476c1b36fbd538f4eec6999001c6f9dfb4cc86ce3a85177bda32",
+      "data/viejo-00/binding.json": "9188c22a5b2159df5d28a1b7909fdc4e4ee5c487d1040cc6b490c0b0424e8307",
+      "data/viejo-00/calendar.json": "12ac0c0f1b237a99b3b605065d58164b07a85a5a5ce9b1a320a27850b2269aff",
+      "data/viejo-00/fields.json": "edcd2a3e758d7bb3c4c08e0c36f00a9f93395cef011d935ef5779fcbce7b37de",
+      "data/viejo-00/original-normals.json": "d35f4e0410e953a032a9c565499fdf8daca515e468fb76a433b738ff0588e7d6",
+      "data/viejo-00/selected-normals.json": "0d7a581dd60f9b442b5315ff945bc8529b2b56d90d7e20b091c9324e96faed0b",
+      "joven-07-original.tscn": "1f88eeb5c32324f5907ed9ad68b8865fecb45a1eeb584b08717fb137ee2afc35",
+      "joven-07-selected.tscn": "b93bde26c55818a6272b05468145a0df5e7cfce09571d1196d542496f9278029",
+      "legacy-profile.json": "42092d78a454d23d2cab5fca2e2f1e69438a3f1f3d071a3335df160bf3130b50",
+      "legacy_control.gdshader": "14ea93878bebddd1a5ebb93138085d073aa359d4ce4666259ab28db6973aa6ca",
+      "paint_transition.gdshader": "66d7186f08cf23f6211efccebcb41f3c6278605ace220f1e9b4223297328d362",
+      "paint_transition.tres": "29dea270f1d0a3118acee1d397d99a35f576941ed70aa7064b5aa8157e224d3e",
+      "pilot-original.tscn": "7f74076e201b10f71b74c2337296888269ee7f9135fe0361f462959467cdf3be",
+      "pilot-selected.tscn": "8732bbeee8dd34037165546074eeee3963c3781aa7cb4b8a8d0b887d5d36939e",
+      "project.godot": "afa73426d38387a5cb0075f6bb79f2540d900b7ca099660220cc6ac200a7101b",
+      "resources/autumn.png": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+      "resources/bark.png": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+      "resources/summer.png": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+      "review_season_bundle.gd": "74cc81dc80184efd78568660eecae00cbd2bd304b294a8b69e36d5debe206a69",
+      "review_season_bundle_resources.gd": "85ff86c391e8d4168315c9354b9ecb6163c69843f05fcffc04d893ef7ae2226b",
+      "review_season_calendar.gd": "796ed50fc6e1efd1a3d4a1328882902366f26f8f790f8eadf12ffdebb417a5e1",
+      "runtime/adulto-00-original.glb": "50210b6a56264d108885a8de5949f7a92ac632c5faa9f54f53bc00b7522bcf95",
+      "runtime/adulto-00-selected.glb": "3487396693e8649bb3d0c2094abfa52e3fab11fb4051fb83ee9679b6d9491319",
+      "runtime/joven-07-original.glb": "6c3d5b90e15dfa6c7de4a0e98f1f87bebd2286d30e0c50bbf294fee4405eda98",
+      "runtime/joven-07-selected.glb": "af171928b680079a028faaa4ef4f5b709391f99dc3cc68e6c3e92a90200a3001",
+      "runtime/pilot-original.glb": "5eaf9dc6c8e6dbfe8afce23119b5aa95fe84e71f71713965d107945532c8d1f1",
+      "runtime/pilot-selected.glb": "7986d83dbd1a63c9299f709b84df9e2e628c032062058fa1e732b3a67d84ed59",
+      "runtime/viejo-00-original.glb": "cec7f910db60a9bb60918104b131ee9bc92062d806a60a7b3a3e8cd1deac888e",
+      "runtime/viejo-00-selected.glb": "7f5d9550e275a15e1d2c856a4f8c42c2e2418706aa21596fdf6db15d3b68716c",
+      "season_bundle_scene.gd": "dfcc56b84c41eda7ce0b15c76b6485e875d87dc5b8a7f21f0528dcb4db058d36",
+      "season_bundle_tree.gd": "f3f36553dae6d9dfb580601de037fbd44ea4a9b22951d017f0431ff1119ed349",
+      "season_bundle_viewer.gd": "fc939539c24236d275d5e3a4ed64942b09396de27c299c8defc340ac3174a982",
+      "static/adulto-00-autumn-original.glb": "8cf403c521ae83dacfb11ea0d9b7895e0c32667efbd9a853a50b8a81290754bb",
+      "static/adulto-00-autumn-selected.glb": "884e9022110e969b6842f40d2e6543b4eec180dccc7757cabe62f548f72d760f",
+      "static/adulto-00-summer-original.glb": "50210b6a56264d108885a8de5949f7a92ac632c5faa9f54f53bc00b7522bcf95",
+      "static/adulto-00-summer-selected.glb": "3487396693e8649bb3d0c2094abfa52e3fab11fb4051fb83ee9679b6d9491319",
+      "static/joven-07-autumn-original.glb": "68dbd8ef0f8014fb86dc848f43eac83a7a60dfe35f5591c2e866559a788a6cad",
+      "static/joven-07-autumn-selected.glb": "9e4e2b9ce5908e4d7ca9d4915abf7281ebc3419bc5dadad15edd9a5c21515a45",
+      "static/joven-07-summer-original.glb": "6c3d5b90e15dfa6c7de4a0e98f1f87bebd2286d30e0c50bbf294fee4405eda98",
+      "static/joven-07-summer-selected.glb": "af171928b680079a028faaa4ef4f5b709391f99dc3cc68e6c3e92a90200a3001",
+      "static/pilot-autumn-original.glb": "93e6ecb732502bb89a79cb46b15e9dd856565dbb0a786883d758afa3e5fa7cc8",
+      "static/pilot-autumn-selected.glb": "e14c1dd2a3d53ab9c78ae1f45ef031ae0354da1f57fc91bdd912cd20fdc81c98",
+      "static/pilot-summer-original.glb": "5eaf9dc6c8e6dbfe8afce23119b5aa95fe84e71f71713965d107945532c8d1f1",
+      "static/pilot-summer-selected.glb": "7986d83dbd1a63c9299f709b84df9e2e628c032062058fa1e732b3a67d84ed59",
+      "static/viejo-00-autumn-original.glb": "7833268fb0a2f89182bf18a0d86adedd3c3846069e3497317d49f511d5587568",
+      "static/viejo-00-autumn-selected.glb": "2754b7e47fed4d1753a85263dad014137e86fb5a464ce3f57f0816b907e82b78",
+      "static/viejo-00-summer-original.glb": "cec7f910db60a9bb60918104b131ee9bc92062d806a60a7b3a3e8cd1deac888e",
+      "static/viejo-00-summer-selected.glb": "7f5d9550e275a15e1d2c856a4f8c42c2e2418706aa21596fdf6db15d3b68716c",
+      "verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+      "viejo-00-original.tscn": "c7b8c2ad023295b6e7ba5e62b8b1b442ec2aa2a156dfbfa3d812423955292bf4",
+      "viejo-00-selected.tscn": "720a66d0dfd6900c4c4dbab650d4ae824093daf621adafaf1f21cf88cf81581c",
+      "viewer.tscn": "3cbe8cb1fc5db3faff823fe792835178967007c9fe362ef5660173adf329bef8"
+    },
+    "portable_manifest_sha256": "5cbf114c8d8f4019b2ba88b2b6d2473f32e2bc827f481e2830d0841a41d008e7"
+  },
+  "godot": {
+    "pilot": {
+      "matrix": {
+        "checks": {
+          "gpu-linear-1": true,
+          "gpu-linear-2": true,
+          "gpu-linear-3": true,
+          "gpu-linear-4": true,
+          "gpu-linear-5": true,
+          "gpu-linear-6": true,
+          "invalid-phase-rejected": true,
+          "jump-.9-.2-exact": true,
+          "mask-phase-0": true,
+          "mask-phase-1": true,
+          "mask-phase-2": true,
+          "mask-phase-3": true,
+          "mask-phase-4": true,
+          "other-case-render-independent": true,
+          "pilot-autumn-original-264-groups": true,
+          "pilot-autumn-original-budget": true,
+          "pilot-autumn-selected-264-groups": true,
+          "pilot-autumn-selected-budget": true,
+          "pilot-runtime-264-groups": true,
+          "pilot-runtime-budget": true,
+          "pilot-summer-original-264-groups": true,
+          "pilot-summer-original-budget": true,
+          "pilot-summer-selected-264-groups": true,
+          "pilot-summer-selected-budget": true,
+          "roundtrip-pilot-autumn-original-264-groups": true,
+          "roundtrip-pilot-autumn-original-budget": true,
+          "roundtrip-pilot-autumn-selected-264-groups": true,
+          "roundtrip-pilot-autumn-selected-budget": true,
+          "roundtrip-pilot-summer-original-264-groups": true,
+          "roundtrip-pilot-summer-original-budget": true,
+          "roundtrip-pilot-summer-selected-264-groups": true,
+          "roundtrip-pilot-summer-selected-budget": true,
+          "runtime-autumn-exact": true,
+          "runtime-summer-exact": true,
+          "shared-paint-across-cases": true,
+          "static-runtime-endpoint-0": true,
+          "static-runtime-endpoint-4": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "pilot-autumn-original": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00022320169955492,
+            "triangles": 6812,
+            "vertices": 3188
+          },
+          "pilot-autumn-selected": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000250253244303167,
+            "triangles": 6812,
+            "vertices": 3188
+          },
+          "pilot-runtime": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000250253244303167,
+            "triangles": 6812,
+            "vertices": 3188
+          },
+          "pilot-summer-original": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00022320169955492,
+            "triangles": 6812,
+            "vertices": 3188
+          },
+          "pilot-summer-selected": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000250253244303167,
+            "triangles": 6812,
+            "vertices": 3188
+          },
+          "roundtrip-pilot-autumn-original": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00022320169955492,
+            "triangles": 6812,
+            "vertices": 3188
+          },
+          "roundtrip-pilot-autumn-selected": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00469313887879252,
+            "triangles": 6812,
+            "vertices": 3188
+          },
+          "roundtrip-pilot-summer-original": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00022320169955492,
+            "triangles": 6812,
+            "vertices": 3188
+          },
+          "roundtrip-pilot-summer-selected": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00469313887879252,
+            "triangles": 6812,
+            "vertices": 3188
+          }
+        },
+        "passed": true,
+        "probe": [
+          {
+            "actual": [
+              30,
+              160,
+              64
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              32,
+              160,
+              64
+            ],
+            "max_error": 0.0,
+            "p": 0.0,
+            "standard_reference": [
+              30,
+              160,
+              64
+            ],
+            "weight": 0.0
+          },
+          {
+            "actual": [
+              163,
+              131,
+              45
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              163,
+              131,
+              47
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 0.375,
+            "standard_reference": [
+              162,
+              130,
+              45
+            ],
+            "weight": 0.5
+          },
+          {
+            "actual": [
+              220,
+              90,
+              10
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              220,
+              90,
+              15
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 1.0,
+            "standard_reference": [
+              220,
+              90,
+              9
+            ],
+            "weight": 1.0
+          },
+          {
+            "actual": [
+              30,
+              160,
+              64
+            ],
+            "calendar": [
+              0.362767994403839,
+              0.202136263251305
+            ],
+            "expected": [
+              32,
+              160,
+              64
+            ],
+            "max_error": 0.0,
+            "p": 0.0,
+            "standard_reference": [
+              30,
+              160,
+              64
+            ],
+            "weight": 0.0
+          },
+          {
+            "actual": [
+              163,
+              131,
+              45
+            ],
+            "calendar": [
+              0.362767994403839,
+              0.202136263251305
+            ],
+            "expected": [
+              163,
+              131,
+              47
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 0.463836126029491,
+            "standard_reference": [
+              162,
+              130,
+              45
+            ],
+            "weight": 0.5
+          },
+          {
+            "actual": [
+              220,
+              90,
+              10
+            ],
+            "calendar": [
+              0.362767994403839,
+              0.202136263251305
+            ],
+            "expected": [
+              220,
+              90,
+              15
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 1.0,
+            "standard_reference": [
+              220,
+              90,
+              9
+            ],
+            "weight": 1.0
+          }
+        ],
+        "checks_passed_count": 37,
+        "capture_count": 112,
+        "frame_count": 0,
+        "reverse_pairs": 0,
+        "native_report_sha256": "2fdda0e5aa871eb97a0b22b95374cd3bad3b6fbdad6222f48fff731fafaded8a"
+      },
+      "fixed": {
+        "camera": "fixed",
+        "checks": {
+          "pilot-runtime-264-groups": true,
+          "pilot-runtime-budget": true,
+          "sequence-mesh-material-textures-reused": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "pilot-runtime": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000250253244303167,
+            "triangles": 6812,
+            "vertices": 3188
+          }
+        },
+        "passed": true,
+        "probe": [],
+        "checks_passed_count": 123,
+        "capture_count": 241,
+        "frame_count": 241,
+        "reverse_pairs": 120,
+        "native_report_sha256": "7145b09b89d76056a09edeb148c22f69e5b46700ef348d5b57b8079503caedae"
+      },
+      "orbit": {
+        "camera": "orbital-retraced",
+        "checks": {
+          "pilot-runtime-264-groups": true,
+          "pilot-runtime-budget": true,
+          "sequence-mesh-material-textures-reused": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "pilot-runtime": {
+            "calendar_error": 2.07575903914403e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5228,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000250253244303167,
+            "triangles": 6812,
+            "vertices": 3188
+          }
+        },
+        "passed": true,
+        "probe": [],
+        "checks_passed_count": 123,
+        "capture_count": 241,
+        "frame_count": 241,
+        "reverse_pairs": 120,
+        "native_report_sha256": "572289ee94f7893779a2b8483c341d80f66ca348818dab26a6d509c41c976ce9"
+      }
+    },
+    "joven-07": {
+      "matrix": {
+        "checks": {
+          "gpu-linear-1": true,
+          "gpu-linear-2": true,
+          "gpu-linear-3": true,
+          "gpu-linear-4": true,
+          "gpu-linear-5": true,
+          "gpu-linear-6": true,
+          "invalid-phase-rejected": true,
+          "joven-07-autumn-original-264-groups": true,
+          "joven-07-autumn-original-budget": true,
+          "joven-07-autumn-selected-264-groups": true,
+          "joven-07-autumn-selected-budget": true,
+          "joven-07-runtime-264-groups": true,
+          "joven-07-runtime-budget": true,
+          "joven-07-summer-original-264-groups": true,
+          "joven-07-summer-original-budget": true,
+          "joven-07-summer-selected-264-groups": true,
+          "joven-07-summer-selected-budget": true,
+          "jump-.9-.2-exact": true,
+          "mask-phase-0": true,
+          "mask-phase-1": true,
+          "mask-phase-2": true,
+          "mask-phase-3": true,
+          "mask-phase-4": true,
+          "other-case-render-independent": true,
+          "roundtrip-joven-07-autumn-original-264-groups": true,
+          "roundtrip-joven-07-autumn-original-budget": true,
+          "roundtrip-joven-07-autumn-selected-264-groups": true,
+          "roundtrip-joven-07-autumn-selected-budget": true,
+          "roundtrip-joven-07-summer-original-264-groups": true,
+          "roundtrip-joven-07-summer-original-budget": true,
+          "roundtrip-joven-07-summer-selected-264-groups": true,
+          "roundtrip-joven-07-summer-selected-budget": true,
+          "runtime-autumn-exact": true,
+          "runtime-summer-exact": true,
+          "shared-paint-across-cases": true,
+          "static-runtime-endpoint-0": true,
+          "static-runtime-endpoint-4": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "joven-07-autumn-original": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235987812629901,
+            "triangles": 3132,
+            "vertices": 3180
+          },
+          "joven-07-autumn-selected": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235737184993923,
+            "triangles": 3132,
+            "vertices": 3180
+          },
+          "joven-07-runtime": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235737184993923,
+            "triangles": 3132,
+            "vertices": 3180
+          },
+          "joven-07-summer-original": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235987812629901,
+            "triangles": 3132,
+            "vertices": 3180
+          },
+          "joven-07-summer-selected": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235737184993923,
+            "triangles": 3132,
+            "vertices": 3180
+          },
+          "roundtrip-joven-07-autumn-original": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235987812629901,
+            "triangles": 3132,
+            "vertices": 3180
+          },
+          "roundtrip-joven-07-autumn-selected": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00495035853236914,
+            "triangles": 3132,
+            "vertices": 3180
+          },
+          "roundtrip-joven-07-summer-original": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235987812629901,
+            "triangles": 3132,
+            "vertices": 3180
+          },
+          "roundtrip-joven-07-summer-selected": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00495035853236914,
+            "triangles": 3132,
+            "vertices": 3180
+          }
+        },
+        "passed": true,
+        "probe": [
+          {
+            "actual": [
+              30,
+              160,
+              64
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              32,
+              160,
+              64
+            ],
+            "max_error": 0.0,
+            "p": 0.0,
+            "standard_reference": [
+              30,
+              160,
+              64
+            ],
+            "weight": 0.0
+          },
+          {
+            "actual": [
+              163,
+              131,
+              45
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              163,
+              131,
+              47
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 0.375,
+            "standard_reference": [
+              162,
+              130,
+              45
+            ],
+            "weight": 0.5
+          },
+          {
+            "actual": [
+              220,
+              90,
+              10
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              220,
+              90,
+              15
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 1.0,
+            "standard_reference": [
+              220,
+              90,
+              9
+            ],
+            "weight": 1.0
+          },
+          {
+            "actual": [
+              30,
+              160,
+              64
+            ],
+            "calendar": [
+              0.489814609289169,
+              0.240131229162216
+            ],
+            "expected": [
+              32,
+              160,
+              64
+            ],
+            "max_error": 0.0,
+            "p": 0.0,
+            "standard_reference": [
+              30,
+              160,
+              64
+            ],
+            "weight": 0.0
+          },
+          {
+            "actual": [
+              163,
+              131,
+              45
+            ],
+            "calendar": [
+              0.489814609289169,
+              0.240131229162216
+            ],
+            "expected": [
+              163,
+              131,
+              47
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 0.609880223870277,
+            "standard_reference": [
+              162,
+              130,
+              45
+            ],
+            "weight": 0.5
+          },
+          {
+            "actual": [
+              220,
+              90,
+              10
+            ],
+            "calendar": [
+              0.489814609289169,
+              0.240131229162216
+            ],
+            "expected": [
+              220,
+              90,
+              15
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 1.0,
+            "standard_reference": [
+              220,
+              90,
+              9
+            ],
+            "weight": 1.0
+          }
+        ],
+        "checks_passed_count": 37,
+        "capture_count": 112,
+        "frame_count": 0,
+        "reverse_pairs": 0,
+        "native_report_sha256": "72e49bdadb89bc0f2034241a2d9e3390475abd948d215161626c0acd124628d5"
+      },
+      "fixed": {
+        "camera": "fixed",
+        "checks": {
+          "joven-07-runtime-264-groups": true,
+          "joven-07-runtime-budget": true,
+          "sequence-mesh-material-textures-reused": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "joven-07-runtime": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235737184993923,
+            "triangles": 3132,
+            "vertices": 3180
+          }
+        },
+        "passed": true,
+        "probe": [],
+        "checks_passed_count": 123,
+        "capture_count": 241,
+        "frame_count": 241,
+        "reverse_pairs": 120,
+        "native_report_sha256": "355ea8605e71beff34a08c94e134490f450dd6f6c21e7185288c295e0a1a78ee"
+      },
+      "orbit": {
+        "camera": "orbital-retraced",
+        "checks": {
+          "joven-07-runtime-264-groups": true,
+          "joven-07-runtime-budget": true,
+          "sequence-mesh-material-textures-reused": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "joven-07-runtime": {
+            "calendar_error": 2.05101696337806e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 1548,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000235737184993923,
+            "triangles": 3132,
+            "vertices": 3180
+          }
+        },
+        "passed": true,
+        "probe": [],
+        "checks_passed_count": 123,
+        "capture_count": 241,
+        "frame_count": 241,
+        "reverse_pairs": 120,
+        "native_report_sha256": "cd0b242220570c090974acb01b72139221a0db6757d3503514b2d5ede5e22ab6"
+      }
+    },
+    "adulto-00": {
+      "matrix": {
+        "checks": {
+          "adulto-00-autumn-original-264-groups": true,
+          "adulto-00-autumn-original-budget": true,
+          "adulto-00-autumn-selected-264-groups": true,
+          "adulto-00-autumn-selected-budget": true,
+          "adulto-00-runtime-264-groups": true,
+          "adulto-00-runtime-budget": true,
+          "adulto-00-summer-original-264-groups": true,
+          "adulto-00-summer-original-budget": true,
+          "adulto-00-summer-selected-264-groups": true,
+          "adulto-00-summer-selected-budget": true,
+          "gpu-linear-1": true,
+          "gpu-linear-2": true,
+          "gpu-linear-3": true,
+          "gpu-linear-4": true,
+          "gpu-linear-5": true,
+          "gpu-linear-6": true,
+          "invalid-phase-rejected": true,
+          "jump-.9-.2-exact": true,
+          "mask-phase-0": true,
+          "mask-phase-1": true,
+          "mask-phase-2": true,
+          "mask-phase-3": true,
+          "mask-phase-4": true,
+          "other-case-render-independent": true,
+          "roundtrip-adulto-00-autumn-original-264-groups": true,
+          "roundtrip-adulto-00-autumn-original-budget": true,
+          "roundtrip-adulto-00-autumn-selected-264-groups": true,
+          "roundtrip-adulto-00-autumn-selected-budget": true,
+          "roundtrip-adulto-00-summer-original-264-groups": true,
+          "roundtrip-adulto-00-summer-original-budget": true,
+          "roundtrip-adulto-00-summer-selected-264-groups": true,
+          "roundtrip-adulto-00-summer-selected-budget": true,
+          "runtime-autumn-exact": true,
+          "runtime-summer-exact": true,
+          "shared-paint-across-cases": true,
+          "static-runtime-endpoint-0": true,
+          "static-runtime-endpoint-4": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "adulto-00-autumn-original": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000228349410463125,
+            "triangles": 5820,
+            "vertices": 3172
+          },
+          "adulto-00-autumn-selected": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000237712840316817,
+            "triangles": 5820,
+            "vertices": 3172
+          },
+          "adulto-00-runtime": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000237712840316817,
+            "triangles": 5820,
+            "vertices": 3172
+          },
+          "adulto-00-summer-original": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000228349410463125,
+            "triangles": 5820,
+            "vertices": 3172
+          },
+          "adulto-00-summer-selected": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000237712840316817,
+            "triangles": 5820,
+            "vertices": 3172
+          },
+          "roundtrip-adulto-00-autumn-original": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000228349410463125,
+            "triangles": 5820,
+            "vertices": 3172
+          },
+          "roundtrip-adulto-00-autumn-selected": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00412296457216144,
+            "triangles": 5820,
+            "vertices": 3172
+          },
+          "roundtrip-adulto-00-summer-original": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000228349410463125,
+            "triangles": 5820,
+            "vertices": 3172
+          },
+          "roundtrip-adulto-00-summer-selected": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00412296457216144,
+            "triangles": 5820,
+            "vertices": 3172
+          }
+        },
+        "passed": true,
+        "probe": [
+          {
+            "actual": [
+              30,
+              160,
+              64
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              32,
+              160,
+              64
+            ],
+            "max_error": 0.0,
+            "p": 0.0,
+            "standard_reference": [
+              30,
+              160,
+              64
+            ],
+            "weight": 0.0
+          },
+          {
+            "actual": [
+              163,
+              131,
+              45
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              163,
+              131,
+              47
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 0.375,
+            "standard_reference": [
+              162,
+              130,
+              45
+            ],
+            "weight": 0.5
+          },
+          {
+            "actual": [
+              220,
+              90,
+              10
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              220,
+              90,
+              15
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 1.0,
+            "standard_reference": [
+              220,
+              90,
+              9
+            ],
+            "weight": 1.0
+          },
+          {
+            "actual": [
+              30,
+              160,
+              64
+            ],
+            "calendar": [
+              0.379964917898178,
+              0.196856647729874
+            ],
+            "expected": [
+              32,
+              160,
+              64
+            ],
+            "max_error": 0.0,
+            "p": 0.0,
+            "standard_reference": [
+              30,
+              160,
+              64
+            ],
+            "weight": 0.0
+          },
+          {
+            "actual": [
+              163,
+              131,
+              45
+            ],
+            "calendar": [
+              0.379964917898178,
+              0.196856647729874
+            ],
+            "expected": [
+              163,
+              131,
+              47
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 0.478393241763115,
+            "standard_reference": [
+              162,
+              130,
+              45
+            ],
+            "weight": 0.5
+          },
+          {
+            "actual": [
+              220,
+              90,
+              10
+            ],
+            "calendar": [
+              0.379964917898178,
+              0.196856647729874
+            ],
+            "expected": [
+              220,
+              90,
+              15
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 1.0,
+            "standard_reference": [
+              220,
+              90,
+              9
+            ],
+            "weight": 1.0
+          }
+        ],
+        "checks_passed_count": 37,
+        "capture_count": 112,
+        "frame_count": 0,
+        "reverse_pairs": 0,
+        "native_report_sha256": "56061756c07f487c3cf30113acffacc0922a65fe798f158747bccc662760a252"
+      },
+      "fixed": {
+        "camera": "fixed",
+        "checks": {
+          "adulto-00-runtime-264-groups": true,
+          "adulto-00-runtime-budget": true,
+          "sequence-mesh-material-textures-reused": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "adulto-00-runtime": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000237712840316817,
+            "triangles": 5820,
+            "vertices": 3172
+          }
+        },
+        "passed": true,
+        "probe": [],
+        "checks_passed_count": 123,
+        "capture_count": 241,
+        "frame_count": 241,
+        "reverse_pairs": 120,
+        "native_report_sha256": "91c4ef46017195fae08ac3824c324a91dd1e2c231897ecc363b0f9e465e8e6c8"
+      },
+      "orbit": {
+        "camera": "orbital-retraced",
+        "checks": {
+          "adulto-00-runtime-264-groups": true,
+          "adulto-00-runtime-budget": true,
+          "sequence-mesh-material-textures-reused": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "adulto-00-runtime": {
+            "calendar_error": 2.12013728742022e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 4236,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000237712840316817,
+            "triangles": 5820,
+            "vertices": 3172
+          }
+        },
+        "passed": true,
+        "probe": [],
+        "checks_passed_count": 123,
+        "capture_count": 241,
+        "frame_count": 241,
+        "reverse_pairs": 120,
+        "native_report_sha256": "4a8190168dceeb8fbdd65177ac4dc14742566e4a332a1bbf531b940075203d42"
+      }
+    },
+    "viejo-00": {
+      "matrix": {
+        "checks": {
+          "gpu-linear-1": true,
+          "gpu-linear-2": true,
+          "gpu-linear-3": true,
+          "gpu-linear-4": true,
+          "gpu-linear-5": true,
+          "gpu-linear-6": true,
+          "invalid-phase-rejected": true,
+          "jump-.9-.2-exact": true,
+          "mask-phase-0": true,
+          "mask-phase-1": true,
+          "mask-phase-2": true,
+          "mask-phase-3": true,
+          "mask-phase-4": true,
+          "other-case-render-independent": true,
+          "roundtrip-viejo-00-autumn-original-264-groups": true,
+          "roundtrip-viejo-00-autumn-original-budget": true,
+          "roundtrip-viejo-00-autumn-selected-264-groups": true,
+          "roundtrip-viejo-00-autumn-selected-budget": true,
+          "roundtrip-viejo-00-summer-original-264-groups": true,
+          "roundtrip-viejo-00-summer-original-budget": true,
+          "roundtrip-viejo-00-summer-selected-264-groups": true,
+          "roundtrip-viejo-00-summer-selected-budget": true,
+          "runtime-autumn-exact": true,
+          "runtime-summer-exact": true,
+          "shared-paint-across-cases": true,
+          "static-runtime-endpoint-0": true,
+          "static-runtime-endpoint-4": true,
+          "viejo-00-autumn-original-264-groups": true,
+          "viejo-00-autumn-original-budget": true,
+          "viejo-00-autumn-selected-264-groups": true,
+          "viejo-00-autumn-selected-budget": true,
+          "viejo-00-runtime-264-groups": true,
+          "viejo-00-runtime-budget": true,
+          "viejo-00-summer-original-264-groups": true,
+          "viejo-00-summer-original-budget": true,
+          "viejo-00-summer-selected-264-groups": true,
+          "viejo-00-summer-selected-budget": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "roundtrip-viejo-00-autumn-original": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000240909372223541,
+            "triangles": 6900,
+            "vertices": 3190
+          },
+          "roundtrip-viejo-00-autumn-selected": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.0051275473088026,
+            "triangles": 6900,
+            "vertices": 3190
+          },
+          "roundtrip-viejo-00-summer-original": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000240909372223541,
+            "triangles": 6900,
+            "vertices": 3190
+          },
+          "roundtrip-viejo-00-summer-selected": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.0051275473088026,
+            "triangles": 6900,
+            "vertices": 3190
+          },
+          "viejo-00-autumn-original": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000240909372223541,
+            "triangles": 6900,
+            "vertices": 3190
+          },
+          "viejo-00-autumn-selected": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00158821209333837,
+            "triangles": 6900,
+            "vertices": 3190
+          },
+          "viejo-00-runtime": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00158821209333837,
+            "triangles": 6900,
+            "vertices": 3190
+          },
+          "viejo-00-summer-original": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.000240909372223541,
+            "triangles": 6900,
+            "vertices": 3190
+          },
+          "viejo-00-summer-selected": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00158821209333837,
+            "triangles": 6900,
+            "vertices": 3190
+          }
+        },
+        "passed": true,
+        "probe": [
+          {
+            "actual": [
+              30,
+              160,
+              64
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              32,
+              160,
+              64
+            ],
+            "max_error": 0.0,
+            "p": 0.0,
+            "standard_reference": [
+              30,
+              160,
+              64
+            ],
+            "weight": 0.0
+          },
+          {
+            "actual": [
+              163,
+              131,
+              45
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              163,
+              131,
+              47
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 0.375,
+            "standard_reference": [
+              162,
+              130,
+              45
+            ],
+            "weight": 0.5
+          },
+          {
+            "actual": [
+              220,
+              90,
+              10
+            ],
+            "calendar": [
+              0.25,
+              0.25
+            ],
+            "expected": [
+              220,
+              90,
+              15
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 1.0,
+            "standard_reference": [
+              220,
+              90,
+              9
+            ],
+            "weight": 1.0
+          },
+          {
+            "actual": [
+              30,
+              160,
+              64
+            ],
+            "calendar": [
+              0.347585260868073,
+              0.23367665708065
+            ],
+            "expected": [
+              32,
+              160,
+              64
+            ],
+            "max_error": 0.0,
+            "p": 0.0,
+            "standard_reference": [
+              30,
+              160,
+              64
+            ],
+            "weight": 0.0
+          },
+          {
+            "actual": [
+              163,
+              131,
+              45
+            ],
+            "calendar": [
+              0.347585260868073,
+              0.23367665708065
+            ],
+            "expected": [
+              163,
+              131,
+              47
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 0.464423589408398,
+            "standard_reference": [
+              162,
+              130,
+              45
+            ],
+            "weight": 0.5
+          },
+          {
+            "actual": [
+              220,
+              90,
+              10
+            ],
+            "calendar": [
+              0.347585260868073,
+              0.23367665708065
+            ],
+            "expected": [
+              220,
+              90,
+              15
+            ],
+            "max_error": 0.00392156839370728,
+            "p": 1.0,
+            "standard_reference": [
+              220,
+              90,
+              9
+            ],
+            "weight": 1.0
+          }
+        ],
+        "checks_passed_count": 37,
+        "capture_count": 112,
+        "frame_count": 0,
+        "reverse_pairs": 0,
+        "native_report_sha256": "5cccdd06282274774a087879b8280b8e275d263d760a7e0b252e9bd4c539229f"
+      },
+      "fixed": {
+        "camera": "fixed",
+        "checks": {
+          "sequence-mesh-material-textures-reused": true,
+          "viejo-00-runtime-264-groups": true,
+          "viejo-00-runtime-budget": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "viejo-00-runtime": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00158821209333837,
+            "triangles": 6900,
+            "vertices": 3190
+          }
+        },
+        "passed": true,
+        "probe": [],
+        "checks_passed_count": 123,
+        "capture_count": 241,
+        "frame_count": 241,
+        "reverse_pairs": 120,
+        "native_report_sha256": "5c81174fd83b447afac5179c428776d0ca0148225e4ad0bb73b40638798cd8cf"
+      },
+      "orbit": {
+        "camera": "orbital-retraced",
+        "checks": {
+          "sequence-mesh-material-textures-reused": true,
+          "viejo-00-runtime-264-groups": true,
+          "viejo-00-runtime-budget": true
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "imports": {
+          "viejo-00-runtime": {
+            "calendar_error": 2.0833022063016e-05,
+            "groups": 264,
+            "materials": {
+              "Painted_Bark": 5316,
+              "Painted_Foliage": 1584
+            },
+            "normal_error": 0.00158821209333837,
+            "triangles": 6900,
+            "vertices": 3190
+          }
+        },
+        "passed": true,
+        "probe": [],
+        "checks_passed_count": 123,
+        "capture_count": 241,
+        "frame_count": 241,
+        "reverse_pairs": 120,
+        "native_report_sha256": "c9b49056c7de29b9646ddd9911e5b5dfba5a80025ecd1277f41bfd8717dc29d0"
+      }
+    }
+  },
+  "viewer": {
+    "captures": [
+      "viewer.png"
+    ],
+    "checks": {
+      "viewer-case-0": true,
+      "viewer-case-1": true,
+      "viewer-case-2": true,
+      "viewer-case-3": true,
+      "viewer-ground": true,
+      "viewer-mode-0": true,
+      "viewer-mode-1": true,
+      "viewer-mode-2": true,
+      "viewer-mode-3": true,
+      "viewer-mode-4": true,
+      "viewer-normals-0": true,
+      "viewer-normals-1": true,
+      "viewer-orbit": true,
+      "viewer-pause": true,
+      "viewer-play": true,
+      "viewer-preserves-case-phase": true,
+      "viewer-reverse": true
+    },
+    "frames": [],
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "passed": true,
+    "probe": []
+  },
+  "portable": {
+    "captures": [
+      "pilot-portable.png",
+      "joven-07-portable.png",
+      "adulto-00-portable.png",
+      "viejo-00-portable.png"
+    ],
+    "checks": {
+      "adulto-00-runtime-264-groups": true,
+      "adulto-00-runtime-budget": true,
+      "joven-07-runtime-264-groups": true,
+      "joven-07-runtime-budget": true,
+      "pilot-runtime-264-groups": true,
+      "pilot-runtime-budget": true,
+      "viejo-00-runtime-264-groups": true,
+      "viejo-00-runtime-budget": true
+    },
+    "frames": [],
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "imports": {
+      "adulto-00-runtime": {
+        "calendar_error": 2.12013728742022e-05,
+        "groups": 264,
+        "materials": {
+          "Painted_Bark": 4236,
+          "Painted_Foliage": 1584
+        },
+        "normal_error": 0.000237712840316817,
+        "triangles": 5820,
+        "vertices": 3172
+      },
+      "joven-07-runtime": {
+        "calendar_error": 2.05101696337806e-05,
+        "groups": 264,
+        "materials": {
+          "Painted_Bark": 1548,
+          "Painted_Foliage": 1584
+        },
+        "normal_error": 0.000235737184993923,
+        "triangles": 3132,
+        "vertices": 3180
+      },
+      "pilot-runtime": {
+        "calendar_error": 2.07575903914403e-05,
+        "groups": 264,
+        "materials": {
+          "Painted_Bark": 5228,
+          "Painted_Foliage": 1584
+        },
+        "normal_error": 0.000250253244303167,
+        "triangles": 6812,
+        "vertices": 3188
+      },
+      "viejo-00-runtime": {
+        "calendar_error": 2.0833022063016e-05,
+        "groups": 264,
+        "materials": {
+          "Painted_Bark": 5316,
+          "Painted_Foliage": 1584
+        },
+        "normal_error": 0.00158821209333837,
+        "triangles": 6900,
+        "vertices": 3190
+      }
+    },
+    "passed": true,
+    "probe": []
+  },
+  "resources": {
+    "active_shared_materials": 2,
+    "instances": 4,
+    "note": "Bytes de Image devueltos por Godot; no equivalen a VRAM medida ni rendimiento.",
+    "passed": true,
+    "readback_bytes_total": 48953766,
+    "retained_surface_materials": 2,
+    "textures": [
+      {
+        "height": 1254,
+        "image_format": 4,
+        "mipmap_count": 10,
+        "path": "res://resources/bark.png",
+        "readback_bytes_with_mips": 6288054,
+        "width": 1254
+      },
+      {
+        "height": 2000,
+        "image_format": 5,
+        "mipmap_count": 10,
+        "path": "res://resources/summer.png",
+        "readback_bytes_with_mips": 21332856,
+        "width": 2000
+      },
+      {
+        "height": 2000,
+        "image_format": 5,
+        "mipmap_count": 10,
+        "path": "res://resources/autumn.png",
+        "readback_bytes_with_mips": 21332856,
+        "width": 2000
+      }
+    ],
+    "unique_textures": 3
+  },
+  "blender": {
+    "passed": true,
+    "blender": "5.2.1 LTS",
+    "cases": [
+      {
+        "id": "pilot-summer-original",
+        "triangles": 6812,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 6.175041198730469e-05,
+        "max_normal_angle_error_deg": 0.023708751064728674,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-pilot-summer-original.glb"
+      },
+      {
+        "id": "pilot-autumn-original",
+        "triangles": 6812,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 6.175041198730469e-05,
+        "max_normal_angle_error_deg": 0.023708751064728674,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-pilot-autumn-original.glb"
+      },
+      {
+        "id": "pilot-summer-selected",
+        "triangles": 6812,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 0.003295985981822014,
+        "max_normal_angle_error_deg": 0.2663602981024847,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-pilot-summer-selected.glb"
+      },
+      {
+        "id": "pilot-autumn-selected",
+        "triangles": 6812,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 0.003295985981822014,
+        "max_normal_angle_error_deg": 0.2663602981024847,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-pilot-autumn-selected.glb"
+      },
+      {
+        "id": "joven-07-summer-original",
+        "triangles": 3132,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 6.324052810668945e-05,
+        "max_normal_angle_error_deg": 0.023835888288848077,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-joven-07-summer-original.glb"
+      },
+      {
+        "id": "joven-07-autumn-original",
+        "triangles": 3132,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 6.324052810668945e-05,
+        "max_normal_angle_error_deg": 0.023835888288848077,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-joven-07-autumn-original.glb"
+      },
+      {
+        "id": "joven-07-summer-selected",
+        "triangles": 3132,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 0.004487931728363037,
+        "max_normal_angle_error_deg": 0.28135209146215073,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-joven-07-summer-selected.glb"
+      },
+      {
+        "id": "joven-07-autumn-selected",
+        "triangles": 3132,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 0.004487931728363037,
+        "max_normal_angle_error_deg": 0.28135209146215073,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-joven-07-autumn-selected.glb"
+      },
+      {
+        "id": "adulto-00-summer-original",
+        "triangles": 5820,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 6.330013275146484e-05,
+        "max_normal_angle_error_deg": 0.023560772513535323,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-adulto-00-summer-original.glb"
+      },
+      {
+        "id": "adulto-00-autumn-original",
+        "triangles": 5820,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 6.330013275146484e-05,
+        "max_normal_angle_error_deg": 0.023560772513535323,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-adulto-00-autumn-original.glb"
+      },
+      {
+        "id": "adulto-00-summer-selected",
+        "triangles": 5820,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 0.0035483837127685547,
+        "max_normal_angle_error_deg": 0.23682571716063167,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-adulto-00-summer-selected.glb"
+      },
+      {
+        "id": "adulto-00-autumn-selected",
+        "triangles": 5820,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 0.0035483837127685547,
+        "max_normal_angle_error_deg": 0.23682571716063167,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-adulto-00-autumn-selected.glb"
+      },
+      {
+        "id": "viejo-00-summer-original",
+        "triangles": 6900,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 5.760788917541504e-05,
+        "max_normal_angle_error_deg": 0.02355454861385101,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-viejo-00-summer-original.glb"
+      },
+      {
+        "id": "viejo-00-autumn-original",
+        "triangles": 6900,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 5.760788917541504e-05,
+        "max_normal_angle_error_deg": 0.02355454861385101,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-viejo-00-autumn-original.glb"
+      },
+      {
+        "id": "viejo-00-summer-selected",
+        "triangles": 6900,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 0.0005913078784942627,
+        "max_normal_angle_error_deg": 0.04165287016499372,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-viejo-00-summer-selected.glb"
+      },
+      {
+        "id": "viejo-00-autumn-selected",
+        "triangles": 6900,
+        "groups": 264,
+        "corners": 4752,
+        "max_normal_error": 0.0005913078784942627,
+        "max_normal_angle_error_deg": 0.04165287016499372,
+        "normal_angle_limit_deg": 0.6,
+        "roundtrip": "/home/tao/repos/procedural/arboles/artifacts/estaciones/integracion-t5-03/godot/static/roundtrip-viejo-00-autumn-selected.glb"
+      }
+    ]
+  },
+  "historical_catalog_sha256": {
+    "blueprints/abedul_pintado/1.0.0.json": "6435dac51ae6ab4eeab3d22d5b74db44a5a9e8d6cb70eadcbba3b398014caceb",
+    "blueprints/arbol_copa_columnar/1.0.0.json": "5dc770bf8842b9912d2c346fec176cf57375ce3bf3ba50c8df4b229353faf193",
+    "blueprints/pino_conico/1.0.0.json": "a8248aab66a42d3d4790842f12f79942e503fafcca743765bc7989dba75ee959",
+    "blueprints/pino_conico/1.1.0.json": "c9250892c5178f328f01b229243d9dac9170aee1037b813981528784f2ddc93f",
+    "blueprints/pino_conico/2.0.0.json": "4c629ed41bd521417070e2c5ce4d01090e7b839749b1ecf787b7451816f11b40",
+    "blueprints/pino_conico/2.1.0.json": "0059033426243827cfdb3c6d4cb89a472cac9d51610fc88b6161e779d5cc341a",
+    "blueprints/pino_conico/2.2.0.json": "35dfc98a87ed3cafd10d630212a4cf2873f555ae077598cb6f62513f60906e3b",
+    "blueprints/pino_conico/2.3.0.json": "507423c05e3b9461a1f1f07b9b6683d4c24eb435f4c14e7faedac6449bb27943",
+    "blueprints/roble_copa_ancha/1.0.0.json": "c43864c26748f38e72fe6a74e1d645783d1b5fd24fb86c2fdd28ce899c133f0c",
+    "blueprints/roble_copa_ancha/1.1.0.json": "2e164488970e7eef6c621d13491a1fff9ce903a0dbb9f337030ecf0aac996e38",
+    "blueprints/roble_copa_ancha/1.2.0.json": "d2edf70b89405cfdf5a7c4bf3a867849421fde08456794b2a46f7814788386ba",
+    "blueprints/roble_copa_ancha/2.0.0.json": "64f3e6228023b948ad728fa425b2d140ac7691c3ae994474074021ae18350417",
+    "blueprints/roble_copa_ancha/2.1.0.json": "a0c069ad24fa6d1b8887a39744a9a99daa18df385be5b691ab89de1d707cfc95",
+    "blueprints/roble_copa_ancha/2.2.0.json": "826bb39901fc32483d5b0f35e7248e77d4743b069dae4f445c6e823360c40ba0",
+    "presets/addon-comparison.json": "4b1f6f9d0caad0b9fd689add5c34dbf76462df426a19ca53b968ee451eb54009",
+    "presets/adulto.json": "48723f6399b050d3f71ea8b36a227c9e16af45f6de02f9d8534b11c3f8cec9d1",
+    "presets/blueprints/abedul-pintado/control-01.json": "90df6d0f700c6ba79cf90baac303e0300254509e2bb258799b9effebdd9022f3",
+    "presets/blueprints/abedul-pintado/control-02.json": "858884ffb517cda26226a97c65648c0cbfec1a7e52086b11a007cd3d1566d345",
+    "presets/blueprints/abedul-pintado/control-03.json": "e0162f1c157d716245f5624a0ee15ed3d727c65fceca7f9a0c812512af8e325c",
+    "presets/blueprints/abedul-pintado/pilot.json": "fa76509b861ce85844a310a04a5854e6f5e710da41b05770a7d10f11f1a8cab2",
+    "presets/blueprints/b3/adulto-00.json": "14b8851e1f8043e053841dbe6a34bfeaf02f8fe1b08d9106572bac73b4c32b14",
+    "presets/blueprints/b3/adulto-07.json": "8b534977221f5b59742af62735c8418628ba3b553f5b147315da6a95bc3e3780",
+    "presets/blueprints/b3/joven-00.json": "32dda6091e3423929a7133c62467ad5a61284e14ab4efe3bcc236870ac2c9e88",
+    "presets/blueprints/b3/joven-07.json": "bcf84658e1c43d165998213632d001cf126c55fadda0a35b5b2868b38ef0a5b8",
+    "presets/blueprints/b3/viejo-00.json": "c4f05db9113614a09a9a1bceac35783d19e81e8061fa47f461fa663dbabf0ea0",
+    "presets/blueprints/b3/viejo-03.json": "d58723816f16aebd937585c6f29757719f3361620a7d671a1daee6e91e787e0f",
+    "presets/blueprints/b3/viejo-07.json": "aacbae8ceec5fd42013907f617a4f5e66b7256135b401cb2e599a18bb87c5cba",
+    "presets/blueprints/b3-v2/adulto-00.json": "135465d11aac078cb7fcc942be4d98b3cefe172cb5676f02f1368ad6ba83ff38",
+    "presets/blueprints/b3-v2/adulto-07.json": "ec548d05ffb158272320fc0e76ccb528623ae343385c1a2659b18d68e5ad8046",
+    "presets/blueprints/b3-v2/joven-00.json": "25f5d1541ab51ec0ff6f01171f4d8531fca3908c7df9720f4511b6fa7a08f53b",
+    "presets/blueprints/b3-v2/joven-07.json": "6771ab03ef8c1d76173ab5485a82eb2378060aca50e573088a1f7d7dfa89bbee",
+    "presets/blueprints/b3-v2/viejo-00.json": "0d1442069d6a015081458797f3dd94dbd14987c52cecafaf381b37d090a61196",
+    "presets/blueprints/b3-v2/viejo-03.json": "5c42ad14cd1621643eb287f385ae35320984abd64b6fa0b801c2510c54ff5239",
+    "presets/blueprints/b3-v2/viejo-07.json": "f2447f084a9d45aef41af76defbb5334a1b75463712f4fe00a97619ff3cc17e8",
+    "presets/blueprints/columnar/control-01.json": "a240d5c41053c50a8886ca1806dc37323fd1c8604a1d7d186e01ebb13e1be56e",
+    "presets/blueprints/columnar/control-02.json": "c91087c593270d215904aa024ed78a0ec18e5f64740b07fddd5588721f2e3106",
+    "presets/blueprints/columnar/control-03.json": "c4b525f58119d0ecb6ff5e529b6e6441d025fba543b3c6a59b9e3b4fe703c896",
+    "presets/blueprints/columnar/pilot.json": "be5de26f752071fd61921dab0edb65ca8fb8a8bb2849357e43263ad9e80214af",
+    "presets/blueprints/pino/control-01.json": "3693132c6d08d98ad65c1e376614aeb4b3c4fcceffc94e7d8965ef4ba5f97982",
+    "presets/blueprints/pino/control-02.json": "615a3b00da3f7bf0bcdb8175e7218bc8de31dff035bada6bd1c724193edaaba1",
+    "presets/blueprints/pino/control-03.json": "5399a27112172012ce699522c3d6ffcf1d0ebc22db780b492bdfae3a3624572c",
+    "presets/blueprints/pino/pilot.json": "2348adf65262c1024e7bb10d464bf52ffb76106237dcf9ad034d9e1198297a84",
+    "presets/blueprints/pino-pintado/control-01.json": "dfff8e7b22a32432868016edc82f598b016a065ebe46c13ce5166428a757dac0",
+    "presets/blueprints/pino-pintado/control-02.json": "4b2fc9dd64cc729eb26ff4110a563febed5cf5cc2972daf5c5c0702f0717dbcc",
+    "presets/blueprints/pino-pintado/control-03.json": "642ea384ef4544fa77cababcb41f44178c0723aca279fbd03fb13b79e72d9ba2",
+    "presets/blueprints/pino-pintado/pilot.json": "cb997f0c87dd1bdb7e50cc4680a861be3173f7b56f65182052adadd3b6311de0",
+    "presets/blueprints/pino-pintado-laminas/control-01.json": "f7703abbe4e46347ad82180f757ba0a709b1a8963f2f6bca90b11be72a1f22c8",
+    "presets/blueprints/pino-pintado-laminas/control-02.json": "1f7f95c280a91829c770f73e95e54292cd3a43b3c0de7563049d47d79fd02ca9",
+    "presets/blueprints/pino-pintado-laminas/control-03.json": "db60aaabf4fc9ac8ee1a31d0677fdfa4a5ee8401aca913eac5142b1a609b7925",
+    "presets/blueprints/pino-pintado-laminas/pilot.json": "274fe658799c0c2fc8e316e2c65db67e0ae4064e5cd7ae4d1a9223421ca46661",
+    "presets/blueprints/pino-pintado-madera/control-01.json": "630344eb973bcd5428974cdda9518d0a209558c4cbcf8386da352f4f2852e588",
+    "presets/blueprints/pino-pintado-madera/control-02.json": "c5b1ce7b726cccd2747f1d49051e477e9f4dd379c322f8e8b46bdcdba20bc6a2",
+    "presets/blueprints/pino-pintado-madera/control-03.json": "4086403564225349cd3e42ed795acc27dc7bfb7a0c8af5661e8643fbd63d0438",
+    "presets/blueprints/pino-pintado-madera/pilot.json": "a2f21ebd0d6682004f037d8f3bcd5e8bd2e54f7a75853b9d7319262802a7819b",
+    "presets/blueprints/pino-pintado-volumen/control-01.json": "42c0a43895f993a6afc3612f676d28616c1381161efeb3118aeb919e85b027d4",
+    "presets/blueprints/pino-pintado-volumen/control-02.json": "2ad49e78d314cd4a74964feb6cb0ed7861fb3957b57a8a992af24749e32760b4",
+    "presets/blueprints/pino-pintado-volumen/control-03.json": "d89548db45fb3c7827aefce4af0b5001b5e9e8d00110bb6a1530a4a6e84dd1a5",
+    "presets/blueprints/pino-pintado-volumen/pilot.json": "f1fedfd695c47c4a40ed7853825be36380446e119cdb7482625974b88e200b0a",
+    "presets/blueprints/pino-v2/control-01.json": "91c0680a93c9d15361aad335fd18a8258e9eb1061e818da927139b97246c5e68",
+    "presets/blueprints/pino-v2/control-02.json": "6c54d51e7968cadb179d3baf8e96e6ffc8b6aee5c3bb89b6997c8dd19aa5bd75",
+    "presets/blueprints/pino-v2/control-03.json": "318f57c05dce5524cc26ee47d5d469c57372806927a27063100b88fbe0a5e3a2",
+    "presets/blueprints/pino-v2/pilot.json": "21a1aba5fd65d70adea87fca44f1630f38b34c33e12a7fb1703e9b3ceb6b2f51",
+    "presets/blueprints/roble-copa-ancha-viejo-09.json": "8b8162adbc76bd0f94637543130ae35205456bc6b2facae2d45e773d7133a9cc",
+    "presets/blueprints/roble-cruzado/adulto-00.json": "0b662f6e455f441d23cb571a7816ffd6acb57b81256bc22ca063c883c56623cf",
+    "presets/blueprints/roble-cruzado/joven-07.json": "645f70a6f9ba7d36386f39b75702cb7d0d82df643cb901ab1ba52d959cb2448d",
+    "presets/blueprints/roble-cruzado/pilot.json": "602fbbe13825419c2e64d76d2da0c0697edf27f3f4d3c408aaddaa0d316aaa86",
+    "presets/blueprints/roble-cruzado/viejo-00.json": "1b6c1dd0c41d2c1777ceb92aa7a1f2b167cced6cec02b95b2db3155cfef27244",
+    "presets/blueprints/roble-madera/adulto-00.json": "2704fae76604ad2389d1bb09c503393e8e596c030f95d047568b757e094759db",
+    "presets/blueprints/roble-madera/joven-07.json": "1d3f08edf3f895d5810af5cfb665c54953ae737282a09769c17a3b94da8f216a",
+    "presets/blueprints/roble-madera/pilot.json": "f29285b0c934246cfbc64337b31002149da5510cc716fe4fb02e56c2e95e43ed",
+    "presets/blueprints/roble-madera/viejo-00.json": "4c35cbb9a03887769d3bd1422905ae1c07717f1c59cb25c6970dd953b79de124",
+    "presets/blueprints/roble-pintado/adulto-00.json": "bcd5708e9daf4ef9e85880c3be9e4e4e817a322cc766307d5002c4d71de0fdb7",
+    "presets/blueprints/roble-pintado/joven-07.json": "fc5af464ec100779c0a6145a2e1f0939d0ac43e753b868001bb3211ce5d38f36",
+    "presets/blueprints/roble-pintado/pilot.json": "2c28ae532cabec06df2c15329a525e445dd981a44d5a0ee658d990acebb73d43",
+    "presets/blueprints/roble-pintado/viejo-00.json": "8d22b02a4f8842b05a457db2f09ae496b7a9d60bf3154ae2c7bab91ff670121e",
+    "presets/f2-cases.json": "4b93c7890d97fb4a7cf2c22b71f717992036423bdb0460ba6e75917c9cc83a07",
+    "presets/foliage-branch.json": "174604fb4dfd1753feabb5c4820e3cc9bd0f15eed0ee16ad6dd56ce923e77f25",
+    "presets/foliage-canopy.json": "17347b87f7145fb6b83c7a87bcd4868c0c503111488cc33825de53c58e513e14",
+    "presets/foliage-mold-density.json": "171dec5a4840cec320e51da896a23ef1c86bc0185adc8771b0191f092bcfe724",
+    "presets/foliage-molds.json": "5e08b402d90a3ba27cec63f79a7f90c56a4f36c167314abc97dd44e535d35d7d",
+    "presets/foliage-twigs.json": "5ad702ee03f6f4ad5c53cb0724c87c255341591868121bd2e407edda4f1e88c9",
+    "presets/foliage-unit.json": "9f2fc84ea90fa48410f842acf07632e05f140bd2b6340abf14065d0ca4b8a2be",
+    "presets/joven.json": "09e46c01840716f6c4a373c9e46ff495ea5778243209cbcddf2523813493a338",
+    "presets/q1-cases.json": "4b9a92ff64cb70a2502e88d005fc093b2f9008fa5b919ad586ed22fa93bc9ca8",
+    "presets/q1b-cases.json": "1e9f43ba73afabb79f647144b19b174ddbf98ca0ce2a3da837e7dffe745f3844",
+    "presets/q2-cases.json": "339ae90d32cc64fd564dca24afe635fb8b9cca458015fedcdc36c7e9bb11f48d",
+    "presets/q2-controlled-cases.json": "e9be797d8f32ab89d1cf26ef170b312c0c70842841abc4ed6ef501eb2112e04d",
+    "presets/q3-cases.json": "46d351c3602505690d17dc8af17ed1463f8535ebea3c7f8f52191a6f7bc2dfc7",
+    "presets/q3b-cases.json": "5eddd94d3e021296965d92ca215b3ffce4b8e55c63c846a63c4f1c1edf6566d1",
+    "presets/v0.1.0/adulto.json": "32626a8c38adf6c5c4487d712129eb13630528bc8fe1336df9ccd5433999476a",
+    "presets/v0.1.0/joven.json": "9b81372cedd2a0e40f03ff60441aa800f953af5441a409f17b0bebc362483dd3",
+    "presets/v0.1.0/viejo.json": "648e8aea734fa59e62b30cdba97448f9056a31b8a168a2bfbb9bbee88173a526",
+    "presets/v0.2.0/adulto.json": "144779f4b7528b6d6e5494a68b40a2ecb3009c18f386a62deee5f436eb3a8f7f",
+    "presets/v0.2.0/joven.json": "15d66ada2780d9c2d8ee772a55e02a7f7cc5bfb4697ecacbbb974b79b92e470d",
+    "presets/v0.2.0/viejo.json": "18f3e408fa216ecbe69caa092680e6b6a1d48570332d7c5f312bd8f755dcaadb",
+    "presets/v0.2.1/adulto.json": "83b7ccf4df862d4b0074ba76009c2e4116248a63d6fdc9b614e3feaeaa318809",
+    "presets/v0.2.1/joven.json": "732e7c9ace03678cdb3cdfc2df8ffc90f652bcefc1b136fabf4fa7feed86c46f",
+    "presets/v0.2.1/viejo.json": "9b041121eca7ea1fb326cf4c72a0116965c33615e26deca6d27c6dd15396ed26",
+    "presets/v0.3.0/adulto.json": "741ded4769e638f7d5f78f4ed7ad0cbde445eab1a228977a814cb4e817b3bb5c",
+    "presets/v0.3.0/joven.json": "9069be9b344358d26f3b66edfea59dd2c55d8db9c7aef122bd69216d640b494e",
+    "presets/v0.3.0/viejo.json": "4a04a46aadb04c2675fee069c20f38cad4bec9d1a4d2ed96c003c8157b9b2878",
+    "presets/v0.4.0/adulto.json": "48723f6399b050d3f71ea8b36a227c9e16af45f6de02f9d8534b11c3f8cec9d1",
+    "presets/v0.4.0/joven.json": "09e46c01840716f6c4a373c9e46ff495ea5778243209cbcddf2523813493a338",
+    "presets/v0.4.0/viejo.json": "4777c428be9322a14d390d3f84edcb87b2d204576bdcb3105a330ea4a817b044",
+    "presets/v0.4.1/adulto.json": "4d16125c302b01e78296776a74cc17c5ab80bd8fba11875106e009a2e45e7d12",
+    "presets/v0.4.1/joven.json": "bf605c2a5eb0ff60c844c43f23ba13cd8f2b8187f1e356b27c13716d149057dd",
+    "presets/v0.4.1/viejo.json": "0a924098250af7bc41f2430eb8126edcd34a85ec35cd982b4d79501215559321",
+    "presets/viejo.json": "4777c428be9322a14d390d3f84edcb87b2d204576bdcb3105a330ea4a817b044",
+    "assets/abedul-pintado/v0.1.0/bark.png": "f3c10c3608b10e44a683baed82074a82a4fc996936ba2ea3216a36abd76529e0",
+    "assets/abedul-pintado/v0.1.0/foliage.png": "d8073caf5f1b220f702e654392340a7defa8974b168cc8562fb1ae2430c388b7",
+    "assets/abedul-pintado/v0.1.0/manifest.json": "97487c0fb3c0b153db811e6468e97ee864937d6d5d3ed67c5762c83ade6f044f",
+    "assets/pino-pintado/v0.1.0/README.md": "49411a8bd195a0feb69cd4628caa4809521f3c41c767778c5abcd0db7cbdffda",
+    "assets/pino-pintado/v0.1.0/bark.png": "1d68dad6d88d69a80c615f8ffb409e13f87cadc57cd3c2ec1e6c87ef9310799a",
+    "assets/pino-pintado/v0.1.0/foliage.png": "6b47402fa103be09286f7d7866998e56ffef344c9d69caa018f46fa2c643ae33",
+    "assets/pino-pintado/v0.1.0/manifest.json": "069d6f041c28f28d0ce99d71f81ed3df0e8d3205941181b68efaa8ec0dcecf0d",
+    "assets/pino-pintado/v0.1.0/prompts.json": "56e1cf5b2ca32a0c69233a198bdad40588baf9b9f596b2c41ef58d0e7f2136be",
+    "assets/roble-estacional/v0.1.0/autumn.png": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+    "assets/roble-estacional/v0.1.0/manifest.json": "e52e176a5f9ea022fdf4d1ec6196c47a678daf317bf9e3141b1957b4c123304b",
+    "assets/roble-estacional/v0.1.0/summer.png": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+    "assets/roble-otono-pintado/v0.1.0/crossed-atlas.png": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+    "assets/roble-otono-pintado/v0.1.0/foliage.png": "03c4611fac4a0ff8cfb80a820fbce824496dea4b5e12a40cc6059ecf1d26284e",
+    "assets/roble-otono-pintado/v0.1.0/manifest.json": "477fd7346481daead62a7d583e79ae03ecc066bd3b237969335f0bb7abe1d7c9",
+    "assets/roble-otono-pintado/v0.1.0/prompt.json": "73eceb6eebefcdba268dbd1d0d3c705c5330da86dcacafce19ef40b9ee3a4f87",
+    "assets/roble-pintado/v0.1.0/foliage.png": "4933ce70b2462a7a66642e12584af68fe6779eaefc49a03b30e58731371a5934",
+    "assets/roble-pintado/v0.1.0/manifest.json": "5a94720e4c1efc3619c2fd9585c46c20dd4085c9e8ee75f637a3d83a21b0600b",
+    "assets/roble-pintado/v0.2.0/README.md": "c827be8bba0e1b09eaf10763c08554c76818add1f8ee5133e130e7d550f70090",
+    "assets/roble-pintado/v0.2.0/bark.png": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+    "assets/roble-pintado/v0.2.0/foliage.png": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+    "assets/roble-pintado/v0.2.0/manifest.json": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250",
+    "assets/roble-pintado/v0.2.0/prompts.json": "90f34ad4ca670285dd8005f6b1c7fd25ed0f2472dd99aacb8124781d7aa4aec8",
+    "assets/roble-pintado/v0.3.0/foliage.png": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1",
+    "assets/roble-pintado/v0.3.0/manifest.json": "4dcf240fe389fecc831786bebb280c5862f3ff3dc0bf920ada440cd00c7ec4a8",
+    "assets/roble-pintado/v0.3.0/templates.json": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+  },
+  "archive": {
+    "file": "roble-estacional-0.1.0.zip",
+    "sha256": "7c94639ab9429803e0ea178a0c0ee8b1042ef2495f8a70baca5684d656cd43f1",
+    "bytes": 257531053
+  },
+  "review_source_sha256": "769aeaad5d9efd3579d36d53681e797d007edd222c16f9c34dd8c6c2f6a489ea",
+  "protocol": {
+    "capture_fixed_fps": 60,
+    "automatic_render_loop": false,
+    "resolution": [
+      600,
+      600
+    ],
+    "msaa": 4,
+    "backgrounds": [
+      "#EEE9DF",
+      "#182027"
+    ],
+    "phases": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "scales": [
+      1.15,
+      2.8,
+      6
+    ],
+    "lights": [
+      [
+        -35,
+        -25,
+        0
+      ],
+      [
+        -35,
+        -90,
+        0
+      ],
+      [
+        -35,
+        155,
+        0
+      ]
+    ],
+    "normals": "n35 selected; originals as controls",
+    "sun_energy": 1.2,
+    "ambient_energy": 0.5,
+    "roughness": 0.95,
+    "cutoff": 0.5,
+    "tonemap": "linear",
+    "shadow_normal_bias": 1,
+    "ground_casts_shadows": false
+  },
+  "capture_files": 2377,
+  "capture_sha256_map_digest": "af9843c4bb0befa0e7610c1780a7ff4ee76fabb7be6e5526f708e85518a0eda5",
+  "raw_verification": {
+    "path": "artifacts/estaciones/integracion-t5-03/verification.json",
+    "sha256": "7d19b6e3d6f6a28d778bd403d284d2f6dbd3b35e1c7a2c660ff41a36ee71de5c"
+  },
+  "additional_checks": {
+    "passed": true,
+    "checks": {
+      "2377_capture_files_match": true,
+      "1928_png_pixels_match_native_hashes": true,
+      "16_standard_glbs_two_embedded_pngs": true,
+      "zip_crc_paths_and_locked_contents": true
+    },
+    "verification_sha256": "7d19b6e3d6f6a28d778bd403d284d2f6dbd3b35e1c7a2c660ff41a36ee71de5c"
+  },
+  "tests": {
+    "total": 194,
+    "passed": true,
+    "command": "env PYTHONPATH=src python3 -m unittest discover -s tests"
+  },
+  "visual_review": {
+    "reviewer": "agent",
+    "method": "Inspección visual de láminas desde capturas reales Godot: cinco fases/cuatro casos, tres luces/distancias/fondos, extremos, sombras, visor y 121 cuadros de ida por caso/cámara. Vuelta comprobada con hashes de píxeles.",
+    "user_adoption_T5": "pending",
+    "T4_normal_selection": "approved_n35_by_delegation",
+    "findings": [
+      "Silueta/plenitud conservadas, mezcla por grupos continua en selección revisada.",
+      "Joven-07 inicia tarde el cambio visible con las mismas reglas; no se retoca por semilla.",
+      "Las cruzadas conservan cantos y cambios de visibilidad al orbitar; no se certifica ausencia universal de aliasing o parpadeo.",
+      "Sombras propias y recortadas conservadas; receptor sin sombra propia evita el artefacto anterior del suelo. Parte de la sombra larga del joven sale del encuadre."
+    ]
+  },
+  "selected_images_sha256": {
+    "adulto-00-orbit-all-forward.jpg": "11769ae4583b31e9694cd55f840dc6eaaf464247f78d6c8e6bcb06103355b261",
+    "comparison.jpg": "afa414c22767ab58f4ac12b23ad1bb61bf18570afd4ccf48136b01e6871f5a05",
+    "distances-2.jpg": "cd2855fc8707a6fab7fee609742baf1bea82e3604b08f641d63bb51ffe7730a6",
+    "joven-07-fixed-all-forward.jpg": "59a70b6a2d5d72f7107104de06f1abca98a0d032639b729d0f51e4c481df46e6",
+    "light-1.jpg": "67bc4740a19f9f57bdd6962830a0cbad8890b6803fe18db347222e7d9bbfb0a5",
+    "light-2.jpg": "557ecc348a02c8cb5c7ebe04b34863ac0847b321c70f5daa72543864c1d9fa50",
+    "shadows-0.jpg": "19832d2d58a0ba1840545b59c1d78fd223fee181905a3dbdccc453371b7b5d7e",
+    "standard-controls.jpg": "212a4c4d45f74f8baade67110cecbe724625108b9d93369a3edf0459f88ab76b"
+  },
+  "evidence_helper_sha256": "c70361e3324365d310fded49cd4758eec846f309d83cc26f87e5a65069e17cae"
+}

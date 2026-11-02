@@ -1,0 +1,20 @@
+{
+  "version": "paint-transition-0.1.0",
+  "species": "roble_copa_ancha@2.2.0",
+  "phase": "summer_to_autumn_full_canopy",
+  "atlas_manifest": "assets/roble-estacional/v0.1.0/manifest.json",
+  "resources": {
+    "summer": {
+      "path": "assets/roble-estacional/v0.1.0/summer.png",
+      "sha256": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd"
+    },
+    "autumn": {
+      "path": "assets/roble-estacional/v0.1.0/autumn.png",
+      "sha256": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce"
+    },
+    "bark": {
+      "path": "assets/roble-pintado/v0.2.0/bark.png",
+      "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+    }
+  }
+}

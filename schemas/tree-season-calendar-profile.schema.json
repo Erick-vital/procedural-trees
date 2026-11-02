@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Perfil de calendario estacional 1.0 — roble verano a otoño",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "species",
+    "blueprint_version",
+    "phase",
+    "seed",
+    "resources",
+    "exposure",
+    "calendar",
+    "limits"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "const": "roble-verano-otono"
+    },
+    "version": {
+      "const": "0.1.0"
+    },
+    "species": {
+      "const": "roble_copa_ancha"
+    },
+    "blueprint_version": {
+      "const": "2.2.0"
+    },
+    "phase": {
+      "const": "summer_to_autumn_full_canopy"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summer",
+        "autumn",
+        "bark"
+      ],
+      "properties": {
+        "summer": {
+          "$ref": "#/$defs/resource"
+        },
+        "autumn": {
+          "$ref": "#/$defs/resource"
+        },
+        "bark": {
+          "$ref": "#/$defs/resource"
+        }
+      }
+    },
+    "exposure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "neighbors",
+        "rays",
+        "reach_scale",
+        "density"
+      ],
+      "properties": {
+        "neighbors": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 24
+        },
+        "rays": {
+          "type": "integer",
+          "minimum": 4,
+          "maximum": 12
+        },
+        "reach_scale": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 6
+        },
+        "density": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 4
+        }
+      }
+    },
+    "calendar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start_min",
+        "start_max",
+        "duration_min",
+        "duration_max",
+        "exposure_weight",
+        "correlation"
+      ],
+      "properties": {
+        "start_min": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "start_max": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "duration_min": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "duration_max": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "exposure_weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "correlation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "limits": {
+      "const": {
+        "groups": 360,
+        "triangles": 6999,
+        "materials": 2
+      }
+    }
+  },
+  "$defs": {
+    "resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}

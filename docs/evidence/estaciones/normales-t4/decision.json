@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-02",
+  "status": "technical_experiment_complete_art_pending",
+  "production_normals": "original",
+  "candidates": [
+    "n35",
+    "n65"
+  ],
+  "agent_observation": "Cambios de iluminación leves/moderados; .65 modifica más bordes y reversos. No se cambia silueta geométrica. Comparación pendiente del usuario.",
+  "T3_artistic_approval": "../mezcla-t3/user-acceptance.json",
+  "T5_implemented": false
+}

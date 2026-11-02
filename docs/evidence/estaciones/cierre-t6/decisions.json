@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-02",
+  "authorization": "implementa t6",
+  "technical_status": "closed",
+  "paint": {
+    "decision": "approved",
+    "scope": "Pinturas compatibles y aplicación en piloto T3; no aprobación independiente de la pintura otoñal histórica anterior.",
+    "evidence": "docs/evidence/estaciones/mezcla-t3/user-acceptance.json",
+    "sha256": "6069152b34be9c241a08ba8b6e083c367c06d65292e2320d7edfa5ead0bf2a63"
+  },
+  "calendar": {
+    "decision": "approved",
+    "scope": "Calendario por grupos del piloto T3; misma regla verificada en cuatro casos T5.",
+    "evidence": "docs/evidence/estaciones/mezcla-t3/user-acceptance.json",
+    "sha256": "6069152b34be9c241a08ba8b6e083c367c06d65292e2320d7edfa5ead0bf2a63"
+  },
+  "normals": {
+    "decision": "approved",
+    "selection": "n35",
+    "strength": 0.35,
+    "scope": "Selección del piloto T4 delegada por el usuario; regla común en T5.",
+    "evidence": "docs/evidence/estaciones/normales-t4/user-acceptance.json",
+    "sha256": "3cc5d2b3ebc804451416bf1032e1813d90d1505d19077f634a23895144407a93"
+  },
+  "four_case_artistic_adoption": {
+    "decision": "pending",
+    "scope": "T5 tiene revisión visual técnica; solicitar T6 no constituye aprobación artística del lote."
+  },
+  "continuation": {
+    "decision": "no_additional_phase_started",
+    "next_possible_work": "Estudio separado de caída del roble, previa definición de alcance con el usuario.",
+    "deferred": [
+      "caída",
+      "invierno",
+      "brotación",
+      "marcescencia",
+      "partículas",
+      "viento",
+      "LOD",
+      "otras especies"
+    ],
+    "historical_defaults": "conserved"
+  }
+}

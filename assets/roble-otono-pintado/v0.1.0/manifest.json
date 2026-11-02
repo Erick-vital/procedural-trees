@@ -1,0 +1,49 @@
+{
+  "version": "oak-autumn-paint-0.1.0",
+  "status": "experimental_art_pending",
+  "tool": "image_gen.imagegen integrado",
+  "method": "Edición de pintura fuente RGBA; proyección por Cycles en ocho plantillas históricas. Sin recolor shader ni retoque de píxeles posterior a ImageGen.",
+  "source_foliage": {
+    "path": "assets/roble-pintado/v0.2.0/foliage.png",
+    "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+  },
+  "templates": {
+    "path": "assets/roble-pintado/v0.3.0/templates.json",
+    "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+  },
+  "prompt": "assets/roble-otono-pintado/v0.1.0/prompt.json",
+  "bake": {
+    "blender": "5.2.1",
+    "engine": "Cycles CPU",
+    "samples": 8,
+    "seed": 2718,
+    "script": "blender/bake_autumn_oak.py",
+    "script_sha256": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60"
+  },
+  "files": {
+    "foliage.png": {
+      "sha256": "03c4611fac4a0ff8cfb80a820fbce824496dea4b5e12a40cc6059ecf1d26284e",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    "crossed-atlas.png": {
+      "sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA"
+    }
+  },
+  "source_alpha_comparison": {
+    "alpha_mask_iou": 0.9717318599544505,
+    "coverage_ratio": 1.0285983052165124
+  },
+  "crossed_alpha_comparison": {
+    "alpha_mask_iou": 0.9786590598447894,
+    "coverage_ratio": 1.0215051832572446
+  }
+}

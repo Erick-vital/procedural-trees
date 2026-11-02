@@ -1,0 +1,804 @@
+{
+  "version": "seasonal-paint-glb-0.1.0",
+  "passed": true,
+  "checks": {
+    "pilot-geometry-materials-resources-exact": true,
+    "pilot-repeat-glb-exact": true,
+    "pilot-triangles-exact": true,
+    "joven-07-geometry-materials-resources-exact": true,
+    "joven-07-repeat-glb-exact": true,
+    "joven-07-triangles-exact": true,
+    "adulto-00-geometry-materials-resources-exact": true,
+    "adulto-00-repeat-glb-exact": true,
+    "adulto-00-triangles-exact": true,
+    "viejo-00-geometry-materials-resources-exact": true,
+    "viejo-00-repeat-glb-exact": true,
+    "viejo-00-triangles-exact": true,
+    "pilot-summer-render-repeat": true,
+    "pilot-shader-render-repeat": true,
+    "pilot-painted-render-repeat": true,
+    "joven-07-summer-render-repeat": true,
+    "joven-07-shader-render-repeat": true,
+    "joven-07-painted-render-repeat": true,
+    "adulto-00-summer-render-repeat": true,
+    "adulto-00-shader-render-repeat": true,
+    "adulto-00-painted-render-repeat": true,
+    "viejo-00-summer-render-repeat": true,
+    "viejo-00-shader-render-repeat": true,
+    "viejo-00-painted-render-repeat": true,
+    "godot": true,
+    "132-captures": true
+  },
+  "cases": {
+    "pilot": {
+      "version": "seasonal-paint-glb-0.1.0",
+      "base_glb_sha256": "5d67741ffd00a394133742d7077687cec08823c9b9f36f3395a6104db93ca74d",
+      "glb_sha256": "0d293ebd132875be24a9997c4f623aa25682547d8061fd2c178859eb1e0bda5e",
+      "metrics": {
+        "vertices": 6112,
+        "triangles": 6812,
+        "bounds_blender": [
+          [
+            -6.280159,
+            -8.033664,
+            0.0
+          ],
+          [
+            8.205399,
+            6.980155,
+            9.687451
+          ]
+        ],
+        "height_m": 9.687451,
+        "triangles_by_material": {
+          "Painted_Bark": 5228,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "dad7665061d3cfb92f1b5375df8c4b37dbbb8eb1537911c82dd235fff4f7cbeb"
+      },
+      "export_validation": {
+        "triangles": 6812,
+        "materials": {
+          "Painted_Bark": 5228,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -6.280158519744873,
+            0.0,
+            -6.980154514312744
+          ],
+          [
+            8.205398559570312,
+            9.687451362609863,
+            8.033663749694824
+          ]
+        ],
+        "dimensions_m": [
+          14.485557079315186,
+          9.687451362609863,
+          15.013818264007568
+        ],
+        "geometry_sha256": "8d40afe74a7d909022fdd5f4c71fa88030189323bcdece1d2a6fc9a08e4229f2",
+        "glb_sha256": "0d293ebd132875be24a9997c4f623aa25682547d8061fd2c178859eb1e0bda5e"
+      },
+      "paint_atlas_sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+      "audit": {
+        "geometry_uv_normals_indices_exact": true,
+        "materials_scene_exact": true,
+        "other_images_exact": true,
+        "foliage_png_sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf"
+      }
+    },
+    "joven-07": {
+      "version": "seasonal-paint-glb-0.1.0",
+      "base_glb_sha256": "ba53154416f638d105694f569792334ab5e99b6e8c8725e3abfed5878c28a741",
+      "glb_sha256": "743d47999a9133495b6b3a1e057148cf83389e12d84e5dfceceedfd4ae0deceb",
+      "metrics": {
+        "vertices": 4068,
+        "triangles": 3132,
+        "bounds_blender": [
+          [
+            -1.682642,
+            -2.028157,
+            0.0
+          ],
+          [
+            1.569776,
+            1.844885,
+            4.20719
+          ]
+        ],
+        "height_m": 4.20719,
+        "triangles_by_material": {
+          "Painted_Bark": 1548,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "bd6ec3dc1849360e3ababfa8157fbf235b17a544ed3cb9b2a19d75c5113fe190"
+      },
+      "export_validation": {
+        "triangles": 3132,
+        "materials": {
+          "Painted_Bark": 1548,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -1.682641625404358,
+            0.0,
+            -1.8448853492736816
+          ],
+          [
+            1.569775938987732,
+            4.207189559936523,
+            2.0281569957733154
+          ]
+        ],
+        "dimensions_m": [
+          3.25241756439209,
+          4.207189559936523,
+          3.873042345046997
+        ],
+        "geometry_sha256": "7047781a05391afc1ca65479078203d0f306b065d6b6c7a79af4312fa9829ad1",
+        "glb_sha256": "743d47999a9133495b6b3a1e057148cf83389e12d84e5dfceceedfd4ae0deceb"
+      },
+      "paint_atlas_sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+      "audit": {
+        "geometry_uv_normals_indices_exact": true,
+        "materials_scene_exact": true,
+        "other_images_exact": true,
+        "foliage_png_sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf"
+      }
+    },
+    "adulto-00": {
+      "version": "seasonal-paint-glb-0.1.0",
+      "base_glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397",
+      "glb_sha256": "8baa54410f60427f984ef801c9f357194f2b3edfc95af50283e87d287e586881",
+      "metrics": {
+        "vertices": 5576,
+        "triangles": 5820,
+        "bounds_blender": [
+          [
+            -7.238227,
+            -6.023726,
+            0.0
+          ],
+          [
+            8.0343,
+            6.859629,
+            10.721216
+          ]
+        ],
+        "height_m": 10.721216,
+        "triangles_by_material": {
+          "Painted_Bark": 4236,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "7da65386422fd127ac796a18c3738036ad7cd2dbb81b34e542d5a76ac95a1f12"
+      },
+      "export_validation": {
+        "triangles": 5820,
+        "materials": {
+          "Painted_Bark": 4236,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -7.238226890563965,
+            0.0,
+            -6.859629154205322
+          ],
+          [
+            8.034299850463867,
+            10.721216201782227,
+            6.023725509643555
+          ]
+        ],
+        "dimensions_m": [
+          15.272526741027832,
+          10.721216201782227,
+          12.883354663848877
+        ],
+        "geometry_sha256": "26836e7b14bb8744824737493518dd325a3a2c442d8c949ec506c1a648e942fc",
+        "glb_sha256": "8baa54410f60427f984ef801c9f357194f2b3edfc95af50283e87d287e586881"
+      },
+      "paint_atlas_sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+      "audit": {
+        "geometry_uv_normals_indices_exact": true,
+        "materials_scene_exact": true,
+        "other_images_exact": true,
+        "foliage_png_sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf"
+      }
+    },
+    "viejo-00": {
+      "version": "seasonal-paint-glb-0.1.0",
+      "base_glb_sha256": "c5fde69a0cc46d7135bcf9a8d52c6f253de75b66d87f7c17c056f252a2a316ae",
+      "glb_sha256": "825209132aeaefac89fbd9bc928ea762cb14a88d893c40f23f199f3431ad82e5",
+      "metrics": {
+        "vertices": 6142,
+        "triangles": 6900,
+        "bounds_blender": [
+          [
+            -6.668093,
+            -7.835924,
+            0.0
+          ],
+          [
+            7.652547,
+            7.897913,
+            9.910583
+          ]
+        ],
+        "height_m": 9.910583,
+        "triangles_by_material": {
+          "Painted_Bark": 5316,
+          "Painted_Foliage": 1584
+        },
+        "geometry_sha256": "5181408ebd84095e306175ba9537eee8e806573b5a697a196ed56284a125b013"
+      },
+      "export_validation": {
+        "triangles": 6900,
+        "materials": {
+          "Painted_Bark": 5316,
+          "Painted_Foliage": 1584
+        },
+        "bounds_gltf": [
+          [
+            -6.668092727661133,
+            0.0,
+            -7.897912979125977
+          ],
+          [
+            7.652547359466553,
+            9.91058349609375,
+            7.83592414855957
+          ]
+        ],
+        "dimensions_m": [
+          14.320640087127686,
+          9.91058349609375,
+          15.733837127685547
+        ],
+        "geometry_sha256": "4b160be26894c20021032c51d44a8a03e076df8ce573c49aa011c12382c2cd74",
+        "glb_sha256": "825209132aeaefac89fbd9bc928ea762cb14a88d893c40f23f199f3431ad82e5"
+      },
+      "paint_atlas_sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+      "audit": {
+        "geometry_uv_normals_indices_exact": true,
+        "materials_scene_exact": true,
+        "other_images_exact": true,
+        "foliage_png_sha256": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf"
+      }
+    }
+  },
+  "silhouette": {
+    "pilot": {
+      "perspective": {
+        "old_pixels": 223133,
+        "new_pixels": 223957,
+        "coverage_ratio": 1.0036928647936432,
+        "iou": 0.9963207222815094,
+        "xor_pixels": 824
+      },
+      "side": {
+        "old_pixels": 206706,
+        "new_pixels": 207429,
+        "coverage_ratio": 1.0034977214014107,
+        "iou": 0.9965048450079544,
+        "xor_pixels": 725
+      },
+      "back": {
+        "old_pixels": 215833,
+        "new_pixels": 216553,
+        "coverage_ratio": 1.0033359124878958,
+        "iou": 0.9966382984618368,
+        "xor_pixels": 728
+      }
+    },
+    "joven-07": {
+      "perspective": {
+        "old_pixels": 187891,
+        "new_pixels": 188430,
+        "coverage_ratio": 1.0028686845032493,
+        "iou": 0.9970865285111576,
+        "xor_pixels": 549
+      },
+      "side": {
+        "old_pixels": 200195,
+        "new_pixels": 200754,
+        "coverage_ratio": 1.002792277529409,
+        "iou": 0.997175704081531,
+        "xor_pixels": 567
+      },
+      "back": {
+        "old_pixels": 190462,
+        "new_pixels": 191083,
+        "coverage_ratio": 1.0032604929067215,
+        "iou": 0.9967083056408861,
+        "xor_pixels": 629
+      }
+    },
+    "adulto-00": {
+      "perspective": {
+        "old_pixels": 189483,
+        "new_pixels": 190179,
+        "coverage_ratio": 1.0036731527366571,
+        "iou": 0.9963402899373748,
+        "xor_pixels": 696
+      },
+      "side": {
+        "old_pixels": 182839,
+        "new_pixels": 183414,
+        "coverage_ratio": 1.003144843277419,
+        "iou": 0.9968650157567034,
+        "xor_pixels": 575
+      },
+      "back": {
+        "old_pixels": 199306,
+        "new_pixels": 200052,
+        "coverage_ratio": 1.0037429881689461,
+        "iou": 0.996260990837428,
+        "xor_pixels": 748
+      }
+    },
+    "viejo-00": {
+      "perspective": {
+        "old_pixels": 197692,
+        "new_pixels": 198432,
+        "coverage_ratio": 1.0037431964874655,
+        "iou": 0.9962607026049095,
+        "xor_pixels": 742
+      },
+      "side": {
+        "old_pixels": 202730,
+        "new_pixels": 203435,
+        "coverage_ratio": 1.0034775316923987,
+        "iou": 0.9965345196254332,
+        "xor_pixels": 705
+      },
+      "back": {
+        "old_pixels": 197213,
+        "new_pixels": 197927,
+        "coverage_ratio": 1.0036204509844686,
+        "iou": 0.9963724365807941,
+        "xor_pixels": 718
+      }
+    }
+  },
+  "godot": [
+    {
+      "captures": [
+        "pilot-summer-front.png",
+        "pilot-summer-side.png",
+        "pilot-summer-perspective.png",
+        "pilot-summer-back.png",
+        "pilot-summer-below.png",
+        "pilot-summer-medium.png",
+        "pilot-summer-far.png",
+        "pilot-summer-repeat.png",
+        "pilot-summer-mask-side.png",
+        "pilot-summer-mask-perspective.png",
+        "pilot-summer-mask-back.png",
+        "pilot-shader-front.png",
+        "pilot-shader-side.png",
+        "pilot-shader-perspective.png",
+        "pilot-shader-back.png",
+        "pilot-shader-below.png",
+        "pilot-shader-medium.png",
+        "pilot-shader-far.png",
+        "pilot-shader-repeat.png",
+        "pilot-shader-mask-side.png",
+        "pilot-shader-mask-perspective.png",
+        "pilot-shader-mask-back.png",
+        "pilot-painted-front.png",
+        "pilot-painted-side.png",
+        "pilot-painted-perspective.png",
+        "pilot-painted-back.png",
+        "pilot-painted-below.png",
+        "pilot-painted-medium.png",
+        "pilot-painted-far.png",
+        "pilot-painted-repeat.png",
+        "pilot-painted-mask-side.png",
+        "pilot-painted-mask-perspective.png",
+        "pilot-painted-mask-back.png"
+      ],
+      "cases": {
+        "pilot-painted": {
+          "materials": {
+            "Painted_Bark": 5228,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 6812
+        },
+        "pilot-shader": {
+          "materials": {
+            "Painted_Bark": 5228,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 6812
+        },
+        "pilot-summer": {
+          "materials": {
+            "Painted_Bark": 5228,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 6812
+        }
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "passed": true
+    },
+    {
+      "captures": [
+        "joven-07-summer-front.png",
+        "joven-07-summer-side.png",
+        "joven-07-summer-perspective.png",
+        "joven-07-summer-back.png",
+        "joven-07-summer-below.png",
+        "joven-07-summer-medium.png",
+        "joven-07-summer-far.png",
+        "joven-07-summer-repeat.png",
+        "joven-07-summer-mask-side.png",
+        "joven-07-summer-mask-perspective.png",
+        "joven-07-summer-mask-back.png",
+        "joven-07-shader-front.png",
+        "joven-07-shader-side.png",
+        "joven-07-shader-perspective.png",
+        "joven-07-shader-back.png",
+        "joven-07-shader-below.png",
+        "joven-07-shader-medium.png",
+        "joven-07-shader-far.png",
+        "joven-07-shader-repeat.png",
+        "joven-07-shader-mask-side.png",
+        "joven-07-shader-mask-perspective.png",
+        "joven-07-shader-mask-back.png",
+        "joven-07-painted-front.png",
+        "joven-07-painted-side.png",
+        "joven-07-painted-perspective.png",
+        "joven-07-painted-back.png",
+        "joven-07-painted-below.png",
+        "joven-07-painted-medium.png",
+        "joven-07-painted-far.png",
+        "joven-07-painted-repeat.png",
+        "joven-07-painted-mask-side.png",
+        "joven-07-painted-mask-perspective.png",
+        "joven-07-painted-mask-back.png"
+      ],
+      "cases": {
+        "joven-07-painted": {
+          "materials": {
+            "Painted_Bark": 1548,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 3132
+        },
+        "joven-07-shader": {
+          "materials": {
+            "Painted_Bark": 1548,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 3132
+        },
+        "joven-07-summer": {
+          "materials": {
+            "Painted_Bark": 1548,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 3132
+        }
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "passed": true
+    },
+    {
+      "captures": [
+        "adulto-00-summer-front.png",
+        "adulto-00-summer-side.png",
+        "adulto-00-summer-perspective.png",
+        "adulto-00-summer-back.png",
+        "adulto-00-summer-below.png",
+        "adulto-00-summer-medium.png",
+        "adulto-00-summer-far.png",
+        "adulto-00-summer-repeat.png",
+        "adulto-00-summer-mask-side.png",
+        "adulto-00-summer-mask-perspective.png",
+        "adulto-00-summer-mask-back.png",
+        "adulto-00-shader-front.png",
+        "adulto-00-shader-side.png",
+        "adulto-00-shader-perspective.png",
+        "adulto-00-shader-back.png",
+        "adulto-00-shader-below.png",
+        "adulto-00-shader-medium.png",
+        "adulto-00-shader-far.png",
+        "adulto-00-shader-repeat.png",
+        "adulto-00-shader-mask-side.png",
+        "adulto-00-shader-mask-perspective.png",
+        "adulto-00-shader-mask-back.png",
+        "adulto-00-painted-front.png",
+        "adulto-00-painted-side.png",
+        "adulto-00-painted-perspective.png",
+        "adulto-00-painted-back.png",
+        "adulto-00-painted-below.png",
+        "adulto-00-painted-medium.png",
+        "adulto-00-painted-far.png",
+        "adulto-00-painted-repeat.png",
+        "adulto-00-painted-mask-side.png",
+        "adulto-00-painted-mask-perspective.png",
+        "adulto-00-painted-mask-back.png"
+      ],
+      "cases": {
+        "adulto-00-painted": {
+          "materials": {
+            "Painted_Bark": 4236,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 5820
+        },
+        "adulto-00-shader": {
+          "materials": {
+            "Painted_Bark": 4236,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 5820
+        },
+        "adulto-00-summer": {
+          "materials": {
+            "Painted_Bark": 4236,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 5820
+        }
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "passed": true
+    },
+    {
+      "captures": [
+        "viejo-00-summer-front.png",
+        "viejo-00-summer-side.png",
+        "viejo-00-summer-perspective.png",
+        "viejo-00-summer-back.png",
+        "viejo-00-summer-below.png",
+        "viejo-00-summer-medium.png",
+        "viejo-00-summer-far.png",
+        "viejo-00-summer-repeat.png",
+        "viejo-00-summer-mask-side.png",
+        "viejo-00-summer-mask-perspective.png",
+        "viejo-00-summer-mask-back.png",
+        "viejo-00-shader-front.png",
+        "viejo-00-shader-side.png",
+        "viejo-00-shader-perspective.png",
+        "viejo-00-shader-back.png",
+        "viejo-00-shader-below.png",
+        "viejo-00-shader-medium.png",
+        "viejo-00-shader-far.png",
+        "viejo-00-shader-repeat.png",
+        "viejo-00-shader-mask-side.png",
+        "viejo-00-shader-mask-perspective.png",
+        "viejo-00-shader-mask-back.png",
+        "viejo-00-painted-front.png",
+        "viejo-00-painted-side.png",
+        "viejo-00-painted-perspective.png",
+        "viejo-00-painted-back.png",
+        "viejo-00-painted-below.png",
+        "viejo-00-painted-medium.png",
+        "viejo-00-painted-far.png",
+        "viejo-00-painted-repeat.png",
+        "viejo-00-painted-mask-side.png",
+        "viejo-00-painted-mask-perspective.png",
+        "viejo-00-painted-mask-back.png"
+      ],
+      "cases": {
+        "viejo-00-painted": {
+          "materials": {
+            "Painted_Bark": 5316,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 6900
+        },
+        "viejo-00-shader": {
+          "materials": {
+            "Painted_Bark": 5316,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 6900
+        },
+        "viejo-00-summer": {
+          "materials": {
+            "Painted_Bark": 5316,
+            "Painted_Foliage": 1584
+          },
+          "triangles": 6900
+        }
+      },
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "passed": true
+    }
+  ],
+  "source_lock": {
+    "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+    "scripts/verify_autumn_paint.py": "93744e85a70a395b2e7d651990b06c6adc5f6b51a4ba8ec2eba165e60a8aeaf2",
+    "blender/bake_autumn_oak.py": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60",
+    "godot/autumn_painted_asset.gd": "1333ed0ff223ceb2c7ff408a504953e9c80154de1a64e334ea52bc07a3b295db",
+    "godot/autumn_paint_viewer.gd": "1bd26e262c0c5e9dceec9e9ad7c0062cd0e13d5d51f63320ea7c63a9a09f462a",
+    "godot/review_autumn_paint.gd": "48354dedd169344280c8391f74624021d97a9825cabb24360fc54600456309f1",
+    "assets/roble-otono-pintado/v0.1.0/manifest.json": "477fd7346481daead62a7d583e79ae03ecc066bd3b237969335f0bb7abe1d7c9",
+    "assets/roble-otono-pintado/v0.1.0/foliage.png": "03c4611fac4a0ff8cfb80a820fbce824496dea4b5e12a40cc6059ecf1d26284e",
+    "assets/roble-otono-pintado/v0.1.0/crossed-atlas.png": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+    "assets/roble-otono-pintado/v0.1.0/prompt.json": "73eceb6eebefcdba268dbd1d0d3c705c5330da86dcacafce19ef40b9ee3a4f87"
+  },
+  "capture_sha256": {
+    "adulto-00-painted-back.png": "6f7c744117f9ed328477ac6206f76d43716dbf4f4e84a8d08eec67e05ba496f7",
+    "adulto-00-painted-below.png": "4fcd932e723f736cfbff9db5d9d3371728be17b93cf6452dba8a2573b9792e79",
+    "adulto-00-painted-far.png": "b894f285fa91daf04876e8fd7c1ef34bdd8fab8d1b8d13dfbd3bc7ffe937cd9a",
+    "adulto-00-painted-front.png": "8387547807cac9b0f033deebc6146a1162866a192fc043b4dff39c8d7d00a526",
+    "adulto-00-painted-mask-back.png": "7366a995f124ec7df6704bc2c02c838bbf7b54a759696d6346352d8661bf0742",
+    "adulto-00-painted-mask-perspective.png": "a6e9031796c9ac393501d004af4ac3277a01f8039ed38d2390172593569d27a9",
+    "adulto-00-painted-mask-side.png": "5459f516b19c661ba7d8950b3752cf999fc1f61aaeee353a0379039d46699913",
+    "adulto-00-painted-medium.png": "227ae0ab89c6258608882c0e4e615c0ad24ce3a73fb778e3729867df5becae0a",
+    "adulto-00-painted-perspective.png": "48cc1b267713f057672327fe60c99bdc466562529b826410987a2f1dd0239d92",
+    "adulto-00-painted-repeat.png": "48cc1b267713f057672327fe60c99bdc466562529b826410987a2f1dd0239d92",
+    "adulto-00-painted-side.png": "422f4e04e66bcedcecd9b0972bbf60597ecacd7dbecba215ce982776962be9d8",
+    "adulto-00-shader-back.png": "4cf835ea5ea3182f036f9bc586b2a015e834c91066f433054916e2a27886a583",
+    "adulto-00-shader-below.png": "a441c3633ea9f04f5b9a2a97415dabbf545fd2092da86b4cd7ea6e4966d08993",
+    "adulto-00-shader-far.png": "a55e76a073f6caa75331504640977acf188118f2b4ac0344fb7ce5c41640c365",
+    "adulto-00-shader-front.png": "a32de8cd6ae73fa84fddd64efa91c993809e0ed1eeaa1b6e2ed9f56713b732f2",
+    "adulto-00-shader-mask-back.png": "0b6443c65749ff43308681a0db6a80f1f7c0d4f89e6cf774d9cee38cbabef84f",
+    "adulto-00-shader-mask-perspective.png": "41a894943c7ce939eef33b04cfbc7899f6bee5b4ee088fc0d8c7a59f9a44ed2d",
+    "adulto-00-shader-mask-side.png": "8c67382ebcae0b2bfcf0f1faa81e9ab66bf9260b674f8c5ff7b5eb971c416d9e",
+    "adulto-00-shader-medium.png": "87034168161ecc1e3528f3bc3e4913e53671121e39d3424a47b354791ce81845",
+    "adulto-00-shader-perspective.png": "397a36df38ed606d9a0ad43bb2f047bc5e0d21e1813d1d6c4eac762fa3e5d786",
+    "adulto-00-shader-repeat.png": "397a36df38ed606d9a0ad43bb2f047bc5e0d21e1813d1d6c4eac762fa3e5d786",
+    "adulto-00-shader-side.png": "6ca2f86b9317f5cb59e8b889e65e2f4ab46655d89eddd31720e6a714496e0a57",
+    "adulto-00-summer-back.png": "d256a27e6c53b5b0a258c5fd5f892e9c54d73f92d38631333af9defeb7d0c673",
+    "adulto-00-summer-below.png": "cfc37b77f4eaf7d5e0f0a7ffefc3d45d7fd5ef8e809b40628b42f4cd71192a27",
+    "adulto-00-summer-far.png": "4c55123b586bb0d8d250efc8fe956ec71870feaca30bd5ce74d6f7d861adce64",
+    "adulto-00-summer-front.png": "cb9f46cfacb3ecbbcc70658753c69d310bc7f3e0601e0bd27b5c3607a7abf895",
+    "adulto-00-summer-mask-back.png": "0b6443c65749ff43308681a0db6a80f1f7c0d4f89e6cf774d9cee38cbabef84f",
+    "adulto-00-summer-mask-perspective.png": "41a894943c7ce939eef33b04cfbc7899f6bee5b4ee088fc0d8c7a59f9a44ed2d",
+    "adulto-00-summer-mask-side.png": "8c67382ebcae0b2bfcf0f1faa81e9ab66bf9260b674f8c5ff7b5eb971c416d9e",
+    "adulto-00-summer-medium.png": "341b9553a9dbbe922c50cf0cd3958e405cc696e0045ac192e24c51caa575bc73",
+    "adulto-00-summer-perspective.png": "a51eb3265af2608a4612998ec57430e4b39c3cdd81e3e5258509c73e6820a7b0",
+    "adulto-00-summer-repeat.png": "a51eb3265af2608a4612998ec57430e4b39c3cdd81e3e5258509c73e6820a7b0",
+    "adulto-00-summer-side.png": "4d0ac293c618b22d95e69c6d61f9879c530d39436e0c0c633c1905e28849f043",
+    "joven-07-painted-back.png": "63a49ef1d958cc72eca01996e85d1c02b9c1fefeb7838e2e152f851aa9fd1c55",
+    "joven-07-painted-below.png": "f0468c99fed26124822be3595991a52e81a605a7aab55cbd3d7dad41aebae4c0",
+    "joven-07-painted-far.png": "37bf88a9e29d8e3f2ea3274c545bdcd432f5a6dc14510cedd3ef493e9be1e86e",
+    "joven-07-painted-front.png": "ac8994d78cc5565fc10bc205a4c9f6a01bd0aba27f6647a09a157686203bd1c8",
+    "joven-07-painted-mask-back.png": "751928b9a323277f681ceb24df8fa763bdcff3b35e236aa0f3b2c4cb9fac5cb4",
+    "joven-07-painted-mask-perspective.png": "42cafe7710bb0b4bc474535671738ad1c9a426b703fdf11ca5cf64d05cd13ff4",
+    "joven-07-painted-mask-side.png": "3ff244d216002c7d0f8077db1bc16a0a442500efd9aa820f8433ce5c35e6fa8a",
+    "joven-07-painted-medium.png": "f7f3d4f435d22b978e03cb3ef657de4000da6c176250cd7fd1231d3baf46eb19",
+    "joven-07-painted-perspective.png": "e357ffe47d77a454db92d61059f06b26bda32f438abc7d757cc71f706d8d3a26",
+    "joven-07-painted-repeat.png": "e357ffe47d77a454db92d61059f06b26bda32f438abc7d757cc71f706d8d3a26",
+    "joven-07-painted-side.png": "d9e8d21a9b40b26bb7149eb290fe40d94408bfbf5796fe07f94c32f991a816e8",
+    "joven-07-shader-back.png": "61f87d2cdb58d1ccad71c0ed3e7959d85013cd71023ab839588a8f07a3d7d72a",
+    "joven-07-shader-below.png": "f5df9cb5815be986661d7a9823e26e2891220d14c7846ede9abe0cb79a5d0617",
+    "joven-07-shader-far.png": "289ff6b553acaf6b6129eda1bbc63a3e16550e56d16d5985deb307fc3a823255",
+    "joven-07-shader-front.png": "ab838790c0cea6c6d523429d2ec488933aca0604f25509c29a0862d0a80e1b25",
+    "joven-07-shader-mask-back.png": "0040479e960c6431dec30a44e5aba253cb00a4c49ed897def2771a38a83857aa",
+    "joven-07-shader-mask-perspective.png": "e9adf7c72fdbc6f100e2bc7987cbafb2e52c8eb8f7e92b47fd5f9f28469c6b80",
+    "joven-07-shader-mask-side.png": "abb1a0b5b7df115546e090f070c72acf9a70bd424c765650a68447491903fea3",
+    "joven-07-shader-medium.png": "4200899617cd910103a866880bd347eddedb8b098891a23f0f8fa0c6b16c3a5e",
+    "joven-07-shader-perspective.png": "29c0b9ca8398c8232c74b6e10849ef86d5b1387d3a913b0d3d8dfb393df59df7",
+    "joven-07-shader-repeat.png": "29c0b9ca8398c8232c74b6e10849ef86d5b1387d3a913b0d3d8dfb393df59df7",
+    "joven-07-shader-side.png": "18ee13ba053d527a159d953aa248934d1a3f475bc516c0f2e6904a61f8b12b75",
+    "joven-07-summer-back.png": "10c566e428a77ce10c08c5a5ecbeea0fccec3795479b27e5c6f01565b73612a0",
+    "joven-07-summer-below.png": "d26c957911c53e5b311b18564bd787d05a425f8b45ad95427cc0a491107a2ba6",
+    "joven-07-summer-far.png": "ee72b5433fa313b4178941fbe0fb59b4942923f57fbd72c60af997b7cfeb7e30",
+    "joven-07-summer-front.png": "4e2e0b8c58b3b9f75a8ddd4899e3f17d1fd250aa9b37f5b00b74699770a5e506",
+    "joven-07-summer-mask-back.png": "0040479e960c6431dec30a44e5aba253cb00a4c49ed897def2771a38a83857aa",
+    "joven-07-summer-mask-perspective.png": "e9adf7c72fdbc6f100e2bc7987cbafb2e52c8eb8f7e92b47fd5f9f28469c6b80",
+    "joven-07-summer-mask-side.png": "abb1a0b5b7df115546e090f070c72acf9a70bd424c765650a68447491903fea3",
+    "joven-07-summer-medium.png": "c1f82c6827f8a16c54e89d3d33cc65e9d2462be2cd7a2eccc71c9bf48963b256",
+    "joven-07-summer-perspective.png": "c46313f54b7e5c739163034e970b4d263b4755fceb0eac3b3e8cbc68ed4d613a",
+    "joven-07-summer-repeat.png": "c46313f54b7e5c739163034e970b4d263b4755fceb0eac3b3e8cbc68ed4d613a",
+    "joven-07-summer-side.png": "880fca72b1c88b39cf8f37af6fd40e4626d97ea56ec6224e4994569e7dc000a7",
+    "pilot-painted-back.png": "d96cf794bbfd04843092b7f8c5fdbfb784351022273cfb1d23e84fa1017dd668",
+    "pilot-painted-below.png": "3ff9ed482baa87f335c243c712c0bf6dfe7a250a6d989a17c701bafd337a584e",
+    "pilot-painted-far.png": "4ed7b027f9a86747d8b4a1b80cdbeb5f668c71756e3920ef4846cb250a53af18",
+    "pilot-painted-front.png": "4eddefbc465a3f0544a2af2e1b59ed7e46bedd1ee0b135c579ed7d96cd561d9e",
+    "pilot-painted-mask-back.png": "000afb44da3cce4f4e07192a23ce059ee7ab6dd7c2bcdbbf7e0f17552e134290",
+    "pilot-painted-mask-perspective.png": "242ed7360b7bcdd2d15d720076cd8c63391762323afb2cdf531771d6d0c39ff0",
+    "pilot-painted-mask-side.png": "84e4f5dee222594415a3d04227f4cf9f6d9c77b96e23b6c1571a406de74ad794",
+    "pilot-painted-medium.png": "97f2a2b6c5eb80ae2ebef7f94c07d5335ec3ec92adc77255ddad9d58b84b5ea9",
+    "pilot-painted-perspective.png": "aa48687d94b60c5369253bd5f63e22ffa3ebc57ef30f6160ed16c0df88eedc06",
+    "pilot-painted-repeat.png": "aa48687d94b60c5369253bd5f63e22ffa3ebc57ef30f6160ed16c0df88eedc06",
+    "pilot-painted-side.png": "853e1e41ef7e67a56bc51670fbd81bda8552af49f2b168f8f58fa9b5c4537058",
+    "pilot-shader-back.png": "9644170f5d8d29f2239c5852b6b27b187a2e24a11bc5478d3ba103ef22487bbd",
+    "pilot-shader-below.png": "6106562621cd329d3bbee0f92f48006c347c433f4e949b4367d21e15e2af7189",
+    "pilot-shader-far.png": "61f000989ad8feb092832e886970d62f912d067c46508a1dbc701992ddf42b2e",
+    "pilot-shader-front.png": "07dfe371923aeea6f8f6bb66b1ea797683f1ccae7f31889583e718599036df78",
+    "pilot-shader-mask-back.png": "544e7ca2f214e08357f766797ac5220b25637799997c8cf4eea219f5816c9633",
+    "pilot-shader-mask-perspective.png": "7bac5e27893ea700ddd44b91178d34e43dc705f7c53f393c949d580267b8a466",
+    "pilot-shader-mask-side.png": "8dc3dc50e946c32f877312f02fae83a997d76d6417ac9de872357df7f2565afe",
+    "pilot-shader-medium.png": "f04ff64845e869ef8a319e7757595913991b7f3b4a3492e51971a453420dda3f",
+    "pilot-shader-perspective.png": "fae1c9baf589b8f1a10780da127f953b8ee65ee15da28b4e56bccd7baff2e4d6",
+    "pilot-shader-repeat.png": "fae1c9baf589b8f1a10780da127f953b8ee65ee15da28b4e56bccd7baff2e4d6",
+    "pilot-shader-side.png": "fa71a9cd5be514fd70fa988bcc2c6a759924d1a9c8d125794ffaf1e2eaadc6c7",
+    "pilot-summer-back.png": "748f608e96137f3690945f290a97c72f449c1675c4eeb890795322e1d0c6aa6d",
+    "pilot-summer-below.png": "d414c823ddcaa427ceae9674736c8c62352965d8d75dfbf2d0760ea4918bc7ce",
+    "pilot-summer-far.png": "d0708c35894bbc5fb390da6e1cc72fd9e6dc5f093d344a049068677de8dfb686",
+    "pilot-summer-front.png": "a78cde6e64141872451ddc23b46e7b5ff90fa2159d7150c6b9041a8d959fe094",
+    "pilot-summer-mask-back.png": "544e7ca2f214e08357f766797ac5220b25637799997c8cf4eea219f5816c9633",
+    "pilot-summer-mask-perspective.png": "7bac5e27893ea700ddd44b91178d34e43dc705f7c53f393c949d580267b8a466",
+    "pilot-summer-mask-side.png": "8dc3dc50e946c32f877312f02fae83a997d76d6417ac9de872357df7f2565afe",
+    "pilot-summer-medium.png": "9578046197a4626dc0915242e1f8531a7c024cf65d584e448d64d78d113ccff2",
+    "pilot-summer-perspective.png": "f4ee39ab71d67cabf3bf77b2dec2ab1baa215694e4c13340634a40ed5b35db25",
+    "pilot-summer-repeat.png": "f4ee39ab71d67cabf3bf77b2dec2ab1baa215694e4c13340634a40ed5b35db25",
+    "pilot-summer-side.png": "4b07dcb37191330528efffa4b7c49682edfc5d818b6377a5532b3da2444a603a",
+    "viejo-00-painted-back.png": "fd30eb37bd57b5dd0cf7a1d0fc1ea2c9a182eb6ff74d0c5e393650e93106582a",
+    "viejo-00-painted-below.png": "d4b00bf2e05e60502fcedbe7b9b40ce8e2f68eae29df32a582f07b1a5d23c7f3",
+    "viejo-00-painted-far.png": "b60936fe65b5b077acb155c9ef54c5b2456cf9cc779731e66857b3621f00a906",
+    "viejo-00-painted-front.png": "03c918f923ae4abcf80efbb62ce66128e860868113ed25c102209e6b7ad42931",
+    "viejo-00-painted-mask-back.png": "4512365353c40dbce2ca77b10f38e575a49d8a3b450d1d77b9be49b4cb8fae62",
+    "viejo-00-painted-mask-perspective.png": "2eefc053b44546feac9ce930dfae9de631a3e3145776d36162a0f2eb1f0cce1c",
+    "viejo-00-painted-mask-side.png": "d0c4e3c5de9860dc1cb64b92f149c8d7b063e76871f679fdd8a7f5469a1df53f",
+    "viejo-00-painted-medium.png": "637956fb2ecfd4fe414ee7918b173adf17ba51370dd4535d6d27f517d73d013a",
+    "viejo-00-painted-perspective.png": "5e035f1fde4a7b639b80cb66f7f2da381ae9a29f92fa60f642a22eb0e669e8c6",
+    "viejo-00-painted-repeat.png": "5e035f1fde4a7b639b80cb66f7f2da381ae9a29f92fa60f642a22eb0e669e8c6",
+    "viejo-00-painted-side.png": "1679b61c77c7f90626fe78537115a6a43e6f27e3c72cfc39509de30b27530e2d",
+    "viejo-00-shader-back.png": "047e7634a01f5a2f86a9f1360205ca2607fdc184b4c338dc24222d83871f4937",
+    "viejo-00-shader-below.png": "34d2a8f0bfcc723bbf01759c88bc171a058881bbb0211620f32a276a065518ab",
+    "viejo-00-shader-far.png": "8c5979032e86d97f78501993fddae8073509c51f56cb4072bb7b948f3c6a1181",
+    "viejo-00-shader-front.png": "06b6ab52263f08f6d358c21d690462138029fdb95a8c0d3c39887ef267b24c18",
+    "viejo-00-shader-mask-back.png": "01059140ad7dc1ec8aea519f992047030e5b8e9ef3b255750457c52b5f2d4191",
+    "viejo-00-shader-mask-perspective.png": "0db9affdaf5869cbdc39930fd6483625baa72486296574f69486f1c9fd251103",
+    "viejo-00-shader-mask-side.png": "d947c6f78b36cf0a53b2b8ad2eb9805de3a91517907cb32f6162cad6a9d85306",
+    "viejo-00-shader-medium.png": "17c5cdba893c1e8c5471df9d631d537d0fdd6784437af50cda30cd7a0dc4e1f7",
+    "viejo-00-shader-perspective.png": "f62081838395a684ea87ee0910cb21a9c262f86d8a3cc8b698daf54bb8251b7a",
+    "viejo-00-shader-repeat.png": "f62081838395a684ea87ee0910cb21a9c262f86d8a3cc8b698daf54bb8251b7a",
+    "viejo-00-shader-side.png": "766832b376a5a46dd353573723e51fb2b063f8092a08601bd5137bf60cb7206f",
+    "viejo-00-summer-back.png": "6ff56e71cddd50f68110bf01079b6b4117e7607d52c5d1f00cd712de532aa035",
+    "viejo-00-summer-below.png": "b79fc0ca5c28aa6abe8ff7e230f07c51c4911aa048b61b5e76926f51af1cc9e0",
+    "viejo-00-summer-far.png": "223ffad08da15cc9cd53e7cad282ea66c78a37d717ee5dca28cc66fdc8bbfa36",
+    "viejo-00-summer-front.png": "2e70e9f985dc76b038dcdba3906eb3576d6296a98d6e46764a3599c10d92ba7b",
+    "viejo-00-summer-mask-back.png": "01059140ad7dc1ec8aea519f992047030e5b8e9ef3b255750457c52b5f2d4191",
+    "viejo-00-summer-mask-perspective.png": "0db9affdaf5869cbdc39930fd6483625baa72486296574f69486f1c9fd251103",
+    "viejo-00-summer-mask-side.png": "d947c6f78b36cf0a53b2b8ad2eb9805de3a91517907cb32f6162cad6a9d85306",
+    "viejo-00-summer-medium.png": "4c87e5c143376d72feca2e6c57d12637b7a12f9c1fe24c1525e6fa17ac20e20f",
+    "viejo-00-summer-perspective.png": "f24fd2d92fbd9363a9b22cd1b7648d11d25487330ac87ef5dec0675db87d7a0a",
+    "viejo-00-summer-repeat.png": "f24fd2d92fbd9363a9b22cd1b7648d11d25487330ac87ef5dec0675db87d7a0a",
+    "viejo-00-summer-side.png": "e635bce6e3f5679ae415fa9d5a09332c6a8ec4fb5f346e43f57f5bcdf576e9f9"
+  }
+}

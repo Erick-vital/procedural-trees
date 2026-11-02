@@ -1,0 +1,13 @@
+{
+  "version": "season-bundle-0.1.0",
+  "blueprint": "blueprints/roble_copa_ancha/2.2.0.json",
+  "matrix": "configs/verification/oak-wood-v1.json",
+  "paint_profile": "configs/seasons/roble-mezcla-v1.json",
+  "calendar_profile": "configs/seasons/roble-calendario-v1.json",
+  "normal_algorithm": "canopy-local-normals-0.1.0",
+  "normal_strength": 0.35,
+  "normal_approval": "docs/evidence/estaciones/normales-t4/user-acceptance.json",
+  "phase": "summer_to_autumn_full_canopy",
+  "max_triangles": 6999,
+  "max_materials": 2
+}

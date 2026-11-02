@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-02",
+  "decision": "approved",
+  "user_statement": "apruebo, dime que fue implementado en este plan.",
+  "scope": "Aceptación artística del conjunto de cuatro robles estacionales entregado en T5/T6, variante season-bundle-0.1.0 con normales .35. Cierra el pendiente de adopción del lote; conserva por separado las aprobaciones previas de pintura/calendario T3 y normales T4.",
+  "cases": [
+    "pilot",
+    "joven-07",
+    "adulto-00",
+    "viejo-00"
+  ],
+  "variant": "season-bundle-0.1.0",
+  "normal_strength": 0.35,
+  "verification_sha256": {
+    "docs/evidence/estaciones/integracion-t5/verification.json": "a6e5c2fb611670b6198cea35db77feca7ead68e4f6dfe1e95e947f9ce81f36d5",
+    "docs/evidence/estaciones/cierre-t6/verification.json": "19c8fd422e100768af583fe853b0dbdee4b5cf178c98cd37353762bc32209465"
+  },
+  "historical_metadata": "Los informes, decisiones, manifiestos y paquetes congelados de T5/T6 conservan su estado al cierre. Esta aceptación posterior resuelve su pendiente artístico sin alterar hashes.",
+  "limits": "No cambia recetas ni alias históricos, no acredita mejora de FPS y no autoriza fases adicionales."
+}

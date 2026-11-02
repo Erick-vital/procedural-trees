@@ -1,0 +1,535 @@
+{
+  "passed": true,
+  "repeat_atlas_manifest_and_png_exact": true,
+  "atlas": {
+    "version": "season-atlas-0.1.0",
+    "status": "experimental_art_pending",
+    "species": "roble_copa_ancha@2.2.0",
+    "grid": 5,
+    "tile_px": 400,
+    "used_cells": 24,
+    "size": [
+      2000,
+      2000
+    ],
+    "usable": 0.92,
+    "mask_source": "summer",
+    "alpha_sha256": "4fa2953118643986aaf2e2de55b8dd7a310733e2e4e54d8eae6dd3c112d36c7b",
+    "alpha_different_texels": 68286,
+    "cutoff_mask_different_texels": 20641,
+    "newly_exposed_rgb_repaired": 151,
+    "newly_exposed_rgb_at_cutoff": 2,
+    "paint_rgb_preserved_where_original_alpha_nonzero": true,
+    "padding": {
+      "radius_px": 16,
+      "connectivity": 8,
+      "cell_bounded": true,
+      "alpha_unchanged": true,
+      "visible_rgb_unchanged": true,
+      "selection": "pending_visual_review",
+      "implementation": "original; Pillow public operations; no copied MIT code"
+    },
+    "inputs": {
+      "assets/roble-pintado/v0.3.0/foliage.png": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1",
+      "assets/roble-otono-pintado/v0.1.0/crossed-atlas.png": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+      "assets/roble-pintado/v0.3.0/templates.json": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f",
+      "assets/roble-pintado/v0.3.0/manifest.json": "4dcf240fe389fecc831786bebb280c5862f3ff3dc0bf920ada440cd00c7ec4a8",
+      "assets/roble-otono-pintado/v0.1.0/manifest.json": "477fd7346481daead62a7d583e79ae03ecc066bd3b237969335f0bb7abe1d7c9"
+    },
+    "sources": {
+      "scripts/build_season_atlas.py": "44bc5275973c7608339439d3a776fea4afff8e00568dad4ff15f40d58a4a68da",
+      "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5"
+    },
+    "files": {
+      "summer-common.png": {
+        "sha256": "439ce5e82c8cc0056b0b3d5ec9a2f67649993e7db5b49a88e9cf29da7808072f",
+        "bytes": 2748780,
+        "rgba_sha256": "545a84130629b2ab30bf8c50a4fdf305599327868a0fc578754b22c2faaa781b"
+      },
+      "summer-padded.png": {
+        "sha256": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+        "bytes": 2887954,
+        "rgba_sha256": "bc5bb952e08eb7b330d840eccbd51dcf49900cd88cf551c82c3018ce16ad8a6e"
+      },
+      "autumn-common.png": {
+        "sha256": "be9a9aa9c03e56c565a74f57673391c66abf7c69056d5fc5e6814fec4deb3bdf",
+        "bytes": 3073031,
+        "rgba_sha256": "e0a3258e373b88bd67dcbdc04716db03d8a366d2122a099522e7234e8bf6732c"
+      },
+      "autumn-padded.png": {
+        "sha256": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+        "bytes": 3192845,
+        "rgba_sha256": "8d31706f5de39c696117e891a05b7143f068128830d4fcf33008c68b4c5e6a80"
+      }
+    },
+    "memory": {
+      "rgba8_two_atlases_bytes": 32000000,
+      "rgba8_two_atlases_with_mips_bytes": 42665712,
+      "foliage_texture_samples_future_blend": 2,
+      "note": "Estimación RGBA8 sin compresión; no medida GPU. Corteza aparte e intacta."
+    }
+  },
+  "exports": {
+    "summer-common.png": {
+      "geometry_uv_normals_indices_exact": true,
+      "materials_scene_exact": true,
+      "other_images_exact": true,
+      "foliage_png_sha256": "439ce5e82c8cc0056b0b3d5ec9a2f67649993e7db5b49a88e9cf29da7808072f"
+    },
+    "summer-padded.png": {
+      "geometry_uv_normals_indices_exact": true,
+      "materials_scene_exact": true,
+      "other_images_exact": true,
+      "foliage_png_sha256": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd"
+    },
+    "autumn-common.png": {
+      "geometry_uv_normals_indices_exact": true,
+      "materials_scene_exact": true,
+      "other_images_exact": true,
+      "foliage_png_sha256": "be9a9aa9c03e56c565a74f57673391c66abf7c69056d5fc5e6814fec4deb3bdf"
+    },
+    "autumn-padded.png": {
+      "geometry_uv_normals_indices_exact": true,
+      "materials_scene_exact": true,
+      "other_images_exact": true,
+      "foliage_png_sha256": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce"
+    }
+  },
+  "godot": {
+    "branch": {
+      "autumn-common": {
+        "materials": {
+          "Painted_Bark": 504,
+          "Painted_Foliage": 192
+        },
+        "triangles": 696
+      },
+      "autumn-original": {
+        "materials": {
+          "Painted_Bark": 504,
+          "Painted_Foliage": 192
+        },
+        "triangles": 696
+      },
+      "autumn-padded": {
+        "materials": {
+          "Painted_Bark": 504,
+          "Painted_Foliage": 192
+        },
+        "triangles": 696
+      },
+      "summer-common": {
+        "materials": {
+          "Painted_Bark": 504,
+          "Painted_Foliage": 192
+        },
+        "triangles": 696
+      },
+      "summer-original": {
+        "materials": {
+          "Painted_Bark": 504,
+          "Painted_Foliage": 192
+        },
+        "triangles": 696
+      },
+      "summer-padded": {
+        "materials": {
+          "Painted_Bark": 504,
+          "Painted_Foliage": 192
+        },
+        "triangles": 696
+      }
+    },
+    "captures": [
+      "board-summer-original-light-near.png",
+      "board-summer-original-light-medium.png",
+      "board-summer-original-light-far.png",
+      "board-summer-original-dark-near.png",
+      "board-summer-original-dark-medium.png",
+      "board-summer-original-dark-far.png",
+      "branch-summer-original-light-near.png",
+      "branch-summer-original-light-medium.png",
+      "branch-summer-original-light-far.png",
+      "branch-summer-original-dark-near.png",
+      "branch-summer-original-dark-medium.png",
+      "branch-summer-original-dark-far.png",
+      "board-autumn-original-light-near.png",
+      "board-autumn-original-light-medium.png",
+      "board-autumn-original-light-far.png",
+      "board-autumn-original-dark-near.png",
+      "board-autumn-original-dark-medium.png",
+      "board-autumn-original-dark-far.png",
+      "branch-autumn-original-light-near.png",
+      "branch-autumn-original-light-medium.png",
+      "branch-autumn-original-light-far.png",
+      "branch-autumn-original-dark-near.png",
+      "branch-autumn-original-dark-medium.png",
+      "branch-autumn-original-dark-far.png",
+      "board-summer-common-light-near.png",
+      "board-summer-common-light-medium.png",
+      "board-summer-common-light-far.png",
+      "board-summer-common-dark-near.png",
+      "board-summer-common-dark-medium.png",
+      "board-summer-common-dark-far.png",
+      "branch-summer-common-light-near.png",
+      "branch-summer-common-light-medium.png",
+      "branch-summer-common-light-far.png",
+      "branch-summer-common-dark-near.png",
+      "branch-summer-common-dark-medium.png",
+      "branch-summer-common-dark-far.png",
+      "board-autumn-common-light-near.png",
+      "board-autumn-common-light-medium.png",
+      "board-autumn-common-light-far.png",
+      "board-autumn-common-dark-near.png",
+      "board-autumn-common-dark-medium.png",
+      "board-autumn-common-dark-far.png",
+      "branch-autumn-common-light-near.png",
+      "branch-autumn-common-light-medium.png",
+      "branch-autumn-common-light-far.png",
+      "branch-autumn-common-dark-near.png",
+      "branch-autumn-common-dark-medium.png",
+      "branch-autumn-common-dark-far.png",
+      "board-summer-padded-light-near.png",
+      "board-summer-padded-light-medium.png",
+      "board-summer-padded-light-far.png",
+      "board-summer-padded-dark-near.png",
+      "board-summer-padded-dark-medium.png",
+      "board-summer-padded-dark-far.png",
+      "branch-summer-padded-light-near.png",
+      "branch-summer-padded-light-medium.png",
+      "branch-summer-padded-light-far.png",
+      "branch-summer-padded-dark-near.png",
+      "branch-summer-padded-dark-medium.png",
+      "branch-summer-padded-dark-far.png",
+      "board-autumn-padded-light-near.png",
+      "board-autumn-padded-light-medium.png",
+      "board-autumn-padded-light-far.png",
+      "board-autumn-padded-dark-near.png",
+      "board-autumn-padded-dark-medium.png",
+      "board-autumn-padded-dark-far.png",
+      "branch-autumn-padded-light-near.png",
+      "branch-autumn-padded-light-medium.png",
+      "branch-autumn-padded-light-far.png",
+      "branch-autumn-padded-dark-near.png",
+      "branch-autumn-padded-dark-medium.png",
+      "branch-autumn-padded-dark-far.png"
+    ],
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "passed": true
+  },
+  "padding_render_differences": {
+    "board-summer-light-near": {
+      "mean_abs_rgb_0_255": 0.44858843537414966,
+      "bbox": [
+        51,
+        51,
+        648,
+        644
+      ]
+    },
+    "board-summer-light-medium": {
+      "mean_abs_rgb_0_255": 0.16860612244897957,
+      "bbox": [
+        228,
+        227,
+        472,
+        470
+      ]
+    },
+    "board-summer-light-far": {
+      "mean_abs_rgb_0_255": 0.07239319727891157,
+      "bbox": [
+        293,
+        293,
+        407,
+        405
+      ]
+    },
+    "board-autumn-light-near": {
+      "mean_abs_rgb_0_255": 0.22865034013605443,
+      "bbox": [
+        51,
+        51,
+        648,
+        644
+      ]
+    },
+    "board-autumn-light-medium": {
+      "mean_abs_rgb_0_255": 0.09368503401360545,
+      "bbox": [
+        228,
+        227,
+        472,
+        470
+      ]
+    },
+    "board-autumn-light-far": {
+      "mean_abs_rgb_0_255": 0.04147551020408163,
+      "bbox": [
+        293,
+        293,
+        407,
+        405
+      ]
+    },
+    "board-summer-dark-near": {
+      "mean_abs_rgb_0_255": 0.44858843537414966,
+      "bbox": [
+        51,
+        51,
+        648,
+        644
+      ]
+    },
+    "board-summer-dark-medium": {
+      "mean_abs_rgb_0_255": 0.16860612244897957,
+      "bbox": [
+        228,
+        227,
+        472,
+        470
+      ]
+    },
+    "board-summer-dark-far": {
+      "mean_abs_rgb_0_255": 0.07239319727891157,
+      "bbox": [
+        293,
+        293,
+        407,
+        405
+      ]
+    },
+    "board-autumn-dark-near": {
+      "mean_abs_rgb_0_255": 0.22865034013605443,
+      "bbox": [
+        51,
+        51,
+        648,
+        644
+      ]
+    },
+    "board-autumn-dark-medium": {
+      "mean_abs_rgb_0_255": 0.09368503401360545,
+      "bbox": [
+        228,
+        227,
+        472,
+        470
+      ]
+    },
+    "board-autumn-dark-far": {
+      "mean_abs_rgb_0_255": 0.04147551020408163,
+      "bbox": [
+        293,
+        293,
+        407,
+        405
+      ]
+    },
+    "branch-summer-light-near": {
+      "mean_abs_rgb_0_255": 0.32068639455782316,
+      "bbox": [
+        89,
+        231,
+        608,
+        487
+      ]
+    },
+    "branch-summer-light-medium": {
+      "mean_abs_rgb_0_255": 0.15665714285714286,
+      "bbox": [
+        243,
+        301,
+        454,
+        406
+      ]
+    },
+    "branch-summer-light-far": {
+      "mean_abs_rgb_0_255": 0.06333061224489796,
+      "bbox": [
+        300,
+        327,
+        395,
+        375
+      ]
+    },
+    "branch-autumn-light-near": {
+      "mean_abs_rgb_0_255": 0.17729795918367344,
+      "bbox": [
+        89,
+        231,
+        608,
+        487
+      ]
+    },
+    "branch-autumn-light-medium": {
+      "mean_abs_rgb_0_255": 0.09317959183673469,
+      "bbox": [
+        243,
+        301,
+        454,
+        406
+      ]
+    },
+    "branch-autumn-light-far": {
+      "mean_abs_rgb_0_255": 0.03828843537414966,
+      "bbox": [
+        300,
+        327,
+        395,
+        375
+      ]
+    },
+    "branch-summer-dark-near": {
+      "mean_abs_rgb_0_255": 0.320687074829932,
+      "bbox": [
+        89,
+        231,
+        608,
+        487
+      ]
+    },
+    "branch-summer-dark-medium": {
+      "mean_abs_rgb_0_255": 0.15665578231292518,
+      "bbox": [
+        243,
+        301,
+        454,
+        406
+      ]
+    },
+    "branch-summer-dark-far": {
+      "mean_abs_rgb_0_255": 0.06333061224489796,
+      "bbox": [
+        300,
+        327,
+        395,
+        375
+      ]
+    },
+    "branch-autumn-dark-near": {
+      "mean_abs_rgb_0_255": 0.17729795918367344,
+      "bbox": [
+        89,
+        231,
+        608,
+        487
+      ]
+    },
+    "branch-autumn-dark-medium": {
+      "mean_abs_rgb_0_255": 0.09317959183673469,
+      "bbox": [
+        243,
+        301,
+        454,
+        406
+      ]
+    },
+    "branch-autumn-dark-far": {
+      "mean_abs_rgb_0_255": 0.03828843537414966,
+      "bbox": [
+        300,
+        327,
+        395,
+        375
+      ]
+    }
+  },
+  "source_lock": {
+    "scripts/verify_season_atlas.py": "09b3dd379f47ce2ec52e1f8c2b45d83083e0d608ace2a775a64361fcae238b96",
+    "scripts/build_season_atlas.py": "44bc5275973c7608339439d3a776fea4afff8e00568dad4ff15f40d58a4a68da",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "blender/season_atlas_sample.py": "70469069ab126829b13fc9003ba9c93de6ecfbaefd9ed7ce35b509f46041f4d1",
+    "godot/review_season_atlas.gd": "8d0f8e118c7af5aa29c05fb5735b83f8b5f1106527a37bac470c5a352e2f4b8d"
+  },
+  "pilot_inputs": {
+    "artifacts/roble-pintado/integracion-madera-01/pilot/manifest.json": "adef88b43a3758e345eee1f1be127d6ad786217c7f3a1bb2829bcf698b9320b2",
+    "artifacts/roble-pintado/integracion-madera-01/pilot/base-reference.json": "cafef76f00ecf2e0355c8b338d2bad4e14577cabd7c2e69c9f842145380a568d",
+    "artifacts/roble-pintado/integracion-madera-01/pilot/reference/manifest.json": "72eb78c55c3543175c51b12f0ef3ef9478b4f3a005e40c3c4f98f440ff0d5450",
+    "artifacts/roble-pintado/integracion-madera-01/pilot/tree.glb": "5d67741ffd00a394133742d7077687cec08823c9b9f36f3395a6104db93ca74d"
+  },
+  "capture_sha256": {
+    "board-autumn-common-dark-far.png": "5132adcece6aac0951a3945ab63767eebcf35c38980582b30152564b1e8f46cc",
+    "board-autumn-common-dark-medium.png": "85487114b2c05d831952c49fb9a1d7bad67ef50be89f811ca2342efad29e390d",
+    "board-autumn-common-dark-near.png": "6d901ad3404457bce570caff0e9ffbf36b7cd76c7691a1c2711ececd50e90d7f",
+    "board-autumn-common-light-far.png": "6684d3edaa3df15ca8a5b1fd9a118ce47bb5e2a07ebd1ea894b5d76b9e915c30",
+    "board-autumn-common-light-medium.png": "4525330991aff759446aac281c3ae43bf831825965afb214c234bc20d5977aee",
+    "board-autumn-common-light-near.png": "b45032ced06c665c3f708da1e3a6904ed0423311ed27a0526849f0c44f404551",
+    "board-autumn-original-dark-far.png": "13dc69b574573f2d78117ff9791786bad8ca964069813b85651ee0abec401d48",
+    "board-autumn-original-dark-medium.png": "4eca81b9165dc80f7d25a34833e540e60484c0fcf110b6f1b0be799ef6963f97",
+    "board-autumn-original-dark-near.png": "a48c04a9f7cf85800a26a1955337759f326613454caa7303b333b8b84934b9ef",
+    "board-autumn-original-light-far.png": "df4b8199bc065449bd4f7c7ae9828ad761bac4b3f005f70717e1ae4db69068ee",
+    "board-autumn-original-light-medium.png": "d1ccf501d5de02013d184b7b39df63ec81c88c7392c43f212a6970fc3226d75d",
+    "board-autumn-original-light-near.png": "523147b1cd049753dfb1232dbf964ca929cd036d02f1ab7372d47675cf1ccf7c",
+    "board-autumn-padded-dark-far.png": "9b28784d4b2a4c74f895a9789486bcb7ccbcb8d965c6970211acba867a8d2c3d",
+    "board-autumn-padded-dark-medium.png": "65082c81bf2a92ed2d4ac1ba155b896c21006be221724ad7e8ed6f664d91b6a0",
+    "board-autumn-padded-dark-near.png": "935806aec61ff376bc16d69454472d8f9312569e9f0b68aa73d142411adb2144",
+    "board-autumn-padded-light-far.png": "07421fa67cf431b4f573e84d68fcf70d90169c9095117993c2cc4ccaba8f68dc",
+    "board-autumn-padded-light-medium.png": "2261f02a6e079be925c85d5f88cfca48cbb61fa2fea7f9bce99a3d8d0d3279c4",
+    "board-autumn-padded-light-near.png": "bd08800cb416fd672e58dee93ae53a4e77211b1a63c3dcff0e57b62499b5827c",
+    "board-summer-common-dark-far.png": "1dda55fe7e791250769ea580e1bdd505ea40fc48df8be9f39342cdf28be8aefb",
+    "board-summer-common-dark-medium.png": "896d852501806febbe8efd4cceeb777c8556543ad8262fb946f0e407095a0075",
+    "board-summer-common-dark-near.png": "9e4efa9ee7bc6bc81aa23854c29eb2a24412b8af5de97c974363fa60adf61fdd",
+    "board-summer-common-light-far.png": "d4dc3f43c6efcf9cb5cda73cdb664207aba9faf8c0aad50be5c68247e9eed0b7",
+    "board-summer-common-light-medium.png": "ab0f131f7112033dbb2cce6bf2a7c6442a0eb7b4220791682c32fe6137fd63b7",
+    "board-summer-common-light-near.png": "7ad4451df9bc93597cecb5b29eaf44bf643c7ec951a5f7208c46881f38731957",
+    "board-summer-original-dark-far.png": "1dda55fe7e791250769ea580e1bdd505ea40fc48df8be9f39342cdf28be8aefb",
+    "board-summer-original-dark-medium.png": "896d852501806febbe8efd4cceeb777c8556543ad8262fb946f0e407095a0075",
+    "board-summer-original-dark-near.png": "9e4efa9ee7bc6bc81aa23854c29eb2a24412b8af5de97c974363fa60adf61fdd",
+    "board-summer-original-light-far.png": "d4dc3f43c6efcf9cb5cda73cdb664207aba9faf8c0aad50be5c68247e9eed0b7",
+    "board-summer-original-light-medium.png": "ab0f131f7112033dbb2cce6bf2a7c6442a0eb7b4220791682c32fe6137fd63b7",
+    "board-summer-original-light-near.png": "7ad4451df9bc93597cecb5b29eaf44bf643c7ec951a5f7208c46881f38731957",
+    "board-summer-padded-dark-far.png": "04660cfc4a7cb57fa994811747d3372bcd179d09a52419fc21049ec63da421ae",
+    "board-summer-padded-dark-medium.png": "815e6be69496982b509acbef4bc62e4d99ec802a8cc30c0e31186b036463943b",
+    "board-summer-padded-dark-near.png": "5c0f537d6372f89b7018bc2800b47429904755b4924b507eed8dae2ca6a59c23",
+    "board-summer-padded-light-far.png": "c279359b81f80dc96fd4a9d326a81ab5a03f18b0b6d1385efe22eb534ab9b0da",
+    "board-summer-padded-light-medium.png": "a3a086f46ca8348c93ba373f537fecd2fc42afff111e1c17b951ad8cbe00a492",
+    "board-summer-padded-light-near.png": "209b5e918a526afe64614ce38e7e235f5fbc4e719ef16f7c6fbbe4a1e40ffbe9",
+    "branch-autumn-common-dark-far.png": "3c09db27b3909316a38b77516a489be61fcfd3cefbf2d4e255fb7dca85594549",
+    "branch-autumn-common-dark-medium.png": "841a60bcbf8cd929577950ead5470bc804b1016b07f4d577da92591a695ba253",
+    "branch-autumn-common-dark-near.png": "145b642ef7bb1593eae0ceee528b001f6c14eaee659e3ab6e06ec80256d0ee39",
+    "branch-autumn-common-light-far.png": "c572a6f9a9f375f3920c45561b5cd44c47c56b0b91d5e78c8fe66e1f408bab94",
+    "branch-autumn-common-light-medium.png": "9fb0f9ceaa1b9f4eaa27a3e302d92a7b01c9d50013d0dd74750d5ee30d6fdea8",
+    "branch-autumn-common-light-near.png": "6ebd24b87469f889469c2432184719ee28e0d0c44111465fa6902b62577e5b4c",
+    "branch-autumn-original-dark-far.png": "cecdadc2c02bd5522976e3cbaa79bd60306cb4a2f5c812564e1a93b17de3d561",
+    "branch-autumn-original-dark-medium.png": "76dcb55038ad0512a4da7af532de2875c93cdcdb71b11ea102e16ee56b9dda99",
+    "branch-autumn-original-dark-near.png": "9ca5b0ba665a175d0231370a399e836bf372dc1fc5c89298fc110b5419ef1e6d",
+    "branch-autumn-original-light-far.png": "0afc7a5a47d09bd310580e9aad0c7a66c151d2705f836bf913402532281af13a",
+    "branch-autumn-original-light-medium.png": "af978029aad2b3fea40dccc82d7ad2b7ec00cc8c9e540256c2861a9e148a61e6",
+    "branch-autumn-original-light-near.png": "5843f8ad8f56e165b0584953c97803cafbcb1c5c787afd50e39722133e7b6438",
+    "branch-autumn-padded-dark-far.png": "82a5650aa8c7a94b2e51628c9261d88ab9050d3d3aad2f71b8f8d55be0c514d7",
+    "branch-autumn-padded-dark-medium.png": "f534c9842689c8841719bd9c079cbb1d682a6378393a12d5706752320dd2b58c",
+    "branch-autumn-padded-dark-near.png": "66abd09bed9b656b0aa46402cff63230826cd7f32fb954cba844ea9005844d10",
+    "branch-autumn-padded-light-far.png": "9e7d15adcd925e424e09e79a2444394e672ac5cabf80bf291840fc725b7762ab",
+    "branch-autumn-padded-light-medium.png": "4beea0932fd90116ef15f1f6a22bd14fe2e10b38f54e0ec5af7b59e163f09b60",
+    "branch-autumn-padded-light-near.png": "3459c34b9797001ec826595eb160486e2c33faf795d4554b1875d9b9f812da25",
+    "branch-summer-common-dark-far.png": "eac0dc9f139edfddab5b3ad3da91014d9229f11856ac22a70118990ccfcbe389",
+    "branch-summer-common-dark-medium.png": "6dc168ade4a8f89aa7bf1499f00a0eacf2b10e85f521b8ef80ddf364c661c7b2",
+    "branch-summer-common-dark-near.png": "67b7204c5394464027b8882f35f281fb3a9be346dcb7ecf09ea44bfcfce189f4",
+    "branch-summer-common-light-far.png": "2dc3aa4a1582e4be40eee1165e8af13c48b8b201db375ba9e8400e36d34df9f7",
+    "branch-summer-common-light-medium.png": "8149ef5e3b2cde07f0264c6bdf11b96ae7f159bd7f27482534d6ccb8a89f8423",
+    "branch-summer-common-light-near.png": "5b58ce4aed8a831b4efff4e0c93a799ddb372c142ff500c3c6ff3059ed390370",
+    "branch-summer-original-dark-far.png": "eac0dc9f139edfddab5b3ad3da91014d9229f11856ac22a70118990ccfcbe389",
+    "branch-summer-original-dark-medium.png": "6dc168ade4a8f89aa7bf1499f00a0eacf2b10e85f521b8ef80ddf364c661c7b2",
+    "branch-summer-original-dark-near.png": "67b7204c5394464027b8882f35f281fb3a9be346dcb7ecf09ea44bfcfce189f4",
+    "branch-summer-original-light-far.png": "2dc3aa4a1582e4be40eee1165e8af13c48b8b201db375ba9e8400e36d34df9f7",
+    "branch-summer-original-light-medium.png": "8149ef5e3b2cde07f0264c6bdf11b96ae7f159bd7f27482534d6ccb8a89f8423",
+    "branch-summer-original-light-near.png": "5b58ce4aed8a831b4efff4e0c93a799ddb372c142ff500c3c6ff3059ed390370",
+    "branch-summer-padded-dark-far.png": "6e904e248b70d74a4a31372e78b846c8f7e3c737b19095de6aa5688cd50f6711",
+    "branch-summer-padded-dark-medium.png": "426b2bd1b54039e37edd3ff717cf86a62a2fcc23d89a7210041f7f3c1b9d3024",
+    "branch-summer-padded-dark-near.png": "f97108d92843c91e02f0fb751bdf0fce91676fb4adee507e9ae94803f783d524",
+    "branch-summer-padded-light-far.png": "13a8d7957de02aad2b98ef2e0951579c6e2eab67d6d3228a696b779d81b442cd",
+    "branch-summer-padded-light-medium.png": "7ccc7dfbaaae12595fa7d348f96cf238c7666b44636682c323326a4ae10b0180",
+    "branch-summer-padded-light-near.png": "b5088317613e1b2d3456fcf6f293c17dede465aa73fb07182607d1e5e60b2a96"
+  }
+}

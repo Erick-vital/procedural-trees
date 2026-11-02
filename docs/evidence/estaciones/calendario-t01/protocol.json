@@ -1,0 +1,37 @@
+{
+  "phase": "summer_to_autumn_full_canopy",
+  "phase_range": [
+    0,
+    1
+  ],
+  "scope": "T0 T1 only; no paint interpolation",
+  "roughness": 0.95,
+  "cutoff": 0.5,
+  "msaa": 4,
+  "resolution": [
+    900,
+    900
+  ],
+  "background": "#EEE9DF",
+  "sun_rotation": [
+    -35,
+    -25,
+    0
+  ],
+  "sun_energy": 1.2,
+  "ambient": 0.5,
+  "exposure": 1,
+  "tonemap": "linear",
+  "normal_mode": "original",
+  "filter": "linear mipmaps anisotropic",
+  "shader_control_adjustment": ".88 to .95 in derived copy",
+  "views": [
+    "front",
+    "side",
+    "perspective",
+    "back",
+    "far"
+  ],
+  "alpha_note": "Original masks retained; common-mask preparation belongs to T2.",
+  "artistic_acceptance": "pending"
+}

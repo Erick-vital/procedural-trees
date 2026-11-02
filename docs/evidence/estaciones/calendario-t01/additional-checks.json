@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "unit_tests": {
+    "seasonal": 21,
+    "oak_crossed": 6
+  },
+  "checks": 37,
+  "captures": 80,
+  "inspection": [
+    "references.jpg",
+    "transport.jpg"
+  ],
+  "scope": "T0/T1 only",
+  "source_lock_checked_after_review": true,
+  "artifact_lock_checked_after_review": true
+}

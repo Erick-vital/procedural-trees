@@ -1,0 +1,95 @@
+{
+  "version": "paint-transition-0.1.0",
+  "config": {
+    "version": "paint-transition-0.1.0",
+    "profile": {
+      "version": "paint-transition-0.1.0",
+      "species": "roble_copa_ancha@2.2.0",
+      "phase": "summer_to_autumn_full_canopy",
+      "atlas_manifest": "assets/roble-estacional/v0.1.0/manifest.json",
+      "resources": {
+        "summer": {
+          "path": "assets/roble-estacional/v0.1.0/summer.png",
+          "sha256": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd"
+        },
+        "autumn": {
+          "path": "assets/roble-estacional/v0.1.0/autumn.png",
+          "sha256": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce"
+        },
+        "bark": {
+          "path": "assets/roble-pintado/v0.2.0/bark.png",
+          "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+        }
+      }
+    },
+    "bounds_godot": {
+      "center": [
+        0.9626199999999998,
+        4.8437255,
+        0.5267545
+      ],
+      "span": 15.013819
+    },
+    "seeds": {
+      "base": 3009,
+      "canopy": 17,
+      "paint": 2718,
+      "season": 1101
+    },
+    "triangles": 6812,
+    "groups": 264,
+    "calendar_transport": "TEXCOORD_1=(start,duration)",
+    "normals": "original",
+    "scope": "T3 pilot only; full canopy; artistic acceptance pending"
+  },
+  "audit": {
+    "geometry_uv_normals_indices_exact": true,
+    "materials_scene_exact": true,
+    "other_images_exact": true,
+    "foliage_png_sha256": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd"
+  },
+  "repeat_glb_exact": true,
+  "source_lock": {
+    "scripts/build_paint_transition.py": "9d2a966b46e1296f4a856fb6d335e1634cb7f4400bd24cb5cc2bfa201b8c6ba0",
+    "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+    "configs/seasons/roble-mezcla-v1.json": "b45e5f33e8fe9881173e8fa2a49f6c5f071848957cd565ee4966917c9ac4dd29",
+    "assets/roble-estacional/v0.1.0/manifest.json": "e52e176a5f9ea022fdf4d1ec6196c47a678daf317bf9e3141b1957b4c123304b",
+    "godot/seasonal_foliage.gdshader": "cf19e2db6ecac47b0b458edf4fcf1ac7b9bad5a28445081ffa93ac61241641c6",
+    "configs/seasons/roble-otono-v1.json": "42092d78a454d23d2cab5fca2e2f1e69438a3f1f3d071a3335df160bf3130b50",
+    "godot/paint_transition.gdshader": "66d7186f08cf23f6211efccebcb41f3c6278605ace220f1e9b4223297328d362",
+    "godot/paint_transition_tree.gd": "7b16f420df6941d7c86304ca520d90209037a7305409774ad14c7b683debb00f",
+    "godot/paint_transition_viewer.gd": "fdbc821ff038147b7df439936bc976bb085d7141ee548ca9954c3a0f8e730e90",
+    "godot/review_paint_transition.gd": "57ec5090341725c3a828b80eb501e3c5109143f401ced67ebd4f316093d5f107",
+    "godot/review_season_calendar.gd": "796ed50fc6e1efd1a3d4a1328882902366f26f8f790f8eadf12ffdebb417a5e1",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "assets/roble-estacional/v0.1.0/summer.png": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+    "assets/roble-estacional/v0.1.0/autumn.png": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+    "assets/roble-pintado/v0.2.0/bark.png": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+  },
+  "input_lock": {
+    "artifacts/estaciones/calendario-t01-03/pilot/tree.glb": "c40ac7e5c44a5c2a898bb67fc89ce8ebb1348530960f0b151eff201493aaf141",
+    "artifacts/estaciones/calendario-t01-03/pilot/calendar.json": "2d48c513b9c4f1e2a55853c436731ae29771d12363a348fda0605f6709d7225a",
+    "artifacts/estaciones/calendario-t01-03/pilot/binding.json": "74b69e414dec9bfd0cbd33c7b283a79146f4c52273627a6b8cced7f1d25d9c25",
+    "artifacts/estaciones/calendario-t01-03/verification.json": "caab70a2e699ac424a77c779f26554d7a4bb21ff4deb721ba6288414b9eda80d"
+  },
+  "project_lock": {
+    "autumn.png": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+    "binding.json": "74b69e414dec9bfd0cbd33c7b283a79146f4c52273627a6b8cced7f1d25d9c25",
+    "calendar.json": "2d48c513b9c4f1e2a55853c436731ae29771d12363a348fda0605f6709d7225a",
+    "legacy-profile.json": "42092d78a454d23d2cab5fca2e2f1e69438a3f1f3d071a3335df160bf3130b50",
+    "legacy_control.gdshader": "14ea93878bebddd1a5ebb93138085d073aa359d4ce4666259ab28db6973aa6ca",
+    "paint_transition.gdshader": "66d7186f08cf23f6211efccebcb41f3c6278605ace220f1e9b4223297328d362",
+    "paint_transition.tres": "5acb54a91b35f898a2a505bfb8d3bf13f634c63eaf15e4a5a7c30b64e25d8217",
+    "paint_transition_tree.gd": "7b16f420df6941d7c86304ca520d90209037a7305409774ad14c7b683debb00f",
+    "paint_transition_viewer.gd": "fdbc821ff038147b7df439936bc976bb085d7141ee548ca9954c3a0f8e730e90",
+    "pilot.glb": "5eaf9dc6c8e6dbfe8afce23119b5aa95fe84e71f71713965d107945532c8d1f1",
+    "pilot.tscn": "7a3f59a938c2af16822672ebb398d7d82e2fb0b762965353bb11ab91602553f8",
+    "pilot_foliage.png": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+    "project.godot": "ff73c4be11cbb019f7285c4502d16bb96202ee7d7db61c710682959c2cb600f7",
+    "review_paint_transition.gd": "57ec5090341725c3a828b80eb501e3c5109143f401ced67ebd4f316093d5f107",
+    "review_season_calendar.gd": "796ed50fc6e1efd1a3d4a1328882902366f26f8f790f8eadf12ffdebb417a5e1",
+    "transition-config.json": "4bc29c5b8b8c0996905ac35d440240386a009ee2c38c40b8dd382a2f411af7b0",
+    "verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "viewer.tscn": "5458f319e4b6989fe477d9785a587d8210ff79f3ee3ec9570473a7c440b667a4"
+  }
+}

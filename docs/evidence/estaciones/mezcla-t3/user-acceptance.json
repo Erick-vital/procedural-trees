@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-02",
+  "decision": "approved",
+  "scope": "Valoración artística de la presentación T3 del piloto 3009/17/2718: pintura compatible, aplicación y calendario por grupos. No aprueba por anticipado normales T4 ni controles/integración T5. No implica una mejora de FPS.",
+  "user_statement": "valoracion artistica aprobada, continua con t4",
+  "verification": "docs/evidence/estaciones/mezcla-t3/verification.json",
+  "verification_sha256": "3ee468bece6071fcf983667236d3f856bf4586a7d757a207882479a8e0a626ec",
+  "next_authorized_work": "T4: ensayo aislado de normales locales de volumen con originales y pinturas fijas; sin iniciar T5/T6.",
+  "historical_metadata": "Los manifiestos e informes de T2/T3 conservan su estado histórico; esta decisión posterior registra la aprobación."
+}

@@ -1,0 +1,67 @@
+{
+  "version": "season-atlas-0.1.0",
+  "status": "experimental_art_pending",
+  "species": "roble_copa_ancha@2.2.0",
+  "grid": 5,
+  "tile_px": 400,
+  "used_cells": 24,
+  "size": [
+    2000,
+    2000
+  ],
+  "usable": 0.92,
+  "mask_source": "summer",
+  "alpha_sha256": "4fa2953118643986aaf2e2de55b8dd7a310733e2e4e54d8eae6dd3c112d36c7b",
+  "alpha_different_texels": 68286,
+  "cutoff_mask_different_texels": 20641,
+  "newly_exposed_rgb_repaired": 151,
+  "newly_exposed_rgb_at_cutoff": 2,
+  "paint_rgb_preserved_where_original_alpha_nonzero": true,
+  "padding": {
+    "radius_px": 16,
+    "connectivity": 8,
+    "cell_bounded": true,
+    "alpha_unchanged": true,
+    "visible_rgb_unchanged": true,
+    "selection": "padded",
+    "implementation": "original; Pillow public operations; no copied MIT code"
+  },
+  "inputs": {
+    "assets/roble-pintado/v0.3.0/foliage.png": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1",
+    "assets/roble-otono-pintado/v0.1.0/crossed-atlas.png": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+    "assets/roble-pintado/v0.3.0/templates.json": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f",
+    "assets/roble-pintado/v0.3.0/manifest.json": "4dcf240fe389fecc831786bebb280c5862f3ff3dc0bf920ada440cd00c7ec4a8",
+    "assets/roble-otono-pintado/v0.1.0/manifest.json": "477fd7346481daead62a7d583e79ae03ecc066bd3b237969335f0bb7abe1d7c9"
+  },
+  "sources": {
+    "scripts/build_season_atlas.py": "44bc5275973c7608339439d3a776fea4afff8e00568dad4ff15f40d58a4a68da",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "scripts/publish_season_atlas.py": "6465a66a66782f8d0b63e523fd956d3f3be1f202967d5f9bdbb0e08c1231240d"
+  },
+  "files": {
+    "summer.png": {
+      "sha256": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+      "bytes": 2887954,
+      "rgba_sha256": "bc5bb952e08eb7b330d840eccbd51dcf49900cd88cf551c82c3018ce16ad8a6e",
+      "trial_name": "summer-padded.png"
+    },
+    "autumn.png": {
+      "sha256": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+      "bytes": 3192845,
+      "rgba_sha256": "8d31706f5de39c696117e891a05b7143f068128830d4fcf33008c68b4c5e6a80",
+      "trial_name": "autumn-padded.png"
+    }
+  },
+  "memory": {
+    "rgba8_two_atlases_bytes": 32000000,
+    "rgba8_two_atlases_with_mips_bytes": 42665712,
+    "foliage_texture_samples_future_blend": 2,
+    "note": "Estimación RGBA8 sin compresión; no medida GPU. Corteza aparte e intacta."
+  },
+  "review": {
+    "verification": "artifacts/estaciones/atlas-t2-05/verification.json",
+    "verification_sha256": "d5d160977be91cca90a5f0b02e60d85596c4be4302815f294b56a8a647961aaf",
+    "artistic_acceptance": "pending",
+    "full_tree_adopted": false
+  }
+}
