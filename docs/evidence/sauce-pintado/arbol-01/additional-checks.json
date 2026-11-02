@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-02",
+  "tests": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+    "environment": "Fuera del sandbox, socket loopback habilitado",
+    "count": 208,
+    "passed": true,
+    "test_sources_sha256": {
+      "tests/test_willow.py": "0f8ba7dbfb37847c6b7d5d4e9ba19c9b2a497711dde8fe499f7b646c78376e06",
+      "tests/test_willow_sample.py": "f963f5cea3bbd182999a90d02f836f6bcd6f77c647b0b3bcb80707a308c682a6"
+    }
+  },
+  "visual_review": {
+    "study": "artifacts/sauce-pintado/arbol-05",
+    "captures_inspected": 120,
+    "method": "Inspección de seis láminas de árbol y madera, perspectiva y acercamientos. Imágenes reales Godot, no una prueba sin interfaz.",
+    "artistic_acceptance": "Pendiente del usuario para árbol completo"
+  },
+  "f4": "Pendiente después de terminar el sauce, sin inicio automático"
+}

@@ -1,0 +1,22 @@
+{
+  "version": "willow-verification-0.1.0",
+  "blueprint": "blueprints/sauce_colgante/1.0.0.json",
+  "cases": [
+    {
+      "id": "pilot",
+      "instance": "presets/blueprints/sauce-pintado/pilot.json"
+    },
+    {
+      "id": "control-01",
+      "instance": "presets/blueprints/sauce-pintado/control-01.json"
+    },
+    {
+      "id": "control-02",
+      "instance": "presets/blueprints/sauce-pintado/control-02.json"
+    },
+    {
+      "id": "control-03",
+      "instance": "presets/blueprints/sauce-pintado/control-03.json"
+    }
+  ]
+}

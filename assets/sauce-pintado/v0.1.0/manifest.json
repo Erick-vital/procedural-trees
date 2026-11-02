@@ -1,0 +1,120 @@
+{
+  "version": "willow-paint-0.1.0",
+  "date": "2026-11-02",
+  "tool": "image_gen.imagegen",
+  "reference": "docs/evidence/sauce-pintado/pintura-01/propuesta.png",
+  "style": "Pintura de estilo manual generada por IA. PNG fuente sin retoques.",
+  "prompts": "prompts.json",
+  "atlas_size": [
+    1254,
+    1254
+  ],
+  "regions": [
+    {
+      "box": [
+        147,
+        18,
+        489,
+        601
+      ],
+      "anchor": [
+        335.5,
+        28
+      ],
+      "tip_y": 592,
+      "alpha_bounds": [
+        155,
+        26,
+        481,
+        593
+      ]
+    },
+    {
+      "box": [
+        751,
+        18,
+        1118,
+        602
+      ],
+      "anchor": [
+        913.5,
+        28
+      ],
+      "tip_y": 593,
+      "alpha_bounds": [
+        759,
+        26,
+        1110,
+        594
+      ]
+    },
+    {
+      "box": [
+        142,
+        641,
+        496,
+        1222
+      ],
+      "anchor": [
+        328.5,
+        651
+      ],
+      "tip_y": 1213,
+      "alpha_bounds": [
+        150,
+        649,
+        488,
+        1214
+      ]
+    },
+    {
+      "box": [
+        731,
+        641,
+        1103,
+        1219
+      ],
+      "anchor": [
+        921.0,
+        651
+      ],
+      "tip_y": 1210,
+      "alpha_bounds": [
+        739,
+        649,
+        1095,
+        1211
+      ]
+    }
+  ],
+  "note": "Origen superior izquierdo. Anclaje medido dos píxeles dentro del inicio superior del tallo con alfa >=128; crecimiento hacia tip_y. Box recorta solo UV, no PNG, con margen de ocho píxeles.",
+  "files": {
+    "foliage.png": {
+      "sha256": "c0993c9e4d59c67865d090520db673ed6fc8051cbb2c28431d77287146a4e869",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    "bark.png": {
+      "sha256": "1ff5c81624d4c3fa8c73105a0889780c460741a17eb41a6a7f6ed450b190cef0",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    }
+  },
+  "alpha_analysis": {
+    "threshold": 128,
+    "coverage_full_atlas": 0.11118996563468989,
+    "largest_component_fraction_per_cell": [
+      0.9999768325456398,
+      1.0,
+      0.9996943980817603,
+      0.9999776910206358
+    ],
+    "note": "Conectividad de ocho vecinos. Restos aislados de 1/0/13/1 texeles conservados en fuente; no equivale a validación de contactos 3D."
+  }
+}

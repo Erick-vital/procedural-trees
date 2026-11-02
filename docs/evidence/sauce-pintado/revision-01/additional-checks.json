@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-02",
+  "tests": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+    "environment": "Fuera del sandbox, socket loopback permitido",
+    "count": 214,
+    "passed": true,
+    "sources_sha256": {
+      "tests/test_willow.py": "0f8ba7dbfb37847c6b7d5d4e9ba19c9b2a497711dde8fe499f7b646c78376e06",
+      "tests/test_willow_v2.py": "29ffc568fd7733a8e78eb18c7aadf972988d5cd30e7183475b46e25f4f84c8ef",
+      "tests/test_willow_sample.py": "f963f5cea3bbd182999a90d02f836f6bcd6f77c647b0b3bcb80707a308c682a6"
+    }
+  },
+  "visual_review": {
+    "study": "artifacts/sauce-pintado/revision-03",
+    "new_captures": 120,
+    "baseline_captures": 30,
+    "baseline_identical_to_previous_inspected": true,
+    "branch_captures": 37,
+    "method": "Inspección de láminas reales, comparación y perspectivas/detalles. Sin declarar revisión visual por pruebas sin interfaz."
+  },
+  "branch_selection": "Delegación del usuario, candidata rama-revision-05. No aprobación artística explícita del árbol.",
+  "f4": "Pendiente después de cerrar el sauce, sin inicio automático.",
+  "artistic_acceptance": {
+    "accepted": true,
+    "date": "2026-11-02",
+    "record": "user-acceptance.json",
+    "scope": "Resultado revisado 1.1.0 presentado; la selección inicial de rama por delegación queda como antecedente."
+  }
+}

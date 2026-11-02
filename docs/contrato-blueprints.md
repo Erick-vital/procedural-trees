@@ -347,3 +347,78 @@ PNG embebidos, materiales, normales unitarias y conteos. Altura se comprueba
 sobre madera. Cuatro semillas verificadas no acreditan naturalidad para todos
 los casos; aceptación de pintura/rama separada de la del árbol completo.
 [Resultados y reproducción](evidence/abedul-pintado/arbol-01/informe.md).
+
+## Ampliación 1.6: sauce de copa colgante
+
+Receta `sauce_colgante@1.0.0`, esquemas nuevos
+`tree-blueprint-willow.schema.json` / `tree-instance-willow.schema.json`.
+Componentes exclusivos `willow-weeping@0.1.0`, `willow-hanging-groups@0.1.0`
+y `willow-painted-crossed@0.1.0`. Contratos anteriores conservados; no se admite
+mezclar componentes de sauce con otros contratos. CLI y ejecutor compartidos.
+
+Perfil inicial adulto de 10 m, parámetros cerrados y sin overrides. Semillas
+`base` (streams de estructura derivados por el protocolo existente), `canopy`
+(anclajes, longitud y fase de grupos) y `paint` (variante por ID estable).
+Recursos fijos y hashes en `assets/sauce-pintado/v0.1.0/`, aprobados en pintura y
+rama. Tres planos fijos con inclinación .22 rad; tallo superior anclado al eje
+de su soporte, crecimiento descendente. Recorte .5, doble cara, rugosidad .95.
+
+Para N primarias, S secundarias por primaria y G grupos por secundaria:
+
+`T_max = 188 + 104 + N(80 + 28S) + 6[N(3 + SG) + 3]`.
+
+Incluye tapas, tronco de doce anillos/ocho lados, cuatro raíces 3/5, primarias
+7/6, secundarias 4/4 y tres planos de dos tris por grupo. N=12/S=8/G=4:
+**6478 tris, 423 grupos, 113 recorridos de madera y dos materiales**. Cota previa
+independiente de semillas y simplificación; rechaza exceso antes de mallar.
+Límites: 6999 tris, dos materiales, generación ≤120 s. Recursos ≤2048².
+
+Las bifurcaciones se concentran debajo de una copa ancha; primarias ascendentes
+y arqueadas, con ápice interior y extremos descendentes, sin pisos de pino.
+Normalización común solo de Z para ejes y mallas de madera: altura exacta 10 m,
+XY y radios nominales conservados; las secciones pueden resultar elípticas.
+Simplificación de primarias con error ≤5 mm y extremos/tapas/UV protegidos;
+tronco, raíces y secundarias finas conservan anillos. En los cuatro casos no
+se eliminan anillos: el presupuesto ya se cumple con la topología inicial.
+
+Antes de registrar/exportar, vértices y ejes de grupos se fijan a doce decimales
+para evitar discrepancias de último bit entre Python 3.13 de Blender y 3.14 del
+ejecutor. Auditoría del GLB float32 mantiene comparación exacta de caras y UV,
+normales finitas/unitarias, canales de pintura, materiales y procedencia.
+La altura se audita sobre vértices de madera; `dimensions_m` incluye todos los
+márgenes transparentes y `wood_height_m` informa la altura nominal.
+
+Solo cuatro semillas y un perfil verificados. No certifica todos los contactos,
+naturalidad o rendimiento; aceptación del árbol completo separada de la rama.
+[Resultados y reproducción](evidence/sauce-pintado/arbol-01/informe.md).
+
+### Revisión de sauce 1.1.0, componentes 0.2.0
+
+Contrato 1.6 ampliado solo en capacidades de esta especie: estructura,
+distribución y representación admiten triples de versión 0.1.0 o 0.2.0 y se
+rechazan combinaciones mixtas. Resolución, ejecutor, API y exportador existentes
+conservados. Las rutas 0.1.0 mantienen geometría/receta idénticas; 1.0.0 se
+conserva como referencia técnica rechazada artísticamente.
+
+0.2.0 usa un tronco corto (`crown_base_ratio` fija su altura antes de normalizar),
+con primarias divergentes Bézier de alturas, alcances y controles diferentes.
+Tres secundarias de copa por primaria; las restantes forman hebras largas.
+No hay continuación central del tronco. Normalización Z y cuantización de
+registro a doce decimales, incluida la nueva madera, mantienen determinismo.
+
+Copa y cortina reciben reglas diferentes: orientaciones volumétricas y ancho
+afín ×1.75–2 en copa, frente a caída y ancho ×.75–1 en cortinas, con tamaño
+decreciente hacia la punta. Transformación alrededor del tallo, UV y PNG
+conservados. No se afirman hojas de forma idéntica al aplicar esa escala.
+Se añaden cinco grupos por primaria y por secundaria de copa respecto al
+presupuesto anterior:
+
+`T_max_0.2 = T_max_0.1 + 30N(1 + min(3, S))`.
+
+Perfil cerrado N=8/S=10/G=5: **3172 madera + 3522 follaje = 6694 tris**,
+307 grupos de copa y 280 de cortina, dos materiales. El presupuesto se
+selecciona por versión antes de generar, sin confiar en simplificación posterior.
+Pintura 0.1.0 conservada y muestra de rama 0.2.0 seleccionada por delegación;
+árbol revisado aprobado artísticamente en el perfil/casos presentados;
+[aceptación](evidence/sauce-pintado/revision-01/user-acceptance.json).
+[Resultado y comparación](evidence/sauce-pintado/revision-01/informe.md).

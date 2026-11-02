@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-02",
+  "accepted": false,
+  "scope": "Resultado artístico del sauce completo 1.0.0",
+  "reasons": ["La rama central se ve rara", "Las demás ramas repiten la misma forma", "La copa queda desnuda y extraña en su parte superior"],
+  "requested_reference": "https://github.com/MikeFernandez-Pro/just-a-simple-tree",
+  "continuation": "Revisar estructura y follaje; el usuario delega sustituir también la muestra de rama si hace falta. Mantener infraestructura si es posible.",
+  "does_not_revoke": "Pintura aprobada; verificaciones técnicas de 1.0.0 se conservan como antecedentes."
+}

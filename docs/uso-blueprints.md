@@ -12,7 +12,7 @@ PYTHONPATH=src python3 -m treegen blueprints
 
 La respuesta lista `id`, `version`, nombre, perfil predeterminado, ruta y hash
 canónico de cada receta registrada en `blueprints/<id>/<versión>.json`.
-Hay cuatro tipos y catorce versiones registradas. No hay selección “latest”.
+Hay cinco tipos y dieciséis versiones registradas. No hay selección “latest”.
 El perfil predeterminado no elige el tipo: se aplica dentro de una receta
 seleccionada explícitamente.
 
@@ -40,6 +40,7 @@ no atribuir garantía visual a todos sus rangos/semillas.
 
 | Objetivo | Receta | Ejemplar existente |
 | --- | --- | --- |
+| Sauce colgante revisado aprobado | `blueprints/sauce_colgante/1.1.0.json` | `presets/blueprints/sauce-revision/pilot.json` |
 | Abedul pintado completo, arte pendiente de aprobación | `blueprints/abedul_pintado/1.0.0.json` | `presets/blueprints/abedul-pintado/pilot.json` |
 | Reproducir viejo-09 aprobado | `blueprints/roble_copa_ancha/1.0.0.json` | `presets/blueprints/roble-copa-ancha-viejo-09.json` |
 | Roble aprobado con madera selectiva | `blueprints/roble_copa_ancha/2.2.0.json` | `presets/blueprints/roble-madera/pilot.json` |
@@ -61,6 +62,42 @@ solicita explícitamente 1.2.0. `configs/verification/b3-v3.json` es la matriz
 final correspondiente. El cierre no renombra esas entradas históricas.
 
 ## Generar y validar
+
+Sauce revisado **1.1.0**: adulto nominal de 10 m sobre madera, contrato 1.6,
+componentes 0.2.0, **6694 tris/dos materiales**, 587 grupos. Tronco corto
+bifurcado, brazos de forma desigual, masas superiores y cortinas largas.
+Pintura 0.1.0 conservada; rama nueva seleccionada por delegación del usuario.
+Árbol revisado aprobado por el usuario; [aceptación](evidence/sauce-pintado/revision-01/user-acceptance.json). Receta 1.0.0 conservada pero
+rechazada artísticamente; no usar su aprobación técnica como aceptación visual.
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/sauce_colgante/1.1.0.json --instance presets/blueprints/sauce-revision/pilot.json --output artifacts/sauce-pintado/mi-sauce-revisado --no-render
+python3 scripts/verify_willow.py --matrix configs/verification/willow-v2.json --compare-previous --output artifacts/sauce-pintado/otra-revision --stage all
+```
+
+Visor: `artifacts/sauce-pintado/revision-03/godot/`; `N` cambia semilla, `1/2`
+árbol/madera, arrastrar/rueda cámara. Comparación de versiones a cámara/luz iguales
+y [resultado de revisión](evidence/sauce-pintado/revision-01/informe.md).
+F4 permanece pendiente después de cerrar el sauce.
+
+Referencia anterior **1.0.0**, rechazada artísticamente: adulto de 10 m, contrato 1.6, recursos 0.1.0 y rama aprobados;
+**6478 tris y dos materiales** en cuatro semillas. Tres planos fijos por grupo,
+423 grupos y estructura arqueada propia. Parámetros cerrados; aceptación artística
+del árbol completo rechazada. La altura nominal se mide sobre madera; los bounds
+de tarjetas incluyen transparencia. No se garantizan otras edades o rangos.
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/sauce_colgante/1.0.0.json --instance presets/blueprints/sauce-pintado/pilot.json --output artifacts/sauce-pintado/mi-sauce --no-render
+PYTHONPATH=src python3 -m treegen validate artifacts/sauce-pintado/mi-sauce
+python3 scripts/verify_willow.py --output artifacts/sauce-pintado/otra-matriz --stage all
+```
+
+Piloto/tres controles, repetición y regresiones de roble/pino/abedul/columnar;
+120 capturas reales y visor en `artifacts/sauce-pintado/arbol-05/godot/`.
+`N`: siguiente semilla, `1`: árbol, `2`: madera; arrastrar/rueda: cámara;
+`B`: fondo, `L`: luz, espacio: giro automático.
+[Resultados y reproducción](evidence/sauce-pintado/arbol-01/informe.md).
+F4 queda pendiente para después de terminar esta variante, sin inicio automático.
 
 Abedul pintado: perfil inicial adulto de 10 m, cuatro semillas verificadas,
 **6254–6278 tris/2 materiales**, tres planos inclinados por grupo. Usa contrato

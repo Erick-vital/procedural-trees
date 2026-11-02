@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-02",
+  "accepted": true,
+  "user_instruction": "ok lo apruebo",
+  "scope": "Resultado artístico del sauce_colgante@1.1.0 presentado, incluida la aplicación de la rama revisada al árbol completo y su galería de cuatro semillas",
+  "profile": "adulto",
+  "structure_seeds": [7100, 7101, 7102, 7103],
+  "canopy_seed": 17,
+  "paint_seed": 2718,
+  "triangles_per_case": 6694,
+  "materials_per_tree": 2,
+  "study": "artifacts/sauce-pintado/revision-03",
+  "previous_version": "1.0.0 conserva su rechazo artístico y sus verificaciones técnicas históricas",
+  "limits": "No extiende la aceptación a otras edades, parámetros, semillas no revisadas o especies. Sin benchmark nuevo.",
+  "next_pending": "F4: adaptar lenguaje natural a blueprints y definir su alcance/proveedor/modelo antes de iniciarlo. No se inicia automáticamente por esta aprobación."
+}

@@ -1,6 +1,7 @@
 # Sauce — propuesta de pintura
 
-Fecha: 2026-11-02. **Pendiente de aceptación artística del usuario.**
+Fecha: 2026-11-02. **Dirección de pintura aprobada por el usuario**;
+[aceptación y continuación](user-acceptance.json).
 [Plan activo](../../../../plans/sauce-pintado.md).
 
 ![Propuesta de follaje y corteza](propuesta.png)
@@ -25,5 +26,6 @@ producción sin fijar sombras fuertes y comprobar costuras posteriormente.
 
 Es una propuesta artística, no un atlas utilizable ni un render del generador.
 No se han validado láminas cruzadas, transparencia, sombras, conexiones en Godot,
-presupuesto geométrico o rendimiento. Siguiente paso tras aprobación de pintura:
-recursos de producción y rama real de muestra, antes del árbol completo.
+presupuesto geométrico o rendimiento sobre esta lámina. Los recursos de producción
+y la [rama real de muestra](../rama-01/informe.md) se prepararon después;
+la aceptación de pintura no implica aprobación de esa aplicación.

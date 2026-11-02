@@ -4,8 +4,8 @@
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
-Dos tipos al cierre B5; catálogo actual: cuatro tipos/catorce recetas, incluido abedul.
-Plan activo: [sauce pintado](plans/sauce-pintado.md): **propuesta de pintura; aceptación pendiente**.
+Dos tipos al cierre B5; catálogo actual: cinco tipos/dieciséis recetas, incluido sauce.
+[Sauce pintado](plans/sauce-pintado.md): **1.1.0 cerrado y aprobado; 1.0.0 rechazado artísticamente**. F4 siguiente pendiente, sin iniciar.
 [Transiciones](plans/transiciones-estacionales.md): **T0–T6 cerradas y lote aprobado; entrega 0.1.0**.
 [Abedul](plans/abedul-pintado.md) 1.0.0 integrado/verificado; arte pendiente.
 Roble 2.2.0 cerrado: piloto/joven/adulto/viejo **6812/3132/5820/6900 tris**.
@@ -32,6 +32,13 @@ la familia ensayada**, como alternativa explícita a Q3.
 
 ## Avances verificados
 
+- Sauce **1.1.0**, contrato 1.6/componentes 0.2.0: cuatro casos **6694 tris/dos
+  materiales**, 587 grupos; tronco corto, brazos distintos, copa y cortinas separadas.
+  Pintura conservada, rama sustituida por delegación; **214 pruebas**, ocho defectos
+  rechazados, repetición/CLI idénticos y cinco regresiones exactas, incluido 1.0.0.
+  120 capturas Godot nuevas revisadas y 30 de referencia idénticas. **Arte aprobado**.
+  [Informe y comparación](docs/evidence/sauce-pintado/revision-01/informe.md).
+  [Aceptación final](docs/evidence/sauce-pintado/revision-01/user-acceptance.json); F4 pendiente, sin inicio automático.
 - Abedul **1.0.0**, contrato 1.5: adulto 10 m, cuatro semillas **6278/6278/6278/6254
   tris**, 399 grupos/1197 planos, dos materiales, PNG de rama 0.1.0 conservados.
   155 pruebas, ocho defectos rechazados, repetición/CLI con GLB idéntico,
@@ -48,21 +55,11 @@ la familia ensayada**, como alternativa explícita a Q3.
   contactos no certificados universalmente. [Informe](docs/evidence/roble-pintado/integracion-madera-01/informe.md).
   Histórica 2.1.0: 7836/3996/6812/7780, atlas rehorneado RGBA idéntico;
   [integración de tres láminas](docs/evidence/roble-pintado/implementacion-01/informe.md).
-- PP4 inicial 2.0.0: 241 grupos/5192 triángulos, 110 pruebas y 108 capturas.
-  El usuario considera la copa demasiado rala; referencia técnica conservada.
-  [PP4 inicial](docs/evidence/pino-pintado/pp4/informe.md).
-- PP4 volumen **2.1.0**, distribución/cruzadas 0.2.0: misma regla creciente
-  arriba para piloto/tres controles, 435 grupos/**7520 triángulos**, 12 m/dos
-  materiales. Madera, atlas y materiales idénticos. 113 pruebas, 43 comprobaciones,
-  repetición y regresiones 2.0.0/B0/B4 exactas; 108 capturas reales revisadas.
-  Más masa superior y ápice; aprobación artística pendiente.
-  [Informe y reproducción](docs/evidence/pino-pintado/pp4-volumen/informe.md).
-- Madera/copa **2.2.0**, representación 0.3.0: anillos adaptativos a 5 mm y
-  tapas interiores verificadas. Madera **1908–1944**, total **7128–7164** tris.
-  435 grupos conservados; ajuste leve posterior .98 longitud/.94 anchura,
-  sin mover anclajes; cobertura proyectada 4,1–4,7 % menor. 116 pruebas,
-  51 comprobaciones, repetición/regresiones 2.1.0/B0/B4 exactas y 144 capturas
-  reales y láminas revisadas. [Informe](docs/evidence/pino-pintado/pp4-madera/informe.md).
+- Pino PP4 histórico: 2.0.0 ralo según usuario; 2.1.0 aumentó volumen y 2.2.0
+  simplificó madera, antes de 2.3.0 aprobado. Fuentes y regresiones conservadas:
+  [inicial](docs/evidence/pino-pintado/pp4/informe.md),
+  [volumen](docs/evidence/pino-pintado/pp4-volumen/informe.md),
+  [madera](docs/evidence/pino-pintado/pp4-madera/informe.md).
 - Cruzadas **2.3.0**, representación 0.4.0: **12→6 tris/grupo**, 435 grupos,
   follaje 5220→2610 y total **4518–4554**. Madera/PNG/guías 2.2.0 idénticos.
   Petición posterior: anchura sqrt(.9), longitud/anclajes fijos; −10 % de
@@ -165,7 +162,7 @@ la familia ensayada**, como alternativa explícita a Q3.
   ocupación o silueta no acreditan naturalidad, rendimiento o aprobación estética.
 
 ## Siguiente paso y pendientes
-**Sauce autorizado como nueva variante; empezar por pintura.** [Propuesta](docs/evidence/sauce-pintado/pintura-01/ficha.md) generada, pendiente de aceptación artística. Después: atlas y rama de muestra aprobada antes del árbol completo; máximo 6999 tris/dos materiales. **F4 queda pendiente para después de terminar el sauce**, sin inicio automático.
+**Sauce 1.1.0 cerrado y aprobado por el usuario.** [Resultado](docs/evidence/sauce-pintado/revision-01/informe.md): cuatro casos 6694 tris/dos materiales; 1.0.0 rechazado conservado. **Siguiente pendiente: definir/adaptar F4 a blueprints**, sin inicio automático.
 T6 cerrada: [entrega de transiciones](docs/entrega-transiciones.md), lote aprobado.
 - [T5 verificada](docs/evidence/estaciones/integracion-t5/informe.md): candidata 0.1.0; 194 pruebas, 2377 capturas más cuatro en copia limpia.
 - Cuatro casos 6812/3132/5820/6900 tris; dos materiales/tres texturas compartidas; 16 extremos estándar Blender/Godot y visor común.

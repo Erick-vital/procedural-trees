@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.6",
+  "blueprint_id": "sauce_colgante",
+  "blueprint_version": "1.0.0",
+  "profile": "adulto",
+  "seeds": {
+    "base": 7100,
+    "canopy": 17,
+    "paint": 2718
+  }
+}
