@@ -2,7 +2,11 @@
 
 Fecha: 2026-10-22  
 Revisión: foco en assets de árboles; arquitectura híbrida con Geometry Nodes, automatización con `bpy` y reglas espaciales en Python.  
-Estado: F0–F2 verificadas; Q1 0.2.0 rechazada estéticamente por el usuario. Q1b 0.2.1 y copa ajustada Q2 0.3.0 aprobadas por el usuario. El usuario identifica Q3 0.4.0 como última iteración buena y rechaza estéticamente Q3b 0.4.1, que permanece verificada técnicamente. Autoriza una prueba acotada de fusión parcial desde Q3, descrita abajo. F4–F6 pendientes; F3 diferida fuera del alcance activo. Informes [F0](../docs/evidence/f0/informe.md), [F1](../docs/evidence/f1/informe.md), [F2](../docs/evidence/f2/informe.md) y [Q3b](../docs/evidence/q3b/informe.md).
+Estado histórico previo al rediseño: F0–F2 verificadas; Q1 0.2.0 rechazada estéticamente por el usuario. Q1b 0.2.1 y copa ajustada Q2 0.3.0 aprobadas por el usuario. El usuario identifica Q3 0.4.0 como última iteración buena y rechaza estéticamente Q3b 0.4.1, que permanece verificada técnicamente. Autoriza una prueba acotada de fusión parcial desde Q3, descrita abajo. F4–F6 pendientes; F3 diferida fuera del alcance activo. Informes [F0](../docs/evidence/f0/informe.md), [F1](../docs/evidence/f1/informe.md), [F2](../docs/evidence/f2/informe.md) y [Q3b](../docs/evidence/q3b/informe.md).
+
+**Actualización 2026-11-03:** [F4 adaptada al chat de Codex](f4-lenguaje-blueprints.md)
+cerrada y aprobada por el usuario. [F5 espacial](f5-estructura-espacial.md) cerrada
+técnicamente: objetivo mediano cumplido con límites por edad; arte pendiente. F6 sin iniciar.
 
 ## Prioridad posterior: plan separado de rediseño del follaje — 2026-10-22
 
@@ -274,6 +278,13 @@ Salida: bosque regenerable y recorrido de demostración. La revisión visual se 
 
 ### F4. Experimento A: lenguaje natural a parámetros
 
+**Adaptación autorizada el 2026-11-02:** el usuario pide mantener el uso desde
+Codex abierto en el repositorio, sin proveedor externo ni otro proceso de Codex.
+El [plan F4 vigente](f4-lenguaje-blueprints.md) sustituye el punto 1 siguiente por
+un contrato de planes interpretados en el chat y reproducibles con herramientas
+locales. Trabaja sobre blueprints; conserva las seis solicitudes, semillas,
+validación y revisión visual. Los puntos originales se conservan como contexto.
+
 1. Integrar un proveedor/modelo mediante un adaptador reemplazable y configuración externa.
 2. Validar el JSON antes de generar; rechazar campos desconocidos y valores inválidos con errores claros.
 3. Preparar seis solicitudes: árbol joven, adulto, viejo, copa densa, copa abierta y ramas asimétricas.
@@ -283,6 +294,9 @@ Salida: bosque regenerable y recorrido de demostración. La revisión visual se 
 Salida: el usuario puede pedir un roble viejo de tronco grueso y ramas asimétricas, inspeccionar los parámetros y regenerar el árbol.
 
 ### F5. Estructura Python y experimento B de competencia por espacio
+
+Inicio autorizado el 2026-11-03 tras aprobación artística F4. Protocolo concreto,
+procesadores pintados actuales y estado en [F5 espacial](f5-estructura-espacial.md).
 
 1. Introducir `BranchStructure` y un generador Python base con la misma familia de parámetros y dos niveles de ramas. Reutilizar los grupos de volumen y follaje de F1 mediante curvas/atributos creados con `bpy`; no rehacer el mallado.
 2. Verificar que el cambio de representación conserva los contratos, presupuestos, escala y estilo previstos. Registrar la transición nodos → Python por separado; no exigir igualdad de árboles entre algoritmos ni atribuir diferencias de esa transición a una mejora espacial. El generador inicial en nodos quedará como referencia congelada, sin exigir evolucionar dos generadores de estructura en paralelo.

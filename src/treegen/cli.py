@@ -23,6 +23,26 @@ def main():
     blueprint.add_argument('--output', type=Path, required=True)
     blueprint.add_argument('--no-render', action='store_true')
     blueprint.add_argument('--timeout', type=float, default=120)
+    plan = commands.add_parser('plan-blueprints', help='Validar y congelar propuestas de Codex (F4)')
+    plan.add_argument('blueprint', type=Path)
+    plan.add_argument('--request', type=Path, required=True)
+    plan.add_argument('--output', type=Path, required=True)
+    planned = commands.add_parser('generate-blueprint-plan', help='Reproducir un plan F4 sin consultar modelos')
+    planned.add_argument('plan', type=Path)
+    planned.add_argument('--output', type=Path, required=True)
+    planned.add_argument('--render', action='store_true')
+    planned.add_argument('--timeout', type=float, default=120)
+    branch_tree = commands.add_parser('generate-branch-tree', help='Generar árbol ramificado completo con/sin follaje (R4)')
+    branch_tree.add_argument('definition', type=Path)
+    branch_tree.add_argument('--profile', required=True)
+    branch_tree.add_argument('--base-seed', required=True, type=int)
+    branch_tree.add_argument('--canopy-seed', required=True, type=int)
+    branch_tree.add_argument('--paint-seed', required=True, type=int)
+    branch_tree.add_argument('--output', required=True, type=Path)
+    growth = commands.add_parser('generate-oak-growth', help='Arquitectura de roble por madurez (O1)')
+    growth.add_argument('preset', type=Path)
+    growth.add_argument('--seed', type=int, required=True)
+    growth.add_argument('--output', type=Path, required=True)
     bat = commands.add_parser('batch')
     bat.add_argument('--cases', type=Path, default=Path('presets/f2-cases.json'))
     bat.add_argument('--output', type=Path, required=True)
@@ -45,6 +65,19 @@ def main():
         elif args.command == 'blueprints':
             from .blueprints import registered_blueprints
             result = {'blueprints': registered_blueprints()}
+        elif args.command == 'plan-blueprints':
+            from .language import prepare_plan
+            result = prepare_plan(args.blueprint, args.request, args.output)
+        elif args.command == 'generate-blueprint-plan':
+            from .language import execute_plan
+            result = execute_plan(args.plan, args.output, args.render, args.timeout)
+        elif args.command == 'generate-branch-tree':
+            from .branch_tree_runner import execute_branch_tree
+            result = execute_branch_tree(args.definition, {'profile': args.profile, 'seeds': {
+                'base': args.base_seed, 'canopy': args.canopy_seed, 'paint': args.paint_seed}}, args.output)
+        elif args.command == 'generate-oak-growth':
+            from .oak_growth_runner import execute_growth
+            result = execute_growth(args.preset, args.seed, args.output)
         elif args.command == 'batch':
             result = batch(args.cases, args.output, args.timeout)
         elif args.command == 'validate':

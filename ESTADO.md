@@ -1,11 +1,13 @@
 # Estado del proyecto
 
-Última actualización: 2026-11-02.
+Última actualización: 2026-11-03.
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
 Dos tipos al cierre B5; catálogo actual: cinco tipos/dieciséis recetas, incluido sauce.
-[Sauce pintado](plans/sauce-pintado.md): **1.1.0 cerrado y aprobado; 1.0.0 rechazado artísticamente**. F4 siguiente pendiente, sin iniciar.
+[F4 lenguaje natural](plans/f4-lenguaje-blueprints.md): **cerrado y aprobado por el usuario**.
+[Arquitectura O5](plans/arquitectura-roble.md): **madera desnuda aceptada**; rama de follaje OF1 pendiente de revisión. O1–O4/F5/R4 conservadas.
+[Sauce pintado](plans/sauce-pintado.md): **1.1.0 cerrado y aprobado; 1.0.0 rechazado artísticamente**.
 [Transiciones](plans/transiciones-estacionales.md): **T0–T6 cerradas y lote aprobado; entrega 0.1.0**.
 [Abedul](plans/abedul-pintado.md) 1.0.0 integrado/verificado; arte pendiente.
 Roble 2.2.0 cerrado: piloto/joven/adulto/viejo **6812/3132/5820/6900 tris**.
@@ -24,7 +26,7 @@ Copa columnar sigue experimental. **RF5 ejecutada y verificada: 30/30**, receta
 
 Objetivo v1: treinta robles low-poly reproducibles/exportables a GLB y evaluación
 IA para parámetros/reglas/simplificación. Infraestructura F0–F2 verificada;
-F4–F6 IA pendientes. F3/bosques, mapa y terreno diferidos.
+F4 adaptada al chat, verificada y aprobada; F5 verificada técnicamente; F6 pendiente. Bosques/mapa/terreno diferidos.
 El [plan v1](plans/v1-generador-arboles.md) conserva ese alcance separado.
 [Rediseño de follaje](plans/rediseno-follaje.md): RF3 aprobada; integración B2 y
 controles RF4/B3 y lote RF5 verificados y aprobados. **Rediseño cerrado para
@@ -38,7 +40,7 @@ la familia ensayada**, como alternativa explícita a Q3.
   rechazados, repetición/CLI idénticos y cinco regresiones exactas, incluido 1.0.0.
   120 capturas Godot nuevas revisadas y 30 de referencia idénticas. **Arte aprobado**.
   [Informe y comparación](docs/evidence/sauce-pintado/revision-01/informe.md).
-  [Aceptación final](docs/evidence/sauce-pintado/revision-01/user-acceptance.json); F4 pendiente, sin inicio automático.
+  [Aceptación final](docs/evidence/sauce-pintado/revision-01/user-acceptance.json).
 - Abedul **1.0.0**, contrato 1.5: adulto 10 m, cuatro semillas **6278/6278/6278/6254
   tris**, 399 grupos/1197 planos, dos materiales, PNG de rama 0.1.0 conservados.
   155 pruebas, ocho defectos rechazados, repetición/CLI con GLB idéntico,
@@ -72,12 +74,6 @@ la familia ensayada**, como alternativa explícita a Q3.
   tiempo por cuadro −40,0/−44,9 %, consistente en cuatro parejas. Un árbol sin
   ganancia útil. Tres pruebas del arnés, auditoría y seis capturas revisadas.
   [Informe, condiciones y reproducción](docs/evidence/pino-pintado/rendimiento-v11/informe.md).
-- Pino geométrico 1.0.0/1.1.0: cuatro semillas/12 m, 11924 tris y dos
-  materiales, 2892 acículas. Revisión 1.1.0 conserva costes y parámetros con
-  raíces desfasadas e inclinaciones mixtas; repetición/regresiones exactas,
-  97 pruebas y 144 capturas reales. Aprobación artística pendiente.
-  [Base](docs/evidence/blueprints/pino/informe.md),
-  [revisión](docs/evidence/blueprints/pino-revision/informe.md).
 - B0: referencia RF3 aprobada, congelada y reproducida. 133 archivos auditados,
   105 fuentes recuperables de Git. [Informe](docs/evidence/blueprints/b0/informe.md).
 - B1/B2: contratos estrictos, registro, resolución determinista y ejecución
@@ -162,10 +158,19 @@ la familia ensayada**, como alternativa explícita a Q3.
   ocupación o silueta no acreditan naturalidad, rendimiento o aprobación estética.
 
 ## Siguiente paso y pendientes
-**Sauce 1.1.0 cerrado y aprobado por el usuario.** [Resultado](docs/evidence/sauce-pintado/revision-01/informe.md): cuatro casos 6694 tris/dos materiales; 1.0.0 rechazado conservado. **Siguiente pendiente: definir/adaptar F4 a blueprints**, sin inicio automático.
+**Siguiente: revisar artísticamente la rama OF1** antes de integrar copa O5.
+[OF1](docs/evidence/oak-foliage/of1/informe.md): maduro3100/p:0, madera exacta646tris,
+64 grupos/192 láminas/384tris de follaje: **1030 tris/dos materiales**; pintura actual.
+Distribución en terciarias/terminales y secundarias exteriores; sin conectores nuevos.
+Cupo global216 grupos/1296tris; solo muestra materializada, proyección5010 del árbol.
+Reserva1584/máximo6999 conservados. 281 pruebas,32 checks, cuatro GLB repetidos exactos.
+Godot36 capturas,23 inspeccionadas; hay conjuntos compactos y cruces de láminas visibles.
+Galería `artifacts/oak-foliage/of1-rama-04/index.html`; [uso](docs/uso-follaje-o5.md).
+O5 desnuda sigue aceptada: [decisión](docs/evidence/oak-growth/o5/user-acceptance.json).
+[Arquitectura y límites O5](docs/evidence/oak-growth/o5/informe.md); copa completa/F6 sin iniciar.
+F4 aprobada: [aceptación](docs/evidence/f4/lenguaje-01/user-acceptance.json), [guía](docs/uso-lenguaje-natural.md).
 T6 cerrada: [entrega de transiciones](docs/entrega-transiciones.md), lote aprobado.
-- [T5 verificada](docs/evidence/estaciones/integracion-t5/informe.md): candidata 0.1.0; 194 pruebas, 2377 capturas más cuatro en copia limpia.
-- Cuatro casos 6812/3132/5820/6900 tris; dos materiales/tres texturas compartidas; 16 extremos estándar Blender/Godot y visor común.
+- [T5 verificada](docs/evidence/estaciones/integracion-t5/informe.md): 194 pruebas, 2377 capturas más cuatro en copia limpia; cuatro casos 3132–6900 tris, dos materiales/tres texturas, 16 extremos Blender/Godot.
 - T6: `artifacts/estaciones/cierre-t6-02/`; galería, inventario de 266 fuentes/entradas y reconstrucción aislada idéntica. [Auditoría](docs/evidence/estaciones/cierre-t6/informe.md).
 - Pintura/calendario T3, normales .35 T4 y **lote T5/T6 aprobados**. [Aceptación final](docs/evidence/estaciones/cierre-t6/user-acceptance.json). Caída sin iniciar; sin benchmark.
 - Abedul completo sigue pendiente de valoración artística; sin nuevas edades.
@@ -179,10 +184,8 @@ Pino **2.3.0 aprobado y benchmark cerrado**; `artifacts/pino-pintado/pp4-cards-0
 RF5 cerrado con aprobación artística del lote completo. Matriz
 `configs/verification/rf5-v1.json`; galería
 `artifacts/rediseno-follaje/rf5-lote-01/index.html`. RF3 aprobada como alternativa
-explícita a Q3; predeterminados conservados. F4 (lenguaje natural a parámetros)
-sigue pendiente de decisión de inicio y adaptación a blueprints.
-F4–F6 IA pendientes; elegir proveedor/modelo al retomarlas. F5 conserva Q2 solo Z
-y radios posiblemente elípticos; comparar con/sin regla conservando ≥90 % de longitud.
+explícita a Q3; predeterminados conservados. F4 usa únicamente Codex en este
+repositorio, según decisión del usuario del 2026-11-02. F5 conserva Q2 solo Z y radios posiblemente elípticos.
 
 Límites: B4 solo ensaya columna de 12 m/cuatro semillas; intervalos completos y otras
 edades no garantizados. Caso 2 m/moldes 3 m técnicamente válido pero visualmente

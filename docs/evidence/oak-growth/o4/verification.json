@@ -1,0 +1,2834 @@
+{
+  "version": "oak-volume-verification-0.1.0",
+  "passed": true,
+  "checks": {
+    "maduro-3100-generation": true,
+    "maduro-3100-sources": true,
+    "maduro-3100-same-inputs": true,
+    "maduro-3100-budget": true,
+    "maduro-3100-base-topology-preserved": true,
+    "maduro-3100-godot": true,
+    "maduro-3100-joins": true,
+    "maduro-3100-core-subset": true,
+    "maduro-3100-bark-shared": true,
+    "maduro-3100-o3-historical-exact": true,
+    "maduro-3100-less-core-axis-length": true,
+    "maduro-3100-fewer-inner-births": true,
+    "maduro-3100-secondary-births-farther-out": true,
+    "maduro-3100-mixed-bough-habits": true,
+    "maduro-3101-generation": true,
+    "maduro-3101-sources": true,
+    "maduro-3101-same-inputs": true,
+    "maduro-3101-budget": true,
+    "maduro-3101-base-topology-preserved": true,
+    "maduro-3101-godot": true,
+    "maduro-3101-joins": true,
+    "maduro-3101-core-subset": true,
+    "maduro-3101-bark-shared": true,
+    "maduro-3101-o3-historical-exact": true,
+    "maduro-3101-less-core-axis-length": true,
+    "maduro-3101-fewer-inner-births": true,
+    "maduro-3101-secondary-births-farther-out": true,
+    "maduro-3101-mixed-bough-habits": true,
+    "maduro-3102-generation": true,
+    "maduro-3102-sources": true,
+    "maduro-3102-same-inputs": true,
+    "maduro-3102-budget": true,
+    "maduro-3102-base-topology-preserved": true,
+    "maduro-3102-godot": true,
+    "maduro-3102-joins": true,
+    "maduro-3102-core-subset": true,
+    "maduro-3102-bark-shared": true,
+    "maduro-3102-o3-historical-exact": true,
+    "maduro-3102-less-core-axis-length": true,
+    "maduro-3102-fewer-inner-births": true,
+    "maduro-3102-secondary-births-farther-out": true,
+    "maduro-3102-mixed-bough-habits": true,
+    "maduro-3103-generation": true,
+    "maduro-3103-sources": true,
+    "maduro-3103-same-inputs": true,
+    "maduro-3103-budget": true,
+    "maduro-3103-base-topology-preserved": true,
+    "maduro-3103-godot": true,
+    "maduro-3103-joins": true,
+    "maduro-3103-core-subset": true,
+    "maduro-3103-bark-shared": true,
+    "maduro-3103-o3-historical-exact": true,
+    "maduro-3103-less-core-axis-length": true,
+    "maduro-3103-fewer-inner-births": true,
+    "maduro-3103-secondary-births-farther-out": true,
+    "maduro-3103-mixed-bough-habits": true,
+    "maduro-3104-generation": true,
+    "maduro-3104-sources": true,
+    "maduro-3104-same-inputs": true,
+    "maduro-3104-budget": true,
+    "maduro-3104-base-topology-preserved": true,
+    "maduro-3104-godot": true,
+    "maduro-3104-joins": true,
+    "maduro-3104-core-subset": true,
+    "maduro-3104-bark-shared": true,
+    "maduro-3104-o3-historical-exact": true,
+    "maduro-3104-less-core-axis-length": true,
+    "maduro-3104-fewer-inner-births": true,
+    "maduro-3104-secondary-births-farther-out": true,
+    "maduro-3104-mixed-bough-habits": true,
+    "centenario-3100-generation": true,
+    "centenario-3100-sources": true,
+    "centenario-3100-same-inputs": true,
+    "centenario-3100-budget": true,
+    "centenario-3100-base-topology-preserved": true,
+    "centenario-3100-godot": true,
+    "centenario-3100-joins": true,
+    "centenario-3100-core-subset": true,
+    "centenario-3100-bark-shared": true,
+    "centenario-3100-o3-historical-exact": true,
+    "centenario-3100-less-core-axis-length": true,
+    "centenario-3100-fewer-inner-births": true,
+    "centenario-3100-secondary-births-farther-out": true,
+    "centenario-3100-mixed-bough-habits": true,
+    "centenario-3101-generation": true,
+    "centenario-3101-sources": true,
+    "centenario-3101-same-inputs": true,
+    "centenario-3101-budget": true,
+    "centenario-3101-base-topology-preserved": true,
+    "centenario-3101-godot": true,
+    "centenario-3101-joins": true,
+    "centenario-3101-core-subset": true,
+    "centenario-3101-bark-shared": true,
+    "centenario-3101-o3-historical-exact": true,
+    "centenario-3101-less-core-axis-length": true,
+    "centenario-3101-fewer-inner-births": true,
+    "centenario-3101-secondary-births-farther-out": true,
+    "centenario-3101-mixed-bough-habits": true,
+    "centenario-3102-generation": true,
+    "centenario-3102-sources": true,
+    "centenario-3102-same-inputs": true,
+    "centenario-3102-budget": true,
+    "centenario-3102-base-topology-preserved": true,
+    "centenario-3102-godot": true,
+    "centenario-3102-joins": true,
+    "centenario-3102-core-subset": true,
+    "centenario-3102-bark-shared": true,
+    "centenario-3102-o3-historical-exact": true,
+    "centenario-3102-less-core-axis-length": true,
+    "centenario-3102-fewer-inner-births": true,
+    "centenario-3102-secondary-births-farther-out": true,
+    "centenario-3102-mixed-bough-habits": true,
+    "centenario-3103-generation": true,
+    "centenario-3103-sources": true,
+    "centenario-3103-same-inputs": true,
+    "centenario-3103-budget": true,
+    "centenario-3103-base-topology-preserved": true,
+    "centenario-3103-godot": true,
+    "centenario-3103-joins": true,
+    "centenario-3103-core-subset": true,
+    "centenario-3103-bark-shared": true,
+    "centenario-3103-o3-historical-exact": true,
+    "centenario-3103-less-core-axis-length": true,
+    "centenario-3103-fewer-inner-births": true,
+    "centenario-3103-secondary-births-farther-out": true,
+    "centenario-3103-mixed-bough-habits": true,
+    "centenario-3104-generation": true,
+    "centenario-3104-sources": true,
+    "centenario-3104-same-inputs": true,
+    "centenario-3104-budget": true,
+    "centenario-3104-base-topology-preserved": true,
+    "centenario-3104-godot": true,
+    "centenario-3104-joins": true,
+    "centenario-3104-core-subset": true,
+    "centenario-3104-bark-shared": true,
+    "centenario-3104-o3-historical-exact": true,
+    "centenario-3104-less-core-axis-length": true,
+    "centenario-3104-fewer-inner-births": true,
+    "centenario-3104-secondary-births-farther-out": true,
+    "centenario-3104-mixed-bough-habits": true,
+    "joven-3100-generation": true,
+    "joven-3100-sources": true,
+    "joven-3100-same-inputs": true,
+    "joven-3100-budget": true,
+    "joven-3100-base-topology-preserved": true,
+    "joven-3100-godot": true,
+    "joven-3100-joins": true,
+    "joven-3100-core-subset": true,
+    "joven-3100-bark-shared": true,
+    "joven-3100-o3-historical-exact": true,
+    "cohort-peripheral-improvement-at-least-eight": true,
+    "repeat-cli-exact": true,
+    "tests-pass": true,
+    "normalized-ages": true
+  },
+  "cases": {
+    "maduro-3100": {
+      "triangles_before": 3714,
+      "triangles_after": 3714,
+      "budget": {
+        "base_triangles": 3054,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 16,
+          "3": 34,
+          "4": 62
+        },
+        "primary_birth_heights_over_H": [
+          0.246672667703411,
+          0.2856469583292062,
+          0.31442704850015785,
+          0.36828841976717047,
+          0.4091860197149548,
+          0.45623685970568256,
+          0.5091670775556503
+        ],
+        "primary_birth_span_over_H": 0.26249440985223926,
+        "axis_height_over_H": 0.5416772935271591,
+        "width_over_H": 1.4091376076972655,
+        "depth_over_H": 1.1554056557954973,
+        "primary_sinuosity": [
+          1.070845964014142,
+          1.0881998918356317,
+          1.0591345920043151,
+          1.0352739382933285,
+          1.0782433879764144,
+          1.0275094561643963,
+          1.022701803257255
+        ],
+        "maximum_segment_turn_deg": 28.460831662655572,
+        "maximum_centerline_join_error_m": 1.9860273225978185e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.4375046989815596,
+        "sinuosity_range": [
+          1.000015596258282,
+          1.0881998918356317
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 22,
+          "3": 30,
+          "4": 48
+        },
+        "primary_birth_heights_over_H": [
+          0.238602218255804,
+          0.27630137757021284,
+          0.3041398625565093,
+          0.35623903828707987,
+          0.3957985815462978,
+          0.4413100478028056,
+          0.4925085348883313
+        ],
+        "primary_birth_span_over_H": 0.2539063166325273,
+        "axis_height_over_H": 0.523955106245414,
+        "width_over_H": 1.3095410536300165,
+        "depth_over_H": 1.165878184819708,
+        "primary_sinuosity": [
+          1.0642649018293828,
+          1.056355893868685,
+          1.0428912204569925,
+          1.0230110342632315,
+          1.037776973185007,
+          1.0117576568796054,
+          1.02471861757631
+        ],
+        "maximum_segment_turn_deg": 25.402837474096984,
+        "maximum_centerline_join_error_m": 2.0350724194510405e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.3968343843664878,
+        "sinuosity_range": [
+          1.0000083226676557,
+          1.066436737862423
+        ]
+      },
+      "mean_primary_rise_before": 0.4612407894117269,
+      "mean_primary_rise_after": 0.4400222986767823,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 2.3859907393267488,
+          "middle": 5.76154039626405,
+          "periphery": 1.8708584718409775
+        },
+        "peripheral_length_fraction": 0.18674243517672234,
+        "occupied_cells_0_10H": {
+          "core": 41,
+          "middle": 75,
+          "periphery": 39
+        },
+        "inner_births_order_ge_2": 28,
+        "secondary_mean_birth_radius_over_H": 0.289877205426825,
+        "primary_rise_over_path": [
+          0.26375415765592974,
+          0.22273870444063046,
+          0.10424785317304859,
+          0.543495128258581,
+          0.4413506906317847,
+          0.8075435794212443,
+          0.8455554123008698
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 1.8282144165417535,
+          "middle": 5.591532746270122,
+          "periphery": 1.597612211907792
+        },
+        "peripheral_length_fraction": 0.1771707376315429,
+        "occupied_cells_0_10H": {
+          "core": 28,
+          "middle": 80,
+          "periphery": 31
+        },
+        "inner_births_order_ge_2": 19,
+        "secondary_mean_birth_radius_over_H": 0.30902191845443006,
+        "primary_rise_over_path": [
+          0.19760340707999002,
+          0.3021612126620213,
+          0.11428235504898926,
+          0.4990255709408824,
+          0.44381382514638323,
+          0.6656334822034881,
+          0.8576362376557214
+        ],
+        "habits_by_bough": {
+          "p:0": "weighted",
+          "p:1": "seeking",
+          "p:2": "twisting",
+          "p:3": "weighted",
+          "p:4": "twisting",
+          "p:5": "twisting",
+          "p:6": "seeking"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.7352450516749651,
+        "crown_center_offset_over_H": 0.09933323562236615,
+        "length_weighted_crown_center_over_H": [
+          -0.05991933997719202,
+          0.0792260335742374,
+          0.5896236325948611
+        ],
+        "sector_reach_over_H": [
+          0.7276183427613255,
+          0.5324114299566792,
+          0.6846244363213013,
+          0.7352450516749651,
+          0.5262834343474645,
+          0.4710573309341098,
+          0.5673261964848022,
+          0.4850211611548758
+        ],
+        "sector_reach_cv": 0.17128629794254982,
+        "largest_endpoint_angular_gap_deg": 33.78281933853869,
+        "endpoint_gap_range_deg": [
+          0.0004019813701037408,
+          33.78281933853869
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.6796832685735718,
+        "crown_center_offset_over_H": 0.07527309535059783,
+        "length_weighted_crown_center_over_H": [
+          0.01764090872877682,
+          0.07317675329558669,
+          0.5608677115546697
+        ],
+        "sector_reach_over_H": [
+          0.6650944872610256,
+          0.4914658504205102,
+          0.6455554219764539,
+          0.6796832685735718,
+          0.5793740733502689,
+          0.4865769066299514,
+          0.5371644781177022,
+          0.5589917544028306
+        ],
+        "sector_reach_cv": 0.12229296207028123,
+        "largest_endpoint_angular_gap_deg": 41.80384087801905,
+        "endpoint_gap_range_deg": [
+          0.016063945372568975,
+          41.80384087801905
+        ]
+      },
+      "duration_seconds": 1.5652343930014467,
+      "glb_sha256": {
+        "bare": "665630621aba76052d6bd59cc8b2148ce6b66450eb57d41d1bde2d8fd385ac90",
+        "scaffold": "173cea3d4763a90bfaa4b78c53ea22f96fe8d785d201631561b857aa98c04ea2"
+      },
+      "manifest_sha256": "e9a0cee02bef30472669de37cae23ee2d2dadc31ebea306637d5d681f7f7cd5e",
+      "review_sha256": "572ff8571a2f8c17dc081a97a317fe3272b550eeed0b232abbafc7e9f678c59e",
+      "captures": 16
+    },
+    "maduro-3101": {
+      "triangles_before": 4209,
+      "triangles_after": 4209,
+      "budget": {
+        "base_triangles": 3549,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 18,
+          "3": 42,
+          "4": 71
+        },
+        "primary_birth_heights_over_H": [
+          0.23547334979448312,
+          0.2861286954085555,
+          0.3283121718016705,
+          0.36472819450251687,
+          0.4085275863894174,
+          0.43554234396396313,
+          0.48594649559869035
+        ],
+        "primary_birth_span_over_H": 0.25047314580420726,
+        "axis_height_over_H": 0.5169586770513329,
+        "width_over_H": 1.2997294532847403,
+        "depth_over_H": 1.047414439878268,
+        "primary_sinuosity": [
+          1.0639493708447598,
+          1.0508465426124498,
+          1.0434632600418212,
+          1.0498963854208179,
+          1.0337634151268902,
+          1.019561558450654,
+          1.011392335065864
+        ],
+        "maximum_segment_turn_deg": 27.92566435149277,
+        "maximum_centerline_join_error_m": 2.0350724194510405e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.4306823213931219,
+        "sinuosity_range": [
+          1.000019828034709,
+          1.0979012537892219
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 24,
+          "3": 38,
+          "4": 57
+        },
+        "primary_birth_heights_over_H": [
+          0.23909369618641876,
+          0.29052785561481964,
+          0.3333598928607548,
+          0.37033580319435755,
+          0.4148086002480216,
+          0.44223870325422393,
+          0.4934178066559712
+        ],
+        "primary_birth_span_over_H": 0.25432411046955244,
+        "axis_height_over_H": 0.5249067929756024,
+        "width_over_H": 1.2116282233711224,
+        "depth_over_H": 1.0351193656639222,
+        "primary_sinuosity": [
+          1.0620804225416751,
+          1.0410439348633989,
+          1.0320950547971486,
+          1.0500801884530306,
+          1.0187231715887581,
+          1.0098339060769554,
+          1.0156945823850625
+        ],
+        "maximum_segment_turn_deg": 28.746705096421117,
+        "maximum_centerline_join_error_m": 1.9984014443252818e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.4693351001236548,
+        "sinuosity_range": [
+          1.0000268711574403,
+          1.0741758068635376
+        ]
+      },
+      "mean_primary_rise_before": 0.45777970495774817,
+      "mean_primary_rise_after": 0.46280724776250437,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 4.158546194512037,
+          "middle": 4.800848800803977,
+          "periphery": 1.738228203591606
+        },
+        "peripheral_length_fraction": 0.1624873274438292,
+        "occupied_cells_0_10H": {
+          "core": 53,
+          "middle": 66,
+          "periphery": 35
+        },
+        "inner_births_order_ge_2": 46,
+        "secondary_mean_birth_radius_over_H": 0.27626119223296314,
+        "primary_rise_over_path": [
+          0.19444787633309318,
+          0.10145041089653149,
+          0.17134962222738628,
+          0.480119129655165,
+          0.6291500127664348,
+          0.7682684362815679,
+          0.8596724465440587
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 2.564183358683407,
+          "middle": 5.933253098550528,
+          "periphery": 1.8529693618250664
+        },
+        "peripheral_length_fraction": 0.17902383676715852,
+        "occupied_cells_0_10H": {
+          "core": 37,
+          "middle": 82,
+          "periphery": 40
+        },
+        "inner_births_order_ge_2": 24,
+        "secondary_mean_birth_radius_over_H": 0.30464077400925327,
+        "primary_rise_over_path": [
+          0.19273885905049196,
+          0.1261405698331699,
+          0.22856757553594947,
+          0.48034024152401444,
+          0.600507868506519,
+          0.7518903582412205,
+          0.859465261646165
+        ],
+        "habits_by_bough": {
+          "p:0": "lateral",
+          "p:1": "lateral",
+          "p:2": "lateral",
+          "p:3": "twisting",
+          "p:4": "weighted",
+          "p:5": "seeking",
+          "p:6": "twisting"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.6980171058282947,
+        "crown_center_offset_over_H": 0.08712964510670566,
+        "length_weighted_crown_center_over_H": [
+          -0.08681157463738438,
+          0.007438115715577378,
+          0.5847156702858166
+        ],
+        "sector_reach_over_H": [
+          0.6288176697146988,
+          0.21709899151046821,
+          0.5576459436885285,
+          0.6980171058282947,
+          0.5282517065507742,
+          0.6003612447132479,
+          0.545588579010431,
+          0.38077344472929625
+        ],
+        "sector_reach_cv": 0.2749493303135506,
+        "largest_endpoint_angular_gap_deg": 33.71972868083522,
+        "endpoint_gap_range_deg": [
+          0.0016641018694154672,
+          33.71972868083522
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.7031403941823244,
+        "crown_center_offset_over_H": 0.10510355213000709,
+        "length_weighted_crown_center_over_H": [
+          -0.08156280496445831,
+          0.06628925641968579,
+          0.5821252006127299
+        ],
+        "sector_reach_over_H": [
+          0.6092328809775036,
+          0.5132073022319616,
+          0.6135114620006522,
+          0.7031403941823244,
+          0.5457139715028987,
+          0.6042007320025414,
+          0.5504461955519593,
+          0.5349540792523539
+        ],
+        "sector_reach_cv": 0.0977889998479392,
+        "largest_endpoint_angular_gap_deg": 32.76698914414139,
+        "endpoint_gap_range_deg": [
+          0.004358325364159467,
+          32.76698914414139
+        ]
+      },
+      "duration_seconds": 1.6243027569998958,
+      "glb_sha256": {
+        "bare": "93fcfb83c7a747de8553cc88f9e99d78dbce09b072da081784fbffd81b5e5549",
+        "scaffold": "2164a5f7846072be1a9a8ddbf0ebb52be7b3b84998cdd0625d71501a90a0d3ea"
+      },
+      "manifest_sha256": "d64df8bd036a69a0876d54f27505d5b4aa878bac7d9722373b3e1a6ea3dc9118",
+      "review_sha256": "8807c6953ac51b979c53c38d5ffac6a48cb0c17f27c0c2c5c187ea6533820b1d",
+      "captures": 16
+    },
+    "maduro-3102": {
+      "triangles_before": 3484,
+      "triangles_after": 3484,
+      "budget": {
+        "base_triangles": 2824,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 15,
+          "3": 33,
+          "4": 51
+        },
+        "primary_birth_heights_over_H": [
+          0.22747898955051515,
+          0.26994332413293953,
+          0.2983232218622754,
+          0.34586309626192,
+          0.38395070504085577,
+          0.4293843244331322,
+          0.46937467473159494
+        ],
+        "primary_birth_span_over_H": 0.24189568518107976,
+        "axis_height_over_H": 0.4993183066405455,
+        "width_over_H": 1.0325403245382283,
+        "depth_over_H": 0.9774065597780789,
+        "primary_sinuosity": [
+          1.0392387953980555,
+          1.0588276134970163,
+          1.0608816163753554,
+          1.0374251269633834,
+          1.0285095259584807,
+          1.0426006970011783,
+          1.0376833055559271
+        ],
+        "maximum_segment_turn_deg": 28.37497939860224,
+        "maximum_centerline_join_error_m": 2.665257962539064e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.3844470463026739,
+        "sinuosity_range": [
+          1.000020609759265,
+          1.1468839757398785
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 21,
+          "3": 29,
+          "4": 37
+        },
+        "primary_birth_heights_over_H": [
+          0.23106899249111482,
+          0.27420348604656236,
+          0.30303126652983314,
+          0.35132140049950533,
+          0.39001009612073356,
+          0.43616073481902434,
+          0.4767822004369755
+        ],
+        "primary_birth_span_over_H": 0.24571320794586068,
+        "axis_height_over_H": 0.5071983934682424,
+        "width_over_H": 1.077277639107151,
+        "depth_over_H": 1.011411409519777,
+        "primary_sinuosity": [
+          1.0117280196796508,
+          1.0355828666587883,
+          1.0540652672030855,
+          1.0132088185380212,
+          1.1016412412481549,
+          1.033641340353587,
+          1.0286690701689583
+        ],
+        "maximum_segment_turn_deg": 25.045313928021883,
+        "maximum_centerline_join_error_m": 1.8563065093075665e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.4592094326655711,
+        "sinuosity_range": [
+          1.0000068518013125,
+          1.1016412412481549
+        ]
+      },
+      "mean_primary_rise_before": 0.48914437511744635,
+      "mean_primary_rise_after": 0.4855790076772116,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 4.009160510077062,
+          "middle": 3.1575055304634585,
+          "periphery": 0.6238100530331062
+        },
+        "peripheral_length_fraction": 0.08007341856137494,
+        "occupied_cells_0_10H": {
+          "core": 49,
+          "middle": 50,
+          "periphery": 13
+        },
+        "inner_births_order_ge_2": 52,
+        "secondary_mean_birth_radius_over_H": 0.24688658193020763,
+        "primary_rise_over_path": [
+          0.19644734502544012,
+          0.22619278632837006,
+          0.26095397449017477,
+          0.5777602813453276,
+          0.5622322066009924,
+          0.7570269381623554,
+          0.8433970938694638
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 2.4903427942417364,
+          "middle": 4.6170556565862055,
+          "periphery": 0.6817627180434718
+        },
+        "peripheral_length_fraction": 0.08752710378725591,
+        "occupied_cells_0_10H": {
+          "core": 39,
+          "middle": 74,
+          "periphery": 15
+        },
+        "inner_births_order_ge_2": 27,
+        "secondary_mean_birth_radius_over_H": 0.2733346231016086,
+        "primary_rise_over_path": [
+          0.19116700845632711,
+          0.22231735781094233,
+          0.26344820328088375,
+          0.5552389485431395,
+          0.673252121244211,
+          0.6179897123230109,
+          0.8756397020819665
+        ],
+        "habits_by_bough": {
+          "p:0": "lateral",
+          "p:1": "seeking",
+          "p:2": "lateral",
+          "p:3": "lateral",
+          "p:4": "twisting",
+          "p:5": "weighted",
+          "p:6": "seeking"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.5782543460611765,
+        "crown_center_offset_over_H": 0.030922840256568492,
+        "length_weighted_crown_center_over_H": [
+          0.028733764782188875,
+          0.011427721162816986,
+          0.5504992566245451
+        ],
+        "sector_reach_over_H": [
+          0.5623504792629527,
+          0.41690846878822696,
+          0.471993661607734,
+          0.5454970454382494,
+          0.5208471214571594,
+          0.5690980040808832,
+          0.39785441267619337,
+          0.5782543460611765
+        ],
+        "sector_reach_cv": 0.13009312153039324,
+        "largest_endpoint_angular_gap_deg": 50.64701697545229,
+        "endpoint_gap_range_deg": [
+          0.0011551086435110174,
+          50.64701697545229
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.5905387958041226,
+        "crown_center_offset_over_H": 0.03224276409673276,
+        "length_weighted_crown_center_over_H": [
+          -0.0033841833460048778,
+          0.03206467120801619,
+          0.5586928169053412
+        ],
+        "sector_reach_over_H": [
+          0.5709144903359219,
+          0.5905387958041226,
+          0.45069771510375073,
+          0.4215890347391078,
+          0.5502342543953317,
+          0.5564226481334776,
+          0.5328812189612339,
+          0.5762496045441013
+        ],
+        "sector_reach_cv": 0.10860338480471288,
+        "largest_endpoint_angular_gap_deg": 64.05912716362047,
+        "endpoint_gap_range_deg": [
+          0.00019609953580754675,
+          64.05912716362047
+        ]
+      },
+      "duration_seconds": 1.4825353529995482,
+      "glb_sha256": {
+        "bare": "ddad6b861a9a5f54a14b9f9492dba7a68e58efc461d397ad9637f88371ad076c",
+        "scaffold": "3948d24e81f310c68685218dfeb370de375023e2dcbe506db281e022473b7f48"
+      },
+      "manifest_sha256": "484de9bf6ce20913da8dd877cd5b3627f4a2c49607c47df4895c39bfe02683e5",
+      "review_sha256": "67f3d81eea9e1d1d88143aacd333800efc24828d01ae77b6ab2ac848b990b62c",
+      "captures": 16
+    },
+    "maduro-3103": {
+      "triangles_before": 4122,
+      "triangles_after": 4122,
+      "budget": {
+        "base_triangles": 3462,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 19,
+          "3": 38,
+          "4": 63
+        },
+        "primary_birth_heights_over_H": [
+          0.22807212091214532,
+          0.2602037370550651,
+          0.2939146523336349,
+          0.33172054269543444,
+          0.37095518456612964,
+          0.4115992811582199,
+          0.4344569050159158,
+          0.4709344531286109
+        ],
+        "primary_birth_span_over_H": 0.24286233221646558,
+        "axis_height_over_H": 0.50102758823768,
+        "width_over_H": 1.0318344216912232,
+        "depth_over_H": 1.0537437082475474,
+        "primary_sinuosity": [
+          1.0606172445795492,
+          1.0567967463534431,
+          1.0444606330407011,
+          1.0457525684056472,
+          1.0519264707387082,
+          1.0501204107725568,
+          1.0228128074959841,
+          1.0361985506594942
+        ],
+        "maximum_segment_turn_deg": 27.013441143363387,
+        "maximum_centerline_join_error_m": 2.0350724194510405e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.3565724509749026,
+        "sinuosity_range": [
+          1.0000078688660252,
+          1.0904073590733105
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 25,
+          "3": 34,
+          "4": 49
+        },
+        "primary_birth_heights_over_H": [
+          0.2440979570990436,
+          0.27848735036381117,
+          0.314567014631973,
+          0.3550293936668069,
+          0.397020917619173,
+          0.44052093378330176,
+          0.46498468351951433,
+          0.5040253823067232
+        ],
+        "primary_birth_span_over_H": 0.2599274252076796,
+        "axis_height_over_H": 0.5362330575519535,
+        "width_over_H": 1.1123249838682632,
+        "depth_over_H": 1.0811187961576945,
+        "primary_sinuosity": [
+          1.055190032945516,
+          1.0460906200687008,
+          1.0305484843188333,
+          1.0456325225694367,
+          1.0711113690670067,
+          1.0186052160212673,
+          1.017222452429002,
+          1.0518973281543817
+        ],
+        "maximum_segment_turn_deg": 26.155074063901157,
+        "maximum_centerline_join_error_m": 1.9860273225978185e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.42967606514328294,
+        "sinuosity_range": [
+          1.000011108012446,
+          1.0711113690670067
+        ]
+      },
+      "mean_primary_rise_before": 0.5023638514853562,
+      "mean_primary_rise_after": 0.5339755381538157,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 5.685009766091693,
+          "middle": 4.229665744933439,
+          "periphery": 0.8330509784280354
+        },
+        "peripheral_length_fraction": 0.07750950670781538,
+        "occupied_cells_0_10H": {
+          "core": 70,
+          "middle": 71,
+          "periphery": 18
+        },
+        "inner_births_order_ge_2": 60,
+        "secondary_mean_birth_radius_over_H": 0.23613172448384007,
+        "primary_rise_over_path": [
+          0.1443183404689915,
+          0.23020521047068349,
+          0.15383365942793875,
+          0.6126508540677448,
+          0.4373024677991187,
+          0.8089181454802554,
+          0.8097642177392469,
+          0.8219179164288706
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform",
+          "p:7": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 3.342825009177101,
+          "middle": 6.216237546678979,
+          "periphery": 1.342346698022818
+        },
+        "peripheral_length_fraction": 0.12313515314959755,
+        "occupied_cells_0_10H": {
+          "core": 54,
+          "middle": 90,
+          "periphery": 27
+        },
+        "inner_births_order_ge_2": 28,
+        "secondary_mean_birth_radius_over_H": 0.2658525017087393,
+        "primary_rise_over_path": [
+          0.16284140609291306,
+          0.2904267170619187,
+          0.14410963960908177,
+          0.5607170249612397,
+          0.6512899824090149,
+          0.8378204263629763,
+          0.7700637215254761,
+          0.8545353872079056
+        ],
+        "habits_by_bough": {
+          "p:0": "twisting",
+          "p:1": "seeking",
+          "p:2": "weighted",
+          "p:3": "weighted",
+          "p:4": "twisting",
+          "p:5": "lateral",
+          "p:6": "lateral",
+          "p:7": "seeking"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.5989518331098346,
+        "crown_center_offset_over_H": 0.06856295972755065,
+        "length_weighted_crown_center_over_H": [
+          -0.0679810739916516,
+          0.008913642664103298,
+          0.5896276489517468
+        ],
+        "sector_reach_over_H": [
+          0.41777999723951686,
+          0.5152976119734501,
+          0.5989518331098346,
+          0.5886286247908818,
+          0.5163670742667827,
+          0.5222641175585073,
+          0.5261494450435674,
+          0.48528901656276163
+        ],
+        "sector_reach_cv": 0.10208736742063758,
+        "largest_endpoint_angular_gap_deg": 41.90563294548429,
+        "endpoint_gap_range_deg": [
+          0.002059717108454828,
+          41.90563294548429
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.6639392278559054,
+        "crown_center_offset_over_H": 0.09600070319289486,
+        "length_weighted_crown_center_over_H": [
+          -0.0870549269329603,
+          0.0404669582527182,
+          0.6246324668424307
+        ],
+        "sector_reach_over_H": [
+          0.4830657503288836,
+          0.5807773497053493,
+          0.6266150184798133,
+          0.620976463420397,
+          0.6639392278559054,
+          0.5379933098252526,
+          0.5360669722415393,
+          0.5173108640558639
+        ],
+        "sector_reach_cv": 0.1022373208590747,
+        "largest_endpoint_angular_gap_deg": 33.335216944204376,
+        "endpoint_gap_range_deg": [
+          0.003725007707981548,
+          33.335216944204376
+        ]
+      },
+      "duration_seconds": 1.5910859159994288,
+      "glb_sha256": {
+        "bare": "df43aca287d8dd1a704d013ca8c628020c17e060e782a687759590d78f4910af",
+        "scaffold": "f1034170ecc8e2f9906d31be4c57f9d475bf8178efdc57b37b1161c4b8527725"
+      },
+      "manifest_sha256": "1e6199a7e2e0578b756f4483276e3120c35075eb101d286d61720138aa6bcb2f",
+      "review_sha256": "66fdb7261c0f1574f154d452261388a45eeb59f45a9d92b598f4bd6cae7f8311",
+      "captures": 16
+    },
+    "maduro-3104": {
+      "triangles_before": 4089,
+      "triangles_after": 4089,
+      "budget": {
+        "base_triangles": 3429,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 18,
+          "3": 40,
+          "4": 67
+        },
+        "primary_birth_heights_over_H": [
+          0.24025269451112571,
+          0.27775585546645054,
+          0.3139355870521953,
+          0.35718308265218063,
+          0.41508950472863826,
+          0.4602871115894784,
+          0.49562127083510865
+        ],
+        "primary_birth_span_over_H": 0.25536857632398297,
+        "axis_height_over_H": 0.5272229297726563,
+        "width_over_H": 1.1819078407187098,
+        "depth_over_H": 0.9816790269764534,
+        "primary_sinuosity": [
+          1.0540040859888227,
+          1.0540249444847645,
+          1.0649438503966024,
+          1.0697765324976631,
+          1.091865125989044,
+          1.016346304960382,
+          1.0228257659036706
+        ],
+        "maximum_segment_turn_deg": 29.515392368351076,
+        "maximum_centerline_join_error_m": 1.9860273225978185e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.40952681464114893,
+        "sinuosity_range": [
+          1.0000455098670586,
+          1.1003347063756432
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 24,
+          "3": 36,
+          "4": 53
+        },
+        "primary_birth_heights_over_H": [
+          0.24654486251699856,
+          0.28503022344291007,
+          0.32215749465982574,
+          0.3665376331577485,
+          0.42596061236196464,
+          0.47234193512830375,
+          0.5086014886417161
+        ],
+        "primary_birth_span_over_H": 0.26205662612471753,
+        "axis_height_over_H": 0.5410307884417479,
+        "width_over_H": 1.1895671951190072,
+        "depth_over_H": 0.9608295913351123,
+        "primary_sinuosity": [
+          1.0451333391554196,
+          1.0395215786134775,
+          1.061749290669396,
+          1.0546316910972593,
+          1.060374830093555,
+          1.014298643270667,
+          1.0240851435700151
+        ],
+        "maximum_segment_turn_deg": 32.06393607340896,
+        "maximum_centerline_join_error_m": 1.9929972195927004e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.4853337673941896,
+        "sinuosity_range": [
+          1.0001003929541759,
+          1.0843037896407517
+        ]
+      },
+      "mean_primary_rise_before": 0.43552049133398596,
+      "mean_primary_rise_after": 0.4476711655108477,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 3.7750971462124996,
+          "middle": 5.37479317195249,
+          "periphery": 1.4975133184053409
+        },
+        "peripheral_length_fraction": 0.14064586724803735,
+        "occupied_cells_0_10H": {
+          "core": 48,
+          "middle": 81,
+          "periphery": 25
+        },
+        "inner_births_order_ge_2": 42,
+        "secondary_mean_birth_radius_over_H": 0.26533808014670046,
+        "primary_rise_over_path": [
+          0.2050682154293207,
+          0.13417698548871454,
+          0.2164203807566709,
+          0.4087447284424291,
+          0.5619597197842546,
+          0.7700892891319191,
+          0.7521841203045929
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 1.876995125968369,
+          "middle": 6.297735396344191,
+          "periphery": 2.0340215129292556
+        },
+        "peripheral_length_fraction": 0.199242914893767,
+        "occupied_cells_0_10H": {
+          "core": 35,
+          "middle": 90,
+          "periphery": 39
+        },
+        "inner_births_order_ge_2": 18,
+        "secondary_mean_birth_radius_over_H": 0.30424086067042927,
+        "primary_rise_over_path": [
+          0.18440242608603208,
+          0.10752083938303555,
+          0.3548061672024651,
+          0.41841710673711097,
+          0.5646352628208111,
+          0.7401551325460622,
+          0.7637612238004166
+        ],
+        "habits_by_bough": {
+          "p:0": "seeking",
+          "p:1": "seeking",
+          "p:2": "twisting",
+          "p:3": "lateral",
+          "p:4": "weighted",
+          "p:5": "lateral",
+          "p:6": "twisting"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.6351323634280616,
+        "crown_center_offset_over_H": 0.05614821189144692,
+        "length_weighted_crown_center_over_H": [
+          -0.03743941372984929,
+          0.04184390036997022,
+          0.5654949279120208
+        ],
+        "sector_reach_over_H": [
+          0.6012250965524965,
+          0.48873605674858256,
+          0.6299901092935265,
+          0.5697778872445735,
+          0.6351323634280616,
+          0.47914893922815427,
+          0.5712982887397939,
+          0.48633705794367904
+        ],
+        "sector_reach_cv": 0.10882010768053554,
+        "largest_endpoint_angular_gap_deg": 43.66778921873567,
+        "endpoint_gap_range_deg": [
+          0.0005789936425285602,
+          43.66778921873567
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.6531117698943593,
+        "crown_center_offset_over_H": 0.08475675322011003,
+        "length_weighted_crown_center_over_H": [
+          -0.015507468461353155,
+          0.08332602017578164,
+          0.5548245797554144
+        ],
+        "sector_reach_over_H": [
+          0.6019142671563632,
+          0.5300461749188635,
+          0.603672963000466,
+          0.6453393257761898,
+          0.6531117698943593,
+          0.5790837204050916,
+          0.5741958723852151,
+          0.533544949539949
+        ],
+        "sector_reach_cv": 0.07220644622421996,
+        "largest_endpoint_angular_gap_deg": 52.999384884396456,
+        "endpoint_gap_range_deg": [
+          0.0006925458076490591,
+          52.999384884396456
+        ]
+      },
+      "duration_seconds": 1.5710042500013515,
+      "glb_sha256": {
+        "bare": "93a0e1e10915a066e4c0fce35a50eccc6649010328e6fff508f15a83335d3826",
+        "scaffold": "0ae8591b7759c4579b3b3d3d1285a8f34637549805c159ab3761daa598064037"
+      },
+      "manifest_sha256": "64f16bfd0499b975bb941cb2110d9f05ec72e8edab9312d56822156681172725",
+      "review_sha256": "0ebbf65500b59d8da712b9f153058ec9397729f0f9c475e0ccf872beedd5dd4f",
+      "captures": 16
+    },
+    "centenario-3100": {
+      "triangles_before": 4281,
+      "triangles_after": 4281,
+      "budget": {
+        "base_triangles": 3621,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 19,
+          "3": 40,
+          "4": 70
+        },
+        "primary_birth_heights_over_H": [
+          0.1426327838172198,
+          0.16341304293619136,
+          0.1787605383661464,
+          0.20748483332425055,
+          0.22929840812443017,
+          0.2543966461902849,
+          0.28263405597545466,
+          0.31144945749113423
+        ],
+        "primary_birth_span_over_H": 0.16881667367391442,
+        "axis_height_over_H": 0.33134570480015196,
+        "width_over_H": 1.5837183262078312,
+        "depth_over_H": 1.3849471433918097,
+        "primary_sinuosity": [
+          1.252728620376361,
+          1.2607785000442768,
+          1.2365855936109293,
+          1.1418969029169486,
+          1.1623592336598134,
+          1.0878434918484072,
+          1.069657274502745,
+          1.0796935417835407
+        ],
+        "maximum_segment_turn_deg": 52.4001569049591,
+        "maximum_centerline_join_error_m": 2.5852944279136686e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.29105974996737966,
+        "sinuosity_range": [
+          1.000005106712606,
+          1.2607785000442768
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 25,
+          "3": 36,
+          "4": 56
+        },
+        "primary_birth_heights_over_H": [
+          0.15493927581499858,
+          0.17751247541872647,
+          0.1941841673246945,
+          0.2253868217215147,
+          0.24908249246441508,
+          0.2763462303378849,
+          0.30701999064682,
+          0.33832161236149616
+        ],
+        "primary_birth_span_over_H": 0.18338233654649758,
+        "axis_height_over_H": 0.35993452677706095,
+        "width_over_H": 1.6930247522943793,
+        "depth_over_H": 1.3928395406719327,
+        "primary_sinuosity": [
+          1.2175929902569502,
+          1.1911232333602022,
+          1.1479797353818435,
+          1.0785915477835963,
+          1.1627593344172853,
+          1.088984050313191,
+          1.0627988256906844,
+          1.0562611232143098
+        ],
+        "maximum_segment_turn_deg": 41.54807006405565,
+        "maximum_centerline_join_error_m": 2.6645352591003757e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.334375637516042,
+        "sinuosity_range": [
+          1.0000045359212206,
+          1.2175929902569502
+        ]
+      },
+      "mean_primary_rise_before": 0.3389080932501649,
+      "mean_primary_rise_after": 0.32021382749578053,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 2.0848666848616375,
+          "middle": 6.402300178889557,
+          "periphery": 6.9936410204580275
+        },
+        "peripheral_length_fraction": 0.4517620186729209,
+        "occupied_cells_0_10H": {
+          "core": 31,
+          "middle": 94,
+          "periphery": 97
+        },
+        "inner_births_order_ge_2": 17,
+        "secondary_mean_birth_radius_over_H": 0.40524213697153105,
+        "primary_rise_over_path": [
+          0.24558316141041397,
+          0.1844152252406635,
+          0.1949077236207101,
+          0.4488212799893294,
+          0.22018808357395983,
+          0.46467961441200595,
+          0.662566871403822,
+          0.29010278635041464
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform",
+          "p:7": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 0.26339016159327827,
+          "middle": 3.645472115093962,
+          "periphery": 10.06064875126235
+        },
+        "peripheral_length_fraction": 0.7201861776789067,
+        "occupied_cells_0_10H": {
+          "core": 7,
+          "middle": 56,
+          "periphery": 147
+        },
+        "inner_births_order_ge_2": 3,
+        "secondary_mean_birth_radius_over_H": 0.49335101840497503,
+        "primary_rise_over_path": [
+          0.2809638195782532,
+          0.25649666488585154,
+          0.12234025989177592,
+          0.3483057553838106,
+          0.17667686295089596,
+          0.3730823499493237,
+          0.7604539038727846,
+          0.24339100345354883
+        ],
+        "habits_by_bough": {
+          "p:0": "weighted",
+          "p:1": "seeking",
+          "p:2": "twisting",
+          "p:3": "weighted",
+          "p:4": "twisting",
+          "p:5": "twisting",
+          "p:6": "seeking",
+          "p:7": "twisting"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.8567246293837847,
+        "crown_center_offset_over_H": 0.07166778820624914,
+        "length_weighted_crown_center_over_H": [
+          0.06707193540363818,
+          0.025251284077962677,
+          0.5203867208032836
+        ],
+        "sector_reach_over_H": [
+          0.6972663941257234,
+          0.6887763122400351,
+          0.7919513629315099,
+          0.8014128641026425,
+          0.12056339056515247,
+          0.7019142971730569,
+          0.6192771237970857,
+          0.8567246293837847
+        ],
+        "sector_reach_cv": 0.3271776892101844,
+        "largest_endpoint_angular_gap_deg": 50.20507957146437,
+        "endpoint_gap_range_deg": [
+          0.03115937976405657,
+          50.20507957146437
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.934416310097662,
+        "crown_center_offset_over_H": 0.09807800722415776,
+        "length_weighted_crown_center_over_H": [
+          0.034049902731352756,
+          0.09197771265392153,
+          0.5089568878432166
+        ],
+        "sector_reach_over_H": [
+          0.769998740819041,
+          0.7946944628670104,
+          0.8777389899842484,
+          0.8173373003576352,
+          0.7637304944621709,
+          0.4489703537659994,
+          0.6776966123360082,
+          0.934416310097662
+        ],
+        "sector_reach_cv": 0.1814703617135648,
+        "largest_endpoint_angular_gap_deg": 38.29444237862727,
+        "endpoint_gap_range_deg": [
+          0.0015488630447228358,
+          38.29444237862727
+        ]
+      },
+      "duration_seconds": 1.493114629000047,
+      "glb_sha256": {
+        "bare": "bf25a40995fe6358edfd7d51172df08d8185674bf10e1bc38580a6bf36f6e527",
+        "scaffold": "6c9621f53033e1a00c868da7f61eba3860a7fd0c2289220c653e47342a9dd5f2"
+      },
+      "manifest_sha256": "964c12b39a94ef65db144d912a3e3d569f943db3c5f7b7f0f1e51e39c5529ca6",
+      "review_sha256": "4f72fed53dd05ed7f0ef2115a0918a616bf4205c0a88852d80209fd9645f6327",
+      "captures": 16
+    },
+    "centenario-3101": {
+      "triangles_before": 4867,
+      "triangles_after": 4867,
+      "budget": {
+        "base_triangles": 4207,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 21,
+          "3": 48,
+          "4": 86
+        },
+        "primary_birth_heights_over_H": [
+          0.13878099336290106,
+          0.16897962396287372,
+          0.19412839718311117,
+          0.21583905820807556,
+          0.24195115144111065,
+          0.25805537583764143,
+          0.2881013610765547,
+          0.3028608099904677
+        ],
+        "primary_birth_span_over_H": 0.16407981662756665,
+        "axis_height_over_H": 0.3221829900218377,
+        "width_over_H": 1.5163346583138737,
+        "depth_over_H": 1.2888215185023075,
+        "primary_sinuosity": [
+          1.2811675470426704,
+          1.2111354794240026,
+          1.2867539397808125,
+          1.2471324402808341,
+          1.1111060420123096,
+          1.09337213082736,
+          1.0571179815480078,
+          1.0530187021466992
+        ],
+        "maximum_segment_turn_deg": 47.70500677676409,
+        "maximum_centerline_join_error_m": 2.5219419200973697e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.3409694373326575,
+        "sinuosity_range": [
+          1.0000085411770483,
+          1.2867539397808125
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 27,
+          "3": 44,
+          "4": 72
+        },
+        "primary_birth_heights_over_H": [
+          0.14268436710120913,
+          0.17373236863275138,
+          0.19958847978565408,
+          0.22190977791612287,
+          0.24875630355599024,
+          0.26531347763289154,
+          0.2962045404784803,
+          0.31137911572840266
+        ],
+        "primary_birth_span_over_H": 0.16869474862719352,
+        "axis_height_over_H": 0.3312447541129211,
+        "width_over_H": 1.541247290624804,
+        "depth_over_H": 1.3138237029752142,
+        "primary_sinuosity": [
+          1.2475351091256317,
+          1.219865578160344,
+          1.191217794564111,
+          1.2207514793808785,
+          1.0758926080286475,
+          1.0479081103656434,
+          1.0305701226146888,
+          1.0453422740599014
+        ],
+        "maximum_segment_turn_deg": 42.98719276470792,
+        "maximum_centerline_join_error_m": 2.6645352591003757e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.4211906301739332,
+        "sinuosity_range": [
+          1.000018721135172,
+          1.2475351091256317
+        ]
+      },
+      "mean_primary_rise_before": 0.38466638291500177,
+      "mean_primary_rise_after": 0.39154482766770404,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 3.8828817781014164,
+          "middle": 7.877807267155102,
+          "periphery": 6.251838759418903
+        },
+        "peripheral_length_fraction": 0.34708280965407556,
+        "occupied_cells_0_10H": {
+          "core": 47,
+          "middle": 104,
+          "periphery": 97
+        },
+        "inner_births_order_ge_2": 29,
+        "secondary_mean_birth_radius_over_H": 0.36999986005325186,
+        "primary_rise_over_path": [
+          0.24761630987901803,
+          0.22731767357597732,
+          0.11727041396386205,
+          0.33469911645930633,
+          0.297542036535823,
+          0.5472319148093149,
+          0.6868912259940428,
+          0.6187623721026695
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform",
+          "p:7": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 0.8486311555510103,
+          "middle": 4.8910832669725535,
+          "periphery": 9.49549590454057
+        },
+        "peripheral_length_fraction": 0.6232599157277521,
+        "occupied_cells_0_10H": {
+          "core": 16,
+          "middle": 81,
+          "periphery": 131
+        },
+        "inner_births_order_ge_2": 7,
+        "secondary_mean_birth_radius_over_H": 0.45802103612388406,
+        "primary_rise_over_path": [
+          0.31656685460866807,
+          0.24437753657627903,
+          0.1043734707985981,
+          0.2666681247011783,
+          0.22701739530385148,
+          0.6057910292906813,
+          0.6434552027428943,
+          0.724109007319482
+        ],
+        "habits_by_bough": {
+          "p:0": "lateral",
+          "p:1": "lateral",
+          "p:2": "lateral",
+          "p:3": "twisting",
+          "p:4": "weighted",
+          "p:5": "seeking",
+          "p:6": "twisting",
+          "p:7": "seeking"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.8771375279316926,
+        "crown_center_offset_over_H": 0.03816321256051207,
+        "length_weighted_crown_center_over_H": [
+          -0.0002045076802395683,
+          0.03816266460229879,
+          0.5373521287943969
+        ],
+        "sector_reach_over_H": [
+          0.6796270664780927,
+          0.6715803814534215,
+          0.49517885661083844,
+          0.7835985660441044,
+          0.8771375279316926,
+          0.6556601690805893,
+          0.7530554387550431,
+          0.6778161194017239
+        ],
+        "sector_reach_cv": 0.14898116921751275,
+        "largest_endpoint_angular_gap_deg": 34.62421166778694,
+        "endpoint_gap_range_deg": [
+          0.0002531012629150892,
+          34.62421166778694
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.9135622695862777,
+        "crown_center_offset_over_H": 0.19544936181050276,
+        "length_weighted_crown_center_over_H": [
+          -0.1618683875533214,
+          0.10954030373803318,
+          0.5413465093556321
+        ],
+        "sector_reach_over_H": [
+          0.6688732550347303,
+          0.7101440942627996,
+          0.8134113041563644,
+          0.7983822389937199,
+          0.9135622695862777,
+          0.7158585635356544,
+          0.6626287686355552,
+          0.5845545428019072
+        ],
+        "sector_reach_cv": 0.13224418470502647,
+        "largest_endpoint_angular_gap_deg": 50.015547584748916,
+        "endpoint_gap_range_deg": [
+          9.22271554900629e-05,
+          50.015547584748916
+        ]
+      },
+      "duration_seconds": 1.6930268960004469,
+      "glb_sha256": {
+        "bare": "c8ec83af32f510bd0560e5d5a65831ba6a89837f543d9c69841864d6d89c8073",
+        "scaffold": "c1f13d2cb1dbeb0c822a7b0372d5d728818606a4bc642c0be3ae5747b5d95156"
+      },
+      "manifest_sha256": "23b9d1952853a21acb3d173feebe68c46d6cef1b5166c49605e96f7a0d4c7a5c",
+      "review_sha256": "576ef5453be29233c7c0335b9751b7236f0bbe37d631aadffaffb423a0b69f70",
+      "captures": 16
+    },
+    "centenario-3102": {
+      "triangles_before": 4022,
+      "triangles_after": 4022,
+      "budget": {
+        "base_triangles": 3362,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 18,
+          "3": 37,
+          "4": 62
+        },
+        "primary_birth_heights_over_H": [
+          0.15065784396877677,
+          0.1775772302264711,
+          0.19556695008236172,
+          0.2257005134283306,
+          0.24983993003677088,
+          0.27863184779305467,
+          0.30397000794385853,
+          0.32863700153456044
+        ],
+        "primary_birth_span_over_H": 0.17797915756578367,
+        "axis_height_over_H": 0.3495833877721711,
+        "width_over_H": 1.447727592715259,
+        "depth_over_H": 1.4746114808660231,
+        "primary_sinuosity": [
+          1.1471903587239134,
+          1.2877330468806447,
+          1.2466615720455765,
+          1.1003166476806099,
+          1.0701482430257492,
+          1.1524474976761643,
+          1.1073644960242344,
+          1.155233991426812
+        ],
+        "maximum_segment_turn_deg": 44.422125468831005,
+        "maximum_centerline_join_error_m": 2.6645352591003757e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.27471805630859536,
+        "sinuosity_range": [
+          1.0000353843804417,
+          1.2877330468806447
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 24,
+          "3": 33,
+          "4": 48
+        },
+        "primary_birth_heights_over_H": [
+          0.15169835231005518,
+          0.17880365551176894,
+          0.1969176201668298,
+          0.227259298956296,
+          0.25156543283396715,
+          0.28055620004805293,
+          0.30606935651033346,
+          0.3309067110454726
+        ],
+        "primary_birth_span_over_H": 0.17920835873541738,
+        "axis_height_over_H": 0.3519977621012283,
+        "width_over_H": 1.3521103688081975,
+        "depth_over_H": 1.6417736713983682,
+        "primary_sinuosity": [
+          1.0739174156012348,
+          1.1595755277915727,
+          1.226910086712118,
+          1.0416637819194114,
+          1.1379500453313023,
+          1.1730072957577167,
+          1.0794078906768503,
+          1.0302801482767543
+        ],
+        "maximum_segment_turn_deg": 42.359327128191104,
+        "maximum_centerline_join_error_m": 2.6645352591003757e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.3205463977234231,
+        "sinuosity_range": [
+          1.0000095403810378,
+          1.226910086712118
+        ]
+      },
+      "mean_primary_rise_before": 0.3873421182537145,
+      "mean_primary_rise_after": 0.340625186008088,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 1.703127259294695,
+          "middle": 5.438312662723794,
+          "periphery": 5.897192476977487
+        },
+        "peripheral_length_fraction": 0.45228612146712516,
+        "occupied_cells_0_10H": {
+          "core": 23,
+          "middle": 74,
+          "periphery": 88
+        },
+        "inner_births_order_ge_2": 16,
+        "secondary_mean_birth_radius_over_H": 0.39541253389427067,
+        "primary_rise_over_path": [
+          0.2587889241114409,
+          0.283613066524374,
+          0.11793623505163284,
+          0.339092102099415,
+          0.3990602551637311,
+          0.5238195463343214,
+          0.6219438410750625,
+          0.5544829756697384
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform",
+          "p:7": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 0.8011461592957593,
+          "middle": 4.96450558139222,
+          "periphery": 6.5483036493440565
+        },
+        "peripheral_length_fraction": 0.5317790622048876,
+        "occupied_cells_0_10H": {
+          "core": 11,
+          "middle": 74,
+          "periphery": 101
+        },
+        "inner_births_order_ge_2": 7,
+        "secondary_mean_birth_radius_over_H": 0.4620298502152736,
+        "primary_rise_over_path": [
+          0.2996648966446334,
+          0.2828937334920069,
+          0.11454487628621886,
+          0.34252517419702083,
+          0.2930314343275181,
+          0.3022104971761484,
+          0.649611156613167,
+          0.44051971932799044
+        ],
+        "habits_by_bough": {
+          "p:0": "lateral",
+          "p:1": "seeking",
+          "p:2": "lateral",
+          "p:3": "lateral",
+          "p:4": "twisting",
+          "p:5": "weighted",
+          "p:6": "seeking",
+          "p:7": "lateral"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.8544324995780915,
+        "crown_center_offset_over_H": 0.07005689452951881,
+        "length_weighted_crown_center_over_H": [
+          0.06335735016849654,
+          0.029896733111606587,
+          0.4954257531590182
+        ],
+        "sector_reach_over_H": [
+          0.7202166859367612,
+          0.6689410852661227,
+          0.7761138720501821,
+          0.5241504465241272,
+          0.6723393993877629,
+          0.7985481569569206,
+          0.8105874296086171,
+          0.8544324995780915
+        ],
+        "sector_reach_cv": 0.13586335551213138,
+        "largest_endpoint_angular_gap_deg": 37.91014951082496,
+        "endpoint_gap_range_deg": [
+          0.0028014073454988154,
+          37.91014951082496
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.8740959363085613,
+        "crown_center_offset_over_H": 0.0683684592502886,
+        "length_weighted_crown_center_over_H": [
+          0.04991035276635957,
+          0.0467247568960601,
+          0.5050790596953191
+        ],
+        "sector_reach_over_H": [
+          0.8323057430775637,
+          0.8728120029811123,
+          0.8117048119269139,
+          0.5269714485636587,
+          0.665579811173976,
+          0.6937938152760595,
+          0.8740959363085613,
+          0.6878703287894781
+        ],
+        "sector_reach_cv": 0.15349902422407155,
+        "largest_endpoint_angular_gap_deg": 28.113493796032408,
+        "endpoint_gap_range_deg": [
+          0.005949106593032245,
+          28.113493796032408
+        ]
+      },
+      "duration_seconds": 1.4442213060010545,
+      "glb_sha256": {
+        "bare": "629d9fbfbcd01a49bf5d8d8b84b1cbe4cae2bf1575b553e56da08a3437348ec6",
+        "scaffold": "d2098be729682d474e7c9b919678d81c196e95c87e68ea52605115719c178c7f"
+      },
+      "manifest_sha256": "187fbf2d6dcfdb30fb8226fc1f703267cf7348c83e149c230c8511042908f637",
+      "review_sha256": "e0152d13f631c36252b7552bd11a2c27936a82af7602d09846f3bf802f60fb04",
+      "captures": 16
+    },
+    "centenario-3103": {
+      "triangles_before": 4156,
+      "triangles_after": 4156,
+      "budget": {
+        "base_triangles": 3496,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 19,
+          "3": 39,
+          "4": 63
+        },
+        "primary_birth_heights_over_H": [
+          0.15215872106668088,
+          0.17600204117573262,
+          0.20102789927075362,
+          0.22910234316669612,
+          0.25824857908306575,
+          0.288452861692268,
+          0.30544375171409466,
+          0.3325640182371202
+        ],
+        "primary_birth_span_over_H": 0.18040529717043932,
+        "axis_height_over_H": 0.35385418159950893,
+        "width_over_H": 1.619878006745698,
+        "depth_over_H": 1.4597886692603734,
+        "primary_sinuosity": [
+          1.2117934081926383,
+          1.1890896604816643,
+          1.2123387157741061,
+          1.096515331733238,
+          1.095399502944543,
+          1.169666559252956,
+          1.1203630865342913,
+          1.1368967904447638
+        ],
+        "maximum_segment_turn_deg": 47.523746697427434,
+        "maximum_centerline_join_error_m": 3.66205343881779e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.22931821653141804,
+        "sinuosity_range": [
+          1.0000171482566758,
+          1.2123387157741061
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 25,
+          "3": 35,
+          "4": 49
+        },
+        "primary_birth_heights_over_H": [
+          0.1624416908119427,
+          0.1878963555589435,
+          0.21461347485697854,
+          0.24458520505483808,
+          0.2757011595651551,
+          0.3079466641435644,
+          0.3260858078232472,
+          0.3550388768184852
+        ],
+        "primary_birth_span_over_H": 0.19259718600654255,
+        "axis_height_over_H": 0.37776784108687783,
+        "width_over_H": 1.7044897839365247,
+        "depth_over_H": 1.4371200268332582,
+        "primary_sinuosity": [
+          1.2549553114190357,
+          1.1789869292459245,
+          1.1509261279286436,
+          1.1053912465336317,
+          1.1096298778107576,
+          1.0842089218404365,
+          1.1121373099790506,
+          1.1593567508007474
+        ],
+        "maximum_segment_turn_deg": 40.765586453472295,
+        "maximum_centerline_join_error_m": 3.076740298213702e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.36114792774757276,
+        "sinuosity_range": [
+          1.0000022056763787,
+          1.2549553114190357
+        ]
+      },
+      "mean_primary_rise_before": 0.2894682787326901,
+      "mean_primary_rise_after": 0.3422425349248112,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 1.4520697568177023,
+          "middle": 6.652474308358575,
+          "periphery": 7.475174519521131
+        },
+        "peripheral_length_fraction": 0.4798016394765525,
+        "occupied_cells_0_10H": {
+          "core": 23,
+          "middle": 91,
+          "periphery": 106
+        },
+        "inner_births_order_ge_2": 10,
+        "secondary_mean_birth_radius_over_H": 0.38976327303891256,
+        "primary_rise_over_path": [
+          -0.10332855722658157,
+          0.21525271430742562,
+          0.18134285566188738,
+          0.33577877213769924,
+          0.22488967962488082,
+          0.6504686056070843,
+          0.4705026388869166,
+          0.3408395208622085
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform",
+          "p:7": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 1.301482176239707,
+          "middle": 3.8276472090592004,
+          "periphery": 9.843449966252829
+        },
+        "peripheral_length_fraction": 0.6574318115223525,
+        "occupied_cells_0_10H": {
+          "core": 23,
+          "middle": 60,
+          "periphery": 135
+        },
+        "inner_births_order_ge_2": 9,
+        "secondary_mean_birth_radius_over_H": 0.449547529070603,
+        "primary_rise_over_path": [
+          0.309061596520519,
+          0.27847977034454574,
+          0.18866432129271055,
+          0.4666515604356769,
+          0.39922211674077235,
+          0.607363176956726,
+          0.350099918778168,
+          0.13839781832937098
+        ],
+        "habits_by_bough": {
+          "p:0": "twisting",
+          "p:1": "seeking",
+          "p:2": "weighted",
+          "p:3": "weighted",
+          "p:4": "twisting",
+          "p:5": "lateral",
+          "p:6": "lateral",
+          "p:7": "seeking"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.8779746035551759,
+        "crown_center_offset_over_H": 0.09856005041102282,
+        "length_weighted_crown_center_over_H": [
+          -0.09742823672427679,
+          0.01489369752014738,
+          0.5482551746246493
+        ],
+        "sector_reach_over_H": [
+          0.8335499713319147,
+          0.5772439586498788,
+          0.8332570512032759,
+          0.7440991443148139,
+          0.8779746035551759,
+          0.6977701079887785,
+          0.6675421729271939,
+          0.6156709037119519
+        ],
+        "sector_reach_cv": 0.14088025014921884,
+        "largest_endpoint_angular_gap_deg": 32.503614745008846,
+        "endpoint_gap_range_deg": [
+          0.008337905799671296,
+          32.503614745008846
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.9603380682735793,
+        "crown_center_offset_over_H": 0.1070264518907922,
+        "length_weighted_crown_center_over_H": [
+          -0.08845832043426752,
+          0.060247713236939594,
+          0.5331746975609049
+        ],
+        "sector_reach_over_H": [
+          0.7477188058598622,
+          0.739822873220332,
+          0.8267367457267681,
+          0.8928711143189138,
+          0.9603380682735793,
+          0.6836956098088599,
+          0.6694756230516233,
+          0.8058753646083425
+        ],
+        "sector_reach_cv": 0.11939964932979255,
+        "largest_endpoint_angular_gap_deg": 42.179526686984985,
+        "endpoint_gap_range_deg": [
+          0.004118760661913764,
+          42.179526686984985
+        ]
+      },
+      "duration_seconds": 1.47542213899942,
+      "glb_sha256": {
+        "bare": "98658cd017a51fb009d326daef5d8dbc3987dd0e10da5843c40d9424bf46634f",
+        "scaffold": "f8ddca5c0d57317215cfad2e9df2d45063aebca25664ce8d9d316dc95b6f905c"
+      },
+      "manifest_sha256": "7570df3f5815c2bc9633ec05ebb2fceb9b93371bc1a18fce37be0bbde0d748f8",
+      "review_sha256": "2c5b8a13094a9ede0faa18861de75bf6d9991d6cbca9f216cf8f5107211a2dea",
+      "captures": 16
+    },
+    "centenario-3104": {
+      "triangles_before": 4389,
+      "triangles_after": 4389,
+      "budget": {
+        "base_triangles": 3729,
+        "extra_triangles": 660,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 20,
+          "3": 42,
+          "4": 69
+        },
+        "primary_birth_heights_over_H": [
+          0.1444652218503301,
+          0.16487507424896913,
+          0.1845609831319931,
+          0.20808984974727224,
+          0.23958732804362842,
+          0.264165119879404,
+          0.2833757900691838,
+          0.3149352759755798
+        ],
+        "primary_birth_span_over_H": 0.1704700541252497,
+        "axis_height_over_H": 0.33498091893621346,
+        "width_over_H": 1.4544608487046171,
+        "depth_over_H": 1.2906865687081839,
+        "primary_sinuosity": [
+          1.1779099897885696,
+          1.2290534419045964,
+          1.2270829973964221,
+          1.2507380742573546,
+          1.2103744305928983,
+          1.1050854173145863,
+          1.0873876227994672,
+          1.0659329644637383
+        ],
+        "maximum_segment_turn_deg": 41.550730860780796,
+        "maximum_centerline_join_error_m": 2.5510982866352577e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.3158599232696938,
+        "sinuosity_range": [
+          1.0000981847588806,
+          1.2507380742573546
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 26,
+          "3": 38,
+          "4": 55
+        },
+        "primary_birth_heights_over_H": [
+          0.15328585863197866,
+          0.17494187874122397,
+          0.19582975339669997,
+          0.2207952258859676,
+          0.2542158508887183,
+          0.2802942929979759,
+          0.30067791223324747,
+          0.33416433085487013
+        ],
+        "primary_birth_span_over_H": 0.18087847222289147,
+        "axis_height_over_H": 0.35543390393062546,
+        "width_over_H": 1.6362638852224805,
+        "depth_over_H": 1.3416479415375362,
+        "primary_sinuosity": [
+          1.1366285671292242,
+          1.2837095658901292,
+          1.2158872460817272,
+          1.0994913413354694,
+          1.1583527480010405,
+          1.1005343454974454,
+          1.0982586110368526,
+          1.0466185770118577
+        ],
+        "maximum_segment_turn_deg": 47.84794995155789,
+        "maximum_centerline_join_error_m": 3.972054645195637e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.3150930612315915,
+        "sinuosity_range": [
+          1.0000444742797987,
+          1.2837095658901292
+        ]
+      },
+      "mean_primary_rise_before": 0.2809418832279258,
+      "mean_primary_rise_after": 0.3047286667651995,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 2.9397570273639992,
+          "middle": 6.68226753588722,
+          "periphery": 5.3229955691516375
+        },
+        "peripheral_length_fraction": 0.3561718567116984,
+        "occupied_cells_0_10H": {
+          "core": 43,
+          "middle": 86,
+          "periphery": 82
+        },
+        "inner_births_order_ge_2": 24,
+        "secondary_mean_birth_radius_over_H": 0.36100399163237695,
+        "primary_rise_over_path": [
+          0.20913372461692012,
+          -0.2316763037461474,
+          0.12195440778117754,
+          0.34544833619466114,
+          0.17154533685993836,
+          0.6457505557638241,
+          0.4014872669181213,
+          0.5838917414349111
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform",
+          "p:5": "uniform",
+          "p:6": "uniform",
+          "p:7": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 0.4609833168219929,
+          "middle": 4.104241164988272,
+          "periphery": 10.562589147813775
+        },
+        "peripheral_length_fraction": 0.6982231144842759,
+        "occupied_cells_0_10H": {
+          "core": 10,
+          "middle": 75,
+          "periphery": 139
+        },
+        "inner_births_order_ge_2": 4,
+        "secondary_mean_birth_radius_over_H": 0.45571173262696085,
+        "primary_rise_over_path": [
+          0.288112090164364,
+          0.23657991021493555,
+          0.19321542182840828,
+          0.10488707758056495,
+          0.1475460751310876,
+          0.44807853948290766,
+          0.4508022247293491,
+          0.5686079949899786
+        ],
+        "habits_by_bough": {
+          "p:0": "seeking",
+          "p:1": "seeking",
+          "p:2": "twisting",
+          "p:3": "lateral",
+          "p:4": "weighted",
+          "p:5": "lateral",
+          "p:6": "twisting",
+          "p:7": "weighted"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.77799110945532,
+        "crown_center_offset_over_H": 0.06761902574058115,
+        "length_weighted_crown_center_over_H": [
+          -0.027519503580466946,
+          0.061765763694704226,
+          0.4698212342183509
+        ],
+        "sector_reach_over_H": [
+          0.6633388740393653,
+          0.5694923554191038,
+          0.77799110945532,
+          0.7498315353899749,
+          0.6988550350934161,
+          0.5751867455719023,
+          0.5257731497376936,
+          0.7565582352188559
+        ],
+        "sector_reach_cv": 0.1367307823385961,
+        "largest_endpoint_angular_gap_deg": 37.259615875750264,
+        "endpoint_gap_range_deg": [
+          0.004582413900313832,
+          37.259615875750264
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.9344610314046179,
+        "crown_center_offset_over_H": 0.055594361849202426,
+        "length_weighted_crown_center_over_H": [
+          -0.03465269895513144,
+          0.04347325067837792,
+          0.48627009879128447
+        ],
+        "sector_reach_over_H": [
+          0.7969039307206063,
+          0.19958100796301903,
+          0.9344610314046179,
+          0.763845899120896,
+          0.7910148566025306,
+          0.6015660550809767,
+          0.6842987833415284,
+          0.9056124165531664
+        ],
+        "sector_reach_cv": 0.3065482079198584,
+        "largest_endpoint_angular_gap_deg": 50.0283921463289,
+        "endpoint_gap_range_deg": [
+          0.011344485579528111,
+          50.0283921463289
+        ]
+      },
+      "duration_seconds": 1.600794219000818,
+      "glb_sha256": {
+        "bare": "8034542781d45091047bbfda4165a8f7a28a9f9c4ea83f480c23fcbc121e88d8",
+        "scaffold": "c75fc6282d7e7d53d7242e52caed286371413200bc6879c30de3e5268cf4e4c8"
+      },
+      "manifest_sha256": "c700915289a96330d66ed4b784a87790c0fc4eb21b05c3ce33b693b486ca4f7e",
+      "review_sha256": "7cd03e1cfea7d207bbf3a439aa72ecb35426baf14da63fe10c13e5fe228ef38c",
+      "captures": 16
+    },
+    "joven-3100": {
+      "triangles_before": 2992,
+      "triangles_after": 2952,
+      "budget": {
+        "base_triangles": 2332,
+        "extra_triangles": 620,
+        "extra_limit": 700,
+        "wood_limit": 5415
+      },
+      "architecture_before": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 5,
+          "2": 12,
+          "3": 31,
+          "4": 46
+        },
+        "primary_birth_heights_over_H": [
+          0.3476003026242286,
+          0.42958298523607724,
+          0.4901213171611899,
+          0.6034109487307765,
+          0.6894283077257894
+        ],
+        "primary_birth_span_over_H": 0.34182800510156086,
+        "axis_height_over_H": 0.7334402982626504,
+        "width_over_H": 0.7401077515417693,
+        "depth_over_H": 0.6015579841098593,
+        "primary_sinuosity": [
+          1.0421044608029564,
+          1.0490228372510841,
+          1.038058083869596,
+          1.0217914813887368,
+          1.0387632262273676
+        ],
+        "maximum_segment_turn_deg": 25.751432393899183,
+        "maximum_centerline_join_error_m": 9.930136612989092e-16,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.380426482529205,
+        "sinuosity_range": [
+          1.00000548755573,
+          1.0490228372510841
+        ]
+      },
+      "architecture_after": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 5,
+          "2": 17,
+          "3": 27,
+          "4": 33
+        },
+        "primary_birth_heights_over_H": [
+          0.35378754163851267,
+          0.4372295050637617,
+          0.4988454112208844,
+          0.6141515831187426,
+          0.7017000396285209
+        ],
+        "primary_birth_span_over_H": 0.3479124979900083,
+        "axis_height_over_H": 0.746495437725416,
+        "width_over_H": 0.743859468001163,
+        "depth_over_H": 0.6750740762124389,
+        "primary_sinuosity": [
+          1.0365788852789235,
+          1.041496978720965,
+          1.0187808573025232,
+          1.0080925305888724,
+          1.0417447860712385
+        ],
+        "maximum_segment_turn_deg": 22.849850632785852,
+        "maximum_centerline_join_error_m": 9.934014815290038e-16,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.3784564599309477,
+        "sinuosity_range": [
+          1.0000357384105032,
+          1.047448575130606
+        ]
+      },
+      "mean_primary_rise_before": 0.5862667355923282,
+      "mean_primary_rise_after": 0.5760063307953541,
+      "volume_before": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 3.2971813450527514,
+          "middle": 0.8842555439388711,
+          "periphery": 0.0
+        },
+        "peripheral_length_fraction": 0.0,
+        "occupied_cells_0_10H": {
+          "core": 40,
+          "middle": 18,
+          "periphery": 0
+        },
+        "inner_births_order_ge_2": 71,
+        "secondary_mean_birth_radius_over_H": 0.1722719314536615,
+        "primary_rise_over_path": [
+          0.3731495509379518,
+          0.48890681162677957,
+          0.5796275850420686,
+          0.7301118666441244,
+          0.7595378637107169
+        ],
+        "habits_by_bough": {
+          "p:0": "uniform",
+          "p:1": "uniform",
+          "p:2": "uniform",
+          "p:3": "uniform",
+          "p:4": "uniform"
+        }
+      },
+      "volume_after": {
+        "radial_regions_over_H": [
+          0,
+          0.3,
+          0.5
+        ],
+        "axis_length_over_H": {
+          "core": 3.267084874287507,
+          "middle": 0.9582559941785482,
+          "periphery": 0.0
+        },
+        "peripheral_length_fraction": 0.0,
+        "occupied_cells_0_10H": {
+          "core": 42,
+          "middle": 23,
+          "periphery": 0
+        },
+        "inner_births_order_ge_2": 58,
+        "secondary_mean_birth_radius_over_H": 0.191046468928939,
+        "primary_rise_over_path": [
+          0.3207946447851175,
+          0.548531800976545,
+          0.5380829214195951,
+          0.7097022344932288,
+          0.7629200523022844
+        ],
+        "habits_by_bough": {
+          "p:0": "weighted",
+          "p:1": "seeking",
+          "p:2": "twisting",
+          "p:3": "weighted",
+          "p:4": "twisting"
+        }
+      },
+      "crown_before": {
+        "max_horizontal_reach_over_H": 0.4385911510521915,
+        "crown_center_offset_over_H": 0.04816924317791633,
+        "length_weighted_crown_center_over_H": [
+          -0.0015679622953016423,
+          0.04814371695843343,
+          0.6562930739071792
+        ],
+        "sector_reach_over_H": [
+          0.4385911510521915,
+          0.22279595615298603,
+          0.3321702358824502,
+          0.3971230793731447,
+          0.24345069998943583,
+          0.21261104086580587,
+          0.3794832235537132,
+          0.3329564674741299
+        ],
+        "sector_reach_cv": 0.24887251008733316,
+        "largest_endpoint_angular_gap_deg": 49.38083177261707,
+        "endpoint_gap_range_deg": [
+          0.006212229999326622,
+          49.38083177261707
+        ]
+      },
+      "crown_after": {
+        "max_horizontal_reach_over_H": 0.4361843231012492,
+        "crown_center_offset_over_H": 0.03798067796012809,
+        "length_weighted_crown_center_over_H": [
+          0.004047176561217874,
+          0.03776443115145902,
+          0.6649379672884262
+        ],
+        "sector_reach_over_H": [
+          0.4361843231012492,
+          0.2567319629958795,
+          0.35967255812642385,
+          0.3630181201717205,
+          0.2997329807766839,
+          0.21600672961117548,
+          0.3624177084030587,
+          0.27836321630313876
+        ],
+        "sector_reach_cv": 0.20767272557254934,
+        "largest_endpoint_angular_gap_deg": 30.596477282766063,
+        "endpoint_gap_range_deg": [
+          0.014752824639890676,
+          30.596477282766063
+        ]
+      },
+      "duration_seconds": 1.373539959999107,
+      "glb_sha256": {
+        "bare": "ab5a2a3cb3275e1e8ac5ba4e94f122f4b6d9dda77a99e8e249cdea00abe4471a",
+        "scaffold": "967bde8e623ed6ff54ae8cdae7104872fbabd4e580c60096713bfa78403740d1"
+      },
+      "manifest_sha256": "ca5c57e0440c7d52b7da93457b2416ee58111e05d5c6d48dabe70cdd51d9c29c",
+      "review_sha256": "d4eeae24fc42f8d3b955e931bae6acd212418640cda17d327517e86e74233075",
+      "captures": 16
+    }
+  },
+  "study": "/home/tao/repos/procedural/arboles/artifacts/oak-growth/o4-validacion-01",
+  "source_inventory": {
+    "src/treegen/willow_sample.py": "7f4fb848eb62e45e407d8ae75d4bfa9407477372b138ee1d2438299c3d4ce0df",
+    "src/treegen/branch_structure.py": "b3a1bbbf94ac1006c8ccf087a82f9635a79a417bf4185eed3866b99c4dae5a72",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/oak_growth_contract.py": "8e1cc4497aaf0d06c5d60453e6b56baa77e9297abed304d3f23f09b928f0fcc3",
+    "src/treegen/season_calendar_glb.py": "b1b5c8f3cc64dbfe00b91f7a2d2b3f26a931f17aad851778a9045d0baff35fd9",
+    "src/treegen/willow.py": "ebf75f3fcede8c42efd0b4270995bf0d168a022d5d02d894163393bafd277e9b",
+    "src/treegen/willow_v2.py": "5734c5e48e69e7550474cca4188fb65f51e6d6faeaf6d819c0416737c1c41a38",
+    "src/treegen/oak_growth.py": "9ca745ee9d2add0497893eba27bea3c1a4d5836fe6ab7d7cd83947840c28998a",
+    "src/treegen/oak_growth_mesh.py": "5b6a63ace950ecfeadecad04bdcb90ba0bbeeefb68fe46fd710ed9a90f4ff52c",
+    "src/treegen/birch.py": "89a4fabce283c89b0d48448da82e3dccc9dbde4a5da510db08fad4502fe880e2",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+    "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+    "src/treegen/branch_tree.py": "85a751449b98f8bc7892e741b4472ead47fb585bf87eb2920a904a3b9bbfb38c",
+    "src/treegen/oak_branching_contract.py": "466ca4ffd2e071d9df573847f5649b02e32013496cbae27aeb203def978229e6",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/evaluation.py": "4a07ba8ec648739de12678ac919b6d7e965279e608da1844f25a2499f1b2692f",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/branch_tree_runner.py": "d1cef51b375b103a1477a180a3978c5526c403127d550feabf115ecea50ea940",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/oak_crown_contract.py": "7b0da8a30646f2a3c07018e178a52a9bac3f8f651e13c6d1841c0c9c6c9ea9a2",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+    "src/treegen/branch_sample.py": "0a0633ddcdc0892bc31a755906aaa6e17dcb2d343825a75ec6a0abdd0f461d4f",
+    "src/treegen/cli.py": "7b2b70a0fba5d4ba7dae283c9358fb969aedf66cf6c12b9f501a387a755b2087",
+    "src/treegen/birch_evaluation.py": "6b738a3870ade67066413089b0faf01b9cc8611618f7d7aa523c5adb7c469104",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/oak_growth_v2.py": "1cba0813cc9775e9bdb1e7e52e1b5a8bf146925eae8e5a65717150456a6070e6",
+    "src/treegen/branch_interior.py": "93aecbec1b0dac556de552f8292a1aa407e2b5b4082f078816a2a4bd8ab94ecc",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/seasons.py": "433d10d9012e04887f007b0381b514f64dfb9edea7cb7d73f61e0c2fb6f87d05",
+    "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/oak_growth_v3.py": "5bc7268e1425aa71f2e6117e84e20eceb4635e072b5225e3e0137119e560d3fc",
+    "src/treegen/runner.py": "31363394248b4ef9365ea3f0b26925d9d4d728dea04d67f7295dbfe918da4a67",
+    "src/treegen/birch_sample.py": "3530e76f940d513cbe9aac71bda954bcf258a843129de876fb6755fb71dc79d6",
+    "src/treegen/oak_crown_evaluation.py": "8ab48a18fef6e359d10da35dfddba4549b56a690d4663c779c91cfa9caccb0ab",
+    "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+    "src/treegen/oak_volume_contract.py": "db36094cd2989c50ed72d827a89c60ebda888744b00e9daeeeb3d49bcf78dc12",
+    "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/oak_crown_balance.py": "ec093d1463c1f81c28bcf35e3912033fcdd548673438eb8e609cf7d7f290fcea",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/oak_volume_evaluation.py": "3934e4049d44aa7b177f9364eddad8bdedbde39296b9896526e36c8c6cf827c1",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/blueprints.py": "6560867587d872b0eedaf44a840f2aa162b3e9c9a4db1aa8da51685cc1b16841",
+    "src/treegen/oak_growth_runner.py": "dafec7f00ce50cb09c417d8e239c8168c2c16b3ff0123b04ecba8e2dca674f21",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/branch_visibility.py": "7450ee09b716ae5bac738b419346d181688de2f00d0e29c6c827778e063e27eb",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/oak_growth_v4.py": "4b542ca6c4e0cff5de436fa7476164dadd8673e4a88e6e6b75a88ba17b047ba1",
+    "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/oak_growth_joins.py": "21482227bf99d0f2d5abf2175821a8680493e4b74943a698e58889737f2ba7f3",
+    "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/branch_tree_guards.py": "d73b2e843bfc3ae381a1a0931c55aed238322861931f5afd4e46221778475e5e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+    "src/treegen/branch_tree_audit.py": "9d942f24634baf2a6beaffa3ded56ac0fa6f877442eb6a81dc7750c5d5ebe504",
+    "src/treegen/willow_evaluation.py": "ec60175f4b94d0b965b66d247def68c7cf969cce2cf5f72a279981084566915e",
+    "src/treegen/branch_space.py": "a5e8870433b9e6b24e37a69bd81cfe4c1c1b3f40f03d05fc9a352f0f05fb2af5",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+    "blender/generate_painted_pine.py": "7f10893bcb5fea3b92a9db64325a8c92fed8a1dd0b1cb064afed4c9b695c08c7",
+    "blender/willow_sample.py": "1f3d240a256fdd1a64ca87d449a07c57af880ccdd8fac371e01912fd5e8e8bb4",
+    "blender/rebake_oak_crossed.py": "75284275a4cfe7c4c3e3b5fbf6db88fe75192d8b4dd16d4cce9d74f99b907b16",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/generate_crossed_oak.py": "695322e6649466718ea0222471c4e4ed9e04726d57369c6f860ca35527205187",
+    "blender/bake_autumn_oak.py": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/verify_painted_pine.py": "322851d188c022ea859ac08adb0b6540c14cf3f15559eb5061931a5be926d8c3",
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/classify_tree_visibility.py": "5b4762f7804bb7ec25bc383cfa4e434e1fee80afd3a38a0cb94bf59f8c1eaaa3",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/f5_structure.py": "6dc67bbfa2de21f3dcbab8535c09ec91fece323783f38f18805b99791405e29e",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blender/verify_pine_contacts.py": "c4de070611fc9f3366002b86fefd877d8dc3fecc824f2f1dfcbda1d7ec4ffd44",
+    "blender/export_oak_wood.py": "2829d53c0788ceeb4ac10036483ba7b9ec3bb0c51abbefe4046b7f932c8f96cf",
+    "blender/oak_wood_trial.py": "024b0f32f543fa13cc315109398ddc25b991f2c832e05a836134fbf91870c842",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/oak_crossed_reference.py": "824daf84cb3ad034cdfd286d7f4cd3d9ae5eb666e90e4702799e81d69a0842f9",
+    "blender/branch_sample.py": "14de502b4f3d0ee966fbd346fdb3ad9c9dd4da24ff24ffe0079b2e992450ca91",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/oak_painted_tree_pilot.py": "224df5283e5395ab2696b93d8bc89c4e44f86bb26dd7433afae31c6221122eb7",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/pine_painted_sample.py": "6ab7d003cdc2a1b938fad4bead9332ae6d21f133b24c6302781d467771006f97",
+    "blender/oak_painted_sample.py": "ee7d0bd42e3d533734228de8bc61b177a7e367414cf5c39ede4ab64ecb70e244",
+    "blender/verify_season_calendar.py": "cd0762f6113675063feb2017e09bcd28e9284e9fc9ddd3fa2b6f6cf84ecbee72",
+    "blender/verify_canopy_normals.py": "2a66a50e0a9030d24eb525253508bb9b007ddcd03ac567e7adb4c108bfd23099",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/generate_pine.py": "8564de938657e81f10c78881cb7137f4b33bc52d584a676a0bdd046103ea53eb",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/generate_birch.py": "9a417ca2be4919534a4564998323124006371daf4e41c31e3a02650c5ac0bdd1",
+    "blender/birch_sample.py": "668dbb55609a4d88812e9b52505d6fd0f2c58b637478b9e85ff22d8d381070ad",
+    "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+    "blender/export_oak_growth.py": "1658f48eddcdf3b1fc61f8f74e04ae611c568fb294eb445bf92d707d4308c45a",
+    "blender/willow_revision_sample.py": "7305f8bf8daa5bce2e87a13bfae673b08fd85c64c4cf6d7824422149de806ecd",
+    "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+    "blender/generate_willow.py": "b1636ab8e446f163e320f49179ed81ab6afe94da9da246bbb4b77d6815046fb6",
+    "blender/classify_branch_visibility.py": "81bf28c066a946316ddf159b5e28d42687b97fde3b7baf6ab4a1266f1b822ed3",
+    "blender/pine_cards_reference.py": "ee30f384357c84dff74763616dcfb32b2daf3111b5bf4b86962a0cc29b8f5c3f",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/oak_crossed_trial.py": "4c7eae600da0aac401ee9a831a8df2a7e1256292735257b1cd05d356dfc58be6",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/export_branch_tree.py": "88492972050904ce57609bc0b7cdc542f256f992af392bf0d4f8f0587fcdb80b",
+    "blender/generate_painted_oak.py": "5d6f15d33ccc7bcabbbe6d9f223afde3ef86ddf56ba4de1dfde38dff6b8716b5",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/branch_variants.py": "13071ecdeca42d7b62cf02c6f10b484ccd3fde7ddedcc037aac2d65cee237959",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blender/verify_branch_visibility.py": "f6a98a202cec47f8bb6d5431088ca827159d0a40e98f667658652e90abf55d84",
+    "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/oak_wood_hierarchy.py": "07fceea0467c13691d679941e9e85006d90fc7630f7bcae9a4e754f74aa59c72",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/season_atlas_sample.py": "70469069ab126829b13fc9003ba9c93de6ecfbaefd9ed7ce35b509f46041f4d1"
+  },
+  "captures": 188,
+  "visual_review": {
+    "status": "reviewed_agent",
+    "inspected_captures": 132,
+    "bare": "11 parejas O3/O4 en cuatro vistas:88 capturas",
+    "scaffold": [
+      "maduro-3100",
+      "maduro-3103",
+      "centenario-3100",
+      "centenario-3103"
+    ],
+    "scaffold_captures": 32,
+    "ages": 12,
+    "observations": "M\u00e1s desarrollo intermedio y exterior, menos nudos internos y respuestas de ascenso distintas. Persisten huecos, superposiciones en proyecci\u00f3n y lectura esquel\u00e9tica parcial; maduro3100 pierde longitud perif\u00e9rica. Pendiente de valoraci\u00f3n art\u00edstica del usuario."
+  },
+  "artistic_acceptance": "pending_user",
+  "images_sha256": {
+    "maduro-perspective.jpg": "8ad78ac7134e85f4d5981674572450b0086704b56670126b58722bb94e944188",
+    "maduro-3100-scaffold.jpg": "89693e7964f608d03a005e99e144437b7ebf012006dfabdf1e393af3a013a0aa",
+    "centenario-front.jpg": "132366faeb4a37fe386e1c366586c7d30630d7eb6e8b56ebf95ddbd26475b645",
+    "maduro-3103-bare.jpg": "bbffa7f722fe964659266de33b48560d76c9a95040a7865a7ede0c38cba31906",
+    "centenario-3103-scaffold.jpg": "51ba9cdc5071a426de22ea327c7d6a8105ee7109ddc6bcb4bb6c4a8dc10d0d3c",
+    "maduro-3103-scaffold.jpg": "943f60548c60d34180e833b9aae18246cb39e8ceea20a7019186ddd2b24649d4",
+    "comparacion-centenario-3100.jpg": "b62853b7de9be89c9aa583ccc5ab5871fc72cb4f3db73abadca524ac3fea9439",
+    "maduro-front.jpg": "6c4856cc67206a45f960a9cdc985082eba47e004304b4162782bb49b50333fb0",
+    "centenario-3103-bare.jpg": "e1f5b925d327125fb3906336cecaecf29e94434333445a318b686a6c47052730",
+    "centenario-perspective.jpg": "fbbade401ba478017109adc8cd47f43baf79cbe95b08c517621a61bc67565e73",
+    "centenario-3100-bare.jpg": "41b952d50daa9899727545ffee421f92d4d528dd2313fe74bb1e0333a2d6ea77",
+    "centenario-3100-scaffold.jpg": "89b1f93612e1ca655f20ab5b71089c5bd126978aa0591f3523b53d3116c7e80c",
+    "edades.jpg": "21fd69b2304466a6685d33e453dc82703ff9b58ba4737a2e480c8f8d4c9984cf",
+    "maduro-3100-bare.jpg": "8b754c2b737a94a4dc7a48e1bed5baf12f65ef2ca224c460f4b8bb57f7e049af"
+  }
+}

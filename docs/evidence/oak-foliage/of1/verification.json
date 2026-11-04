@@ -1,0 +1,3462 @@
+{
+  "version": "oak-foliage-sample-verification-0.1.0",
+  "passed": true,
+  "checks": {
+    "reference-textures": true,
+    "reference-triangles": true,
+    "reference-materials": true,
+    "bare-textures": true,
+    "bare-triangles": true,
+    "bare-materials": true,
+    "painted-textures": true,
+    "painted-triangles": true,
+    "painted-materials": true,
+    "painted-alpha": true,
+    "foliage-textures": true,
+    "foliage-triangles": true,
+    "foliage-materials": true,
+    "foliage-alpha": true,
+    "wood-unchanged-with-foliage": true,
+    "wood-exact-o5-subset": true,
+    "o5-historical-regression": true,
+    "sample-ledger": true,
+    "six-tris-per-group": true,
+    "whole-tree-reservation": true,
+    "family-upper-bound": true,
+    "opaque-contacts-glb": true,
+    "wood-joins": true,
+    "generation": true,
+    "sources": true,
+    "resources": true,
+    "godot": true,
+    "captures": true,
+    "repeat-glb": true,
+    "repeat-layout": true,
+    "281-tests": true,
+    "real-shadow-receiver": true
+  },
+  "study": "/home/tao/repos/procedural/arboles/artifacts/oak-foliage/of1-rama-04",
+  "generation": {
+    "version": "oak-foliage-sample-0.1.0",
+    "scope": "O5 branch sample; full-tree foliage not integrated",
+    "status": "completed",
+    "spec": {
+      "version": "oak-foliage-sample-0.1.0",
+      "preset": "presets/oak-growth/0.5.0/maduro.json",
+      "seed": 3100,
+      "branch_id": "p:0",
+      "layout_seed": 17,
+      "paint_seed": 2718,
+      "tree_groups": 216,
+      "span_over_height": 0.1,
+      "core_radius_over_height": 0.3
+    },
+    "source_inventory": {
+      "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+      "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+      "src/treegen/birch.py": "89a4fabce283c89b0d48448da82e3dccc9dbde4a5da510db08fad4502fe880e2",
+      "src/treegen/birch_evaluation.py": "6b738a3870ade67066413089b0faf01b9cc8611618f7d7aa523c5adb7c469104",
+      "src/treegen/birch_sample.py": "3530e76f940d513cbe9aac71bda954bcf258a843129de876fb6755fb71dc79d6",
+      "src/treegen/blueprints.py": "6560867587d872b0eedaf44a840f2aa162b3e9c9a4db1aa8da51685cc1b16841",
+      "src/treegen/branch_interior.py": "93aecbec1b0dac556de552f8292a1aa407e2b5b4082f078816a2a4bd8ab94ecc",
+      "src/treegen/branch_sample.py": "0a0633ddcdc0892bc31a755906aaa6e17dcb2d343825a75ec6a0abdd0f461d4f",
+      "src/treegen/branch_space.py": "a5e8870433b9e6b24e37a69bd81cfe4c1c1b3f40f03d05fc9a352f0f05fb2af5",
+      "src/treegen/branch_structure.py": "b3a1bbbf94ac1006c8ccf087a82f9635a79a417bf4185eed3866b99c4dae5a72",
+      "src/treegen/branch_tree.py": "85a751449b98f8bc7892e741b4472ead47fb585bf87eb2920a904a3b9bbfb38c",
+      "src/treegen/branch_tree_audit.py": "9d942f24634baf2a6beaffa3ded56ac0fa6f877442eb6a81dc7750c5d5ebe504",
+      "src/treegen/branch_tree_guards.py": "d73b2e843bfc3ae381a1a0931c55aed238322861931f5afd4e46221778475e5e",
+      "src/treegen/branch_tree_runner.py": "d1cef51b375b103a1477a180a3978c5526c403127d550feabf115ecea50ea940",
+      "src/treegen/branch_visibility.py": "7450ee09b716ae5bac738b419346d181688de2f00d0e29c6c827778e063e27eb",
+      "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+      "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+      "src/treegen/cli.py": "7b2b70a0fba5d4ba7dae283c9358fb969aedf66cf6c12b9f501a387a755b2087",
+      "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+      "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+      "src/treegen/evaluation.py": "4a07ba8ec648739de12678ac919b6d7e965279e608da1844f25a2499f1b2692f",
+      "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+      "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+      "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+      "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+      "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+      "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+      "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+      "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+      "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+      "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+      "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+      "src/treegen/oak_branching_contract.py": "466ca4ffd2e071d9df573847f5649b02e32013496cbae27aeb203def978229e6",
+      "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+      "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+      "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+      "src/treegen/oak_crown_balance.py": "ec093d1463c1f81c28bcf35e3912033fcdd548673438eb8e609cf7d7f290fcea",
+      "src/treegen/oak_crown_contract.py": "5cfca1e9c88c08eae6b64f88a212044f5960700ed455a1e871d8fd795141091e",
+      "src/treegen/oak_crown_evaluation.py": "8ab48a18fef6e359d10da35dfddba4549b56a690d4663c779c91cfa9caccb0ab",
+      "src/treegen/oak_foliage_cards.py": "849da120444cf74d5af166ec4a2ce8304d47c2a496f6489647681b0abdfe6a17",
+      "src/treegen/oak_foliage_contract.py": "c3aa4f435adb9e661c554588feb446ea243b60ab1ed905ba93db50141d6cf137",
+      "src/treegen/oak_foliage_evaluation.py": "ec348da9e95ea96f7612182b1b0548369c73b1613c24ccd91f6039602c934336",
+      "src/treegen/oak_foliage_layout.py": "cd70f0651db99d378009c5632066c87e27bbf11a74e40df78c548957cbf79786",
+      "src/treegen/oak_growth.py": "9ca745ee9d2add0497893eba27bea3c1a4d5836fe6ab7d7cd83947840c28998a",
+      "src/treegen/oak_growth_contract.py": "8e1cc4497aaf0d06c5d60453e6b56baa77e9297abed304d3f23f09b928f0fcc3",
+      "src/treegen/oak_growth_joins.py": "21482227bf99d0f2d5abf2175821a8680493e4b74943a698e58889737f2ba7f3",
+      "src/treegen/oak_growth_mesh.py": "5b6a63ace950ecfeadecad04bdcb90ba0bbeeefb68fe46fd710ed9a90f4ff52c",
+      "src/treegen/oak_growth_runner.py": "25bf64ce5a94192a96aaa4d479605bdba67afff2a33b6c750b8a3da4e3e0378f",
+      "src/treegen/oak_growth_v2.py": "1cba0813cc9775e9bdb1e7e52e1b5a8bf146925eae8e5a65717150456a6070e6",
+      "src/treegen/oak_growth_v3.py": "5bc7268e1425aa71f2e6117e84e20eceb4635e072b5225e3e0137119e560d3fc",
+      "src/treegen/oak_growth_v4.py": "4b542ca6c4e0cff5de436fa7476164dadd8673e4a88e6e6b75a88ba17b047ba1",
+      "src/treegen/oak_growth_v5.py": "3f257197c703f893849067ec17d4567f3084d0e5601ef3a2917f35b763a39f0f",
+      "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+      "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+      "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+      "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+      "src/treegen/oak_periphery.py": "3435ebd9ff92dfcef1076c68fce33685dd84bc85d9a5cfd441cb38eef223b4cd",
+      "src/treegen/oak_periphery_contract.py": "b43ab0d90b0dffcaf9600d62e90b3f9aad7d76eb21bafb28c1ef2d3937a1e412",
+      "src/treegen/oak_volume_contract.py": "db36094cd2989c50ed72d827a89c60ebda888744b00e9daeeeb3d49bcf78dc12",
+      "src/treegen/oak_volume_evaluation.py": "3934e4049d44aa7b177f9364eddad8bdedbde39296b9896526e36c8c6cf827c1",
+      "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+      "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+      "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+      "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+      "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+      "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+      "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+      "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+      "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+      "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+      "src/treegen/runner.py": "31363394248b4ef9365ea3f0b26925d9d4d728dea04d67f7295dbfe918da4a67",
+      "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+      "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+      "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+      "src/treegen/season_calendar_glb.py": "b1b5c8f3cc64dbfe00b91f7a2d2b3f26a931f17aad851778a9045d0baff35fd9",
+      "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+      "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+      "src/treegen/seasons.py": "433d10d9012e04887f007b0381b514f64dfb9edea7cb7d73f61e0c2fb6f87d05",
+      "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+      "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+      "src/treegen/willow.py": "ebf75f3fcede8c42efd0b4270995bf0d168a022d5d02d894163393bafd277e9b",
+      "src/treegen/willow_evaluation.py": "ec60175f4b94d0b965b66d247def68c7cf969cce2cf5f72a279981084566915e",
+      "src/treegen/willow_sample.py": "7f4fb848eb62e45e407d8ae75d4bfa9407477372b138ee1d2438299c3d4ce0df",
+      "src/treegen/willow_v2.py": "5734c5e48e69e7550474cca4188fb65f51e6d6faeaf6d819c0416737c1c41a38",
+      "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+      "blender/bake_autumn_oak.py": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60",
+      "blender/birch_sample.py": "668dbb55609a4d88812e9b52505d6fd0f2c58b637478b9e85ff22d8d381070ad",
+      "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+      "blender/branch_sample.py": "14de502b4f3d0ee966fbd346fdb3ad9c9dd4da24ff24ffe0079b2e992450ca91",
+      "blender/branch_variants.py": "13071ecdeca42d7b62cf02c6f10b484ccd3fde7ddedcc037aac2d65cee237959",
+      "blender/classify_branch_visibility.py": "81bf28c066a946316ddf159b5e28d42687b97fde3b7baf6ab4a1266f1b822ed3",
+      "blender/classify_tree_visibility.py": "5b4762f7804bb7ec25bc383cfa4e434e1fee80afd3a38a0cb94bf59f8c1eaaa3",
+      "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+      "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+      "blender/export_branch_tree.py": "88492972050904ce57609bc0b7cdc542f256f992af392bf0d4f8f0587fcdb80b",
+      "blender/export_oak_foliage_sample.py": "4df6b5ec3a9b5fe51c22cd911ec003309cbf42e2925ada734aacad2c78f92eb0",
+      "blender/export_oak_growth.py": "1658f48eddcdf3b1fc61f8f74e04ae611c568fb294eb445bf92d707d4308c45a",
+      "blender/export_oak_wood.py": "2829d53c0788ceeb4ac10036483ba7b9ec3bb0c51abbefe4046b7f932c8f96cf",
+      "blender/f5_structure.py": "6dc67bbfa2de21f3dcbab8535c09ec91fece323783f38f18805b99791405e29e",
+      "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+      "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+      "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+      "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+      "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+      "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+      "blender/generate_birch.py": "9a417ca2be4919534a4564998323124006371daf4e41c31e3a02650c5ac0bdd1",
+      "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+      "blender/generate_crossed_oak.py": "695322e6649466718ea0222471c4e4ed9e04726d57369c6f860ca35527205187",
+      "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+      "blender/generate_painted_oak.py": "5d6f15d33ccc7bcabbbe6d9f223afde3ef86ddf56ba4de1dfde38dff6b8716b5",
+      "blender/generate_painted_pine.py": "7f10893bcb5fea3b92a9db64325a8c92fed8a1dd0b1cb064afed4c9b695c08c7",
+      "blender/generate_pine.py": "8564de938657e81f10c78881cb7137f4b33bc52d584a676a0bdd046103ea53eb",
+      "blender/generate_willow.py": "b1636ab8e446f163e320f49179ed81ab6afe94da9da246bbb4b77d6815046fb6",
+      "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+      "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+      "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+      "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+      "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+      "blender/oak_crossed_reference.py": "824daf84cb3ad034cdfd286d7f4cd3d9ae5eb666e90e4702799e81d69a0842f9",
+      "blender/oak_crossed_trial.py": "4c7eae600da0aac401ee9a831a8df2a7e1256292735257b1cd05d356dfc58be6",
+      "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+      "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+      "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+      "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+      "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+      "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+      "blender/oak_painted_sample.py": "ee7d0bd42e3d533734228de8bc61b177a7e367414cf5c39ede4ab64ecb70e244",
+      "blender/oak_painted_tree_pilot.py": "224df5283e5395ab2696b93d8bc89c4e44f86bb26dd7433afae31c6221122eb7",
+      "blender/oak_wood_hierarchy.py": "07fceea0467c13691d679941e9e85006d90fc7630f7bcae9a4e754f74aa59c72",
+      "blender/oak_wood_trial.py": "024b0f32f543fa13cc315109398ddc25b991f2c832e05a836134fbf91870c842",
+      "blender/pine_cards_reference.py": "ee30f384357c84dff74763616dcfb32b2daf3111b5bf4b86962a0cc29b8f5c3f",
+      "blender/pine_painted_sample.py": "6ab7d003cdc2a1b938fad4bead9332ae6d21f133b24c6302781d467771006f97",
+      "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+      "blender/rebake_oak_crossed.py": "75284275a4cfe7c4c3e3b5fbf6db88fe75192d8b4dd16d4cce9d74f99b907b16",
+      "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+      "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+      "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+      "blender/season_atlas_sample.py": "70469069ab126829b13fc9003ba9c93de6ecfbaefd9ed7ce35b509f46041f4d1",
+      "blender/verify_branch_visibility.py": "f6a98a202cec47f8bb6d5431088ca827159d0a40e98f667658652e90abf55d84",
+      "blender/verify_canopy_normals.py": "2a66a50e0a9030d24eb525253508bb9b007ddcd03ac567e7adb4c108bfd23099",
+      "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+      "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+      "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+      "blender/verify_painted_pine.py": "322851d188c022ea859ac08adb0b6540c14cf3f15559eb5061931a5be926d8c3",
+      "blender/verify_pine_contacts.py": "c4de070611fc9f3366002b86fefd877d8dc3fecc824f2f1dfcbda1d7ec4ffd44",
+      "blender/verify_season_calendar.py": "cd0762f6113675063feb2017e09bcd28e9284e9fc9ddd3fa2b6f6cf84ecbee72",
+      "blender/willow_revision_sample.py": "7305f8bf8daa5bce2e87a13bfae673b08fd85c64c4cf6d7824422149de806ecd",
+      "blender/willow_sample.py": "1f3d240a256fdd1a64ca87d449a07c57af880ccdd8fac371e01912fd5e8e8bb4",
+      "scripts/prepare_oak_foliage_sample.py": "7a6de5e531374a788f5ab6ba8a205f171418974b0b72dd9935c53f4343da3398",
+      "presets/oak-growth/0.5.0/maduro.json": "d208515a36e2dda8154c2ac4c241a6b091058fab553b618af9d2389169f6cec8",
+      "configs/oak-foliage/sample-v1.json": "43d06b3603c8d304193f28fa3e95bd47701633e4ce7cd2d26bc46e90458d51dc",
+      "godot/project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+      "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+      "godot/review_painted_pine.gd": "bed67a6165a424d698c6f74be08aa2d631294e22da9fd6da4916ff67bb746439",
+      "godot/review_painted_oak_pilot.gd": "0152c9300d49f20c78c7d10b2d7c7648fba9e86bb7cc46b0d8138129e9aae24c"
+    },
+    "resources": {
+      "foliage": {
+        "path": "assets/roble-pintado/v0.3.0/foliage.png",
+        "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+      },
+      "bark": {
+        "path": "assets/roble-pintado/v0.2.0/bark.png",
+        "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+      },
+      "templates": {
+        "path": "assets/roble-pintado/v0.3.0/templates.json",
+        "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+      },
+      "source_foliage": {
+        "path": "assets/roble-pintado/v0.2.0/foliage.png",
+        "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+      },
+      "source_layout": {
+        "path": "assets/roble-pintado/v0.2.0/manifest.json",
+        "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+      }
+    },
+    "ledger": {
+      "total_groups": 216,
+      "group_triangles": 6,
+      "foliage_triangles": 1296,
+      "tree_wood_triangles": 3714,
+      "tree_projected_triangles": 5010,
+      "primary_weights": {
+        "p:0": 21.421821827089442,
+        "p:1": 6.823394521363362,
+        "p:2": 4.7174372504791116,
+        "p:3": 13.011856293974937,
+        "p:4": 8.992471790952582,
+        "p:5": 9.27317206654475,
+        "p:6": 8.099033428076048
+      },
+      "primary_quotas": {
+        "p:0": 64,
+        "p:1": 20,
+        "p:2": 14,
+        "p:3": 39,
+        "p:4": 27,
+        "p:5": 28,
+        "p:6": 24
+      },
+      "eligible": [
+        [
+          "p:0/0",
+          2.060155085645948
+        ],
+        [
+          "p:0/1",
+          2.365216286812127
+        ],
+        [
+          "p:0/2",
+          1.2218496918771549
+        ],
+        [
+          "p:1/0",
+          1.323309472169611
+        ],
+        [
+          "p:1/1",
+          0.8995247293330407
+        ],
+        [
+          "p:2/0",
+          1.309167054670694
+        ],
+        [
+          "p:2/1",
+          0.6319384537472733
+        ],
+        [
+          "p:3/0",
+          1.6957579275767836
+        ],
+        [
+          "p:3/1",
+          1.8820401000141693
+        ],
+        [
+          "p:3/2",
+          1.0614505599080282
+        ],
+        [
+          "p:4/0",
+          1.713135848992177
+        ],
+        [
+          "p:4/1",
+          1.039156763998776
+        ],
+        [
+          "p:5/1",
+          1.3126838338945477
+        ],
+        [
+          "p:6/0",
+          2.2118256779767345
+        ],
+        [
+          "p:6/1",
+          0.5658882851493897
+        ],
+        [
+          "p:0/0/0",
+          2.37521346643913
+        ],
+        [
+          "p:0/0/1",
+          1.9446146110031848
+        ],
+        [
+          "p:0/1/0",
+          2.6077366709899144
+        ],
+        [
+          "p:0/1/1",
+          1.5784907997277502
+        ],
+        [
+          "p:0/2/0",
+          0.5663989788131584
+        ],
+        [
+          "p:1/0/0",
+          1.4368880218490327
+        ],
+        [
+          "p:1/1/0",
+          0.5423919747526921
+        ],
+        [
+          "p:2/0/0",
+          0.7708467247358712
+        ],
+        [
+          "p:2/1/0",
+          0.3842147959636918
+        ],
+        [
+          "p:3/0/0",
+          1.5107290845457944
+        ],
+        [
+          "p:3/0/1",
+          1.252494609972631
+        ],
+        [
+          "p:3/1/0",
+          1.7745443033671386
+        ],
+        [
+          "p:3/1/1",
+          0.9098717605678774
+        ],
+        [
+          "p:3/2/0",
+          0.7114277477058712
+        ],
+        [
+          "p:3/2/1",
+          0.3878720618193846
+        ],
+        [
+          "p:4/0/0",
+          1.0016196831096367
+        ],
+        [
+          "p:4/1/0",
+          0.5681735564508766
+        ],
+        [
+          "p:5/0/0",
+          0.9977632174561033
+        ],
+        [
+          "p:5/1/0",
+          1.3759141100019592
+        ],
+        [
+          "p:5/1/1",
+          0.6727080657557434
+        ],
+        [
+          "p:6/0/0",
+          1.712240337647169
+        ],
+        [
+          "p:6/1/0",
+          0.7073919480381369
+        ],
+        [
+          "p:0/0/0/0",
+          0.5988658743979794
+        ],
+        [
+          "p:0/0/0/1",
+          0.5227466139207898
+        ],
+        [
+          "p:0/0/1/0",
+          0.45515664692753727
+        ],
+        [
+          "p:0/0/1/1",
+          0.5035311477488222
+        ],
+        [
+          "p:0/1/0/0",
+          0.7268770903064529
+        ],
+        [
+          "p:0/1/0/1",
+          0.43645428243670253
+        ],
+        [
+          "p:0/1/1/0",
+          0.3673223706078388
+        ],
+        [
+          "p:0/2/0/0",
+          0.06377517173474098
+        ],
+        [
+          "p:0/2/0/1",
+          0.06413874801707511
+        ],
+        [
+          "p:1/0/0/0",
+          0.29368058376144446
+        ],
+        [
+          "p:1/0/0/1",
+          0.30180772216572793
+        ],
+        [
+          "p:1/1/0/0",
+          0.10139334916855221
+        ],
+        [
+          "p:1/1/0/1",
+          0.09161496647828814
+        ],
+        [
+          "p:2/0/0/0",
+          0.11071842533611546
+        ],
+        [
+          "p:2/1/0/0",
+          0.053220856516913675
+        ],
+        [
+          "p:3/0/0/0",
+          0.35595426130440166
+        ],
+        [
+          "p:3/0/0/1",
+          0.3731015059443183
+        ],
+        [
+          "p:3/0/1/0",
+          0.17150634700820858
+        ],
+        [
+          "p:3/0/1/1",
+          0.17081864707291056
+        ],
+        [
+          "p:3/1/0/0",
+          0.279628416951964
+        ],
+        [
+          "p:3/1/1/0",
+          0.13068990683754395
+        ],
+        [
+          "p:3/1/1/1",
+          0.13411667022466034
+        ],
+        [
+          "p:3/2/0/0",
+          0.08473184185328121
+        ],
+        [
+          "p:3/2/0/1",
+          0.09018033968047062
+        ],
+        [
+          "p:3/2/1/0",
+          0.03494020161950063
+        ],
+        [
+          "p:4/0/0/0",
+          0.13103257433030685
+        ],
+        [
+          "p:4/1/0/0",
+          0.07567559599118516
+        ],
+        [
+          "p:4/1/0/1",
+          0.06902860708113635
+        ],
+        [
+          "p:5/0/0/0",
+          0.6382691661684379
+        ],
+        [
+          "p:5/0/0/1",
+          0.6605508348238924
+        ],
+        [
+          "p:5/1/0/0",
+          0.3890865934187298
+        ],
+        [
+          "p:5/1/0/1",
+          0.30915515524327103
+        ],
+        [
+          "p:5/1/1/0",
+          0.0828068455361983
+        ],
+        [
+          "p:5/1/1/1",
+          0.10203797245212204
+        ],
+        [
+          "p:6/0/0/0",
+          0.3385279908517985
+        ],
+        [
+          "p:6/0/0/1",
+          0.314988972683746
+        ],
+        [
+          "p:6/1/0/0",
+          0.1137648318964392
+        ],
+        [
+          "p:6/1/0/1",
+          0.08364615827515415
+        ],
+        [
+          "p:6/infill",
+          0.324248694627725
+        ],
+        [
+          "p:6/infill/0",
+          1.1606801479856388
+        ],
+        [
+          "p:6/infill/0/0",
+          0.565830382944115
+        ],
+        [
+          "p:4/infill",
+          1.1778327877514778
+        ],
+        [
+          "p:4/infill/0",
+          1.13390099411584
+        ],
+        [
+          "p:4/infill/0/0",
+          0.5248076233737461
+        ],
+        [
+          "p:2/infill",
+          0.6706482343776471
+        ],
+        [
+          "p:2/infill/0",
+          0.5613534774265644
+        ],
+        [
+          "p:2/infill/0/0",
+          0.22532922770434013
+        ],
+        [
+          "p:1/infill",
+          0.7618356348101447
+        ],
+        [
+          "p:1/infill/0",
+          0.7595452805000956
+        ],
+        [
+          "p:1/infill/0/0",
+          0.31140278637473184
+        ],
+        [
+          "p:5/infill",
+          1.0763287667322046
+        ],
+        [
+          "p:5/infill/0",
+          1.154843841298509
+        ],
+        [
+          "p:5/infill/0/0",
+          0.501023663763032
+        ],
+        [
+          "p:0/infill",
+          1.1355847613301866
+        ],
+        [
+          "p:0/infill/0",
+          1.2269908836108512
+        ],
+        [
+          "p:0/infill/0/0",
+          0.6007026447421007
+        ],
+        [
+          "p:4/0/infill",
+          0.9602997629892509
+        ],
+        [
+          "p:4/0/infill/0",
+          0.30664522737150146
+        ],
+        [
+          "p:4/0/infill/1",
+          0.29116276539666974
+        ]
+      ]
+    },
+    "template_contacts": [
+      {
+        "root_normalized": [
+          0.3152288076969293,
+          -0.02381818718339644,
+          -0.06559202491435168
+        ],
+        "root_candidates_normalized": [
+          [
+            0.23688493025803045,
+            -0.03381818718339602,
+            -0.0655920249143516
+          ],
+          [
+            0.3152288076969293,
+            -0.03381818718339644,
+            -0.06559202491435168
+          ],
+          [
+            0.3935726851358278,
+            -0.033818187183396145,
+            -0.06559202491435165
+          ],
+          [
+            0.4719165625747265,
+            -0.0338181871833961,
+            -0.06559202491435182
+          ],
+          [
+            0.3163853443436775,
+            -0.03381818718339616,
+            -0.0655920249143517
+          ],
+          [
+            0.3147397764385206,
+            -0.0338181871833962,
+            -0.06559202491435148
+          ]
+        ],
+        "aspect": [
+          0.5623362462999008,
+          1.0,
+          0.8962268615833671
+        ],
+        "affine_error": 2.0865774321913853e-16,
+        "source_root_normalized": [
+          0.3152288076969293,
+          -0.03381818718339644,
+          -0.06559202491435168
+        ],
+        "selected_stem_root": 1,
+        "paint_root_shift_normalized": 0.010000000000000002,
+        "root_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "root_normalized": [
+          -0.39537762375961144,
+          0.04727816612646932,
+          0.0274072748588296
+        ],
+        "root_candidates_normalized": [
+          [
+            -0.4353776237596114,
+            0.04227816612646932,
+            0.0274072748588296
+          ],
+          [
+            -0.3735570797633279,
+            0.04227816612646909,
+            0.02740727485882946
+          ],
+          [
+            -0.3117365357670417,
+            0.04227816612646906,
+            0.027407274858829433
+          ],
+          [
+            -0.24991599177075716,
+            0.04227816612646926,
+            0.027407274858829656
+          ],
+          [
+            -0.3921403806343978,
+            0.04227816612646944,
+            0.027407274858829683
+          ],
+          [
+            -0.40303820993778783,
+            0.042278166126469105,
+            0.027407274858829433
+          ]
+        ],
+        "aspect": [
+          0.32083725215728287,
+          1.0,
+          0.922935720735785
+        ],
+        "affine_error": 2.0014830212433605e-16,
+        "source_root_normalized": [
+          -0.4353776237596114,
+          0.04227816612646932,
+          0.0274072748588296
+        ],
+        "selected_stem_root": 0,
+        "paint_root_shift_normalized": 0.04031128874149273,
+        "root_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "root_normalized": [
+          -0.12427201545987918,
+          -0.05865392645259455,
+          0.07329757278297902
+        ],
+        "root_candidates_normalized": [
+          [
+            -0.12427201545987918,
+            -0.05865392645259455,
+            0.07329757278297902
+          ],
+          [
+            -0.08810332949259299,
+            -0.05865392645259444,
+            0.07329757278297905
+          ],
+          [
+            -0.05193464352530798,
+            -0.058653926452594485,
+            0.07329757278297933
+          ],
+          [
+            -0.01576595755802189,
+            -0.05865392645259443,
+            0.07329757278297919
+          ],
+          [
+            -0.08644844150861693,
+            -0.05865392645259451,
+            0.07329757278297919
+          ],
+          [
+            -0.056046210876338765,
+            -0.0586539264525944,
+            0.0732975727829791
+          ]
+        ],
+        "aspect": [
+          0.8104952010275662,
+          0.9329151848756643,
+          1.0
+        ],
+        "affine_error": 2.9406505148178845e-16,
+        "source_root_normalized": [
+          -0.12427201545987918,
+          -0.05865392645259455,
+          0.07329757278297902
+        ],
+        "selected_stem_root": 0,
+        "paint_root_shift_normalized": 0.0,
+        "root_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "root_normalized": [
+          -0.05514032231477389,
+          0.17471690855128616,
+          0.008482015763287956
+        ],
+        "root_candidates_normalized": [
+          [
+            -0.05514032231477389,
+            0.17471690855128616,
+            0.008482015763287956
+          ],
+          [
+            0.008293837558112568,
+            0.17471690855128583,
+            0.008482015763288135
+          ],
+          [
+            0.07172799743099939,
+            0.17471690855128585,
+            0.008482015763287977
+          ],
+          [
+            0.13516215730388617,
+            0.17471690855128602,
+            0.008482015763287994
+          ],
+          [
+            0.0787483159739453,
+            0.17471690855128594,
+            0.008482015763288334
+          ],
+          [
+            0.007745922423188792,
+            0.1747169085512859,
+            0.008482015763288015
+          ]
+        ],
+        "aspect": [
+          0.6807914308066934,
+          0.7510179043767463,
+          1.0
+        ],
+        "affine_error": 3.510833468576701e-16,
+        "source_root_normalized": [
+          -0.05514032231477389,
+          0.17471690855128616,
+          0.008482015763287956
+        ],
+        "selected_stem_root": 0,
+        "paint_root_shift_normalized": 0.0,
+        "root_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "root_normalized": [
+          -0.05921241807228451,
+          0.13394497542971412,
+          0.10694480093709272
+        ],
+        "root_candidates_normalized": [
+          [
+            -0.06921241807228451,
+            0.13894497542971412,
+            0.10694480093709272
+          ],
+          [
+            -0.03832606358745808,
+            0.13894497542971385,
+            0.10694480093709274
+          ],
+          [
+            -0.0074397091026319195,
+            0.13894497542971415,
+            0.10694480093709252
+          ],
+          [
+            0.023446645382194937,
+            0.13894497542971404,
+            0.10694480093709285
+          ],
+          [
+            0.007345560241852338,
+            0.13894497542971354,
+            0.10694480093709288
+          ],
+          [
+            -0.025784900347484742,
+            0.13894497542971385,
+            0.10694480093709266
+          ]
+        ],
+        "aspect": [
+          1.0,
+          0.2505813028298139,
+          0.8023531899013852
+        ],
+        "affine_error": 3.236828524569469e-16,
+        "source_root_normalized": [
+          -0.06921241807228451,
+          0.13894497542971412,
+          0.10694480093709272
+        ],
+        "selected_stem_root": 0,
+        "paint_root_shift_normalized": 0.011180339887498952,
+        "root_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "root_normalized": [
+          -0.05941767685614715,
+          0.01624600326644543,
+          0.2557478410894115
+        ],
+        "root_candidates_normalized": [
+          [
+            -0.05441767685614715,
+            0.01624600326644543,
+            0.2607478410894115
+          ],
+          [
+            -0.02774880194357722,
+            0.016246003266445735,
+            0.2607478410894118
+          ],
+          [
+            -0.001079927031007663,
+            0.016246003266445652,
+            0.26074784108941185
+          ],
+          [
+            0.025588947881562532,
+            0.01624600326644554,
+            0.26074784108941174
+          ],
+          [
+            -0.02302638610010263,
+            0.016246003266445347,
+            0.26074784108941157
+          ],
+          [
+            -0.007800997873411028,
+            0.016246003266445957,
+            0.260747841089412
+          ]
+        ],
+        "aspect": [
+          0.9348809802207039,
+          1.0,
+          0.8386242284943013
+        ],
+        "affine_error": 2.8441001681421824e-16,
+        "source_root_normalized": [
+          -0.05441767685614715,
+          0.01624600326644543,
+          0.2607478410894115
+        ],
+        "selected_stem_root": 0,
+        "paint_root_shift_normalized": 0.007071067811865477,
+        "root_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "root_normalized": [
+          -0.09362774157410858,
+          -0.1730883693390647,
+          -0.016680575580501483
+        ],
+        "root_candidates_normalized": [
+          [
+            -0.09862774157410858,
+            -0.18308836933906472,
+            -0.016680575580501483
+          ],
+          [
+            -0.0474970839220582,
+            -0.1830883693390652,
+            -0.01668057558050115
+          ],
+          [
+            0.0036335737299921095,
+            -0.18308836933906528,
+            -0.01668057558050129
+          ],
+          [
+            0.054764231382042936,
+            -0.1830883693390651,
+            -0.016680575580501095
+          ],
+          [
+            -0.0534737567695345,
+            -0.1830883693390652,
+            -0.016680575580501178
+          ],
+          [
+            0.020025309884503198,
+            -0.18308836933906547,
+            -0.01668057558050104
+          ]
+        ],
+        "aspect": [
+          0.5910596189864454,
+          0.6313729216837047,
+          1.0
+        ],
+        "affine_error": 2.435541875787129e-16,
+        "source_root_normalized": [
+          -0.09862774157410858,
+          -0.18308836933906472,
+          -0.016680575580501483
+        ],
+        "selected_stem_root": 0,
+        "paint_root_shift_normalized": 0.011180339887498959,
+        "root_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "root_normalized": [
+          -0.32407258992633237,
+          0.2554601496767487,
+          -0.012514905219566465
+        ],
+        "root_candidates_normalized": [
+          [
+            -0.32407258992633237,
+            0.2554601496767487,
+            -0.012514905219566465
+          ],
+          [
+            -0.2836001825963009,
+            0.2554601496767489,
+            -0.012514905219566433
+          ],
+          [
+            -0.243127775266269,
+            0.25546014967674896,
+            -0.012514905219566497
+          ],
+          [
+            -0.20265536793623712,
+            0.2554601496767489,
+            -0.012514905219566554
+          ],
+          [
+            -0.24474702315967178,
+            0.2554601496767489,
+            -0.01251490521956661
+          ],
+          [
+            -0.2395906409589556,
+            0.25546014967674885,
+            -0.01251490521956661
+          ]
+        ],
+        "aspect": [
+          0.38703154574518134,
+          0.656993350175692,
+          1.0
+        ],
+        "affine_error": 2.220446049250313e-16,
+        "source_root_normalized": [
+          -0.32407258992633237,
+          0.2554601496767487,
+          -0.012514905219566465
+        ],
+        "selected_stem_root": 0,
+        "paint_root_shift_normalized": 0.0,
+        "root_alpha": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "artist_acceptance": "pending_user",
+    "checks": {
+      "reference-textures": true,
+      "reference-triangles": true,
+      "reference-materials": true,
+      "bare-textures": true,
+      "bare-triangles": true,
+      "bare-materials": true,
+      "painted-textures": true,
+      "painted-triangles": true,
+      "painted-materials": true,
+      "painted-alpha": true,
+      "foliage-textures": true,
+      "foliage-triangles": true,
+      "foliage-materials": true,
+      "foliage-alpha": true,
+      "wood-unchanged-with-foliage": true,
+      "wood-exact-o5-subset": true,
+      "o5-historical-regression": true,
+      "sample-ledger": true,
+      "six-tris-per-group": true,
+      "whole-tree-reservation": true,
+      "family-upper-bound": true,
+      "opaque-contacts-glb": true,
+      "wood-joins": true
+    },
+    "variants": {
+      "reference": {
+        "metrics": {
+          "vertices": 2174,
+          "triangles": 3714,
+          "bounds_blender": [
+            [
+              -8.216393,
+              -6.985751,
+              0.0
+            ],
+            [
+              8.057437,
+              8.204224,
+              12.041302
+            ]
+          ],
+          "height_m": 12.041302,
+          "triangles_by_material": {
+            "Painted_Bark": 3714
+          },
+          "geometry_sha256": "1bac08230f7a3e483a88dfa31ba9d4bb1a6f1dfbd2d215c9ef302ad06b5efdde"
+        },
+        "glb_sha256": "31a0d025c0e1b17b04c136c142f32aa34828d0ed76ca739b185f9fe393026c40",
+        "blend_sha256": "d04dfaf4a4e86f655e17ef7412792ce4b864e85d3f876850d102bbd3551679a9"
+      },
+      "bare": {
+        "metrics": {
+          "vertices": 384,
+          "triangles": 646,
+          "bounds_blender": [
+            [
+              -0.333666,
+              -0.662356,
+              2.631212
+            ],
+            [
+              8.057437,
+              4.853275,
+              9.150441
+            ]
+          ],
+          "height_m": 6.519229000000001,
+          "triangles_by_material": {
+            "Painted_Bark": 646
+          },
+          "geometry_sha256": "beec591f42aa7ec08b6d100e431292058dd4a9418f7e5aaed0cfbe69d844f89a"
+        },
+        "glb_sha256": "97718b2d6c3172d40eaf1931ea05ca2f9ead0cec224d231daa6834886dfd6d9a",
+        "blend_sha256": "968f3f5188337952094588e736e90603e1eb1c8f6da9370dc7a8da56258de71d"
+      },
+      "painted": {
+        "metrics": {
+          "vertices": 1152,
+          "triangles": 1030,
+          "bounds_blender": [
+            [
+              -0.333666,
+              -1.278944,
+              2.37434
+            ],
+            [
+              8.745311,
+              5.720132,
+              9.558134
+            ]
+          ],
+          "height_m": 7.183794000000001,
+          "triangles_by_material": {
+            "Painted_Bark": 646,
+            "Painted_Foliage": 384
+          },
+          "geometry_sha256": "7c3ef0b4f82c89e214bc346a0fe2fbf52d05748b70d43dd5d552b87c71d85338"
+        },
+        "glb_sha256": "29d3e6ea88f78b04e8448a063ce93499d73d8065da7596758ecf18ee8bb7fae3",
+        "blend_sha256": "6c5ad934fcf752117d8842b31b3e8adfb71e13f797578354c5b129839ecaadce"
+      },
+      "foliage": {
+        "metrics": {
+          "vertices": 768,
+          "triangles": 384,
+          "bounds_blender": [
+            [
+              3.952775,
+              -1.278944,
+              2.37434
+            ],
+            [
+              8.745311,
+              5.720132,
+              9.558134
+            ]
+          ],
+          "height_m": 7.183794000000001,
+          "triangles_by_material": {
+            "Painted_Foliage": 384
+          },
+          "geometry_sha256": "522d7d148b13628072163a6493c8e9014b70421d20106150b232acdcc42186f0"
+        },
+        "glb_sha256": "6d854a6cd16700a04a684fd37106f08c9464a767372adb55aab56d314508de35",
+        "blend_sha256": "a1cae2efe00de13d7c08254e675aa5e5226bb373f33551173e78cdd50797075b"
+      }
+    },
+    "duration_seconds": 2.8560919409992493,
+    "source_structure_sha256": "20233cbb4f178e8b2dfbfac29351834b37cca36eb0f4ef102981a289238c9ad8",
+    "group_count": 64,
+    "wood_ids": [
+      "p:0",
+      "p:0/0",
+      "p:0/1",
+      "p:0/2",
+      "p:0/0/0",
+      "p:0/0/1",
+      "p:0/1/0",
+      "p:0/1/1",
+      "p:0/2/0",
+      "p:0/0/0/0",
+      "p:0/0/0/1",
+      "p:0/0/1/0",
+      "p:0/0/1/1",
+      "p:0/1/0/0",
+      "p:0/1/0/1",
+      "p:0/1/1/0",
+      "p:0/2/0/0",
+      "p:0/2/0/1",
+      "p:0/infill",
+      "p:0/infill/0",
+      "p:0/infill/0/0"
+    ],
+    "export_validation": {
+      "reference": {
+        "triangles": 3714,
+        "materials": {
+          "Painted_Bark": 3714
+        },
+        "bounds_gltf": [
+          [
+            -8.21639347076416,
+            0.0,
+            -8.2042236328125
+          ],
+          [
+            8.0574369430542,
+            12.041301727294922,
+            6.985751152038574
+          ]
+        ],
+        "dimensions_m": [
+          16.27383041381836,
+          12.041301727294922,
+          15.189974784851074
+        ],
+        "geometry_sha256": "afee488723d791b5569f7e0dd145985ccadda29a225eae59a26dee9ae77b5699",
+        "glb_sha256": "31a0d025c0e1b17b04c136c142f32aa34828d0ed76ca739b185f9fe393026c40"
+      },
+      "bare": {
+        "triangles": 646,
+        "materials": {
+          "Painted_Bark": 646
+        },
+        "bounds_gltf": [
+          [
+            -0.33366647362709045,
+            2.631211519241333,
+            -4.853274822235107
+          ],
+          [
+            8.0574369430542,
+            9.15044116973877,
+            0.6623560190200806
+          ]
+        ],
+        "dimensions_m": [
+          8.39110341668129,
+          6.5192296504974365,
+          5.515630841255188
+        ],
+        "geometry_sha256": "9dd93c57059d603fb1c038981973f3134a5730d185dded002293400d85fa7ba5",
+        "glb_sha256": "97718b2d6c3172d40eaf1931ea05ca2f9ead0cec224d231daa6834886dfd6d9a"
+      },
+      "painted": {
+        "triangles": 1030,
+        "materials": {
+          "Painted_Bark": 646,
+          "Painted_Foliage": 384
+        },
+        "bounds_gltf": [
+          [
+            -0.33366647362709045,
+            2.3743395805358887,
+            -5.720132350921631
+          ],
+          [
+            8.74531078338623,
+            9.558134078979492,
+            1.2789442539215088
+          ]
+        ],
+        "dimensions_m": [
+          9.078977257013321,
+          7.1837944984436035,
+          6.99907660484314
+        ],
+        "geometry_sha256": "cbbc9bdf5a4ba37fa323e029105efc9c48902118e547900ebc4bb144cf79f2d3",
+        "glb_sha256": "29d3e6ea88f78b04e8448a063ce93499d73d8065da7596758ecf18ee8bb7fae3"
+      },
+      "foliage": {
+        "triangles": 384,
+        "materials": {
+          "Painted_Foliage": 384
+        },
+        "bounds_gltf": [
+          [
+            3.952775239944458,
+            2.3743395805358887,
+            -5.720132350921631
+          ],
+          [
+            8.74531078338623,
+            9.558134078979492,
+            1.2789442539215088
+          ]
+        ],
+        "dimensions_m": [
+          4.7925355434417725,
+          7.1837944984436035,
+          6.99907660484314
+        ],
+        "geometry_sha256": "adfb6bdf81a9d4892104bf70e089647c255f3064b6678153aa901018d1ddd742",
+        "glb_sha256": "6d854a6cd16700a04a684fd37106f08c9464a767372adb55aab56d314508de35"
+      }
+    }
+  },
+  "contacts": {
+    "passed": true,
+    "maximum_error_m": 3.8698623097182645e-07,
+    "groups": [
+      {
+        "id": "p:0/0:foliage:00",
+        "wood_error_m": 6.2218992993552e-08,
+        "panel_errors_m": [
+          2.0535596881818713e-07,
+          6.261838378123045e-08,
+          1.2693987173979832e-07
+        ],
+        "paint_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0:foliage:01",
+        "wood_error_m": 1.8304710390016262e-08,
+        "panel_errors_m": [
+          1.5359282682139185e-07,
+          1.611532125237762e-07,
+          1.4960838617917822e-07
+        ],
+        "paint_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0:foliage:02",
+        "wood_error_m": 1.6135224758860898e-08,
+        "panel_errors_m": [
+          1.63806036782547e-07,
+          1.4881756709708815e-07,
+          1.9513273633757577e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0:foliage:03",
+        "wood_error_m": 1.6389318367956998e-07,
+        "panel_errors_m": [
+          1.7557497846325408e-07,
+          2.0228260855205321e-07,
+          9.33876414956717e-08
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0:foliage:04",
+        "wood_error_m": 1.2299943628100577e-07,
+        "panel_errors_m": [
+          7.282001471648517e-08,
+          2.8021392005362743e-07,
+          1.4588619710998303e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0:foliage:05",
+        "wood_error_m": 1.1240421031317634e-07,
+        "panel_errors_m": [
+          1.8389388104614282e-07,
+          1.7010533908398463e-07,
+          2.0757011747098645e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1:foliage:00",
+        "wood_error_m": 2.5947137673514037e-08,
+        "panel_errors_m": [
+          1.3409284824718104e-07,
+          5.0885870722891714e-08,
+          1.2669225065899601e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1:foliage:01",
+        "wood_error_m": 1.9675715258687967e-08,
+        "panel_errors_m": [
+          1.578425131695807e-07,
+          1.6088092476397447e-07,
+          1.4887006613704414e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1:foliage:02",
+        "wood_error_m": 9.097153001004597e-09,
+        "panel_errors_m": [
+          1.6990203606918092e-07,
+          1.5515481054949766e-07,
+          1.6213842757797574e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1:foliage:03",
+        "wood_error_m": 2.7371833199526586e-08,
+        "panel_errors_m": [
+          1.3404904490205463e-07,
+          2.55103019413221e-07,
+          1.9222647649792604e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1:foliage:04",
+        "wood_error_m": 6.377363240017733e-08,
+        "panel_errors_m": [
+          1.3149372483104063e-07,
+          1.9477701516662888e-07,
+          1.2512538438837056e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1:foliage:05",
+        "wood_error_m": 5.358318519995437e-08,
+        "panel_errors_m": [
+          8.239405784785725e-08,
+          1.0240465811887143e-07,
+          1.651304074282454e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1:foliage:06",
+        "wood_error_m": 2.3966564193835813e-08,
+        "panel_errors_m": [
+          9.156391953092326e-08,
+          1.1096647258103987e-07,
+          1.255474187867858e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/2:foliage:00",
+        "wood_error_m": 7.96960247215669e-08,
+        "panel_errors_m": [
+          3.155473619466798e-08,
+          1.3675462407168048e-07,
+          2.41844445792042e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/2:foliage:01",
+        "wood_error_m": 1.947350634628682e-08,
+        "panel_errors_m": [
+          1.7358991538703923e-07,
+          1.7511216210443465e-07,
+          2.1274088063667046e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/2:foliage:02",
+        "wood_error_m": 1.2159603014400982e-07,
+        "panel_errors_m": [
+          1.0698685823768625e-07,
+          1.2919533537660618e-07,
+          2.22844568975546e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/2:foliage:03",
+        "wood_error_m": 2.446526787594141e-08,
+        "panel_errors_m": [
+          1.271285764474503e-07,
+          2.5971511689005763e-07,
+          2.199527878709723e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0:foliage:00",
+        "wood_error_m": 1.0715508821323883e-07,
+        "panel_errors_m": [
+          1.8091234316254319e-07,
+          2.091738126653892e-07,
+          1.4097889782471999e-07
+        ],
+        "paint_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0:foliage:01",
+        "wood_error_m": 1.5788324657642747e-07,
+        "panel_errors_m": [
+          2.0827166079872294e-07,
+          1.3819538495679295e-07,
+          3.219793715347386e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0:foliage:02",
+        "wood_error_m": 1.7262229336597543e-07,
+        "panel_errors_m": [
+          1.7367521757876273e-07,
+          1.725722723143584e-07,
+          1.558082468792916e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0:foliage:03",
+        "wood_error_m": 8.298036593121731e-08,
+        "panel_errors_m": [
+          1.5720206499026312e-07,
+          1.4873279894532646e-07,
+          9.830877369766e-08
+        ],
+        "paint_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0:foliage:04",
+        "wood_error_m": 1.4047723330397209e-07,
+        "panel_errors_m": [
+          8.209187819919502e-08,
+          1.0486419952302373e-07,
+          5.5468456859956795e-08
+        ],
+        "paint_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0:foliage:05",
+        "wood_error_m": 1.304502998207417e-07,
+        "panel_errors_m": [
+          1.9414607567323931e-07,
+          1.9341930230001823e-07,
+          2.523651628576874e-07
+        ],
+        "paint_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0:foliage:06",
+        "wood_error_m": 1.0962145500616356e-07,
+        "panel_errors_m": [
+          1.2963763447263047e-07,
+          1.3400314267993148e-07,
+          2.3611187989150146e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/1:foliage:00",
+        "wood_error_m": 6.589414090180924e-08,
+        "panel_errors_m": [
+          2.3266393932750758e-07,
+          1.6072263285788473e-07,
+          2.525444227749489e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/1:foliage:01",
+        "wood_error_m": 6.31088252094377e-08,
+        "panel_errors_m": [
+          1.8237834929166e-07,
+          1.6962828497022665e-07,
+          1.725566740018148e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/1:foliage:02",
+        "wood_error_m": 9.356285785852397e-08,
+        "panel_errors_m": [
+          2.4474797255249817e-07,
+          1.9512090994735794e-07,
+          9.036363194146472e-08
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/1:foliage:03",
+        "wood_error_m": 1.736280917850484e-09,
+        "panel_errors_m": [
+          9.552636288970745e-08,
+          1.7866529911468674e-07,
+          1.8056210385059583e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/1:foliage:04",
+        "wood_error_m": 3.920966692021714e-08,
+        "panel_errors_m": [
+          2.9970323836026806e-07,
+          1.79781668154215e-07,
+          2.873304027994283e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/1:foliage:05",
+        "wood_error_m": 8.414582746863047e-08,
+        "panel_errors_m": [
+          2.0035547751978736e-07,
+          1.220641769649861e-07,
+          2.060494109549978e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0:foliage:00",
+        "wood_error_m": 6.967534205667768e-08,
+        "panel_errors_m": [
+          1.2672191770901775e-07,
+          2.577635163082181e-07,
+          2.2917385388108164e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0:foliage:01",
+        "wood_error_m": 2.849028678107802e-08,
+        "panel_errors_m": [
+          5.9604212136418796e-08,
+          2.06403540234827e-07,
+          2.2440430352248723e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0:foliage:02",
+        "wood_error_m": 1.4682426208498193e-07,
+        "panel_errors_m": [
+          3.931661161032652e-08,
+          1.3268405200204747e-07,
+          1.5243535153432498e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0:foliage:03",
+        "wood_error_m": 1.3442810606300322e-07,
+        "panel_errors_m": [
+          6.897799256644834e-08,
+          2.754085619841226e-07,
+          1.0864910698047887e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0:foliage:04",
+        "wood_error_m": 1.682130176759029e-07,
+        "panel_errors_m": [
+          8.960094667205169e-08,
+          1.7722989776858566e-07,
+          2.0054307795992596e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0:foliage:05",
+        "wood_error_m": 1.6909959808867577e-07,
+        "panel_errors_m": [
+          1.8111925220359237e-07,
+          1.1817453651325203e-07,
+          1.289012048276742e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0:foliage:06",
+        "wood_error_m": 1.2577526497540135e-07,
+        "panel_errors_m": [
+          1.650899130674548e-07,
+          1.5662699304907393e-07,
+          1.9543334265465082e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0:foliage:07",
+        "wood_error_m": 2.6743082897579942e-08,
+        "panel_errors_m": [
+          2.0364970961873158e-07,
+          1.9810998995157633e-07,
+          2.055804717343068e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/1:foliage:00",
+        "wood_error_m": 1.1138158042685927e-08,
+        "panel_errors_m": [
+          3.2504098974399825e-08,
+          1.5158823240083628e-07,
+          1.249078555485077e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/1:foliage:01",
+        "wood_error_m": 1.1852668520360422e-07,
+        "panel_errors_m": [
+          3.8698623097182645e-07,
+          2.3596377745169013e-07,
+          1.315936613785659e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/1:foliage:02",
+        "wood_error_m": 2.236869113276204e-08,
+        "panel_errors_m": [
+          2.7258696740445245e-07,
+          2.5446038521273024e-07,
+          1.3244904742170235e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/1:foliage:03",
+        "wood_error_m": 2.8005186786210703e-07,
+        "panel_errors_m": [
+          1.8399496990921903e-07,
+          1.250084386354491e-07,
+          1.2249986553519978e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/1:foliage:04",
+        "wood_error_m": 2.4300194411618235e-10,
+        "panel_errors_m": [
+          1.333298610621727e-07,
+          2.3740296961637337e-07,
+          3.0262911103759043e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/2/0:foliage:00",
+        "wood_error_m": 9.865696634443333e-08,
+        "panel_errors_m": [
+          1.6233770910764085e-07,
+          2.4236449714133546e-07,
+          7.128228148650706e-08
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/2/0:foliage:01",
+        "wood_error_m": 1.2704352030669836e-07,
+        "panel_errors_m": [
+          5.321718546472637e-08,
+          1.5905569940723664e-07,
+          1.108447279959543e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0/0:foliage:00",
+        "wood_error_m": 4.130410901038772e-08,
+        "panel_errors_m": [
+          1.928925303507031e-07,
+          4.223591262364871e-08,
+          1.575955420175516e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0/0:foliage:01",
+        "wood_error_m": 5.230853340357328e-08,
+        "panel_errors_m": [
+          1.35055840186246e-07,
+          7.674701256899448e-08,
+          3.3185582000099075e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0/1:foliage:00",
+        "wood_error_m": 5.226674236623943e-08,
+        "panel_errors_m": [
+          1.0296962638949784e-07,
+          1.2552964064809805e-07,
+          1.0898896895157557e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/0/1:foliage:01",
+        "wood_error_m": 4.936408799474875e-09,
+        "panel_errors_m": [
+          1.4833880445854014e-07,
+          2.277500162477761e-07,
+          2.474144455463841e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/1/0:foliage:00",
+        "wood_error_m": 1.4631085212338383e-07,
+        "panel_errors_m": [
+          1.537229769607833e-07,
+          6.61396289118e-08,
+          3.1369563830616246e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/0/1/1:foliage:00",
+        "wood_error_m": 6.391546068498984e-08,
+        "panel_errors_m": [
+          1.6182442973130514e-07,
+          2.217901974247776e-07,
+          1.8803995974695663e-07
+        ],
+        "paint_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0/0:foliage:00",
+        "wood_error_m": 4.53272314348052e-08,
+        "panel_errors_m": [
+          1.2450037487847176e-07,
+          2.238628561216832e-07,
+          1.4503371003511865e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0/0:foliage:01",
+        "wood_error_m": 8.85863883604987e-09,
+        "panel_errors_m": [
+          1.566504100537365e-07,
+          7.58862734704686e-08,
+          1.4455586798046235e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/0/1:foliage:00",
+        "wood_error_m": 2.6248215071847044e-09,
+        "panel_errors_m": [
+          2.853690739834878e-07,
+          1.5622343767119468e-07,
+          3.06990030071716e-08
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/1/1/0:foliage:00",
+        "wood_error_m": 1.191763284563116e-08,
+        "panel_errors_m": [
+          3.3338474454370377e-07,
+          1.814384384511692e-07,
+          7.889975802134868e-08
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill:foliage:00",
+        "wood_error_m": 1.3254041141693217e-07,
+        "panel_errors_m": [
+          4.4373357587489295e-08,
+          5.013531823613634e-08,
+          8.623179413774582e-08
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill:foliage:01",
+        "wood_error_m": 3.760843183363051e-08,
+        "panel_errors_m": [
+          1.0650202811520279e-07,
+          1.0442154495648404e-07,
+          1.8476848985529785e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill:foliage:02",
+        "wood_error_m": 1.2095720294059672e-07,
+        "panel_errors_m": [
+          6.04366340594987e-08,
+          1.5389585062089212e-07,
+          1.0228461638964727e-07
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill/0:foliage:00",
+        "wood_error_m": 1.4573443938624475e-07,
+        "panel_errors_m": [
+          5.525096393705822e-08,
+          1.0187665750026264e-07,
+          1.7843715539208526e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill/0:foliage:01",
+        "wood_error_m": 1.2333645786988084e-07,
+        "panel_errors_m": [
+          1.9618990156926884e-07,
+          6.446196543785141e-08,
+          1.5838933103095147e-07
+        ],
+        "paint_alpha": [
+          255,
+          223,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill/0:foliage:02",
+        "wood_error_m": 1.0706409453148785e-07,
+        "panel_errors_m": [
+          4.9447550259232795e-08,
+          9.428309247948633e-08,
+          7.138457977690892e-08
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill/0:foliage:03",
+        "wood_error_m": 3.285091330638933e-08,
+        "panel_errors_m": [
+          6.676551029512215e-08,
+          1.189632689987083e-07,
+          1.460132912243116e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill/0/0:foliage:00",
+        "wood_error_m": 1.6882799226190722e-07,
+        "panel_errors_m": [
+          1.3813425109065907e-07,
+          1.8048641431649456e-07,
+          1.7105476967591318e-07
+        ],
+        "paint_alpha": [
+          223,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "p:0/infill/0/0:foliage:01",
+        "wood_error_m": 3.5020921289763016e-09,
+        "panel_errors_m": [
+          2.0906637655899748e-07,
+          1.2312339771160826e-07,
+          9.66139780541891e-08
+        ],
+        "paint_alpha": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "scope": "GLB float32 positions + interpolated UV at opaque painted attachment, not all painted leaf connections"
+  },
+  "review": {
+    "passed": true,
+    "godot": [
+      {
+        "assets": {
+          "bare": {
+            "materials": [
+              {
+                "cull_mode": 2,
+                "cutoff": 0.5,
+                "imported_texture_filter": 3,
+                "mipmap_count": 10,
+                "mipmaps": true,
+                "name": "Painted_Bark",
+                "normal_map": false,
+                "review_texture_filter": 5,
+                "roughness": 0.949999988079071,
+                "shadow_casting": 2,
+                "texture_size": [
+                  1254,
+                  1254
+                ],
+                "transparency": 0
+              }
+            ],
+            "triangles": 646
+          }
+        },
+        "captures": [
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--front.png",
+            "shot": "front"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--side.png",
+            "shot": "side"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--perspective.png",
+            "shot": "perspective"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--back.png",
+            "shot": "back"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--top.png",
+            "shot": "top"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--below.png",
+            "shot": "below"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--medium.png",
+            "shot": "medium"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--far.png",
+            "shot": "far"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--dark.png",
+            "shot": "dark"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--alternate-light.png",
+            "shot": "alternate-light"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--shadow_perspective.png",
+            "shot": "shadow_perspective"
+          },
+          {
+            "asset": "bare",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              }
+            ],
+            "path": "bare--contact-close.png",
+            "shot": "contact-close"
+          }
+        ],
+        "environment": {
+          "ambient": 0.5,
+          "exposure": 1,
+          "shadow_bias": 0.100000001490116,
+          "shadow_normal_bias": 2.0,
+          "shadows": true,
+          "sun_energy": 1.2,
+          "tonemap": "linear"
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "msaa": 2,
+        "passed": true,
+        "renderer": "gl_compatibility",
+        "video_adapter": "NVIDIA GeForce RTX 5060"
+      },
+      {
+        "assets": {
+          "painted": {
+            "materials": [
+              {
+                "cull_mode": 2,
+                "cutoff": 0.5,
+                "imported_texture_filter": 3,
+                "mipmap_count": 10,
+                "mipmaps": true,
+                "name": "Painted_Bark",
+                "normal_map": false,
+                "review_texture_filter": 5,
+                "roughness": 0.949999988079071,
+                "shadow_casting": 2,
+                "texture_size": [
+                  1254,
+                  1254
+                ],
+                "transparency": 0
+              },
+              {
+                "cull_mode": 2,
+                "cutoff": 0.5,
+                "imported_texture_filter": 3,
+                "mipmap_count": 10,
+                "mipmaps": true,
+                "name": "Painted_Foliage",
+                "normal_map": false,
+                "review_texture_filter": 5,
+                "roughness": 0.949999988079071,
+                "shadow_casting": 2,
+                "texture_size": [
+                  2000,
+                  2000
+                ],
+                "transparency": 2
+              }
+            ],
+            "triangles": 1030
+          }
+        },
+        "captures": [
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--front.png",
+            "shot": "front"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--side.png",
+            "shot": "side"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--perspective.png",
+            "shot": "perspective"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--back.png",
+            "shot": "back"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--top.png",
+            "shot": "top"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--below.png",
+            "shot": "below"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--medium.png",
+            "shot": "medium"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--far.png",
+            "shot": "far"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--dark.png",
+            "shot": "dark"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--alternate-light.png",
+            "shot": "alternate-light"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--shadow_perspective.png",
+            "shot": "shadow_perspective"
+          },
+          {
+            "asset": "painted",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Bark"
+              },
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "painted--contact-close.png",
+            "shot": "contact-close"
+          }
+        ],
+        "environment": {
+          "ambient": 0.5,
+          "exposure": 1,
+          "shadow_bias": 0.100000001490116,
+          "shadow_normal_bias": 2.0,
+          "shadows": true,
+          "sun_energy": 1.2,
+          "tonemap": "linear"
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "msaa": 2,
+        "passed": true,
+        "renderer": "gl_compatibility",
+        "video_adapter": "NVIDIA GeForce RTX 5060"
+      },
+      {
+        "assets": {
+          "foliage": {
+            "materials": [
+              {
+                "cull_mode": 2,
+                "cutoff": 0.5,
+                "imported_texture_filter": 3,
+                "mipmap_count": 10,
+                "mipmaps": true,
+                "name": "Painted_Foliage",
+                "normal_map": false,
+                "review_texture_filter": 5,
+                "roughness": 0.949999988079071,
+                "shadow_casting": 2,
+                "texture_size": [
+                  2000,
+                  2000
+                ],
+                "transparency": 2
+              }
+            ],
+            "triangles": 384
+          }
+        },
+        "captures": [
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--front.png",
+            "shot": "front"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--side.png",
+            "shot": "side"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--perspective.png",
+            "shot": "perspective"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--back.png",
+            "shot": "back"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--top.png",
+            "shot": "top"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--below.png",
+            "shot": "below"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--medium.png",
+            "shot": "medium"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--far.png",
+            "shot": "far"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--dark.png",
+            "shot": "dark"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--alternate-light.png",
+            "shot": "alternate-light"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--shadow_perspective.png",
+            "shot": "shadow_perspective"
+          },
+          {
+            "asset": "foliage",
+            "material_settings": [
+              {
+                "alpha_aa": 0,
+                "alpha_edge": 0.300000011920929,
+                "filter": 5,
+                "name": "Painted_Foliage"
+              }
+            ],
+            "path": "foliage--contact-close.png",
+            "shot": "contact-close"
+          }
+        ],
+        "environment": {
+          "ambient": 0.5,
+          "exposure": 1,
+          "shadow_bias": 0.100000001490116,
+          "shadow_normal_bias": 2.0,
+          "shadows": true,
+          "sun_energy": 1.2,
+          "tonemap": "linear"
+        },
+        "godot": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "msaa": 2,
+        "passed": true,
+        "renderer": "gl_compatibility",
+        "video_adapter": "NVIDIA GeForce RTX 5060"
+      }
+    ],
+    "shots": [
+      {
+        "id": "front",
+        "camera": {
+          "location": [
+            4.2058225,
+            -24.822323941366434,
+            9.211387152963972
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.11914522061843064,
+              0.9928768384869221
+            ],
+            [
+              0.0,
+              -0.9928768384869221,
+              0.11914522061843064
+            ]
+          ],
+          "ortho_scale": 10.440823549999998
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ]
+      },
+      {
+        "id": "side",
+        "camera": {
+          "location": [
+            31.248740441366436,
+            2.220594,
+            9.211387152963972
+          ],
+          "basis_columns": [
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.11914522061843064,
+              0.0,
+              0.9928768384869221
+            ],
+            [
+              0.9928768384869221,
+              0.0,
+              0.11914522061843064
+            ]
+          ],
+          "ortho_scale": 10.440823549999998
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ]
+      },
+      {
+        "id": "perspective",
+        "camera": {
+          "location": [
+            22.738206697053652,
+            -16.311790197053654,
+            13.379190678821463
+          ],
+          "basis_columns": [
+            [
+              0.7071067811865476,
+              0.7071067811865476,
+              -0.0
+            ],
+            [
+              -0.19245008972987526,
+              0.19245008972987526,
+              0.9622504486493764
+            ],
+            [
+              0.6804138174397717,
+              -0.6804138174397717,
+              0.2721655269759087
+            ]
+          ],
+          "ortho_scale": 10.440823549999998
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ]
+      },
+      {
+        "id": "back",
+        "camera": {
+          "location": [
+            -14.634356624022264,
+            21.060773124022262,
+            11.618290737206678
+          ],
+          "basis_columns": [
+            [
+              -0.7071067811865476,
+              -0.7071067811865476,
+              0.0
+            ],
+            [
+              0.14673479641335554,
+              -0.14673479641335554,
+              0.978231976089037
+            ],
+            [
+              -0.6917144638660746,
+              0.6917144638660746,
+              0.20751433915982237
+            ]
+          ],
+          "ortho_scale": 10.440823549999998
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ]
+      },
+      {
+        "id": "top",
+        "camera": {
+          "location": [
+            4.2058225,
+            2.220594,
+            33.203168
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "ortho_scale": 10.440823549999998
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ]
+      },
+      {
+        "id": "below",
+        "camera": {
+          "location": [
+            21.466526184561914,
+            -15.040109684561914,
+            -6.116255579193338
+          ],
+          "basis_columns": [
+            [
+              0.7071067811865476,
+              0.7071067811865476,
+              -0.0
+            ],
+            [
+              0.3136775004637546,
+              -0.3136775004637546,
+              0.8962214298964417
+            ],
+            [
+              0.6337242505244779,
+              -0.6337242505244779,
+              -0.4436069753671345
+            ]
+          ],
+          "ortho_scale": 10.440823549999998
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ]
+      },
+      {
+        "id": "medium",
+        "camera": {
+          "location": [
+            22.738206697053652,
+            -16.311790197053654,
+            13.379190678821463
+          ],
+          "basis_columns": [
+            [
+              0.7071067811865476,
+              0.7071067811865476,
+              -0.0
+            ],
+            [
+              -0.19245008972987526,
+              0.19245008972987526,
+              0.9622504486493764
+            ],
+            [
+              0.6804138174397717,
+              -0.6804138174397717,
+              0.2721655269759087
+            ]
+          ],
+          "ortho_scale": 19.9737494
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ],
+        "receiver": false
+      },
+      {
+        "id": "far",
+        "camera": {
+          "location": [
+            22.738206697053652,
+            -16.311790197053654,
+            13.379190678821463
+          ],
+          "basis_columns": [
+            [
+              0.7071067811865476,
+              0.7071067811865476,
+              -0.0
+            ],
+            [
+              -0.19245008972987526,
+              0.19245008972987526,
+              0.9622504486493764
+            ],
+            [
+              0.6804138174397717,
+              -0.6804138174397717,
+              0.2721655269759087
+            ]
+          ],
+          "ortho_scale": 36.31590799999999
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ],
+        "receiver": false
+      },
+      {
+        "id": "dark",
+        "camera": {
+          "location": [
+            22.738206697053652,
+            -16.311790197053654,
+            13.379190678821463
+          ],
+          "basis_columns": [
+            [
+              0.7071067811865476,
+              0.7071067811865476,
+              -0.0
+            ],
+            [
+              -0.19245008972987526,
+              0.19245008972987526,
+              0.9622504486493764
+            ],
+            [
+              0.6804138174397717,
+              -0.6804138174397717,
+              0.2721655269759087
+            ]
+          ],
+          "ortho_scale": 10.440823549999998
+        },
+        "background": "#252A28",
+        "light": [
+          -35,
+          -25,
+          0
+        ],
+        "receiver": false
+      },
+      {
+        "id": "alternate-light",
+        "camera": {
+          "location": [
+            22.738206697053652,
+            -16.311790197053654,
+            13.379190678821463
+          ],
+          "basis_columns": [
+            [
+              0.7071067811865476,
+              0.7071067811865476,
+              -0.0
+            ],
+            [
+              -0.19245008972987526,
+              0.19245008972987526,
+              0.9622504486493764
+            ],
+            [
+              0.6804138174397717,
+              -0.6804138174397717,
+              0.2721655269759087
+            ]
+          ],
+          "ortho_scale": 10.440823549999998
+        },
+        "background": "#EEE9DF",
+        "light": [
+          35,
+          120,
+          0
+        ],
+        "receiver": false
+      },
+      {
+        "id": "shadow_perspective",
+        "camera": {
+          "location": [
+            22.738206697053652,
+            -16.311790197053654,
+            13.379190678821463
+          ],
+          "basis_columns": [
+            [
+              0.7071067811865476,
+              0.7071067811865476,
+              -0.0
+            ],
+            [
+              -0.19245008972987526,
+              0.19245008972987526,
+              0.9622504486493764
+            ],
+            [
+              0.6804138174397717,
+              -0.6804138174397717,
+              0.2721655269759087
+            ]
+          ],
+          "ortho_scale": 12.710567799999996
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -75,
+          -25,
+          0
+        ],
+        "receiver": true
+      },
+      {
+        "id": "contact-close",
+        "camera": {
+          "location": [
+            10.572875556593573,
+            -1.458359819706898,
+            8.650390143085335
+          ],
+          "basis_columns": [
+            [
+              0.7071067811865476,
+              0.7071067811865476,
+              -0.0
+            ],
+            [
+              -0.19245008972987526,
+              0.19245008972987526,
+              0.9622504486493764
+            ],
+            [
+              0.6804138174397717,
+              -0.6804138174397717,
+              0.2721655269759087
+            ]
+          ],
+          "ortho_scale": 2.116915619670654
+        },
+        "background": "#EEE9DF",
+        "light": [
+          -35,
+          -25,
+          0
+        ]
+      }
+    ],
+    "captures_sha256": {
+      "painted--side.png": "f8c3a2573908bdb2cec619beda8d5569b5f3bf78155fa22440153ac2b7b41fbd",
+      "bare--front.png": "c67524d7e6fb96108cc8869c0b6ff5701925f28930c4123f1fd6e2a8c8238689",
+      "foliage--alternate-light.png": "1d058a156cf668849b8c149cbc4418020e5895ee361c7f063c34c65fb24bb61c",
+      "bare--top.png": "2fe055b0d6abcfbca3dec554c4ab4515da10393e0001d0f5add27ef42f1f4fcd",
+      "bare--contact-close.png": "e460d1a65c0c8a4b0bde8996cced13dfb3967d50d0de261c0c316e822586d72a",
+      "foliage--far.png": "700cf7ebde038566f9a21a89e6b1026e2c63a8a48bd9330e0daa099e4e21ba18",
+      "foliage--medium.png": "cd2d49156aff7891db0b9214790db85cddd4ecd5f68e0251037e488209a59207",
+      "foliage--below.png": "244b90cc161675f45809ed00ab14b6dd2555d778a6061778da23120bcf272b4a",
+      "foliage--shadow_perspective.png": "3bda7fc2bafc9ede6087b974bbe2a195a812223b47b1af94679c458fe6d048c2",
+      "painted--contact-close.png": "15590ff18960303fe23f001ea4ce549cc90a45884caa05f46c8d8c0e8f0162b2",
+      "foliage--front.png": "f3bc07e036bc14eb99dbec696bd3a2422a613efcf57269c591d37081e1b6f4c5",
+      "bare--back.png": "671802deb594f8733cce5a31dd6883b70d473696368cd40d2fe411e36036b959",
+      "painted--far.png": "49f56e26a42609fc1ef389287dfed7711056cd00cf8bd36a28ec7556cdd2d95e",
+      "painted--alternate-light.png": "412c9db0de8378c65dbf4e935f9573b371139ee9bcccef27190fc281d7ad0750",
+      "painted--below.png": "45ccc106cc39ca57a340d28639c816f6bcd675ad31de900ae6146e5be951fd64",
+      "bare--shadow_perspective.png": "379d637877d75f44be7a49f8e633b5bbceec890d4ec4be3a01f247d9d823c1a4",
+      "painted--front.png": "5bbc09d082726d11d5cb783fb7210cb064ce35472862068ad1c9df41888e03a4",
+      "painted--dark.png": "8d8aded95847c6fce8390b9aa86976037d4861b38906c6363d67ed4f4839b7c8",
+      "bare--side.png": "de06d48b281364cec1b114d6cce9af752edb77cf372266ea0ccbdae5037eeb11",
+      "painted--shadow_perspective.png": "d9fadcbc8b3d0a3ffc10d89a7097f2e2c8aadbc253793a9d46f6b936e0a747b0",
+      "foliage--top.png": "6e6c964cd95e254be4ef1b2df5716130c4bcb15c17c239654e191856b12fe1e5",
+      "painted--back.png": "a3785dc20d938e99f3b02d8b4f5969fc2b464ffadefe299327be0bee83818a7f",
+      "foliage--dark.png": "0463f4d41e1332da5d162476e6320a7335ea0039b47ae06799738085f3aecde6",
+      "painted--medium.png": "e83b34055f8331a7dc928c0e3b8a12289882b6c075a9034224ecd3559e655c81",
+      "bare--far.png": "211a430a3498ecc13771c5a804574809213f01be10343149b31a3ff1d008008d",
+      "painted--top.png": "1e692b3f9d81c0ff2c8382e07a3f6a7698a031365779035fa222decf0023191f",
+      "foliage--perspective.png": "1009aef207c345020012c2f45b834aa6b7d24bbf9e57f3ec57b7e5a6508165d7",
+      "painted--perspective.png": "cde23e1576faffe325d29e043b151b57dcda87cf889cc9a5746c21b761186592",
+      "bare--dark.png": "dc6288e37abe02fb7c9f7ccf3b612d803836998ce233dbf89ad1a6d6eeb922a5",
+      "bare--medium.png": "fe72a4b995834bb924dbb6c0e2d532b5179ae80c8e227cd8dcd836f31f9048bf",
+      "bare--below.png": "decce94ab6b602cee9e02785fb126dac95e4d2aa1ddb3401446fb9adef151f3a",
+      "foliage--side.png": "bd5ea4d3cfda95480d8ab90be2fc76bbfa4e5521b1c1cb1f7bbb7b722b39f2a5",
+      "bare--alternate-light.png": "c76896626a63540a2cc70031fd3fd830ba3292f633755c9bcc3c09a3101ac93b",
+      "foliage--contact-close.png": "af3c5643d50506d847d12f7038b2efa25fda2acb6c1a44f57461afc9c06b3deb",
+      "foliage--back.png": "ac300bd0628fb664f68a1d73a430d0491207cbb93856c47136a5b0fc43cdd6c7",
+      "bare--perspective.png": "cf491718c5b3a39453752614d7bd98069d70d6e3804e6f663b72167bc13e60d8"
+    },
+    "visual_review": {
+      "status": "reviewed_agent",
+      "inspected_captures": 23,
+      "painted": 12,
+      "bare": 5,
+      "foliage_only": 6,
+      "observations": "Continuidad exterior con madera visible y huecos; pintura intacta y sombras recortadas visibles. Persisten agrupaciones compactas en algunas vistas y cruces de l\u00e1minas de canto en acercamiento. Aceptaci\u00f3n art\u00edstica pendiente."
+    },
+    "artistic_acceptance": "pending_user"
+  },
+  "visual_review": {
+    "status": "reviewed_agent",
+    "inspected_captures": 23,
+    "painted": 12,
+    "bare": 5,
+    "foliage_only": 6,
+    "observations": "Continuidad exterior con madera visible y huecos; pintura intacta y sombras recortadas visibles. Persisten agrupaciones compactas en algunas vistas y cruces de l\u00e1minas de canto en acercamiento. Aceptaci\u00f3n art\u00edstica pendiente."
+  },
+  "artistic_acceptance": "pending_user",
+  "tree_foliage_integration": "not_started",
+  "images_sha256": {
+    "contacto.png": "15590ff18960303fe23f001ea4ce549cc90a45884caa05f46c8d8c0e8f0162b2",
+    "rama.png": "cde23e1576faffe325d29e043b151b57dcda87cf889cc9a5746c21b761186592",
+    "comparison.jpg": "e5b93a7445dfb8f80baf1b41ed11721f5f0e7b4ed93d39850f8accfa31b48ac7",
+    "sombras.png": "d9fadcbc8b3d0a3ffc10d89a7097f2e2c8aadbc253793a9d46f6b936e0a747b0",
+    "appearance.jpg": "9172fd257d5599006fba292eb70c66e26ec3e1a3ea146a45db9d3b54ce3ebabc"
+  }
+}

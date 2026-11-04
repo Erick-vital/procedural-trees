@@ -1,0 +1,434 @@
+{
+  "version": "1.0.0",
+  "study": "artifacts/f4/ensayo-03",
+  "passed": true,
+  "workflow": "Codex en este chat interpreta la matriz; herramientas locales validan y generan.",
+  "independent_model_call": false,
+  "origin_is_declared": true,
+  "checks": {
+    "joven-direction": true,
+    "joven-budget": true,
+    "joven-sources-and-environment": true,
+    "joven-geometry-changed": true,
+    "adulto-direction": true,
+    "adulto-budget": true,
+    "adulto-sources-and-environment": true,
+    "adulto-geometry-changed": true,
+    "viejo-direction": true,
+    "viejo-budget": true,
+    "viejo-sources-and-environment": true,
+    "viejo-geometry-changed": true,
+    "densa-direction": true,
+    "densa-budget": true,
+    "densa-sources-and-environment": true,
+    "densa-geometry-changed": true,
+    "densa-base-wood-identical": true,
+    "abierta-direction": true,
+    "abierta-budget": true,
+    "abierta-sources-and-environment": true,
+    "abierta-geometry-changed": true,
+    "abierta-base-wood-identical": true,
+    "asimetrica-direction": true,
+    "asimetrica-budget": true,
+    "asimetrica-sources-and-environment": true,
+    "asimetrica-geometry-changed": true,
+    "replay-resolution-identical": true,
+    "repeat-glb-identical": true
+  },
+  "cases": {
+    "joven": {
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 1007,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "baseline": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 1007,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "direction": {
+        "base.height_m": true,
+        "base.base_radius_m": true,
+        "canopy.leaf_length_m": true
+      },
+      "triangles": 3132,
+      "baseline_triangles": 5804,
+      "glb_sha256": "ba53154416f638d105694f569792334ab5e99b6e8c8725e3abfed5878c28a741",
+      "baseline_glb_sha256": "d4d2c8751a1511cec8550473ebbc020a7187bef0c79f3f88e9b7f77f50dadc59"
+    },
+    "adulto": {
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {
+          "base": {
+            "height_m": 11,
+            "base_radius_m": 0.55
+          }
+        }
+      },
+      "baseline": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "direction": {
+        "base.height_m": true,
+        "base.base_radius_m": true
+      },
+      "triangles": 6124,
+      "baseline_triangles": 5820,
+      "glb_sha256": "97d801adcd97e471c3f9fe0c1708439de35d903f2c5aa14f070e02b7e7a2f85c",
+      "baseline_glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397"
+    },
+    "viejo": {
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "viejo",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "baseline": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 3009,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "direction": {
+        "base.base_radius_m": true,
+        "base.asymmetry": true
+      },
+      "triangles": 6812,
+      "baseline_triangles": 5868,
+      "glb_sha256": "5d67741ffd00a394133742d7077687cec08823c9b9f36f3395a6104db93ca74d",
+      "baseline_glb_sha256": "a3f42a0c37e2cc0765a7b11812dc54de63965f5a36ae35e40c7191dcff97630b"
+    },
+    "densa": {
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {
+          "canopy": {
+            "group_count": 300
+          }
+        }
+      },
+      "baseline": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "direction": {
+        "canopy.group_count": true
+      },
+      "triangles": 6196,
+      "baseline_triangles": 5820,
+      "glb_sha256": "77f59ea96fd4606c546a1e754d3d9ed658b185a7b8e0a0aa5d9fc462aa2e2c7e",
+      "baseline_glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397"
+    },
+    "abierta": {
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {
+          "canopy": {
+            "group_count": 180
+          }
+        }
+      },
+      "baseline": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "direction": {
+        "canopy.group_count": true
+      },
+      "triangles": 5044,
+      "baseline_triangles": 5820,
+      "glb_sha256": "5d393e894e9ae08cdbc11127d41b35134d7d4a79063da508d9c605d149703fc5",
+      "baseline_glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397"
+    },
+    "asimetrica": {
+      "instance": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {
+          "base": {
+            "asymmetry": 0.8
+          }
+        }
+      },
+      "baseline": {
+        "schema_version": "1.4",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "2.2.0",
+        "profile": "adulto",
+        "seeds": {
+          "base": 2000,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "direction": {
+        "base.asymmetry": true
+      },
+      "triangles": 5996,
+      "baseline_triangles": 5820,
+      "glb_sha256": "5841c01b00bd6d91761fa80c67e4b94c4024dea987da615ab20bb5e3506cfac6",
+      "baseline_glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397"
+    }
+  },
+  "historical_regressions": {
+    "joven": {
+      "glb_sha256": "ba53154416f638d105694f569792334ab5e99b6e8c8725e3abfed5878c28a741",
+      "reference_case": "joven-07",
+      "exact": true
+    },
+    "viejo": {
+      "glb_sha256": "5d67741ffd00a394133742d7077687cec08823c9b9f36f3395a6104db93ca74d",
+      "reference_case": "pilot",
+      "exact": true
+    },
+    "adulto": {
+      "glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397",
+      "reference_case": "adulto-00",
+      "exact": true
+    }
+  },
+  "visual_review": {
+    "status": "reviewed-by-agent",
+    "date": "2026-11-02",
+    "application": "Godot 4.7.2",
+    "contact_sheets": {
+      "joven.jpg": "c1695386ea59d1c0b1c5c66fe40e33abffffdfa980a6ed258d8e8b87922279b4",
+      "adulto.jpg": "446b94a6992346aa77b3bf243ba296ee72b8a7eaf2ecea3726a8822b7ee0b9f3",
+      "viejo.jpg": "7b31df2319a34a8a8fb00ce7c47171a65ffe8fed418b80944756918ad76bce80",
+      "densa.jpg": "9a913798198bc6e60d57433cda723705126b10c555fb25491541c4929e460650",
+      "abierta.jpg": "b323f2baaef7b3584ec7e1dc66fcbd4294ffb3990ad17d5bee18f9730fbed13b",
+      "asimetrica.jpg": "a74829d5bd826f9412d89d313a7a4f3e40ee142c858b4d49f32b619959021e08"
+    },
+    "observations": {
+      "joven": "Perfil de 4 m y tronco fino legible a la misma escala física que su base adulta. La tarjeta pequeña conserva el estilo; el tamaño en esta lámina limita la inspección de detalle.",
+      "adulto": "Mayor altura y grosor visibles, con copa de la misma familia y reparto de ramas conservado por parámetros. Cambiar dimensiones también desplaza soportes; no es una escala uniforme de la malla anterior.",
+      "viejo": "Tronco más grueso y copa extendida/irregular, visibles en frente, perfil y perspectiva. Se trata de un perfil artístico, sin simulación de envejecimiento.",
+      "densa": "Aumento visual moderado de plenitud, perceptible sobre todo en perspectiva y arriba. La estructura base conserva identidad; el número de grupos no equivale a densidad botánica.",
+      "abierta": "Huecos mayores y más madera visible, especialmente arriba y en perspectiva. No se cambia la pintura; cambian los conectores asociados a grupos además del follaje.",
+      "asimetrica": "Desplazamiento de ramas y distribución de copa, más claro en frente y arriba; efecto sutil en perfil. No representa una dirección de inclinación solicitada ni una nueva arquitectura."
+    },
+    "user_artistic_acceptance": "pending",
+    "limits": "Cuatro vistas por pareja; no certifica todos los contactos ni rangos. No se observan pérdidas evidentes de materiales o partes completas en las láminas revisadas."
+  },
+  "capture_sha256": {
+    "base-densa--side.png": "5dcc8e142366f1542c0bebe986e96965c1ecec709c3594141661060e97e69a4c",
+    "candidate-asimetrica--front.png": "44e68d5ce7adb9df59d18bab468152f784848a2e333ce9867c375f086ecb29f9",
+    "candidate-asimetrica--perspective.png": "a782b3edb7cfda7af6bf8e872813161dea68ab79e72b384af3d40ae4151e257e",
+    "base-adulto--front.png": "d6c9e8a995ab284e62d90ebc461fd76e6b5047848e533a2c9b628982496399c2",
+    "base-asimetrica--top.png": "9965105db2b40c58c93cc78b7b422f0602772917bf1d9ffb67b94366af7b77df",
+    "base-viejo--perspective.png": "3f4e434063bb4ea7a061283844cae19be56e3875a9fc2265240f2a3e41130c97",
+    "candidate-viejo--side.png": "fecfa9a82d98ba0dcb89a559b31e5e0aa53be46f728fcffa4c0c5ce3f193041a",
+    "base-abierta--top.png": "aebe06a4abc5b3e7793b8a0ba62e30d8684087197f95165d3d388eb2898cecb7",
+    "candidate-abierta--perspective.png": "8d70ff309cb7b660dbbbdcbb03c8741cd0f394375ea731219c3a8546562e2bed",
+    "base-asimetrica--perspective.png": "1e3253600991b392112b40b95e8a809da20a6fd2b8bb6e3f6f722ff804f56888",
+    "base-densa--front.png": "d638b7fe92292ea1807adfa897f9a68bcdb320d4737f94d267d5a77924dbaca6",
+    "candidate-asimetrica--side.png": "265be440fed41a38093a4fe10aba704eee87cc7a3c5b762fc536bf137e435324",
+    "candidate-joven--front.png": "36c1c479a037bd5e5f36b137902a915b33e13512ddd6d14c90355afddfcf5e96",
+    "candidate-densa--perspective.png": "25d37ed2ebfdc8fe8192871cbf442aef0b491c7c51242f2ecc06df3566f904e0",
+    "candidate-densa--top.png": "7a9a85485629ebd726303a1aa6d05ada30bba7f9f8fc51535dd6ead69e75d8ed",
+    "candidate-adulto--side.png": "dc41cbed5e864ed67361051291234ce03ce6818b016e3c9b5149001744880cda",
+    "base-asimetrica--side.png": "5e0e78331337a6bbe2e655bda7647d49a1fe72bcc29b01544fa63b80a6032170",
+    "base-viejo--top.png": "0fcf5cb21f8f2a76bab1e236658b41310e1f478f652de6b88ba742b9a53454b5",
+    "candidate-adulto--front.png": "6fbb60e3098c4b6a7a1e89aa72b3d4c0f353903bfdec08f224cc3e219f0e25f2",
+    "base-joven--front.png": "0903cd9881c6e69c428f570acbc1037d6ca101c743e0c6ab094094c417afac3e",
+    "candidate-adulto--top.png": "3206b1fc051ecf7a15c0e62c05c9c13c1251c4d9e5b9a851336a11b854e49e96",
+    "candidate-densa--front.png": "02a9a9b1ad3d07b91e2c05259a765541d5c3ccb6c51fba05050879e77dd4bf7f",
+    "base-joven--side.png": "1f3c5baf205f7933c81cae4c33c1ea71944c8cea1331611a1fe5b0f653398208",
+    "candidate-joven--top.png": "de1840b2d4940967b1fc75f549c359436ae814d6f862efbf6eefb0c4a05ee159",
+    "candidate-asimetrica--top.png": "67f7b4c5f35c4b05fcd04b0d7f8101604df4544713a5ee9203d71f3d8e5d90cd",
+    "base-densa--top.png": "7f013117f40b86d596a03fd320cb2470af3231b39948dc100c08ec158fcb4897",
+    "base-viejo--side.png": "24f73bdef256cf65704f0b8faf01c905dc97e7035e6a0051804f9a0c635a17f3",
+    "base-abierta--perspective.png": "d304987fa7f2696eb6ab9d3c1ae01206ea6e174856c8b66db88b9264db02ad04",
+    "base-abierta--front.png": "6068b40fc46891c3ccc7a4f2639b77a80ef82420c61bfc2876c76cbafcaf4730",
+    "base-densa--perspective.png": "c7f7ed94e29f8af935f34451336ed4bc2abe637b76f4b13cabc6735ae61263e2",
+    "candidate-adulto--perspective.png": "ac093997fe8daa181afbc158f4edf383006654597d93a7345a30137a1253df3a",
+    "candidate-joven--side.png": "ba98f4469c0ab84a0aa82ec45d5e076365d5cce1171d2b416b4281591fa8887b",
+    "base-viejo--front.png": "d3094633d1054700cf86509ecc79e129bce4eccb464b7f605d5049de491d6a98",
+    "candidate-viejo--perspective.png": "9373e3ce11e626764967f24517c61794e541225c17a09ff4f16e814a9e8851d6",
+    "candidate-abierta--front.png": "87d6ae6bdca0a5b33f8c1cc1144d36e8b6065448ca94424699148df5d142edbd",
+    "candidate-abierta--side.png": "e685d60d8b381baa2c535e65663af9cb2ae572a8839b01af64667baccc8d697d",
+    "base-joven--perspective.png": "d0019dee1cde987b34a45e7e23a36640b0ad89cdb282b3b4eaeb1e74fb9e777b",
+    "base-joven--top.png": "10d4496f865b6913b2e8cd01a5994ab5d3996f6c8c2b27d9bc3093d51839da4e",
+    "candidate-densa--side.png": "3fa2878da07636bbaebea8fdc34c89389e0c8093d6b9bf75951836a492c166a0",
+    "candidate-joven--perspective.png": "cfb926dc5f284069f757a624514114dbbc968e4ed281ac064b9dd659a926b1c3",
+    "base-adulto--side.png": "4e3ee8524f53bd09b5b4b466a48c1b67b440a0365ec622750759801919dcb881",
+    "candidate-viejo--top.png": "6930427025aed1ed54764fc60bd2a37923ddc0f47d81048e57d7e6089c60322b",
+    "base-abierta--side.png": "d3be9536b4b9528729f870d63c8fd25e4086ba89b547231d52c2facfcb0566af",
+    "base-adulto--top.png": "e92a30c8a1883e0ff3a5b36000ec65171ad8081d692f26b55dc63b4b90ba26ef",
+    "base-asimetrica--front.png": "1ca6d438a1213cd86f40b684a473cc4c2e26a41933defc4c9e77fa84607f48a7",
+    "base-adulto--perspective.png": "822cf8def8b5e373fc6aef578de113c30faab308bd6de9f75099085903d040ae",
+    "candidate-abierta--top.png": "ef57ff72026ba2130ca831677576c397220762531a01affe41bd22c41babaf0b",
+    "candidate-viejo--front.png": "bff5379da9bed3d5acea2011ca63a7ce5d37cad34db8dfee616f6867e78a3e5d"
+  },
+  "source_lock": {
+    "scripts/verify_language.py": "6ebe624926f2f04ba22dd948b6592f85828365f7aeb1eac6eacf7e7d5f7e121d",
+    "configs/verification/f4-v1.json": "f2f5d2ecebfca4a3ed091830a475d6c3f8ae2bb770bcd9a07c6d128b85d52f36",
+    "configs/language/f4-responses-v1.json": "1a57a6b8f6832d2debd043bfe0367f9a4996fb5b6864f047f567f9fd83f810a5",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/birch.py": "89a4fabce283c89b0d48448da82e3dccc9dbde4a5da510db08fad4502fe880e2",
+    "src/treegen/birch_evaluation.py": "6b738a3870ade67066413089b0faf01b9cc8611618f7d7aa523c5adb7c469104",
+    "src/treegen/birch_sample.py": "3530e76f940d513cbe9aac71bda954bcf258a843129de876fb6755fb71dc79d6",
+    "src/treegen/blueprints.py": "6560867587d872b0eedaf44a840f2aa162b3e9c9a4db1aa8da51685cc1b16841",
+    "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+    "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+    "src/treegen/cli.py": "09984d814e2d1413f56a3d0f2dacd89cd8cecfbe103cc6bfe39350749d756949",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/evaluation.py": "4a07ba8ec648739de12678ac919b6d7e965279e608da1844f25a2499f1b2692f",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+    "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "31363394248b4ef9365ea3f0b26925d9d4d728dea04d67f7295dbfe918da4a67",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+    "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+    "src/treegen/season_calendar_glb.py": "b1b5c8f3cc64dbfe00b91f7a2d2b3f26a931f17aad851778a9045d0baff35fd9",
+    "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+    "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+    "src/treegen/seasons.py": "433d10d9012e04887f007b0381b514f64dfb9edea7cb7d73f61e0c2fb6f87d05",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "src/treegen/willow.py": "ebf75f3fcede8c42efd0b4270995bf0d168a022d5d02d894163393bafd277e9b",
+    "src/treegen/willow_evaluation.py": "ec60175f4b94d0b965b66d247def68c7cf969cce2cf5f72a279981084566915e",
+    "src/treegen/willow_sample.py": "7f4fb848eb62e45e407d8ae75d4bfa9407477372b138ee1d2438299c3d4ce0df",
+    "src/treegen/willow_v2.py": "5734c5e48e69e7550474cca4188fb65f51e6d6faeaf6d819c0416737c1c41a38"
+  },
+  "tests": {
+    "total": 222,
+    "passed": true,
+    "execution": "fuera del sandbox; log local /tmp/arboles-f4-tests-outside.log"
+  },
+  "failed_attempts": [
+    {
+      "study": "artifacts/f4/ensayo-01",
+      "cause": "Sandbox: Blender no termina al cerrar audio; timeout de 120 s y grupo terminado; lote fallido."
+    },
+    {
+      "study": "artifacts/f4/ensayo-02",
+      "cause": "Exportaciones correctas; dos checks falsos por comparar hash de GLB de referencia en vez de malla de madera. Se corrigió el verificador sin cambiar parámetros ni generador."
+    },
+    {
+      "cause": "Primera suite dentro del sandbox: 221/222; prueba de servidor loopback bloqueada por permisos. Suite completa repetida fuera: 222/222."
+    }
+  ],
+  "cli": {
+    "plan_status": "completed",
+    "generation_status": "completed",
+    "dense_glb_identical": true,
+    "plan": "artifacts/f4/cli-plan-02",
+    "batch": "artifacts/f4/cli-tree-02"
+  }
+}

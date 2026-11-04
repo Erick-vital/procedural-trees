@@ -404,3 +404,12 @@ El lote RF5 se ejecutó y verificó por esta nueva autorización, separado del c
 B5. El usuario aprueba el lote completo; el rediseño queda cerrado para la
 familia ensayada como alternativa a Q3. [Resultados y reproducción](../docs/evidence/rediseno-follaje/rf5/informe.md).
 Galería RF3 conservada: `artifacts/rediseno-follaje/rf3-acceptance-02/index.html`.
+
+## Familia O5: muestra de follaje OF1, autorizada 2026-11-03
+
+Nueva petición del usuario tras aceptar la madera O5: preparar una rama con
+pintura existente y distribución por ejes reales, con reserva1584 y máximo6999.
+RF3–RF5 históricos conservan contratos y aceptación; esta muestra es otra ruta,
+sin promover recetas ni integrar copa. Alcance y resultados en
+[OF1 del plan de arquitectura](arquitectura-roble.md#of1--rama-o5-con-follaje-autorizado-2026-11-03).
+[Informe técnico y revisión pendiente](../docs/evidence/oak-foliage/of1/informe.md).

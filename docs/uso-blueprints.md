@@ -4,6 +4,10 @@ Comandos desde la raíz del repositorio, con el entorno de [README](../README.md
 Cada salida de generación debe ser una carpeta nueva, incluso después de un
 fallo. La CLI termina con código 1 ante errores y conserva manifiesto/log.
 
+Para pedir variaciones o lotes mediante el chat de Codex, seguir el
+[flujo F4](uso-lenguaje-natural.md): planes validados con perfiles, parámetros y
+semillas explícitas, sin proveedores externos ni otra instancia de Codex.
+
 ## Seleccionar una receta y un ejemplar
 
 ```sh
@@ -78,7 +82,7 @@ python3 scripts/verify_willow.py --matrix configs/verification/willow-v2.json --
 Visor: `artifacts/sauce-pintado/revision-03/godot/`; `N` cambia semilla, `1/2`
 árbol/madera, arrastrar/rueda cámara. Comparación de versiones a cámara/luz iguales
 y [resultado de revisión](evidence/sauce-pintado/revision-01/informe.md).
-F4 permanece pendiente después de cerrar el sauce.
+F4 está adaptada y verificada para el chat de Codex; [guía](uso-lenguaje-natural.md).
 
 Referencia anterior **1.0.0**, rechazada artísticamente: adulto de 10 m, contrato 1.6, recursos 0.1.0 y rama aprobados;
 **6478 tris y dos materiales** en cuatro semillas. Tres planos fijos por grupo,
@@ -97,7 +101,7 @@ Piloto/tres controles, repetición y regresiones de roble/pino/abedul/columnar;
 `N`: siguiente semilla, `1`: árbol, `2`: madera; arrastrar/rueda: cámara;
 `B`: fondo, `L`: luz, espacio: giro automático.
 [Resultados y reproducción](evidence/sauce-pintado/arbol-01/informe.md).
-F4 queda pendiente para después de terminar esta variante, sin inicio automático.
+Esta referencia histórica no inicia fases adicionales; F4 vigente usa el chat de Codex.
 
 Abedul pintado: perfil inicial adulto de 10 m, cuatro semillas verificadas,
 **6254–6278 tris/2 materiales**, tres planos inclinados por grupo. Usa contrato

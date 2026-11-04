@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "blueprint": "blueprints/roble_copa_ancha/2.2.0.json",
+  "baseline_profile": "adulto",
+  "conditions": "Misma receta, semillas, materiales y cámaras por pareja; sin retoques por semilla.",
+  "cases": [
+    {"id": "joven", "request": "Crea un roble joven de 4 metros, de tronco fino y copa pequeña.", "seeds": {"base": 1007, "canopy": 17, "paint": 2718}, "expect": {"base.height_m": "decrease", "base.base_radius_m": "decrease", "canopy.leaf_length_m": "decrease"}},
+    {"id": "adulto", "request": "Crea un roble adulto de 11 metros con radio de tronco de 0.55 metros; conserva la forma general del adulto.", "seeds": {"base": 2000, "canopy": 17, "paint": 2718}, "expect": {"base.height_m": "increase", "base.base_radius_m": "increase"}},
+    {"id": "viejo", "request": "Crea un roble viejo, de tronco grueso y ramas asimétricas.", "seeds": {"base": 3009, "canopy": 17, "paint": 2718}, "expect": {"base.base_radius_m": "increase", "base.asymmetry": "increase"}},
+    {"id": "densa", "request": "Crea un roble adulto de copa más densa, conservando su madera y tamaño de grupos de follaje.", "seeds": {"base": 2000, "canopy": 17, "paint": 2718}, "expect": {"canopy.group_count": "increase"}},
+    {"id": "abierta", "request": "Crea un roble adulto de copa más abierta, con menos grupos de follaje; conserva su madera y tamaño de grupos.", "seeds": {"base": 2000, "canopy": 17, "paint": 2718}, "expect": {"canopy.group_count": "decrease"}},
+    {"id": "asimetrica", "request": "Crea un roble adulto con ramas más asimétricas, manteniendo altura, grosor de tronco y cantidad de follaje.", "seeds": {"base": 2000, "canopy": 17, "paint": 2718}, "expect": {"base.asymmetry": "increase"}}
+  ]
+}

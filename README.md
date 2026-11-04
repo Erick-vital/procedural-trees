@@ -15,6 +15,15 @@ semillas y pendiente de revisión artística del usuario.
 [Estado vigente](ESTADO.md) · [Guía de uso](docs/uso-blueprints.md) ·
 [Contrato](docs/contrato-blueprints.md) · [Plan y cierre](plans/sistema-blueprints.md)
 
+## Pedir árboles en el chat de Codex
+
+Abrir Codex en este repositorio y pedir «créame 10 robles con alturas variadas
+y copas abiertas». F4 conserva ese flujo: Codex traduce la intención a perfiles,
+semillas y cambios permitidos; valida el plan completo y genera resultados
+reproducibles con menos de 7000 triángulos y dos materiales como máximo.
+No necesita otro proveedor ni proceso de Codex. [Guía F4](docs/uso-lenguaje-natural.md)
+y [alcance](plans/f4-lenguaje-blueprints.md). Los comandos históricos siguen disponibles.
+
 ## Inicio rápido: referencia aprobada
 
 Desde la raíz, con el entorno fijado disponible, usar carpetas de salida nuevas:
@@ -141,3 +150,16 @@ los rangos permitidos no acreditan todas sus combinaciones ni rendimiento FPS.
 [Operación histórica F0–RF3](docs/operacion-historica.md) conserva comandos,
 contratos y enlaces de las fases anteriores. [Rediseño de follaje](plans/rediseno-follaje.md)
 conserva el marco RF0–RF5; la integración y controles se coordinaron con B2/B3.
+
+### Robles con ramificación integrada
+
+Generador explícito `generate-branch-tree`: R2 sin hojas y R3 con copa pintada
+conservada. [Uso y reproducción](docs/uso-arboles-ramificados.md).
+
+### Arquitectura y madurez del roble
+
+Alternativa `generate-oak-growth`, cuatro órdenes y presets joven/maduro/centenario;
+validación desnuda con cinco semillas. [Uso](docs/uso-arquitectura-roble.md).
+
+Revisión de copa `oak-growth-0.2.0`: crecimiento contenido y comparación desnuda
+con las mismas cinco semillas. [Resultados O2](docs/evidence/oak-growth/o2/informe.md).

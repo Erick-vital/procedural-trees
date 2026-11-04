@@ -1,0 +1,2076 @@
+{
+  "version": "branch-tree-integration-verification-0.1.0",
+  "passed": true,
+  "checks": {
+    "joven-03-generation": true,
+    "joven-03-godot": true,
+    "joven-03-sources": true,
+    "joven-03-major-meshes-source-exact": true,
+    "joven-03-major-raw-position-normal-uv-exact": true,
+    "joven-03-connected-networks": true,
+    "joven-03-roots-exact": true,
+    "adulto-00-generation": true,
+    "adulto-00-godot": true,
+    "adulto-00-sources": true,
+    "adulto-00-major-meshes-source-exact": true,
+    "adulto-00-major-raw-position-normal-uv-exact": true,
+    "adulto-00-connected-networks": true,
+    "adulto-00-roots-exact": true,
+    "viejo-00-generation": true,
+    "viejo-00-godot": true,
+    "viejo-00-sources": true,
+    "viejo-00-major-meshes-source-exact": true,
+    "viejo-00-major-raw-position-normal-uv-exact": true,
+    "viejo-00-connected-networks": true,
+    "viejo-00-roots-exact": true,
+    "viejo-09-generation": true,
+    "viejo-09-godot": true,
+    "viejo-09-sources": true,
+    "viejo-09-major-meshes-source-exact": true,
+    "viejo-09-major-raw-position-normal-uv-exact": true,
+    "viejo-09-connected-networks": true,
+    "viejo-09-roots-exact": true,
+    "five-exports-repeat-exact": true,
+    "source-repeat-exact": true,
+    "historical-roble-220-exact": true,
+    "approved-r2-sample-exact": true,
+    "239-tests-pass": true
+  },
+  "cases": {
+    "joven-03": {
+      "profile": "joven",
+      "seeds": {
+        "base": 1003,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "duration_seconds": 47.972661541999514,
+      "groups": 264,
+      "triangles": {
+        "full": 5010,
+        "simple": 4874,
+        "bare": 3426
+      },
+      "networks": [
+        {
+          "id": "q3:trunk:0",
+          "seed": 978809682,
+          "bare_triangles": 150,
+          "foliated_triangles": 150,
+          "bare_edges": 23,
+          "foliated_edges": 23
+        },
+        {
+          "id": "q3:primary:100",
+          "seed": 1003,
+          "bare_triangles": 754,
+          "foliated_triangles": 674,
+          "bare_edges": 113,
+          "foliated_edges": 103
+        },
+        {
+          "id": "q3:primary:101",
+          "seed": 2012,
+          "bare_triangles": 630,
+          "foliated_triangles": 590,
+          "bare_edges": 98,
+          "foliated_edges": 93
+        },
+        {
+          "id": "q3:primary:102",
+          "seed": 3021,
+          "bare_triangles": 602,
+          "foliated_triangles": 586,
+          "bare_edges": 95,
+          "foliated_edges": 93
+        },
+        {
+          "id": "q3:primary:103",
+          "seed": 4030,
+          "bare_triangles": 542,
+          "foliated_triangles": 542,
+          "bare_edges": 87,
+          "foliated_edges": 87
+        }
+      ],
+      "checks": {
+        "full-export": true,
+        "full-prebudget": true,
+        "simple-export": true,
+        "simple-prebudget": true,
+        "bare-export": true,
+        "bare-prebudget": true,
+        "foliage-before-export": true,
+        "foliage-before-prebudget": true,
+        "foliage-after-export": true,
+        "foliage-after-prebudget": true,
+        "foliage_all_raw_attributes_exact": true,
+        "nominal_wood_height": true,
+        "nominal_wood_height_bare": true,
+        "frozen_foliage_exact": true,
+        "foliage_normals_exact": true,
+        "bare_wood_matches_full": true,
+        "textures_exact": true,
+        "foliage_controls_glb_exact": true,
+        "roots_inside_main_wood": true
+      },
+      "visual_checks": {
+        "visible_wood_masks_exact": true,
+        "foliage-mask-medium-front": true,
+        "foliage-mask-medium-side": true,
+        "foliage-mask-medium-perspective": true,
+        "foliage-mask-medium-top": true,
+        "foliage-mask-medium-below": true,
+        "foliage-mask-medium-back": true,
+        "shadows_exact": true
+      },
+      "image_comparison": {
+        "near-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-00": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-01": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-02": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-03": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-04": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-05": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-06": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-07": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-0": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-1": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-2": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        }
+      },
+      "shadow_comparison": {
+        "ground-0": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "ground-1": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "ground-2": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        }
+      },
+      "visible_wood_comparison": {
+        "near-front": {
+          "reference_pixels": 26433,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-side": {
+          "reference_pixels": 21905,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-perspective": {
+          "reference_pixels": 26046,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-top": {
+          "reference_pixels": 514,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-below": {
+          "reference_pixels": 29837,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-back": {
+          "reference_pixels": 27595,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-front": {
+          "reference_pixels": 11065,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-side": {
+          "reference_pixels": 9424,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-perspective": {
+          "reference_pixels": 10428,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-top": {
+          "reference_pixels": 193,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-below": {
+          "reference_pixels": 11807,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-back": {
+          "reference_pixels": 11322,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-front": {
+          "reference_pixels": 3552,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-side": {
+          "reference_pixels": 3034,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-perspective": {
+          "reference_pixels": 3362,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-top": {
+          "reference_pixels": 77,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-below": {
+          "reference_pixels": 3813,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-back": {
+          "reference_pixels": 3666,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-00": {
+          "reference_pixels": 19347,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-01": {
+          "reference_pixels": 15296,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-02": {
+          "reference_pixels": 20212,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-03": {
+          "reference_pixels": 23983,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-04": {
+          "reference_pixels": 23507,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-05": {
+          "reference_pixels": 18920,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-06": {
+          "reference_pixels": 23046,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-07": {
+          "reference_pixels": 22540,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        }
+      },
+      "captures": 152,
+      "glb_sha256": {
+        "full": "8594f1273396a954e8cbe0e8ca40c392765d9337bf5867269044c7087b643753",
+        "simple": "038125ccc670d57ba0841a9090c319d8e9a48bdd759aeabba975567c2de43519",
+        "bare": "9bdef0c1b10242d8f22a52b87711eab3978dc481af24c8c8c1dcbe73b645d99e",
+        "foliage-before": "c1dd5ed9d4848c7075d5e6cba65af97c3a3e67269e5b25beb5500e772114f055",
+        "foliage-after": "c1dd5ed9d4848c7075d5e6cba65af97c3a3e67269e5b25beb5500e772114f055"
+      },
+      "manifest_sha256": "f91b7e2e1160eaac89acf7a37dd7001460e98ccc92fb4d1e49162b403cd3c3d4",
+      "review_sha256": "1fb1e9e134c5a58192452eddae8f5e52443683fd12679fc4b76c66962adee033",
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060"
+    },
+    "adulto-00": {
+      "profile": "adulto",
+      "seeds": {
+        "base": 2000,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "duration_seconds": 19.600256409000394,
+      "groups": 264,
+      "triangles": {
+        "full": 6140,
+        "simple": 6140,
+        "bare": 4556
+      },
+      "networks": [
+        {
+          "id": "q3:trunk:0",
+          "seed": 457897162,
+          "bare_triangles": 90,
+          "foliated_triangles": 90,
+          "bare_edges": 13,
+          "foliated_edges": 13
+        },
+        {
+          "id": "q3:primary:100",
+          "seed": 2000,
+          "bare_triangles": 378,
+          "foliated_triangles": 378,
+          "bare_edges": 61,
+          "foliated_edges": 61
+        },
+        {
+          "id": "q3:primary:101",
+          "seed": 3009,
+          "bare_triangles": 474,
+          "foliated_triangles": 474,
+          "bare_edges": 77,
+          "foliated_edges": 77
+        },
+        {
+          "id": "q3:primary:102",
+          "seed": 4018,
+          "bare_triangles": 246,
+          "foliated_triangles": 246,
+          "bare_edges": 39,
+          "foliated_edges": 39
+        },
+        {
+          "id": "q3:primary:103",
+          "seed": 5027,
+          "bare_triangles": 378,
+          "foliated_triangles": 378,
+          "bare_edges": 61,
+          "foliated_edges": 61
+        },
+        {
+          "id": "q3:primary:104",
+          "seed": 6036,
+          "bare_triangles": 342,
+          "foliated_triangles": 342,
+          "bare_edges": 55,
+          "foliated_edges": 55
+        },
+        {
+          "id": "q3:primary:105",
+          "seed": 7045,
+          "bare_triangles": 342,
+          "foliated_triangles": 342,
+          "bare_edges": 55,
+          "foliated_edges": 55
+        },
+        {
+          "id": "q3:primary:106",
+          "seed": 8054,
+          "bare_triangles": 258,
+          "foliated_triangles": 258,
+          "bare_edges": 41,
+          "foliated_edges": 41
+        },
+        {
+          "id": "q3:primary:107",
+          "seed": 9063,
+          "bare_triangles": 342,
+          "foliated_triangles": 342,
+          "bare_edges": 55,
+          "foliated_edges": 55
+        },
+        {
+          "id": "q3:primary:108",
+          "seed": 10072,
+          "bare_triangles": 258,
+          "foliated_triangles": 258,
+          "bare_edges": 41,
+          "foliated_edges": 41
+        }
+      ],
+      "checks": {
+        "full-export": true,
+        "full-prebudget": true,
+        "simple-export": true,
+        "simple-prebudget": true,
+        "bare-export": true,
+        "bare-prebudget": true,
+        "foliage-before-export": true,
+        "foliage-before-prebudget": true,
+        "foliage-after-export": true,
+        "foliage-after-prebudget": true,
+        "foliage_all_raw_attributes_exact": true,
+        "nominal_wood_height": true,
+        "nominal_wood_height_bare": true,
+        "frozen_foliage_exact": true,
+        "foliage_normals_exact": true,
+        "bare_wood_matches_full": true,
+        "textures_exact": true,
+        "foliage_controls_glb_exact": true,
+        "roots_inside_main_wood": true
+      },
+      "visual_checks": {
+        "visible_wood_masks_exact": true,
+        "foliage-mask-medium-front": true,
+        "foliage-mask-medium-side": true,
+        "foliage-mask-medium-perspective": true,
+        "foliage-mask-medium-top": true,
+        "foliage-mask-medium-below": true,
+        "foliage-mask-medium-back": true,
+        "shadows_exact": true
+      },
+      "image_comparison": {
+        "near-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-00": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-01": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-02": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-03": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-04": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-05": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-06": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-07": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-0": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-1": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-2": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        }
+      },
+      "shadow_comparison": {
+        "ground-0": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "ground-1": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "ground-2": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        }
+      },
+      "visible_wood_comparison": {
+        "near-front": {
+          "reference_pixels": 19864,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-side": {
+          "reference_pixels": 17872,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-perspective": {
+          "reference_pixels": 12499,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-top": {
+          "reference_pixels": 11061,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-below": {
+          "reference_pixels": 21351,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-back": {
+          "reference_pixels": 16072,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-front": {
+          "reference_pixels": 6857,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-side": {
+          "reference_pixels": 6111,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-perspective": {
+          "reference_pixels": 4347,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-top": {
+          "reference_pixels": 4025,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-below": {
+          "reference_pixels": 7311,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-back": {
+          "reference_pixels": 5500,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-front": {
+          "reference_pixels": 2280,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-side": {
+          "reference_pixels": 2046,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-perspective": {
+          "reference_pixels": 1478,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-top": {
+          "reference_pixels": 1416,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-below": {
+          "reference_pixels": 2433,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-back": {
+          "reference_pixels": 1874,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-00": {
+          "reference_pixels": 14979,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-01": {
+          "reference_pixels": 20521,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-02": {
+          "reference_pixels": 19229,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-03": {
+          "reference_pixels": 12208,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-04": {
+          "reference_pixels": 15676,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-05": {
+          "reference_pixels": 18938,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-06": {
+          "reference_pixels": 14535,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-07": {
+          "reference_pixels": 12512,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        }
+      },
+      "captures": 152,
+      "glb_sha256": {
+        "full": "68cae5600817e84ff8c3c47ecfbd1083e093b201f6a428383b38e7bd24e6a84b",
+        "simple": "68cae5600817e84ff8c3c47ecfbd1083e093b201f6a428383b38e7bd24e6a84b",
+        "bare": "cfda0d24dc82a8b9b7166c2ced293df26d3b4e2324ad5f9140671cc3be4fca10",
+        "foliage-before": "7678a2a5c7fed87f78200d3a14a43d2969aa2c5351fd3c77623196722b49c1b7",
+        "foliage-after": "7678a2a5c7fed87f78200d3a14a43d2969aa2c5351fd3c77623196722b49c1b7"
+      },
+      "manifest_sha256": "f4e93e2e68a91168a2594e1571991f7362969c98bc40ba075829bdcf1d83f5b0",
+      "review_sha256": "24a3ad02b56111f17b3bae60da67ac7dcb8589e42c695a19f44f1330cc0fa967",
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060"
+    },
+    "viejo-00": {
+      "profile": "viejo",
+      "seeds": {
+        "base": 3000,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "duration_seconds": 22.448069076999673,
+      "groups": 264,
+      "triangles": {
+        "full": 6408,
+        "simple": 6408,
+        "bare": 4824
+      },
+      "networks": [
+        {
+          "id": "q3:trunk:0",
+          "seed": 1878181357,
+          "bare_triangles": 138,
+          "foliated_triangles": 138,
+          "bare_edges": 21,
+          "foliated_edges": 21
+        },
+        {
+          "id": "q3:primary:100",
+          "seed": 3000,
+          "bare_triangles": 378,
+          "foliated_triangles": 378,
+          "bare_edges": 61,
+          "foliated_edges": 61
+        },
+        {
+          "id": "q3:primary:101",
+          "seed": 4009,
+          "bare_triangles": 330,
+          "foliated_triangles": 330,
+          "bare_edges": 53,
+          "foliated_edges": 53
+        },
+        {
+          "id": "q3:primary:102",
+          "seed": 5018,
+          "bare_triangles": 258,
+          "foliated_triangles": 258,
+          "bare_edges": 41,
+          "foliated_edges": 41
+        },
+        {
+          "id": "q3:primary:103",
+          "seed": 6027,
+          "bare_triangles": 318,
+          "foliated_triangles": 318,
+          "bare_edges": 51,
+          "foliated_edges": 51
+        },
+        {
+          "id": "q3:primary:104",
+          "seed": 7036,
+          "bare_triangles": 306,
+          "foliated_triangles": 306,
+          "bare_edges": 49,
+          "foliated_edges": 49
+        },
+        {
+          "id": "q3:primary:105",
+          "seed": 8045,
+          "bare_triangles": 258,
+          "foliated_triangles": 258,
+          "bare_edges": 41,
+          "foliated_edges": 41
+        },
+        {
+          "id": "q3:primary:106",
+          "seed": 9054,
+          "bare_triangles": 210,
+          "foliated_triangles": 210,
+          "bare_edges": 33,
+          "foliated_edges": 33
+        },
+        {
+          "id": "q3:primary:107",
+          "seed": 10063,
+          "bare_triangles": 162,
+          "foliated_triangles": 162,
+          "bare_edges": 25,
+          "foliated_edges": 25
+        },
+        {
+          "id": "q3:primary:108",
+          "seed": 11072,
+          "bare_triangles": 210,
+          "foliated_triangles": 210,
+          "bare_edges": 33,
+          "foliated_edges": 33
+        },
+        {
+          "id": "q3:primary:109",
+          "seed": 12081,
+          "bare_triangles": 318,
+          "foliated_triangles": 318,
+          "bare_edges": 51,
+          "foliated_edges": 51
+        },
+        {
+          "id": "q3:primary:110",
+          "seed": 13090,
+          "bare_triangles": 210,
+          "foliated_triangles": 210,
+          "bare_edges": 33,
+          "foliated_edges": 33
+        }
+      ],
+      "checks": {
+        "full-export": true,
+        "full-prebudget": true,
+        "simple-export": true,
+        "simple-prebudget": true,
+        "bare-export": true,
+        "bare-prebudget": true,
+        "foliage-before-export": true,
+        "foliage-before-prebudget": true,
+        "foliage-after-export": true,
+        "foliage-after-prebudget": true,
+        "foliage_all_raw_attributes_exact": true,
+        "nominal_wood_height": true,
+        "nominal_wood_height_bare": true,
+        "frozen_foliage_exact": true,
+        "foliage_normals_exact": true,
+        "bare_wood_matches_full": true,
+        "textures_exact": true,
+        "foliage_controls_glb_exact": true,
+        "roots_inside_main_wood": true
+      },
+      "visual_checks": {
+        "visible_wood_masks_exact": true,
+        "foliage-mask-medium-front": true,
+        "foliage-mask-medium-side": true,
+        "foliage-mask-medium-perspective": true,
+        "foliage-mask-medium-top": true,
+        "foliage-mask-medium-below": true,
+        "foliage-mask-medium-back": true,
+        "shadows_exact": true
+      },
+      "image_comparison": {
+        "near-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-00": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-01": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-02": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-03": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-04": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-05": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-06": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-07": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-0": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-1": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-2": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        }
+      },
+      "shadow_comparison": {
+        "ground-0": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "ground-1": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "ground-2": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        }
+      },
+      "visible_wood_comparison": {
+        "near-front": {
+          "reference_pixels": 24592,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-side": {
+          "reference_pixels": 29127,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-perspective": {
+          "reference_pixels": 19181,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-top": {
+          "reference_pixels": 26451,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-below": {
+          "reference_pixels": 36384,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-back": {
+          "reference_pixels": 30481,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-front": {
+          "reference_pixels": 8377,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-side": {
+          "reference_pixels": 9839,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-perspective": {
+          "reference_pixels": 6529,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-top": {
+          "reference_pixels": 9289,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-below": {
+          "reference_pixels": 12238,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-back": {
+          "reference_pixels": 10388,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-front": {
+          "reference_pixels": 2756,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-side": {
+          "reference_pixels": 3222,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-perspective": {
+          "reference_pixels": 2180,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-top": {
+          "reference_pixels": 3207,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-below": {
+          "reference_pixels": 4009,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-back": {
+          "reference_pixels": 3486,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-00": {
+          "reference_pixels": 22085,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-01": {
+          "reference_pixels": 18337,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-02": {
+          "reference_pixels": 19769,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-03": {
+          "reference_pixels": 22392,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-04": {
+          "reference_pixels": 24085,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-05": {
+          "reference_pixels": 20781,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-06": {
+          "reference_pixels": 20078,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-07": {
+          "reference_pixels": 21378,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        }
+      },
+      "captures": 152,
+      "glb_sha256": {
+        "full": "9dcbed97d4fe626180a21a82e3bbfc7866389649ee69fa302fc10e2a06e63ffe",
+        "simple": "9dcbed97d4fe626180a21a82e3bbfc7866389649ee69fa302fc10e2a06e63ffe",
+        "bare": "f3ac1f60858d9743e8946a3b45a76c99604d8073e4048007f1bb85c28d50886a",
+        "foliage-before": "34203c3b067356a2fb7173a132e55f67dac21c2716438f119be9f87538e850fb",
+        "foliage-after": "34203c3b067356a2fb7173a132e55f67dac21c2716438f119be9f87538e850fb"
+      },
+      "manifest_sha256": "dc0aa4c2558e9ad7182222cce3d52944f6c76bd9bb620eb374ecc97e6935b4de",
+      "review_sha256": "3aebce58cf62b61ff9b99a58c94043a3f6371a87f04f0331151125ed96eaeb7e",
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060"
+    },
+    "viejo-09": {
+      "profile": "viejo_referencia",
+      "seeds": {
+        "base": 3009,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "duration_seconds": 22.337425673000325,
+      "groups": 264,
+      "triangles": {
+        "full": 6408,
+        "simple": 6408,
+        "bare": 4824
+      },
+      "networks": [
+        {
+          "id": "q3:trunk:0",
+          "seed": 881046801,
+          "bare_triangles": 138,
+          "foliated_triangles": 138,
+          "bare_edges": 21,
+          "foliated_edges": 21
+        },
+        {
+          "id": "q3:primary:100",
+          "seed": 3009,
+          "bare_triangles": 402,
+          "foliated_triangles": 402,
+          "bare_edges": 65,
+          "foliated_edges": 65
+        },
+        {
+          "id": "q3:primary:101",
+          "seed": 4018,
+          "bare_triangles": 318,
+          "foliated_triangles": 318,
+          "bare_edges": 51,
+          "foliated_edges": 51
+        },
+        {
+          "id": "q3:primary:102",
+          "seed": 5027,
+          "bare_triangles": 306,
+          "foliated_triangles": 306,
+          "bare_edges": 49,
+          "foliated_edges": 49
+        },
+        {
+          "id": "q3:primary:103",
+          "seed": 6036,
+          "bare_triangles": 342,
+          "foliated_triangles": 342,
+          "bare_edges": 55,
+          "foliated_edges": 55
+        },
+        {
+          "id": "q3:primary:104",
+          "seed": 7045,
+          "bare_triangles": 258,
+          "foliated_triangles": 258,
+          "bare_edges": 41,
+          "foliated_edges": 41
+        },
+        {
+          "id": "q3:primary:105",
+          "seed": 8054,
+          "bare_triangles": 234,
+          "foliated_triangles": 234,
+          "bare_edges": 37,
+          "foliated_edges": 37
+        },
+        {
+          "id": "q3:primary:106",
+          "seed": 9063,
+          "bare_triangles": 174,
+          "foliated_triangles": 174,
+          "bare_edges": 27,
+          "foliated_edges": 27
+        },
+        {
+          "id": "q3:primary:107",
+          "seed": 10072,
+          "bare_triangles": 222,
+          "foliated_triangles": 222,
+          "bare_edges": 35,
+          "foliated_edges": 35
+        },
+        {
+          "id": "q3:primary:108",
+          "seed": 11081,
+          "bare_triangles": 186,
+          "foliated_triangles": 186,
+          "bare_edges": 29,
+          "foliated_edges": 29
+        },
+        {
+          "id": "q3:primary:109",
+          "seed": 12090,
+          "bare_triangles": 258,
+          "foliated_triangles": 258,
+          "bare_edges": 41,
+          "foliated_edges": 41
+        },
+        {
+          "id": "q3:primary:110",
+          "seed": 13099,
+          "bare_triangles": 258,
+          "foliated_triangles": 258,
+          "bare_edges": 41,
+          "foliated_edges": 41
+        }
+      ],
+      "checks": {
+        "full-export": true,
+        "full-prebudget": true,
+        "simple-export": true,
+        "simple-prebudget": true,
+        "bare-export": true,
+        "bare-prebudget": true,
+        "foliage-before-export": true,
+        "foliage-before-prebudget": true,
+        "foliage-after-export": true,
+        "foliage-after-prebudget": true,
+        "foliage_all_raw_attributes_exact": true,
+        "nominal_wood_height": true,
+        "nominal_wood_height_bare": true,
+        "frozen_foliage_exact": true,
+        "foliage_normals_exact": true,
+        "bare_wood_matches_full": true,
+        "textures_exact": true,
+        "foliage_controls_glb_exact": true,
+        "roots_inside_main_wood": true
+      },
+      "visual_checks": {
+        "visible_wood_masks_exact": true,
+        "foliage-mask-medium-front": true,
+        "foliage-mask-medium-side": true,
+        "foliage-mask-medium-perspective": true,
+        "foliage-mask-medium-top": true,
+        "foliage-mask-medium-below": true,
+        "foliage-mask-medium-back": true,
+        "shadows_exact": true
+      },
+      "image_comparison": {
+        "near-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "near-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "medium-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-front": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-side": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-perspective": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-top": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-below": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "far-back": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-00": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-01": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-02": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-03": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-04": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-05": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-06": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "orbit-07": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-0": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-1": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "shadow-2": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        }
+      },
+      "shadow_comparison": {
+        "ground-0": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "ground-1": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        },
+        "ground-2": {
+          "changed_pixels": 0,
+          "total_pixels": 810000,
+          "changed_fraction": 0.0,
+          "max_channel_delta": 0
+        }
+      },
+      "visible_wood_comparison": {
+        "near-front": {
+          "reference_pixels": 27782,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-side": {
+          "reference_pixels": 42763,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-perspective": {
+          "reference_pixels": 37695,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-top": {
+          "reference_pixels": 24980,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-below": {
+          "reference_pixels": 55269,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "near-back": {
+          "reference_pixels": 49070,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-front": {
+          "reference_pixels": 9403,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-side": {
+          "reference_pixels": 14338,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-perspective": {
+          "reference_pixels": 12669,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-top": {
+          "reference_pixels": 8812,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-below": {
+          "reference_pixels": 18571,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "medium-back": {
+          "reference_pixels": 16448,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-front": {
+          "reference_pixels": 3104,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-side": {
+          "reference_pixels": 4727,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-perspective": {
+          "reference_pixels": 4139,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-top": {
+          "reference_pixels": 3078,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-below": {
+          "reference_pixels": 6086,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "far-back": {
+          "reference_pixels": 5379,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-00": {
+          "reference_pixels": 26210,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-01": {
+          "reference_pixels": 17413,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-02": {
+          "reference_pixels": 27614,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-03": {
+          "reference_pixels": 36567,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-04": {
+          "reference_pixels": 31903,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-05": {
+          "reference_pixels": 18801,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-06": {
+          "reference_pixels": 24301,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        },
+        "orbit-07": {
+          "reference_pixels": 34951,
+          "lost_pixels": 0,
+          "gained_pixels": 0
+        }
+      },
+      "captures": 152,
+      "glb_sha256": {
+        "full": "3d3c61ad152b74d05792a359331376994a7c9e0afd92325c4bc8aa05a931ceff",
+        "simple": "3d3c61ad152b74d05792a359331376994a7c9e0afd92325c4bc8aa05a931ceff",
+        "bare": "87a50160f937af2540538500669fb7f95c5aff117f82df8a7ac3e3ad9f0d64ba",
+        "foliage-before": "c95535446df56cb382c07f53bed58a5b1d2da348b2c04397b6fc516ca854d1e5",
+        "foliage-after": "c95535446df56cb382c07f53bed58a5b1d2da348b2c04397b6fc516ca854d1e5"
+      },
+      "manifest_sha256": "175fb716049be42c8bb25467be53dfa9df0bf8f595dd6706fa476a4086f050b7",
+      "review_sha256": "7937a234b5e745be7c9fc15c6a2a7bd1c82f1f739a73db47cc0522574ed469c6",
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060"
+    }
+  },
+  "matrix_sha256": "774290270ca80eb2961c3fc565470b8697c8806f1c839c13e0ac08f7ab0642af",
+  "definition_sha256": "6e624f7194850473efffcce2d52936e9cc2d897c4bfa5eec96b5ecb468d898df",
+  "source_inventory": {
+    "src/treegen/willow_sample.py": "7f4fb848eb62e45e407d8ae75d4bfa9407477372b138ee1d2438299c3d4ce0df",
+    "src/treegen/branch_structure.py": "b3a1bbbf94ac1006c8ccf087a82f9635a79a417bf4185eed3866b99c4dae5a72",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/season_calendar_glb.py": "b1b5c8f3cc64dbfe00b91f7a2d2b3f26a931f17aad851778a9045d0baff35fd9",
+    "src/treegen/willow.py": "ebf75f3fcede8c42efd0b4270995bf0d168a022d5d02d894163393bafd277e9b",
+    "src/treegen/willow_v2.py": "5734c5e48e69e7550474cca4188fb65f51e6d6faeaf6d819c0416737c1c41a38",
+    "src/treegen/birch.py": "89a4fabce283c89b0d48448da82e3dccc9dbde4a5da510db08fad4502fe880e2",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+    "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+    "src/treegen/branch_tree.py": "85a751449b98f8bc7892e741b4472ead47fb585bf87eb2920a904a3b9bbfb38c",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/evaluation.py": "4a07ba8ec648739de12678ac919b6d7e965279e608da1844f25a2499f1b2692f",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/branch_tree_runner.py": "d1cef51b375b103a1477a180a3978c5526c403127d550feabf115ecea50ea940",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+    "src/treegen/branch_sample.py": "0a0633ddcdc0892bc31a755906aaa6e17dcb2d343825a75ec6a0abdd0f461d4f",
+    "src/treegen/cli.py": "d2a208488268c45bc0efcb6cf39f011b875e02bc8d7f89cf67a48d2671d2857b",
+    "src/treegen/birch_evaluation.py": "6b738a3870ade67066413089b0faf01b9cc8611618f7d7aa523c5adb7c469104",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/branch_interior.py": "93aecbec1b0dac556de552f8292a1aa407e2b5b4082f078816a2a4bd8ab94ecc",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/seasons.py": "433d10d9012e04887f007b0381b514f64dfb9edea7cb7d73f61e0c2fb6f87d05",
+    "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/runner.py": "31363394248b4ef9365ea3f0b26925d9d4d728dea04d67f7295dbfe918da4a67",
+    "src/treegen/birch_sample.py": "3530e76f940d513cbe9aac71bda954bcf258a843129de876fb6755fb71dc79d6",
+    "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+    "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/blueprints.py": "6560867587d872b0eedaf44a840f2aa162b3e9c9a4db1aa8da51685cc1b16841",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/branch_visibility.py": "7450ee09b716ae5bac738b419346d181688de2f00d0e29c6c827778e063e27eb",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/branch_tree_guards.py": "d73b2e843bfc3ae381a1a0931c55aed238322861931f5afd4e46221778475e5e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+    "src/treegen/branch_tree_audit.py": "9d942f24634baf2a6beaffa3ded56ac0fa6f877442eb6a81dc7750c5d5ebe504",
+    "src/treegen/willow_evaluation.py": "ec60175f4b94d0b965b66d247def68c7cf969cce2cf5f72a279981084566915e",
+    "src/treegen/branch_space.py": "a5e8870433b9e6b24e37a69bd81cfe4c1c1b3f40f03d05fc9a352f0f05fb2af5",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+    "blender/generate_painted_pine.py": "7f10893bcb5fea3b92a9db64325a8c92fed8a1dd0b1cb064afed4c9b695c08c7",
+    "blender/willow_sample.py": "1f3d240a256fdd1a64ca87d449a07c57af880ccdd8fac371e01912fd5e8e8bb4",
+    "blender/rebake_oak_crossed.py": "75284275a4cfe7c4c3e3b5fbf6db88fe75192d8b4dd16d4cce9d74f99b907b16",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/generate_crossed_oak.py": "695322e6649466718ea0222471c4e4ed9e04726d57369c6f860ca35527205187",
+    "blender/bake_autumn_oak.py": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/verify_painted_pine.py": "322851d188c022ea859ac08adb0b6540c14cf3f15559eb5061931a5be926d8c3",
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/classify_tree_visibility.py": "5b4762f7804bb7ec25bc383cfa4e434e1fee80afd3a38a0cb94bf59f8c1eaaa3",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/f5_structure.py": "6dc67bbfa2de21f3dcbab8535c09ec91fece323783f38f18805b99791405e29e",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blender/verify_pine_contacts.py": "c4de070611fc9f3366002b86fefd877d8dc3fecc824f2f1dfcbda1d7ec4ffd44",
+    "blender/export_oak_wood.py": "2829d53c0788ceeb4ac10036483ba7b9ec3bb0c51abbefe4046b7f932c8f96cf",
+    "blender/oak_wood_trial.py": "024b0f32f543fa13cc315109398ddc25b991f2c832e05a836134fbf91870c842",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/oak_crossed_reference.py": "824daf84cb3ad034cdfd286d7f4cd3d9ae5eb666e90e4702799e81d69a0842f9",
+    "blender/branch_sample.py": "14de502b4f3d0ee966fbd346fdb3ad9c9dd4da24ff24ffe0079b2e992450ca91",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/oak_painted_tree_pilot.py": "224df5283e5395ab2696b93d8bc89c4e44f86bb26dd7433afae31c6221122eb7",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/pine_painted_sample.py": "6ab7d003cdc2a1b938fad4bead9332ae6d21f133b24c6302781d467771006f97",
+    "blender/oak_painted_sample.py": "ee7d0bd42e3d533734228de8bc61b177a7e367414cf5c39ede4ab64ecb70e244",
+    "blender/verify_season_calendar.py": "cd0762f6113675063feb2017e09bcd28e9284e9fc9ddd3fa2b6f6cf84ecbee72",
+    "blender/verify_canopy_normals.py": "2a66a50e0a9030d24eb525253508bb9b007ddcd03ac567e7adb4c108bfd23099",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/generate_pine.py": "8564de938657e81f10c78881cb7137f4b33bc52d584a676a0bdd046103ea53eb",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/generate_birch.py": "9a417ca2be4919534a4564998323124006371daf4e41c31e3a02650c5ac0bdd1",
+    "blender/birch_sample.py": "668dbb55609a4d88812e9b52505d6fd0f2c58b637478b9e85ff22d8d381070ad",
+    "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+    "blender/willow_revision_sample.py": "7305f8bf8daa5bce2e87a13bfae673b08fd85c64c4cf6d7824422149de806ecd",
+    "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+    "blender/generate_willow.py": "b1636ab8e446f163e320f49179ed81ab6afe94da9da246bbb4b77d6815046fb6",
+    "blender/classify_branch_visibility.py": "81bf28c066a946316ddf159b5e28d42687b97fde3b7baf6ab4a1266f1b822ed3",
+    "blender/pine_cards_reference.py": "ee30f384357c84dff74763616dcfb32b2daf3111b5bf4b86962a0cc29b8f5c3f",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/oak_crossed_trial.py": "4c7eae600da0aac401ee9a831a8df2a7e1256292735257b1cd05d356dfc58be6",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/export_branch_tree.py": "88492972050904ce57609bc0b7cdc542f256f992af392bf0d4f8f0587fcdb80b",
+    "blender/generate_painted_oak.py": "5d6f15d33ccc7bcabbbe6d9f223afde3ef86ddf56ba4de1dfde38dff6b8716b5",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/branch_variants.py": "13071ecdeca42d7b62cf02c6f10b484ccd3fde7ddedcc037aac2d65cee237959",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blender/verify_branch_visibility.py": "f6a98a202cec47f8bb6d5431088ca827159d0a40e98f667658652e90abf55d84",
+    "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/oak_wood_hierarchy.py": "07fceea0467c13691d679941e9e85006d90fc7630f7bcae9a4e754f74aa59c72",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/season_atlas_sample.py": "70469069ab126829b13fc9003ba9c93de6ecfbaefd9ed7ce35b509f46041f4d1"
+  },
+  "artistic_acceptance": "pending_user_complete_trees",
+  "visual_review": {
+    "status": "reviewed_by_agent",
+    "unique_captures": 240,
+    "sheets": 22,
+    "finding": "Copa conservada; bifurcaciones continuas sin los abanicos radiales previos; superposiciones de piezas permanecen. Aceptación artística del usuario pendiente."
+  },
+  "study": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04",
+  "total_captures": 608,
+  "evidence_images_sha256": {
+    "adulto-00-visible-wood.jpg": "9030dd7ea728ec09f3b7bdcf52e09d2adf6c31ba6e72f6c9e4a1b1b81bbff322",
+    "viejo-09-medium.jpg": "9280cecd50add70a651393c821b35fcb7a9359fb0a994cf8e3ce2cbfc89a0996",
+    "adulto-00-bare.jpg": "2223218faac5ef01d297e674c71cfae12a6e6e105e6062d77257b8046ce433b2",
+    "joven-03-orbit.jpg": "e246b6706a16811b99272eea08b4750047c934768e7ed6ffcdc394b57a03c024",
+    "adulto-00-orbit.jpg": "78b72f0af3a3c438394d385961712746378716b11d7ed910908d44d323544ff4",
+    "viejo-09-shadows.jpg": "aa382bce1da820a73d9f9760571ce684d65ea34386bf99fd7c1415b4460cb627",
+    "viejo-00-far.jpg": "34b3487b8142ef163aacc6ce1a1ab79a9e7c57b252d1f0864684d743af0cc2bd",
+    "joven-03-visible-wood.jpg": "aa9124a0ff4f2ccc9f352d65ff786714c8e901fd90ed0ce0ae7007c521c7060b",
+    "viejo-00-shadows.jpg": "366480837c9b634d1248f244e72ceb74449c6a805cb5443b48ff7222aa5f3467",
+    "seleccion.jpg": "cefabdd0f31f92043fb65e0d709f7a1ed5379ec500a75b0924028123cf566ae0",
+    "adulto-00-medium.jpg": "21ebfa9fa8a346c7e026fcf09ae79f8ebe75fe3f5ac99c9b08bccb906c3525d1",
+    "joven-03-bare.jpg": "d2c06eb583e182e07b1cc50fa5352cf1bf6779e355d6290b8e4d60375a476484",
+    "joven-03-medium.jpg": "5c936574992e3f571fda07fd1fe0ff7f45e5db433b2e6a1fe111ee344ea48b5a",
+    "viejo-00-bare.jpg": "3c84685743ef7d0f70f66f83871c5886eb3a6e75879a7092bb1191e5d53ff840",
+    "joven-03-near.jpg": "b75152e34cf920dad04a8055ef9d981cd24bc3b115743ff3fb5a1b301f7d537d",
+    "viejo-09-near.jpg": "d73907c50ac45ca98fb026f9c1bd9d50c65026a5aa1356565ccd3e0ba41a50ca",
+    "viejo-09-far.jpg": "764bf35a578d3ec08363040fe8257f39b393942fb46b6c416b0395ffb640cc4c",
+    "adulto-00-far.jpg": "0840c865751a92a8ea5a7e4b06a5278e1c8c1bd25b9c708161352c02d4da2989",
+    "viejo-00-medium.jpg": "b9d3fcdf181b3271834630618c59a39cd8d76b3dbb1cf167216e0189e3390f0c",
+    "viejo-00-near.jpg": "122a24c2f103d0eaf9b31c7355a6ab681e76048f7d3d5dc435570b24fa0651c0",
+    "joven-03-far.jpg": "21e750111e217d40a1b35329d7d0d74941c049601568bc5f6ccfdfe8dac61dd7",
+    "adulto-00-near.jpg": "bc387257fe9c5d60884d81714d01056698563b4091bcb2b4ddbc1336af8369c9",
+    "viejo-00-orbit.jpg": "126623992a118c4f1f483584534b28480a62d250b018fec2fa4f4446f6fa4d6e",
+    "viejo-00-visible-wood.jpg": "703d70630ee13588eb7a6dbda9474745f6d51311f838d85d5d85cc8dd782c337",
+    "viejo-09-visible-wood.jpg": "c368f44a9fb174158084c88fbfd201f779c48f5a36790907b5cef5a82c07de47",
+    "viejo-09-orbit.jpg": "5d0857e8d82a13799d957aabddb233dbb284652fab88d341c97202811448ab38",
+    "adulto-00-shadows.jpg": "b86e7be75a1890061adacecab3350fb7458c4fc4a03e4100429073d738cee132",
+    "copa.jpg": "8c029033816931aa1aaf51a8f8e2b7009adb1a323a4475efe84f2aab88a64009",
+    "joven-03-shadows.jpg": "af070aee8f9b84cbae355e7f43de603122f52642d30722600c4bc2d5f884bf9d",
+    "viejo-09-bare.jpg": "4a5c7cba733599dd9dd339484c0f7ee1a880e68e86c217054678a28542220815"
+  }
+}

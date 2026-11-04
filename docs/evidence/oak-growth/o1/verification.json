@@ -1,0 +1,1702 @@
+{
+  "version": "oak-growth-verification-0.1.0",
+  "passed": true,
+  "checks": {
+    "maduro-3100-generation": true,
+    "maduro-3100-source-inventory": true,
+    "maduro-3100-godot": true,
+    "maduro-3100-shared-bark": true,
+    "maduro-3100-scaffold-attributes-exact-subset": true,
+    "maduro-3100-all-joins-audited": true,
+    "maduro-3101-generation": true,
+    "maduro-3101-source-inventory": true,
+    "maduro-3101-godot": true,
+    "maduro-3101-shared-bark": true,
+    "maduro-3101-scaffold-attributes-exact-subset": true,
+    "maduro-3101-all-joins-audited": true,
+    "maduro-3102-generation": true,
+    "maduro-3102-source-inventory": true,
+    "maduro-3102-godot": true,
+    "maduro-3102-shared-bark": true,
+    "maduro-3102-scaffold-attributes-exact-subset": true,
+    "maduro-3102-all-joins-audited": true,
+    "maduro-3103-generation": true,
+    "maduro-3103-source-inventory": true,
+    "maduro-3103-godot": true,
+    "maduro-3103-shared-bark": true,
+    "maduro-3103-scaffold-attributes-exact-subset": true,
+    "maduro-3103-all-joins-audited": true,
+    "maduro-3104-generation": true,
+    "maduro-3104-source-inventory": true,
+    "maduro-3104-godot": true,
+    "maduro-3104-shared-bark": true,
+    "maduro-3104-scaffold-attributes-exact-subset": true,
+    "maduro-3104-all-joins-audited": true,
+    "joven-3100-generation": true,
+    "joven-3100-source-inventory": true,
+    "joven-3100-godot": true,
+    "joven-3100-shared-bark": true,
+    "joven-3100-scaffold-attributes-exact-subset": true,
+    "joven-3100-all-joins-audited": true,
+    "centenario-3100-generation": true,
+    "centenario-3100-source-inventory": true,
+    "centenario-3100-godot": true,
+    "centenario-3100-shared-bark": true,
+    "centenario-3100-scaffold-attributes-exact-subset": true,
+    "centenario-3100-all-joins-audited": true,
+    "five-references-same-seeds": true,
+    "same-mature-preset-five-seeds": true,
+    "five-distinct-architectures": true,
+    "spatial-rule-changes-geometry": true,
+    "structure-repeat-exact": true,
+    "two-glb-repeat-exact": true,
+    "historical-r4-five-glb-exact": true,
+    "normalized-age-review": true,
+    "249-tests-pass": true
+  },
+  "cases": {
+    "maduro-3100": {
+      "seed": 3100,
+      "preset": {
+        "version": "oak-growth-0.1.0",
+        "stage": "maduro",
+        "height_m": 12,
+        "maturity": 0.65,
+        "vigor": 1.0,
+        "crown_spread": 1.12,
+        "curvature": 0.36,
+        "light_tropism": 0.12,
+        "gravity": 0.12,
+        "competition": 0.7,
+        "pipe_exponent": 2.5,
+        "basal_flare": 1.45,
+        "orders": [
+          {
+            "order": 1,
+            "max_children": 8,
+            "length_ratio": 0.68,
+            "fork_angle_deg": 60,
+            "curvature_scale": 1.0,
+            "sides": 6,
+            "points": 9,
+            "branching_probability": 0.45,
+            "demand_weight": 0.004,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 2,
+            "max_children": 3,
+            "length_ratio": 0.7,
+            "fork_angle_deg": 60,
+            "curvature_scale": 0.85,
+            "sides": 5,
+            "points": 6,
+            "branching_probability": 0.9,
+            "demand_weight": 0.008,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 3,
+            "max_children": 2,
+            "length_ratio": 0.65,
+            "fork_angle_deg": 48,
+            "curvature_scale": 0.7,
+            "sides": 4,
+            "points": 5,
+            "branching_probability": 0.85,
+            "demand_weight": 0.003,
+            "attachment_min": 0.32
+          },
+          {
+            "order": 4,
+            "max_children": 2,
+            "length_ratio": 0.48,
+            "fork_angle_deg": 35,
+            "curvature_scale": 0.5,
+            "sides": 3,
+            "points": 3,
+            "branching_probability": 0.75,
+            "demand_weight": 0.0004,
+            "attachment_min": 0.43
+          }
+        ]
+      },
+      "preset_sha256": "cb4ebebb8b470b40ea5562290ad71f3f20909de9634fde983397adcd5a601234",
+      "triangles": 3041,
+      "scaffold_triangles": 904,
+      "architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 16,
+          "3": 23,
+          "4": 39
+        },
+        "primary_birth_heights_over_H": [
+          0.23431433896019124,
+          0.271336013187211,
+          0.2986742175630984,
+          0.3498371279958581,
+          0.3886857535288073,
+          0.4333793410778127,
+          0.48365774898576186
+        ],
+        "primary_birth_span_over_H": 0.24934341002557062,
+        "axis_height_over_H": 0.5145391994348089,
+        "width_over_H": 1.9262080260455658,
+        "depth_over_H": 1.6390114571734913,
+        "primary_sinuosity": [
+          1.0676764774863445,
+          1.0837720179251118,
+          1.06013708023807,
+          1.0334390853408872,
+          1.0404347217593766,
+          1.0158493548952028,
+          1.0229401077269322
+        ],
+        "maximum_segment_turn_deg": 32.22114294266398,
+        "maximum_centerline_join_error_m": 2.0053283331865004e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.30697640860914505,
+        "sinuosity_range": [
+          1.0001419398968594,
+          1.0837720179251118
+        ]
+      },
+      "duration_seconds": 0.9740210660002049,
+      "glb_sha256": {
+        "bare": "0d34985033336bf1e3b6a89891cf32beb3bd827a89a714bc208b8421f9f9fa5b",
+        "scaffold": "567c12d458de17c3e70a17c5deaab3e765921dea948978530f666a5ea5ae23e7"
+      },
+      "manifest_sha256": "d954eba108e2a3158dc6da87ac245fba79426996bfdbb3e38d3c2913217a6346",
+      "review_sha256": "a5ef26c79c33dc805e2874ec926d54b3e5ec753750edfa354ff4d5846d3a4c2c",
+      "bounds_blender": [
+        [
+          -12.383302,
+          -10.14287,
+          0.0
+        ],
+        [
+          10.736436,
+          9.529895,
+          12.005136
+        ]
+      ],
+      "checks": {
+        "bare-export": true,
+        "scaffold-export": true,
+        "nominal-height": true,
+        "wood-plus-reserve-budget": true,
+        "joins-embedded": true,
+        "centerlines-connected": true,
+        "smooth-ring-radii": true,
+        "four-orders": true
+      },
+      "captures": 12,
+      "display_scales": {
+        "old": 1.3654584748716385,
+        "bare": 1.0,
+        "scaffold": 1.0
+      },
+      "reference": {
+        "source": "/home/tao/repos/procedural/arboles/artifacts/oak-growth/validacion-01/references/maduro-3100",
+        "bare_triangles": 4824,
+        "glb_sha256": "d2d2ce7db699fe2128d8309c26bb9cc98c9adaa630f2ef356f1e8a1c35910169",
+        "display_scale": 1.3654584748716385
+      }
+    },
+    "maduro-3101": {
+      "seed": 3101,
+      "preset": {
+        "version": "oak-growth-0.1.0",
+        "stage": "maduro",
+        "height_m": 12,
+        "maturity": 0.65,
+        "vigor": 1.0,
+        "crown_spread": 1.12,
+        "curvature": 0.36,
+        "light_tropism": 0.12,
+        "gravity": 0.12,
+        "competition": 0.7,
+        "pipe_exponent": 2.5,
+        "basal_flare": 1.45,
+        "orders": [
+          {
+            "order": 1,
+            "max_children": 8,
+            "length_ratio": 0.68,
+            "fork_angle_deg": 60,
+            "curvature_scale": 1.0,
+            "sides": 6,
+            "points": 9,
+            "branching_probability": 0.45,
+            "demand_weight": 0.004,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 2,
+            "max_children": 3,
+            "length_ratio": 0.7,
+            "fork_angle_deg": 60,
+            "curvature_scale": 0.85,
+            "sides": 5,
+            "points": 6,
+            "branching_probability": 0.9,
+            "demand_weight": 0.008,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 3,
+            "max_children": 2,
+            "length_ratio": 0.65,
+            "fork_angle_deg": 48,
+            "curvature_scale": 0.7,
+            "sides": 4,
+            "points": 5,
+            "branching_probability": 0.85,
+            "demand_weight": 0.003,
+            "attachment_min": 0.32
+          },
+          {
+            "order": 4,
+            "max_children": 2,
+            "length_ratio": 0.48,
+            "fork_angle_deg": 35,
+            "curvature_scale": 0.5,
+            "sides": 3,
+            "points": 3,
+            "branching_probability": 0.75,
+            "demand_weight": 0.0004,
+            "attachment_min": 0.43
+          }
+        ]
+      },
+      "preset_sha256": "cb4ebebb8b470b40ea5562290ad71f3f20909de9634fde983397adcd5a601234",
+      "triangles": 3648,
+      "scaffold_triangles": 904,
+      "architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 18,
+          "3": 32,
+          "4": 54
+        },
+        "primary_birth_heights_over_H": [
+          0.23840858685889907,
+          0.2896953646417794,
+          0.3324046691318874,
+          0.36927462710678255,
+          0.4136199899011234,
+          0.4409714935141835,
+          0.4920039461188839
+        ],
+        "primary_birth_span_over_H": 0.25359535925998483,
+        "axis_height_over_H": 0.5234027025471134,
+        "width_over_H": 1.7017927928774899,
+        "depth_over_H": 2.0865166333795053,
+        "primary_sinuosity": [
+          1.0533884641736155,
+          1.0464560450403493,
+          1.0408019168116862,
+          1.0440004128764075,
+          1.0288202985903474,
+          1.0168519907003886,
+          1.0146102371319095
+        ],
+        "maximum_segment_turn_deg": 30.69074476263016,
+        "maximum_centerline_join_error_m": 2.0350724194510405e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.33907118484040666,
+        "sinuosity_range": [
+          1.000099942318959,
+          1.0533884641736155
+        ]
+      },
+      "duration_seconds": 1.0657810030006658,
+      "glb_sha256": {
+        "bare": "56d9ee0045499506998650048750a04653834bbaf6cc0a53a04cb2cb51161b18",
+        "scaffold": "354092a55d5b76b9dcf6cbc7961951333aff3e41fee95bd2df6751b011abebfb"
+      },
+      "manifest_sha256": "e99bea172ba7bdc7cda8530ef1460a22a67b470bf63878c605f5dfc94f3381c7",
+      "review_sha256": "9c4619967c745637e57d7965fe996189860189baa7c64319e6f05fca71a2afe4",
+      "bounds_blender": [
+        [
+          -11.074669,
+          -10.742089,
+          0.0
+        ],
+        [
+          9.351459,
+          14.298949,
+          12.036927
+        ]
+      ],
+      "checks": {
+        "bare-export": true,
+        "scaffold-export": true,
+        "nominal-height": true,
+        "wood-plus-reserve-budget": true,
+        "joins-embedded": true,
+        "centerlines-connected": true,
+        "smooth-ring-radii": true,
+        "four-orders": true
+      },
+      "captures": 12,
+      "display_scales": {
+        "old": 1.387281633200424,
+        "bare": 1.0,
+        "scaffold": 1.0
+      },
+      "reference": {
+        "source": "/home/tao/repos/procedural/arboles/artifacts/oak-growth/validacion-01/references/maduro-3101",
+        "bare_triangles": 4824,
+        "glb_sha256": "b0880dcc8f6be39d2849522f00ce27638a997a19f9c88e740b401f3ec9ebcf54",
+        "display_scale": 1.387281633200424
+      }
+    },
+    "maduro-3102": {
+      "seed": 3102,
+      "preset": {
+        "version": "oak-growth-0.1.0",
+        "stage": "maduro",
+        "height_m": 12,
+        "maturity": 0.65,
+        "vigor": 1.0,
+        "crown_spread": 1.12,
+        "curvature": 0.36,
+        "light_tropism": 0.12,
+        "gravity": 0.12,
+        "competition": 0.7,
+        "pipe_exponent": 2.5,
+        "basal_flare": 1.45,
+        "orders": [
+          {
+            "order": 1,
+            "max_children": 8,
+            "length_ratio": 0.68,
+            "fork_angle_deg": 60,
+            "curvature_scale": 1.0,
+            "sides": 6,
+            "points": 9,
+            "branching_probability": 0.45,
+            "demand_weight": 0.004,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 2,
+            "max_children": 3,
+            "length_ratio": 0.7,
+            "fork_angle_deg": 60,
+            "curvature_scale": 0.85,
+            "sides": 5,
+            "points": 6,
+            "branching_probability": 0.9,
+            "demand_weight": 0.008,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 3,
+            "max_children": 2,
+            "length_ratio": 0.65,
+            "fork_angle_deg": 48,
+            "curvature_scale": 0.7,
+            "sides": 4,
+            "points": 5,
+            "branching_probability": 0.85,
+            "demand_weight": 0.003,
+            "attachment_min": 0.32
+          },
+          {
+            "order": 4,
+            "max_children": 2,
+            "length_ratio": 0.48,
+            "fork_angle_deg": 35,
+            "curvature_scale": 0.5,
+            "sides": 3,
+            "points": 3,
+            "branching_probability": 0.75,
+            "demand_weight": 0.0004,
+            "attachment_min": 0.43
+          }
+        ]
+      },
+      "preset_sha256": "cb4ebebb8b470b40ea5562290ad71f3f20909de9634fde983397adcd5a601234",
+      "triangles": 2777,
+      "scaffold_triangles": 904,
+      "architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 15,
+          "3": 21,
+          "4": 28
+        },
+        "primary_birth_heights_over_H": [
+          0.23087291327074436,
+          0.2739708040013115,
+          0.3027741219694641,
+          0.3510232781700367,
+          0.3896791435564819,
+          0.4357906200064849,
+          0.4763776152906072
+        ],
+        "primary_birth_span_over_H": 0.24550470201986282,
+        "axis_height_over_H": 0.5067679979206084,
+        "width_over_H": 1.5074568692478636,
+        "depth_over_H": 1.6776202902275081,
+        "primary_sinuosity": [
+          1.0342324378449048,
+          1.04152158496444,
+          1.0561367031680309,
+          1.0323063191046646,
+          1.0324881013117493,
+          1.0379448958580066,
+          1.0364950599853422
+        ],
+        "maximum_segment_turn_deg": 22.66613954021455,
+        "maximum_centerline_join_error_m": 1.9891280697202825e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.322484902393507,
+        "sinuosity_range": [
+          1.0001730999948004,
+          1.0561367031680309
+        ]
+      },
+      "duration_seconds": 0.95553795700107,
+      "glb_sha256": {
+        "bare": "8361bd8bc68ae20b372a5d22b27835470cbae4c8f2ec08a5373503ad56ebf2a7",
+        "scaffold": "4f5481e57a84c07926b8c5db4fd89e44bb4ca0ad8f7033c5c28c37a7dd8cd96e"
+      },
+      "manifest_sha256": "dad0e8742f08677432031e75eccb0fc6cd498ff9003e71b1c80aa5bc54436607",
+      "review_sha256": "06360a90e79beae294ca2e206bc8152b1621e7318f20635bd62c7f377d2da5dc",
+      "bounds_blender": [
+        [
+          -8.932377,
+          -9.945959,
+          0.0
+        ],
+        [
+          9.16219,
+          10.18869,
+          12.007053
+        ]
+      ],
+      "checks": {
+        "bare-export": true,
+        "scaffold-export": true,
+        "nominal-height": true,
+        "wood-plus-reserve-budget": true,
+        "joins-embedded": true,
+        "centerlines-connected": true,
+        "smooth-ring-radii": true,
+        "four-orders": true
+      },
+      "captures": 12,
+      "display_scales": {
+        "old": 1.3793177963145318,
+        "bare": 1.0,
+        "scaffold": 1.0
+      },
+      "reference": {
+        "source": "/home/tao/repos/procedural/arboles/artifacts/oak-growth/validacion-01/references/maduro-3102",
+        "bare_triangles": 4824,
+        "glb_sha256": "9b7671efe602705e572533709de92bf75b46e9de9ca0ff3df6f41eb4e94056b0",
+        "display_scale": 1.3793177963145318
+      }
+    },
+    "maduro-3103": {
+      "seed": 3103,
+      "preset": {
+        "version": "oak-growth-0.1.0",
+        "stage": "maduro",
+        "height_m": 12,
+        "maturity": 0.65,
+        "vigor": 1.0,
+        "crown_spread": 1.12,
+        "curvature": 0.36,
+        "light_tropism": 0.12,
+        "gravity": 0.12,
+        "competition": 0.7,
+        "pipe_exponent": 2.5,
+        "basal_flare": 1.45,
+        "orders": [
+          {
+            "order": 1,
+            "max_children": 8,
+            "length_ratio": 0.68,
+            "fork_angle_deg": 60,
+            "curvature_scale": 1.0,
+            "sides": 6,
+            "points": 9,
+            "branching_probability": 0.45,
+            "demand_weight": 0.004,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 2,
+            "max_children": 3,
+            "length_ratio": 0.7,
+            "fork_angle_deg": 60,
+            "curvature_scale": 0.85,
+            "sides": 5,
+            "points": 6,
+            "branching_probability": 0.9,
+            "demand_weight": 0.008,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 3,
+            "max_children": 2,
+            "length_ratio": 0.65,
+            "fork_angle_deg": 48,
+            "curvature_scale": 0.7,
+            "sides": 4,
+            "points": 5,
+            "branching_probability": 0.85,
+            "demand_weight": 0.003,
+            "attachment_min": 0.32
+          },
+          {
+            "order": 4,
+            "max_children": 2,
+            "length_ratio": 0.48,
+            "fork_angle_deg": 35,
+            "curvature_scale": 0.5,
+            "sides": 3,
+            "points": 3,
+            "branching_probability": 0.75,
+            "demand_weight": 0.0004,
+            "attachment_min": 0.43
+          }
+        ]
+      },
+      "preset_sha256": "cb4ebebb8b470b40ea5562290ad71f3f20909de9634fde983397adcd5a601234",
+      "triangles": 3475,
+      "scaffold_triangles": 1004,
+      "architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 19,
+          "3": 27,
+          "4": 42
+        },
+        "primary_birth_heights_over_H": [
+          0.24129985496559744,
+          0.27529504159379314,
+          0.3109611235986598,
+          0.3509596811806343,
+          0.3924698550465264,
+          0.435471229233146,
+          0.4596545502794076,
+          0.49824772437666837
+        ],
+        "primary_birth_span_over_H": 0.25694786941107095,
+        "axis_height_over_H": 0.5300862020837953,
+        "width_over_H": 1.731048184750496,
+        "depth_over_H": 1.7850318075804026,
+        "primary_sinuosity": [
+          1.047932017298947,
+          1.054102503044719,
+          1.0391604865937556,
+          1.0400066696271986,
+          1.0495835728188923,
+          1.0425003680829883,
+          1.0191288841269959,
+          1.0293800023111084
+        ],
+        "maximum_segment_turn_deg": 25.662636529342684,
+        "maximum_centerline_join_error_m": 2.2644195468014703e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.33691486369998247,
+        "sinuosity_range": [
+          1.0001300857919921,
+          1.054102503044719
+        ]
+      },
+      "duration_seconds": 0.9876713710000331,
+      "glb_sha256": {
+        "bare": "acdd00566438ec289ee10e518fa56195af5fd94ddac4c612273cf7c2febaae86",
+        "scaffold": "60e7064bc577727a6a1be931fe8d85563610372fd69037c914b9bc8806e12420"
+      },
+      "manifest_sha256": "ef30cce95d5f158f6520152b994313042cbac017188487179af606d51f28b853",
+      "review_sha256": "2a866c779c7480fc2a6c34ab419598d4a7f70f9ade8b7c1c77db264fec7dc3ac",
+      "bounds_blender": [
+        [
+          -13.248888,
+          -9.879228,
+          0.0
+        ],
+        [
+          7.527051,
+          11.544698,
+          12.003272
+        ]
+      ],
+      "checks": {
+        "bare-export": true,
+        "scaffold-export": true,
+        "nominal-height": true,
+        "wood-plus-reserve-budget": true,
+        "joins-embedded": true,
+        "centerlines-connected": true,
+        "smooth-ring-radii": true,
+        "four-orders": true
+      },
+      "captures": 12,
+      "display_scales": {
+        "old": 1.3974840628588332,
+        "bare": 1.0,
+        "scaffold": 1.0
+      },
+      "reference": {
+        "source": "/home/tao/repos/procedural/arboles/artifacts/oak-growth/validacion-01/references/maduro-3103",
+        "bare_triangles": 4824,
+        "glb_sha256": "a2640a084ee03e015433206e193ec7dfdc2c269cebe31cd32fadb8e6c9c822e3",
+        "display_scale": 1.3974840628588332
+      }
+    },
+    "maduro-3104": {
+      "seed": 3104,
+      "preset": {
+        "version": "oak-growth-0.1.0",
+        "stage": "maduro",
+        "height_m": 12,
+        "maturity": 0.65,
+        "vigor": 1.0,
+        "crown_spread": 1.12,
+        "curvature": 0.36,
+        "light_tropism": 0.12,
+        "gravity": 0.12,
+        "competition": 0.7,
+        "pipe_exponent": 2.5,
+        "basal_flare": 1.45,
+        "orders": [
+          {
+            "order": 1,
+            "max_children": 8,
+            "length_ratio": 0.68,
+            "fork_angle_deg": 60,
+            "curvature_scale": 1.0,
+            "sides": 6,
+            "points": 9,
+            "branching_probability": 0.45,
+            "demand_weight": 0.004,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 2,
+            "max_children": 3,
+            "length_ratio": 0.7,
+            "fork_angle_deg": 60,
+            "curvature_scale": 0.85,
+            "sides": 5,
+            "points": 6,
+            "branching_probability": 0.9,
+            "demand_weight": 0.008,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 3,
+            "max_children": 2,
+            "length_ratio": 0.65,
+            "fork_angle_deg": 48,
+            "curvature_scale": 0.7,
+            "sides": 4,
+            "points": 5,
+            "branching_probability": 0.85,
+            "demand_weight": 0.003,
+            "attachment_min": 0.32
+          },
+          {
+            "order": 4,
+            "max_children": 2,
+            "length_ratio": 0.48,
+            "fork_angle_deg": 35,
+            "curvature_scale": 0.5,
+            "sides": 3,
+            "points": 3,
+            "branching_probability": 0.75,
+            "demand_weight": 0.0004,
+            "attachment_min": 0.43
+          }
+        ]
+      },
+      "preset_sha256": "cb4ebebb8b470b40ea5562290ad71f3f20909de9634fde983397adcd5a601234",
+      "triangles": 3429,
+      "scaffold_triangles": 904,
+      "architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 18,
+          "3": 29,
+          "4": 45
+        },
+        "primary_birth_heights_over_H": [
+          0.22706087849048898,
+          0.2625048125950113,
+          0.29669798430584454,
+          0.337570842624574,
+          0.39229773379920196,
+          0.43501362649864833,
+          0.46840765462957573
+        ],
+        "primary_birth_span_over_H": 0.24134677613908675,
+        "axis_height_over_H": 0.498274126906681,
+        "width_over_H": 1.7666007662818908,
+        "depth_over_H": 1.4993314205677073,
+        "primary_sinuosity": [
+          1.052230665687464,
+          1.0429968533733798,
+          1.0572378624875491,
+          1.0660844259150106,
+          1.0756501180911295,
+          1.0138168458535892,
+          1.0203869025421082
+        ],
+        "maximum_segment_turn_deg": 25.807455610268377,
+        "maximum_centerline_join_error_m": 1.831026719408895e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.3415304296128357,
+        "sinuosity_range": [
+          1.0001858980141325,
+          1.0756501180911295
+        ]
+      },
+      "duration_seconds": 0.9961404999994556,
+      "glb_sha256": {
+        "bare": "96db51297774dce5966e749e0355fdaa165e9f1fe925ca88766c4244df127c94",
+        "scaffold": "c03f7dc5c4a1ae76000f5cecd92f0b839ad22ac11c97c0f89f89f998136cceb0"
+      },
+      "manifest_sha256": "64e7d903b08be34137a698f77d4df079e0294c979e514239e4efc4270b67cd7a",
+      "review_sha256": "1631f875a9fb47cb2b92ac3c123b5427711f0635e21c50f84b10c490f46b9b0b",
+      "bounds_blender": [
+        [
+          -10.66581,
+          -8.81011,
+          0.0
+        ],
+        [
+          10.537147,
+          9.186042,
+          12.006577
+        ]
+      ],
+      "checks": {
+        "bare-export": true,
+        "scaffold-export": true,
+        "nominal-height": true,
+        "wood-plus-reserve-budget": true,
+        "joins-embedded": true,
+        "centerlines-connected": true,
+        "smooth-ring-radii": true,
+        "four-orders": true
+      },
+      "captures": 12,
+      "display_scales": {
+        "old": 1.3767258980038852,
+        "bare": 1.0,
+        "scaffold": 1.0
+      },
+      "reference": {
+        "source": "/home/tao/repos/procedural/arboles/artifacts/oak-growth/validacion-01/references/maduro-3104",
+        "bare_triangles": 4814,
+        "glb_sha256": "3021bf7dbaa9f7f923bb295b7730c2ec80154e98dffb1775184932a0370d46e5",
+        "display_scale": 1.3767258980038852
+      }
+    },
+    "joven-3100": {
+      "seed": 3100,
+      "preset": {
+        "version": "oak-growth-0.1.0",
+        "stage": "joven",
+        "height_m": 5,
+        "maturity": 0.15,
+        "vigor": 1.0,
+        "crown_spread": 1.12,
+        "curvature": 0.36,
+        "light_tropism": 0.12,
+        "gravity": 0.12,
+        "competition": 0.7,
+        "pipe_exponent": 2.5,
+        "basal_flare": 1.45,
+        "orders": [
+          {
+            "order": 1,
+            "max_children": 8,
+            "length_ratio": 0.68,
+            "fork_angle_deg": 60,
+            "curvature_scale": 1.0,
+            "sides": 6,
+            "points": 9,
+            "branching_probability": 0.45,
+            "demand_weight": 0.004,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 2,
+            "max_children": 3,
+            "length_ratio": 0.7,
+            "fork_angle_deg": 60,
+            "curvature_scale": 0.85,
+            "sides": 5,
+            "points": 6,
+            "branching_probability": 0.9,
+            "demand_weight": 0.008,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 3,
+            "max_children": 2,
+            "length_ratio": 0.65,
+            "fork_angle_deg": 48,
+            "curvature_scale": 0.7,
+            "sides": 4,
+            "points": 5,
+            "branching_probability": 0.85,
+            "demand_weight": 0.003,
+            "attachment_min": 0.32
+          },
+          {
+            "order": 4,
+            "max_children": 2,
+            "length_ratio": 0.48,
+            "fork_angle_deg": 35,
+            "curvature_scale": 0.5,
+            "sides": 3,
+            "points": 3,
+            "branching_probability": 0.75,
+            "demand_weight": 0.0004,
+            "attachment_min": 0.43
+          }
+        ]
+      },
+      "preset_sha256": "60b5410a961dd7628006fb798a01a83462413ee4743bef2738c74263661f1df2",
+      "triangles": 2358,
+      "scaffold_triangles": 704,
+      "architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 5,
+          "2": 12,
+          "3": 20,
+          "4": 26
+        },
+        "primary_birth_heights_over_H": [
+          0.347562298997206,
+          0.4295360183277549,
+          0.4900677315124072,
+          0.603344976968198,
+          0.6893529315651019
+        ],
+        "primary_birth_span_over_H": 0.34179063256789594,
+        "axis_height_over_H": 0.7333601102095099,
+        "width_over_H": 0.9831457815116277,
+        "depth_over_H": 0.8271424408919913,
+        "primary_sinuosity": [
+          1.0407886572689689,
+          1.0458730357126187,
+          1.0351006487462564,
+          1.0150159271349286,
+          1.0606230969423478
+        ],
+        "maximum_segment_turn_deg": 19.94395997092417,
+        "maximum_centerline_join_error_m": 9.930136612989092e-16,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.374771680849803,
+        "sinuosity_range": [
+          1.000065165560211,
+          1.0606230969423478
+        ]
+      },
+      "duration_seconds": 0.9209376170001633,
+      "glb_sha256": {
+        "bare": "a96a85beb3e636d5fd955c57907143849e1a4e01e241a29b40f4a1bd7983d9ee",
+        "scaffold": "05801cb0dc7096dbc28d3e453a5e81be2d03080d69b6e97679074a5de1d2d9c1"
+      },
+      "manifest_sha256": "f19204cbc4e3b6663ce4bc8e5240ce2c9ce1d1869c242c164d90fdc1331b019e",
+      "review_sha256": "448c8165ddb13c604d13a58ac897059860f3f41fc0d24e262ba88a6c5dba046e",
+      "bounds_blender": [
+        [
+          -2.942816,
+          -1.573446,
+          0.0
+        ],
+        [
+          1.972999,
+          2.563304,
+          5.002575
+        ]
+      ],
+      "checks": {
+        "bare-export": true,
+        "scaffold-export": true,
+        "nominal-height": true,
+        "wood-plus-reserve-budget": true,
+        "joins-embedded": true,
+        "centerlines-connected": true,
+        "smooth-ring-radii": true,
+        "four-orders": true
+      },
+      "captures": 8,
+      "display_scales": {
+        "bare": 1.0,
+        "scaffold": 1.0
+      }
+    },
+    "centenario-3100": {
+      "seed": 3100,
+      "preset": {
+        "version": "oak-growth-0.1.0",
+        "stage": "centenario",
+        "height_m": 15,
+        "maturity": 0.95,
+        "vigor": 1.0,
+        "crown_spread": 1.12,
+        "curvature": 0.36,
+        "light_tropism": 0.12,
+        "gravity": 0.12,
+        "competition": 0.7,
+        "pipe_exponent": 2.5,
+        "basal_flare": 1.45,
+        "orders": [
+          {
+            "order": 1,
+            "max_children": 8,
+            "length_ratio": 0.68,
+            "fork_angle_deg": 60,
+            "curvature_scale": 1.0,
+            "sides": 6,
+            "points": 9,
+            "branching_probability": 0.45,
+            "demand_weight": 0.004,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 2,
+            "max_children": 3,
+            "length_ratio": 0.7,
+            "fork_angle_deg": 60,
+            "curvature_scale": 0.85,
+            "sides": 5,
+            "points": 6,
+            "branching_probability": 0.9,
+            "demand_weight": 0.008,
+            "attachment_min": 0.3
+          },
+          {
+            "order": 3,
+            "max_children": 2,
+            "length_ratio": 0.65,
+            "fork_angle_deg": 48,
+            "curvature_scale": 0.7,
+            "sides": 4,
+            "points": 5,
+            "branching_probability": 0.85,
+            "demand_weight": 0.003,
+            "attachment_min": 0.32
+          },
+          {
+            "order": 4,
+            "max_children": 2,
+            "length_ratio": 0.48,
+            "fork_angle_deg": 35,
+            "curvature_scale": 0.5,
+            "sides": 3,
+            "points": 3,
+            "branching_probability": 0.75,
+            "demand_weight": 0.0004,
+            "attachment_min": 0.43
+          }
+        ]
+      },
+      "preset_sha256": "e1b672a05e71df8b3654d9f25324f95d003f23bc375b753cd6bac15b74d86501",
+      "triangles": 3634,
+      "scaffold_triangles": 1004,
+      "architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 19,
+          "3": 29,
+          "4": 49
+        },
+        "primary_birth_heights_over_H": [
+          0.14875249239019042,
+          0.17042166005169618,
+          0.1864249563780273,
+          0.2163756916268961,
+          0.2391197350177308,
+          0.26528774741999384,
+          0.2947280720882536,
+          0.3247708857172891
+        ],
+        "primary_birth_span_over_H": 0.17601839332709873,
+        "axis_height_over_H": 0.3455147985158064,
+        "width_over_H": 2.523917399079747,
+        "depth_over_H": 1.913440930451966,
+        "primary_sinuosity": [
+          1.0863382389597076,
+          1.0823084761099997,
+          1.0619834647419317,
+          1.040177030609435,
+          1.0587414233603423,
+          1.0072098032138486,
+          1.0225195211779803,
+          1.0219405170613591
+        ],
+        "maximum_segment_turn_deg": 30.860096081043515,
+        "maximum_centerline_join_error_m": 3.66205343881779e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000005,
+        "minimum_join_radius_scale": 0.29870918961135273,
+        "sinuosity_range": [
+          1.0000495103749458,
+          1.0863382389597076
+        ]
+      },
+      "duration_seconds": 0.9935982580009295,
+      "glb_sha256": {
+        "bare": "e9c42c38b56aeb6a936d9d211b5d7ae2797c81ed2cc6e28e0ecb8ccd7cd24a79",
+        "scaffold": "ec29fe904bceb37f20d58cddd818c8157ccd8660112af7d3b2d96928fe918088"
+      },
+      "manifest_sha256": "85bb39f13fafd1c8f2a089cc103c900a85a249bcf8a0b5aa2028778ae76cd2a4",
+      "review_sha256": "d1fc5b8114d264e219ab15a92c7407597e2ba48332645e4a88f307009fc1e75b",
+      "bounds_blender": [
+        [
+          -20.743607,
+          -14.859416,
+          0.0
+        ],
+        [
+          17.122499,
+          13.84682,
+          15.009196
+        ]
+      ],
+      "checks": {
+        "bare-export": true,
+        "scaffold-export": true,
+        "nominal-height": true,
+        "wood-plus-reserve-budget": true,
+        "joins-embedded": true,
+        "centerlines-connected": true,
+        "smooth-ring-radii": true,
+        "four-orders": true
+      },
+      "captures": 8,
+      "display_scales": {
+        "bare": 1.0,
+        "scaffold": 1.0
+      }
+    }
+  },
+  "spatial_ablation": {
+    "maduro-3100": {
+      "enabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 16,
+          "3": 23,
+          "4": 39
+        },
+        "primary_birth_heights_over_H": [
+          0.23431433896019124,
+          0.271336013187211,
+          0.2986742175630984,
+          0.3498371279958581,
+          0.3886857535288073,
+          0.4333793410778127,
+          0.48365774898576186
+        ],
+        "primary_birth_span_over_H": 0.24934341002557062,
+        "axis_height_over_H": 0.5145391994348089,
+        "width_over_H": 1.9262080260455658,
+        "depth_over_H": 1.6390114571734913,
+        "primary_sinuosity": [
+          1.0676764774863445,
+          1.0837720179251118,
+          1.06013708023807,
+          1.0334390853408872,
+          1.0404347217593766,
+          1.0158493548952028,
+          1.0229401077269322
+        ],
+        "maximum_segment_turn_deg": 32.22114294266398,
+        "maximum_centerline_join_error_m": 2.0053283331865004e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.30697640860914505,
+        "sinuosity_range": [
+          1.0001419398968594,
+          1.0837720179251118
+        ]
+      },
+      "disabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 17,
+          "3": 27,
+          "4": 47
+        },
+        "primary_birth_heights_over_H": [
+          0.23944311283876482,
+          0.2772751335284006,
+          0.3052117283788632,
+          0.35749451478568317,
+          0.39719347588382253,
+          0.4428653360617174,
+          0.49424425956883516
+        ],
+        "primary_birth_span_over_H": 0.2548011467300703,
+        "axis_height_over_H": 0.5258016565992923,
+        "width_over_H": 1.9734931358440457,
+        "depth_over_H": 1.739552807926841,
+        "primary_sinuosity": [
+          1.0575850369133382,
+          1.0638609258310208,
+          1.0499485915396138,
+          1.0296549396405852,
+          1.047307934950066,
+          1.0220653958840622,
+          1.0214535945452865
+        ],
+        "maximum_segment_turn_deg": 21.874773054778185,
+        "maximum_centerline_join_error_m": 1.9860273225978185e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.3069185714205931,
+        "sinuosity_range": [
+          1.0000738012017578,
+          1.0638609258310208
+        ]
+      },
+      "enabled_branch_sha256": "b5cb5d1e06fe74e9d52395e52f99f2b8f2179b136ef1586e3271e87fb8030dd2",
+      "disabled_branch_sha256": "7b2ad93515594219c6a8055bdc418832fd7e7d7e549fc958bf9230eab3eea622",
+      "scope": "diagnóstico algorítmico sin capturas ni afirmación de mejora artística/colisiones"
+    },
+    "maduro-3101": {
+      "enabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 18,
+          "3": 32,
+          "4": 54
+        },
+        "primary_birth_heights_over_H": [
+          0.23840858685889907,
+          0.2896953646417794,
+          0.3324046691318874,
+          0.36927462710678255,
+          0.4136199899011234,
+          0.4409714935141835,
+          0.4920039461188839
+        ],
+        "primary_birth_span_over_H": 0.25359535925998483,
+        "axis_height_over_H": 0.5234027025471134,
+        "width_over_H": 1.7017927928774899,
+        "depth_over_H": 2.0865166333795053,
+        "primary_sinuosity": [
+          1.0533884641736155,
+          1.0464560450403493,
+          1.0408019168116862,
+          1.0440004128764075,
+          1.0288202985903474,
+          1.0168519907003886,
+          1.0146102371319095
+        ],
+        "maximum_segment_turn_deg": 30.69074476263016,
+        "maximum_centerline_join_error_m": 2.0350724194510405e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.33907118484040666,
+        "sinuosity_range": [
+          1.000099942318959,
+          1.0533884641736155
+        ]
+      },
+      "disabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 18,
+          "3": 31,
+          "4": 53
+        },
+        "primary_birth_heights_over_H": [
+          0.23907427717694452,
+          0.2905042591617525,
+          0.3333328176219632,
+          0.3703057248000477,
+          0.41477490980671466,
+          0.44220278496066223,
+          0.49337773163427445
+        ],
+        "primary_birth_span_over_H": 0.25430345445732994,
+        "axis_height_over_H": 0.5248641604422128,
+        "width_over_H": 1.7838636063361164,
+        "depth_over_H": 2.0773255512148574,
+        "primary_sinuosity": [
+          1.0533884641736155,
+          1.0652320428883828,
+          1.0535252789897498,
+          1.0462237728614656,
+          1.0267776965166926,
+          1.016014665213915,
+          1.0104404604313262
+        ],
+        "maximum_segment_turn_deg": 21.34587937642353,
+        "maximum_centerline_join_error_m": 2.175583928816829e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.33902490044107475,
+        "sinuosity_range": [
+          1.0001640103463973,
+          1.0652320428883828
+        ]
+      },
+      "enabled_branch_sha256": "5412ceb74bb9de38f453a56c183d29e772ce31f575f151459b99b654371fa2bb",
+      "disabled_branch_sha256": "e2274aa16323e2e3bad7557c25e672d6e1a2b5fc3e491e2a4bd9f62fb050b603",
+      "scope": "diagnóstico algorítmico sin capturas ni afirmación de mejora artística/colisiones"
+    },
+    "maduro-3102": {
+      "enabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 15,
+          "3": 21,
+          "4": 28
+        },
+        "primary_birth_heights_over_H": [
+          0.23087291327074436,
+          0.2739708040013115,
+          0.3027741219694641,
+          0.3510232781700367,
+          0.3896791435564819,
+          0.4357906200064849,
+          0.4763776152906072
+        ],
+        "primary_birth_span_over_H": 0.24550470201986282,
+        "axis_height_over_H": 0.5067679979206084,
+        "width_over_H": 1.5074568692478636,
+        "depth_over_H": 1.6776202902275081,
+        "primary_sinuosity": [
+          1.0342324378449048,
+          1.04152158496444,
+          1.0561367031680309,
+          1.0323063191046646,
+          1.0324881013117493,
+          1.0379448958580066,
+          1.0364950599853422
+        ],
+        "maximum_segment_turn_deg": 22.66613954021455,
+        "maximum_centerline_join_error_m": 1.9891280697202825e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.322484902393507,
+        "sinuosity_range": [
+          1.0001730999948004,
+          1.0561367031680309
+        ]
+      },
+      "disabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 16,
+          "3": 23,
+          "4": 30
+        },
+        "primary_birth_heights_over_H": [
+          0.23612234307708624,
+          0.28020016406013043,
+          0.3096583920985962,
+          0.3590046044895289,
+          0.3985394004056529,
+          0.4456993279513772,
+          0.48720916247105966
+        ],
+        "primary_birth_span_over_H": 0.2510868193939734,
+        "axis_height_over_H": 0.5182905407581261,
+        "width_over_H": 1.5680799753937613,
+        "depth_over_H": 1.8412704742549206,
+        "primary_sinuosity": [
+          1.0342324378449046,
+          1.04152158496444,
+          1.050369200518397,
+          1.0298952120633895,
+          1.0428943571284157,
+          1.0256976873225694,
+          1.0180105227231622
+        ],
+        "maximum_segment_turn_deg": 21.231254387106024,
+        "maximum_centerline_join_error_m": 2.5121479338940403e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.3224434971823559,
+        "sinuosity_range": [
+          1.0000682797791003,
+          1.050369200518397
+        ]
+      },
+      "enabled_branch_sha256": "16851238822e369df8ad6813c2e1a3cefaabdceb82e95e5d6a89da0ae09da134",
+      "disabled_branch_sha256": "ead56eb1ff97f1bb2fc6ea4df2e829ab63a186294f9ad8554099b21450a13df0",
+      "scope": "diagnóstico algorítmico sin capturas ni afirmación de mejora artística/colisiones"
+    },
+    "maduro-3103": {
+      "enabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 19,
+          "3": 27,
+          "4": 42
+        },
+        "primary_birth_heights_over_H": [
+          0.24129985496559744,
+          0.27529504159379314,
+          0.3109611235986598,
+          0.3509596811806343,
+          0.3924698550465264,
+          0.435471229233146,
+          0.4596545502794076,
+          0.49824772437666837
+        ],
+        "primary_birth_span_over_H": 0.25694786941107095,
+        "axis_height_over_H": 0.5300862020837953,
+        "width_over_H": 1.731048184750496,
+        "depth_over_H": 1.7850318075804026,
+        "primary_sinuosity": [
+          1.047932017298947,
+          1.054102503044719,
+          1.0391604865937556,
+          1.0400066696271986,
+          1.0495835728188923,
+          1.0425003680829883,
+          1.0191288841269959,
+          1.0293800023111084
+        ],
+        "maximum_segment_turn_deg": 25.662636529342684,
+        "maximum_centerline_join_error_m": 2.2644195468014703e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.33691486369998247,
+        "sinuosity_range": [
+          1.0001300857919921,
+          1.054102503044719
+        ]
+      },
+      "disabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 8,
+          "2": 19,
+          "3": 28,
+          "4": 46
+        },
+        "primary_birth_heights_over_H": [
+          0.2397839346919487,
+          0.27356555304997904,
+          0.30900756970345744,
+          0.34875484398331863,
+          0.3900042381063677,
+          0.4327354643688058,
+          0.45676685831729347,
+          0.4951175781658899
+        ],
+        "primary_birth_span_over_H": 0.2553336434739412,
+        "axis_height_over_H": 0.5267560367149232,
+        "width_over_H": 1.7513988134004908,
+        "depth_over_H": 1.76061067852991,
+        "primary_sinuosity": [
+          1.0479320172989472,
+          1.054102503044719,
+          1.0402640531655671,
+          1.0443468865736785,
+          1.0495835728188925,
+          1.0221500051388406,
+          1.0195636274026008,
+          1.0248969698843324
+        ],
+        "maximum_segment_turn_deg": 20.56523490796442,
+        "maximum_centerline_join_error_m": 2.5510982866352577e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.3166119336160381,
+        "sinuosity_range": [
+          1.0000586369639155,
+          1.054102503044719
+        ]
+      },
+      "enabled_branch_sha256": "0791787fd495ce8fea9670f77f3c4c0af10da56605cdee149bfff85673931976",
+      "disabled_branch_sha256": "7a25ced369f8955ec8c5fb6aa5c636ba54b8de176acc2782c2c68f7ac5a17b58",
+      "scope": "diagnóstico algorítmico sin capturas ni afirmación de mejora artística/colisiones"
+    },
+    "maduro-3104": {
+      "enabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 18,
+          "3": 29,
+          "4": 45
+        },
+        "primary_birth_heights_over_H": [
+          0.22706087849048898,
+          0.2625048125950113,
+          0.29669798430584454,
+          0.337570842624574,
+          0.39229773379920196,
+          0.43501362649864833,
+          0.46840765462957573
+        ],
+        "primary_birth_span_over_H": 0.24134677613908675,
+        "axis_height_over_H": 0.498274126906681,
+        "width_over_H": 1.7666007662818908,
+        "depth_over_H": 1.4993314205677073,
+        "primary_sinuosity": [
+          1.052230665687464,
+          1.0429968533733798,
+          1.0572378624875491,
+          1.0660844259150106,
+          1.0756501180911295,
+          1.0138168458535892,
+          1.0203869025421082
+        ],
+        "maximum_segment_turn_deg": 25.807455610268377,
+        "maximum_centerline_join_error_m": 1.831026719408895e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.3415304296128357,
+        "sinuosity_range": [
+          1.0001858980141325,
+          1.0756501180911295
+        ]
+      },
+      "disabled_architecture": {
+        "counts_by_order": {
+          "0": 1,
+          "1": 7,
+          "2": 18,
+          "3": 29,
+          "4": 45
+        },
+        "primary_birth_heights_over_H": [
+          0.23492894325241784,
+          0.2716010729439822,
+          0.3069790990922031,
+          0.3492682749130705,
+          0.4058915505588747,
+          0.450087625191718,
+          0.4846388160084527
+        ],
+        "primary_birth_span_over_H": 0.24970987275603487,
+        "axis_height_over_H": 0.5155402148640547,
+        "width_over_H": 1.8427668114554214,
+        "depth_over_H": 1.5924177671566753,
+        "primary_sinuosity": [
+          1.052230665687464,
+          1.0563436745466805,
+          1.0514359785279634,
+          1.0486244577438908,
+          1.0479846980219014,
+          1.0207806065927816,
+          1.0231892532388889
+        ],
+        "maximum_segment_turn_deg": 20.783979265895127,
+        "maximum_centerline_join_error_m": 2.5121479338940403e-15,
+        "maximum_ring_radius_ratio": 1.5500000000000003,
+        "minimum_join_radius_scale": 0.34140083424989903,
+        "sinuosity_range": [
+          1.0001858980141325,
+          1.0563436745466805
+        ]
+      },
+      "enabled_branch_sha256": "a3c37ce23355cb72d3fc040670aa76af9e6ef6ebba5ab3380c81ac0efbbbd57d",
+      "disabled_branch_sha256": "e954df4324cb14eb33a80d62800d9225963cf8386da944f061bf3ae7da2dd4c7",
+      "scope": "diagnóstico algorítmico sin capturas ni afirmación de mejora artística/colisiones"
+    }
+  },
+  "matrix": {
+    "version": "oak-growth-verification-0.1.0",
+    "seeds": [
+      3100,
+      3101,
+      3102,
+      3103,
+      3104
+    ],
+    "preset": "presets/oak-growth/0.1.0/maduro.json",
+    "stages": [
+      "joven",
+      "maduro",
+      "centenario"
+    ],
+    "stage_seed": 3100,
+    "reference_definition": "configs/branch-tree/0.1.0.json",
+    "reference_profile": "viejo",
+    "canopy_seed": 17,
+    "paint_seed": 2718
+  },
+  "matrix_sha256": "e82691050f55d207349df761dcd10d22568ad68e67269a2f0cea0a33197e61f1",
+  "source_inventory": {
+    "src/treegen/willow_sample.py": "7f4fb848eb62e45e407d8ae75d4bfa9407477372b138ee1d2438299c3d4ce0df",
+    "src/treegen/branch_structure.py": "b3a1bbbf94ac1006c8ccf087a82f9635a79a417bf4185eed3866b99c4dae5a72",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/oak_growth_contract.py": "8e1cc4497aaf0d06c5d60453e6b56baa77e9297abed304d3f23f09b928f0fcc3",
+    "src/treegen/season_calendar_glb.py": "b1b5c8f3cc64dbfe00b91f7a2d2b3f26a931f17aad851778a9045d0baff35fd9",
+    "src/treegen/willow.py": "ebf75f3fcede8c42efd0b4270995bf0d168a022d5d02d894163393bafd277e9b",
+    "src/treegen/willow_v2.py": "5734c5e48e69e7550474cca4188fb65f51e6d6faeaf6d819c0416737c1c41a38",
+    "src/treegen/oak_growth.py": "9ca745ee9d2add0497893eba27bea3c1a4d5836fe6ab7d7cd83947840c28998a",
+    "src/treegen/oak_growth_mesh.py": "5b6a63ace950ecfeadecad04bdcb90ba0bbeeefb68fe46fd710ed9a90f4ff52c",
+    "src/treegen/birch.py": "89a4fabce283c89b0d48448da82e3dccc9dbde4a5da510db08fad4502fe880e2",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+    "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+    "src/treegen/branch_tree.py": "85a751449b98f8bc7892e741b4472ead47fb585bf87eb2920a904a3b9bbfb38c",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/evaluation.py": "4a07ba8ec648739de12678ac919b6d7e965279e608da1844f25a2499f1b2692f",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/branch_tree_runner.py": "d1cef51b375b103a1477a180a3978c5526c403127d550feabf115ecea50ea940",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+    "src/treegen/branch_sample.py": "0a0633ddcdc0892bc31a755906aaa6e17dcb2d343825a75ec6a0abdd0f461d4f",
+    "src/treegen/cli.py": "7b2b70a0fba5d4ba7dae283c9358fb969aedf66cf6c12b9f501a387a755b2087",
+    "src/treegen/birch_evaluation.py": "6b738a3870ade67066413089b0faf01b9cc8611618f7d7aa523c5adb7c469104",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/branch_interior.py": "93aecbec1b0dac556de552f8292a1aa407e2b5b4082f078816a2a4bd8ab94ecc",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/seasons.py": "433d10d9012e04887f007b0381b514f64dfb9edea7cb7d73f61e0c2fb6f87d05",
+    "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/runner.py": "31363394248b4ef9365ea3f0b26925d9d4d728dea04d67f7295dbfe918da4a67",
+    "src/treegen/birch_sample.py": "3530e76f940d513cbe9aac71bda954bcf258a843129de876fb6755fb71dc79d6",
+    "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+    "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/blueprints.py": "6560867587d872b0eedaf44a840f2aa162b3e9c9a4db1aa8da51685cc1b16841",
+    "src/treegen/oak_growth_runner.py": "69922abc7d5501ef3877d36c0d0e9889d9253c9d7831372575d41ac22147900d",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/branch_visibility.py": "7450ee09b716ae5bac738b419346d181688de2f00d0e29c6c827778e063e27eb",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/branch_tree_guards.py": "d73b2e843bfc3ae381a1a0931c55aed238322861931f5afd4e46221778475e5e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+    "src/treegen/branch_tree_audit.py": "9d942f24634baf2a6beaffa3ded56ac0fa6f877442eb6a81dc7750c5d5ebe504",
+    "src/treegen/willow_evaluation.py": "ec60175f4b94d0b965b66d247def68c7cf969cce2cf5f72a279981084566915e",
+    "src/treegen/branch_space.py": "a5e8870433b9e6b24e37a69bd81cfe4c1c1b3f40f03d05fc9a352f0f05fb2af5",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+    "blender/generate_painted_pine.py": "7f10893bcb5fea3b92a9db64325a8c92fed8a1dd0b1cb064afed4c9b695c08c7",
+    "blender/willow_sample.py": "1f3d240a256fdd1a64ca87d449a07c57af880ccdd8fac371e01912fd5e8e8bb4",
+    "blender/rebake_oak_crossed.py": "75284275a4cfe7c4c3e3b5fbf6db88fe75192d8b4dd16d4cce9d74f99b907b16",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/generate_crossed_oak.py": "695322e6649466718ea0222471c4e4ed9e04726d57369c6f860ca35527205187",
+    "blender/bake_autumn_oak.py": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/verify_painted_pine.py": "322851d188c022ea859ac08adb0b6540c14cf3f15559eb5061931a5be926d8c3",
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/classify_tree_visibility.py": "5b4762f7804bb7ec25bc383cfa4e434e1fee80afd3a38a0cb94bf59f8c1eaaa3",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/f5_structure.py": "6dc67bbfa2de21f3dcbab8535c09ec91fece323783f38f18805b99791405e29e",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blender/verify_pine_contacts.py": "c4de070611fc9f3366002b86fefd877d8dc3fecc824f2f1dfcbda1d7ec4ffd44",
+    "blender/export_oak_wood.py": "2829d53c0788ceeb4ac10036483ba7b9ec3bb0c51abbefe4046b7f932c8f96cf",
+    "blender/oak_wood_trial.py": "024b0f32f543fa13cc315109398ddc25b991f2c832e05a836134fbf91870c842",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/oak_crossed_reference.py": "824daf84cb3ad034cdfd286d7f4cd3d9ae5eb666e90e4702799e81d69a0842f9",
+    "blender/branch_sample.py": "14de502b4f3d0ee966fbd346fdb3ad9c9dd4da24ff24ffe0079b2e992450ca91",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/oak_painted_tree_pilot.py": "224df5283e5395ab2696b93d8bc89c4e44f86bb26dd7433afae31c6221122eb7",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/pine_painted_sample.py": "6ab7d003cdc2a1b938fad4bead9332ae6d21f133b24c6302781d467771006f97",
+    "blender/oak_painted_sample.py": "ee7d0bd42e3d533734228de8bc61b177a7e367414cf5c39ede4ab64ecb70e244",
+    "blender/verify_season_calendar.py": "cd0762f6113675063feb2017e09bcd28e9284e9fc9ddd3fa2b6f6cf84ecbee72",
+    "blender/verify_canopy_normals.py": "2a66a50e0a9030d24eb525253508bb9b007ddcd03ac567e7adb4c108bfd23099",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/generate_pine.py": "8564de938657e81f10c78881cb7137f4b33bc52d584a676a0bdd046103ea53eb",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/generate_birch.py": "9a417ca2be4919534a4564998323124006371daf4e41c31e3a02650c5ac0bdd1",
+    "blender/birch_sample.py": "668dbb55609a4d88812e9b52505d6fd0f2c58b637478b9e85ff22d8d381070ad",
+    "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+    "blender/export_oak_growth.py": "1658f48eddcdf3b1fc61f8f74e04ae611c568fb294eb445bf92d707d4308c45a",
+    "blender/willow_revision_sample.py": "7305f8bf8daa5bce2e87a13bfae673b08fd85c64c4cf6d7824422149de806ecd",
+    "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+    "blender/generate_willow.py": "b1636ab8e446f163e320f49179ed81ab6afe94da9da246bbb4b77d6815046fb6",
+    "blender/classify_branch_visibility.py": "81bf28c066a946316ddf159b5e28d42687b97fde3b7baf6ab4a1266f1b822ed3",
+    "blender/pine_cards_reference.py": "ee30f384357c84dff74763616dcfb32b2daf3111b5bf4b86962a0cc29b8f5c3f",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/oak_crossed_trial.py": "4c7eae600da0aac401ee9a831a8df2a7e1256292735257b1cd05d356dfc58be6",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/export_branch_tree.py": "88492972050904ce57609bc0b7cdc542f256f992af392bf0d4f8f0587fcdb80b",
+    "blender/generate_painted_oak.py": "5d6f15d33ccc7bcabbbe6d9f223afde3ef86ddf56ba4de1dfde38dff6b8716b5",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/branch_variants.py": "13071ecdeca42d7b62cf02c6f10b484ccd3fde7ddedcc037aac2d65cee237959",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blender/verify_branch_visibility.py": "f6a98a202cec47f8bb6d5431088ca827159d0a40e98f667658652e90abf55d84",
+    "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/oak_wood_hierarchy.py": "07fceea0467c13691d679941e9e85006d90fc7630f7bcae9a4e754f74aa59c72",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/season_atlas_sample.py": "70469069ab126829b13fc9003ba9c93de6ecfbaefd9ed7ce35b509f46041f4d1"
+  },
+  "captures": 88,
+  "artist_acceptance": "pending_user",
+  "visual_review": {
+    "status": "reviewed_by_agent",
+    "unique_captures": 72,
+    "sheets": 6,
+    "artistic_acceptance": "pending_user",
+    "finding": "Primarias curvas y escalonadas, jerarquía espacial y etapas diferenciadas. Persisten brazos largos, zonas abiertas, reglas familiares y uniones por piezas; reconocimiento botánico inequívoco no certificado."
+  },
+  "study": "/home/tao/repos/procedural/arboles/artifacts/oak-growth/validacion-03",
+  "age_comparison": {
+    "display_scale": {
+      "joven": 0.1998970530176959,
+      "maduro": 0.08329768192546923,
+      "centenario": 0.06662582059691939
+    },
+    "meaning": "Stage is structural, not a calibrated age in years; common normalized-height cameras."
+  },
+  "images_sha256": {
+    "maduro-3101.jpg": "2fc6f4b2b9f57dbe20cf8bf05984002a69e3123af66cfb363d5d8efe3e877508",
+    "maduro-3100.jpg": "09bbe79efb8f923e4defca3a1201f9cda5adcbd772934a7e890130be162572b5",
+    "primarias.jpg": "a99c454b68eea03373c7d65848d446b7fd7c9da2b77f1242d8ba65925eb95f25",
+    "variacion.jpg": "63d9ce2e39c106b7c4f72e02b694a1bf08b1e8e990f4e7e13dc45f0f928a96fb",
+    "maduro-3102.jpg": "b1b5c74f37dffba68f8925dcba1d18a688574a008f71fab0559486e23c64272f",
+    "maduro-3104.jpg": "843e76016db0803156e06dd594b6866778935028f76229bf9abc5ef51ee40c6f",
+    "edades-cuatro-vistas.jpg": "4c0b5a3d34e772a35d6073aa64e003409a3c124d6846c4605775ab25e75f55ff",
+    "maduro-3103.jpg": "2084bc9d56c20276ac2bd3256384d549043ba679e1c1bb5bb5896da09633206f",
+    "joven-3100.jpg": "b00c719d348064fd33f6d91660aa0c0afdf1f365a1d85356455d31249997f897",
+    "centenario-3100.jpg": "6275584a0d7a48be02f2f4ad312d49c0ccebc830cc1dd74fe1e2ddc830372920",
+    "edades.jpg": "640f9435e454f4169960281c05f28b951a460d33c456e61db4135ae602f7fd14"
+  }
+}

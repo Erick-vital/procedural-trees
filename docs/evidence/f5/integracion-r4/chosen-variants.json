@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-03",
+  "version": "branch-tree-0.1.0",
+  "integration_authorized_by_user": true,
+  "user_statement": "continua con la inteegracion en arboles",
+  "complete_tree_artistic_acceptance": "pending",
+  "modes": {
+    "without_foliage": "R2",
+    "with_foliage": "R3_integrated_conservative"
+  },
+  "cases": {
+    "joven-03": {
+      "without_foliage": {
+        "path": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04/joven-03/bare/tree.glb",
+        "triangles": 3426,
+        "sha256": "9bdef0c1b10242d8f22a52b87711eab3978dc481af24c8c8c1dcbe73b645d99e"
+      },
+      "with_foliage": {
+        "path": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04/joven-03/simple/tree.glb",
+        "triangles": 4874,
+        "sha256": "038125ccc670d57ba0841a9090c319d8e9a48bdd759aeabba975567c2de43519"
+      }
+    },
+    "adulto-00": {
+      "without_foliage": {
+        "path": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04/adulto-00/bare/tree.glb",
+        "triangles": 4556,
+        "sha256": "cfda0d24dc82a8b9b7166c2ced293df26d3b4e2324ad5f9140671cc3be4fca10"
+      },
+      "with_foliage": {
+        "path": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04/adulto-00/simple/tree.glb",
+        "triangles": 6140,
+        "sha256": "68cae5600817e84ff8c3c47ecfbd1083e093b201f6a428383b38e7bd24e6a84b"
+      }
+    },
+    "viejo-00": {
+      "without_foliage": {
+        "path": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04/viejo-00/bare/tree.glb",
+        "triangles": 4824,
+        "sha256": "f3ac1f60858d9743e8946a3b45a76c99604d8073e4048007f1bb85c28d50886a"
+      },
+      "with_foliage": {
+        "path": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04/viejo-00/simple/tree.glb",
+        "triangles": 6408,
+        "sha256": "9dcbed97d4fe626180a21a82e3bbfc7866389649ee69fa302fc10e2a06e63ffe"
+      }
+    },
+    "viejo-09": {
+      "without_foliage": {
+        "path": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04/viejo-09/bare/tree.glb",
+        "triangles": 4824,
+        "sha256": "87a50160f937af2540538500669fb7f95c5aff117f82df8a7ac3e3ad9f0d64ba"
+      },
+      "with_foliage": {
+        "path": "/home/tao/repos/procedural/arboles/artifacts/f5/integracion-r4-04/viejo-09/simple/tree.glb",
+        "triangles": 6408,
+        "sha256": "3d3c61ad152b74d05792a359331376994a7c9e0afd92325c4bc8aa05a931ceff"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version":"oak-growth-verification-0.1.0",
+  "seeds":[3100,3101,3102,3103,3104],
+  "preset":"presets/oak-growth/0.1.0/maduro.json",
+  "stages":["joven","maduro","centenario"],
+  "stage_seed":3100,
+  "reference_definition":"configs/branch-tree/0.1.0.json",
+  "reference_profile":"viejo",
+  "canopy_seed":17,
+  "paint_seed":2718
+}

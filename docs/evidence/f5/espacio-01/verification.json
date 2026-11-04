@@ -1,0 +1,3423 @@
+{
+  "phase": "F5",
+  "date": "2026-11-03",
+  "technical_checks_passed": true,
+  "tests": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests",
+    "passed": 227
+  },
+  "summary": {
+    "all": {
+      "expected": 30,
+      "completed": 30,
+      "baseline_median_conflicts_per_m": 0.06241148989233969,
+      "candidate_median_conflicts_per_m": 0.008432064865777144,
+      "median_reduction": 0.8648956325137803,
+      "minimum_length_ratio": 1.0,
+      "objective_met": true
+    },
+    "diagnostic": {
+      "expected": 12,
+      "completed": 12,
+      "baseline_median_conflicts_per_m": 0.03500159114354267,
+      "candidate_median_conflicts_per_m": 0.008675759094165209,
+      "median_reduction": 0.7521324371059122,
+      "minimum_length_ratio": 1.0,
+      "objective_met": true
+    },
+    "reserved": {
+      "expected": 18,
+      "completed": 18,
+      "baseline_median_conflicts_per_m": 0.06307324400545125,
+      "candidate_median_conflicts_per_m": 0.004146381360011893,
+      "median_reduction": 0.934260851405494,
+      "minimum_length_ratio": 1.0,
+      "objective_met": true
+    }
+  },
+  "per_age": {
+    "joven": {
+      "baseline": {
+        "median_conflicts_per_m": 0.06244990123428575,
+        "total_conflicts": 9
+      },
+      "candidate": {
+        "median_conflicts_per_m": 0.0,
+        "total_conflicts": 2
+      }
+    },
+    "adulto": {
+      "baseline": {
+        "median_conflicts_per_m": 0.00832124859834129,
+        "total_conflicts": 6
+      },
+      "candidate": {
+        "median_conflicts_per_m": 0.00832124859834129,
+        "total_conflicts": 6
+      }
+    },
+    "viejo": {
+      "baseline": {
+        "median_conflicts_per_m": 0.06583789115172145,
+        "total_conflicts": 94
+      },
+      "candidate": {
+        "median_conflicts_per_m": 0.06391770510923181,
+        "total_conflicts": 90
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "joven-00",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8497521379232695,
+          "branch_count": 17,
+          "length_m": 16.349498612284073,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3044,
+        "axis_max_error_m": 3.944969409602418e-07,
+        "glb_sha256": "1cb118c602d1db09b28e4e86480bdddaa0049e8d7f3d0b3539d7553fc1df7700"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8497521379232695,
+          "branch_count": 17,
+          "length_m": 16.349498612284073,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3044,
+        "axis_max_error_m": 3.944969409602418e-07,
+        "glb_sha256": "1cb118c602d1db09b28e4e86480bdddaa0049e8d7f3d0b3539d7553fc1df7700"
+      }
+    },
+    {
+      "id": "joven-01",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8366769034085799,
+          "branch_count": 17,
+          "length_m": 16.231818247726043,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3356,
+        "axis_max_error_m": 3.884328588642482e-07,
+        "glb_sha256": "68b84fa006db8775f5ec4abaf8dbb6d53680d819318013c50cf44357d414e438"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8366769034085799,
+          "branch_count": 17,
+          "length_m": 16.231818247726043,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3356,
+        "axis_max_error_m": 3.884328588642482e-07,
+        "glb_sha256": "d61bbf5e927bab71b7eba0a8195e7a5af36b6402a5aa1732c1711ca82186f239"
+      }
+    },
+    {
+      "id": "joven-02",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8055187701983831,
+          "branch_count": 17,
+          "length_m": 15.864852297336428,
+          "conflicts": 1,
+          "conflicts_per_m": 0.06303241790457081,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:secondary:202"
+              ],
+              "capsule_overlap_m": 0.0033308090394293145
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3148,
+        "axis_max_error_m": 3.739582228574948e-07,
+        "glb_sha256": "2a340023c20115fd273d7e616decba034ff1f712fa2069eb19e3775ac1936ed3"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8055187701983831,
+          "branch_count": 17,
+          "length_m": 15.864852297336428,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3188,
+        "axis_max_error_m": 3.739582228574948e-07,
+        "glb_sha256": "2a336a411807b019a52343c533e337bf225dced3115b45b7c80852f5a92cf0fe"
+      }
+    },
+    {
+      "id": "joven-03",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8349177637312141,
+          "branch_count": 17,
+          "length_m": 16.306789949626832,
+          "conflicts": 1,
+          "conflicts_per_m": 0.06132414798308506,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:secondary:205"
+              ],
+              "capsule_overlap_m": 0.003976290512673964
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3356,
+        "axis_max_error_m": 7.175203438642814e-07,
+        "glb_sha256": "2969ed8c12cc26ec589cecd0e2cfd3d9cf96c195857a2107388e3c29bad4890a"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8349177637312141,
+          "branch_count": 17,
+          "length_m": 16.306789949626832,
+          "conflicts": 1,
+          "conflicts_per_m": 0.06132414798308506,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:secondary:205"
+              ],
+              "capsule_overlap_m": 0.0002444458704830843
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3396,
+        "axis_max_error_m": 7.180993133451538e-07,
+        "glb_sha256": "f754632ca4c1f644d9612766eeab79b00ccde3e04ae4f54dd1041dddb096ad03"
+      }
+    },
+    {
+      "id": "joven-04",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8112514080282252,
+          "branch_count": 17,
+          "length_m": 15.708172770836242,
+          "conflicts": 1,
+          "conflicts_per_m": 0.06366112816486191,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:secondary:202"
+              ],
+              "capsule_overlap_m": 0.007919993176250967
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3156,
+        "axis_max_error_m": 6.331954536966379e-07,
+        "glb_sha256": "f871b79bd275fa535450c627dbefe0f3d418a06cc1f00a501988e00303e5765d"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8112514080282252,
+          "branch_count": 17,
+          "length_m": 15.708172770836242,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3180,
+        "axis_max_error_m": 6.331954536966379e-07,
+        "glb_sha256": "f97fb217bddd6180be29f2ef2cb2444f8dc093495b7f054f112af24c0c1c3819"
+      }
+    },
+    {
+      "id": "joven-05",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8186431235819566,
+          "branch_count": 17,
+          "length_m": 15.825065224505083,
+          "conflicts": 1,
+          "conflicts_per_m": 0.06319089279022382,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:secondary:210"
+              ],
+              "capsule_overlap_m": 0.005663670516351055
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3372,
+        "axis_max_error_m": 5.719304342663548e-07,
+        "glb_sha256": "668a20af55e0ccbc374040d0ad967f20d96d73e2972dd3c168a2e812e7e2c702"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8186431235819566,
+          "branch_count": 17,
+          "length_m": 15.825065224505083,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3372,
+        "axis_max_error_m": 5.719304342663548e-07,
+        "glb_sha256": "092e77e39b90af919cf36e6beeabcf6bfb9151b2cdb90bed1478686e693660fd"
+      }
+    },
+    {
+      "id": "joven-06",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8328334597505123,
+          "branch_count": 17,
+          "length_m": 15.972720842153631,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3260,
+        "axis_max_error_m": 4.479536668354342e-07,
+        "glb_sha256": "7bbaf8023de8b5fb1cda7d7cfe465095ad090e1c68d6350e20907d99c50fd338"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8328334597505123,
+          "branch_count": 17,
+          "length_m": 15.972720842153631,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3260,
+        "axis_max_error_m": 4.479536668354342e-07,
+        "glb_sha256": "7bbaf8023de8b5fb1cda7d7cfe465095ad090e1c68d6350e20907d99c50fd338"
+      }
+    },
+    {
+      "id": "joven-07",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8340586168055305,
+          "branch_count": 17,
+          "length_m": 16.166496775363786,
+          "conflicts": 2,
+          "conflicts_per_m": 0.12371264027020443,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:secondary:205"
+              ],
+              "capsule_overlap_m": 0.001931368631583023
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:secondary:210"
+              ],
+              "capsule_overlap_m": 0.0010721772156662267
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3196,
+        "axis_max_error_m": 4.409943846454386e-07,
+        "glb_sha256": "5a85d8ca7209726a93a3a876e4abda196810bdf14e6d283d1829004b7cc319f3"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8340586168055305,
+          "branch_count": 17,
+          "length_m": 16.166496775363786,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3236,
+        "axis_max_error_m": 4.409943846454386e-07,
+        "glb_sha256": "779cbd333cca4d23532b83a14585f965dc91822bc9b0fc8a6d54e50871d0ad43"
+      }
+    },
+    {
+      "id": "joven-08",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7886038852541917,
+          "branch_count": 17,
+          "length_m": 15.675600525827381,
+          "conflicts": 2,
+          "conflicts_per_m": 0.12758681855312443,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:secondary:202"
+              ],
+              "capsule_overlap_m": 0.002554337168133934
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:secondary:205"
+              ],
+              "capsule_overlap_m": 0.004024165134983652
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3300,
+        "axis_max_error_m": 3.66097234234461e-07,
+        "glb_sha256": "a56f717a082847e8a9f726fffc3f49f987c131c32b9208b60d0824b6eb83e775"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7886038852541917,
+          "branch_count": 17,
+          "length_m": 15.675600525827381,
+          "conflicts": 1,
+          "conflicts_per_m": 0.06379340927656221,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:secondary:205"
+              ],
+              "capsule_overlap_m": 0.0006118990836294427
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3332,
+        "axis_max_error_m": 3.66097234234461e-07,
+        "glb_sha256": "2af37371641f142487c147c51dfe0279a94770881ae79162e9e061cfccbb46db"
+      }
+    },
+    {
+      "id": "joven-09",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8265335451738809,
+          "branch_count": 17,
+          "length_m": 16.163605541875107,
+          "conflicts": 1,
+          "conflicts_per_m": 0.06186738456400069,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:secondary:205"
+              ],
+              "capsule_overlap_m": 0.0029797057819648046
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3180,
+        "axis_max_error_m": 5.273352046800483e-07,
+        "glb_sha256": "7e678043553a3ac44af93e3c11a8c6cfab1bccc5ffe7d5db3e245300fb56839e"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8265335451738809,
+          "branch_count": 17,
+          "length_m": 16.163605541875107,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 3188,
+        "axis_max_error_m": 5.273352046800483e-07,
+        "glb_sha256": "b17fc30b53d99dbbd2e29d551ce24ee40c4d8b599b19ab52411c7e31070f506e"
+      }
+    },
+    {
+      "id": "adulto-00",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7601984999915238,
+          "branch_count": 37,
+          "length_m": 115.30721917014434,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008672483884330139,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.03738372976821247
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5748,
+        "axis_max_error_m": 7.147605141240448e-07,
+        "glb_sha256": "570515ca18f7eeae5d718f2afd10528c76a4e56b0f6b8bc2e4546acc490df60f"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7601984999915238,
+          "branch_count": 37,
+          "length_m": 115.30721917014434,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008672483884330139,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.03738372976821247
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5748,
+        "axis_max_error_m": 7.147605141240448e-07,
+        "glb_sha256": "570515ca18f7eeae5d718f2afd10528c76a4e56b0f6b8bc2e4546acc490df60f"
+      }
+    },
+    {
+      "id": "adulto-01",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7749588477477874,
+          "branch_count": 37,
+          "length_m": 119.76428745074986,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008349734476658792,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.019900282803058444
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5804,
+        "axis_max_error_m": 5.430607550299662e-07,
+        "glb_sha256": "5419661a6af710ab17737e88bb6f59b683761acd7db095e813b943cc2d4dc6c6"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7749588477477874,
+          "branch_count": 37,
+          "length_m": 119.76428745074986,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008349734476658792,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.019900282803058444
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5804,
+        "axis_max_error_m": 5.430607550299662e-07,
+        "glb_sha256": "5419661a6af710ab17737e88bb6f59b683761acd7db095e813b943cc2d4dc6c6"
+      }
+    },
+    {
+      "id": "adulto-02",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8132788263020228,
+          "branch_count": 37,
+          "length_m": 119.49005142108493,
+          "conflicts": 1,
+          "conflicts_per_m": 0.00836889756182281,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.020279975794173732
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5596,
+        "axis_max_error_m": 7.842231107044594e-07,
+        "glb_sha256": "a69df9e38e89769abd3d7174cb55ec414c61c6e699a510dc849a96ed2ed79eea"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8132788263020228,
+          "branch_count": 37,
+          "length_m": 119.49005142108493,
+          "conflicts": 1,
+          "conflicts_per_m": 0.00836889756182281,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.020279975794173732
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5596,
+        "axis_max_error_m": 7.842231107044594e-07,
+        "glb_sha256": "a69df9e38e89769abd3d7174cb55ec414c61c6e699a510dc849a96ed2ed79eea"
+      }
+    },
+    {
+      "id": "adulto-03",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.80863218087614,
+          "branch_count": 37,
+          "length_m": 115.22019212887399,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008679034304000277,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.010234621698971214
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5780,
+        "axis_max_error_m": 1.136939875889099e-06,
+        "glb_sha256": "d8aa7732aca70860c464e90b44294f1839991dddaf06fa9a916c2abb7229cfb1"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.80863218087614,
+          "branch_count": 37,
+          "length_m": 115.22019212887399,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008679034304000277,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.010234621698971214
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5780,
+        "axis_max_error_m": 1.136939875889099e-06,
+        "glb_sha256": "d8aa7732aca70860c464e90b44294f1839991dddaf06fa9a916c2abb7229cfb1"
+      }
+    },
+    {
+      "id": "adulto-04",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7780476046870832,
+          "branch_count": 37,
+          "length_m": 118.7640982072642,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5780,
+        "axis_max_error_m": 1.1472336532903188e-06,
+        "glb_sha256": "f90e3f0dd91038b4741cf31d4b8ab26b80e72270137fa3fc2a1b4fd36d6f3c3e"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7780476046870832,
+          "branch_count": 37,
+          "length_m": 118.7640982072642,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5780,
+        "axis_max_error_m": 1.1472336532903188e-06,
+        "glb_sha256": "f90e3f0dd91038b4741cf31d4b8ab26b80e72270137fa3fc2a1b4fd36d6f3c3e"
+      }
+    },
+    {
+      "id": "adulto-05",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8243232738691253,
+          "branch_count": 37,
+          "length_m": 116.50011232941414,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5772,
+        "axis_max_error_m": 7.659585975802601e-07,
+        "glb_sha256": "5e8349149b6e81e927e1426fb3dcebcf6bc909eda2eaed7c88e39c143a23b01a"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8243232738691253,
+          "branch_count": 37,
+          "length_m": 116.50011232941414,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5772,
+        "axis_max_error_m": 7.659585975802601e-07,
+        "glb_sha256": "5e8349149b6e81e927e1426fb3dcebcf6bc909eda2eaed7c88e39c143a23b01a"
+      }
+    },
+    {
+      "id": "adulto-06",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8664454111664711,
+          "branch_count": 37,
+          "length_m": 121.48296225972067,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5852,
+        "axis_max_error_m": 9.80742440102923e-07,
+        "glb_sha256": "ed025b573d02bafd23bc449f51b6ec77f94ebe99793604128adb91713399716e"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8664454111664711,
+          "branch_count": 37,
+          "length_m": 121.48296225972067,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5852,
+        "axis_max_error_m": 9.80742440102923e-07,
+        "glb_sha256": "ed025b573d02bafd23bc449f51b6ec77f94ebe99793604128adb91713399716e"
+      }
+    },
+    {
+      "id": "adulto-07",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7534835995629493,
+          "branch_count": 37,
+          "length_m": 119.55057255928978,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5804,
+        "axis_max_error_m": 7.452781387103131e-07,
+        "glb_sha256": "fb04bd06c4e6755eba1cebe012c7419b4b9fc86d752b6e5c107c14df890a48f4"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7534835995629493,
+          "branch_count": 37,
+          "length_m": 119.55057255928978,
+          "conflicts": 0,
+          "conflicts_per_m": 0.0,
+          "pairs": [],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5828,
+        "axis_max_error_m": 7.452781387103131e-07,
+        "glb_sha256": "6dbf28a46c235b0d701fa86ad4330af264a2ee1fe6de8a0719be748263e4a8ee"
+      }
+    },
+    {
+      "id": "adulto-08",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8154521661875206,
+          "branch_count": 37,
+          "length_m": 120.58707499074949,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008292762720023786,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.018178921237616774
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5660,
+        "axis_max_error_m": 9.315505291317696e-07,
+        "glb_sha256": "c2bc978dc4525a101a8c6065a9e0a0fe99cdb376fa3de59179a2447fbb8f9d57"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8154521661875206,
+          "branch_count": 37,
+          "length_m": 120.58707499074949,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008292762720023786,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.018178921237616774
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5660,
+        "axis_max_error_m": 9.315505291317696e-07,
+        "glb_sha256": "c2bc978dc4525a101a8c6065a9e0a0fe99cdb376fa3de59179a2447fbb8f9d57"
+      }
+    },
+    {
+      "id": "adulto-09",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7442895685360814,
+          "branch_count": 37,
+          "length_m": 117.7130865902643,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008495232169731476,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.015657727021375856
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5804,
+        "axis_max_error_m": 8.413696129011461e-07,
+        "glb_sha256": "9da4f0b6b6c9a8cf375857cd71ef59b23380a78bfae6ae5655e9ad3c020e18c2"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7442895685360814,
+          "branch_count": 37,
+          "length_m": 117.7130865902643,
+          "conflicts": 1,
+          "conflicts_per_m": 0.008495232169731476,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.015657727021375856
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 5804,
+        "axis_max_error_m": 8.413696129011461e-07,
+        "glb_sha256": "9da4f0b6b6c9a8cf375857cd71ef59b23380a78bfae6ae5655e9ad3c020e18c2"
+      }
+    },
+    {
+      "id": "viejo-00",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7521582554341135,
+          "branch_count": 45,
+          "length_m": 139.41613050220903,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06455494043321906,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.41875451471684366
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.028471285534592883
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.35295412113962954
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.30517356177837274
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.287431149616209
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.24129181480239392
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.17890627202407328
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.06523105032400528
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.07353121218891034
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6572,
+        "axis_max_error_m": 1.015002191815656e-06,
+        "glb_sha256": "21e9ae7434ced18a16444241562d1ad2ad4304fd7b7f7c8d4c9c8876928d3b0a"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7521582554341135,
+          "branch_count": 45,
+          "length_m": 139.41613050220903,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06455494043321906,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.41875451471684366
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.028471285534592883
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.35295412113962954
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.30517356177837274
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.287431149616209
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.24129181480239392
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.17890627202407328
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.06523105032400528
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.07353121218891034
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6572,
+        "axis_max_error_m": 1.015002191815656e-06,
+        "glb_sha256": "21e9ae7434ced18a16444241562d1ad2ad4304fd7b7f7c8d4c9c8876928d3b0a"
+      }
+    },
+    {
+      "id": "viejo-01",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7568279122170442,
+          "branch_count": 45,
+          "length_m": 138.67208714521547,
+          "conflicts": 11,
+          "conflicts_per_m": 0.07932382230953915,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.49327953439921174
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.047791989747053454
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.413153687642641
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.021495404973572163
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.31045574797587555
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.2790141514831856
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.2361447062994721
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.12620374471348345
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.12704293985989074
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.01612222794226381
+            },
+            {
+              "branches": [
+                "q3:primary:108",
+                "q3:primary:109"
+              ],
+              "capsule_overlap_m": 0.03596964135139802
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6516,
+        "axis_max_error_m": 6.33762562223537e-07,
+        "glb_sha256": "f15a66da972a2b822cb4787675e451e013ba5a80da75ebab462a24609a0483e5"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7568279122170442,
+          "branch_count": 45,
+          "length_m": 138.67208714521547,
+          "conflicts": 11,
+          "conflicts_per_m": 0.07932382230953915,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.49327953439921174
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.047791989747053454
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.413153687642641
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.021495404973572163
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.31045574797587555
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.2790141514831856
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.2361447062994721
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.12620374471348345
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.12704293985989074
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.01612222794226381
+            },
+            {
+              "branches": [
+                "q3:primary:108",
+                "q3:primary:109"
+              ],
+              "capsule_overlap_m": 0.03596964135139802
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6516,
+        "axis_max_error_m": 6.33762562223537e-07,
+        "glb_sha256": "f15a66da972a2b822cb4787675e451e013ba5a80da75ebab462a24609a0483e5"
+      }
+    },
+    {
+      "id": "viejo-02",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8577652679596748,
+          "branch_count": 45,
+          "length_m": 134.08651842301435,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06712084187022382,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.41602014396555026
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.3639299989553513
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.32407804993243094
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.231556466775987
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.17875071756899796
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.11438207075667572
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:secondary:209"
+              ],
+              "capsule_overlap_m": 0.07915483770768866
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.07701444053454065
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.002876165911136319
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6532,
+        "axis_max_error_m": 4.386660312503236e-07,
+        "glb_sha256": "0637a699fb95abac9868d09e0a603b8549a23dff7ed4bba99c78d3a80282119c"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8577652679596748,
+          "branch_count": 45,
+          "length_m": 134.08651842301435,
+          "conflicts": 8,
+          "conflicts_per_m": 0.05966297055131006,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.41602014396555026
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.3639299989553513
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.32407804993243094
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.231556466775987
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.17875071756899796
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.11438207075667572
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.07701444053454065
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.002876165911136319
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6532,
+        "axis_max_error_m": 4.386660312503236e-07,
+        "glb_sha256": "b7fe9a8a47580ec4e39b7d9cf0eee0323c3bf8548a2653c124c8b2c3b73859e0"
+      }
+    },
+    {
+      "id": "viejo-03",
+      "partition": "diagnostic",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8002797066494708,
+          "branch_count": 45,
+          "length_m": 142.05384380935672,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06335625815291873,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.4756769299885773
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.05959078597106304
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.39653178086538743
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.34946347077709444
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.27683805374548137
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.2173943414602877
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.16243411825930465
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.06778275440767206
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.03629788629904618
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6692,
+        "axis_max_error_m": 7.269798827244938e-07,
+        "glb_sha256": "03e07bed0c6588823fe708622da242deddaee4861231bb4a2063e20b19146d12"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8002797066494708,
+          "branch_count": 45,
+          "length_m": 142.05384380935672,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06335625815291873,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.4756769299885773
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.05959078597106304
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.39653178086538743
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.34946347077709444
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.27683805374548137
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.2173943414602877
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.16243411825930465
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.06778275440767206
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.03629788629904618
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6692,
+        "axis_max_error_m": 7.269798827244938e-07,
+        "glb_sha256": "03e07bed0c6588823fe708622da242deddaee4861231bb4a2063e20b19146d12"
+      }
+    },
+    {
+      "id": "viejo-04",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8226748945125116,
+          "branch_count": 45,
+          "length_m": 134.43110107569524,
+          "conflicts": 10,
+          "conflicts_per_m": 0.07438754811930921,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.4482180488713717
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.07509503262239747
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.34258530340245513
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.2828474414643918
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.24973812451122607
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.19411078383987634
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.14719753018459447
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.06069266151236419
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.07586981056954423
+            },
+            {
+              "branches": [
+                "q3:secondary:209",
+                "q3:secondary:216"
+              ],
+              "capsule_overlap_m": 0.03094881096287784
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6484,
+        "axis_max_error_m": 1.0181945711425946e-06,
+        "glb_sha256": "d78356003bea432b52dfe64477a04fef69d63202dbbe4185b429567a00730bcc"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8226748945125116,
+          "branch_count": 45,
+          "length_m": 134.43110107569524,
+          "conflicts": 9,
+          "conflicts_per_m": 0.0669487933073783,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.4482180488713717
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.07509503262239747
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.34258530340245513
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.2828474414643918
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.24973812451122607
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.19411078383987634
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.14719753018459447
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.06069266151236419
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.07586981056954423
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6484,
+        "axis_max_error_m": 1.0181945711425946e-06,
+        "glb_sha256": "d42ebf9bd016e83be843b1ffe2982b81778591f8fe551272844951275d6610a5"
+      }
+    },
+    {
+      "id": "viejo-05",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8190529927286295,
+          "branch_count": 45,
+          "length_m": 139.57999929731153,
+          "conflicts": 9,
+          "conflicts_per_m": 0.0644791520655449,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.43386310548638185
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.040253678251775504
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.3672472464303475
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.29129134955954067
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.22418179380435893
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.187351277101866
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.12225404854329436
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.07123819062674208
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.042399094520516434
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6644,
+        "axis_max_error_m": 9.792496649352225e-07,
+        "glb_sha256": "ebd51f212dc5531e8c153ef383fec3c1400d7f852d5bdcd290fceccd48502679"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8190529927286295,
+          "branch_count": 45,
+          "length_m": 139.57999929731153,
+          "conflicts": 9,
+          "conflicts_per_m": 0.0644791520655449,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.43386310548638185
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.040253678251775504
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.3672472464303475
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.29129134955954067
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.22418179380435893
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.187351277101866
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.12225404854329436
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.07123819062674208
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.042399094520516434
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6644,
+        "axis_max_error_m": 9.792496649352225e-07,
+        "glb_sha256": "ebd51f212dc5531e8c153ef383fec3c1400d7f852d5bdcd290fceccd48502679"
+      }
+    },
+    {
+      "id": "viejo-06",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8616934190558713,
+          "branch_count": 45,
+          "length_m": 141.19393975933278,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06374211255341863,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.4327275811747453
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.008228636216006446
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.3822252858983838
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.327430974208103
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.2981885161484367
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.1659476548958484
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.08717381678476077
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.04799447284849434
+            },
+            {
+              "branches": [
+                "q3:secondary:209",
+                "q3:secondary:216"
+              ],
+              "capsule_overlap_m": 0.0450846207443662
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6548,
+        "axis_max_error_m": 9.614306481923362e-07,
+        "glb_sha256": "551c2f128b65b5519866cf64b0f908b8ef6ab145aebaec4fc49324f3bcb750c0"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8616934190558713,
+          "branch_count": 45,
+          "length_m": 141.19393975933278,
+          "conflicts": 8,
+          "conflicts_per_m": 0.05665965560303878,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.4327275811747453
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.008228636216006446
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.3822252858983838
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.327430974208103
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.2981885161484367
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.1659476548958484
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.08717381678476077
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.04799447284849434
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6548,
+        "axis_max_error_m": 9.614306481923362e-07,
+        "glb_sha256": "cfb7a9e9e8d0578895c0bcfaa6757fdf9e8349bc4e25926ab83f785e1756055d"
+      }
+    },
+    {
+      "id": "viejo-07",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8010783582806935,
+          "branch_count": 45,
+          "length_m": 143.5912328333856,
+          "conflicts": 10,
+          "conflicts_per_m": 0.06964213484818661,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.41363752831693623
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.005334002040176089
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.398690453979289
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.005590059263280156
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.32386552798316487
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.298820623785346
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.1780910098208464
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.14278615166844288
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.07192598808149153
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.005699077098125338
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6772,
+        "axis_max_error_m": 7.905686586939427e-07,
+        "glb_sha256": "51874d7fa0c3f0bfd17cf00ae53ed511f0b84a8c05dea088c8f364d064a6f06a"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8010783582806935,
+          "branch_count": 45,
+          "length_m": 143.5912328333856,
+          "conflicts": 10,
+          "conflicts_per_m": 0.06964213484818661,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.41363752831693623
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.005334002040176089
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.398690453979289
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.005590059263280156
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.32386552798316487
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.298820623785346
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.1780910098208464
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.14278615166844288
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.07192598808149153
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.005699077098125338
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6772,
+        "axis_max_error_m": 7.905686586939427e-07,
+        "glb_sha256": "51874d7fa0c3f0bfd17cf00ae53ed511f0b84a8c05dea088c8f364d064a6f06a"
+      }
+    },
+    {
+      "id": "viejo-08",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7820580587737487,
+          "branch_count": 45,
+          "length_m": 133.18379071914188,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06757579095326405,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.42055350852399725
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.05839990164007358
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.39132826920587094
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.33096846111545636
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.2674246439142876
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.23497804436113046
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.1459932273498767
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.06731679179555056
+            },
+            {
+              "branches": [
+                "q3:secondary:203",
+                "q3:secondary:210"
+              ],
+              "capsule_overlap_m": 0.03880954458315613
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6492,
+        "axis_max_error_m": 7.43728081735619e-07,
+        "glb_sha256": "12fa5679d0f33d6014a20b976e66f1e03b064fbb9deeb0f14058de4322fa3d4c"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.7820580587737487,
+          "branch_count": 45,
+          "length_m": 133.18379071914188,
+          "conflicts": 8,
+          "conflicts_per_m": 0.06006736973623471,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.42055350852399725
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.05839990164007358
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.39132826920587094
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.33096846111545636
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.2674246439142876
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.23497804436113046
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.1459932273498767
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.06731679179555056
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6508,
+        "axis_max_error_m": 7.43728081735619e-07,
+        "glb_sha256": "6d6a28cddb863afdb45cfee2184b490a2f711e93f3a7afbf047f5755913dd76a"
+      }
+    },
+    {
+      "id": "viejo-09",
+      "partition": "reserved",
+      "baseline": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8836378545744163,
+          "branch_count": 45,
+          "length_m": 142.95790498767008,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06295559522067869,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.453304160361163
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.00484267905019975
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.3560564876966772
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.314168469821536
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.2568550120291386
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.18858797841832914
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.14507051326817516
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.03260502153688394
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.007116978681405317
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6660,
+        "axis_max_error_m": 9.479184379407001e-07,
+        "glb_sha256": "375fbc849385b26ce6569a1423a07958ba7d7d668e1b5d7ababce7d00ca572e0"
+      },
+      "candidate": {
+        "metric": {
+          "version": "branch-capsule-pairs-0.1.0",
+          "scale_z": 0.8836378545744163,
+          "branch_count": 45,
+          "length_m": 142.95790498767008,
+          "conflicts": 9,
+          "conflicts_per_m": 0.06295559522067869,
+          "pairs": [
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:101"
+              ],
+              "capsule_overlap_m": 0.453304160361163
+            },
+            {
+              "branches": [
+                "q3:primary:100",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.00484267905019975
+            },
+            {
+              "branches": [
+                "q3:primary:101",
+                "q3:primary:102"
+              ],
+              "capsule_overlap_m": 0.3560564876966772
+            },
+            {
+              "branches": [
+                "q3:primary:102",
+                "q3:primary:103"
+              ],
+              "capsule_overlap_m": 0.314168469821536
+            },
+            {
+              "branches": [
+                "q3:primary:103",
+                "q3:primary:104"
+              ],
+              "capsule_overlap_m": 0.2568550120291386
+            },
+            {
+              "branches": [
+                "q3:primary:104",
+                "q3:primary:105"
+              ],
+              "capsule_overlap_m": 0.18858797841832914
+            },
+            {
+              "branches": [
+                "q3:primary:105",
+                "q3:primary:106"
+              ],
+              "capsule_overlap_m": 0.14507051326817516
+            },
+            {
+              "branches": [
+                "q3:primary:106",
+                "q3:primary:107"
+              ],
+              "capsule_overlap_m": 0.03260502153688394
+            },
+            {
+              "branches": [
+                "q3:primary:107",
+                "q3:primary:108"
+              ],
+              "capsule_overlap_m": 0.007116978681405317
+            }
+          ],
+          "radius_model": "max_segment_radius_times_max_1_scale_z"
+        },
+        "triangles": 6660,
+        "axis_max_error_m": 9.479184379407001e-07,
+        "glb_sha256": "375fbc849385b26ce6569a1423a07958ba7d7d668e1b5d7ababce7d00ca572e0"
+      }
+    }
+  ],
+  "checks": {
+    "joven-00-structure-invariants": true,
+    "joven-00-budget": true,
+    "joven-01-structure-invariants": true,
+    "joven-01-budget": true,
+    "joven-02-structure-invariants": true,
+    "joven-02-budget": true,
+    "joven-03-structure-invariants": true,
+    "joven-03-budget": true,
+    "joven-04-structure-invariants": true,
+    "joven-04-budget": true,
+    "joven-05-structure-invariants": true,
+    "joven-05-budget": true,
+    "joven-06-structure-invariants": true,
+    "joven-06-budget": true,
+    "joven-07-structure-invariants": true,
+    "joven-07-budget": true,
+    "joven-08-structure-invariants": true,
+    "joven-08-budget": true,
+    "joven-09-structure-invariants": true,
+    "joven-09-budget": true,
+    "adulto-00-structure-invariants": true,
+    "adulto-00-budget": true,
+    "adulto-01-structure-invariants": true,
+    "adulto-01-budget": true,
+    "adulto-02-structure-invariants": true,
+    "adulto-02-budget": true,
+    "adulto-03-structure-invariants": true,
+    "adulto-03-budget": true,
+    "adulto-04-structure-invariants": true,
+    "adulto-04-budget": true,
+    "adulto-05-structure-invariants": true,
+    "adulto-05-budget": true,
+    "adulto-06-structure-invariants": true,
+    "adulto-06-budget": true,
+    "adulto-07-structure-invariants": true,
+    "adulto-07-budget": true,
+    "adulto-08-structure-invariants": true,
+    "adulto-08-budget": true,
+    "adulto-09-structure-invariants": true,
+    "adulto-09-budget": true,
+    "viejo-00-structure-invariants": true,
+    "viejo-00-budget": true,
+    "viejo-01-structure-invariants": true,
+    "viejo-01-budget": true,
+    "viejo-02-structure-invariants": true,
+    "viejo-02-budget": true,
+    "viejo-03-structure-invariants": true,
+    "viejo-03-budget": true,
+    "viejo-04-structure-invariants": true,
+    "viejo-04-budget": true,
+    "viejo-05-structure-invariants": true,
+    "viejo-05-budget": true,
+    "viejo-06-structure-invariants": true,
+    "viejo-06-budget": true,
+    "viejo-07-structure-invariants": true,
+    "viejo-07-budget": true,
+    "viejo-08-structure-invariants": true,
+    "viejo-08-budget": true,
+    "viejo-09-structure-invariants": true,
+    "viejo-09-budget": true,
+    "joven-00-baseline-repeat": true,
+    "joven-00-candidate-repeat": true,
+    "adulto-00-baseline-repeat": true,
+    "adulto-00-candidate-repeat": true,
+    "viejo-00-baseline-repeat": true,
+    "viejo-00-candidate-repeat": true,
+    "joven-07-historical-regression": true,
+    "adulto-00-historical-regression": true,
+    "viejo-00-historical-regression": true
+  },
+  "repeats": {
+    "joven-00": {
+      "baseline": true,
+      "candidate": true
+    },
+    "adulto-00": {
+      "baseline": true,
+      "candidate": true
+    },
+    "viejo-00": {
+      "baseline": true,
+      "candidate": true
+    }
+  },
+  "regressions": {
+    "joven-07": {
+      "glb_identical": true,
+      "reference": "/home/tao/repos/procedural/arboles/artifacts/roble-pintado/integracion-madera-01/joven-07/tree.glb",
+      "sha256": "ba53154416f638d105694f569792334ab5e99b6e8c8725e3abfed5878c28a741"
+    },
+    "adulto-00": {
+      "glb_identical": true,
+      "reference": "/home/tao/repos/procedural/arboles/artifacts/roble-pintado/integracion-madera-01/adulto-00/tree.glb",
+      "sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397"
+    },
+    "viejo-00": {
+      "glb_identical": true,
+      "reference": "/home/tao/repos/procedural/arboles/artifacts/roble-pintado/integracion-madera-01/viejo-00/tree.glb",
+      "sha256": "c5fde69a0cc46d7135bcf9a8d52c6f253de75b66d87f7c17c056f252a2a316ae"
+    }
+  },
+  "transition": {
+    "joven-07": {
+      "historical_triangles": 3132,
+      "python_triangles": 3196,
+      "geometry_identical": false,
+      "same_processor_recipe": true,
+      "historical_glb_sha256": "ba53154416f638d105694f569792334ab5e99b6e8c8725e3abfed5878c28a741",
+      "python_glb_sha256": "5a85d8ca7209726a93a3a876e4abda196810bdf14e6d283d1829004b7cc319f3"
+    },
+    "adulto-00": {
+      "historical_triangles": 5820,
+      "python_triangles": 5748,
+      "geometry_identical": false,
+      "same_processor_recipe": true,
+      "historical_glb_sha256": "4a74024c09791495a37079e7ad0d1aae622ba11533f901bc3175e003aa714397",
+      "python_glb_sha256": "570515ca18f7eeae5d718f2afd10528c76a4e56b0f6b8bc2e4546acc490df60f"
+    },
+    "viejo-00": {
+      "historical_triangles": 6900,
+      "python_triangles": 6572,
+      "geometry_identical": false,
+      "same_processor_recipe": true,
+      "historical_glb_sha256": "c5fde69a0cc46d7135bcf9a8d52c6f253de75b66d87f7c17c056f252a2a316ae",
+      "python_glb_sha256": "21e9ae7434ced18a16444241562d1ad2ad4304fd7b7f7c8d4c9c8876928d3b0a"
+    }
+  },
+  "godot": {
+    "asset_count": 60,
+    "pair_reports": 30,
+    "captures": 480,
+    "all_passed": true,
+    "version": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "renderer": "gl_compatibility",
+    "video_adapter": "NVIDIA GeForce RTX 5060"
+  },
+  "selected_captures_sha256": {
+    "baseline-adulto-00--front.png": "247eeea5801d5e9ebf901946e414f3e78f5cbc45a1adfa93181802244366c80c",
+    "baseline-adulto-00--wood-perspective.png": "5f195b50fdc78c476d3e16a708281715f361a743a7c7aec2050e06bdd95897b6",
+    "baseline-adulto-01--front.png": "b3865ab37ae064314ed21c9ef4a54b203636b515b9c0b5e388d3d7c41bb426fb",
+    "baseline-adulto-01--wood-perspective.png": "c126138ba2f40c6d67ba7b0b60dffbd9f566f169e12f0b1963cce774b8633473",
+    "baseline-adulto-02--front.png": "ec311c2733512aec91632bc7126b508b3045478d5e19eb7cf397780f205bd6bb",
+    "baseline-adulto-02--wood-perspective.png": "32169bc5b9bd91e5523ed04a02147d0eb05242130dccf63e734dca12be2a8843",
+    "baseline-adulto-03--front.png": "90be647ceddbad22a80c2ddce1b62f033ba2661f8e202b2855a6aee0aa344020",
+    "baseline-adulto-03--wood-perspective.png": "cae45d7f8c39382a7d5d3f84fc80fa114980746a6cc08c2f08c10d18e4a920ec",
+    "baseline-adulto-04--front.png": "cf9579dd41b8126037d6b45a8f9fb70b114677da37ed21ed4d15674e870fa351",
+    "baseline-adulto-04--wood-perspective.png": "e28b63702b48122cd5ea12c5ad62248d99658972ff31a6885a9bbb45e42c3efa",
+    "baseline-adulto-05--front.png": "34dc1cdf8359545d59b374c4691f24ef84ff3f54375cee4cbcf01ede45cf91f6",
+    "baseline-adulto-05--wood-perspective.png": "e980a81341a2ed1d6707bdb563718c5fb1cb5926003f613c8db3842c755456a7",
+    "baseline-adulto-06--front.png": "cdc657bc52135657830acb653f661ab3ebffdffe549b246841ec441b2f7f04f3",
+    "baseline-adulto-06--wood-perspective.png": "e6a4c4e7ce10cd600476b2b03edc1e7972405f8860c3a1c316694a9f35a3d770",
+    "baseline-adulto-07--front.png": "5207a8a2dafb118509f85977c3fcd3104818ff6084ee4186efadf73b8ca75ae0",
+    "baseline-adulto-07--perspective.png": "6b2b1ada706d3b6905b08b9ea8a7490ed1b941635aa23b08303f28d9353385ca",
+    "baseline-adulto-07--side.png": "5501f216946c2ea15d20909713ec86220fd304bab4777948aee9ef0f23a402f0",
+    "baseline-adulto-07--top.png": "0e3ceb77b83e73207a05c330ba4e56c6d58a1d2b8cf0298fbf92c5f65ce24dbf",
+    "baseline-adulto-07--wood-front.png": "711f68fad5602acd0185623bc8165a0febd21442aad57c7cfd23d3315ac56b0c",
+    "baseline-adulto-07--wood-perspective.png": "b8e30fdb1b127c2ffe76cc80b4cd6325a2c8e1b28dc0b1c64b7297b294220dcc",
+    "baseline-adulto-07--wood-side.png": "cb315bfeda9c2077fd0535f4d6cba340267b0e75b6fb867119b3150220829f19",
+    "baseline-adulto-07--wood-top.png": "9d7d1ab824e960de2d6149410f29a36fc35beb98f01f864deda22a4f96e1e38e",
+    "baseline-adulto-08--front.png": "7aa748e87610056cc46ed143df4ad601a217a4542907f1501d7e229341017545",
+    "baseline-adulto-08--wood-perspective.png": "869b11920586670cd35ec97831fdc4b19f7c52d64a728809caa677cfb192a076",
+    "baseline-adulto-09--front.png": "a22217fdb4e5015fde41af42f4749dc84ceba10b82336fa304ff0c1dd60a7bdb",
+    "baseline-adulto-09--wood-perspective.png": "e54ac04577776927af42c3e187922d382526f4bb165082ce8c24557949182605",
+    "baseline-joven-00--front.png": "2895cd835ceaed0a51954b6fb553e200c82d2fea955aa885d12895b089f4a107",
+    "baseline-joven-00--wood-perspective.png": "3428a93a6c540bf5cbb2307746fe64c76e89f74372cba868f20edbfcd1726e2b",
+    "baseline-joven-01--front.png": "9dc40b3fa7cf8f50320af7efeca0675c7ea2c6460dc54117d5396622de02dd6b",
+    "baseline-joven-01--wood-perspective.png": "d5c5ec72856a3f071a8b169f2f8451f6038983f6fb29545ac0651e787f35f680",
+    "baseline-joven-02--front.png": "8793b6403caecdfd06d567a3a0d42e8e3018c743b57a84ecabf42ff7a101e66d",
+    "baseline-joven-02--perspective.png": "8ceacf36651cc30647a93865d15c986d501815d4a7f45fd8aded24e7c37ba1e7",
+    "baseline-joven-02--side.png": "47304a63bb198790edc31117c638b0fb38d927194da7093175796e931d58b2c1",
+    "baseline-joven-02--top.png": "a1b2c9a3914508911565fb4594728f56e236460652a94201b01350a058b634c9",
+    "baseline-joven-02--wood-front.png": "23d8e7f10bb9066f5cc1863ac5b07155f5227cdfa50b36f1114bbdc13216da7c",
+    "baseline-joven-02--wood-perspective.png": "c082468cb823328c0e7d84cbd2ec63a83f8b7f7de9d38836ff99cbb3bce0eafa",
+    "baseline-joven-02--wood-side.png": "32369ce1e28cf9d4b159af3c7e158665634e11baff358a6faa5a24112530bb30",
+    "baseline-joven-02--wood-top.png": "523724d60c3a11e3536741cd946dc7efddd84395e1c536abf29083c3bee02f66",
+    "baseline-joven-03--front.png": "f97b519a307d55b5e5013ebcde8f1b09648c944184562d357b19ecadae854e0d",
+    "baseline-joven-03--wood-perspective.png": "0b364aeb5a9fed2065ac86bc91d1b7676e307ff864639fb159096c1cc429097c",
+    "baseline-joven-04--front.png": "a9cdb95d95bc429025f9a4fefae183a8a5e2df2b899d4eb7bd1bd3a7030130a5",
+    "baseline-joven-04--wood-perspective.png": "93c03ff97b508ebd903311e322c6735d5d60ecbeba50ab21e8e988ed46659a2f",
+    "baseline-joven-05--front.png": "4ccd99426d2596e7e457dda88b426b18073809e492fe4bc1f94bcf9e5d17d2db",
+    "baseline-joven-05--wood-perspective.png": "46a001821210f96889900f4fc16af1f7d55141936c7b631e29f9e2cf70021bdc",
+    "baseline-joven-06--front.png": "6c7bf4399e8abae2295d684b6a6adb7579c6f341d91a357f0df8d196e7431212",
+    "baseline-joven-06--wood-perspective.png": "fa41905fca0b1b3eeae38b8cde9ff3ae6d433f71b0d44dd7a53832343f34530a",
+    "baseline-joven-07--front.png": "cec1eef8116a2c7d9f2006e9b7fc315b0342e07b21ecc4c8a917f31d0df72e16",
+    "baseline-joven-07--wood-perspective.png": "fba833394ee5a9da6f9eb8687af8fd836c3e75b12927e6ab03b83e292bb8cb3c",
+    "baseline-joven-08--front.png": "52256daf786473a36e24d0f64eff5494daeed85bd1f74a7c8362797f5f9630ab",
+    "baseline-joven-08--wood-perspective.png": "13acc079ca212bbe04585fb346e398e639fae0aa8cba107fb932401983177956",
+    "baseline-joven-09--front.png": "f521a71d410e7b50f45c69a8ee906fa512bf76044272c3f41504ecc82f0f9bfe",
+    "baseline-joven-09--wood-perspective.png": "b2bcd84b73ea420a52456d09003225a57435790762d6866113c97149091da5bd",
+    "baseline-viejo-00--front.png": "f87ef2606534aaf63b05a210902de0287980a7b222488428284df4e4683e6c9a",
+    "baseline-viejo-00--wood-perspective.png": "84b56820bd5e8dc9c22f4faf708c3afc73023519302364662583ecfdc0619dba",
+    "baseline-viejo-01--front.png": "0fc116e1158f20cb79e0f9cf35336e9380341902debf86361edb56a81d880748",
+    "baseline-viejo-01--wood-perspective.png": "4a8df4140e6d2c2f5f77e3b489a73332e87a1518191edad70deab4c8ec99ffff",
+    "baseline-viejo-02--front.png": "e024a2a5a0868ba83a4cc439b2f3bda4abde75d42fbd4b2f51e3df4652e4fa2f",
+    "baseline-viejo-02--perspective.png": "2ffa9346f2284629fa1c3be7b8f24d4124b840761d66555626729e26d785804b",
+    "baseline-viejo-02--side.png": "dc063bb36046b64e4d09686c2b8eb4f5f5fffe971e63193111c3f2a78c139f26",
+    "baseline-viejo-02--top.png": "dfe6ab01bd1adbb6f484a7cee479851388730375bc4f81f8a10c1d87471c8995",
+    "baseline-viejo-02--wood-front.png": "44d033f222d923a4826a715a72bb77949e4c807b4159d0cb0cfa82b354783377",
+    "baseline-viejo-02--wood-perspective.png": "4242d1d126cb4d54aeb14a032e99e5cdfe487911448ad2c54557ec0370387bef",
+    "baseline-viejo-02--wood-side.png": "3c36c6fc76bc7c3a94853c25a887816a8c94ae9e12101cca0a7b0891f9079b00",
+    "baseline-viejo-02--wood-top.png": "35a7fd786d9980585b6fce1ebd3a97a55ec4dc61511df5d06d06be4adf66525f",
+    "baseline-viejo-03--front.png": "d14eb0fafdf2c46afe1d6414c69b7575e0a908a641207a1c5f906b76abfec7e7",
+    "baseline-viejo-03--wood-perspective.png": "553213614be03a49faac4f733fa60132a86d2e59b95699cb3f4889bc01a8f193",
+    "baseline-viejo-04--front.png": "bbe7191b0f6fa61b3917b9497e263b9e5223221f915d615eaab3a1f0a9c02ae1",
+    "baseline-viejo-04--wood-perspective.png": "1979e3548f055b64b2b04f8591bbaa0a305cb90cce0def30c215cf5936256228",
+    "baseline-viejo-05--front.png": "10d6cd1cebfd6814bfac53d63257cd5f617856416804558d7816587a9a8d172b",
+    "baseline-viejo-05--wood-perspective.png": "7f4dfdd96a0f8b10b5ecfce415e6e9b9d42993cc73fd11df6a87cc03820bcdf0",
+    "baseline-viejo-06--front.png": "f3c181bda92e5c4e8aa330aa24fb1b54b6fc0cf9c65a730bdcd0943c58a5e4cf",
+    "baseline-viejo-06--wood-perspective.png": "9ee3b6405970bf50e58bdd531f7db98b4da84336d016bc0cbe868950360a27a3",
+    "baseline-viejo-07--front.png": "cee7d0b7b623f1dbced8affe2f405f6b9eecb46a707988b746b355011cd077fc",
+    "baseline-viejo-07--wood-perspective.png": "b9d5096a8ac47fe3efaf04270b3d5c4f422248c9f536bf79d20a0068ef79c21c",
+    "baseline-viejo-08--front.png": "28a3c822e12b30122658080567b3842b3d20c0bd7e09d6c9394899e077bab428",
+    "baseline-viejo-08--wood-perspective.png": "b6b63f7b6864c340fa4417694b130d944659923473a9a62a2003de6a324d1d68",
+    "baseline-viejo-09--front.png": "7f07ccff39aad249d8ab2eecefd504d0df6d59dce9198c8ab2edebafc5ee1960",
+    "baseline-viejo-09--wood-perspective.png": "2f89278a9c28620c8f25902e1fca808dc17942bf6b1ffa734b8b53461b204c02",
+    "candidate-adulto-00--front.png": "247eeea5801d5e9ebf901946e414f3e78f5cbc45a1adfa93181802244366c80c",
+    "candidate-adulto-00--wood-perspective.png": "5f195b50fdc78c476d3e16a708281715f361a743a7c7aec2050e06bdd95897b6",
+    "candidate-adulto-01--front.png": "b3865ab37ae064314ed21c9ef4a54b203636b515b9c0b5e388d3d7c41bb426fb",
+    "candidate-adulto-01--wood-perspective.png": "c126138ba2f40c6d67ba7b0b60dffbd9f566f169e12f0b1963cce774b8633473",
+    "candidate-adulto-02--front.png": "ec311c2733512aec91632bc7126b508b3045478d5e19eb7cf397780f205bd6bb",
+    "candidate-adulto-02--wood-perspective.png": "32169bc5b9bd91e5523ed04a02147d0eb05242130dccf63e734dca12be2a8843",
+    "candidate-adulto-03--front.png": "90be647ceddbad22a80c2ddce1b62f033ba2661f8e202b2855a6aee0aa344020",
+    "candidate-adulto-03--wood-perspective.png": "cae45d7f8c39382a7d5d3f84fc80fa114980746a6cc08c2f08c10d18e4a920ec",
+    "candidate-adulto-04--front.png": "cf9579dd41b8126037d6b45a8f9fb70b114677da37ed21ed4d15674e870fa351",
+    "candidate-adulto-04--wood-perspective.png": "e28b63702b48122cd5ea12c5ad62248d99658972ff31a6885a9bbb45e42c3efa",
+    "candidate-adulto-05--front.png": "34dc1cdf8359545d59b374c4691f24ef84ff3f54375cee4cbcf01ede45cf91f6",
+    "candidate-adulto-05--wood-perspective.png": "e980a81341a2ed1d6707bdb563718c5fb1cb5926003f613c8db3842c755456a7",
+    "candidate-adulto-06--front.png": "cdc657bc52135657830acb653f661ab3ebffdffe549b246841ec441b2f7f04f3",
+    "candidate-adulto-06--wood-perspective.png": "e6a4c4e7ce10cd600476b2b03edc1e7972405f8860c3a1c316694a9f35a3d770",
+    "candidate-adulto-07--front.png": "88d4e6c38c7901fdc77eba8bb92086fa7d2d3f8d1a154075600d0d5e38a50dd9",
+    "candidate-adulto-07--perspective.png": "966c96035bbf391b9653b66de49fa17502018837fbad0cc2dda5a4bc3b948aa6",
+    "candidate-adulto-07--side.png": "8f29aefb31705626641b593d031c6e9a6fcd707c5c500b60a527054f91364780",
+    "candidate-adulto-07--top.png": "d6b100c556f61f312f1e20f09af9ba2c26b9f93ed8c1dcd28ec68c56a56867c2",
+    "candidate-adulto-07--wood-front.png": "0b34fd98163cc2fb114ab08cfca6f3d505551f51bfe892a93450d7acd69e31cd",
+    "candidate-adulto-07--wood-perspective.png": "5043803375eed4ad311855b448e7d3782fc98a1e656aa40f1033fec04f2c0f1b",
+    "candidate-adulto-07--wood-side.png": "5f2dec700614eb6d4e0c26b15599345d71ac9789d79bad3cc3d47b92abad06d5",
+    "candidate-adulto-07--wood-top.png": "e2800bc0539707b10b07a86af74614c82550025b0ee429e09644904b173af140",
+    "candidate-adulto-08--front.png": "dd6682dd6e74887fe2985f0368ac87dd3b8ade3ff166b8b2a8c96d30fe8195f1",
+    "candidate-adulto-08--wood-perspective.png": "869b11920586670cd35ec97831fdc4b19f7c52d64a728809caa677cfb192a076",
+    "candidate-adulto-09--front.png": "a22217fdb4e5015fde41af42f4749dc84ceba10b82336fa304ff0c1dd60a7bdb",
+    "candidate-adulto-09--wood-perspective.png": "e54ac04577776927af42c3e187922d382526f4bb165082ce8c24557949182605",
+    "candidate-joven-00--front.png": "2895cd835ceaed0a51954b6fb553e200c82d2fea955aa885d12895b089f4a107",
+    "candidate-joven-00--wood-perspective.png": "3428a93a6c540bf5cbb2307746fe64c76e89f74372cba868f20edbfcd1726e2b",
+    "candidate-joven-01--front.png": "ef8f079a46617c92bb9d6e10ae25029be18a433358aad8b7209997df28ae3d62",
+    "candidate-joven-01--wood-perspective.png": "d2d11d55b99d5077b7af9507e8800b6c076f5f5e0c6e2e05078d77a9d9aa0446",
+    "candidate-joven-02--front.png": "23daba04cd5b2ebfb139ba5ef8a34755ab7bdcf338f9292ac86c97635eb82cc8",
+    "candidate-joven-02--perspective.png": "4199f515840b8851d77ecad3d85fc3bd246172316eff29328a96412481e566f3",
+    "candidate-joven-02--side.png": "ffde2ad966ced49e25450ae91802e3b61861476c27acef120bab6391e7f3dcd8",
+    "candidate-joven-02--top.png": "c2ce603768407197dec36269ef2275bdfe662b3adbfea28f5401a470c7c4a640",
+    "candidate-joven-02--wood-front.png": "0635cf7ef7556ee719a52597cb121725ce75195c942ca7663cdf670a526b1f89",
+    "candidate-joven-02--wood-perspective.png": "5c10a23d2aec6c6788058ee7f647fc402c3ddbfca20f2574f54cc332519fae67",
+    "candidate-joven-02--wood-side.png": "81cc26cba1613b07b8745d954fc1d0a76e285a06187075cc5e6dadbdb73ca23c",
+    "candidate-joven-02--wood-top.png": "82a206ff81fac5574fd2075d5a99fbb4be62b6829e47329aab16231ec6d92e0d",
+    "candidate-joven-03--front.png": "a29b6904796bd4e1c18431df3bc83d92b42722aebcbb693d65d204a08b7ab184",
+    "candidate-joven-03--wood-perspective.png": "170650409994d8a439d836bd1ae2a361fdd5dcda5e00dd4ba6cd17a52f0feee3",
+    "candidate-joven-04--front.png": "e8a7d64018f5b6514771f4c35d716d2cbc787ebc879bb74b78573a959383a891",
+    "candidate-joven-04--wood-perspective.png": "3d2293408857dd2a53380ad8afe4be992687c726beb2baaac9a28514928d8860",
+    "candidate-joven-05--front.png": "31dc8523209039c22f35946f1b6dd7fcbbadd321984ade0f6514ce85f9de557a",
+    "candidate-joven-05--wood-perspective.png": "d9a4fd696951a0c9e84635315a28edd29055b51bd33c0677445b9fdb0c2a8355",
+    "candidate-joven-06--front.png": "6c7bf4399e8abae2295d684b6a6adb7579c6f341d91a357f0df8d196e7431212",
+    "candidate-joven-06--wood-perspective.png": "fa41905fca0b1b3eeae38b8cde9ff3ae6d433f71b0d44dd7a53832343f34530a",
+    "candidate-joven-07--front.png": "64b3799c2fc9c513957e23ab33f5d67e9df28c29ffafc55c111bffdcf5c0b351",
+    "candidate-joven-07--wood-perspective.png": "d8c7907434fe86cc8e607b572c3bf151fb3326684a8ca05608cfe79354d405ff",
+    "candidate-joven-08--front.png": "006975ee544109d2c375c6d5c7e0efde5f3da3269884f4f91dcf18f65ad38619",
+    "candidate-joven-08--wood-perspective.png": "a653f823a1fb20c37288e230f6bf223690827a9a061d17e56114a8fbec280bc4",
+    "candidate-joven-09--front.png": "982b02d7471f2ecf2d875ed367d1cc7e273b79e416205be4b16a30de8b4c3464",
+    "candidate-joven-09--wood-perspective.png": "568c190f4d8912014dfc53166467f1510de51ffad77cf90dbe9071de7930eba4",
+    "candidate-viejo-00--front.png": "f87ef2606534aaf63b05a210902de0287980a7b222488428284df4e4683e6c9a",
+    "candidate-viejo-00--wood-perspective.png": "84b56820bd5e8dc9c22f4faf708c3afc73023519302364662583ecfdc0619dba",
+    "candidate-viejo-01--front.png": "225aa8620e104fb5ff4e35283a5594fcd45b5cc453fed7a7046ec0087b0e00fa",
+    "candidate-viejo-01--wood-perspective.png": "4a8df4140e6d2c2f5f77e3b489a73332e87a1518191edad70deab4c8ec99ffff",
+    "candidate-viejo-02--front.png": "c27baeee9a9daa8b0321dd923937b755d2c516a5e01788715d1159f4ee4e7f82",
+    "candidate-viejo-02--perspective.png": "601dcb08459572aa57980cbe3576a8327e4089cd93147ed81243201691576e71",
+    "candidate-viejo-02--side.png": "8560327f66928d45f9da8e88b5502c188d81b68b1c531a7f10f06d3b2d622523",
+    "candidate-viejo-02--top.png": "fee6c83e8ad943a8835f6c9350fdea3b282a41ed2ddd9179e44f7abf0013855e",
+    "candidate-viejo-02--wood-front.png": "1351380768fa1297e2ec48fb266c2c91eb6c7667666871ca5b2ff1acb7987540",
+    "candidate-viejo-02--wood-perspective.png": "8382f210a6ab27eef1d11f34bc5feec623b78eedb04922951ae33757aa02a156",
+    "candidate-viejo-02--wood-side.png": "0ed85997ae9277c2694d6f46b70e7967675add849aa03643b7af3321d49dd94e",
+    "candidate-viejo-02--wood-top.png": "3974080e351418cc197326a97d9bbc9c96cf13cb8cb7adee0bea88ff298de58d",
+    "candidate-viejo-03--front.png": "d14eb0fafdf2c46afe1d6414c69b7575e0a908a641207a1c5f906b76abfec7e7",
+    "candidate-viejo-03--wood-perspective.png": "553213614be03a49faac4f733fa60132a86d2e59b95699cb3f4889bc01a8f193",
+    "candidate-viejo-04--front.png": "b4ea4293909b7a3309d1d92ef5f093a980a0f9793da1c5f7398aab292f99be22",
+    "candidate-viejo-04--wood-perspective.png": "b08fa16491ed3d34ed349345d029b3897f504fc3dcd546715e6a74d7c76959a8",
+    "candidate-viejo-05--front.png": "10d6cd1cebfd6814bfac53d63257cd5f617856416804558d7816587a9a8d172b",
+    "candidate-viejo-05--wood-perspective.png": "7f4dfdd96a0f8b10b5ecfce415e6e9b9d42993cc73fd11df6a87cc03820bcdf0",
+    "candidate-viejo-06--front.png": "e60afbe57b22bdd29ba13fe5d786c845ee4ae9b06f30dace6afe7cd543a9492a",
+    "candidate-viejo-06--wood-perspective.png": "3a93d47f37f548da68f2e03fcc62f91a06dc3b015db74f39d7312e563c30d071",
+    "candidate-viejo-07--front.png": "cee7d0b7b623f1dbced8affe2f405f6b9eecb46a707988b746b355011cd077fc",
+    "candidate-viejo-07--wood-perspective.png": "b9d5096a8ac47fe3efaf04270b3d5c4f422248c9f536bf79d20a0068ef79c21c",
+    "candidate-viejo-08--front.png": "c5a2f2c14d0e481eb72b08e0faf9c148b1f6c935f1ee96cf279eb6c40ec0ae94",
+    "candidate-viejo-08--wood-perspective.png": "ae0c04b094044f2e4e95a2d67e36d575c33e53afaab5bfd7515e28c0224a9e70",
+    "candidate-viejo-09--front.png": "7f07ccff39aad249d8ab2eecefd504d0df6d59dce9198c8ab2edebafc5ee1960",
+    "candidate-viejo-09--wood-perspective.png": "2f89278a9c28620c8f25902e1fca808dc17942bf6b1ffa734b8b53461b204c02"
+  },
+  "visual_review": {
+    "status": "inspected_by_agent",
+    "date": "2026-11-03",
+    "unique_captures": 156,
+    "selection": "Frente con copa y perspectiva de madera de las treinta parejas; ocho vistas completas por pareja en joven-02/adulto-07/viejo-02.",
+    "findings": [
+      "No se observan materiales ausentes ni pérdida de partes completas en la selección.",
+      "Cambios de reparto y huecos más visibles en jóvenes; adulto-07 y viejo-02 conservan una lectura muy próxima.",
+      "Tronco y primarias conservados entre base y candidata; cruzadas y cantos siguen visibles en algunas orientaciones."
+    ],
+    "limits": "Selección de imágenes reales Godot, no inspección exhaustiva de todas las uniones, luces, sombras ni distancias. Aceptación artística pendiente del usuario."
+  },
+  "artistic_acceptance": "pending_user",
+  "sources_sha256": {
+    "src/treegen/willow_sample.py": "7f4fb848eb62e45e407d8ae75d4bfa9407477372b138ee1d2438299c3d4ce0df",
+    "src/treegen/branch_structure.py": "b3a1bbbf94ac1006c8ccf087a82f9635a79a417bf4185eed3866b99c4dae5a72",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/season_calendar_glb.py": "b1b5c8f3cc64dbfe00b91f7a2d2b3f26a931f17aad851778a9045d0baff35fd9",
+    "src/treegen/willow.py": "ebf75f3fcede8c42efd0b4270995bf0d168a022d5d02d894163393bafd277e9b",
+    "src/treegen/willow_v2.py": "5734c5e48e69e7550474cca4188fb65f51e6d6faeaf6d819c0416737c1c41a38",
+    "src/treegen/birch.py": "89a4fabce283c89b0d48448da82e3dccc9dbde4a5da510db08fad4502fe880e2",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+    "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/evaluation.py": "4a07ba8ec648739de12678ac919b6d7e965279e608da1844f25a2499f1b2692f",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+    "src/treegen/cli.py": "09984d814e2d1413f56a3d0f2dacd89cd8cecfbe103cc6bfe39350749d756949",
+    "src/treegen/birch_evaluation.py": "6b738a3870ade67066413089b0faf01b9cc8611618f7d7aa523c5adb7c469104",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/seasons.py": "433d10d9012e04887f007b0381b514f64dfb9edea7cb7d73f61e0c2fb6f87d05",
+    "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/runner.py": "31363394248b4ef9365ea3f0b26925d9d4d728dea04d67f7295dbfe918da4a67",
+    "src/treegen/birch_sample.py": "3530e76f940d513cbe9aac71bda954bcf258a843129de876fb6755fb71dc79d6",
+    "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+    "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/blueprints.py": "6560867587d872b0eedaf44a840f2aa162b3e9c9a4db1aa8da51685cc1b16841",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+    "src/treegen/willow_evaluation.py": "ec60175f4b94d0b965b66d247def68c7cf969cce2cf5f72a279981084566915e",
+    "src/treegen/branch_space.py": "a5e8870433b9e6b24e37a69bd81cfe4c1c1b3f40f03d05fc9a352f0f05fb2af5",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+    "blender/generate_painted_pine.py": "7f10893bcb5fea3b92a9db64325a8c92fed8a1dd0b1cb064afed4c9b695c08c7",
+    "blender/willow_sample.py": "1f3d240a256fdd1a64ca87d449a07c57af880ccdd8fac371e01912fd5e8e8bb4",
+    "blender/rebake_oak_crossed.py": "75284275a4cfe7c4c3e3b5fbf6db88fe75192d8b4dd16d4cce9d74f99b907b16",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/generate_crossed_oak.py": "695322e6649466718ea0222471c4e4ed9e04726d57369c6f860ca35527205187",
+    "blender/bake_autumn_oak.py": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/verify_painted_pine.py": "322851d188c022ea859ac08adb0b6540c14cf3f15559eb5061931a5be926d8c3",
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/f5_structure.py": "6dc67bbfa2de21f3dcbab8535c09ec91fece323783f38f18805b99791405e29e",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blender/verify_pine_contacts.py": "c4de070611fc9f3366002b86fefd877d8dc3fecc824f2f1dfcbda1d7ec4ffd44",
+    "blender/export_oak_wood.py": "2829d53c0788ceeb4ac10036483ba7b9ec3bb0c51abbefe4046b7f932c8f96cf",
+    "blender/oak_wood_trial.py": "024b0f32f543fa13cc315109398ddc25b991f2c832e05a836134fbf91870c842",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/oak_crossed_reference.py": "824daf84cb3ad034cdfd286d7f4cd3d9ae5eb666e90e4702799e81d69a0842f9",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/oak_painted_tree_pilot.py": "224df5283e5395ab2696b93d8bc89c4e44f86bb26dd7433afae31c6221122eb7",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/pine_painted_sample.py": "6ab7d003cdc2a1b938fad4bead9332ae6d21f133b24c6302781d467771006f97",
+    "blender/oak_painted_sample.py": "ee7d0bd42e3d533734228de8bc61b177a7e367414cf5c39ede4ab64ecb70e244",
+    "blender/verify_season_calendar.py": "cd0762f6113675063feb2017e09bcd28e9284e9fc9ddd3fa2b6f6cf84ecbee72",
+    "blender/verify_canopy_normals.py": "2a66a50e0a9030d24eb525253508bb9b007ddcd03ac567e7adb4c108bfd23099",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/generate_pine.py": "8564de938657e81f10c78881cb7137f4b33bc52d584a676a0bdd046103ea53eb",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/generate_birch.py": "9a417ca2be4919534a4564998323124006371daf4e41c31e3a02650c5ac0bdd1",
+    "blender/birch_sample.py": "668dbb55609a4d88812e9b52505d6fd0f2c58b637478b9e85ff22d8d381070ad",
+    "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+    "blender/willow_revision_sample.py": "7305f8bf8daa5bce2e87a13bfae673b08fd85c64c4cf6d7824422149de806ecd",
+    "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+    "blender/generate_willow.py": "b1636ab8e446f163e320f49179ed81ab6afe94da9da246bbb4b77d6815046fb6",
+    "blender/pine_cards_reference.py": "ee30f384357c84dff74763616dcfb32b2daf3111b5bf4b86962a0cc29b8f5c3f",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/oak_crossed_trial.py": "4c7eae600da0aac401ee9a831a8df2a7e1256292735257b1cd05d356dfc58be6",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/generate_painted_oak.py": "5d6f15d33ccc7bcabbbe6d9f223afde3ef86ddf56ba4de1dfde38dff6b8716b5",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/oak_wood_hierarchy.py": "07fceea0467c13691d679941e9e85006d90fc7630f7bcae9a4e754f74aa59c72",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/season_atlas_sample.py": "70469069ab126829b13fc9003ba9c93de6ecfbaefd9ed7ce35b509f46041f4d1",
+    "scripts/foliage_twigs_evidence.py": "db564c399d1d9bca58daa41f29730f48fdb0d8527e39444f897eb2f0f83584f8",
+    "scripts/willow_sample.py": "77b6f94ec573f5af02a90feb6dffeeaf1f379b849e15040fa04e189d7e9301c1",
+    "scripts/audit_willow_export.py": "0b0e180395c7f78f7809d93cf92614da7b584132eba4e226a011b0c272c52e12",
+    "scripts/verify_q3.py": "6d16dcb314474d1b382da505c37f55688d5a2c994731438ae37f5492c43e9c32",
+    "scripts/verify_f0.py": "334f15cd6bdbbd1b57c8795750bd36a2aed31b898016aea53f955a88ddc32783",
+    "scripts/verify_foliage_molds.py": "839cac313e3421a53db09b2710724d30f0c29b4c6e993211f2d3efd1936f751b",
+    "scripts/verify_autumn_paint.py": "93744e85a70a395b2e7d651990b06c6adc5f6b51a4ba8ec2eba165e60a8aeaf2",
+    "scripts/pine_volume_evidence.py": "14d00c970237e01732ccd319cc06a27ca9fd431bf65f3dfc80ed74d9cd469c20",
+    "scripts/pine_wood_evidence.py": "33217233c3f0eadec246490aca3f5818689627c3b2767bdda6dc49d920bd660f",
+    "scripts/verify_oak_wood.py": "462f800222998fed69902c6964c7b9c9788c29c73f23eea7c416251e00b965e1",
+    "scripts/rf5_evidence.py": "695367980109789bc2594ac09146f82aa6fc554b2ffddcedcb980e981dfb90d4",
+    "scripts/pine_performance_evidence.py": "c8babf32ab04c752b449db88dce92add2fad2773a0e50ed9c0916a65c204a653",
+    "scripts/verify_painted_pine.py": "d35909da471a25c35eeb2a8b877e675808aa481a7b6d0ebbc979912dfea5a628",
+    "scripts/inspect_easy_tree.py": "1a7b771b2c13392c97d259518fe683ed08738326257e991329707c95de4aa889",
+    "scripts/verify_foliage_twigs.py": "bd43b2c9965d93110fe212e7430d2bf7206b3344c9fe47decbf6168c94d4c345",
+    "scripts/close_season_transition.py": "17ac43a62e296e39ffa2acad5ed520d56a242decd89176fd2ac397e7df09976e",
+    "scripts/review_oak_wood_hierarchy.py": "0991e4de6d26d286af9addd742266a50e6683411181f097c989f2319c76da608",
+    "scripts/verify_paint_transition.py": "d575eeff015da79493010f8ce3a6faeaf0240baac6c751f8ef72ef7b3958fda4",
+    "scripts/foliage_evidence.py": "7404f90b3942604cb6e3e3eee6889d4f2622a2740cab311fe6e04bc4f97a7ae4",
+    "scripts/verify_pine.py": "041800052f997ef01f30e4db6c484f868a4b28b17a28ea0518829ed5a9a661da",
+    "scripts/benchmark_painted_pine.py": "b20a8c73364dc6cbb994662de0e01329546e913bc133cf61de4e4b33adc1bd21",
+    "scripts/foliage_molds_evidence.py": "532e5481038387506435356b1cd7a9f66c475309b553082f10fbfa3816795bea",
+    "scripts/publish_season_atlas.py": "6465a66a66782f8d0b63e523fd956d3f3be1f202967d5f9bdbb0e08c1231240d",
+    "scripts/verify_branch_space.py": "d0b09cdb295c3ba697bc8951fade3d9ea7133b139055007ad6e8c0e1a2bea115",
+    "scripts/verify_q1.py": "d065b79c65734a0d7d0f0bee1f6276b6643a0b8af08e2591989c5c9652751d8c",
+    "scripts/foliage_canopy_evidence.py": "943fb50bca9a79993cc119f1a0496a0e6950cbf0459e3faf9aeca695a000e4f5",
+    "scripts/build_paint_transition.py": "9d2a966b46e1296f4a856fb6d335e1634cb7f4400bd24cb5cc2bfa201b8c6ba0",
+    "scripts/review_oak_wood.py": "d870e077a44d72b6c47540d72747ad1c5bb56f10fb3f75f062a5229781e469f2",
+    "scripts/verify_q2.py": "a1e0a9b0d4b18a4883cfe5f175e7a32d6f9122b4057b90e61bdcd4fee0272ea7",
+    "scripts/verify_addon_comparison.py": "4ecc393d036511ddef3ba89ca1ee675933f3d0299d23603cc9c2ab2ed894cd5e",
+    "scripts/oak_painted_tree_evidence.py": "aa96c4b22084b0e40821a329ec936bf1e79c838c66c24315805d0cbcd9e6f708",
+    "scripts/build_season_bundle.py": "1247ad837853d72994aa8b5d754186efd9888426a7b007cb284e73ed83e5b81d",
+    "scripts/verify_q3b.py": "0ee804a5c9843cbd35f9f77879ec688f965ebac81a6a788b64993d2689c87611",
+    "scripts/diagnose_structure.py": "4a560741d20705a82fdfb3fbad09412c20933b19fcd69876205e904c40ac63d3",
+    "scripts/review_tree_addons.py": "0645681d5eeeffcfba5dd342e7050b30d675a2bac60df929b0a5356975d1a782",
+    "scripts/verify_f1.py": "5e7663e303e222a8ca7b72bf2fb4948cea345dbeaf5142deedf177afa8b21740",
+    "scripts/paint_transition_evidence.py": "2c79c0c447d995f63937b795e5c09db2799643aeb1b6b5d147edff1a00f498ad",
+    "scripts/q3b_gallery.py": "b393ad195d50f1da35b2a7ebde24efc96bfff8fd25ade7aadac828bfd7981f17",
+    "scripts/verify_foliage_unit.py": "c1a63768a43c736173f3f3a0e473874a67fff8e7ba1f793e59a6beab6d712831",
+    "scripts/verify_foliage_branch.py": "1b37b23adb74a6da5fbae63eace63853e0306fc69fbed8f613d2228aa961105c",
+    "scripts/verify_season_atlas.py": "09b3dd379f47ce2ec52e1f8c2b45d83083e0d608ace2a775a64361fcae238b96",
+    "scripts/review_pine_painted.py": "bb387c56923b6841703cef8069867adc42cf06d064385e8fdd5c0e3f5e57080f",
+    "scripts/verify_oak_crossed.py": "dc1e4f8567001c11cc86b35d6e62d3c748af8439f5478dfa03d38c09bb6c4360",
+    "scripts/foliage_branch_evidence.py": "371bdb2caeaaaf9020f6d9c85370b111293a5554197cc8b5d0fb826caa044d0b",
+    "scripts/verify_language.py": "6ebe624926f2f04ba22dd948b6592f85828365f7aeb1eac6eacf7e7d5f7e121d",
+    "scripts/oak_painted_tree_pilot.py": "d51a0077f828d87d12a86a2a94af7036db8825b95ed827c2e66e8098017b34ad",
+    "scripts/q1_gallery.py": "cf85dac410fa08b99a0f24eb67a270754a53969ba471d03320fb531678ab515b",
+    "scripts/build_oak_atlas.py": "b14026f45079eb7a85a39acd794e7ad562c067fbdcd3097ee871d9c5282917e4",
+    "scripts/pine_painted_review_evidence.py": "05d306ce53ca454ad9f34c4918f5307525a0a582110df269648d7c09cb7107fa",
+    "scripts/audit_birch_export.py": "ba87cf7d608b7723e13fa1e1c1df687140689c96cd5a0c99961b6b840dc6d254",
+    "scripts/pine_painted_sample.py": "23bfa48455357b7d5d7133580d7fa9a00a07174b84ae5f354617c1ff84c99789",
+    "scripts/verify_pine_cards_topology.py": "5ffc10feb838111e3db0501d4a875161203941e7803b8719ed34c7d9b7214088",
+    "scripts/oak_painted_sample.py": "7d5232c9b44abea8fe27d265da00b2afd4cf9f4a4ba7e570b0b9e3f30bdfca2f",
+    "scripts/canopy_normals_evidence.py": "31cb1d42e27c5f92d5b138e4191f0992e1eaafc61529bce9587ce8b6e00fb7e1",
+    "scripts/verify_season_calendar.py": "01fb04272c0c3d17a113f08ef57657648c1fd14ff55f5988a8c1e8a55f553a73",
+    "scripts/pine_evidence.py": "463e4cb498333de954e68665147e13c7c84c8c9b39d93cfc3af5b14d28264d65",
+    "scripts/verify_canopy_normals.py": "2653583cfe9b0e23bb95a6768ab66127965c0776f7e2238078d6c4edc593f208",
+    "scripts/verify_birch.py": "1541db39d310e9ddcebb01482c18e388e18a5b89853d92601f6083a8e7dc3cfd",
+    "scripts/build_seasonal_oak.py": "a8d7571fe8575b10f5619e66dee8c819daace5fd1caf6941a9cf5e06d829c7ae",
+    "scripts/blueprint_controls_evidence.py": "bc6aa61a1fa16baa05e08f4d6ffc1b51a21f419639942fe58821aa291d0a0352",
+    "scripts/willow_sample_evidence.py": "374737d4668f9141632ca2700c91f9b900a723571dc611f188703cac8e7094bb",
+    "scripts/second_blueprint_evidence.py": "fa6d5f16761650bb06ecf81edcaed697446a5fa133497d08dfc6038c5d08ae00",
+    "scripts/season_bundle_evidence.py": "c70361e3324365d310fded49cd4758eec846f309d83cc26f87e5a65069e17cae",
+    "scripts/generate_f1.py": "d5cf8686667debd55853e756403ce8d08e1d91ef9bbb3ef7fad5b4bd417d5ad6",
+    "scripts/build_season_atlas.py": "44bc5275973c7608339439d3a776fea4afff8e00568dad4ff15f40d58a4a68da",
+    "scripts/verify_foliage_canopy.py": "f2b64d80ea5c4b03c574f158057c7be3eceb579b9f045776b2c3c33c59ef23da",
+    "scripts/review_oak_twigs.py": "04ce738999f0e8d81a61f1bf6cdad3e1532ff3f4a0f5ec97f9d0d728307babcb",
+    "scripts/q3_gallery.py": "982f028008ead1040c33813fd4a9bc4e8b85c6093fda40da03452d6e24dcbba3",
+    "scripts/painted_pine_evidence.py": "7e68738059691e7e9647b988897993339adde0e491e9704cbe443a4285571ca4",
+    "scripts/verify_seasons.py": "f9e312215ebca05ae49cf44c354976f81b0082666cb0e902214ef8cfe958b601",
+    "scripts/verify_api.py": "48b4dd5af68e06d50b0471a46309238ae58cdc22c665067d78cefcf115bff6ec",
+    "scripts/birch_sample.py": "15896f77685e94d1646e67876b76cf83fd9fe5130e876d32ad957090fb8bff88",
+    "scripts/fusion_evidence.py": "85c4b4c10edc4772d02b60480bab7affe36eb9a0431f8715d7bac74f794c9fb3",
+    "scripts/willow_revision_sample.py": "9c9fe157433feaca71ff6d01e3ce8c9b12e01ab3815fa3fb8868698b6f365daa",
+    "scripts/verify_blueprint_closure.py": "0664804ef7550c78cb46ed55c22d22dfd0685538ce2ec6f8f1c990fc06242159",
+    "scripts/make_gallery.py": "231756b3cf65b0da4f0ccbb01b6d54c312562b73b84a3910463fd1100b9ff38a",
+    "scripts/build_canopy_normals.py": "9f3ce85a636aad518ca38d26452b416d2f6ea8410caa91c76a9f4b9413784fac",
+    "scripts/verify_second_blueprint.py": "e7600e66e392c11f8cd811d76d658031c451cad528bd57cf4e027d52f5199ee4",
+    "scripts/verify_f2.py": "d40bf125303e10397ea69c2f10dd76238508074a60a05229ae43dc0d4a90e978",
+    "scripts/q2_gallery.py": "5ed4f4d8c553dbbc49a30563b160ab519816b5f08c336588ec720a78dbcd31c2",
+    "scripts/verify_blueprint_controls.py": "ab8ad5010e4ce3a1fea26b461fbce3765876c0b0210d89ab46ced9a2207bab54",
+    "scripts/oak_crossed_trial.py": "8be04aa8a2387e11b91e74aee8719c8a455a291ad5475d59a82e4feea642910b",
+    "scripts/verify_rf5.py": "66d8b73430ceff82d72bd864c10b4b28ef24ae61cfee2c86256665bba55ad654",
+    "scripts/verify_willow.py": "05a44e6b5392bc57304d1fbf51c0f02b043a908421d36bb9c5a24dcfe0500028",
+    "scripts/verify_painted_oak.py": "db10b972622ecb831a40f63aa71ddaeebba473c623060e83e3c8d0ef5994898f",
+    "scripts/pine_painted_review_details.py": "2926464aba15523f930c3a028d6ac3c66b4ce4d87bd55a86c029a48b6104793d",
+    "scripts/blueprint_revision_evidence.py": "49df27ea1eeacc64bdfbd049bb54b6445f92e0e2d20880669ec4329bfba124c2",
+    "scripts/compare_addons.py": "16f4fb1b23bef4791d8e50b81e3c0f1d2cc4316c4fdb5037aa6320373057158e",
+    "scripts/verify_pine_painted_sample.py": "03e4c49f6b84a81005d802b394a40769c537220db5ae8ffa2a30742a40451883",
+    "scripts/verify_fusion.py": "fd976bfcce144a794b77917d83912529744dadd8037cae5dc462ed7b12a6161d",
+    "scripts/preview_fusion.py": "4f6eca670cd1a447c00a647211a24a4d11ebd3d577b4b2b0084b85944d4a90f6",
+    "scripts/addon_comparison_evidence.py": "697f7c5a7f257eb8f90fc2254ef9d3482becc75e727d6cfeb4fa0a21192295c7",
+    "scripts/verify_q1b.py": "9f1dcbc666d8fe3360b4e3d16c9745672b9bceb540ccdfa1fd9dcdb6db72131a",
+    "scripts/verify_blueprint_reference.py": "9c02e64137a753a7bc2f223b9d0fe4e6436ac7bf316dee84834faff47663decc",
+    "scripts/q1b_gallery.py": "6317ba6b5de149a077322b6f3a8ccab21be68e4bfc13e6e19db80fa9218abb2b",
+    "scripts/willow_evidence.py": "63bb08fb72d8d7557ed2ae061aadbb00444c85f53e919c6ed380a2efd7e4d952",
+    "scripts/verify_season_bundle.py": "769aeaad5d9efd3579d36d53681e797d007edd222c16f9c34dd8c6c2f6a489ea",
+    "scripts/oak_sample_evidence.py": "d826788caeb37fefd8b2a17e510721e9ed33e7a7452e257e3d22071c2cdc575a",
+    "scripts/verify_blueprint_generation.py": "d8d91638d751f44bc9a679f5a6667a56149e354d2847fe5d86db87c470ed01ad",
+    "schemas/tree-instance-pine.schema.json": "952eac970a2b0305af0f97d719560636baca01166470b4366c37e560e2a4eb28",
+    "schemas/tree-instance-painted-pine.schema.json": "d7992550b27dab83ba4ace070a57a1ec6a5eed371995a7a00f174862b4862125",
+    "schemas/tree-season-calendar-data.schema.json": "43ca92f5b4bc10edfecad69151ff10c01de7fe2aec61aabd06d94a814d47bbeb",
+    "schemas/foliage-mold-density.schema.json": "17f264db740d97a7711465e7f4656781250b1448d685c7c24710b241e7d41122",
+    "schemas/foliage-branch.schema.json": "c0bb4df7d55751d50db656eb27147306e904a6ff4f333983aaba035760d193dc",
+    "schemas/tree-blueprint-pine.schema.json": "02efd04fc303278461883a4274be5106a3d38358a0238a972403c57aae21bb78",
+    "schemas/foliage-twigs.schema.json": "7ebd741a0c5150d817da32e63262fe1f9a658a5560d4ecb87dec573a6e9b2cc8",
+    "schemas/tree-blueprint-crossed-oak.schema.json": "7820af4e24d47bf8fad27f3d35ed7dcdf3139be1f3649a29e6cb6173afa8d163",
+    "schemas/tree-spec.schema.json": "bd5b151e0999c9051ab01a1180149723478c535e76643739a0c8f8d33d826d70",
+    "schemas/tree-blueprint-birch.schema.json": "e0787ce8ce678ba4c71503b2b78a0cd6990906e3702263c93ca5606206770b11",
+    "schemas/tree-instance-crossed-oak.schema.json": "baa3135d46c4326abeeadf3b7c69e7036f296c5f9e4d34c433b2ec4a6afd9d82",
+    "schemas/foliage-canopy.schema.json": "406bf3fa0ee672ba0bf3c37292d3371771418da18dd74b8e87e48691efbecc65",
+    "schemas/tree-instance-willow.schema.json": "4f6a564906e8f4ee306fdeb228e28c9e82e7746cdc74d5be3bfacf6ccbfb2f88",
+    "schemas/tree-blueprint-willow.schema.json": "e86fcea5d8c68508ef8ba28e67a89b9d332c438c4caac01c8fbd599909cfa5f4",
+    "schemas/foliage-molds.schema.json": "64c57a862f512fa5253081a0c0d49adb2827d7340dbf2d02584670d01774b25c",
+    "schemas/tree-blueprint-painted-pine.schema.json": "ca0908ab37651781d4778b6651b140a8e7f1cebbe22453fd71c23d9021b1809c",
+    "schemas/tree-instance.schema.json": "a3789119c2bc3de805db44ce50a0e03d64b82a3f18bc6f0ab3e09d9268eca3ae",
+    "schemas/tree-instance-birch.schema.json": "9d12dda084643ee87578451369b019036d7f237166d64f1c5babcf96e007d69f",
+    "schemas/tree-blueprint-painted-oak.schema.json": "68999d4cbe07809fdf991cd7f1d58a47c33e90b6d28f8504fecfef4d6eab2ca7",
+    "schemas/tree-blueprint.schema.json": "e79fbb621375acc5c730bf0413e5ac7055362fe7a520f9b4e33b772f83d7182a",
+    "schemas/tree-season-calendar-profile.schema.json": "423c279c76bab1981a6f0322b1fcc35d159c03e39c905689d4b8665049714f61",
+    "schemas/tree-instance-painted-oak.schema.json": "9268c19104943503a9cf828088d4d908e75d545544345eb093b08be79c7211e7",
+    "schemas/foliage-unit.schema.json": "535f7bc5cb11467347ef1bb01ebb6595fbb0c20ee66e18d313e82ef43755f3a9",
+    "blueprints/roble_copa_ancha/2.0.0.json": "64f3e6228023b948ad728fa425b2d140ac7691c3ae994474074021ae18350417",
+    "blueprints/roble_copa_ancha/2.1.0.json": "a0c069ad24fa6d1b8887a39744a9a99daa18df385be5b691ab89de1d707cfc95",
+    "blueprints/roble_copa_ancha/1.1.0.json": "2e164488970e7eef6c621d13491a1fff9ce903a0dbb9f337030ecf0aac996e38",
+    "blueprints/roble_copa_ancha/1.2.0.json": "d2edf70b89405cfdf5a7c4bf3a867849421fde08456794b2a46f7814788386ba",
+    "blueprints/roble_copa_ancha/2.2.0.json": "826bb39901fc32483d5b0f35e7248e77d4743b069dae4f445c6e823360c40ba0",
+    "blueprints/roble_copa_ancha/1.0.0.json": "c43864c26748f38e72fe6a74e1d645783d1b5fd24fb86c2fdd28ce899c133f0c",
+    "blueprints/pino_conico/2.0.0.json": "4c629ed41bd521417070e2c5ce4d01090e7b839749b1ecf787b7451816f11b40",
+    "blueprints/pino_conico/2.1.0.json": "0059033426243827cfdb3c6d4cb89a472cac9d51610fc88b6161e779d5cc341a",
+    "blueprints/pino_conico/1.1.0.json": "c9250892c5178f328f01b229243d9dac9170aee1037b813981528784f2ddc93f",
+    "blueprints/pino_conico/2.3.0.json": "507423c05e3b9461a1f1f07b9b6683d4c24eb435f4c14e7faedac6449bb27943",
+    "blueprints/pino_conico/2.2.0.json": "35dfc98a87ed3cafd10d630212a4cf2873f555ae077598cb6f62513f60906e3b",
+    "blueprints/pino_conico/1.0.0.json": "a8248aab66a42d3d4790842f12f79942e503fafcca743765bc7989dba75ee959",
+    "blueprints/sauce_colgante/1.1.0.json": "7c15fcf51b052b64119dd1083f6666ebeed2fdb098eb4ed15fe6c33348c8692d",
+    "blueprints/sauce_colgante/1.0.0.json": "f6b925eaefe42a8858e0827796fb37097097cc85cc0f8c45bfd614d4243aa134",
+    "blueprints/arbol_copa_columnar/1.0.0.json": "5dc770bf8842b9912d2c346fec176cf57375ce3bf3ba50c8df4b229353faf193",
+    "blueprints/abedul_pintado/1.0.0.json": "6435dac51ae6ab4eeab3d22d5b74db44a5a9e8d6cb70eadcbba3b398014caceb",
+    "assets/roble-pintado/v0.1.0/manifest.json": "5a94720e4c1efc3619c2fd9585c46c20dd4085c9e8ee75f637a3d83a21b0600b",
+    "assets/roble-pintado/v0.1.0/foliage.png": "4933ce70b2462a7a66642e12584af68fe6779eaefc49a03b30e58731371a5934",
+    "assets/roble-pintado/v0.2.0/manifest.json": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250",
+    "assets/roble-pintado/v0.2.0/foliage.png": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d",
+    "assets/roble-pintado/v0.2.0/prompts.json": "90f34ad4ca670285dd8005f6b1c7fd25ed0f2472dd99aacb8124781d7aa4aec8",
+    "assets/roble-pintado/v0.2.0/bark.png": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a",
+    "assets/roble-pintado/v0.3.0/manifest.json": "4dcf240fe389fecc831786bebb280c5862f3ff3dc0bf920ada440cd00c7ec4a8",
+    "assets/roble-pintado/v0.3.0/foliage.png": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1",
+    "assets/roble-pintado/v0.3.0/templates.json": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f",
+    "assets/roble-estacional/v0.1.0/manifest.json": "e52e176a5f9ea022fdf4d1ec6196c47a678daf317bf9e3141b1957b4c123304b",
+    "assets/roble-estacional/v0.1.0/summer.png": "069cebb50d7cfe93fea486ca593495aaff0d43fec311feeb4949480fd6570dcd",
+    "assets/roble-estacional/v0.1.0/autumn.png": "9bb6462ff83010b9631e08a853ae8264d3d8b98cf856310ac59428337173a4ce",
+    "assets/sauce-pintado/v0.1.0/manifest.json": "1b55e6c85a6c42efcc5911a5737528060ddb208790fb481265cee2ef59ab1d22",
+    "assets/sauce-pintado/v0.1.0/foliage.png": "c0993c9e4d59c67865d090520db673ed6fc8051cbb2c28431d77287146a4e869",
+    "assets/sauce-pintado/v0.1.0/prompts.json": "e3cc44c472e9b2e232090f75a52c67386048f7e84f1d6fe668da543a519b14ef",
+    "assets/sauce-pintado/v0.1.0/bark.png": "1ff5c81624d4c3fa8c73105a0889780c460741a17eb41a6a7f6ed450b190cef0",
+    "assets/abedul-pintado/v0.1.0/manifest.json": "97487c0fb3c0b153db811e6468e97ee864937d6d5d3ed67c5762c83ade6f044f",
+    "assets/abedul-pintado/v0.1.0/foliage.png": "d8073caf5f1b220f702e654392340a7defa8974b168cc8562fb1ae2430c388b7",
+    "assets/abedul-pintado/v0.1.0/bark.png": "f3c10c3608b10e44a683baed82074a82a4fc996936ba2ea3216a36abd76529e0",
+    "assets/roble-otono-pintado/v0.1.0/manifest.json": "477fd7346481daead62a7d583e79ae03ecc066bd3b237969335f0bb7abe1d7c9",
+    "assets/roble-otono-pintado/v0.1.0/foliage.png": "03c4611fac4a0ff8cfb80a820fbce824496dea4b5e12a40cc6059ecf1d26284e",
+    "assets/roble-otono-pintado/v0.1.0/crossed-atlas.png": "8196a1291adf2270b2b453324710031442b1a94f9e4f35d4741057d73f0fabcf",
+    "assets/roble-otono-pintado/v0.1.0/prompt.json": "73eceb6eebefcdba268dbd1d0d3c705c5330da86dcacafce19ef40b9ee3a4f87",
+    "assets/pino-pintado/v0.1.0/manifest.json": "069d6f041c28f28d0ce99d71f81ed3df0e8d3205941181b68efaa8ec0dcecf0d",
+    "assets/pino-pintado/v0.1.0/foliage.png": "6b47402fa103be09286f7d7866998e56ffef344c9d69caa018f46fa2c643ae33",
+    "assets/pino-pintado/v0.1.0/prompts.json": "56e1cf5b2ca32a0c69233a198bdad40588baf9b9f596b2c41ef58d0e7f2136be",
+    "assets/pino-pintado/v0.1.0/bark.png": "1d68dad6d88d69a80c615f8ffb409e13f87cadc57cd3c2ec1e6c87ef9310799a",
+    "configs/verification/oak-painted-v1.json": "b8bfddd4077d699480549b945704ab24503c48bae63c9296523b8634118c82f4",
+    "configs/verification/b3-v1.json": "a6bd5e85db72ab675beddec888da5db270beca6eb8d8497ff3fd0895adf27187",
+    "configs/verification/pine-performance-v1.json": "51f3976f7cbf19155574e35fa559b07bf8464f6f6e6d71194d4b3933f24b81e6",
+    "configs/verification/pine-v1.json": "6ab8a4c45840741f7f300a2d72f1be610476febc962fb53be1b94b2776218f8b",
+    "configs/verification/pine-painted-v1.json": "2744349c15cf859884f11c3b0b2bf6c18a48131a2e997cea463d3e71860cf8c2",
+    "configs/verification/b3-v3.json": "271925af42fb12047f80af3f08b94a5f5de561b579fdac8e1c36f636416468f3",
+    "configs/verification/pine-painted-volume-v1.json": "76e28b25465c4ef48a73ee9adcb5b19f4344b8e1e936f9fcc741fa3dbabd1553",
+    "configs/verification/pine-v2.json": "f21065ec4002b23cf6bcc183cc7687fc4f72a3a170a142d6914f26392a7c0f27",
+    "configs/verification/rf5-v1.json": "3897a9e55d269454c9a1e7becf11fa600e4684369e69678bd0d32b68cdcf4a87",
+    "configs/verification/oak-wood-v1.json": "779db78f74041cf0d4ffd2fab7ff6db7b3872074bbb9553e228344db7f3b72a0",
+    "configs/verification/birch-v1.json": "0973a315b4aa630ca8857b98b861052e36d7eec9f072e0dc51fab331ad2cc1b0",
+    "configs/verification/willow-v1.json": "1be1b874ca1ad4b3f9d9ba7fc4fd7e4fb09ca1b0f5f62b0b6195cbb0332a900b",
+    "configs/verification/b4-v1.json": "246cdd414cc66c14e064f38e0662370112639d70660d0417fd0a4b5297a6152c",
+    "configs/verification/f4-v1.json": "f2f5d2ecebfca4a3ed091830a475d6c3f8ae2bb770bcd9a07c6d128b85d52f36",
+    "configs/verification/b3-v2.json": "9e8edc9f2a21dbd7f99c6fab8bf24ab8d5b55eb746f060defee63c934be8a700",
+    "configs/verification/willow-v2.json": "011b40a354ab22a6105a9bfda416bb8b54072a4531cf96cf3f2f5ac3fe71e394",
+    "configs/verification/f5-v1.json": "09eed1d75535be43280530c523749f28ab01805498f3b81b0e52d95808dc3781",
+    "configs/verification/oak-crossed-v1.json": "b7e64d35aaf9591594480f3f7baa0a139723d89023e5e905815bad68ac816550",
+    "configs/verification/pine-painted-wood-v1.json": "8c53bc869d8cdd0a2cd9caa8f2b391ae1c53263da6396c189389ed19d09ff0cf",
+    "configs/verification/pine-painted-cards-v1.json": "b03e57294e2134559c062b82711a384c73f246281e41e142a26cbaf7bc6f5cdd",
+    "configs/language/f4-responses-v1.json": "1a57a6b8f6832d2debd043bfe0367f9a4996fb5b6864f047f567f9fd83f810a5",
+    "configs/seasons/roble-mezcla-v1.json": "b45e5f33e8fe9881173e8fa2a49f6c5f071848957cd565ee4966917c9ac4dd29",
+    "configs/seasons/roble-otono-v1.json": "42092d78a454d23d2cab5fca2e2f1e69438a3f1f3d071a3335df160bf3130b50",
+    "configs/seasons/roble-integracion-v1.json": "d8dd19c872998f840724df06ab13552e8aef3a0cc477fd36a8162aae067da1b6",
+    "configs/seasons/roble-calendario-v1.json": "29fe9c9eac1637d4b0349fa8d2bee792d097cc1e6ace892c064fdefa6db04d4d",
+    "configs/inspection/pine-painted-pp3-v1.json": "dcb1d61c81b94160c4f6f4667d2a38d69a7e798f4c5cc09ed3a6b232c4a28240",
+    "configs/inspection/rf3-v1.json": "3fb996a19aaac827c42d07ec4c22bc46acd34b17878e2610fe33031c35eb6ada",
+    "presets/adulto.json": "48723f6399b050d3f71ea8b36a227c9e16af45f6de02f9d8534b11c3f8cec9d1",
+    "presets/foliage-molds.json": "5e08b402d90a3ba27cec63f79a7f90c56a4f36c167314abc97dd44e535d35d7d",
+    "presets/f2-cases.json": "4b93c7890d97fb4a7cf2c22b71f717992036423bdb0460ba6e75917c9cc83a07",
+    "presets/q2-controlled-cases.json": "e9be797d8f32ab89d1cf26ef170b312c0c70842841abc4ed6ef501eb2112e04d",
+    "presets/foliage-canopy.json": "17347b87f7145fb6b83c7a87bcd4868c0c503111488cc33825de53c58e513e14",
+    "presets/q3b-cases.json": "5eddd94d3e021296965d92ca215b3ffce4b8e55c63c846a63c4f1c1edf6566d1",
+    "presets/q3-cases.json": "46d351c3602505690d17dc8af17ed1463f8535ebea3c7f8f52191a6f7bc2dfc7",
+    "presets/q1b-cases.json": "1e9f43ba73afabb79f647144b19b174ddbf98ca0ce2a3da837e7dffe745f3844",
+    "presets/q1-cases.json": "4b9a92ff64cb70a2502e88d005fc093b2f9008fa5b919ad586ed22fa93bc9ca8",
+    "presets/foliage-branch.json": "174604fb4dfd1753feabb5c4820e3cc9bd0f15eed0ee16ad6dd56ce923e77f25",
+    "presets/foliage-unit.json": "9f2fc84ea90fa48410f842acf07632e05f140bd2b6340abf14065d0ca4b8a2be",
+    "presets/joven.json": "09e46c01840716f6c4a373c9e46ff495ea5778243209cbcddf2523813493a338",
+    "presets/viejo.json": "4777c428be9322a14d390d3f84edcb87b2d204576bdcb3105a330ea4a817b044",
+    "presets/foliage-mold-density.json": "171dec5a4840cec320e51da896a23ef1c86bc0185adc8771b0191f092bcfe724",
+    "presets/addon-comparison.json": "4b1f6f9d0caad0b9fd689add5c34dbf76462df426a19ca53b968ee451eb54009",
+    "presets/foliage-twigs.json": "5ad702ee03f6f4ad5c53cb0724c87c255341591868121bd2e407edda4f1e88c9",
+    "presets/q2-cases.json": "339ae90d32cc64fd564dca24afe635fb8b9cca458015fedcdc36c7e9bb11f48d",
+    "presets/v0.1.0/adulto.json": "32626a8c38adf6c5c4487d712129eb13630528bc8fe1336df9ccd5433999476a",
+    "presets/v0.1.0/joven.json": "9b81372cedd2a0e40f03ff60441aa800f953af5441a409f17b0bebc362483dd3",
+    "presets/v0.1.0/viejo.json": "648e8aea734fa59e62b30cdba97448f9056a31b8a168a2bfbb9bbee88173a526",
+    "presets/v0.2.1/adulto.json": "83b7ccf4df862d4b0074ba76009c2e4116248a63d6fdc9b614e3feaeaa318809",
+    "presets/v0.2.1/joven.json": "732e7c9ace03678cdb3cdfc2df8ffc90f652bcefc1b136fabf4fa7feed86c46f",
+    "presets/v0.2.1/viejo.json": "9b041121eca7ea1fb326cf4c72a0116965c33615e26deca6d27c6dd15396ed26",
+    "presets/v0.2.0/adulto.json": "144779f4b7528b6d6e5494a68b40a2ecb3009c18f386a62deee5f436eb3a8f7f",
+    "presets/v0.2.0/joven.json": "15d66ada2780d9c2d8ee772a55e02a7f7cc5bfb4697ecacbbb974b79b92e470d",
+    "presets/v0.2.0/viejo.json": "18f3e408fa216ecbe69caa092680e6b6a1d48570332d7c5f312bd8f755dcaadb",
+    "presets/v0.4.1/adulto.json": "4d16125c302b01e78296776a74cc17c5ab80bd8fba11875106e009a2e45e7d12",
+    "presets/v0.4.1/joven.json": "bf605c2a5eb0ff60c844c43f23ba13cd8f2b8187f1e356b27c13716d149057dd",
+    "presets/v0.4.1/viejo.json": "0a924098250af7bc41f2430eb8126edcd34a85ec35cd982b4d79501215559321",
+    "presets/blueprints/roble-copa-ancha-viejo-09.json": "8b8162adbc76bd0f94637543130ae35205456bc6b2facae2d45e773d7133a9cc",
+    "presets/v0.4.0/adulto.json": "48723f6399b050d3f71ea8b36a227c9e16af45f6de02f9d8534b11c3f8cec9d1",
+    "presets/v0.4.0/joven.json": "09e46c01840716f6c4a373c9e46ff495ea5778243209cbcddf2523813493a338",
+    "presets/v0.4.0/viejo.json": "4777c428be9322a14d390d3f84edcb87b2d204576bdcb3105a330ea4a817b044",
+    "presets/v0.3.0/adulto.json": "741ded4769e638f7d5f78f4ed7ad0cbde445eab1a228977a814cb4e817b3bb5c",
+    "presets/v0.3.0/joven.json": "9069be9b344358d26f3b66edfea59dd2c55d8db9c7aef122bd69216d640b494e",
+    "presets/v0.3.0/viejo.json": "4a04a46aadb04c2675fee069c20f38cad4bec9d1a4d2ed96c003c8157b9b2878",
+    "presets/blueprints/pino-pintado-volumen/pilot.json": "f1fedfd695c47c4a40ed7853825be36380446e119cdb7482625974b88e200b0a",
+    "presets/blueprints/pino-pintado-volumen/control-01.json": "42c0a43895f993a6afc3612f676d28616c1381161efeb3118aeb919e85b027d4",
+    "presets/blueprints/pino-pintado-volumen/control-03.json": "d89548db45fb3c7827aefce4af0b5001b5e9e8d00110bb6a1530a4a6e84dd1a5",
+    "presets/blueprints/pino-pintado-volumen/control-02.json": "2ad49e78d314cd4a74964feb6cb0ed7861fb3957b57a8a992af24749e32760b4",
+    "presets/blueprints/pino-pintado-madera/pilot.json": "a2f21ebd0d6682004f037d8f3bcd5e8bd2e54f7a75853b9d7319262802a7819b",
+    "presets/blueprints/pino-pintado-madera/control-01.json": "630344eb973bcd5428974cdda9518d0a209558c4cbcf8386da352f4f2852e588",
+    "presets/blueprints/pino-pintado-madera/control-03.json": "4086403564225349cd3e42ed795acc27dc7bfb7a0c8af5661e8643fbd63d0438",
+    "presets/blueprints/pino-pintado-madera/control-02.json": "c5b1ce7b726cccd2747f1d49051e477e9f4dd379c322f8e8b46bdcdba20bc6a2",
+    "presets/blueprints/pino-pintado/pilot.json": "cb997f0c87dd1bdb7e50cc4680a861be3173f7b56f65182052adadd3b6311de0",
+    "presets/blueprints/pino-pintado/control-01.json": "dfff8e7b22a32432868016edc82f598b016a065ebe46c13ce5166428a757dac0",
+    "presets/blueprints/pino-pintado/control-03.json": "642ea384ef4544fa77cababcb41f44178c0723aca279fbd03fb13b79e72d9ba2",
+    "presets/blueprints/pino-pintado/control-02.json": "4b2fc9dd64cc729eb26ff4110a563febed5cf5cc2972daf5c5c0702f0717dbcc",
+    "presets/blueprints/pino-v2/pilot.json": "21a1aba5fd65d70adea87fca44f1630f38b34c33e12a7fb1703e9b3ceb6b2f51",
+    "presets/blueprints/pino-v2/control-01.json": "91c0680a93c9d15361aad335fd18a8258e9eb1061e818da927139b97246c5e68",
+    "presets/blueprints/pino-v2/control-03.json": "318f57c05dce5524cc26ee47d5d469c57372806927a27063100b88fbe0a5e3a2",
+    "presets/blueprints/pino-v2/control-02.json": "6c54d51e7968cadb179d3baf8e96e6ffc8b6aee5c3bb89b6997c8dd19aa5bd75",
+    "presets/blueprints/b3-v2/viejo-00.json": "0d1442069d6a015081458797f3dd94dbd14987c52cecafaf381b37d090a61196",
+    "presets/blueprints/b3-v2/joven-00.json": "25f5d1541ab51ec0ff6f01171f4d8531fca3908c7df9720f4511b6fa7a08f53b",
+    "presets/blueprints/b3-v2/adulto-00.json": "135465d11aac078cb7fcc942be4d98b3cefe172cb5676f02f1368ad6ba83ff38",
+    "presets/blueprints/b3-v2/adulto-07.json": "ec548d05ffb158272320fc0e76ccb528623ae343385c1a2659b18d68e5ad8046",
+    "presets/blueprints/b3-v2/viejo-07.json": "f2447f084a9d45aef41af76defbb5334a1b75463712f4fe00a97619ff3cc17e8",
+    "presets/blueprints/b3-v2/viejo-03.json": "5c42ad14cd1621643eb287f385ae35320984abd64b6fa0b801c2510c54ff5239",
+    "presets/blueprints/b3-v2/joven-07.json": "6771ab03ef8c1d76173ab5485a82eb2378060aca50e573088a1f7d7dfa89bbee",
+    "presets/blueprints/pino-pintado-laminas/pilot.json": "274fe658799c0c2fc8e316e2c65db67e0ae4064e5cd7ae4d1a9223421ca46661",
+    "presets/blueprints/pino-pintado-laminas/control-01.json": "f7703abbe4e46347ad82180f757ba0a709b1a8963f2f6bca90b11be72a1f22c8",
+    "presets/blueprints/pino-pintado-laminas/control-03.json": "db60aaabf4fc9ac8ee1a31d0677fdfa4a5ee8401aca913eac5142b1a609b7925",
+    "presets/blueprints/pino-pintado-laminas/control-02.json": "1f7f95c280a91829c770f73e95e54292cd3a43b3c0de7563049d47d79fd02ca9",
+    "presets/blueprints/sauce-revision/pilot.json": "f6fb264d8cf2a5bb5693f5ddefff9e599d0e430533ac49a8b0491fc5b3207548",
+    "presets/blueprints/sauce-revision/control-01.json": "172d2a9f86712f0f2913e8e481cbe7c4ecbc2247fe513d97369b5a7137060af7",
+    "presets/blueprints/sauce-revision/control-03.json": "725b25e07d8c881508cfabb90af68c6b7ffe5703dd94dffd5b08ffca02397961",
+    "presets/blueprints/sauce-revision/control-02.json": "f90174aa668a7f50fc1afb63cac3d0c010e9c117a35949f9665886ef7178d500",
+    "presets/blueprints/columnar/pilot.json": "be5de26f752071fd61921dab0edb65ca8fb8a8bb2849357e43263ad9e80214af",
+    "presets/blueprints/columnar/control-01.json": "a240d5c41053c50a8886ca1806dc37323fd1c8604a1d7d186e01ebb13e1be56e",
+    "presets/blueprints/columnar/control-03.json": "c4b525f58119d0ecb6ff5e529b6e6441d025fba543b3c6a59b9e3b4fe703c896",
+    "presets/blueprints/columnar/control-02.json": "c91087c593270d215904aa024ed78a0ec18e5f64740b07fddd5588721f2e3106",
+    "presets/blueprints/b3/viejo-00.json": "c4f05db9113614a09a9a1bceac35783d19e81e8061fa47f461fa663dbabf0ea0",
+    "presets/blueprints/b3/joven-00.json": "32dda6091e3423929a7133c62467ad5a61284e14ab4efe3bcc236870ac2c9e88",
+    "presets/blueprints/b3/adulto-00.json": "14b8851e1f8043e053841dbe6a34bfeaf02f8fe1b08d9106572bac73b4c32b14",
+    "presets/blueprints/b3/adulto-07.json": "8b534977221f5b59742af62735c8418628ba3b553f5b147315da6a95bc3e3780",
+    "presets/blueprints/b3/viejo-07.json": "aacbae8ceec5fd42013907f617a4f5e66b7256135b401cb2e599a18bb87c5cba",
+    "presets/blueprints/b3/viejo-03.json": "d58723816f16aebd937585c6f29757719f3361620a7d671a1daee6e91e787e0f",
+    "presets/blueprints/b3/joven-07.json": "bcf84658e1c43d165998213632d001cf126c55fadda0a35b5b2868b38ef0a5b8",
+    "presets/blueprints/roble-madera/pilot.json": "f29285b0c934246cfbc64337b31002149da5510cc716fe4fb02e56c2e95e43ed",
+    "presets/blueprints/roble-madera/viejo-00.json": "4c35cbb9a03887769d3bd1422905ae1c07717f1c59cb25c6970dd953b79de124",
+    "presets/blueprints/roble-madera/adulto-00.json": "2704fae76604ad2389d1bb09c503393e8e596c030f95d047568b757e094759db",
+    "presets/blueprints/roble-madera/joven-07.json": "1d3f08edf3f895d5810af5cfb665c54953ae737282a09769c17a3b94da8f216a",
+    "presets/blueprints/abedul-pintado/pilot.json": "fa76509b861ce85844a310a04a5854e6f5e710da41b05770a7d10f11f1a8cab2",
+    "presets/blueprints/abedul-pintado/control-01.json": "90df6d0f700c6ba79cf90baac303e0300254509e2bb258799b9effebdd9022f3",
+    "presets/blueprints/abedul-pintado/control-03.json": "e0162f1c157d716245f5624a0ee15ed3d727c65fceca7f9a0c812512af8e325c",
+    "presets/blueprints/abedul-pintado/control-02.json": "858884ffb517cda26226a97c65648c0cbfec1a7e52086b11a007cd3d1566d345",
+    "presets/blueprints/pino/pilot.json": "2348adf65262c1024e7bb10d464bf52ffb76106237dcf9ad034d9e1198297a84",
+    "presets/blueprints/pino/control-01.json": "3693132c6d08d98ad65c1e376614aeb4b3c4fcceffc94e7d8965ef4ba5f97982",
+    "presets/blueprints/pino/control-03.json": "5399a27112172012ce699522c3d6ffcf1d0ebc22db780b492bdfae3a3624572c",
+    "presets/blueprints/pino/control-02.json": "615a3b00da3f7bf0bcdb8175e7218bc8de31dff035bada6bd1c724193edaaba1",
+    "presets/blueprints/sauce-pintado/pilot.json": "23f15029f028a4f480bb9782e4741329e365ad092ee6b5d99aa730536fbb63f7",
+    "presets/blueprints/sauce-pintado/control-01.json": "6062b07cd801c9359cc061f0e77fb55b971f6a57fb46a0facef81bfc4a7147d8",
+    "presets/blueprints/sauce-pintado/control-03.json": "44975e0e4b079f7f586cb9176f500a92faad58c4143dcb0a3ff7ab5d4001f945",
+    "presets/blueprints/sauce-pintado/control-02.json": "b8431a82bb747a4fa9819d7ced7e0e2667ac65966431ca80dc129890981a944c",
+    "presets/blueprints/roble-pintado/pilot.json": "2c28ae532cabec06df2c15329a525e445dd981a44d5a0ee658d990acebb73d43",
+    "presets/blueprints/roble-pintado/viejo-00.json": "8d22b02a4f8842b05a457db2f09ae496b7a9d60bf3154ae2c7bab91ff670121e",
+    "presets/blueprints/roble-pintado/adulto-00.json": "bcd5708e9daf4ef9e85880c3be9e4e4e817a322cc766307d5002c4d71de0fdb7",
+    "presets/blueprints/roble-pintado/joven-07.json": "fc5af464ec100779c0a6145a2e1f0939d0ac43e753b868001bb3211ce5d38f36",
+    "presets/blueprints/roble-cruzado/pilot.json": "602fbbe13825419c2e64d76d2da0c0697edf27f3f4d3c408aaddaa0d316aaa86",
+    "presets/blueprints/roble-cruzado/viejo-00.json": "1b6c1dd0c41d2c1777ceb92aa7a1f2b167cced6cec02b95b2db3155cfef27244",
+    "presets/blueprints/roble-cruzado/adulto-00.json": "0b662f6e455f441d23cb571a7816ffd6acb57b81256bc22ca063c883c56623cf",
+    "presets/blueprints/roble-cruzado/joven-07.json": "645f70a6f9ba7d36386f39b75702cb7d0d82df643cb901ab1ba52d959cb2448d",
+    "godot/willow_sample_viewer.gd": "95071ba7f8eed6229362db7fed1e3c24cb59914ce5446113363bf539454d5b05",
+    "godot/review_season_bundle_resources.gd": "85ff86c391e8d4168315c9354b9ecb6163c69843f05fcffc04d893ef7ae2226b",
+    "godot/birch_sample_viewer.gd": "e20678795b7b199f7852f716dc534cd35d9e0055fab39f858d0842492c45235f",
+    "godot/verify_probe.gd": "6306a877341815adfdcddf6c8ef37f5b85de675d506209c3b1b365b571c7c4a4",
+    "godot/autumn_paint_viewer.gd": "1bd26e262c0c5e9dceec9e9ad7c0062cd0e13d5d51f63320ea7c63a9a09f462a",
+    "godot/review_autumn_paint.gd": "48354dedd169344280c8391f74624021d97a9825cabb24360fc54600456309f1",
+    "godot/canopy_normals_viewer.gd": "0259c1987baf72abb638dfbd2746d11af42874b6d093d640b29689ae81504389",
+    "godot/review_willow_sample.gd": "57045f058853160ae4607e2367588fb036b0174c07396c177cae4c11472906a4",
+    "godot/review_birch_sample.gd": "ae3efd9d9a1355f47e73a409f9bbdb70755c1a7bdce2ad5696906937b3cb95a1",
+    "godot/review_season_atlas.gd": "8d0f8e118c7af5aa29c05fb5735b83f8b5f1106527a37bac470c5a352e2f4b8d",
+    "godot/review_painted_oak.gd": "6d2adac8e072f0488806e59808d8d35daf5dab5f95d74552760846bc0d9b9249",
+    "godot/season_bundle_tree.gd": "f3f36553dae6d9dfb580601de037fbd44ea4a9b22951d017f0431ff1119ed349",
+    "godot/season_bundle_viewer.gd": "fc939539c24236d275d5e3a4ed64942b09396de27c299c8defc340ac3174a982",
+    "godot/review_pine_painted.gd": "b1f45aaf9d55d50ea87c8f7ee92f4d191776d34b16e9629715b29263c2015c41",
+    "godot/canopy_normals_scene.gd": "6de01dc4c6ee391a75c8eff9035a59f772286193195c3f72ffa323b08d0821a9",
+    "godot/review_paint_transition.gd": "57ec5090341725c3a828b80eb501e3c5109143f401ced67ebd4f316093d5f107",
+    "godot/autumn_painted_asset.gd": "1333ed0ff223ceb2c7ff408a504953e9c80154de1a64e334ea52bc07a3b295db",
+    "godot/review_season_bundle.gd": "74cc81dc80184efd78568660eecae00cbd2bd304b294a8b69e36d5debe206a69",
+    "godot/review_seasonal_tree.gd": "f8188eb943d35b55739178a66281e438a272a8d0817e9c633342142b2cdcb8c2",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "godot/project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+    "godot/painted_pine_asset.gd": "3c39d07732f1885c02c351b41261965e4193102b86906b4089cf788f93ae3cad",
+    "godot/seasonal_tree_viewer.gd": "85c0924360e73e246e2bb7ebd20c32aea9f463310dd412b3bbaa9f1f37f01b82",
+    "godot/review_canopy_normals.gd": "261488da98b47d84e78f966db04b8f687575d952802923520939d7d0f17133eb",
+    "godot/verify_foliage.gd": "640b4d99ddc5e6d4c323d123524683ea59be3164eddff82d5fa9a326336f7dd6",
+    "godot/willow_tree_viewer.gd": "b3d7f0ffea93c259ccf9dd7067a2c48298e7dd5a77e898a347b9c2f1eda318de",
+    "godot/review_painted_pine.gd": "bed67a6165a424d698c6f74be08aa2d631294e22da9fd6da4916ff67bb746439",
+    "godot/verify_addon_comparison.gd": "c6c11812c82b54f0ac9d426d4ed58dd858314a9a7cdb0e177d8c9660baa17ba2",
+    "godot/painted_oak_asset.gd": "c013bf82c3d79ab689435055d115d3c320a238250540f3ee4da3d07750353222",
+    "godot/benchmark_painted_pine.gd": "797b5f13b8e6418b14ac250cd57febbb2da86d000bd2328d4d674c9a4b527d6d",
+    "godot/verify_foliage_twigs.gd": "81075c2033ceac65864e27c617852cf3112d0cb4b9d2277337d426ae3a5197c4",
+    "godot/seasonal_tree.gd": "606b57f8e8c55617ca49c876b8e4ef73ed54e8709d446c3e13a2a964f45a4043",
+    "godot/review_season_calendar.gd": "796ed50fc6e1efd1a3d4a1328882902366f26f8f790f8eadf12ffdebb417a5e1",
+    "godot/paint_transition_tree.gd": "7b16f420df6941d7c86304ca520d90209037a7305409774ad14c7b683debb00f",
+    "godot/verify_foliage_molds.gd": "fff8c50b3c359fd50ab38c8bb77b9c73af232072c5fcae4dc8acc3997a802683",
+    "godot/paint_transition_viewer.gd": "fdbc821ff038147b7df439936bc976bb085d7141ee548ca9954c3a0f8e730e90",
+    "godot/verify_foliage_branch.gd": "22673f167c8d198f34ffe4411554ce7ae69cf29cb9effbab941c093f53b13b1b",
+    "godot/review_painted_oak_pilot.gd": "0152c9300d49f20c78c7d10b2d7c7648fba9e86bb7cc46b0d8138129e9aae24c",
+    "godot/birch_tree_viewer.gd": "d5655474a02da356e0515c1a52720dd357abbbf0c797a316a23b0d644d79c347",
+    "godot/verify_fusion.gd": "ccf532928646c62bf8565e1c1fc77547d506869296db8941c5fb0de94234d86a",
+    "godot/season_bundle_scene.gd": "dfcc56b84c41eda7ce0b15c76b6485e875d87dc5b8a7f21f0528dcb4db058d36",
+    "tests/test_evaluation.py": "5b154f6f532bbdd3b293bf997e45cec45f9852314fc91e2076f4841d965723c9",
+    "tests/test_foliage_branch.py": "59b159f864ed74b0156bb25dd0a41c03d3060435857b67ec03dea2b661c33972",
+    "tests/test_pine_painted_review.py": "d72f14d2c93c3c3063d11ef140daf05e06d9e1352f11dbef125d0bac6ae82296",
+    "tests/test_willow_v2.py": "29ffc568fd7733a8e78eb18c7aadf972988d5cd30e7183475b46e25f4f84c8ef",
+    "tests/test_foliage_export.py": "695c5331567bac99bfb5447618ece50ff9272a0be3e6e020fa976ed2fd918f03",
+    "tests/test_crown.py": "880b60f24af09db101e2954ae00770aff59a297fec778b0380c78edd3bbf0229",
+    "tests/test_blueprints.py": "a95a1e40e9e42f83e42f9cd76893d6acc059b54b1a74da9e7d0c360e1ceac7ad",
+    "tests/test_foliage_molds_evaluation.py": "a84f4953a9fdb23ceb3a2a54b4791ce52924b79dc2d79e640701fd1b64f16b96",
+    "tests/test_season_calendar.py": "fc0ab69e611910da04dfbc6229144c3b00a21fb41c6fc85e95b17e9d164716b0",
+    "tests/test_oak_painted.py": "cff4e909859578889237693d649bb8476b12fb0f3b3f28acd1dbb361f8ca6d07",
+    "tests/test_surface_evaluation.py": "4de9efb4371164d1a5850e5b21799ca622662ac3c659239faca00d912ac098ef",
+    "tests/test_pine_painted.py": "aba06557a64ccf9a7af7eae4fda2b188d6e48f2fe7cc0a0fb0df00eb4844338e",
+    "tests/test_willow_sample.py": "f963f5cea3bbd182999a90d02f836f6bcd6f77c647b0b3bcb80707a308c682a6",
+    "tests/test_foliage_molds.py": "29b2cc10e7fdaf5b23763b57a80aa0c25c984f623487bbd052068a7e4d3f8c7d",
+    "tests/test_branch_space.py": "25d7a141d46e2528f67e2a90ec4ae3d74c4e817c98ba0f6b7d84b133496641c3",
+    "tests/test_pine_painted_wood.py": "f6fb587a9e698d4cc998d3be75b02be2829b121dc227d94ef563971221b413f2",
+    "tests/test_oak_painted_tree.py": "b93df3515f96e8a20c2d8bb3a82888b1daf2a1cff1690012173b7992d0002c85",
+    "tests/test_execution.py": "88bf66c292a194aeefb7113d187d6c8a9702029663e7a91358c15a19b85611cb",
+    "tests/test_seasons.py": "a1c7e8ff4fcfffadbe96e7a8732a542341e9861feb5d6dd2341d32370143e4f9",
+    "tests/test_language.py": "86a67084195458e045634204bdad01605e588754948d639cf21ef6cd403f631f",
+    "tests/test_pine_performance.py": "67663bc492db335791b99073b9f6a45a05b53fe80261631235dc8600e3c0c4f5",
+    "tests/test_second_blueprint.py": "1d71c90a93bdb61b1ed14cd69163f7c99ef45734ae93796281361926e1539dba",
+    "tests/test_willow.py": "0f8ba7dbfb37847c6b7d5d4e9ba19c9b2a497711dde8fe499f7b646c78376e06",
+    "tests/test_foliage_twigs_export.py": "5b5d65757829cc820b534ca15e044fa68a5cbdb7d6b25e941a3d489a51400b7e",
+    "tests/test_foliage_branch_export.py": "f587ee6677578d494bac628cfc145cb618b2f56da32ccc1472fb3a589a396511",
+    "tests/test_birch_sample.py": "5db97c0d418283ea1373d19b21fc161ee9a82a1637c98afca58cbb8cc1a209e4",
+    "tests/test_canopy_normals.py": "c19094b3bf60d515930668371f1b79bc206a1d9bc78ccf60f9b7ac100971d16d",
+    "tests/test_pine.py": "098b4f462d347260a59194fd043f93bfa414a7300b2e2b17ec1f0df404cc255e",
+    "tests/test_pine_painted_cards.py": "8ff78abf87f9e6139daa654f249f8572e8e0ee2e301b22478c2c0300b869c62f",
+    "tests/test_oak_crossed.py": "c34fbd44978220862a2db998f3fd04316133206379a7dbaeb8d9758fcd4dfa1f",
+    "tests/test_season_bundle.py": "a0e5014e499bbe5d503cb96499b3f820ca583dd017cb8d65a01a9525e54e7c11",
+    "tests/test_oak_crossed_production.py": "1468af02b1cd4eacc971c89187270d327deb7e63c30b8444bbdc1b4665e8dae3",
+    "tests/test_foliage.py": "2947cb5ec6a07d74f9a7e8e2c2e658559740e46530db989386b5877c58a1dee2",
+    "tests/test_oak_painted_sample.py": "e8f3be15023061afa040fc2c11dd3b2a7926a784e459226d8f5da1b2048b8a3f",
+    "tests/test_contracts.py": "2138a1633de87b733f667d23ff309d2d3ac33b0a23e30974726add8a44a2d255",
+    "tests/test_birch.py": "3e4301b1821a39671bd1ee38c48692f256c12343d50b4cddb64cd0077b6d8032",
+    "tests/test_seasonal_paint.py": "9ae9e64b31233dddf7de28deedfd4b0484cbe259d3ffaeb35460fd90c5de7918",
+    "tests/test_foliage_canopy.py": "ae6a18d7a843ddb2f6bd9c4031ac51c8978583caf7151d7b009c8aa1aa0c2d9c",
+    "tests/test_season_calendar_glb.py": "3e6adc2ad3918e221d1421163acb99e7be585980dabcfd45e18f43acb2c697b7",
+    "tests/test_season_atlas.py": "f46fe3d325e1b7f3618cadaf920c1bdfe880eff6c1faec6d9b1b4507e69585f9",
+    "tests/test_foliage_twigs.py": "d23a4834bb2c92a945295e0a50f9f6c8ae60ede5eafd35d5b1596aeed0e52f46",
+    "tests/test_rf5.py": "3e4770e7086be0ff743559d580e442a0289fb75191c9bed64c1d39dc57c3f652",
+    "tests/test_pine_painted_volume.py": "19dfe8479c57dc4d68eb8923ebe78c78966304a9da3af847f05891b987ae0d49",
+    "tests/test_oak_wood.py": "8b1e34f3b99949d866ebb43ab941b67a648bb94d46335a724573c4b21a9b2f5d",
+    "tests/test_quality.py": "f8ebba9d15a926a9d5824e891175a75d231a5fdce50308c8c4c552323d3faadd",
+    "tests/test_foliage_mold_density.py": "62cf0b004cc3f085525af3918bb39d09d225df0367253026949361957ed17b2b",
+    "tests/test_blueprint_execution.py": "f3360c38e100e61b56c9d60956043ef0f00f7a9d3c318c5cac73ad90790a18eb",
+    "tests/test_season_transition.py": "95df3ca43d859a527f6d2757f3de8646f0aa6439f0cd45fa3b29d227c4f85c8d",
+    "tests/test_blueprint_controls.py": "39fd5989210c5573b9037206495de669bbfea1c2ad4c759c0970202b3e8c1d42",
+    "tests/test_pine_painted_sample.py": "91f2e3c22f38bd174de20625d041f871bcb22cebb5e972b64fc23d919fe9e038",
+    "tests/test_pine_revision.py": "2791f0820807e43ad0a2920c113337387dc0aed945c7a768c931d6cd5e64014c",
+    "tests/test_seeds.py": "788f1c884325c05ba14a88f2153fe6802206d79706e204043d907bdc6fe2dbf1"
+  },
+  "closure_source_sha256": {
+    "scripts/close_branch_space.py": "288afab1b9977cb2bbb4d48c955067c5b1b0b3af5c4343bd738a5cc866fc57d1"
+  },
+  "evidence_script_sha256": "9fa5e21fcd8d248a49cb2633322da707dd9af9f102aee410925579e1c3197a53",
+  "artifact_reports_sha256": {
+    "verification.json": "9d6cbf78a98e3cb1174b985f97c129f65aa5678f8932cef853b7342c9747747f",
+    "closure/verification.json": "2bb9e32bcf3c94e4b06137bbe0dfb384519d696660eb41eb16e6a6b368bc652d",
+    "frozen-inputs.json": "7732c5bc3019b5693b8f3c8fea63e8b5e667d653aa2c67261985e9d4ada3a8e1",
+    "sources.json": "15946fd7223e688a081009bd1176643824384e07a37b8ce3324b9c511fdfcaf2"
+  },
+  "reviewed_sheets_sha256": {
+    "joven-0.jpg": "98c7c94f3974535b658444c57edb2806e0b6514429810a0093e3a396fd704495",
+    "viejo-0.jpg": "4730c7f30ba8bfe3f1a901752fe6abea1df1cd35e5d5042363eefc07342d6ffe",
+    "adulto-0.jpg": "882923ce79bd35df929950cf4cb9de1756c3f4cde013840bd1b288aa9c645323",
+    "viejo-02.jpg": "17bd8fca6e20091f9cc0ffd1ffca215cd645657bbabea1ad9a05b6766c66f13b",
+    "adulto-1.jpg": "6f8d3e6b4b28edb782501a55a0656bee1b7d592ff76aa90529933c4991c3f154",
+    "joven-1.jpg": "76d955da1cc6db4936b71962cf6feca260a79b4ba7adad78a09e1b001ecd5eab",
+    "viejo-1.jpg": "562d028354ba780cfa36f13a72a8be5032b18ffc24bd00042670c998e003c445",
+    "adulto-07.jpg": "caae44b7edbd3f72d467563469c2619b66ef5a291e5027f50aaac6542b905baf",
+    "joven-02.jpg": "1b348cef07cf079f904e5b8f04f8b38160e28fb019222f3f7f99a17483af119a"
+  }
+}

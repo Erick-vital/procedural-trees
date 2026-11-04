@@ -1,0 +1,71 @@
+{
+  "version": "oak-growth-0.2.0",
+  "stage": "centenario",
+  "height_m": 15,
+  "maturity": 0.95,
+  "vigor": 1.0,
+  "crown_spread": 1.12,
+  "curvature": 0.36,
+  "light_tropism": 0.12,
+  "gravity": 0.12,
+  "competition": 0.7,
+  "pipe_exponent": 2.5,
+  "basal_flare": 1.45,
+  "orders": [
+    {
+      "order": 1,
+      "max_children": 8,
+      "length_ratio": 0.68,
+      "fork_angle_deg": 60,
+      "curvature_scale": 1.0,
+      "sides": 6,
+      "points": 9,
+      "branching_probability": 0.45,
+      "demand_weight": 0.004,
+      "attachment_min": 0.3
+    },
+    {
+      "order": 2,
+      "max_children": 3,
+      "length_ratio": 0.7,
+      "fork_angle_deg": 60,
+      "curvature_scale": 0.85,
+      "sides": 5,
+      "points": 6,
+      "branching_probability": 0.9,
+      "demand_weight": 0.008,
+      "attachment_min": 0.3
+    },
+    {
+      "order": 3,
+      "max_children": 2,
+      "length_ratio": 0.65,
+      "fork_angle_deg": 48,
+      "curvature_scale": 0.7,
+      "sides": 4,
+      "points": 5,
+      "branching_probability": 0.85,
+      "demand_weight": 0.003,
+      "attachment_min": 0.32
+    },
+    {
+      "order": 4,
+      "max_children": 2,
+      "length_ratio": 0.48,
+      "fork_angle_deg": 35,
+      "curvature_scale": 0.5,
+      "sides": 3,
+      "points": 3,
+      "branching_probability": 0.75,
+      "demand_weight": 0.0004,
+      "attachment_min": 0.43
+    }
+  ],
+  "crown_balance": {
+    "strength": 0.85,
+    "radius_ratio": 0.7,
+    "vertical_ratio": 0.48,
+    "path_ratio": 1.0,
+    "irregularity": 0.1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "version":"oak-crown-verification-0.1.0",
+  "seeds":[3100,3101,3102,3103,3104],
+  "before":"presets/oak-growth/0.1.0/maduro.json",
+  "after":"presets/oak-growth/0.2.0/maduro.json",
+  "age_controls":{"seed":3100,"stages":["joven","maduro","centenario"]},
+  "views":["front","side","top","perspective"],
+  "conditions":"same cameras, scale 1, no foliage; ages normalized separately"
+}

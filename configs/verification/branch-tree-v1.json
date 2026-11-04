@@ -1,0 +1,10 @@
+{
+  "version": "branch-tree-verification-0.1.0",
+  "definition": "configs/branch-tree/0.1.0.json",
+  "cases": [
+    {"id":"joven-03","profile":"joven","seeds":{"base":1003,"canopy":17,"paint":2718}},
+    {"id":"adulto-00","profile":"adulto","seeds":{"base":2000,"canopy":17,"paint":2718}},
+    {"id":"viejo-00","profile":"viejo","seeds":{"base":3000,"canopy":17,"paint":2718}},
+    {"id":"viejo-09","profile":"viejo_referencia","seeds":{"base":3009,"canopy":17,"paint":2718}}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "request": "Evaluación F4: seis solicitudes exactas en configs/verification/f4-v1.json, interpretadas por Codex en el chat del repositorio el 2026-11-02. Sin proveedor ni proceso de Codex adicional.",
+  "origin": "codex-session",
+  "cases": [
+    {"id": "joven", "seeds": {"base": 1007, "canopy": 17, "paint": 2718}, "proposal": {"profile": "joven", "changes": [], "explanation": "El perfil joven ya expresa 4 m, radio de 0.12 m y grupos pintados de 0.45 m. La edad es un perfil artístico, no una simulación de crecimiento."}},
+    {"id": "adulto", "seeds": {"base": 2000, "canopy": 17, "paint": 2718}, "proposal": {"profile": "adulto", "changes": [{"path": "base.height_m", "value": 11}, {"path": "base.base_radius_m", "value": 0.55}], "explanation": "Cambio únicamente la altura y el radio solicitados respecto al perfil adulto. La geometría final requiere validación."}},
+    {"id": "viejo", "seeds": {"base": 3009, "canopy": 17, "paint": 2718}, "proposal": {"profile": "viejo", "changes": [], "explanation": "El perfil viejo aporta radio de 0.8 m y asimetría de 0.85, mayores que en el adulto. Se conserva la receta aprobada y no se inventan controles de envejecimiento."}},
+    {"id": "densa", "seeds": {"base": 2000, "canopy": 17, "paint": 2718}, "proposal": {"profile": "adulto", "changes": [{"path": "canopy.group_count", "value": 300}], "explanation": "Aumento de 264 a 300 grupos conservando madera, tamaño y pesos regionales. Más grupos no garantizan por sí solos mayor naturalidad o cobertura visible."}},
+    {"id": "abierta", "seeds": {"base": 2000, "canopy": 17, "paint": 2718}, "proposal": {"profile": "adulto", "changes": [{"path": "canopy.group_count", "value": 180}], "explanation": "Reduzco de 264 a 180 grupos sin cambiar madera ni tamaño, abriendo huecos mediante ocupación. No reduzco foliage_density, que controla moldes históricos."}},
+    {"id": "asimetrica", "seeds": {"base": 2000, "canopy": 17, "paint": 2718}, "proposal": {"profile": "adulto", "changes": [{"path": "base.asymmetry", "value": 0.8}], "explanation": "Aumento la asimetría de ramas de 0.6 a 0.8, manteniendo altura, radio y número de grupos. No uso pesos regionales para simular una modificación de madera."}}
+  ]
+}

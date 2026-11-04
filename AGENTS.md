@@ -42,6 +42,19 @@ Desarrollar un generador procedural de robles low-poly como primer experimento d
 - Antes de terminar una actualización, comprobar tamaño y líneas con `wc -lc ESTADO.md`. Si supera cualquiera de los límites, condensarlo antes de finalizar.
 - Distinguir trabajo planeado, implementado y verificado. Registrar pruebas pendientes o fallidas sin presentarlas como éxitos.
 
+## Pedidos de árboles desde Codex (F4)
+
+- Mantener la interfaz natural del chat: «créame 10 árboles» autoriza preparar
+  y generar el lote con herramientas locales, sin otro proveedor ni proceso de
+  Codex. Seguir [el flujo F4](docs/uso-lenguaje-natural.md).
+- Traducir la petición a perfiles y cambios permitidos, con semillas explícitas
+  y explicación por ejemplar. Usar `plan-blueprints` y `generate-blueprint-plan`
+  para validar el lote completo, congelar entradas y repetirlo sin modelo.
+- Variar parámetros y semillas según la intención; no inventar controles ni
+  modificar recetas históricas. Conservar fallos y revisar visualmente en Godot.
+- Distinguir interpretación realizada en el chat de reproducción de respuestas
+  guardadas; no afirmar una llamada independiente a un modelo que no ocurrió.
+
 ## Documentación
 
 - `plans/`: alcance, fases, criterios de aceptación y cambios al plan.

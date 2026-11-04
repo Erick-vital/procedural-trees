@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "scope": "branch_sample_only_full_tree_pending",
+  "without_foliage": {
+    "variant": "R2",
+    "path": "artifacts/f5/rama-r3-128-01/bare/tree.glb",
+    "sha256": "70269ab42577a1c9dc7871696c1752eee085f152e5855f1f717df9dfedcf7eac",
+    "triangles": 894,
+    "materials": 1,
+    "artistic_acceptance": "approved_by_user",
+    "decision": "docs/evidence/f5/rama-r2/user-acceptance.json"
+  },
+  "with_foliage": {
+    "variant": "R3-alpha128",
+    "path": "artifacts/f5/rama-r3-128-01/simple/tree.glb",
+    "sha256": "f49e3a9fb06e35ce2172a23385e71cf71c60ca35d4145616441b2f0640c0e7a6",
+    "triangles": 1324,
+    "materials": 2,
+    "artistic_acceptance": "pending_user",
+    "technical_selection": "lowest_cost_candidate_passing_visibility_checks"
+  }
+}

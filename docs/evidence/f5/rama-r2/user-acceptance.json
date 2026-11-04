@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-03",
+  "decision": "approved_by_user",
+  "user_statement": "ok pero usa la simplificada tambien incluso cuando no tiene follaje apenas noto diferencia",
+  "scope": "Elección artística de la rama R2 simplificada, incluida su apariencia descubierta. Usar R2 como referencia sin follaje y preparar una simplificación adicional con follaje por petición posterior; integración completa pendiente.",
+  "followup": "y la con follaje simplificala aun mas",
+  "reference": "artifacts/f5/rama-r2-03/simple/tree.glb",
+  "reference_glb_sha256": "5469ddf4bb1a22e6b494d8d0afa03aa3f15bbbd09cb0779cb49a4f5ec55c7634",
+  "verification_sha256": "e8c524eb827a19a407669351d692f3dc466da28039220fe891975a4c97c5ce51",
+  "limits": "La aceptación visual amplía el uso elegido; no modifica los datos de visibilidad originales ni acredita nuevas edades, semillas o FPS."
+}

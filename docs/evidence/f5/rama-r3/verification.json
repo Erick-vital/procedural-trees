@@ -1,0 +1,1255 @@
+{
+  "blender": "5.2.1 LTS",
+  "build": "9e2066aef7ef",
+  "variants": {
+    "full": {
+      "metrics": {
+        "vertices": 1719,
+        "triangles": 1416,
+        "bounds_blender": [
+          [
+            -0.573398,
+            -0.579619,
+            1.0757
+          ],
+          [
+            1.495356,
+            1.830378,
+            3.414361
+          ]
+        ],
+        "height_m": 2.338661,
+        "triangles_by_material": {
+          "Painted_Bark": 894,
+          "Painted_Foliage": 522
+        },
+        "geometry_sha256": "360d0e0e4eb0dc1daa0310442f8c1527e81523df852fef61c490d4a2d60846c6"
+      },
+      "glb_sha256": "5469ddf4bb1a22e6b494d8d0afa03aa3f15bbbd09cb0779cb49a4f5ec55c7634",
+      "blend_sha256": "69c38cbe5ce660b2141c820c7ba3ebaf7673b9bd4affadfe4ff759e49b10e53a"
+    },
+    "simple": {
+      "metrics": {
+        "vertices": 1649,
+        "triangles": 1324,
+        "bounds_blender": [
+          [
+            -0.573398,
+            -0.579619,
+            1.0757
+          ],
+          [
+            1.495356,
+            1.830378,
+            3.414361
+          ]
+        ],
+        "height_m": 2.338661,
+        "triangles_by_material": {
+          "Painted_Bark": 802,
+          "Painted_Foliage": 522
+        },
+        "geometry_sha256": "4e2b6226a8465ed85acf900670b2a7991c49b25293e9c2ea962b4f01ee8488d0"
+      },
+      "glb_sha256": "f49e3a9fb06e35ce2172a23385e71cf71c60ca35d4145616441b2f0640c0e7a6",
+      "blend_sha256": "c14c907c3b39a02f2cabc29fba8dde80527c6832521a1e21e619abf93bb92b43"
+    },
+    "bare": {
+      "metrics": {
+        "vertices": 675,
+        "triangles": 894,
+        "bounds_blender": [
+          [
+            -0.04697,
+            -0.152227,
+            1.0757
+          ],
+          [
+            1.027801,
+            1.314634,
+            2.992283
+          ]
+        ],
+        "height_m": 1.916583,
+        "triangles_by_material": {
+          "Painted_Bark": 894
+        },
+        "geometry_sha256": "8526825e898be076a9308a74329056f1ca6fe01379ad9c846a690481ea5dff5f"
+      },
+      "glb_sha256": "70269ab42577a1c9dc7871696c1752eee085f152e5855f1f717df9dfedcf7eac",
+      "blend_sha256": "54c6889d9def26a6f66709626d71e2a07e50c1885a7ad76b131ddc9492c5c161"
+    },
+    "foliage-before": {
+      "metrics": {
+        "vertices": 1044,
+        "triangles": 522,
+        "bounds_blender": [
+          [
+            -0.573398,
+            -0.579619,
+            1.456917
+          ],
+          [
+            1.495356,
+            1.830378,
+            3.414361
+          ]
+        ],
+        "height_m": 1.957444,
+        "triangles_by_material": {
+          "Painted_Foliage": 522
+        },
+        "geometry_sha256": "b2c484f6a84972d94f3ff31f899398731579021eefd6ea7e519e5f607605cb23"
+      },
+      "glb_sha256": "8a5a4f93ee141d9ea78b8d6b22d7fb0381290fea4e5d9e0908c04a26b3eab5f3",
+      "blend_sha256": "7252b75f72bd4033d94483867356507958fea0013824e073275ff5d7b17f7151"
+    },
+    "foliage-after": {
+      "metrics": {
+        "vertices": 1044,
+        "triangles": 522,
+        "bounds_blender": [
+          [
+            -0.573398,
+            -0.579619,
+            1.456917
+          ],
+          [
+            1.495356,
+            1.830378,
+            3.414361
+          ]
+        ],
+        "height_m": 1.957444,
+        "triangles_by_material": {
+          "Painted_Foliage": 522
+        },
+        "geometry_sha256": "b2c484f6a84972d94f3ff31f899398731579021eefd6ea7e519e5f607605cb23"
+      },
+      "glb_sha256": "8a5a4f93ee141d9ea78b8d6b22d7fb0381290fea4e5d9e0908c04a26b3eab5f3",
+      "blend_sha256": "b0a98e7e98cdf1ec1bff2beaa893ff4e5150a58a34da2af0d62115af75fc3b1e"
+    }
+  },
+  "phase": "R3",
+  "cutoff_u8": 128,
+  "passed": true,
+  "checks": {
+    "full-export": true,
+    "full-repeat-exact": true,
+    "simple-export": true,
+    "simple-repeat-exact": true,
+    "bare-export": true,
+    "bare-repeat-exact": true,
+    "foliage-before-export": true,
+    "foliage-before-repeat-exact": true,
+    "foliage-after-export": true,
+    "foliage-after-repeat-exact": true,
+    "foliage_positions_faces_uv_exact": true,
+    "foliage_normals_exact": true,
+    "foliage_only_glb_exact": true,
+    "full_reference_glb_exact": true,
+    "bare_wood_r2_exact": true,
+    "textures_exact": true,
+    "exposed_meshes_exact": true,
+    "roots_exact": true,
+    "extra_reduction": true,
+    "visible_wood_masks_exact": true,
+    "foliage-mask-medium-front-exact": true,
+    "foliage-mask-medium-side-exact": true,
+    "foliage-mask-medium-perspective-exact": true,
+    "foliage-mask-medium-top-exact": true,
+    "foliage-mask-medium-below-exact": true,
+    "foliage-mask-medium-back-exact": true
+  },
+  "source": "/home/tao/repos/procedural/arboles/artifacts/f5/rama-r2-03",
+  "sources_sha256": {
+    "src/treegen/willow_sample.py": "7f4fb848eb62e45e407d8ae75d4bfa9407477372b138ee1d2438299c3d4ce0df",
+    "src/treegen/branch_structure.py": "b3a1bbbf94ac1006c8ccf087a82f9635a79a417bf4185eed3866b99c4dae5a72",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/season_calendar_glb.py": "b1b5c8f3cc64dbfe00b91f7a2d2b3f26a931f17aad851778a9045d0baff35fd9",
+    "src/treegen/willow.py": "ebf75f3fcede8c42efd0b4270995bf0d168a022d5d02d894163393bafd277e9b",
+    "src/treegen/willow_v2.py": "5734c5e48e69e7550474cca4188fb65f51e6d6faeaf6d819c0416737c1c41a38",
+    "src/treegen/birch.py": "89a4fabce283c89b0d48448da82e3dccc9dbde4a5da510db08fad4502fe880e2",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+    "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/evaluation.py": "4a07ba8ec648739de12678ac919b6d7e965279e608da1844f25a2499f1b2692f",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+    "src/treegen/branch_sample.py": "0a0633ddcdc0892bc31a755906aaa6e17dcb2d343825a75ec6a0abdd0f461d4f",
+    "src/treegen/cli.py": "09984d814e2d1413f56a3d0f2dacd89cd8cecfbe103cc6bfe39350749d756949",
+    "src/treegen/birch_evaluation.py": "6b738a3870ade67066413089b0faf01b9cc8611618f7d7aa523c5adb7c469104",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/branch_interior.py": "93aecbec1b0dac556de552f8292a1aa407e2b5b4082f078816a2a4bd8ab94ecc",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/seasons.py": "433d10d9012e04887f007b0381b514f64dfb9edea7cb7d73f61e0c2fb6f87d05",
+    "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/runner.py": "31363394248b4ef9365ea3f0b26925d9d4d728dea04d67f7295dbfe918da4a67",
+    "src/treegen/birch_sample.py": "3530e76f940d513cbe9aac71bda954bcf258a843129de876fb6755fb71dc79d6",
+    "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+    "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/blueprints.py": "6560867587d872b0eedaf44a840f2aa162b3e9c9a4db1aa8da51685cc1b16841",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/branch_visibility.py": "7450ee09b716ae5bac738b419346d181688de2f00d0e29c6c827778e063e27eb",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+    "src/treegen/willow_evaluation.py": "ec60175f4b94d0b965b66d247def68c7cf969cce2cf5f72a279981084566915e",
+    "src/treegen/branch_space.py": "a5e8870433b9e6b24e37a69bd81cfe4c1c1b3f40f03d05fc9a352f0f05fb2af5",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+    "blender/generate_painted_pine.py": "7f10893bcb5fea3b92a9db64325a8c92fed8a1dd0b1cb064afed4c9b695c08c7",
+    "blender/willow_sample.py": "1f3d240a256fdd1a64ca87d449a07c57af880ccdd8fac371e01912fd5e8e8bb4",
+    "blender/rebake_oak_crossed.py": "75284275a4cfe7c4c3e3b5fbf6db88fe75192d8b4dd16d4cce9d74f99b907b16",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/generate_crossed_oak.py": "695322e6649466718ea0222471c4e4ed9e04726d57369c6f860ca35527205187",
+    "blender/bake_autumn_oak.py": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/verify_painted_pine.py": "322851d188c022ea859ac08adb0b6540c14cf3f15559eb5061931a5be926d8c3",
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/f5_structure.py": "6dc67bbfa2de21f3dcbab8535c09ec91fece323783f38f18805b99791405e29e",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blender/verify_pine_contacts.py": "c4de070611fc9f3366002b86fefd877d8dc3fecc824f2f1dfcbda1d7ec4ffd44",
+    "blender/export_oak_wood.py": "2829d53c0788ceeb4ac10036483ba7b9ec3bb0c51abbefe4046b7f932c8f96cf",
+    "blender/oak_wood_trial.py": "024b0f32f543fa13cc315109398ddc25b991f2c832e05a836134fbf91870c842",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/oak_crossed_reference.py": "824daf84cb3ad034cdfd286d7f4cd3d9ae5eb666e90e4702799e81d69a0842f9",
+    "blender/branch_sample.py": "14de502b4f3d0ee966fbd346fdb3ad9c9dd4da24ff24ffe0079b2e992450ca91",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/oak_painted_tree_pilot.py": "224df5283e5395ab2696b93d8bc89c4e44f86bb26dd7433afae31c6221122eb7",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/pine_painted_sample.py": "6ab7d003cdc2a1b938fad4bead9332ae6d21f133b24c6302781d467771006f97",
+    "blender/oak_painted_sample.py": "ee7d0bd42e3d533734228de8bc61b177a7e367414cf5c39ede4ab64ecb70e244",
+    "blender/verify_season_calendar.py": "cd0762f6113675063feb2017e09bcd28e9284e9fc9ddd3fa2b6f6cf84ecbee72",
+    "blender/verify_canopy_normals.py": "2a66a50e0a9030d24eb525253508bb9b007ddcd03ac567e7adb4c108bfd23099",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/generate_pine.py": "8564de938657e81f10c78881cb7137f4b33bc52d584a676a0bdd046103ea53eb",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/generate_birch.py": "9a417ca2be4919534a4564998323124006371daf4e41c31e3a02650c5ac0bdd1",
+    "blender/birch_sample.py": "668dbb55609a4d88812e9b52505d6fd0f2c58b637478b9e85ff22d8d381070ad",
+    "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+    "blender/willow_revision_sample.py": "7305f8bf8daa5bce2e87a13bfae673b08fd85c64c4cf6d7824422149de806ecd",
+    "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+    "blender/generate_willow.py": "b1636ab8e446f163e320f49179ed81ab6afe94da9da246bbb4b77d6815046fb6",
+    "blender/classify_branch_visibility.py": "81bf28c066a946316ddf159b5e28d42687b97fde3b7baf6ab4a1266f1b822ed3",
+    "blender/pine_cards_reference.py": "ee30f384357c84dff74763616dcfb32b2daf3111b5bf4b86962a0cc29b8f5c3f",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/oak_crossed_trial.py": "4c7eae600da0aac401ee9a831a8df2a7e1256292735257b1cd05d356dfc58be6",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/generate_painted_oak.py": "5d6f15d33ccc7bcabbbe6d9f223afde3ef86ddf56ba4de1dfde38dff6b8716b5",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/branch_variants.py": "13071ecdeca42d7b62cf02c6f10b484ccd3fde7ddedcc037aac2d65cee237959",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blender/verify_branch_visibility.py": "f6a98a202cec47f8bb6d5431088ca827159d0a40e98f667658652e90abf55d84",
+    "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/oak_wood_hierarchy.py": "07fceea0467c13691d679941e9e85006d90fc7630f7bcae9a4e754f74aa59c72",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/season_atlas_sample.py": "70469069ab126829b13fc9003ba9c93de6ecfbaefd9ed7ce35b509f46041f4d1",
+    "scripts/foliage_twigs_evidence.py": "db564c399d1d9bca58daa41f29730f48fdb0d8527e39444f897eb2f0f83584f8",
+    "scripts/willow_sample.py": "77b6f94ec573f5af02a90feb6dffeeaf1f379b849e15040fa04e189d7e9301c1",
+    "scripts/audit_willow_export.py": "0b0e180395c7f78f7809d93cf92614da7b584132eba4e226a011b0c272c52e12",
+    "scripts/verify_q3.py": "6d16dcb314474d1b382da505c37f55688d5a2c994731438ae37f5492c43e9c32",
+    "scripts/close_branch_space.py": "288afab1b9977cb2bbb4d48c955067c5b1b0b3af5c4343bd738a5cc866fc57d1",
+    "scripts/verify_f0.py": "334f15cd6bdbbd1b57c8795750bd36a2aed31b898016aea53f955a88ddc32783",
+    "scripts/verify_foliage_molds.py": "839cac313e3421a53db09b2710724d30f0c29b4c6e993211f2d3efd1936f751b",
+    "scripts/verify_autumn_paint.py": "93744e85a70a395b2e7d651990b06c6adc5f6b51a4ba8ec2eba165e60a8aeaf2",
+    "scripts/pine_volume_evidence.py": "14d00c970237e01732ccd319cc06a27ca9fd431bf65f3dfc80ed74d9cd469c20",
+    "scripts/pine_wood_evidence.py": "33217233c3f0eadec246490aca3f5818689627c3b2767bdda6dc49d920bd660f",
+    "scripts/verify_oak_wood.py": "462f800222998fed69902c6964c7b9c9788c29c73f23eea7c416251e00b965e1",
+    "scripts/rf5_evidence.py": "695367980109789bc2594ac09146f82aa6fc554b2ffddcedcb980e981dfb90d4",
+    "scripts/branch_sample_evidence.py": "772f5fb00f8ca06d0e533b925e79a6ac93979a0afa479f01d209c168298e267c",
+    "scripts/pine_performance_evidence.py": "c8babf32ab04c752b449db88dce92add2fad2773a0e50ed9c0916a65c204a653",
+    "scripts/verify_painted_pine.py": "d35909da471a25c35eeb2a8b877e675808aa481a7b6d0ebbc979912dfea5a628",
+    "scripts/inspect_easy_tree.py": "1a7b771b2c13392c97d259518fe683ed08738326257e991329707c95de4aa889",
+    "scripts/verify_foliage_twigs.py": "bd43b2c9965d93110fe212e7430d2bf7206b3344c9fe47decbf6168c94d4c345",
+    "scripts/close_season_transition.py": "17ac43a62e296e39ffa2acad5ed520d56a242decd89176fd2ac397e7df09976e",
+    "scripts/review_oak_wood_hierarchy.py": "0991e4de6d26d286af9addd742266a50e6683411181f097c989f2319c76da608",
+    "scripts/verify_paint_transition.py": "d575eeff015da79493010f8ce3a6faeaf0240baac6c751f8ef72ef7b3958fda4",
+    "scripts/foliage_evidence.py": "7404f90b3942604cb6e3e3eee6889d4f2622a2740cab311fe6e04bc4f97a7ae4",
+    "scripts/verify_pine.py": "041800052f997ef01f30e4db6c484f868a4b28b17a28ea0518829ed5a9a661da",
+    "scripts/verify_branch_simplification.py": "c492aa51fd93fdb97026df6bcbe702efaedacb013e09deff2c984a1ef42d591b",
+    "scripts/benchmark_painted_pine.py": "b20a8c73364dc6cbb994662de0e01329546e913bc133cf61de4e4b33adc1bd21",
+    "scripts/foliage_molds_evidence.py": "532e5481038387506435356b1cd7a9f66c475309b553082f10fbfa3816795bea",
+    "scripts/publish_season_atlas.py": "6465a66a66782f8d0b63e523fd956d3f3be1f202967d5f9bdbb0e08c1231240d",
+    "scripts/verify_branch_space.py": "d0b09cdb295c3ba697bc8951fade3d9ea7133b139055007ad6e8c0e1a2bea115",
+    "scripts/verify_q1.py": "d065b79c65734a0d7d0f0bee1f6276b6643a0b8af08e2591989c5c9652751d8c",
+    "scripts/foliage_canopy_evidence.py": "943fb50bca9a79993cc119f1a0496a0e6950cbf0459e3faf9aeca695a000e4f5",
+    "scripts/build_paint_transition.py": "9d2a966b46e1296f4a856fb6d335e1634cb7f4400bd24cb5cc2bfa201b8c6ba0",
+    "scripts/review_oak_wood.py": "d870e077a44d72b6c47540d72747ad1c5bb56f10fb3f75f062a5229781e469f2",
+    "scripts/verify_q2.py": "a1e0a9b0d4b18a4883cfe5f175e7a32d6f9122b4057b90e61bdcd4fee0272ea7",
+    "scripts/verify_addon_comparison.py": "4ecc393d036511ddef3ba89ca1ee675933f3d0299d23603cc9c2ab2ed894cd5e",
+    "scripts/oak_painted_tree_evidence.py": "aa96c4b22084b0e40821a329ec936bf1e79c838c66c24315805d0cbcd9e6f708",
+    "scripts/build_season_bundle.py": "1247ad837853d72994aa8b5d754186efd9888426a7b007cb284e73ed83e5b81d",
+    "scripts/verify_q3b.py": "0ee804a5c9843cbd35f9f77879ec688f965ebac81a6a788b64993d2689c87611",
+    "scripts/diagnose_structure.py": "4a560741d20705a82fdfb3fbad09412c20933b19fcd69876205e904c40ac63d3",
+    "scripts/review_tree_addons.py": "0645681d5eeeffcfba5dd342e7050b30d675a2bac60df929b0a5356975d1a782",
+    "scripts/verify_f1.py": "5e7663e303e222a8ca7b72bf2fb4948cea345dbeaf5142deedf177afa8b21740",
+    "scripts/paint_transition_evidence.py": "2c79c0c447d995f63937b795e5c09db2799643aeb1b6b5d147edff1a00f498ad",
+    "scripts/verify_branch_foliated.py": "7ea43dd3c9a0dfd6117dcd09b41501b3811f02d5624b56960b4e4b0e95f26f46",
+    "scripts/q3b_gallery.py": "b393ad195d50f1da35b2a7ebde24efc96bfff8fd25ade7aadac828bfd7981f17",
+    "scripts/verify_foliage_unit.py": "c1a63768a43c736173f3f3a0e473874a67fff8e7ba1f793e59a6beab6d712831",
+    "scripts/verify_foliage_branch.py": "1b37b23adb74a6da5fbae63eace63853e0306fc69fbed8f613d2228aa961105c",
+    "scripts/verify_season_atlas.py": "09b3dd379f47ce2ec52e1f8c2b45d83083e0d608ace2a775a64361fcae238b96",
+    "scripts/review_pine_painted.py": "bb387c56923b6841703cef8069867adc42cf06d064385e8fdd5c0e3f5e57080f",
+    "scripts/verify_oak_crossed.py": "dc1e4f8567001c11cc86b35d6e62d3c748af8439f5478dfa03d38c09bb6c4360",
+    "scripts/foliage_branch_evidence.py": "371bdb2caeaaaf9020f6d9c85370b111293a5554197cc8b5d0fb826caa044d0b",
+    "scripts/verify_language.py": "6ebe624926f2f04ba22dd948b6592f85828365f7aeb1eac6eacf7e7d5f7e121d",
+    "scripts/oak_painted_tree_pilot.py": "d51a0077f828d87d12a86a2a94af7036db8825b95ed827c2e66e8098017b34ad",
+    "scripts/q1_gallery.py": "cf85dac410fa08b99a0f24eb67a270754a53969ba471d03320fb531678ab515b",
+    "scripts/build_oak_atlas.py": "b14026f45079eb7a85a39acd794e7ad562c067fbdcd3097ee871d9c5282917e4",
+    "scripts/pine_painted_review_evidence.py": "05d306ce53ca454ad9f34c4918f5307525a0a582110df269648d7c09cb7107fa",
+    "scripts/audit_birch_export.py": "ba87cf7d608b7723e13fa1e1c1df687140689c96cd5a0c99961b6b840dc6d254",
+    "scripts/pine_painted_sample.py": "23bfa48455357b7d5d7133580d7fa9a00a07174b84ae5f354617c1ff84c99789",
+    "scripts/verify_pine_cards_topology.py": "5ffc10feb838111e3db0501d4a875161203941e7803b8719ed34c7d9b7214088",
+    "scripts/oak_painted_sample.py": "7d5232c9b44abea8fe27d265da00b2afd4cf9f4a4ba7e570b0b9e3f30bdfca2f",
+    "scripts/canopy_normals_evidence.py": "31cb1d42e27c5f92d5b138e4191f0992e1eaafc61529bce9587ce8b6e00fb7e1",
+    "scripts/verify_season_calendar.py": "01fb04272c0c3d17a113f08ef57657648c1fd14ff55f5988a8c1e8a55f553a73",
+    "scripts/pine_evidence.py": "463e4cb498333de954e68665147e13c7c84c8c9b39d93cfc3af5b14d28264d65",
+    "scripts/verify_canopy_normals.py": "2653583cfe9b0e23bb95a6768ab66127965c0776f7e2238078d6c4edc593f208",
+    "scripts/verify_birch.py": "1541db39d310e9ddcebb01482c18e388e18a5b89853d92601f6083a8e7dc3cfd",
+    "scripts/build_seasonal_oak.py": "a8d7571fe8575b10f5619e66dee8c819daace5fd1caf6941a9cf5e06d829c7ae",
+    "scripts/blueprint_controls_evidence.py": "bc6aa61a1fa16baa05e08f4d6ffc1b51a21f419639942fe58821aa291d0a0352",
+    "scripts/willow_sample_evidence.py": "374737d4668f9141632ca2700c91f9b900a723571dc611f188703cac8e7094bb",
+    "scripts/second_blueprint_evidence.py": "fa6d5f16761650bb06ecf81edcaed697446a5fa133497d08dfc6038c5d08ae00",
+    "scripts/season_bundle_evidence.py": "c70361e3324365d310fded49cd4758eec846f309d83cc26f87e5a65069e17cae",
+    "scripts/generate_f1.py": "d5cf8686667debd55853e756403ce8d08e1d91ef9bbb3ef7fad5b4bd417d5ad6",
+    "scripts/branch_simplification_shadows.py": "2e759e1c4e195156c26a1c978e2a745735e8e693882e6b2d364e4c5889d98f8f",
+    "scripts/build_season_atlas.py": "44bc5275973c7608339439d3a776fea4afff8e00568dad4ff15f40d58a4a68da",
+    "scripts/verify_foliage_canopy.py": "f2b64d80ea5c4b03c574f158057c7be3eceb579b9f045776b2c3c33c59ef23da",
+    "scripts/review_oak_twigs.py": "04ce738999f0e8d81a61f1bf6cdad3e1532ff3f4a0f5ec97f9d0d728307babcb",
+    "scripts/q3_gallery.py": "982f028008ead1040c33813fd4a9bc4e8b85c6093fda40da03452d6e24dcbba3",
+    "scripts/painted_pine_evidence.py": "7e68738059691e7e9647b988897993339adde0e491e9704cbe443a4285571ca4",
+    "scripts/verify_seasons.py": "f9e312215ebca05ae49cf44c354976f81b0082666cb0e902214ef8cfe958b601",
+    "scripts/verify_api.py": "48b4dd5af68e06d50b0471a46309238ae58cdc22c665067d78cefcf115bff6ec",
+    "scripts/birch_sample.py": "15896f77685e94d1646e67876b76cf83fd9fe5130e876d32ad957090fb8bff88",
+    "scripts/fusion_evidence.py": "85c4b4c10edc4772d02b60480bab7affe36eb9a0431f8715d7bac74f794c9fb3",
+    "scripts/willow_revision_sample.py": "9c9fe157433feaca71ff6d01e3ce8c9b12e01ab3815fa3fb8868698b6f365daa",
+    "scripts/verify_blueprint_closure.py": "0664804ef7550c78cb46ed55c22d22dfd0685538ce2ec6f8f1c990fc06242159",
+    "scripts/make_gallery.py": "231756b3cf65b0da4f0ccbb01b6d54c312562b73b84a3910463fd1100b9ff38a",
+    "scripts/build_canopy_normals.py": "9f3ce85a636aad518ca38d26452b416d2f6ea8410caa91c76a9f4b9413784fac",
+    "scripts/verify_second_blueprint.py": "e7600e66e392c11f8cd811d76d658031c451cad528bd57cf4e027d52f5199ee4",
+    "scripts/verify_f2.py": "d40bf125303e10397ea69c2f10dd76238508074a60a05229ae43dc0d4a90e978",
+    "scripts/q2_gallery.py": "5ed4f4d8c553dbbc49a30563b160ab519816b5f08c336588ec720a78dbcd31c2",
+    "scripts/verify_blueprint_controls.py": "ab8ad5010e4ce3a1fea26b461fbce3765876c0b0210d89ab46ced9a2207bab54",
+    "scripts/oak_crossed_trial.py": "8be04aa8a2387e11b91e74aee8719c8a455a291ad5475d59a82e4feea642910b",
+    "scripts/verify_rf5.py": "66d8b73430ceff82d72bd864c10b4b28ef24ae61cfee2c86256665bba55ad654",
+    "scripts/verify_willow.py": "05a44e6b5392bc57304d1fbf51c0f02b043a908421d36bb9c5a24dcfe0500028",
+    "scripts/verify_painted_oak.py": "db10b972622ecb831a40f63aa71ddaeebba473c623060e83e3c8d0ef5994898f",
+    "scripts/verify_branch_sample.py": "13555dc8adad19e19cd5434b1199e455aa8b9067003bc009afb89f59b460c4ff",
+    "scripts/pine_painted_review_details.py": "2926464aba15523f930c3a028d6ac3c66b4ce4d87bd55a86c029a48b6104793d",
+    "scripts/branch_simplification_evidence.py": "9928a04c57805c45fefd30811e6e9e9ac6dfd41a76ac61d689ecea20f8a7d0c7",
+    "scripts/blueprint_revision_evidence.py": "49df27ea1eeacc64bdfbd049bb54b6445f92e0e2d20880669ec4329bfba124c2",
+    "scripts/compare_addons.py": "16f4fb1b23bef4791d8e50b81e3c0f1d2cc4316c4fdb5037aa6320373057158e",
+    "scripts/verify_pine_painted_sample.py": "03e4c49f6b84a81005d802b394a40769c537220db5ae8ffa2a30742a40451883",
+    "scripts/branch_space_evidence.py": "9fa5e21fcd8d248a49cb2633322da707dd9af9f102aee410925579e1c3197a53",
+    "scripts/verify_fusion.py": "fd976bfcce144a794b77917d83912529744dadd8037cae5dc462ed7b12a6161d",
+    "scripts/preview_fusion.py": "4f6eca670cd1a447c00a647211a24a4d11ebd3d577b4b2b0084b85944d4a90f6",
+    "scripts/addon_comparison_evidence.py": "697f7c5a7f257eb8f90fc2254ef9d3482becc75e727d6cfeb4fa0a21192295c7",
+    "scripts/verify_q1b.py": "9f1dcbc666d8fe3360b4e3d16c9745672b9bceb540ccdfa1fd9dcdb6db72131a",
+    "scripts/verify_blueprint_reference.py": "9c02e64137a753a7bc2f223b9d0fe4e6436ac7bf316dee84834faff47663decc",
+    "scripts/q1b_gallery.py": "6317ba6b5de149a077322b6f3a8ccab21be68e4bfc13e6e19db80fa9218abb2b",
+    "scripts/willow_evidence.py": "63bb08fb72d8d7557ed2ae061aadbb00444c85f53e919c6ed380a2efd7e4d952",
+    "scripts/verify_season_bundle.py": "769aeaad5d9efd3579d36d53681e797d007edd222c16f9c34dd8c6c2f6a489ea",
+    "scripts/oak_sample_evidence.py": "d826788caeb37fefd8b2a17e510721e9ed33e7a7452e257e3d22071c2cdc575a",
+    "scripts/verify_blueprint_generation.py": "d8d91638d751f44bc9a679f5a6667a56149e354d2847fe5d86db87c470ed01ad",
+    "godot/willow_sample_viewer.gd": "95071ba7f8eed6229362db7fed1e3c24cb59914ce5446113363bf539454d5b05",
+    "godot/review_season_bundle_resources.gd": "85ff86c391e8d4168315c9354b9ecb6163c69843f05fcffc04d893ef7ae2226b",
+    "godot/birch_sample_viewer.gd": "e20678795b7b199f7852f716dc534cd35d9e0055fab39f858d0842492c45235f",
+    "godot/verify_probe.gd": "6306a877341815adfdcddf6c8ef37f5b85de675d506209c3b1b365b571c7c4a4",
+    "godot/autumn_paint_viewer.gd": "1bd26e262c0c5e9dceec9e9ad7c0062cd0e13d5d51f63320ea7c63a9a09f462a",
+    "godot/review_autumn_paint.gd": "48354dedd169344280c8391f74624021d97a9825cabb24360fc54600456309f1",
+    "godot/canopy_normals_viewer.gd": "0259c1987baf72abb638dfbd2746d11af42874b6d093d640b29689ae81504389",
+    "godot/review_willow_sample.gd": "57045f058853160ae4607e2367588fb036b0174c07396c177cae4c11472906a4",
+    "godot/review_birch_sample.gd": "ae3efd9d9a1355f47e73a409f9bbdb70755c1a7bdce2ad5696906937b3cb95a1",
+    "godot/review_season_atlas.gd": "8d0f8e118c7af5aa29c05fb5735b83f8b5f1106527a37bac470c5a352e2f4b8d",
+    "godot/review_painted_oak.gd": "6d2adac8e072f0488806e59808d8d35daf5dab5f95d74552760846bc0d9b9249",
+    "godot/season_bundle_tree.gd": "f3f36553dae6d9dfb580601de037fbd44ea4a9b22951d017f0431ff1119ed349",
+    "godot/season_bundle_viewer.gd": "fc939539c24236d275d5e3a4ed64942b09396de27c299c8defc340ac3174a982",
+    "godot/review_pine_painted.gd": "b1f45aaf9d55d50ea87c8f7ee92f4d191776d34b16e9629715b29263c2015c41",
+    "godot/canopy_normals_scene.gd": "6de01dc4c6ee391a75c8eff9035a59f772286193195c3f72ffa323b08d0821a9",
+    "godot/review_paint_transition.gd": "57ec5090341725c3a828b80eb501e3c5109143f401ced67ebd4f316093d5f107",
+    "godot/autumn_painted_asset.gd": "1333ed0ff223ceb2c7ff408a504953e9c80154de1a64e334ea52bc07a3b295db",
+    "godot/review_season_bundle.gd": "74cc81dc80184efd78568660eecae00cbd2bd304b294a8b69e36d5debe206a69",
+    "godot/review_seasonal_tree.gd": "f8188eb943d35b55739178a66281e438a272a8d0817e9c633342142b2cdcb8c2",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "godot/project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+    "godot/painted_pine_asset.gd": "3c39d07732f1885c02c351b41261965e4193102b86906b4089cf788f93ae3cad",
+    "godot/seasonal_tree_viewer.gd": "85c0924360e73e246e2bb7ebd20c32aea9f463310dd412b3bbaa9f1f37f01b82",
+    "godot/review_canopy_normals.gd": "261488da98b47d84e78f966db04b8f687575d952802923520939d7d0f17133eb",
+    "godot/verify_foliage.gd": "640b4d99ddc5e6d4c323d123524683ea59be3164eddff82d5fa9a326336f7dd6",
+    "godot/willow_tree_viewer.gd": "b3d7f0ffea93c259ccf9dd7067a2c48298e7dd5a77e898a347b9c2f1eda318de",
+    "godot/review_painted_pine.gd": "bed67a6165a424d698c6f74be08aa2d631294e22da9fd6da4916ff67bb746439",
+    "godot/verify_addon_comparison.gd": "c6c11812c82b54f0ac9d426d4ed58dd858314a9a7cdb0e177d8c9660baa17ba2",
+    "godot/painted_oak_asset.gd": "c013bf82c3d79ab689435055d115d3c320a238250540f3ee4da3d07750353222",
+    "godot/benchmark_painted_pine.gd": "797b5f13b8e6418b14ac250cd57febbb2da86d000bd2328d4d674c9a4b527d6d",
+    "godot/verify_foliage_twigs.gd": "81075c2033ceac65864e27c617852cf3112d0cb4b9d2277337d426ae3a5197c4",
+    "godot/seasonal_tree.gd": "606b57f8e8c55617ca49c876b8e4ef73ed54e8709d446c3e13a2a964f45a4043",
+    "godot/review_season_calendar.gd": "796ed50fc6e1efd1a3d4a1328882902366f26f8f790f8eadf12ffdebb417a5e1",
+    "godot/paint_transition_tree.gd": "7b16f420df6941d7c86304ca520d90209037a7305409774ad14c7b683debb00f",
+    "godot/verify_foliage_molds.gd": "fff8c50b3c359fd50ab38c8bb77b9c73af232072c5fcae4dc8acc3997a802683",
+    "godot/paint_transition_viewer.gd": "fdbc821ff038147b7df439936bc976bb085d7141ee548ca9954c3a0f8e730e90",
+    "godot/review_branch_visibility.gd": "569f603edde10a16c4a4ea69b625acb37841348ad00ce28de51f457590eb39e2",
+    "godot/verify_foliage_branch.gd": "22673f167c8d198f34ffe4411554ce7ae69cf29cb9effbab941c093f53b13b1b",
+    "godot/review_painted_oak_pilot.gd": "0152c9300d49f20c78c7d10b2d7c7648fba9e86bb7cc46b0d8138129e9aae24c",
+    "godot/birch_tree_viewer.gd": "d5655474a02da356e0515c1a52720dd357abbbf0c797a316a23b0d644d79c347",
+    "godot/verify_fusion.gd": "ccf532928646c62bf8565e1c1fc77547d506869296db8941c5fb0de94234d86a",
+    "godot/season_bundle_scene.gd": "dfcc56b84c41eda7ce0b15c76b6485e875d87dc5b8a7f21f0528dcb4db058d36"
+  },
+  "selection": {
+    "version": "branch-visibility-prune-0.1.0",
+    "exposed_ids": [
+      "bough:0",
+      "bough:0:0",
+      "bough:0:0:0",
+      "bough:0:0:0:0",
+      "bough:0:0:0:0:0:0:0",
+      "bough:0:0:0:0:1:0",
+      "bough:0:0:0:1",
+      "bough:0:0:0:1:0:0",
+      "bough:0:0:0:1:1:0",
+      "bough:0:0:1",
+      "bough:0:0:1:1:0:1",
+      "bough:0:1",
+      "bough:0:1:0",
+      "bough:0:1:0:0:0:0",
+      "bough:0:1:0:0:0:1",
+      "bough:0:1:0:0:1:1",
+      "bough:0:1:0:1",
+      "bough:0:1:0:1:0",
+      "bough:0:1:0:1:0:0",
+      "bough:0:1:0:1:0:1",
+      "bough:0:1:0:1:1",
+      "bough:0:1:1",
+      "bough:0:1:1:0:0:0",
+      "bough:0:1:1:1:1",
+      "bough:1",
+      "bough:1:0:0:0:0:0:0",
+      "bough:1:0:0:0:0:1:0",
+      "bough:1:0:0:0:1:0",
+      "bough:1:0:0:0:1:1",
+      "bough:1:0:0:1:0:0",
+      "bough:1:0:0:1:0:1",
+      "bough:1:0:0:1:1:1",
+      "bough:1:0:1:0:0:0",
+      "bough:1:0:1:0:0:1",
+      "bough:1:0:1:0:1:1",
+      "bough:1:0:1:1:0:0",
+      "bough:1:1",
+      "bough:1:1:0",
+      "bough:1:1:0:0",
+      "bough:1:1:0:0:1:1",
+      "bough:1:1:0:1",
+      "bough:1:1:0:1:0",
+      "bough:1:1:0:1:0:0",
+      "bough:1:1:0:1:0:1",
+      "bough:1:1:1:1:1",
+      "bough:2:0:0",
+      "bough:2:0:0:0",
+      "bough:2:0:0:0:1:0",
+      "bough:2:0:0:0:1:1",
+      "bough:2:0:0:1",
+      "bough:2:0:0:1:0:1",
+      "bough:2:0:1:0:0:0",
+      "bough:2:0:1:0:1:0",
+      "bough:2:0:1:1:1",
+      "bough:2:1:0:0:0:1",
+      "bough:2:1:0:0:1",
+      "bough:2:1:0:0:1:0",
+      "bough:2:1:0:0:1:1",
+      "bough:2:1:0:1:0:1",
+      "bough:2:1:0:1:1",
+      "bough:2:1:1:0:1",
+      "bough:2:1:1:1:0"
+    ],
+    "kept_ids": [
+      "bough:0",
+      "bough:0:0",
+      "bough:0:0:0",
+      "bough:0:0:0:0",
+      "bough:0:0:0:0:0",
+      "bough:0:0:0:0:0:0",
+      "bough:0:0:0:0:0:0:0",
+      "bough:0:0:0:0:1",
+      "bough:0:0:0:0:1:0",
+      "bough:0:0:0:1",
+      "bough:0:0:0:1:0",
+      "bough:0:0:0:1:0:0",
+      "bough:0:0:0:1:1",
+      "bough:0:0:0:1:1:0",
+      "bough:0:0:1",
+      "bough:0:0:1:1",
+      "bough:0:0:1:1:0",
+      "bough:0:0:1:1:0:1",
+      "bough:0:1",
+      "bough:0:1:0",
+      "bough:0:1:0:0",
+      "bough:0:1:0:0:0",
+      "bough:0:1:0:0:0:0",
+      "bough:0:1:0:0:0:1",
+      "bough:0:1:0:0:1",
+      "bough:0:1:0:0:1:1",
+      "bough:0:1:0:1",
+      "bough:0:1:0:1:0",
+      "bough:0:1:0:1:0:0",
+      "bough:0:1:0:1:0:1",
+      "bough:0:1:0:1:1",
+      "bough:0:1:1",
+      "bough:0:1:1:0",
+      "bough:0:1:1:0:0",
+      "bough:0:1:1:0:0:0",
+      "bough:0:1:1:1",
+      "bough:0:1:1:1:1",
+      "bough:1",
+      "bough:1:0",
+      "bough:1:0:0",
+      "bough:1:0:0:0",
+      "bough:1:0:0:0:0",
+      "bough:1:0:0:0:0:0",
+      "bough:1:0:0:0:0:0:0",
+      "bough:1:0:0:0:0:1",
+      "bough:1:0:0:0:0:1:0",
+      "bough:1:0:0:0:1",
+      "bough:1:0:0:0:1:0",
+      "bough:1:0:0:0:1:1",
+      "bough:1:0:0:1",
+      "bough:1:0:0:1:0",
+      "bough:1:0:0:1:0:0",
+      "bough:1:0:0:1:0:1",
+      "bough:1:0:0:1:1",
+      "bough:1:0:0:1:1:1",
+      "bough:1:0:1",
+      "bough:1:0:1:0",
+      "bough:1:0:1:0:0",
+      "bough:1:0:1:0:0:0",
+      "bough:1:0:1:0:0:1",
+      "bough:1:0:1:0:1",
+      "bough:1:0:1:0:1:1",
+      "bough:1:0:1:1",
+      "bough:1:0:1:1:0",
+      "bough:1:0:1:1:0:0",
+      "bough:1:1",
+      "bough:1:1:0",
+      "bough:1:1:0:0",
+      "bough:1:1:0:0:1",
+      "bough:1:1:0:0:1:1",
+      "bough:1:1:0:1",
+      "bough:1:1:0:1:0",
+      "bough:1:1:0:1:0:0",
+      "bough:1:1:0:1:0:1",
+      "bough:1:1:1",
+      "bough:1:1:1:1",
+      "bough:1:1:1:1:1",
+      "bough:2",
+      "bough:2:0",
+      "bough:2:0:0",
+      "bough:2:0:0:0",
+      "bough:2:0:0:0:1",
+      "bough:2:0:0:0:1:0",
+      "bough:2:0:0:0:1:1",
+      "bough:2:0:0:1",
+      "bough:2:0:0:1:0",
+      "bough:2:0:0:1:0:1",
+      "bough:2:0:1",
+      "bough:2:0:1:0",
+      "bough:2:0:1:0:0",
+      "bough:2:0:1:0:0:0",
+      "bough:2:0:1:0:1",
+      "bough:2:0:1:0:1:0",
+      "bough:2:0:1:1",
+      "bough:2:0:1:1:1",
+      "bough:2:1",
+      "bough:2:1:0",
+      "bough:2:1:0:0",
+      "bough:2:1:0:0:0",
+      "bough:2:1:0:0:0:1",
+      "bough:2:1:0:0:1",
+      "bough:2:1:0:0:1:0",
+      "bough:2:1:0:0:1:1",
+      "bough:2:1:0:1",
+      "bough:2:1:0:1:0",
+      "bough:2:1:0:1:0:1",
+      "bough:2:1:0:1:1",
+      "bough:2:1:1",
+      "bough:2:1:1:0",
+      "bough:2:1:1:0:1",
+      "bough:2:1:1:1",
+      "bough:2:1:1:1:0"
+    ],
+    "removed_ids": [
+      "bough:0:0:1:1:0:0"
+    ],
+    "kept_triangles": 750,
+    "removed_triangles": 4,
+    "connection_targets_retained": 41,
+    "leafless_use": false,
+    "invisibility_claim": "only_tested_directions_and_samples"
+  },
+  "collapse_rounds": [
+    {
+      "version": "branch-interior-collapse-0.1.0",
+      "accepted": [
+        "bough:0:0:0:0:0",
+        "bough:0:0:1:1",
+        "bough:0:1:0:0",
+        "bough:0:1:1:0",
+        "bough:1:0",
+        "bough:1:0:0:0:0",
+        "bough:1:1:1",
+        "bough:2:0:1",
+        "bough:2:1"
+      ],
+      "removed_triangles": 72
+    },
+    {
+      "version": "branch-interior-collapse-0.1.0",
+      "accepted": [
+        "bough:1:0:0:1",
+        "bough:1:0:1:1"
+      ],
+      "removed_triangles": 16
+    },
+    {
+      "version": "branch-interior-collapse-0.1.0",
+      "accepted": [],
+      "removed_triangles": 0
+    }
+  ],
+  "exposed_ids": [
+    "bough:0",
+    "bough:0:0",
+    "bough:0:0:0",
+    "bough:0:0:0:0",
+    "bough:0:0:0:0:0:0:0",
+    "bough:0:0:0:0:1:0",
+    "bough:0:0:0:1",
+    "bough:0:0:0:1:0:0",
+    "bough:0:0:0:1:1:0",
+    "bough:0:0:1",
+    "bough:0:0:1:1:0:1",
+    "bough:0:1",
+    "bough:0:1:0",
+    "bough:0:1:0:0:0:0",
+    "bough:0:1:0:0:0:1",
+    "bough:0:1:0:0:1:1",
+    "bough:0:1:0:1",
+    "bough:0:1:0:1:0",
+    "bough:0:1:0:1:0:0",
+    "bough:0:1:0:1:0:1",
+    "bough:0:1:0:1:1",
+    "bough:0:1:1",
+    "bough:0:1:1:0:0:0",
+    "bough:0:1:1:1:1",
+    "bough:1",
+    "bough:1:0:0:0:0:0:0",
+    "bough:1:0:0:0:0:1:0",
+    "bough:1:0:0:0:1:0",
+    "bough:1:0:0:0:1:1",
+    "bough:1:0:0:1:0:0",
+    "bough:1:0:0:1:0:1",
+    "bough:1:0:0:1:1:1",
+    "bough:1:0:1:0:0:0",
+    "bough:1:0:1:0:0:1",
+    "bough:1:0:1:0:1:1",
+    "bough:1:0:1:1:0:0",
+    "bough:1:1",
+    "bough:1:1:0",
+    "bough:1:1:0:0",
+    "bough:1:1:0:0:1:1",
+    "bough:1:1:0:1",
+    "bough:1:1:0:1:0",
+    "bough:1:1:0:1:0:0",
+    "bough:1:1:0:1:0:1",
+    "bough:1:1:1:1:1",
+    "bough:2:0:0",
+    "bough:2:0:0:0",
+    "bough:2:0:0:0:1:0",
+    "bough:2:0:0:0:1:1",
+    "bough:2:0:0:1",
+    "bough:2:0:0:1:0:1",
+    "bough:2:0:1:0:0:0",
+    "bough:2:0:1:0:1:0",
+    "bough:2:0:1:1:1",
+    "bough:2:1:0:0:0:1",
+    "bough:2:1:0:0:1",
+    "bough:2:1:0:0:1:0",
+    "bough:2:1:0:0:1:1",
+    "bough:2:1:0:1:0:1",
+    "bough:2:1:0:1:1",
+    "bough:2:1:1:0:1",
+    "bough:2:1:1:1:0"
+  ],
+  "bare_artistic_acceptance": "approved_user_r2",
+  "artistic_acceptance": "pending_user_for_new_foliated_variant",
+  "image_comparison": {
+    "near-front": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "near-side": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "near-perspective": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "near-top": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "near-below": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "near-back": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "medium-front": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "medium-side": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "medium-perspective": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "medium-top": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "medium-below": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "medium-back": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "far-front": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "far-side": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "far-perspective": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "far-top": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "far-below": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "far-back": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "orbit-00": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "orbit-01": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "orbit-02": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "orbit-03": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "orbit-04": {
+      "changed_pixels": 1,
+      "total_pixels": 810000,
+      "changed_fraction": 1.234567901234568e-06,
+      "max_channel_delta": 13
+    },
+    "orbit-05": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "orbit-06": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "orbit-07": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "shadow-0": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "shadow-1": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    },
+    "shadow-2": {
+      "changed_pixels": 0,
+      "total_pixels": 810000,
+      "changed_fraction": 0.0,
+      "max_channel_delta": 0
+    }
+  },
+  "visible_wood_comparison": {
+    "near-front": {
+      "reference_pixels": 10019,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "near-side": {
+      "reference_pixels": 9572,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "near-perspective": {
+      "reference_pixels": 10938,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "near-top": {
+      "reference_pixels": 2602,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "near-below": {
+      "reference_pixels": 18412,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "near-back": {
+      "reference_pixels": 11036,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "medium-front": {
+      "reference_pixels": 5492,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "medium-side": {
+      "reference_pixels": 4528,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "medium-perspective": {
+      "reference_pixels": 5315,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "medium-top": {
+      "reference_pixels": 860,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "medium-below": {
+      "reference_pixels": 6968,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "medium-back": {
+      "reference_pixels": 5059,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "far-front": {
+      "reference_pixels": 1759,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "far-side": {
+      "reference_pixels": 1449,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "far-perspective": {
+      "reference_pixels": 1703,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "far-top": {
+      "reference_pixels": 274,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "far-below": {
+      "reference_pixels": 2231,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "far-back": {
+      "reference_pixels": 1625,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "orbit-00": {
+      "reference_pixels": 11557,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "orbit-01": {
+      "reference_pixels": 9876,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "orbit-02": {
+      "reference_pixels": 11078,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "orbit-03": {
+      "reference_pixels": 12219,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "orbit-04": {
+      "reference_pixels": 10752,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "orbit-05": {
+      "reference_pixels": 10124,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "orbit-06": {
+      "reference_pixels": 10328,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    },
+    "orbit-07": {
+      "reference_pixels": 13565,
+      "lost_pixels": 0,
+      "gained_pixels": 0
+    }
+  },
+  "date": "2026-11-03",
+  "study": "artifacts/f5/rama-r3-128-01",
+  "registry": {
+    "date": "2026-11-03",
+    "scope": "branch_sample_only_full_tree_pending",
+    "without_foliage": {
+      "variant": "R2",
+      "path": "artifacts/f5/rama-r3-128-01/bare/tree.glb",
+      "sha256": "70269ab42577a1c9dc7871696c1752eee085f152e5855f1f717df9dfedcf7eac",
+      "triangles": 894,
+      "materials": 1,
+      "artistic_acceptance": "approved_by_user",
+      "decision": "docs/evidence/f5/rama-r2/user-acceptance.json"
+    },
+    "with_foliage": {
+      "variant": "R3-alpha128",
+      "path": "artifacts/f5/rama-r3-128-01/simple/tree.glb",
+      "sha256": "f49e3a9fb06e35ce2172a23385e71cf71c60ca35d4145616441b2f0640c0e7a6",
+      "triangles": 1324,
+      "materials": 2,
+      "artistic_acceptance": "pending_user",
+      "technical_selection": "lowest_cost_candidate_passing_visibility_checks"
+    }
+  },
+  "alternatives": {
+    "alpha128": {
+      "triangles": 1324,
+      "checks_passed": true,
+      "visual_checks": true
+    },
+    "alpha160": {
+      "triangles": 1328,
+      "checks_passed": true,
+      "visual_checks": false,
+      "purpose": "more_conservative_fallback_not_needed"
+    }
+  },
+  "shadows": {
+    "source_sha256": "2e759e1c4e195156c26a1c978e2a745735e8e693882e6b2d364e4c5889d98f8f",
+    "comparisons": {
+      "ground-0": {
+        "changed_pixels": 0,
+        "total_pixels": 810000,
+        "changed_fraction": 0.0,
+        "max_channel_delta": 0
+      },
+      "ground-1": {
+        "changed_pixels": 0,
+        "total_pixels": 810000,
+        "changed_fraction": 0.0,
+        "max_channel_delta": 0
+      },
+      "ground-2": {
+        "changed_pixels": 0,
+        "total_pixels": 810000,
+        "changed_fraction": 0.0,
+        "max_channel_delta": 0
+      }
+    },
+    "captures_sha256": {
+      "full--ground-0.png": "735636a1fff8500b9512d2ef4bbaa41cb4518fabe5e1dfc8f628e16ca34950ad",
+      "simple--ground-0.png": "735636a1fff8500b9512d2ef4bbaa41cb4518fabe5e1dfc8f628e16ca34950ad",
+      "full--ground-1.png": "57cd0b796b933f01cfc3c7faca846be766e9b0cf59d4d047ae318fbed902fdf3",
+      "simple--ground-2.png": "f354114aff7a47752404f6e531b9d7282032ca6849fe6ef704704be8a4f89383",
+      "full--ground-2.png": "f354114aff7a47752404f6e531b9d7282032ca6849fe6ef704704be8a4f89383",
+      "simple--ground-1.png": "57cd0b796b933f01cfc3c7faca846be766e9b0cf59d4d047ae318fbed902fdf3"
+    }
+  },
+  "bare_godot": {
+    "passed": true,
+    "captures": 6,
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "renderer": "gl_compatibility"
+  },
+  "tests": {
+    "passed": 233,
+    "log_sha256": "6b66105c1a1eef97b4527f2de47ca2a217dabb2001b478ab43bec0618dd13273"
+  },
+  "final_capture_count": 146,
+  "selected_capture_count": 88,
+  "selected_capture_sha256": {
+    "bare/bare--medium-back.png": "4a8fe1f47dfcd70835adf31880af7d4fe26985d73ff134a35222fa106c01d072",
+    "bare/bare--medium-below.png": "a566b5d837e93689e546a728cad3e2e3b33ebceae70b20bc9f62c7a22cd29a66",
+    "bare/bare--medium-front.png": "a4b0bcb53ff2e5ee58085c515441812ea0db7c0a2b7093cb95f52e6df55cc2aa",
+    "bare/bare--medium-perspective.png": "977dd386cfae7d9a135f59904ed55e546ee82c083187a7d61d0b2247217207d8",
+    "bare/bare--medium-side.png": "8d69fd3e1e0b3a3d05756f679e3f7c5efc46748bbd0c1093461a2e6dd929d20c",
+    "bare/bare--medium-top.png": "747393d476422bde6ed409353110cb17c429a79027c5ee75ffd4bf25d6f16aa9",
+    "color/full--far-back.png": "66cba68a7c2228a02d908425216e8964918944a99f8bafe01a83bcce5fc424bc",
+    "color/full--far-below.png": "72afa34a6c81fe0afb2eb568421c7297daf0fc58b3daef26e9e64c7de3c7a375",
+    "color/full--far-front.png": "bd08b38f9b7f60bfbf693fbb53924e2be3d0d8850b509149f7f40b0c4914ff3b",
+    "color/full--far-perspective.png": "96722ddeff0643fd871c43f42be0968c924de30e2e55b772b2968fd1d7ea0b38",
+    "color/full--far-side.png": "8dafb6e6ad0c01e0ec03c320fe2b70ffac3ccf15f1a8ec822e455775a68a6b1f",
+    "color/full--far-top.png": "15d1123d57d4786445a615d45cd1284fe9c2411d46c31a4a609fc1f83e922728",
+    "color/full--medium-back.png": "480457d5913de0475aec9c7fe598b6cca1b2e96cbf6d620be3fcea2c401a50ac",
+    "color/full--medium-below.png": "615b77eac11fee46b37ba2e8d5a2a3ded61ea13eb846d3a31d81e2eb1bf6d1dc",
+    "color/full--medium-front.png": "b2697da693bdab620a6a77fc891207efcab0fdecc80e18e86fd0c3368e73375b",
+    "color/full--medium-perspective.png": "60b4e12070f5f9b475bcbc8651a2fca58ac16f5d9715223da9ee91befeaaee35",
+    "color/full--medium-side.png": "c8ad32458723ec2df310a592b42eb2f8d2a42448b019b778e1b33538ca648153",
+    "color/full--medium-top.png": "0ddea1856b132f28602cab974c79dbce79c29e01771051d5ba0fc2c8be903fe0",
+    "color/full--near-back.png": "d6fb04570a75af0ac266167f274ce2976456eb3d916a08bb0719e4956a42785e",
+    "color/full--near-below.png": "cd8b20f6262af656af46a9033f9d8482b330e55a339761d8b1cafda5df823ea9",
+    "color/full--near-front.png": "ae403b17efd1d22da7f028173817a9e206ba36915265ccd7efb29a5532d5de67",
+    "color/full--near-perspective.png": "eeadfe291ce6e2ddbf1d277915729db111e1925e1efd865864f73ae8cd74065a",
+    "color/full--near-side.png": "9418017246d5073677ca2048a5093cb61a0f4c0462d6fa23ff7f703b5a84ef92",
+    "color/full--near-top.png": "22c0068cd3695b783b5014224735b6f09d803774ae068b5451717a5abc905a32",
+    "color/full--orbit-00.png": "24c89aff99b2800eed3c1d1fbd8a0ed896d2022b2f7853a11c5235d8cac4f82d",
+    "color/full--orbit-01.png": "6e029dcb5f9129b79333d1d749b30987c7e0ad17251bb58c9af70f45b66c61fe",
+    "color/full--orbit-02.png": "7a5efe758a91ce9fe1e78ce4261b2f66a8d67e70c6fce27580e60d807da616d8",
+    "color/full--orbit-03.png": "d27ffc7289ba33147ede241c46a64eea47f9499d5aa4cf757205fbd31ce0b86a",
+    "color/full--orbit-04.png": "a149731298e3b3033145eb35dfc6c04366125debba8150c3b25b5d30018d8b9a",
+    "color/full--orbit-05.png": "69a9000389cc9dba26f9ff25c699325cf09966eaa2cc72c5d5e8fab1caae93ff",
+    "color/full--orbit-06.png": "a900572cd7a6ce0d9b90ecab9840442056ccfc93d3edcbaf4d9a9fa817b07bea",
+    "color/full--orbit-07.png": "d7538a46aa49fb3e07e334ea95bec239c33453feeef172a207187c816a91fad7",
+    "color/simple--far-back.png": "66cba68a7c2228a02d908425216e8964918944a99f8bafe01a83bcce5fc424bc",
+    "color/simple--far-below.png": "72afa34a6c81fe0afb2eb568421c7297daf0fc58b3daef26e9e64c7de3c7a375",
+    "color/simple--far-front.png": "bd08b38f9b7f60bfbf693fbb53924e2be3d0d8850b509149f7f40b0c4914ff3b",
+    "color/simple--far-perspective.png": "96722ddeff0643fd871c43f42be0968c924de30e2e55b772b2968fd1d7ea0b38",
+    "color/simple--far-side.png": "8dafb6e6ad0c01e0ec03c320fe2b70ffac3ccf15f1a8ec822e455775a68a6b1f",
+    "color/simple--far-top.png": "15d1123d57d4786445a615d45cd1284fe9c2411d46c31a4a609fc1f83e922728",
+    "color/simple--medium-back.png": "480457d5913de0475aec9c7fe598b6cca1b2e96cbf6d620be3fcea2c401a50ac",
+    "color/simple--medium-below.png": "615b77eac11fee46b37ba2e8d5a2a3ded61ea13eb846d3a31d81e2eb1bf6d1dc",
+    "color/simple--medium-front.png": "b2697da693bdab620a6a77fc891207efcab0fdecc80e18e86fd0c3368e73375b",
+    "color/simple--medium-perspective.png": "60b4e12070f5f9b475bcbc8651a2fca58ac16f5d9715223da9ee91befeaaee35",
+    "color/simple--medium-side.png": "c8ad32458723ec2df310a592b42eb2f8d2a42448b019b778e1b33538ca648153",
+    "color/simple--medium-top.png": "0ddea1856b132f28602cab974c79dbce79c29e01771051d5ba0fc2c8be903fe0",
+    "color/simple--near-back.png": "d6fb04570a75af0ac266167f274ce2976456eb3d916a08bb0719e4956a42785e",
+    "color/simple--near-below.png": "cd8b20f6262af656af46a9033f9d8482b330e55a339761d8b1cafda5df823ea9",
+    "color/simple--near-front.png": "ae403b17efd1d22da7f028173817a9e206ba36915265ccd7efb29a5532d5de67",
+    "color/simple--near-perspective.png": "eeadfe291ce6e2ddbf1d277915729db111e1925e1efd865864f73ae8cd74065a",
+    "color/simple--near-side.png": "9418017246d5073677ca2048a5093cb61a0f4c0462d6fa23ff7f703b5a84ef92",
+    "color/simple--near-top.png": "22c0068cd3695b783b5014224735b6f09d803774ae068b5451717a5abc905a32",
+    "color/simple--orbit-00.png": "24c89aff99b2800eed3c1d1fbd8a0ed896d2022b2f7853a11c5235d8cac4f82d",
+    "color/simple--orbit-01.png": "6e029dcb5f9129b79333d1d749b30987c7e0ad17251bb58c9af70f45b66c61fe",
+    "color/simple--orbit-02.png": "7a5efe758a91ce9fe1e78ce4261b2f66a8d67e70c6fce27580e60d807da616d8",
+    "color/simple--orbit-03.png": "d27ffc7289ba33147ede241c46a64eea47f9499d5aa4cf757205fbd31ce0b86a",
+    "color/simple--orbit-04.png": "7e6181c9a97900b14bfa6f763ed31c48527ba3b926d934c3f2ff7f492481540d",
+    "color/simple--orbit-05.png": "69a9000389cc9dba26f9ff25c699325cf09966eaa2cc72c5d5e8fab1caae93ff",
+    "color/simple--orbit-06.png": "a900572cd7a6ce0d9b90ecab9840442056ccfc93d3edcbaf4d9a9fa817b07bea",
+    "color/simple--orbit-07.png": "d7538a46aa49fb3e07e334ea95bec239c33453feeef172a207187c816a91fad7",
+    "mask/foliage-after--medium-back.png": "12af785f459ac2170e9c07ac11f22c977a4b8b227450f8deca6f647342e251b3",
+    "mask/foliage-after--medium-below.png": "b320600978479ad753701bd35569916d0da9f2819b471b976be7888ffd11516d",
+    "mask/foliage-after--medium-front.png": "b5723a3d4e180e042b6f984a4a4f1806335774d42c6306bb4270d8c4376edc14",
+    "mask/foliage-after--medium-perspective.png": "106f10dffeeb34c8eb49f103b6525da2b94c92cf95c5082ac25b573974919286",
+    "mask/foliage-after--medium-side.png": "ab8dab77f25dc78ef1d8a199abf8de8affbe4a2bc3ca82e791499ffc17c0cf5c",
+    "mask/foliage-after--medium-top.png": "ac415848aa7ebea4fdd8daa6d1665346ba119bd3ac42b338047536ec7b3671d5",
+    "mask/foliage-before--medium-back.png": "12af785f459ac2170e9c07ac11f22c977a4b8b227450f8deca6f647342e251b3",
+    "mask/foliage-before--medium-below.png": "b320600978479ad753701bd35569916d0da9f2819b471b976be7888ffd11516d",
+    "mask/foliage-before--medium-front.png": "b5723a3d4e180e042b6f984a4a4f1806335774d42c6306bb4270d8c4376edc14",
+    "mask/foliage-before--medium-perspective.png": "106f10dffeeb34c8eb49f103b6525da2b94c92cf95c5082ac25b573974919286",
+    "mask/foliage-before--medium-side.png": "ab8dab77f25dc78ef1d8a199abf8de8affbe4a2bc3ca82e791499ffc17c0cf5c",
+    "mask/foliage-before--medium-top.png": "ac415848aa7ebea4fdd8daa6d1665346ba119bd3ac42b338047536ec7b3671d5",
+    "shadows-framed/full--ground-0.png": "735636a1fff8500b9512d2ef4bbaa41cb4518fabe5e1dfc8f628e16ca34950ad",
+    "shadows-framed/full--ground-1.png": "57cd0b796b933f01cfc3c7faca846be766e9b0cf59d4d047ae318fbed902fdf3",
+    "shadows-framed/full--ground-2.png": "f354114aff7a47752404f6e531b9d7282032ca6849fe6ef704704be8a4f89383",
+    "shadows-framed/simple--ground-0.png": "735636a1fff8500b9512d2ef4bbaa41cb4518fabe5e1dfc8f628e16ca34950ad",
+    "shadows-framed/simple--ground-1.png": "57cd0b796b933f01cfc3c7faca846be766e9b0cf59d4d047ae318fbed902fdf3",
+    "shadows-framed/simple--ground-2.png": "f354114aff7a47752404f6e531b9d7282032ca6849fe6ef704704be8a4f89383",
+    "visible-wood/full--medium-back.png": "803c127c978787f940cd87c86df85e83a65a9e317514b27481094ffb4471e224",
+    "visible-wood/full--medium-below.png": "1546dbfde7c372949de09a017b48a929e6012eb23f859df15a63e1ae43c90af7",
+    "visible-wood/full--medium-front.png": "8237fde909b463c229624d4ee6243aaed4e76cd89e49d3792b00e1282d64ec13",
+    "visible-wood/full--medium-perspective.png": "8a13ceca33baa930fd07d20d1d36699581af84d519ca9bf21c1cacb8be1070ee",
+    "visible-wood/full--medium-side.png": "287be60dfcf316b991b21e3b38729082eabdbdf1a5c09f0e4d86c781118aa673",
+    "visible-wood/full--medium-top.png": "b0ee1b733b7cde3f98eb68b1fd3464824e294f9944c793587fce755d9a7d737a",
+    "visible-wood/simple--medium-back.png": "803c127c978787f940cd87c86df85e83a65a9e317514b27481094ffb4471e224",
+    "visible-wood/simple--medium-below.png": "1546dbfde7c372949de09a017b48a929e6012eb23f859df15a63e1ae43c90af7",
+    "visible-wood/simple--medium-front.png": "8237fde909b463c229624d4ee6243aaed4e76cd89e49d3792b00e1282d64ec13",
+    "visible-wood/simple--medium-perspective.png": "8a13ceca33baa930fd07d20d1d36699581af84d519ca9bf21c1cacb8be1070ee",
+    "visible-wood/simple--medium-side.png": "287be60dfcf316b991b21e3b38729082eabdbdf1a5c09f0e4d86c781118aa673",
+    "visible-wood/simple--medium-top.png": "b0ee1b733b7cde3f98eb68b1fd3464824e294f9944c793587fce755d9a7d737a"
+  },
+  "alpha_profile": {
+    "version": "alpha-threshold-preprocess-0.1.0",
+    "raw_cutoff_u8": 128,
+    "output_values": [
+      0,
+      255
+    ],
+    "underlying_classifier_cutoff_u8": 217,
+    "source_png_sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1",
+    "derived_alpha_sha256": "bb1e55d9828a36589cdaa7a260ffbdf80d0a3dedf3f45a1bd8dec90070669c0b",
+    "changes_rendered_alpha": false
+  },
+  "source_frozen_sha256": "e7c720e173cfbb9f0076d0413b05d2745a75f9175768cd9834f03ae042bcc768",
+  "qa_sources_sha256": {
+    "scripts/close_branch_foliated.py": "004f52a01acab75dc326eab038ad55b888091d6f27630c6954a46148b2c85f90",
+    "tests/test_branch_interior.py": "e3aa4e30c1c7fdc6dabbbd6bad98a1fdec41451e2a7a2f40ac51aa289d67cc88",
+    "scripts/branch_simplification_shadows.py": "2e759e1c4e195156c26a1c978e2a745735e8e693882e6b2d364e4c5889d98f8f"
+  },
+  "visual_review": {
+    "status": "inspected_by_agent",
+    "date": "2026-11-03",
+    "selected_captures": 88,
+    "findings": [
+      "R2 sin follaje conserva la estructura elegida por el usuario.",
+      "R3 con follaje conserva silueta, plenitud y madera visible en las vistas seleccionadas, incluidas vistas desde abajo.",
+      "Diagnóstico de madera visible sin pérdida; sombras completas coinciden."
+    ],
+    "limits": "Muestra de una rama/semilla. Muestreo finito; sin garantía universal de visibilidad ni integración en árboles completos."
+  },
+  "selected_sheets_sha256": {
+    "near.jpg": "2a041602bd34c01ea33c8614beede2a504c95f54f9b35d26a068258c3c147812",
+    "far.jpg": "23031037edacb9012034df393a63e7eb4a17a9409acf13e29f194861c0006a88",
+    "shadows.jpg": "fa7717f1c2d9fac284a839483d14844138068fb3118931eda73ea1eef6951003",
+    "medium.jpg": "0ab4b2fa5452fee4c3f0ef3481f3587755827a5726099db6cad5ef8105052557",
+    "seleccion.jpg": "242e1e5167663fb230fb0f718a95719c34275e97350889b421c5216031467752",
+    "visible-wood.jpg": "389416585e9a4832e1328fb57875f36723091ddddb1ea1380a5226937c645bac",
+    "orbit-1.jpg": "7d45dd205cc3bcfdfbf4df03d7a06b1492b440c1bc8d35f07b36f66aeac57706",
+    "orbit-0.jpg": "804098cbe476d1b432411a5adc9beec6bd6aa811b068dfe351f07134f355371e",
+    "masks.jpg": "06cffabd83a014072c00267b353c1ebb6b616fc2ac8ecb161c31ed623ef3f628",
+    "bare.jpg": "3c56fe0ee77905385e239641da7a4943c326516824419cf0e4eede5840423f2d"
+  },
+  "additional_audit": {
+    "raw_float32_foliage_position_normal_uv_exact": true,
+    "raw_float32_bare_bark_position_normal_uv_r2_exact": true,
+    "method": "Sorted unrounded float32 POSITION+NORMAL+TEXCOORD_0 tuples."
+  }
+}
