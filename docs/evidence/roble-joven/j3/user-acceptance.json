@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-04",
+  "status": "accepted",
+  "user_message": "mucho mejor lo apruebo",
+  "scope": "Aceptación artística de los cuatro robles jóvenes completos J3/roble_copa_ancha@3.2.0, semillas3100–3103,5 m,264 grupos/dos materiales, presentados en comparación J2/J3. No extiende la aprobación a semillas o perfiles no revisados.",
+  "approved_glbs_sha256": {
+    "joven-3100": "6ecb52ff307b7917ee688e6ff0a01233df2bf5cb112367f97e8688235653698d",
+    "joven-3101": "7a7ee506d97957e8ed41931b30df797d19fb8bf21cdc938c51b8607a53dfad4c",
+    "joven-3102": "f082b6612bacc63a3a95ebe3747e4dee51a8618122937a77fac8022aea8e5c45",
+    "joven-3103": "cf18e01a2181180027870c6519410c9d57034d65e9acae7aac329f7dccbccab5"
+  },
+  "recipe_sha256": "d5411e2a88cdcfaaca51202dd10163b71955c8242bc809f4ee3bf70377b34bd9",
+  "comparison_sha256": "5f670999ae5085362607899768457306638722a07b05c0cdd8da3aef8c5b40cc",
+  "evidence": "docs/evidence/roble-joven/j3/informe.md",
+  "gallery": "artifacts/roble-joven/j3-volumen-01/index.html",
+  "performance_tests": "Se mantiene la decisión de no hacer nuevas pruebas de rendimiento.",
+  "recipe_metadata": "Receta congelada con metadato histórico experimental; aprobación registrada aparte sin alterar sus hashes."
+}

@@ -1,0 +1,663 @@
+{
+  "date": "2026-11-04",
+  "passed": true,
+  "checks": {
+    "wood-verified": true,
+    "sample-verified": true,
+    "repeat-verified": true,
+    "j1-rama-01-sources": true,
+    "j1-rama-repeat-01-sources": true,
+    "reference-repeat-glb": true,
+    "bare-repeat-glb": true,
+    "painted-repeat-glb": true,
+    "foliage-repeat-glb": true,
+    "layout-repeat": true,
+    "structure-repeat": true,
+    "pilot-wood-reference-identical": true,
+    "godot": true,
+    "capture-count": true
+  },
+  "wood_checks": {
+    "joven-3100": true,
+    "joven-3101": true,
+    "joven-3102": true,
+    "joven-3103": true,
+    "bare-repeat": true,
+    "scaffold-repeat": true,
+    "joven-3100-historical": true,
+    "maduro-3100-historical": true,
+    "distinct-young": true
+  },
+  "sample_checks": {
+    "reference-textures": true,
+    "reference-triangles": true,
+    "reference-materials": true,
+    "bare-textures": true,
+    "bare-triangles": true,
+    "bare-materials": true,
+    "painted-textures": true,
+    "painted-triangles": true,
+    "painted-materials": true,
+    "painted-alpha": true,
+    "foliage-textures": true,
+    "foliage-triangles": true,
+    "foliage-materials": true,
+    "foliage-alpha": true,
+    "wood-unchanged-with-foliage": true,
+    "wood-exact-o5-subset": true,
+    "o5-historical-regression": true,
+    "sample-ledger": true,
+    "six-tris-per-group": true,
+    "whole-tree-planned-reservation": true,
+    "family-upper-bound": true,
+    "opaque-contacts-glb": true,
+    "wood-joins": true
+  },
+  "scope": "four bare young trees and one foliated branch; no complete foliage tree",
+  "artistic_acceptance": "pending_user",
+  "full_tree_integration": "pending_branch_acceptance",
+  "controls": [
+    {
+      "seed": 3100,
+      "wood_triangles": 2952,
+      "planned_foliage_triangles": 864,
+      "projected_total_triangles": 3816
+    },
+    {
+      "seed": 3101,
+      "wood_triangles": 3233,
+      "planned_foliage_triangles": 864,
+      "projected_total_triangles": 4097
+    },
+    {
+      "seed": 3102,
+      "wood_triangles": 2672,
+      "planned_foliage_triangles": 864,
+      "projected_total_triangles": 3536
+    },
+    {
+      "seed": 3103,
+      "wood_triangles": 3258,
+      "planned_foliage_triangles": 864,
+      "projected_total_triangles": 4122
+    }
+  ],
+  "sample": {
+    "spec": {
+      "version": "oak-young-sample-0.1.0",
+      "preset": "presets/oak-growth/0.5.0/joven.json",
+      "seed": 3100,
+      "branch_id": "p:0",
+      "layout_seed": 17,
+      "paint_seed": 2718,
+      "tree_groups": 144,
+      "span_over_height": 0.1,
+      "core_radius_over_height": 0.25,
+      "mass_variant": "B"
+    },
+    "groups": 71,
+    "ledger": {
+      "total_groups": 144,
+      "group_triangles": 6,
+      "foliage_triangles": 864,
+      "tree_wood_triangles": 2952,
+      "tree_projected_triangles": 3816,
+      "primary_weights": {
+        "p:0": 4.7408505349630685,
+        "p:1": 0.7947519056179497,
+        "p:2": 1.9155377297285439,
+        "p:3": 1.6994462186409443,
+        "p:4": 0.4123072257059912
+      },
+      "primary_quotas": {
+        "p:0": 71,
+        "p:1": 12,
+        "p:2": 29,
+        "p:3": 26,
+        "p:4": 6
+      },
+      "eligible": [
+        [
+          "p:0/0",
+          0.47418632869415395
+        ],
+        [
+          "p:0/1",
+          0.4657075005782401
+        ],
+        [
+          "p:0/2",
+          0.4266964258787276
+        ],
+        [
+          "p:1/1",
+          0.21114947428853645
+        ],
+        [
+          "p:2/0",
+          0.17862552959338826
+        ],
+        [
+          "p:2/1",
+          0.1851341304779596
+        ],
+        [
+          "p:3/0",
+          0.43311922086061
+        ],
+        [
+          "p:3/2",
+          0.21429338826793523
+        ],
+        [
+          "p:0/0/0",
+          0.4955287197427053
+        ],
+        [
+          "p:0/0/1",
+          0.4463402818788635
+        ],
+        [
+          "p:0/1/0",
+          0.4319988768695585
+        ],
+        [
+          "p:0/1/1",
+          0.23268575523904686
+        ],
+        [
+          "p:0/2/0",
+          0.22252589779749035
+        ],
+        [
+          "p:1/1/0",
+          0.1739475900743403
+        ],
+        [
+          "p:1/1/1",
+          0.1444615541421519
+        ],
+        [
+          "p:2/0/0",
+          0.32867662159496236
+        ],
+        [
+          "p:2/1/0",
+          0.13509889986219462
+        ],
+        [
+          "p:3/0/0",
+          0.3578535463500605
+        ],
+        [
+          "p:3/0/1",
+          0.36712507489429547
+        ],
+        [
+          "p:3/2/0",
+          0.09117292546064017
+        ],
+        [
+          "p:3/2/1",
+          0.05153888906098105
+        ],
+        [
+          "p:0/0/0/0",
+          0.10655368763245185
+        ],
+        [
+          "p:0/0/1/0",
+          0.10102148470628239
+        ],
+        [
+          "p:0/0/1/1",
+          0.11150586399693624
+        ],
+        [
+          "p:0/1/0/0",
+          0.0715982967640797
+        ],
+        [
+          "p:0/1/1/0",
+          0.03192216115957739
+        ],
+        [
+          "p:0/2/0/0",
+          0.030238860164571273
+        ],
+        [
+          "p:0/2/0/1",
+          0.030858066252719314
+        ],
+        [
+          "p:1/1/0/0",
+          0.03775043574487453
+        ],
+        [
+          "p:1/1/0/1",
+          0.03387887849444061
+        ],
+        [
+          "p:1/1/1/0",
+          0.021310828884106084
+        ],
+        [
+          "p:2/0/0/0",
+          0.0839174179557112
+        ],
+        [
+          "p:2/1/0/0",
+          0.02091414278418704
+        ],
+        [
+          "p:3/0/0/0",
+          0.06654161042021864
+        ],
+        [
+          "p:3/0/1/0",
+          0.0538454754130399
+        ],
+        [
+          "p:3/0/1/1",
+          0.05433937965824873
+        ],
+        [
+          "p:3/2/0/0",
+          0.006149823756045096
+        ],
+        [
+          "p:3/2/1/0",
+          0.0034668844988694314
+        ],
+        [
+          "p:2/infill",
+          0.22993491769050908
+        ],
+        [
+          "p:2/infill/0",
+          0.2253947983119823
+        ],
+        [
+          "p:2/infill/0/0",
+          0.09675778088024077
+        ],
+        [
+          "p:4/infill",
+          0.17538070700132163
+        ],
+        [
+          "p:4/infill/0",
+          0.16796168497047706
+        ],
+        [
+          "p:4/infill/0/0",
+          0.06896483373419247
+        ],
+        [
+          "p:1/infill/0",
+          0.06080575454636688
+        ],
+        [
+          "p:1/infill/0/0",
+          0.11144738944313304
+        ],
+        [
+          "p:0/infill",
+          0.4091677913785193
+        ],
+        [
+          "p:0/infill/0",
+          0.4486963830897449
+        ],
+        [
+          "p:0/infill/0/0",
+          0.2036181531394004
+        ],
+        [
+          "p:2/0/infill",
+          0.26028291455036584
+        ],
+        [
+          "p:2/0/infill/0",
+          0.08573842181135888
+        ],
+        [
+          "p:2/0/infill/1",
+          0.08506215421568429
+        ]
+      ],
+      "family_wood_upper_bound": 5415,
+      "family_complete_upper_bound": 6279
+    },
+    "exports": {
+      "reference": {
+        "triangles": 2952,
+        "glb_sha256": "77343f1a804492c80726289e709e738b47525f37fea45551b18b320709e6beb8"
+      },
+      "bare": {
+        "triangles": 620,
+        "glb_sha256": "3d2beb32d1cd9cb4aae950cfcb75af78602046835d24d7632e1b317565544a94"
+      },
+      "painted": {
+        "triangles": 1046,
+        "glb_sha256": "1e169a2796d73c5f9040542951574fc194a772fa86ec6b30e933f0bf1d99b019"
+      },
+      "foliage": {
+        "triangles": 426,
+        "glb_sha256": "cf86b5e9d4d332ce2496fc263a9a4b62e22e979f14aaf591ba37efd1cf76d010"
+      }
+    },
+    "maximum_contact_error_m": 1.335028009904782e-07
+  },
+  "sources_sha256": {
+    "src/treegen/__init__.py": "346a214d848e29dcbd7ad17a6573f750afc7d242e3bbe8c66f587619c0eb750c",
+    "src/treegen/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/treegen/api.py": "b954f5a951301783d607ad00f2e703af4218f0f1f00ce036e9250572e76c5ec6",
+    "src/treegen/birch.py": "89a4fabce283c89b0d48448da82e3dccc9dbde4a5da510db08fad4502fe880e2",
+    "src/treegen/birch_evaluation.py": "6b738a3870ade67066413089b0faf01b9cc8611618f7d7aa523c5adb7c469104",
+    "src/treegen/birch_sample.py": "3530e76f940d513cbe9aac71bda954bcf258a843129de876fb6755fb71dc79d6",
+    "src/treegen/blueprints.py": "2b438141fc4e5dcf34f8f1efaca86fb25c992626019bceda32265fc941962d0e",
+    "src/treegen/branch_interior.py": "93aecbec1b0dac556de552f8292a1aa407e2b5b4082f078816a2a4bd8ab94ecc",
+    "src/treegen/branch_sample.py": "0a0633ddcdc0892bc31a755906aaa6e17dcb2d343825a75ec6a0abdd0f461d4f",
+    "src/treegen/branch_space.py": "a5e8870433b9e6b24e37a69bd81cfe4c1c1b3f40f03d05fc9a352f0f05fb2af5",
+    "src/treegen/branch_structure.py": "b3a1bbbf94ac1006c8ccf087a82f9635a79a417bf4185eed3866b99c4dae5a72",
+    "src/treegen/branch_tree.py": "85a751449b98f8bc7892e741b4472ead47fb585bf87eb2920a904a3b9bbfb38c",
+    "src/treegen/branch_tree_audit.py": "9d942f24634baf2a6beaffa3ded56ac0fa6f877442eb6a81dc7750c5d5ebe504",
+    "src/treegen/branch_tree_guards.py": "d73b2e843bfc3ae381a1a0931c55aed238322861931f5afd4e46221778475e5e",
+    "src/treegen/branch_tree_runner.py": "d1cef51b375b103a1477a180a3978c5526c403127d550feabf115ecea50ea940",
+    "src/treegen/branch_visibility.py": "7450ee09b716ae5bac738b419346d181688de2f00d0e29c6c827778e063e27eb",
+    "src/treegen/canopy_normals.py": "4aefad3301b231aede30b5d287580a7d242a46e94a7b9f39105366e450b6e117",
+    "src/treegen/canopy_normals_glb.py": "b54b74c4e13da789b9203c374d099736340bce0f3fd7599529830075c8820597",
+    "src/treegen/cli.py": "7b2b70a0fba5d4ba7dae283c9358fb969aedf66cf6c12b9f501a387a755b2087",
+    "src/treegen/contracts.py": "dfdbe822bf6d0b1a2e4b0d696128cfa2852dc3b3bc99f725beca4c7792180053",
+    "src/treegen/crown.py": "9428cba23d36879eeb8f42a92700673dcad14764051941e170cba46af3856ad4",
+    "src/treegen/evaluation.py": "0acd02fa68078a57723d10a9b338c63af8c03c2c05485382077542f6639b0b5c",
+    "src/treegen/foliage.py": "4bf5114462d741f07d548f3a2aa8101af0c3c4044fab2fe46abe9f9432fbc043",
+    "src/treegen/foliage_branch.py": "2eaaf94c703494e7fe258805d2a40be0675a9cf2143e2e9f4a55c92a2c304b64",
+    "src/treegen/foliage_branch_evaluation.py": "02adb3e9433fe52113fa7c6151735064a0e1b3e6876d96d2a1b63d4fe9f475e1",
+    "src/treegen/foliage_canopy.py": "f961bcbcbc4df7f3b04db0790214e70cbf705bb5044656ec21c9b2f1f00d9b2b",
+    "src/treegen/foliage_evaluation.py": "1d9d265484ca62e8e1d76c06e5ca69dd0025118a1e8bfda62fa5503336fe77e7",
+    "src/treegen/foliage_mold_density.py": "91f8093db96d23d203e1bf160880a74f9f597db6b2c8e40e1a300b79e76475c7",
+    "src/treegen/foliage_molds.py": "f210c99f0b7acf31f8a9fa081192f9fc7752d90bd00303841b613b3dbeb9694e",
+    "src/treegen/foliage_molds_evaluation.py": "a89181a7200d18035f1f0b13fe80904221aa6a509d70c5fc2f552970c22b3174",
+    "src/treegen/foliage_twigs.py": "1d7e9df46cbdf0fe4fa6c663e30262c07c1df41d1e906de8b88faf6d0dc7dba2",
+    "src/treegen/foliage_twigs_evaluation.py": "d6c341ab4cc72923338de313f08e344e53cf4d42c811375b36a68d9df12714bb",
+    "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+    "src/treegen/oak_branching_contract.py": "466ca4ffd2e071d9df573847f5649b02e32013496cbae27aeb203def978229e6",
+    "src/treegen/oak_central_production.py": "8bfe61704283eb9e961a35839e9e7dcb7d2bb557283213917aa8730c7b7792e5",
+    "src/treegen/oak_crossed.py": "0a3e4bd4e7a473c32ce2d4e76cfa22927849922c68fc0f476bdc4215616829d4",
+    "src/treegen/oak_crossed_evaluation.py": "a99597173374a47dce16ad1244b175c65112e1ebdc2b9e9ab92407e6bf2f8e95",
+    "src/treegen/oak_crossed_production.py": "81ecf4c59e6a43c8dafb739f3f20e45db8c9ed4c9dca2696d4920c6a3ef7d5b5",
+    "src/treegen/oak_crown_balance.py": "ec093d1463c1f81c28bcf35e3912033fcdd548673438eb8e609cf7d7f290fcea",
+    "src/treegen/oak_crown_contract.py": "5cfca1e9c88c08eae6b64f88a212044f5960700ed455a1e871d8fd795141091e",
+    "src/treegen/oak_crown_evaluation.py": "8ab48a18fef6e359d10da35dfddba4549b56a690d4663c779c91cfa9caccb0ab",
+    "src/treegen/oak_foliage_balance.py": "eafc346d772a8b1a134b1f823952565d10fb9198a0cb9322f052adf722b95932",
+    "src/treegen/oak_foliage_balance_contract.py": "667ef6f9177c0902683ea2d106ba1b93412445ea2deaa0a3d6f7f593761c49af",
+    "src/treegen/oak_foliage_canopy.py": "ff814677351e8a83a5497fcda23419667ea7e77285a12870b48f2188806de7fe",
+    "src/treegen/oak_foliage_canopy_contract.py": "a20b99d5a663e6d93b610cd81e2db5b776a7999d89105cd9161af8cccc48929e",
+    "src/treegen/oak_foliage_cards.py": "849da120444cf74d5af166ec4a2ce8304d47c2a496f6489647681b0abdfe6a17",
+    "src/treegen/oak_foliage_central.py": "7f9af54d13934e2ad65969680f0edfee26dacf848d347946c7b6e3ff7a0176d0",
+    "src/treegen/oak_foliage_central_contract.py": "fe29b08a17db58e95bcef78adcd104a3e5ed7a0658c67f73f991790ae838911f",
+    "src/treegen/oak_foliage_chain_contract.py": "b74c335c2548b8001a0e3a7ee48e52a5c6da6a551bde86470aad341ff5004252",
+    "src/treegen/oak_foliage_chains.py": "c105ea8b4d6cce37ce5517c7b836398b51e3f4b024b4b396a677eabf1f3f5347",
+    "src/treegen/oak_foliage_contract.py": "c3aa4f435adb9e661c554588feb446ea243b60ab1ed905ba93db50141d6cf137",
+    "src/treegen/oak_foliage_evaluation.py": "ec348da9e95ea96f7612182b1b0548369c73b1613c24ccd91f6039602c934336",
+    "src/treegen/oak_foliage_gap_evaluation.py": "2234e01542ca2d4496435e739341a01d6d3330d2e1844c86c11e84c551ff82c8",
+    "src/treegen/oak_foliage_gaps.py": "3e2aba4dfcfc49f3d2a36bacd95388b90d9d43a809e78a710cd2dff954f54858",
+    "src/treegen/oak_foliage_gaps_contract.py": "ef43fd4cce5f3c5dd12b575652152d7ac0687aaf22dba46b51bd451df2c88572",
+    "src/treegen/oak_foliage_layout.py": "cd70f0651db99d378009c5632066c87e27bbf11a74e40df78c548957cbf79786",
+    "src/treegen/oak_foliage_macro.py": "6a923abc3bf20f9918d1d6db7c734e97c66561cd9423ebc07f0a87bef630708d",
+    "src/treegen/oak_foliage_macro_contract.py": "2c37c55b126404a537f12eeed46e72ae3528511f78a114ef523820aa858784db",
+    "src/treegen/oak_foliage_peripheral.py": "d7bf6117d88dbdd04ec505a2810223524d350a1621c3afec130eef44c39cf9d8",
+    "src/treegen/oak_foliage_peripheral_contract.py": "71a3a896750b9594de20b94ec45d9f701082096987bde09b13528bdfc550e34f",
+    "src/treegen/oak_foliage_regions.py": "c4813b740f9e8b4d90a41b49d3b55ac3b779907fa40ac2aa8a071de14deb2cb8",
+    "src/treegen/oak_foliage_regions_contract.py": "ae1b7017552247e290ed6fe9adc9bc44cb1effb4b0bd7c441bccf1807efeaa82",
+    "src/treegen/oak_foliage_top.py": "7dc4a5ea5fa330a85876496027fa68363bc3f31d7f6074db44e0ed6b2fdb6745",
+    "src/treegen/oak_foliage_top_contract.py": "45a520e97df72d002915d92f319a7193d9dec013c0b963eff3cfec542b92d1c8",
+    "src/treegen/oak_foliage_volume.py": "211af7b1d3cba7773a55e3be66c92c57efe0571bf4cb57d717e9694a6cdb6bb2",
+    "src/treegen/oak_foliage_volume_contract.py": "a7edea0d0d8b4fc9cf774542fdb94e454ea717fb9cb148917b77bd992d035b12",
+    "src/treegen/oak_growth.py": "9ca745ee9d2add0497893eba27bea3c1a4d5836fe6ab7d7cd83947840c28998a",
+    "src/treegen/oak_growth_central.py": "6badf8b9150cafdd1c5783409e95be9b97debe163a404765252e2ea7a035321d",
+    "src/treegen/oak_growth_contract.py": "8e1cc4497aaf0d06c5d60453e6b56baa77e9297abed304d3f23f09b928f0fcc3",
+    "src/treegen/oak_growth_joins.py": "21482227bf99d0f2d5abf2175821a8680493e4b74943a698e58889737f2ba7f3",
+    "src/treegen/oak_growth_mesh.py": "5b6a63ace950ecfeadecad04bdcb90ba0bbeeefb68fe46fd710ed9a90f4ff52c",
+    "src/treegen/oak_growth_runner.py": "25bf64ce5a94192a96aaa4d479605bdba67afff2a33b6c750b8a3da4e3e0378f",
+    "src/treegen/oak_growth_v2.py": "1cba0813cc9775e9bdb1e7e52e1b5a8bf146925eae8e5a65717150456a6070e6",
+    "src/treegen/oak_growth_v3.py": "5bc7268e1425aa71f2e6117e84e20eceb4635e072b5225e3e0137119e560d3fc",
+    "src/treegen/oak_growth_v4.py": "4b542ca6c4e0cff5de436fa7476164dadd8673e4a88e6e6b75a88ba17b047ba1",
+    "src/treegen/oak_growth_v5.py": "3f257197c703f893849067ec17d4567f3084d0e5601ef3a2917f35b763a39f0f",
+    "src/treegen/oak_painted.py": "ae0a41e69459ee123c5000319bba5363e835c073e30a6ce089589afbdbb04a4a",
+    "src/treegen/oak_painted_evaluation.py": "d8a430412071d312dae853964c7839c80baf7c313a18543d3e3bc9e04d570eaf",
+    "src/treegen/oak_painted_sample.py": "32d1c3209eac6e4dc48d0f2f4550366b007628f9cefce9a1880422809e8489da",
+    "src/treegen/oak_painted_tree.py": "37619070cec94cffbb790cb16d9485622533830b941c52596c1c4e2f9094d37a",
+    "src/treegen/oak_periphery.py": "3435ebd9ff92dfcef1076c68fce33685dd84bc85d9a5cfd441cb38eef223b4cd",
+    "src/treegen/oak_periphery_contract.py": "b43ab0d90b0dffcaf9600d62e90b3f9aad7d76eb21bafb28c1ef2d3937a1e412",
+    "src/treegen/oak_volume_contract.py": "db36094cd2989c50ed72d827a89c60ebda888744b00e9daeeeb3d49bcf78dc12",
+    "src/treegen/oak_volume_evaluation.py": "3934e4049d44aa7b177f9364eddad8bdedbde39296b9896526e36c8c6cf827c1",
+    "src/treegen/oak_wood.py": "db3dd4b34d942d73beb1b19842508bdd96b563083bb253855fc54b5d24170f22",
+    "src/treegen/oak_young_sample.py": "4a2ffc1a5a71dd945b0c5dc25fef5b6778cd984642a840b2caff8ae8df263115",
+    "src/treegen/pine.py": "7053bb176d77c47d649f1a71542d6a7da8a9f78a432bf8c636e0da2ccc32f591",
+    "src/treegen/pine_painted.py": "46bf5c8672bef173fc41f2e09e1fc988f3f77b21dfdccc8d20f2188c62580392",
+    "src/treegen/pine_painted_cards.py": "6af9db38692b98904cf37e5a6d646ef934d1378ac3251d349965ce0da00cfc0c",
+    "src/treegen/pine_painted_evaluation.py": "dd44a008816d1b095a05aeea0a8ba764eb41ae1c7610a02533b629c9acbab9cf",
+    "src/treegen/pine_painted_sample.py": "728d85e48acc5c67a486cbcf50123c686add0b24671c17d2f52f1762af996e7b",
+    "src/treegen/pine_painted_volume.py": "121c34c7e3ae4955eb00fbc58844b97859fc26b7924ec23a4552e9a0557a6576",
+    "src/treegen/pine_painted_wood.py": "47948ec623476c2df6cadab87b43590607bcd025ecc6e92ac1f5d6f512680274",
+    "src/treegen/pine_structure_v2.py": "591ecaf076667a037248de90a75da93b62d317a448f9029267ff574760e99b0f",
+    "src/treegen/quality.py": "07928ddaeae019275d18fd6fdeae17a347ee4408c8676822ed327353802db5eb",
+    "src/treegen/runner.py": "1b40093ef43010352974771c1d57d942561d0633a81bf97847ab0a9174f8a336",
+    "src/treegen/season_atlas.py": "7dc75d25d500f5489038971ee7d84aa7990b90c8b3e0c31f81fdd4efddb29bf5",
+    "src/treegen/season_bundle.py": "16011d4889c5463baef0f96d58e9d425473cd7e2ed90dc5e9dbf9cfc16db75ff",
+    "src/treegen/season_calendar.py": "21533803ab35cd76171686c5ea18802f13fd89c3e631f05d62fbb0267e032a02",
+    "src/treegen/season_calendar_glb.py": "b1b5c8f3cc64dbfe00b91f7a2d2b3f26a931f17aad851778a9045d0baff35fd9",
+    "src/treegen/season_transition.py": "31c1c46e1a26ad1a4d1b6eb4c9b0a354298734467160846ab87d5a002c40e3bf",
+    "src/treegen/seasonal_paint.py": "e77cc2afa4dadd445bfbb78d0e522feb0ebedd0e4b25b1030aee51a003c4356f",
+    "src/treegen/seasons.py": "433d10d9012e04887f007b0381b514f64dfb9edea7cb7d73f61e0c2fb6f87d05",
+    "src/treegen/seeds.py": "0a3a097fecd411f6dd103905437a3ac26aeddc0b2e0cd0f2e8c6febc4f245767",
+    "src/treegen/surface_evaluation.py": "b6c79ceccc295e2350f294c584a8fdda3852b11e433d3e57b5849598bcb2c8dd",
+    "src/treegen/willow.py": "ebf75f3fcede8c42efd0b4270995bf0d168a022d5d02d894163393bafd277e9b",
+    "src/treegen/willow_evaluation.py": "ec60175f4b94d0b965b66d247def68c7cf969cce2cf5f72a279981084566915e",
+    "src/treegen/willow_sample.py": "7f4fb848eb62e45e407d8ae75d4bfa9407477372b138ee1d2438299c3d4ce0df",
+    "src/treegen/willow_v2.py": "5734c5e48e69e7550474cca4188fb65f51e6d6faeaf6d819c0416737c1c41a38",
+    "blender/addon_comparison.py": "8534f4edc701c1d7245133bcf7ecb9c28ab201f0130b46f1c3e80cf71a30eafd",
+    "blender/bake_autumn_oak.py": "5627c8e9e4e593a32bc5080c5bc46f83100678f94a69c580f3332a346b571a60",
+    "blender/birch_sample.py": "668dbb55609a4d88812e9b52505d6fd0f2c58b637478b9e85ff22d8d381070ad",
+    "blender/blueprint_surfaces.py": "840844aab439bbcd4555fa99e85b356efe570064b519d415557014b956116560",
+    "blender/branch_sample.py": "14de502b4f3d0ee966fbd346fdb3ad9c9dd4da24ff24ffe0079b2e992450ca91",
+    "blender/branch_variants.py": "13071ecdeca42d7b62cf02c6f10b484ccd3fde7ddedcc037aac2d65cee237959",
+    "blender/classify_branch_visibility.py": "81bf28c066a946316ddf159b5e28d42687b97fde3b7baf6ab4a1266f1b822ed3",
+    "blender/classify_tree_visibility.py": "5b4762f7804bb7ec25bc383cfa4e434e1fee80afd3a38a0cb94bf59f8c1eaaa3",
+    "blender/diagnose_blueprint_contacts.py": "8c85d28a9472d8f533b8a2f94d4a286aca8dd6a3b0590597d9bcef0627c6062a",
+    "blender/experiment_fusion.py": "5e47a628ad847fb21f40125104ba89103f4fe8360b706707417693310d755517",
+    "blender/export_branch_tree.py": "88492972050904ce57609bc0b7cdc542f256f992af392bf0d4f8f0587fcdb80b",
+    "blender/export_oak_foliage_sample.py": "4df6b5ec3a9b5fe51c22cd911ec003309cbf42e2925ada734aacad2c78f92eb0",
+    "blender/export_oak_growth.py": "1658f48eddcdf3b1fc61f8f74e04ae611c568fb294eb445bf92d707d4308c45a",
+    "blender/export_oak_wood.py": "2829d53c0788ceeb4ac10036483ba7b9ec3bb0c51abbefe4046b7f932c8f96cf",
+    "blender/f5_structure.py": "6dc67bbfa2de21f3dcbab8535c09ec91fece323783f38f18805b99791405e29e",
+    "blender/foliage_branch_lab.py": "3fbe2a39db2db04700f32d4c01d6934b9e132b5df9b9efa571e4efce42c4631c",
+    "blender/foliage_canopy_lab.py": "455e9f4963de8f0492f3a3f4f3f04eb089d5671c1adfa1b036bdc0b33c15f1c5",
+    "blender/foliage_fusion.py": "36d8a1aec42e559ea268dc3ca6cd239b88ac345981f6c4696dd9024d1749fb70",
+    "blender/foliage_lab.py": "a052601f02b82e382ab8675f67cda4b666f5308b492f788d79dfc8364299cd6c",
+    "blender/foliage_molds_lab.py": "cd98c2053065df74c83a370a18307ecda261b5d60a8ed9fb0f03fa5affa50738",
+    "blender/foliage_twigs_lab.py": "38b3baeb6ca7d48e48f14d83ceaa256c3b6038de51a963306e35750c7c51beb3",
+    "blender/generate_birch.py": "9a417ca2be4919534a4564998323124006371daf4e41c31e3a02650c5ac0bdd1",
+    "blender/generate_blueprint.py": "b949ce28d3b38474cc9e5c82ab8fae6a1e4c9d249b577e185e7321ea377cac1f",
+    "blender/generate_central_oak.py": "e347b46ef1d4f7250724b5ae6f03fa99fab149c71c8998b978680f80a7724040",
+    "blender/generate_crossed_oak.py": "695322e6649466718ea0222471c4e4ed9e04726d57369c6f860ca35527205187",
+    "blender/generate_oak.py": "5850073ef5962c1a40710582fa82cf76bcbe9d73ab9c25bc6599c2097f9fa93f",
+    "blender/generate_painted_oak.py": "5d6f15d33ccc7bcabbbe6d9f223afde3ef86ddf56ba4de1dfde38dff6b8716b5",
+    "blender/generate_painted_pine.py": "7f10893bcb5fea3b92a9db64325a8c92fed8a1dd0b1cb064afed4c9b695c08c7",
+    "blender/generate_pine.py": "8564de938657e81f10c78881cb7137f4b33bc52d584a676a0bdd046103ea53eb",
+    "blender/generate_willow.py": "b1636ab8e446f163e320f49179ed81ab6afe94da9da246bbb4b77d6815046fb6",
+    "blender/inspect_blueprint_controls.py": "6fd55c440a0206a17632c35bfb0197c6268cc293328e9024ca8e331aa6f1bbc0",
+    "blender/inspect_q2.py": "877c5099f73c83ed3530d767811a1c613f620424af765fe9bdd3d2e1925f97fe",
+    "blender/inspect_q3.py": "600145afbf1412f70e7d475f609b9ce358fa5afdd07c6881d6f417cbcc8aef3b",
+    "blender/inspect_q3b.py": "ab43f7b12d1665792948a2d56254c5c92e0c9363d23096dc2f632a86449ba55f",
+    "blender/mesh_contacts.py": "c998ab91cc96fedf3c504195004ad412b3ea0977559bae4be96da8d1c56230e8",
+    "blender/oak_crossed_reference.py": "824daf84cb3ad034cdfd286d7f4cd3d9ae5eb666e90e4702799e81d69a0842f9",
+    "blender/oak_crossed_trial.py": "4c7eae600da0aac401ee9a831a8df2a7e1256292735257b1cd05d356dfc58be6",
+    "blender/oak_nodes.py": "e93fbc974c3227fe7255edecd29c11de8c4e7d7ae2974aa9ef531edbfbae801a",
+    "blender/oak_nodes_v2.py": "e3dcd827264f7d394496034d663f481789de1ce9a1857a5216075d3d5f25ab2e",
+    "blender/oak_nodes_v21.py": "d010b89f075c0c3f069252b6f400f041a68c10ea1ddef3188c4a2d38c2d76e90",
+    "blender/oak_nodes_v3.py": "4171849406df07ecc026582cc6f2712a2a3e7523903484e74f60f7ff0a67e1dc",
+    "blender/oak_nodes_v4.py": "e8eefd08af5266ce143dc4899a9a0e38f8534300080bb8a9422a87fc70e7de26",
+    "blender/oak_nodes_v41.py": "019661872af386c68dfc8554a68664c7a561859192e12d787e8787c5e199b4ba",
+    "blender/oak_painted_sample.py": "ee7d0bd42e3d533734228de8bc61b177a7e367414cf5c39ede4ab64ecb70e244",
+    "blender/oak_painted_tree_pilot.py": "224df5283e5395ab2696b93d8bc89c4e44f86bb26dd7433afae31c6221122eb7",
+    "blender/oak_wood_hierarchy.py": "07fceea0467c13691d679941e9e85006d90fc7630f7bcae9a4e754f74aa59c72",
+    "blender/oak_wood_trial.py": "024b0f32f543fa13cc315109398ddc25b991f2c832e05a836134fbf91870c842",
+    "blender/pine_cards_reference.py": "ee30f384357c84dff74763616dcfb32b2daf3111b5bf4b86962a0cc29b8f5c3f",
+    "blender/pine_painted_sample.py": "6ab7d003cdc2a1b938fad4bead9332ae6d21f133b24c6302781d467771006f97",
+    "blender/probe.py": "5c2bfd88cbb66f272d597fba8d78d6bbe2dde6465a82b8353c27094fdf50530f",
+    "blender/rebake_oak_crossed.py": "75284275a4cfe7c4c3e3b5fbf6db88fe75192d8b4dd16d4cce9d74f99b907b16",
+    "blender/render_addon_comparison.py": "fb37f98f0c6db79c540a2644ab4c44e5b84fe0c09f6ef27b01d86d3479bdc18a",
+    "blender/render_comparison.py": "5866563ac8b7e49d0485d681364ca600875e944e0798d5c9be0f67fe38772f84",
+    "blender/render_q3_shapes.py": "57e9ea0955d4e5d0fbf8dc4e9b26cdf50122d30ac1da93ad23e6ff542821cc47",
+    "blender/season_atlas_sample.py": "70469069ab126829b13fc9003ba9c93de6ecfbaefd9ed7ce35b509f46041f4d1",
+    "blender/verify_branch_visibility.py": "f6a98a202cec47f8bb6d5431088ca827159d0a40e98f667658652e90abf55d84",
+    "blender/verify_canopy_normals.py": "2a66a50e0a9030d24eb525253508bb9b007ddcd03ac567e7adb4c108bfd23099",
+    "blender/verify_export_contacts.py": "2fa8667ce9918319291cc1b742778319421b5d4109a3b80cbd5a5315a2d95d2d",
+    "blender/verify_fusion.py": "f5c8e4757d50c3ff2b923376dc6fe357508ac8297b3ce1db536b257314c239b6",
+    "blender/verify_mesh_contacts.py": "ad2ffc18d49c5e39659a8c59e93e17b811484be50c0ef408be28a1b6468edf3c",
+    "blender/verify_painted_pine.py": "322851d188c022ea859ac08adb0b6540c14cf3f15559eb5061931a5be926d8c3",
+    "blender/verify_pine_contacts.py": "c4de070611fc9f3366002b86fefd877d8dc3fecc824f2f1dfcbda1d7ec4ffd44",
+    "blender/verify_season_calendar.py": "cd0762f6113675063feb2017e09bcd28e9284e9fc9ddd3fa2b6f6cf84ecbee72",
+    "blender/willow_revision_sample.py": "7305f8bf8daa5bce2e87a13bfae673b08fd85c64c4cf6d7824422149de806ecd",
+    "blender/willow_sample.py": "1f3d240a256fdd1a64ca87d449a07c57af880ccdd8fac371e01912fd5e8e8bb4",
+    "scripts/prepare_oak_young_sample.py": "1ca3ee6c1387dbeed47ec7e276bb57cc96413bbe6c499297b8ee669353946e8c",
+    "presets/oak-growth/0.5.0/joven.json": "9e5a71dae3ea11b5e98c001e21968ac32f688cf3bc4dc233b47f09bdc5b0ce02",
+    "configs/oak-foliage/young-sample-v1.json": "c14b2514471c016f79ca0eb0508ac90cbc68d2e9e338ab6e60cab7b7b0b0df12",
+    "godot/project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+    "godot/verify_oak.gd": "6cc07d2c3fdd2df934f9c3b6b69263ec710eef528a96c9f98eef687050ba49a0",
+    "godot/review_painted_pine.gd": "bed67a6165a424d698c6f74be08aa2d631294e22da9fd6da4916ff67bb746439",
+    "godot/review_painted_oak_pilot.gd": "0152c9300d49f20c78c7d10b2d7c7648fba9e86bb7cc46b0d8138129e9aae24c"
+  },
+  "closure_source_sha256": "003e7153359f8dcda3dab487b9c58e02df180da738949c89e20622b3683bf90a",
+  "unit_tests": {
+    "passed": 11,
+    "commands": [
+      "PYTHONPATH=src python3 -m unittest discover -s tests -p test_oak_young_sample.py -v",
+      "PYTHONPATH=src python3 -m unittest discover -s tests -p test_oak_foliage_chains.py -v"
+    ]
+  },
+  "captures": {
+    "wood_count": 48,
+    "branch_count": 36,
+    "wood_sha256": {
+      "joven-3101-scaffold--young-front.png": "dc7564a8f6c201621313f786bf43d6116cd9cdcd191a228e1952e85ec26d9a3d",
+      "joven-3100-scaffold--normalized-young-front.png": "939faf0a14a011f5e661ad2b109050e430608c6cb87f904a9cfbc6dbe36a5bc0",
+      "joven-3101-bare--young-front.png": "1e16bc725db259faae589b0b1aa5b1730a99822506b3f29f31f4b26960c5f8b4",
+      "joven-3103-scaffold--young-front.png": "da8028e406fbbb3a2cc3ad466da62c4144ed9adec181a877613dbe9af7546d63",
+      "joven-3101-bare--young-top.png": "5e55ca5579679155b1657a49c5742f2e713bdc43533ba195a0dbd4c8571e9924",
+      "joven-3102-bare--young-top.png": "c8e74ab58ce309a64aef607049ecabd3e73aa6d1ae033d844e65caf583a23230",
+      "maduro-3100-bare--mature-top.png": "dfddcfeff6a123df47307ac8613a499bc359a577ef9abd1b5cf1724ba2fbf33f",
+      "joven-3100-bare--young-side.png": "a2896ce47f15b6eced6d10708dfe56b41994f2713267f385fa8b892cbb65ab4d",
+      "joven-3102-bare--young-front.png": "d0e9a531d63253820d471cd40f48b399c8060d2b9af3581cbbdebe594ca01ebd",
+      "joven-3101-bare--young-side.png": "69ba1e61d722766a7081ba2e30fb6beaafe78f047a97a085c24fa0ba3366e13f",
+      "joven-3100-scaffold--young-side.png": "17994e1ab3d755c330e17d9e2237e9ffc58fed7f9c20c89bde3168e2bbe279e6",
+      "joven-3100-bare--young-top.png": "5061d3f3c6606fbcc58d36cae70aeac92232490309fbb8e7b121f7912616dbd8",
+      "maduro-3100-scaffold--mature-perspective.png": "2beec17e530bbd2762bb7818f9c45f7b5adb6bd1289981bc6405d09cad75183c",
+      "joven-3101-scaffold--young-perspective.png": "8098c28c08783349411e56e9eae2ec67a2ee92fc1ce3b3dd0c7a3693ebaa8567",
+      "maduro-3100-scaffold--mature-side.png": "f7c8957dab43aa95c3ebd386c8f47d3172ec18e08d48fc157110440c29825b76",
+      "joven-3100-scaffold--normalized-young-top.png": "60b053d9a8bc00a4db4723bdc28b3f4c8a853f3ea1bf74fc323ae4f4c56ae49e",
+      "joven-3101-scaffold--young-top.png": "404befef6c6814e82c168ac511a28c35a55640553dcb3398a119a5a0cf9e90df",
+      "maduro-3100-bare--mature-perspective.png": "eaa8af2a9daae85972bc33196064387c56bef7026993ceff1d1691466322dde5",
+      "joven-3100-scaffold--young-top.png": "05094e1ca88a7d9786c3471c373fe62fcc175ceb4dde4b706c6f60c4c9c7c3f1",
+      "joven-3102-scaffold--young-side.png": "c4ee720e4dad7e6db87aa293a6059b32bbc6e35f0cd3b5ffd8f933d2003400db",
+      "joven-3101-scaffold--young-side.png": "98c7b44a5c2338ead187a476839d433bc9dd16f90ead0340b05c68ec069efa30",
+      "joven-3103-scaffold--young-side.png": "9af6f11d7e71e0e7089c33dcddd37461da9db87c3545ee090171baa5f07b4afa",
+      "joven-3102-bare--young-side.png": "40c445016e2b5c9ea741d6a037984ca4e0230a89239653daf04d5ac34c68b507",
+      "joven-3102-scaffold--young-perspective.png": "ce555a18f169a87d6b83c756907e9e658477df3a1fbdd904e24ceed98fc810d7",
+      "maduro-3100-bare--mature-front.png": "363c150ebcc3305112c54ce07f69f9adb1fa74fdddb5cd75d5fa122485238118",
+      "joven-3102-scaffold--young-front.png": "dda010f0fbb68016a96e81026c8c4af2c2aee9db4827cc43fa739127e1c72c09",
+      "joven-3103-bare--young-side.png": "4dcad1971bb129865a943ca1c5b9dc11423f691e98d7d8f182c749fa6e10934a",
+      "joven-3100-scaffold--young-perspective.png": "6f1d69110375fb14689fc4bf746febcdd00b9615143a5ce556237dc1b5a0f59e",
+      "joven-3103-scaffold--young-perspective.png": "f586bf59ac6480a1b7659e69ed259d3229f1df620076cdf8ab007b6c2102a7ca",
+      "joven-3103-bare--young-perspective.png": "43312bfe406173af791be11dccc548afdd4745aad41645eb509f8c262fe1e31a",
+      "joven-3103-bare--young-front.png": "d734af29dc75def194060c2700fe900b848dced57a55d72af22ed97f8f7f691a",
+      "maduro-3100-scaffold--mature-top.png": "54198ad701f5b9663a8e7cbb9c320183250329599f62923759ab4c4c6cc926eb",
+      "joven-3101-bare--young-perspective.png": "69247ce92c29049116bdeb46c02145366c0c92609a8cdd177db3af7761842665",
+      "joven-3103-bare--young-top.png": "46402eb2aaaffd3dd8f8a38ed60f8c55df9510c0bc4ffe872cbbabe5718e8c0c",
+      "maduro-3100-bare--mature-side.png": "6fb89aaf14b1e93b372c28106a72d65eaaa42d7c220117e9ae21c6fe8c7f6a6e",
+      "joven-3103-scaffold--young-top.png": "6ba1ea65b214cb14d1528eecb8c0a2f5769645a38257071e3f5269f8185a8def",
+      "joven-3100-bare--normalized-young-perspective.png": "c8f600009e6e83583357922c19ec4d4073a6dbbd2b7fdd885a1fb89e88e310b1",
+      "joven-3100-bare--normalized-young-top.png": "362bf2ee596620e362d78fe083ca9bd1e5ad5b5738c61813f6acaa9ba9f15ceb",
+      "joven-3100-bare--young-front.png": "f318da77aa2f2af3b5d7354c79622e7d35be6eeaf163340e9ac1fe59151ae8c6",
+      "joven-3102-bare--young-perspective.png": "82fd2c9e44da492dae45779b6da302768f7203df9fd10ec73d43e8c9ef324868",
+      "joven-3100-bare--normalized-young-side.png": "a1a25f9c509903b568013a7fb07ce4bf1ce35b47d665a571320d990af3651c82",
+      "joven-3100-scaffold--young-front.png": "10b0b3b29115c6bc0a98a4b373c99422e3f4a82fe6159046993d67c5fa56277d",
+      "joven-3100-bare--young-perspective.png": "c4ea40c366b0fd34735433bb4cd828c0a936408ad998123e077f9a3d9e967db4",
+      "joven-3100-scaffold--normalized-young-perspective.png": "689bc06d9b40b95d2244db242e96df73267d8026bf537b893f0687715a3d6573",
+      "joven-3102-scaffold--young-top.png": "e0db612507d5aadfcfef91ec33311d8ff2246f0f7ec4da0f5d26834b42bf1d21",
+      "maduro-3100-scaffold--mature-front.png": "4fe1cefedea839ae952f380b3fb0d60ff8b3693104f31581f045b353ee0182c9",
+      "joven-3100-bare--normalized-young-front.png": "d2cb0dfc42da2d5ccf5e0dd3746cbbcc8eb1a9571f9a80f31a95a5644b205274",
+      "joven-3100-scaffold--normalized-young-side.png": "c81475199d97add29151d15fe75f95682a3af06d97bfd87f1341ddb988f73b7a"
+    },
+    "branch_sha256": {
+      "painted--side.png": "8dc1134a92742d08098c33561d2f30701f219a8ab88a26b2807c0f25e48073af",
+      "bare--front.png": "0a8d63683fbdf3cc1547f464a27b0e289cf7d06c9632c62ce125e06cd61598cb",
+      "foliage--alternate-light.png": "f3b4d6b68232d122a322e56d247a7982be8c96053a91a4ad8dbd49928d170959",
+      "bare--top.png": "361b2d8459d3fad1c9de852d0d12e40757f443ea7146b80b00b822287c3a5623",
+      "bare--contact-close.png": "51ef8afc75188c6e3fd9d973a33027c464c79d7f6c647a6bd0e92d36989a8af5",
+      "foliage--far.png": "892b1882a4b2a533bc95c0ea6bf4cd9f4bdc7c4188c237d7cef7769076c8b59f",
+      "foliage--medium.png": "eb42a3a66f5b6335d4d1aa0cce91c388d9af5b98a55f2a29a8b1ca04c3345185",
+      "foliage--below.png": "6fa6dbc22515df7c407356b93701bc7ac166e6b031978e5770afea462132fde1",
+      "foliage--shadow_perspective.png": "c242f2ee83ad6eaa674bafc32b490890c497da72ff95e2916854624849032276",
+      "painted--contact-close.png": "603d87c9654eb6cef7baa8e3562a6595ca5f50750ca6d5901a323a9050ac0dbd",
+      "foliage--front.png": "5918afc88d1594c28fb78e22eae7a8d47b4a7fa3ef3ad9696c9f7ee324b750ab",
+      "bare--back.png": "c06109afe171442d70c075f3338337fd4f3f6736c188a693eb07c5adf11f60f6",
+      "painted--far.png": "06016f11b9c89141384ab46befb9a1ded8ff2b2c79c7dc32885f6972c29afd02",
+      "painted--alternate-light.png": "c7e206224ee099ac17722d470ead069236f697cec0a9b59f2a4b11a6017d5bd2",
+      "painted--below.png": "560ad3e891e1f4e68dbc9fbdd0ce061ee1fe0f6545ef90a31cc35ca1d965bab0",
+      "bare--shadow_perspective.png": "0b135909c1d24fd58df64bd970c029e9f9ef3a57e7bbc6320ce0e566b9231c95",
+      "painted--front.png": "ea5b440848678c238535d7aa7505dfc98787536372a7a0332a04237d2960e35d",
+      "painted--dark.png": "d3305602a57fae128fb32374ebbcd0647dfdd9a0391eb070ee3511de6021f10b",
+      "bare--side.png": "f077e501fbb46fe3d111bc1a6bdcf3a87e34a50ed14ed68b02585fc62263d074",
+      "painted--shadow_perspective.png": "800838e650b470d4076ed0b9c669591c5f05a17f8831e08948a3dc30e16bff0f",
+      "foliage--top.png": "c6ae7b2da2f3934e324b7f925053dceb0af4fcd92e7aefefdca840ba8dc7b33e",
+      "painted--back.png": "793ebfc3b99a2bf1d338f2f0a238761b7e93fb4a320b9e38b9f93d4389464b5b",
+      "foliage--dark.png": "1ebf37703613450699924c4d204da0728367ec69a48bfa6c2155bf93db9fd95c",
+      "painted--medium.png": "ee8d58e9a5a206bbe3acf2c907b8af5777bd469e205b1004e3667123bb14797c",
+      "bare--far.png": "8c377c4890327d6e2047832b214ae89982b292bc0044e6a020000e1340b888ef",
+      "painted--top.png": "fc8d01018c1820b2bfb6399a993e2ea65753c5838c973be5d43c4bb7ecf2d975",
+      "foliage--perspective.png": "ee8d930ee826459b22a6096c49bac7a2a06cbc719574a06eeee0c42d0b9a6075",
+      "painted--perspective.png": "c66ef5d4199dda7fae5a8276ddb324233643f8bf5f4675e48198710b1218108b",
+      "bare--dark.png": "da23a0cb5faf0c84f06f258f3ad4d415338298443d82efdc58fd39869a09e3c7",
+      "bare--medium.png": "c360d028e5bf50e0f23b9ac1fd307fe5c5391ba59546cd4bf2edcfffd53fd90e",
+      "bare--below.png": "ce1370058f3fb2fbc3432c888f0c5072f3c862530cbef5e1d68d44b74b7b0f98",
+      "foliage--side.png": "94e0ef081eb75d7f491be243aed06b7ed88330a6b7b00cb6edb3fbc986c113f2",
+      "bare--alternate-light.png": "c3f0c9f6211aff3b7e47edd34a6ce575a4640ce7823ccb78f47a8067530d8c48",
+      "foliage--contact-close.png": "1500eefc6cef31a3b0ac5abc2f51f86289bd9abbb58dee4866ab1abb0342b233",
+      "foliage--back.png": "959a03a9bcffd47c0e4f05cb6863d74b557ada91739d9ca8b5294b91c2d02478",
+      "bare--perspective.png": "bbddc9f9aaa5d2b358db83b6d673dacedee30e84c837fe27f81c19eb5255be3b"
+    }
+  },
+  "wood_study": "artifacts/roble-joven/j1-madera-01",
+  "sample_study": "artifacts/roble-joven/j1-rama-01",
+  "repeat_study": "artifacts/roble-joven/j1-rama-repeat-01",
+  "no_performance_tests": true,
+  "visual_review": "reviewed-with-limitations",
+  "visual_review_details": {
+    "reviewer": "Codex",
+    "thumbnails_inspected": 84,
+    "wood_captures": 48,
+    "sample_captures": 36,
+    "native_sample_captures": [
+      "painted--perspective.png",
+      "painted--contact-close.png",
+      "painted--front.png"
+    ],
+    "observations": [
+      "Madera joven más esbelta y eje más dominante que O5 maduro; cuatro variantes visibles.",
+      "Muestra de dos desarrollos foliares principales, masas compactas de perfil y cantos visibles arriba; ramilla inferior desnuda.",
+      "Alfa y sombras visibles; base de rama roza/recorta algunas vistas, detalle cercano recortado intencionalmente.",
+      "No se certifica copa completa, movimiento o todas las uniones de hojas pintadas."
+    ],
+    "artistic_acceptance": "pending_user"
+  },
+  "review_scripts_sha256": {
+    "scripts/prepare_oak_young_wood.py": "0e23c7f519b1eca25a0608b05ecdb1481d11e00891cfa7f7d515d9785f99dd22",
+    "scripts/prepare_oak_young_sample.py": "1ca3ee6c1387dbeed47ec7e276bb57cc96413bbe6c499297b8ee669353946e8c",
+    "scripts/close_oak_young_sample.py": "003e7153359f8dcda3dab487b9c58e02df180da738949c89e20622b3683bf90a"
+  }
+}

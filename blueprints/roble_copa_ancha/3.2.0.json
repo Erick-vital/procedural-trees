@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.8",
+  "id": "roble_copa_ancha",
+  "version": "3.2.0",
+  "name": "Roble joven con cobertura y volumen",
+  "description": "J3:264 grupos, cobertura de todos los ejes y líder superior, mayor volumen; madera/pintura conservadas. Arte pendiente.",
+  "components": {
+    "base": "oak-growth-young@0.5.0",
+    "distribution": "oak-young-chains@0.2.0",
+    "representation": "oak-young-crossed@0.2.0"
+  },
+  "parameters": {
+    "base": {
+      "height_m": 5,
+      "preset": "presets/oak-growth/0.5.0/joven.json"
+    },
+    "canopy": {
+      "tree_groups": 264,
+      "span_over_height": 0.16,
+      "core_radius_over_height": 0
+    }
+  },
+  "appearance": {
+    "bark": {
+      "color_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "double_sided": true
+    },
+    "leaf": {
+      "color_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "double_sided": true
+    }
+  },
+  "editable_ranges": {},
+  "default_profile": "joven",
+  "profiles": {
+    "joven": {
+      "description": "Joven O5 fijo de5 m, cobertura J3 de todos los ejes y copa más amplia; pendiente de aprobación artística.",
+      "overrides": {},
+      "validation": {
+        "status": "experimental",
+        "evidence": [
+          "docs/evidence/roble-joven/j1/user-acceptance.json",
+          "plans/arquitectura-roble.md"
+        ]
+      }
+    }
+  },
+  "limits": {
+    "triangles": 6999,
+    "materials": 2,
+    "generation_seconds": 120
+  },
+  "resources": {
+    "foliage": {
+      "path": "assets/roble-pintado/v0.3.0/foliage.png",
+      "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+    },
+    "bark": {
+      "path": "assets/roble-pintado/v0.2.0/bark.png",
+      "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+    },
+    "templates": {
+      "path": "assets/roble-pintado/v0.3.0/templates.json",
+      "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+    },
+    "source_foliage": {
+      "path": "assets/roble-pintado/v0.2.0/foliage.png",
+      "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+    },
+    "source_layout": {
+      "path": "assets/roble-pintado/v0.2.0/manifest.json",
+      "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "interrupted",
+  "exit_code": 143,
+  "signal": "SIGTERM",
+  "completed_cases": [
+    "joven-3100",
+    "joven-3101",
+    "joven-3102"
+  ],
+  "pending_case": "joven-3103",
+  "scope": "Interrupción del proceso coordinador antes de exportar el último caso; no fallo geométrico registrado. Recuperación mediante un plan F4 parcial nuevo con las mismas entradas."
+}

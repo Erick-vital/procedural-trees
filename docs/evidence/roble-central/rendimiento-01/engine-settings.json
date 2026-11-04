@@ -1,0 +1,539 @@
+{
+  "1": {
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "renderer": "gl_compatibility",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "driver": "3.3.0 NVIDIA 595.99.02",
+    "actual_resolution": [
+      1920,
+      1080
+    ],
+    "window_size": [
+      1280,
+      720
+    ],
+    "actual_msaa": 2,
+    "actual_shadows": true,
+    "actual_vsync": 0,
+    "actual_max_fps": 0,
+    "actual_lod_threshold": 0.0,
+    "camera": {
+      "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.838444, -0.544988), Z: (0.0, 0.544988, 0.838444)]",
+      "far": 2000.0,
+      "position": [
+        0.0,
+        28.7995357513428,
+        33.5377464294434
+      ],
+      "projection": 1,
+      "size": 26.0
+    },
+    "shadow_distance_m": 1500.0,
+    "ground_size_m": [
+      1200.0,
+      1200.0
+    ],
+    "materials": {
+      "oak": [
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ]
+      ]
+    }
+  },
+  "128": {
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "renderer": "gl_compatibility",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "driver": "3.3.0 NVIDIA 595.99.02",
+    "actual_resolution": [
+      1920,
+      1080
+    ],
+    "window_size": [
+      1280,
+      720
+    ],
+    "actual_msaa": 2,
+    "actual_shadows": true,
+    "actual_vsync": 0,
+    "actual_max_fps": 0,
+    "actual_lod_threshold": 0.0,
+    "camera": {
+      "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.838444, -0.544988), Z: (0.0, 0.544988, 0.838444)]",
+      "far": 2000.0,
+      "position": [
+        0.0,
+        242.434982299805,
+        362.207672119141
+      ],
+      "projection": 1,
+      "size": 267.920013427734
+    },
+    "shadow_distance_m": 1500.0,
+    "ground_size_m": [
+      1200.0,
+      1200.0
+    ],
+    "materials": {
+      "oak": [
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ]
+      ]
+    }
+  },
+  "512": {
+    "godot": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "renderer": "gl_compatibility",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "driver": "3.3.0 NVIDIA 595.99.02",
+    "actual_resolution": [
+      1920,
+      1080
+    ],
+    "window_size": [
+      1280,
+      720
+    ],
+    "actual_msaa": 2,
+    "actual_shadows": true,
+    "actual_vsync": 0,
+    "actual_max_fps": 0,
+    "actual_lod_threshold": 0.0,
+    "camera": {
+      "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.838444, -0.544988), Z: (0.0, 0.544988, 0.838444)]",
+      "far": 2000.0,
+      "position": [
+        0.0,
+        458.250396728516,
+        694.231384277344
+      ],
+      "projection": 1,
+      "size": 489.679992675781
+    },
+    "shadow_distance_m": 1500.0,
+    "ground_size_m": [
+      1200.0,
+      1200.0
+    ],
+    "materials": {
+      "oak": [
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ],
+        [
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Bark",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 0
+          },
+          {
+            "alpha_aa": 0,
+            "alpha_cutoff": 0.5,
+            "cull_mode": 2,
+            "filter": 5,
+            "mipmaps": true,
+            "name": "Painted_Foliage",
+            "roughness": 0.949999988079071,
+            "shadow_casting": 2,
+            "textured": true,
+            "transparency": 2
+          }
+        ]
+      ]
+    }
+  }
+}

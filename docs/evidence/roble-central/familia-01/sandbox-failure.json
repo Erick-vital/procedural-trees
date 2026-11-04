@@ -1,0 +1,46 @@
+{
+  "batch": {
+    "version": "1.0.0",
+    "status": "failed",
+    "started_at": "2026-11-04T05:29:51.438657+00:00",
+    "request_sha256": "7166b76f86ad132d8e1461766d4d242b6a9f709c2196a723306d05dafb768074",
+    "cases": [
+      {
+        "id": "maduro-3100",
+        "status": "failed",
+        "instance": {
+          "schema_version": "1.7",
+          "blueprint_id": "roble_copa_ancha",
+          "blueprint_version": "3.0.0",
+          "profile": "maduro",
+          "seeds": {
+            "base": 3100,
+            "canopy": 17,
+            "paint": 2718
+          },
+          "overrides": {}
+        }
+      }
+    ],
+    "triangle_limit": 6999,
+    "material_limit": 2,
+    "model_called": false,
+    "error": {
+      "type": "TimeoutError",
+      "message": "Blender excedió 120 s; proceso y descendientes terminados"
+    },
+    "finished_at": "2026-11-04T05:31:51.466479+00:00"
+  },
+  "blender_log_tail": [
+    "23:30:05 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.",
+    "23:30:05 | INFO: Primitives created: 2",
+    "23:30:05 | INFO: Finished glTF 2.0 export in 0.1188204288482666 s",
+    "00:00.751  image.write      | ERROR OpenImageIO write failed: Could not open file \"/home/tao/.cache/thumbnails/large/blender_3_3679850075fc58dbe3c714fee9058253.png.png\"",
+    "/home/tao/repos/procedural/arboles/blender/generate_central_oak.py:43: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0",
+    "  scene.world.use_nodes=True",
+    "",
+    "Info: Saved as \"tree.blend\"",
+    "Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:12:34)",
+    "pa_write() failed while trying to wake up the mainloop: Operation not permitted"
+  ]
+}

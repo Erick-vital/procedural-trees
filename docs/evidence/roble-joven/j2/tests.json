@@ -1,0 +1,463 @@
+{
+  "passed": true,
+  "completed": 76,
+  "total_files": 76,
+  "results": [
+    {
+      "file": "tests/test_birch.py",
+      "exit_code": 0,
+      "duration_seconds": 0.716,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_birch.txt"
+    },
+    {
+      "file": "tests/test_birch_sample.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_birch_sample.txt"
+    },
+    {
+      "file": "tests/test_blueprint_controls.py",
+      "exit_code": 0,
+      "duration_seconds": 0.164,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_blueprint_controls.txt"
+    },
+    {
+      "file": "tests/test_blueprint_execution.py",
+      "exit_code": 0,
+      "duration_seconds": 0.415,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_blueprint_execution.txt"
+    },
+    {
+      "file": "tests/test_blueprints.py",
+      "exit_code": 0,
+      "duration_seconds": 0.215,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_blueprints.txt"
+    },
+    {
+      "file": "tests/test_branch_interior.py",
+      "exit_code": 0,
+      "duration_seconds": 0.115,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_branch_interior.txt"
+    },
+    {
+      "file": "tests/test_branch_sample.py",
+      "exit_code": 0,
+      "duration_seconds": 0.065,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_branch_sample.txt"
+    },
+    {
+      "file": "tests/test_branch_space.py",
+      "exit_code": 0,
+      "duration_seconds": 0.515,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_branch_space.txt"
+    },
+    {
+      "file": "tests/test_branch_tree.py",
+      "exit_code": 0,
+      "duration_seconds": 0.565,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_branch_tree.txt"
+    },
+    {
+      "file": "tests/test_branch_visibility.py",
+      "exit_code": 0,
+      "duration_seconds": 0.065,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_branch_visibility.txt"
+    },
+    {
+      "file": "tests/test_canopy_normals.py",
+      "exit_code": 0,
+      "duration_seconds": 0.215,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_canopy_normals.txt"
+    },
+    {
+      "file": "tests/test_contracts.py",
+      "exit_code": 0,
+      "duration_seconds": 0.165,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_contracts.txt"
+    },
+    {
+      "file": "tests/test_crown.py",
+      "exit_code": 0,
+      "duration_seconds": 0.065,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_crown.txt"
+    },
+    {
+      "file": "tests/test_evaluation.py",
+      "exit_code": 0,
+      "duration_seconds": 0.215,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_evaluation.txt"
+    },
+    {
+      "file": "tests/test_execution.py",
+      "exit_code": 0,
+      "duration_seconds": 0.716,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_execution.txt"
+    },
+    {
+      "file": "tests/test_foliage.py",
+      "exit_code": 0,
+      "duration_seconds": 0.114,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage.txt"
+    },
+    {
+      "file": "tests/test_foliage_branch.py",
+      "exit_code": 0,
+      "duration_seconds": 0.164,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_branch.txt"
+    },
+    {
+      "file": "tests/test_foliage_branch_export.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_branch_export.txt"
+    },
+    {
+      "file": "tests/test_foliage_canopy.py",
+      "exit_code": 0,
+      "duration_seconds": 0.264,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_canopy.txt"
+    },
+    {
+      "file": "tests/test_foliage_export.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_export.txt"
+    },
+    {
+      "file": "tests/test_foliage_mold_density.py",
+      "exit_code": 0,
+      "duration_seconds": 0.165,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_mold_density.txt"
+    },
+    {
+      "file": "tests/test_foliage_molds.py",
+      "exit_code": 0,
+      "duration_seconds": 0.365,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_molds.txt"
+    },
+    {
+      "file": "tests/test_foliage_molds_evaluation.py",
+      "exit_code": 0,
+      "duration_seconds": 0.114,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_molds_evaluation.txt"
+    },
+    {
+      "file": "tests/test_foliage_twigs.py",
+      "exit_code": 0,
+      "duration_seconds": 1.368,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_twigs.txt"
+    },
+    {
+      "file": "tests/test_foliage_twigs_export.py",
+      "exit_code": 0,
+      "duration_seconds": 0.065,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_foliage_twigs_export.txt"
+    },
+    {
+      "file": "tests/test_language.py",
+      "exit_code": 0,
+      "duration_seconds": 4.933,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_language.txt"
+    },
+    {
+      "file": "tests/test_oak_branching.py",
+      "exit_code": 0,
+      "duration_seconds": 18.004,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_branching.txt"
+    },
+    {
+      "file": "tests/test_oak_central_blueprint.py",
+      "exit_code": 0,
+      "duration_seconds": 0.617,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_central_blueprint.txt"
+    },
+    {
+      "file": "tests/test_oak_crossed.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_crossed.txt"
+    },
+    {
+      "file": "tests/test_oak_crossed_production.py",
+      "exit_code": 0,
+      "duration_seconds": 1.417,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_crossed_production.txt"
+    },
+    {
+      "file": "tests/test_oak_crown.py",
+      "exit_code": 0,
+      "duration_seconds": 3.219,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_crown.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_balance.py",
+      "exit_code": 0,
+      "duration_seconds": 19.149,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_balance.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_canopy.py",
+      "exit_code": 0,
+      "duration_seconds": 2.269,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_canopy.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_central.py",
+      "exit_code": 0,
+      "duration_seconds": 77.82,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_central.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_chains.py",
+      "exit_code": 0,
+      "duration_seconds": 1.917,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_chains.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_gaps.py",
+      "exit_code": 0,
+      "duration_seconds": 86.308,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_gaps.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_layout.py",
+      "exit_code": 0,
+      "duration_seconds": 1.517,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_layout.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_macro.py",
+      "exit_code": 0,
+      "duration_seconds": 9.985,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_macro.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_peripheral.py",
+      "exit_code": 0,
+      "duration_seconds": 8.783,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_peripheral.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_regions.py",
+      "exit_code": 0,
+      "duration_seconds": 52.082,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_regions.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_top.py",
+      "exit_code": 0,
+      "duration_seconds": 11.887,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_top.txt"
+    },
+    {
+      "file": "tests/test_oak_foliage_volume.py",
+      "exit_code": 0,
+      "duration_seconds": 10.286,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_foliage_volume.txt"
+    },
+    {
+      "file": "tests/test_oak_growth.py",
+      "exit_code": 0,
+      "duration_seconds": 2.526,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_growth.txt"
+    },
+    {
+      "file": "tests/test_oak_painted.py",
+      "exit_code": 0,
+      "duration_seconds": 0.214,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_painted.txt"
+    },
+    {
+      "file": "tests/test_oak_painted_sample.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_painted_sample.txt"
+    },
+    {
+      "file": "tests/test_oak_painted_tree.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_painted_tree.txt"
+    },
+    {
+      "file": "tests/test_oak_performance.py",
+      "exit_code": 0,
+      "duration_seconds": 0.165,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_performance.txt"
+    },
+    {
+      "file": "tests/test_oak_periphery.py",
+      "exit_code": 0,
+      "duration_seconds": 41.242,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_periphery.txt"
+    },
+    {
+      "file": "tests/test_oak_volume.py",
+      "exit_code": 0,
+      "duration_seconds": 13.49,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_volume.txt"
+    },
+    {
+      "file": "tests/test_oak_wood.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_wood.txt"
+    },
+    {
+      "file": "tests/test_oak_young_canopy.py",
+      "exit_code": 0,
+      "duration_seconds": 8.981,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_young_canopy.txt"
+    },
+    {
+      "file": "tests/test_oak_young_sample.py",
+      "exit_code": 0,
+      "duration_seconds": 4.873,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_oak_young_sample.txt"
+    },
+    {
+      "file": "tests/test_pine.py",
+      "exit_code": 0,
+      "duration_seconds": 0.465,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine.txt"
+    },
+    {
+      "file": "tests/test_pine_painted.py",
+      "exit_code": 0,
+      "duration_seconds": 0.665,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine_painted.txt"
+    },
+    {
+      "file": "tests/test_pine_painted_cards.py",
+      "exit_code": 0,
+      "duration_seconds": 1.517,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine_painted_cards.txt"
+    },
+    {
+      "file": "tests/test_pine_painted_review.py",
+      "exit_code": 0,
+      "duration_seconds": 0.165,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine_painted_review.txt"
+    },
+    {
+      "file": "tests/test_pine_painted_sample.py",
+      "exit_code": 0,
+      "duration_seconds": 0.265,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine_painted_sample.txt"
+    },
+    {
+      "file": "tests/test_pine_painted_volume.py",
+      "exit_code": 0,
+      "duration_seconds": 0.716,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine_painted_volume.txt"
+    },
+    {
+      "file": "tests/test_pine_painted_wood.py",
+      "exit_code": 0,
+      "duration_seconds": 2.118,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine_painted_wood.txt"
+    },
+    {
+      "file": "tests/test_pine_performance.py",
+      "exit_code": 0,
+      "duration_seconds": 0.165,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine_performance.txt"
+    },
+    {
+      "file": "tests/test_pine_revision.py",
+      "exit_code": 0,
+      "duration_seconds": 0.465,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_pine_revision.txt"
+    },
+    {
+      "file": "tests/test_quality.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_quality.txt"
+    },
+    {
+      "file": "tests/test_rf5.py",
+      "exit_code": 0,
+      "duration_seconds": 0.215,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_rf5.txt"
+    },
+    {
+      "file": "tests/test_season_atlas.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_season_atlas.txt"
+    },
+    {
+      "file": "tests/test_season_bundle.py",
+      "exit_code": 0,
+      "duration_seconds": 0.315,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_season_bundle.txt"
+    },
+    {
+      "file": "tests/test_season_calendar.py",
+      "exit_code": 0,
+      "duration_seconds": 0.265,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_season_calendar.txt"
+    },
+    {
+      "file": "tests/test_season_calendar_glb.py",
+      "exit_code": 0,
+      "duration_seconds": 0.165,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_season_calendar_glb.txt"
+    },
+    {
+      "file": "tests/test_season_transition.py",
+      "exit_code": 0,
+      "duration_seconds": 0.365,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_season_transition.txt"
+    },
+    {
+      "file": "tests/test_seasonal_paint.py",
+      "exit_code": 0,
+      "duration_seconds": 0.065,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_seasonal_paint.txt"
+    },
+    {
+      "file": "tests/test_seasons.py",
+      "exit_code": 0,
+      "duration_seconds": 0.065,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_seasons.txt"
+    },
+    {
+      "file": "tests/test_second_blueprint.py",
+      "exit_code": 0,
+      "duration_seconds": 0.315,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_second_blueprint.txt"
+    },
+    {
+      "file": "tests/test_seeds.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_seeds.txt"
+    },
+    {
+      "file": "tests/test_surface_evaluation.py",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_surface_evaluation.txt"
+    },
+    {
+      "file": "tests/test_willow.py",
+      "exit_code": 0,
+      "duration_seconds": 0.665,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_willow.txt"
+    },
+    {
+      "file": "tests/test_willow_sample.py",
+      "exit_code": 0,
+      "duration_seconds": 0.115,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_willow_sample.txt"
+    },
+    {
+      "file": "tests/test_willow_v2.py",
+      "exit_code": 0,
+      "duration_seconds": 0.866,
+      "log": "artifacts/roble-joven/j2-completo-01/tests/test_willow_v2.txt"
+    }
+  ]
+}

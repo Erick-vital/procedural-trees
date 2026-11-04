@@ -65,6 +65,8 @@ no atribuir garantía visual a todos sus rangos/semillas.
 | --- | --- | --- |
 | Roble de copa libre OF11 aprobado | `blueprints/roble_copa_ancha/3.0.0.json` | `presets/blueprints/roble-central/maduro-3100.json` |
 | Sauce colgante revisado aprobado | `blueprints/sauce_colgante/1.1.0.json` | `presets/blueprints/sauce-revision/pilot.json` |
+| Roble joven O5 anterior, cambios artísticos solicitados | `blueprints/roble_copa_ancha/3.1.0.json` | `presets/blueprints/roble-joven/joven-3100.json` |
+| Roble joven O5 con más follaje, lote J3 aprobado | `blueprints/roble_copa_ancha/3.2.0.json` | `presets/blueprints/roble-joven-volumen/joven-3100.json` |
 | Abedul pintado completo, arte pendiente de aprobación | `blueprints/abedul_pintado/1.0.0.json` | `presets/blueprints/abedul-pintado/pilot.json` |
 | Reproducir viejo-09 aprobado | `blueprints/roble_copa_ancha/1.0.0.json` | `presets/blueprints/roble-copa-ancha-viejo-09.json` |
 | Roble aprobado con madera selectiva | `blueprints/roble_copa_ancha/2.2.0.json` | `presets/blueprints/roble-madera/pilot.json` |
@@ -486,3 +488,73 @@ benchmark. `--analyze-only` recalcula los resúmenes de una ejecución ya termin
 
 [Resultado medido, condiciones y límites](evidence/pino-pintado/rendimiento-v11/informe.md):
 128 árboles 353→589 FPS; 512, 126→228 FPS en RTX 5060/1080p/MSAA4/sombras.
+
+## Validación de cinco maduros del roble3.0.0
+
+Petición F4 congelable: `configs/language/roble-central-familia-v1.json`.
+Estructura3100–3104, distribución17 y pintura2718, perfil maduro fijo sin cambios
+por ejemplar. [Resultados y comandos de reproducción](evidence/roble-central/familia-01/informe.md).
+Galería local: `artifacts/roble-central/familia-01/index.html`.
+Los cinco casos cumplen presupuesto y repetición; el lote3100–3104 está
+[aprobado artísticamente](evidence/roble-central/familia-01/user-acceptance.json). La perspectiva usada es provisional, elegida por el
+usuario; no amplía la receta a otras edades ni certifica todo el rango de semillas.
+
+## Rendimiento del roble3.0.0
+
+[Benchmark medido y condiciones](evidence/roble-central/rendimiento-01/informe.md):
+1/128/512 árboles, cuatro repeticiones,1080p/MSAA4/sombras en RTX5060;
+0.660/1.671/4.139 ms por cuadro (1514/598/242 FPS). Carga sintética con cámara
+ortográfica que encuadra cada rejilla; no equivale a FPS de un juego.
+
+```sh
+python3 scripts/benchmark_painted_oak.py --output artifacts/roble-central/mi-benchmark
+python3 scripts/oak_performance_evidence.py --study artifacts/roble-central/mi-benchmark --evidence artifacts/roble-central/mi-evidencia
+```
+
+Usa los cinco GLB aprobados de `artifacts/roble-central/familia-01/trees/` o
+`--source <carpeta>` con los mismos GLB y manifiestos. Requiere escritorio/GPU.
+`--smoke` verifica el arnés antes de medir; no constituye benchmark.
+`--analyze-only` recalcula estadísticas y verifica los hashes sin nuevas muestras.
+
+## Joven de la familia nueva —3.1.0 experimental
+
+`roble_copa_ancha@3.1.0` añade **solo el perfil joven fijo de5 m**, contrato1.8.
+Los maduros aprobados siguen en3.0.0. Madera y rama J1 aprobadas; el lote completo
+3100–3103 está verificado técnicamente; el usuario solicitó más follaje y volumen:
+[resultado, límites y galería](evidence/roble-joven/j2/informe.md). Copas muy
+abiertas y algunos ápices desnudos; no confundir validación técnica con arte.
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/roble_copa_ancha/3.1.0.json --instance presets/blueprints/roble-joven/joven-3100.json --output artifacts/mi-joven --no-render
+PYTHONPATH=src python3 -m treegen plan-blueprints blueprints/roble_copa_ancha/3.1.0.json --request configs/language/roble-joven-j2-v1.json --output artifacts/mi-joven-plan
+PYTHONPATH=src python3 -m treegen generate-blueprint-plan artifacts/mi-joven-plan --output artifacts/mi-joven-lote
+```
+
+Perfil sin overrides:144 grupos, distribución17/pintura2718 en los cuatro casos
+verificados,3816/4097/3536/4122 tris y dos materiales. Semillas admitidas por
+contrato no garantizan generación ni arte para todas sus combinaciones: se
+rechazan si no tienen capacidad o colocaciones válidas. La muestra p:0 aprobada
+se conserva exacta en el piloto. Reparto acotado por capacidad de candidatos;
+no cambia madera ni añade grupos para salvar un caso. No se hicieron nuevos
+benchmarks. Galería `artifacts/roble-joven/j2-completo-01/index.html`.
+
+## Joven con mayor cobertura y volumen —3.2.0, lote J3 aprobado
+
+Revisión solicitada de3.1.0:264 grupos,792 láminas, dos materiales y
+4536/4817/4256/4842 tris en3100–3103. Misma madera, altura5 m y pintura;
+componentes jóvenes0.2.0 asignan grupos distales a cada eje y amplían las masas.
+Contrato1.8 mantiene ambas alternativas exactas; sin overrides.3.1.0 histórica
+conservada y maduro3.0.0 aprobado intacto. Lote3.2.0 aprobado por el usuario:
+[aceptación y hashes](evidence/roble-joven/j3/user-acceptance.json). La receta
+conserva su metadato histórico experimental; otras semillas no heredan aprobación.
+[Comparación, límites y reproducción](evidence/roble-joven/j3/informe.md).
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/roble_copa_ancha/3.2.0.json --instance presets/blueprints/roble-joven-volumen/joven-3100.json --output artifacts/mi-joven-volumen --no-render
+PYTHONPATH=src python3 -m treegen plan-blueprints blueprints/roble_copa_ancha/3.2.0.json --request configs/language/roble-joven-j3-v1.json --output artifacts/mi-joven-volumen-plan
+PYTHONPATH=src python3 -m treegen generate-blueprint-plan artifacts/mi-joven-volumen-plan --output artifacts/mi-joven-volumen-lote
+```
+
+35 checks,365 pruebas y120 capturas Godot; sin benchmark nuevo. Las semillas
+no ensayadas pueden rechazarse por capacidad/presupuesto y no tienen aceptación
+visual implícita. Galería `artifacts/roble-joven/j3-volumen-01/index.html`.

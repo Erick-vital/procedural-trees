@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "study": "artifacts/roble-central/performance-01",
+  "trials": 12,
+  "counts": [
+    1,
+    128,
+    512
+  ],
+  "repetitions_per_count": 4,
+  "measurement_seconds": 6,
+  "sources_and_assets_verified": true,
+  "raw_verified": true,
+  "settings_and_materials_verified": true,
+  "gpu_samples": 118,
+  "gpu_ranges": {
+    " temperature.gpu": {
+      "min": 56.0,
+      "max": 67.0
+    },
+    " utilization.gpu [%]": {
+      "min": 2.0,
+      "max": 100.0
+    },
+    " clocks.current.graphics [MHz]": {
+      "min": 765.0,
+      "max": 2737.0
+    },
+    " clocks.current.memory [MHz]": {
+      "min": 810.0,
+      "max": 14001.0
+    },
+    " power.draw [W]": {
+      "min": 15.54,
+      "max": 100.32
+    },
+    " memory.used [MiB]": {
+      "min": 763.0,
+      "max": 1127.0
+    }
+  },
+  "capture_sha256": {
+    "1": {
+      "png_sha256": "f81394bf027301c74358ced87af46bf0dac2732d381edca349822e7761428a43",
+      "selected_jpg_sha256": "6c41a65b92d6d4828028392a78e1609f0897f9e492a100f9021bc29f5e79c21a"
+    },
+    "128": {
+      "png_sha256": "f858aa9fa768e006367ebc7144d9ae5201db1d22ef1c2cc06bd7f2bc9ad3fb99",
+      "selected_jpg_sha256": "cba66214e9b15f1522db5cea2d708a24652300da730bc72430b1565581e4292f"
+    },
+    "512": {
+      "png_sha256": "3a6bd00886adbeaa7bebc4facadfec464f0d6d8c96073bc5510d8f5ee8ba3483",
+      "selected_jpg_sha256": "02af197e3692fa17415a84f488fdf59453551fcf85723d9f91b1d9e7d6a28c5d"
+    }
+  },
+  "evidence_script_sha256": "8aa2f92cf8e6dc027f38d790de413f2f1f97d4107cc34906e4c9a6006134efc4",
+  "visual_review": "reviewed-with-limitations",
+  "unit_tests": {
+    "passed": 5,
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests -p test_oak_performance.py -v"
+  },
+  "visual_review_details": {
+    "reviewer": "Codex",
+    "inspected_originals": [
+      "1/oak.png",
+      "128/oak.png",
+      "512/oak.png"
+    ],
+    "smoke_inspected": "artifacts/roble-central/performance-smoke-02/5/oak.png",
+    "findings": "Árboles, rejillas y sombras presentes; rejillas completas en cuadro. Pérdida de detalle y bordes finos a distancia al encuadrar más árboles. No es evaluación de movimiento ni nueva aprobación artística."
+  }
+}

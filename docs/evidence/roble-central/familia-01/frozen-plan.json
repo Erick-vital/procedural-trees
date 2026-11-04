@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "status": "completed",
+  "started_at": "2026-11-04T05:29:48.071545+00:00",
+  "workflow": "codex-in-repository",
+  "independent_model_call": false,
+  "count": 5,
+  "origin": "codex-session",
+  "origin_is_declared": true,
+  "blueprint_sha256": "bfa71b8ac6f1be37095ac748f17f775bdb35a6e34b501edaa6f40ee462511e6d",
+  "request_sha256": "7166b76f86ad132d8e1461766d4d242b6a9f709c2196a723306d05dafb768074",
+  "resolved_sha256": "d7e794bed2d6f3c2ea3e6210ae0de25a8c6d31ad601f593fc8e216b740fae9bb",
+  "finished_at": "2026-11-04T05:29:48.193918+00:00",
+  "files_sha256": {
+    "request.json": "f0d3740f39699d0be3f97dbc78c2b9c30659379d7741c523a50dbcb7673a3881",
+    "resolved.json": "0e5bfded4a615e27ab5d2f9c96127e5e45b1a17ad53ee2d00847f308468890c3",
+    "blueprint.json": "411913c6ff6e5e6ef079134783cd8069fd8dcfe84e70178bffb27cb00083e701"
+  },
+  "sources_sha256": {
+    "src/treegen/language.py": "d1f49d01716c316fdfb2cfcfeda7bfeb2792886e489f6c68a01ddd8ff7a60e09",
+    "src/treegen/blueprints.py": "2b438141fc4e5dcf34f8f1efaca86fb25c992626019bceda32265fc941962d0e"
+  }
+}

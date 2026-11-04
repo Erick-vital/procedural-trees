@@ -1,0 +1,770 @@
+{
+  "protocol": [
+    {
+      "output": "/home/tao/repos/procedural/arboles/artifacts/roble-joven/j1-madera-01/captures",
+      "report": "/home/tao/repos/procedural/arboles/artifacts/roble-joven/j1-madera-01/young-godot.json",
+      "center": [
+        -0.018403500000000017,
+        0.1801395,
+        2.5026485
+      ],
+      "span": 5.005297,
+      "original_low": [
+        -2.082411,
+        -1.775796,
+        0.0
+      ],
+      "assets": [
+        {
+          "id": "joven-3100-bare",
+          "resource": "res://joven-3100-bare.glb",
+          "metrics": {
+            "vertices": 1721,
+            "triangles": 2952,
+            "bounds_blender": [
+              [
+                -1.690596,
+                -1.775796,
+                0.0
+              ],
+              [
+                2.040785,
+                1.841571,
+                5.003711
+              ]
+            ],
+            "height_m": 5.003711,
+            "triangles_by_material": {
+              "Painted_Bark": 2952
+            },
+            "geometry_sha256": "633b4352884d5b26ae66b0f73e5428d8b3b831634411ad8971fe45aefbe840ca"
+          }
+        },
+        {
+          "id": "joven-3100-scaffold",
+          "resource": "res://joven-3100-scaffold.glb",
+          "metrics": {
+            "vertices": 374,
+            "triangles": 704,
+            "bounds_blender": [
+              [
+                -1.31215,
+                -1.234204,
+                0.0
+              ],
+              [
+                1.503459,
+                1.447166,
+                5.002028
+              ]
+            ],
+            "height_m": 5.002028,
+            "triangles_by_material": {
+              "Painted_Bark": 704
+            },
+            "geometry_sha256": "1340ea665eceba10e0d23c798e2f169129eb894dfd69906b45ad5701f391c45b"
+          }
+        },
+        {
+          "id": "joven-3101-bare",
+          "resource": "res://joven-3101-bare.glb",
+          "metrics": {
+            "vertices": 1888,
+            "triangles": 3233,
+            "bounds_blender": [
+              [
+                -1.786133,
+                -1.515748,
+                0.0
+              ],
+              [
+                2.045604,
+                1.941656,
+                5.005297
+              ]
+            ],
+            "height_m": 5.005297,
+            "triangles_by_material": {
+              "Painted_Bark": 3233
+            },
+            "geometry_sha256": "290e689a35c13bfa77bfe4361429010ca660d160f6491510472c29b1588b2811"
+          }
+        },
+        {
+          "id": "joven-3101-scaffold",
+          "resource": "res://joven-3101-scaffold.glb",
+          "metrics": {
+            "vertices": 374,
+            "triangles": 704,
+            "bounds_blender": [
+              [
+                -1.328955,
+                -0.907712,
+                0.0
+              ],
+              [
+                1.427385,
+                1.426522,
+                4.924207
+              ]
+            ],
+            "height_m": 4.924207,
+            "triangles_by_material": {
+              "Painted_Bark": 704
+            },
+            "geometry_sha256": "86afb8a6b74648ec387fe2d326a759898295ff78f34a7710ed9a21d6e1e56480"
+          }
+        },
+        {
+          "id": "joven-3102-bare",
+          "resource": "res://joven-3102-bare.glb",
+          "metrics": {
+            "vertices": 1548,
+            "triangles": 2672,
+            "bounds_blender": [
+              [
+                -2.082411,
+                -1.325339,
+                0.0
+              ],
+              [
+                1.74795,
+                1.419034,
+                5.004832
+              ]
+            ],
+            "height_m": 5.004832,
+            "triangles_by_material": {
+              "Painted_Bark": 2672
+            },
+            "geometry_sha256": "0f322eb1de62c71d897afaf746172b10a120059d13372b83ae14f73bf76683aa"
+          }
+        },
+        {
+          "id": "joven-3102-scaffold",
+          "resource": "res://joven-3102-scaffold.glb",
+          "metrics": {
+            "vertices": 374,
+            "triangles": 704,
+            "bounds_blender": [
+              [
+                -1.655479,
+                -1.256815,
+                0.0
+              ],
+              [
+                1.293655,
+                0.921399,
+                4.857978
+              ]
+            ],
+            "height_m": 4.857978,
+            "triangles_by_material": {
+              "Painted_Bark": 704
+            },
+            "geometry_sha256": "d42f4725a0361196b21fe08b102c8a15553b0c36f026a19a2ae6efacd624d7a8"
+          }
+        },
+        {
+          "id": "joven-3103-bare",
+          "resource": "res://joven-3103-bare.glb",
+          "metrics": {
+            "vertices": 1894,
+            "triangles": 3258,
+            "bounds_blender": [
+              [
+                -2.070755,
+                -1.64294,
+                0.0
+              ],
+              [
+                1.581435,
+                2.136075,
+                5.003827
+              ]
+            ],
+            "height_m": 5.003827,
+            "triangles_by_material": {
+              "Painted_Bark": 3258
+            },
+            "geometry_sha256": "c485c83765df0b746cb2e9c3c7718ad702136208f76509737241f2710a0672dc"
+          }
+        },
+        {
+          "id": "joven-3103-scaffold",
+          "resource": "res://joven-3103-scaffold.glb",
+          "metrics": {
+            "vertices": 428,
+            "triangles": 804,
+            "bounds_blender": [
+              [
+                -1.697375,
+                -0.92538,
+                0.0
+              ],
+              [
+                0.95486,
+                1.537288,
+                4.964713
+              ]
+            ],
+            "height_m": 4.964713,
+            "triangles_by_material": {
+              "Painted_Bark": 804
+            },
+            "geometry_sha256": "9b44864597f27bf40552527e427cc454e3c51bf2d63bb2bfc114480010760ef7"
+          }
+        }
+      ],
+      "shots": [
+        {
+          "id": "young-front",
+          "camera": {
+            "location": [
+              -0.018403500000000017,
+              -14.761230489139464,
+              3.9967854989139466
+            ],
+            "basis_columns": [
+              [
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.09950371902099893,
+                0.9950371902099893
+              ],
+              [
+                0.0,
+                -0.9950371902099893,
+                0.09950371902099893
+              ]
+            ],
+            "ortho_scale": 6.0063564
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "young-side",
+          "camera": {
+            "location": [
+              14.922966489139464,
+              0.1801395,
+              3.9967854989139466
+            ],
+            "basis_columns": [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -0.09950371902099893,
+                0.0,
+                0.9950371902099893
+              ],
+              [
+                0.9950371902099893,
+                0.0,
+                0.09950371902099893
+              ]
+            ],
+            "ortho_scale": 6.0063564
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "young-perspective",
+          "camera": {
+            "location": [
+              10.19861621756951,
+              -10.03688021756951,
+              6.589456387027804
+            ],
+            "basis_columns": [
+              [
+                0.7071067811865476,
+                0.7071067811865476,
+                -0.0
+              ],
+              [
+                -0.19245008972987526,
+                0.19245008972987526,
+                0.9622504486493764
+              ],
+              [
+                0.6804138174397717,
+                -0.6804138174397717,
+                0.2721655269759087
+              ]
+            ],
+            "ortho_scale": 6.0063564
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "young-top",
+          "camera": {
+            "location": [
+              -0.018403500000000017,
+              0.1801395,
+              17.5185395
+            ],
+            "basis_columns": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ortho_scale": 6.0063564
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "output": "/home/tao/repos/procedural/arboles/artifacts/roble-joven/j1-madera-01/captures",
+      "report": "/home/tao/repos/procedural/arboles/artifacts/roble-joven/j1-madera-01/mature-godot.json",
+      "center": [
+        -0.07947799999999994,
+        0.6092365000000002,
+        6.020651
+      ],
+      "span": 16.27383,
+      "original_low": [
+        -8.216393,
+        -6.985751,
+        0.0
+      ],
+      "assets": [
+        {
+          "id": "maduro-3100-bare",
+          "resource": "res://maduro-3100-bare.glb",
+          "metrics": {
+            "vertices": 2174,
+            "triangles": 3714,
+            "bounds_blender": [
+              [
+                -8.216393,
+                -6.985751,
+                0.0
+              ],
+              [
+                8.057437,
+                8.204224,
+                12.041302
+              ]
+            ],
+            "height_m": 12.041302,
+            "triangles_by_material": {
+              "Painted_Bark": 3714
+            },
+            "geometry_sha256": "1bac08230f7a3e483a88dfa31ba9d4bb1a6f1dfbd2d215c9ef302ad06b5efdde"
+          }
+        },
+        {
+          "id": "maduro-3100-scaffold",
+          "resource": "res://maduro-3100-scaffold.glb",
+          "metrics": {
+            "vertices": 482,
+            "triangles": 904,
+            "bounds_blender": [
+              [
+                -6.398753,
+                -5.477042,
+                0.0
+              ],
+              [
+                6.255163,
+                6.173775,
+                11.744353
+              ]
+            ],
+            "height_m": 11.744353,
+            "triangles_by_material": {
+              "Painted_Bark": 904
+            },
+            "geometry_sha256": "b967bbd12dad27081ec916e78b9dbcd41822a99cf33080a8845c22a21711cad7"
+          }
+        }
+      ],
+      "shots": [
+        {
+          "id": "mature-front",
+          "camera": {
+            "location": [
+              -0.07947799999999994,
+              -47.96996173146509,
+              10.878570823146509
+            ],
+            "basis_columns": [
+              [
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.09950371902099893,
+                0.9950371902099893
+              ],
+              [
+                0.0,
+                -0.9950371902099893,
+                0.09950371902099893
+              ]
+            ],
+            "ortho_scale": 22.799999999999997
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "mature-side",
+          "camera": {
+            "location": [
+              48.49972023146509,
+              0.6092365000000002,
+              10.878570823146509
+            ],
+            "basis_columns": [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -0.09950371902099893,
+                0.0,
+                0.9950371902099893
+              ],
+              [
+                0.9950371902099893,
+                0.0,
+                0.09950371902099893
+              ]
+            ],
+            "ortho_scale": 22.799999999999997
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "mature-perspective",
+          "camera": {
+            "location": [
+              33.13933838399764,
+              -32.60957988399764,
+              19.30817755359906
+            ],
+            "basis_columns": [
+              [
+                0.7071067811865476,
+                0.7071067811865476,
+                -0.0
+              ],
+              [
+                -0.19245008972987526,
+                0.19245008972987526,
+                0.9622504486493764
+              ],
+              [
+                0.6804138174397717,
+                -0.6804138174397717,
+                0.2721655269759087
+              ]
+            ],
+            "ortho_scale": 22.799999999999997
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "mature-top",
+          "camera": {
+            "location": [
+              -0.07947799999999994,
+              0.6092365000000002,
+              54.842141
+            ],
+            "basis_columns": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ortho_scale": 22.799999999999997
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "output": "/home/tao/repos/procedural/arboles/artifacts/roble-joven/j1-madera-01/captures",
+      "report": "/home/tao/repos/procedural/arboles/artifacts/roble-joven/j1-madera-01/normalized-young-godot.json",
+      "center": [
+        0.17509450000000004,
+        0.03288750000000007,
+        2.5018555
+      ],
+      "span": 5.003711,
+      "original_low": [
+        -1.690596,
+        -1.775796,
+        0.0
+      ],
+      "assets": [
+        {
+          "id": "joven-3100-bare",
+          "resource": "res://joven-3100-bare.glb",
+          "metrics": {
+            "vertices": 1721,
+            "triangles": 2952,
+            "bounds_blender": [
+              [
+                -1.690596,
+                -1.775796,
+                0.0
+              ],
+              [
+                2.040785,
+                1.841571,
+                5.003711
+              ]
+            ],
+            "height_m": 5.003711,
+            "triangles_by_material": {
+              "Painted_Bark": 2952
+            },
+            "geometry_sha256": "633b4352884d5b26ae66b0f73e5428d8b3b831634411ad8971fe45aefbe840ca"
+          }
+        },
+        {
+          "id": "joven-3100-scaffold",
+          "resource": "res://joven-3100-scaffold.glb",
+          "metrics": {
+            "vertices": 374,
+            "triangles": 704,
+            "bounds_blender": [
+              [
+                -1.31215,
+                -1.234204,
+                0.0
+              ],
+              [
+                1.503459,
+                1.447166,
+                5.002028
+              ]
+            ],
+            "height_m": 5.002028,
+            "triangles_by_material": {
+              "Painted_Bark": 704
+            },
+            "geometry_sha256": "1340ea665eceba10e0d23c798e2f169129eb894dfd69906b45ad5701f391c45b"
+          }
+        }
+      ],
+      "shots": [
+        {
+          "id": "normalized-young-front",
+          "camera": {
+            "location": [
+              0.17509450000000004,
+              -14.903748102188446,
+              3.995519060218845
+            ],
+            "basis_columns": [
+              [
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.09950371902099893,
+                0.9950371902099893
+              ],
+              [
+                0.0,
+                -0.9950371902099893,
+                0.09950371902099893
+              ]
+            ],
+            "ortho_scale": 9.5
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "normalized-young-side",
+          "camera": {
+            "location": [
+              15.111730102188446,
+              0.03288750000000007,
+              3.995519060218845
+            ],
+            "basis_columns": [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -0.09950371902099893,
+                0.0,
+                0.9950371902099893
+              ],
+              [
+                0.9950371902099893,
+                0.0,
+                0.09950371902099893
+              ]
+            ],
+            "ortho_scale": 9.5
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "normalized-young-perspective",
+          "camera": {
+            "location": [
+              10.388876808626133,
+              -10.180894808626133,
+              6.587368423450453
+            ],
+            "basis_columns": [
+              [
+                0.7071067811865476,
+                0.7071067811865476,
+                -0.0
+              ],
+              [
+                -0.19245008972987526,
+                0.19245008972987526,
+                0.9622504486493764
+              ],
+              [
+                0.6804138174397717,
+                -0.6804138174397717,
+                0.2721655269759087
+              ]
+            ],
+            "ortho_scale": 9.5
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        },
+        {
+          "id": "normalized-young-top",
+          "camera": {
+            "location": [
+              0.17509450000000004,
+              0.03288750000000007,
+              17.512988500000002
+            ],
+            "basis_columns": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ortho_scale": 9.5
+          },
+          "background": "#EEE9DF",
+          "light": [
+            -35,
+            -25,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "source": "scripts/prepare_oak_young_wood.py"
+}

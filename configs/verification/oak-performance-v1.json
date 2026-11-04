@@ -1,0 +1,43 @@
+{
+  "version": "oak-performance-1.0",
+  "blueprint": "roble_copa_ancha@3.0.0",
+  "counts": [
+    1,
+    128,
+    512
+  ],
+  "repetitions": 4,
+  "warmup_seconds": 3,
+  "measurement_seconds": 6,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "spacing_m": 18,
+  "shadows": true,
+  "shadow_distance_m": 1500,
+  "msaa": 4,
+  "renderer": "gl_compatibility",
+  "automatic_lod": false,
+  "vsync": false,
+  "max_fps": 0,
+  "seeds_base": [
+    3100,
+    3101,
+    3102,
+    3103,
+    3104
+  ],
+  "canopy_seed": 17,
+  "paint_seed": 2718,
+  "camera_projection": "orthogonal",
+  "camera_direction": [
+    0,
+    0.65,
+    1
+  ],
+  "camera_height_center_m": 7,
+  "single_camera_size_m": 26,
+  "camera_margin_m": 26,
+  "camera_far_m": 2000
+}

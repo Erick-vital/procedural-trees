@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "request": "Integrar el roble joven completo tras aprobar madera y rama J1: piloto3100 y tres controles3101–3103, misma pintura, distribución17, sin nuevos benchmarks.",
+  "origin": "codex-session",
+  "cases": [
+    {
+      "id": "joven-3100",
+      "seeds": {
+        "base": 3100,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "joven",
+        "changes": [],
+        "explanation": "Piloto con rama p:0 aprobada conservada."
+      }
+    },
+    {
+      "id": "joven-3101",
+      "seeds": {
+        "base": 3101,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "joven",
+        "changes": [],
+        "explanation": "Control joven con distinta estructura; mismo perfil, pintura y reglas de capacidad."
+      }
+    },
+    {
+      "id": "joven-3102",
+      "seeds": {
+        "base": 3102,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "joven",
+        "changes": [],
+        "explanation": "Control joven con distinta estructura; mismo perfil, pintura y reglas de capacidad."
+      }
+    },
+    {
+      "id": "joven-3103",
+      "seeds": {
+        "base": 3103,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "joven",
+        "changes": [],
+        "explanation": "Control joven con distinta estructura; mismo perfil, pintura y reglas de capacidad."
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "maduro-3100",
+    "instance": {
+      "schema_version": "1.7",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.0.0",
+      "profile": "maduro",
+      "seeds": {
+        "base": 3100,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "6d088a4b10ce9e25e20f64e0280e5fe12d4454aafe558f2dbc8ff573e0db5287"
+  },
+  {
+    "id": "maduro-3101",
+    "instance": {
+      "schema_version": "1.7",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.0.0",
+      "profile": "maduro",
+      "seeds": {
+        "base": 3101,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "7a53092438c5e1923ded2d3fafbac7ad0f783d06492e7fef0a21522e6b79d230"
+  },
+  {
+    "id": "maduro-3102",
+    "instance": {
+      "schema_version": "1.7",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.0.0",
+      "profile": "maduro",
+      "seeds": {
+        "base": 3102,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "225c2a424ecdfcbbef76bd822d64c7f7a49334b5e55680b05cf80162140a6edf"
+  },
+  {
+    "id": "maduro-3103",
+    "instance": {
+      "schema_version": "1.7",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.0.0",
+      "profile": "maduro",
+      "seeds": {
+        "base": 3103,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "7a7bc8e575303a330353c444d1e2246dc655704a40fb2638d9c01b438b5d67e6"
+  },
+  {
+    "id": "maduro-3104",
+    "instance": {
+      "schema_version": "1.7",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.0.0",
+      "profile": "maduro",
+      "seeds": {
+        "base": 3104,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "a9cecb7415b5725af85f040fc024e9d186781c2409c29c081f992a18f9e31191"
+  }
+]

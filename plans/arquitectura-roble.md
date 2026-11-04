@@ -641,3 +641,196 @@ receta, resolución, exportación y repetición. CLI con nueve vistas23.607 s y
 repetición sin vistas15.073 s; GLB idéntico al piloto aprobado. Suite ejecutada
 por archivos con cota180 s, reanudada por lotes tras interrupción del coordinador;
 sin repetir archivos ya aprobados. Commit y push solicitados por el usuario.
+
+### Validación de familia 3.0.0 — autorizada 2026-11-03
+
+El usuario autoriza comprobar cinco maduros con las mismas reglas y pintura,
+sin retoques individuales: estructura3100–3104, distribución17 y pintura2718.
+3100 es el control aprobado;3101–3104 amplían la revisión a árboles completos.
+Usar F4 (`plan-blueprints` / `generate-blueprint-plan`) para congelar entradas,
+exportar el lote y repetirlo. No ampliar edades ni controles de la receta.
+Conservar fallos; máximo6999 tris y dos materiales, auditoría de contactos y
+GLB repetido idéntico por caso, sin duplicados exactos entre estructuras.
+
+Cámara elegida por el usuario: perspectiva provisional. Fijar antes de capturar
+un encuadre común en metros para todo el lote, tres distancias, vistas de giro,
+superior y madera sola, fondos claro/oscuro y sombras. Registrar FOV, posiciones,
+luz, resolución y motor. Inspeccionar capturas reales Godot: variedad, plenitud,
+contactos aparentes, cantos, transparencias y sombras. La revisión del agente
+no equivale a aceptación artística del usuario ni certifica todo el rango.
+Entregar galería e informe seleccionado. Benchmark, viento, LOD y nuevas edades
+quedan fuera de esta validación.
+
+Resultado: cinco maduros completos **5745/6158/5447/6087/6006 tris**, dos
+materiales,216 grupos; cinco repeticiones GLB idénticas, piloto igual al aprobado
+y cinco firmas geométricas distintas.38 condiciones de auditoría y13 pruebas
+existentes;115 capturas reales Godot, cinco láminas inspeccionadas y siete
+originales. Perspectiva provisional FOV50° con posiciones comunes congeladas.
+Variación visible, pero radialidad superior y masas separadas persisten; sombras
+con extremos recortados. Lote3100–3104 aprobado artísticamente por el usuario.
+Intento sandbox agotó120 s al cerrar audio; conservado, mismo plan ejecutado y
+repetido fuera correctamente. Receta/algoritmos intactos, sin ampliar edades.
+[Informe y reproducción](../docs/evidence/roble-central/familia-01/informe.md).
+
+Aceptación posterior del lote el2026-11-03: «ok, lo apruebo, que sigue ?».
+[Decisión y hashes](../docs/evidence/roble-central/familia-01/user-acceptance.json).
+La aprobación mantiene los límites observados y no amplía edades o semillas.
+Siguiente recomendado: benchmark acotado Godot; aún no autorizado ni iniciado.
+
+### Benchmark del roble3.0.0 — autorizado 2026-11-03
+
+El usuario autoriza ejecutar la recomendación:1/128/512 árboles, cuatro
+repeticiones por carga,1080p/MSAA4/sombras y condiciones congeladas. Medir el
+asset aprobado, sin comparación de versiones/especies ni atribuir optimización.
+Usar los cinco GLB3100–3104 aprobados, distribución17/pintura2718; una instancia
+usa3100, cargas múltiples alternan variantes por índice. Rejilla18 m y giros
+deterministas, sin MultiMesh, LOD, viento ni un nuevo sistema de bosque.
+
+Configuración `configs/verification/oak-performance-v1.json`: cámara ortográfica
+estática común entre repeticiones de cada carga; cambia el encuadre entre cargas
+para mostrar toda la rejilla. Separar resultados por cantidad: no extrapolar
+FPS linealmente ni presentarlos como FPS de un juego. Sombras hasta1500 m para
+cubrir la rejilla más extensa. Tres segundos de calentamiento y seis de muestra;
+captura fuera de muestra más un segundo adicional de calentamiento. Verificar
+GPU real, resolución efectiva, alfa, filtrado, sombras, instancias y ausencia de
+VSync/cap/LOD. Congelar hashes de recursos/fuentes/entradas antes de medir.
+Prueba corta del arnés antes de las12 mediciones principales; conservar fallos,
+raw regenerable y evidencia seleccionada. Cada subproceso termina antes de180 s.
+
+Resultado: **12 mediciones completas y auditadas**, cuatro por carga. Medianas
+1/128/512: **0.660/1.671/4.139 ms por cuadro**,1514/598/242 FPS; P95
+0.860/1.955/4.746 ms. Godot4.7.2/RTX5060/1080p/MSAA4/sombras, cinco GLB
+aprobados intactos, hashes/ajustes/instancias/layouts correctos; cinco pruebas
+del arnés. Tres capturas1080p inspeccionadas: rejillas y sombras presentes,
+árboles pequeños al alejarse la cámara entre cantidades. No son FPS de un juego
+ni mejora frente a otra versión; no aislar causalidad de alfa/sombras/geometría.
+Primer smoke falló al leer un entero JSON como float; conservado, corregido y
+segundo smoke correcto antes de medir. Ningún ensayo principal descartado.
+[Informe, condiciones y reproducción](../docs/evidence/roble-central/rendimiento-01/informe.md).
+Benchmark cerrado; conservar geometría y definir cámara/escena representativa
+antes de nuevas decisiones de optimización. No se inician LOD, viento o bosque.
+
+Decisión2026-11-04 del usuario: «por ahora no haremos mas pruebas de rendimiento».
+No continuar benchmarks. Siguiente propuesta: desarrollar perfil joven de la
+familia nueva, partiendo de la madera O5 joven y revisando rama/follaje antes
+del árbol completo; propuesta sin iniciar, no ampliación ya implementada de3.0.0.
+
+### J1 — perfil joven, autorizado 2026-11-04
+
+El usuario autoriza la propuesta de perfil joven: revisar madera, preparar rama
+con follaje reutilizando pintura aprobada y, después de aprobar la muestra,
+integrar piloto y tres variantes. Se conserva3.0.0 y toda receta histórica.
+No hacer más pruebas de rendimiento. Centenario, viento, LOD y bosque fuera.
+
+Primera entrega: O5 joven de5 m/madurez.15, semillas3100–3103, sin escalar
+simplemente el maduro. Revisar madera completa y primarias solas en Godot,
+incluida comparación de porte normalizada con O5 maduro3100. Reutilizar los
+algoritmos existentes; corregir reglas solo si aparece un defecto demostrado,
+con alternativa versionada y sin ajustes por semilla.
+
+Muestra inicial: joven3100, primaria `p:0` y descendientes; distribución17 y
+pintura2718. Pintura/corteza0.3.0/0.2.0 aprobadas e intactas. Contrato experimental
+`oak-young-sample-0.1.0`, perfil fijo:144 grupos por árbol, tres planos/seis tris
+por grupo, span/H.10, región de anclaje radial.25H y cadenasB existentes. No
+imponer al joven los tres ejes centrales ni el cilindro del maduro3.0.0.
+Solo materializar el cupo de esta rama;864 tris reservados de follaje completo,
+madera O5≤5415 y techo conjunto6279≤6999, dos materiales. Cupos calculados desde
+la madera real antes de exportar; reservar no certifica una copa aún sin construir.
+
+Validar contratos, contactos/UV/alfa sobre GLB, madera idéntica con/sin follaje,
+uniones, determinismo, regresiones maduras y presupuesto. Preparar repetición y
+capturas Godot de madera, rama vestida y follaje aislado, varias vistas/fondos/
+distancias y sombras. Presentar resultado concreto para aprobación artística
+de muestra antes de integrar follaje del árbol completo, según política vigente.
+Piloto completo/tres controles y registro de receta nueva quedan posteriores;
+no declarar integración ni aprobación de edades por validar solo la muestra.
+
+Resultado J1: madera O5 joven conservada, cuatro casos3100–3103 de5 m:
+2952/3233/2672/3258 tris, auditorías y cuatro siluetas distintas. Piloto y
+primarias repetidos idénticos; dos GLB de joven3100 y dos de maduro3100 exactos
+a O5 histórico. Muestra p:0:71 grupos/213 láminas,620 madera+426 follaje=
+**1046 tris/dos materiales**, pintura exacta. Cuatro GLB/layout/estructura
+repetidos;23 checks de exportación/contactos/uniones y11 pruebas correctas.
+Godot:48 capturas de madera y36 de muestra,84 miniaturas y tres originales
+inspeccionados. Porte joven más esbelto; rama compacta de perfil, cantos arriba
+y ramilla inferior desnuda. Árbol completo con follaje no integrado; proyecciones
+3816/4097/3536/4122 son reservas aritméticas, no copas verificadas.
+Aceptación artística de madera/muestra pendiente, antes de integrar piloto y
+tres controles completos. No se hicieron nuevas pruebas de rendimiento.
+[Informe, galería y reproducción](../docs/evidence/roble-joven/j1/informe.md).
+
+### J2 — copa joven completa, autorizada 2026-11-04
+
+El usuario responde «si» a la aprobación de madera y rama J1 para continuar.
+[Aceptación y hashes](../docs/evidence/roble-joven/j1/user-acceptance.json).
+Integrar piloto3100 y controles3101–3103,5 m,144 grupos,distribución17/pintura2718,
+madera y pintura exactas, dos materiales y6999 tris máximo. La aceptación J1
+no aprueba por adelantado el árbol completo. Sin nuevos benchmarks.
+
+Preflight conservado: cadenaB recibe dos grupos en p:4 de3102, pero no tiene
+segmentos elegibles. Ampliación necesaria del reparto para la copa joven:
+calcular capacidades con los mismos candidatos geométricos, limitar cupos y
+redistribuir excedentes entre ramas con capacidad. Regla común, sin ajustes por
+semilla, sin cambiar cadenasB históricas ni el aspecto de p:0 del piloto aprobado.
+Registrar cupos iniciales/finales, descartes y cotas; rechazar si no hay capacidad
+global suficiente. No añadir madera central ni relajar contactos por completar.
+
+Contrato1.8 y receta nueva `roble_copa_ancha@3.1.0` de perfil joven fijo,
+conservando3.0.0 y versiones históricas. Separar distribución, resolución,
+exportación y evaluación. Integrar CLI/F4 con entradas congeladas y repetición;
+auditar GLB, contactos, texturas, presupuesto y madera exacta de los cuatro casos.
+Comprobar identidad de la muestra piloto en la copa completa y regresiones de
+maduro3.0.0 y O5. Revisar capturas Godot de todos los casos con cámaras comunes,
+giros, distancias, fondos y sombras; aceptación artística completa pendiente.
+
+Resultado J2: `roble_copa_ancha@3.1.0` experimental integrado en CLI/API/F4,
+contrato1.8. Cuatro jóvenes3100–3103: **3816/4097/3536/4122 tris**,144 grupos,
+432 láminas, dos materiales. Cuatro GLB repetidos idénticos; madera aprobada
+exacta en posiciones/normales/UV. Grupos de p:0 piloto y caras/atributos de su
+muestra aprobada exactos dentro del GLB completo. Maduro3.0.0 regenerado idéntico.
+30 checks de cierre y360 pruebas en76 archivos correctos. Godot:92 capturas
+inspeccionadas en láminas y cuatro frentes originales; copas muy abiertas,
+ápices desnudos y cantos visibles. No se declara plenitud suficiente ni arte
+completo aprobado; siguiente paso es valoración artística del lote.
+3102 redistribuye dos grupos de p:4, cero en los demás casos; rechazos/test de
+serialización conservados. Sin nuevas mediciones de rendimiento.
+[Informe J2 y reproducción](../docs/evidence/roble-joven/j2/informe.md).
+
+### J3 — cobertura de ramas y volumen joven, autorizado 2026-11-04
+
+El usuario señala falta de follaje en varias ramas y pide más volumen. J2/3.1.0
+queda como referencia técnicamente válida, sin aprobación artística completa.
+Se autoriza cambiar distribución, cantidad, tamaño y orientación del follaje;
+conservar madera O5 y pintura aprobadas. La muestra J1 histórica sigue íntegra,
+pero su distribución exacta no restringe esta corrección explícita de cobertura.
+
+Nueva alternativa `roble_copa_ancha@3.2.0`, contrato1.8 ampliado para componentes
+jóvenes0.2.0, sin alterar la resolución de3.1.0.264 grupos/1584 tris de follaje;
+cota madera5415+1584=6999. Grupos más amplios, span/H.16 y profundidad recuperada,
+marcos inclinados fijos en espacio. Sin filtro radial para ejes superiores y
+ramas cortas; conservar madera de unión visible sin imponer el cilindro maduro.
+
+Garantizar cupo al extremo de cada eje real y al líder superior; repartir el
+resto por longitud/vigor y capacidad acotada, sin retoques por semilla. Anclar
+siempre sobre madera y pintura opaca, sin conectores flotantes. Registrar
+cobertura de ejes, grupos, descartes, área/tamaño y triángulos sin equiparar
+métricas a plenitud artística. Comparar3.1.0/3.2.0 en3100–3103 con cámaras/luz
+comunes, giros, arriba, distancias y sombras. Repetición, madera/PNG exactos,
+contactos/UV y regresiones de3.1.0/3.0.0. No hacer nuevos benchmarks.
+
+Resultado J3:3.2.0 experimental implementado y verificado. Cuatro casos
+4536/4817/4256/4842 tris,264 grupos/792 láminas/dos materiales, madera/PNG
+exactos a J2. Ejes con follaje24→83,36→92,17→71 y34→89: todos los ejes reales
+con cupo distal, incluido líder.35 checks y365 pruebas/77 archivos correctos;
+cuatro GLB repetidos idénticos y regresiones3.1.0/3.0.0 idénticas. Repetición
+recuperada tras SIGTERM externo del cuarto caso, con intentos e inventario
+compuesto registrados.120 capturas Godot inspeccionadas con cámaras comunes;
+mayor cobertura y volumen aparente, cantos/repetición aún visibles. Sin nuevos
+benchmarks; aceptación artística pendiente del usuario.
+[Informe, comparación y reproducción](../docs/evidence/roble-joven/j3/informe.md).
+
+Cierre J3,2026-11-04: el usuario declara «mucho mejor lo apruebo». Aceptación
+artística de los cuatro jóvenes3100–3103 registrada con hashes de GLB y
+comparación; copa J3 cerrada y aprobada. Receta congelada sin cambios de
+metadatos/hashes; nuevas semillas no heredan aprobación. Sin nuevos benchmarks.
+[Aceptación J3](../docs/evidence/roble-joven/j3/user-acceptance.json).

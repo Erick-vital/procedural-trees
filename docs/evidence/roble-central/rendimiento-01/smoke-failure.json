@@ -1,0 +1,176 @@
+{
+  "status": "failed",
+  "stage": "analyze-smoke",
+  "error": "TypeError: float object cannot be interpreted as an integer; Godot JSON count=5.0",
+  "action": "Conservar intento. Corregir conversión de enteros validada y repetir smoke en carpeta nueva. No usar estas muestras en el benchmark principal.",
+  "first_smoke_raw_sha256": "6d7b6a90d73dee6f7aae638b87858de73355802f0261129d91306a409ce2c8c0",
+  "successful_smoke": "artifacts/roble-central/performance-smoke-02",
+  "successful_smoke_summary": {
+    "passed": true,
+    "smoke": true,
+    "config": {
+      "version": "oak-performance-1.0",
+      "blueprint": "roble_copa_ancha@3.0.0",
+      "counts": [
+        5
+      ],
+      "repetitions": 1,
+      "warmup_seconds": 0.3,
+      "measurement_seconds": 0.7,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "spacing_m": 18,
+      "shadows": true,
+      "shadow_distance_m": 1500,
+      "msaa": 4,
+      "renderer": "gl_compatibility",
+      "automatic_lod": false,
+      "vsync": false,
+      "max_fps": 0,
+      "seeds_base": [
+        3100,
+        3101,
+        3102,
+        3103,
+        3104
+      ],
+      "canopy_seed": 17,
+      "paint_seed": 2718,
+      "camera_projection": "orthogonal",
+      "camera_direction": [
+        0,
+        0.65,
+        1
+      ],
+      "camera_height_center_m": 7,
+      "single_camera_size_m": 26,
+      "camera_margin_m": 26,
+      "camera_far_m": 2000
+    },
+    "assets": {
+      "maduro-3100.glb": {
+        "sha256": "315943611b884005ea96122d005891b5ee83ca772132bda6c52c412916ad9fde",
+        "triangles": 5745,
+        "seeds": {
+          "base": 3100,
+          "canopy": 17,
+          "paint": 2718
+        }
+      },
+      "maduro-3101.glb": {
+        "sha256": "ec1a05deb9ee7211495f4683b36465a36114aac2ee3c494708867733f22d099c",
+        "triangles": 6158,
+        "seeds": {
+          "base": 3101,
+          "canopy": 17,
+          "paint": 2718
+        }
+      },
+      "maduro-3102.glb": {
+        "sha256": "3f9652e7f86ebb0ccea2dda94f2e8f68b4939074bb5c7aa9415961ef7d614cdb",
+        "triangles": 5447,
+        "seeds": {
+          "base": 3102,
+          "canopy": 17,
+          "paint": 2718
+        }
+      },
+      "maduro-3103.glb": {
+        "sha256": "e1c1741b29acc4cd5b08eb9290563766dde1afacec48883d3f8b5819ec779cd5",
+        "triangles": 6087,
+        "seeds": {
+          "base": 3103,
+          "canopy": 17,
+          "paint": 2718
+        }
+      },
+      "maduro-3104.glb": {
+        "sha256": "130efbda503eea126db14f2e6c6fc48e9423ec55504f9aa89a70e212d85d882b",
+        "triangles": 6006,
+        "seeds": {
+          "base": 3104,
+          "canopy": 17,
+          "paint": 2718
+        }
+      }
+    },
+    "asset_resources": {
+      "oak": [
+        "res://maduro-3100.glb",
+        "res://maduro-3101.glb",
+        "res://maduro-3102.glb",
+        "res://maduro-3103.glb",
+        "res://maduro-3104.glb"
+      ]
+    },
+    "counts": {
+      "5": {
+        "trials": [
+          {
+            "mesh_instances": 5,
+            "trial": 0,
+            "version": "oak",
+            "frames": 986,
+            "elapsed_s": 0.700188,
+            "frame_mean_ms": 0.7101298174442191,
+            "frame_median_ms": 0.715,
+            "frame_p95_ms": 0.912,
+            "frame_p99_ms": 1.0305499999999996,
+            "fps": 1408.193228104452,
+            "render_cpu_ms": 0.16744624743234313,
+            "render_gpu_ms": 0.5297515148686106,
+            "render_setup_cpu_ms": 0.002015212981744422,
+            "draw_calls": 35.0,
+            "primitives": 100163.0,
+            "objects": 35.0
+          }
+        ],
+        "aggregate": {
+          "frame_mean_ms": 0.7101298174442191,
+          "frame_median_ms": 0.715,
+          "frame_p95_ms": 0.912,
+          "frame_p99_ms": 1.0305499999999996,
+          "fps": 1408.193228104452,
+          "run_frame_mean_range_ms": [
+            0.7101298174442191,
+            0.7101298174442191
+          ],
+          "render_cpu_ms": 0.16744624743234313,
+          "render_gpu_ms": 0.5297515148686106,
+          "render_setup_cpu_ms": 0.002015212981744422,
+          "draw_calls": 35.0,
+          "primitives": 100163.0,
+          "objects": 35.0
+        },
+        "raw_file_sha256": "4e25646af68d4e8962e986ce1292ff27ed112afe9a9662488900a66e85999584"
+      }
+    },
+    "input_sha256": {
+      "5": "c67fc569de1559932e0c5c4aff4dbb92f0bb1c3bc6ed768d148a7dfc20358610"
+    },
+    "sources_sha256": {
+      "scripts/benchmark_painted_oak.py": "3c33ee61f47f20e1f7144825a03b58ecca70b8e301e8403aa34a47f302a70752",
+      "configs/verification/oak-performance-v1.json": "3a2949ce33153f48142c1b7349cf3944ce8578ff58128623770f009620ec4e35",
+      "docs/evidence/roble-central/familia-01/user-acceptance.json": "d5177ee23061da5b1d092e17728fd9b94413aefbcba04e95cd2691f17ee29324",
+      "godot/benchmark_painted_oak.gd": "83f00c67424e719c57a2348f15b191dde86178e8ed7803806b3199e2862aaa79",
+      "godot/painted_pine_asset.gd": "3c39d07732f1885c02c351b41261965e4193102b86906b4089cf788f93ae3cad",
+      "godot/project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+      "scripts/review_pine_painted.py": "bb387c56923b6841703cef8069867adc42cf06d064385e8fdd5c0e3f5e57080f",
+      "scripts/verify_foliage_unit.py": "c1a63768a43c736173f3f3a0e473874a67fff8e7ba1f793e59a6beab6d712831",
+      "scripts/benchmark_painted_pine.py": "b20a8c73364dc6cbb994662de0e01329546e913bc133cf61de4e4b33adc1bd21"
+    },
+    "runtime_sha256": {
+      "maduro-3100.glb": "315943611b884005ea96122d005891b5ee83ca772132bda6c52c412916ad9fde",
+      "maduro-3103.glb": "e1c1741b29acc4cd5b08eb9290563766dde1afacec48883d3f8b5819ec779cd5",
+      "maduro-3104.glb": "130efbda503eea126db14f2e6c6fc48e9423ec55504f9aa89a70e212d85d882b",
+      "project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+      "painted_pine_asset.gd": "3c39d07732f1885c02c351b41261965e4193102b86906b4089cf788f93ae3cad",
+      "maduro-3101.glb": "ec1a05deb9ee7211495f4683b36465a36114aac2ee3c494708867733f22d099c",
+      "maduro-3102.glb": "3f9652e7f86ebb0ccea2dda94f2e8f68b4939074bb5c7aa9415961ef7d614cdb",
+      "benchmark_painted_oak.gd": "83f00c67424e719c57a2348f15b191dde86178e8ed7803806b3199e2862aaa79"
+    },
+    "study_type": "single-version-static-load; no optimization claim"
+  }
+}

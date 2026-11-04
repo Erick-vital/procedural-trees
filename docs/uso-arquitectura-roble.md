@@ -223,3 +223,21 @@ python3 scripts/verify_oak_periphery.py --output artifacts/mi-comparacion-o5 --s
 controles geométricos 5000–5004, maduros y centenarios, sin usarlos para ajustar
 reglas. Las capturas nuevas corresponden a los once casos históricos; distinguir
 esos controles geométricos de validación visual y de exportación.
+
+## J1 — muestra joven antes de integrar la copa
+
+La [primera entrega del joven](evidence/roble-joven/j1/informe.md) revisa cuatro
+maderas O5 de5 m y una rama3100/p:0 con la pintura aprobada. Contrato experimental
+`oak-young-sample-0.1.0`, distribución17/pintura2718; muestra1046 tris/dos materiales.
+Galería: `artifacts/roble-joven/j1-rama-01/index.html`.
+Madera y muestra aprobadas por el usuario; [copa completa J2](evidence/roble-joven/j2/informe.md) integrada, con más follaje/volumen solicitados por el usuario.
+Los comandos de J1 están en el informe. J2 usa `roble_copa_ancha@3.1.0`, perfil
+joven experimental fijo; los maduros permanecen en3.0.0.
+
+
+J3 implementa esa corrección en `roble_copa_ancha@3.2.0`:264 grupos, todos los
+ejes con follaje distal y masas mayores, conservando madera y pintura.
+4536–4842 tris/dos materiales en los cuatro casos,35 checks,365 pruebas y120
+capturas Godot; [lote aprobado](evidence/roble-joven/j3/user-acceptance.json)
+y sin nuevas mediciones de rendimiento.
+[Comparación y comandos](evidence/roble-joven/j3/informe.md).

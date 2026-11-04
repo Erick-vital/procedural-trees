@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "request": "Validar cinco robles maduros 3.0.0 con semillas distintas, mismas reglas y pintura, sin retoques por ejemplar; cámara perspectiva provisional a tres distancias. Autorizado: ok hazlo.",
+  "origin": "codex-session",
+  "cases": [
+    {
+      "id": "maduro-3100",
+      "seeds": {
+        "base": 3100,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "maduro",
+        "changes": [],
+        "explanation": "Control: reproducir el piloto aprobado."
+      }
+    },
+    {
+      "id": "maduro-3101",
+      "seeds": {
+        "base": 3101,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "maduro",
+        "changes": [],
+        "explanation": "Control de variación estructural: cambiar solo la semilla base; mantener perfil, distribución y pintura."
+      }
+    },
+    {
+      "id": "maduro-3102",
+      "seeds": {
+        "base": 3102,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "maduro",
+        "changes": [],
+        "explanation": "Control de variación estructural: cambiar solo la semilla base; mantener perfil, distribución y pintura."
+      }
+    },
+    {
+      "id": "maduro-3103",
+      "seeds": {
+        "base": 3103,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "maduro",
+        "changes": [],
+        "explanation": "Control de variación estructural: cambiar solo la semilla base; mantener perfil, distribución y pintura."
+      }
+    },
+    {
+      "id": "maduro-3104",
+      "seeds": {
+        "base": 3104,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "maduro",
+        "changes": [],
+        "explanation": "Control de variación estructural: cambiar solo la semilla base; mantener perfil, distribución y pintura."
+      }
+    }
+  ]
+}

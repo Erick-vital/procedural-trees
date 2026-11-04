@@ -56,7 +56,8 @@ def execute(spec, output, render=True, timeout=120, job_id=None, *, blueprint=No
         birch = resolved is not None and resolved['base_spec']['algorithm'] == 'birch-crown'
         willow = resolved is not None and resolved['base_spec']['algorithm'] == 'willow-weeping'
         central_oak = resolved is not None and resolved['base_spec']['algorithm'] == 'oak-central'
-        if pine or birch or willow or central_oak:
+        young_oak = resolved is not None and resolved['base_spec']['algorithm'] == 'oak-young'
+        if pine or birch or willow or central_oak or young_oak:
             from .blueprints import canonical_hash
             input_hash = canonical_hash(spec)
         else:
@@ -68,8 +69,11 @@ def execute(spec, output, render=True, timeout=120, job_id=None, *, blueprint=No
         if resolved is not None:
             job['resolved_blueprint'] = resolved
             job['seeds'] = resolved['base_seeds']
-        if central_oak:
-            from .oak_central_production import prepare
+        if young_oak or central_oak:
+            if young_oak:
+                from .oak_young_production import prepare
+            else:
+                from .oak_central_production import prepare
             geometry = prepare(resolved)
             write_json(output / 'prepared-canopy.json', geometry)
             job['prepared_geometry_sha256'] = canonical_hash(geometry)
@@ -79,7 +83,8 @@ def execute(spec, output, render=True, timeout=120, job_id=None, *, blueprint=No
         write_json(output / 'manifest.json', manifest)
         command = [os.environ.get('BLENDER_BIN', BLENDER), '--background', '--factory-startup',
                    '--threads', '1', '--python-exit-code', '1', '--python',
-                   str(ROOT / ('blender/generate_central_oak.py' if central_oak else
+                   str(ROOT / ('blender/generate_young_oak.py' if young_oak else
+                               'blender/generate_central_oak.py' if central_oak else
                                'blender/generate_willow.py' if willow else
                                'blender/generate_birch.py' if birch else
                                'blender/generate_crossed_oak.py' if resolved and resolved['resolved_version'] == '1.4' else
@@ -92,7 +97,7 @@ def execute(spec, output, render=True, timeout=120, job_id=None, *, blueprint=No
             process = subprocess.Popen(command, cwd=ROOT, stdout=log, stderr=subprocess.STDOUT,
                                        start_new_session=True)
             try:
-                code = process.wait(timeout=max(.001, timeout-(time.monotonic()-started)) if central_oak else timeout)
+                code = process.wait(timeout=max(.001, timeout-(time.monotonic()-started)) if young_oak or central_oak else timeout)
             except subprocess.TimeoutExpired:
                 os.killpg(process.pid, signal.SIGKILL)
                 process.wait()

@@ -1,12 +1,12 @@
 # Estado del proyecto
 
-Última actualización: 2026-11-03.
+Última actualización: 2026-11-04.
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
-Dos tipos al cierre B5; catálogo actual: cinco tipos/diecisiete recetas, incluido sauce.
+Dos tipos al cierre B5; catálogo actual: cinco tipos/diecinueve recetas, incluido sauce.
 [F4 lenguaje natural](plans/f4-lenguaje-blueprints.md): **cerrado y aprobado por el usuario**.
-[Arquitectura O5/OF11](plans/arquitectura-roble.md): **maduro3100 completo aprobado**; registrado como roble3.0.0 con tres ejes ascendentes. O1–O5/OF8–OF10 históricos conservados.
+[Arquitectura O5/OF11](plans/arquitectura-roble.md): **familia madura3100–3104 aprobada**; registrada como roble3.0.0 con tres ejes ascendentes. O1–O5/OF8–OF10 históricos conservados.
 [Sauce pintado](plans/sauce-pintado.md): **1.1.0 cerrado y aprobado; 1.0.0 rechazado artísticamente**.
 [Transiciones](plans/transiciones-estacionales.md): **T0–T6 cerradas y lote aprobado; entrega 0.1.0**.
 [Abedul](plans/abedul-pintado.md) 1.0.0 integrado/verificado; arte pendiente.
@@ -158,17 +158,19 @@ la familia ensayada**, como alternativa explícita a Q3.
   ocupación o silueta no acreditan naturalidad, rendimiento o aprobación estética.
 
 ## Siguiente paso y pendientes
-**Roble nuevo aprobado y guardado: `roble_copa_ancha@3.0.0`**, contrato1.7, perfil maduro fijo.
-Receta `blueprints/roble_copa_ancha/3.0.0.json`; ejemplar `presets/blueprints/roble-central/maduro-3100.json`.
-**5745 tris/216 grupos/778 láminas/dos materiales**, tres ejes ascendentes (+475 tris madera).
-[Árbol completo aprobado](docs/evidence/oak-foliage/of11/user-acceptance.json):3100/distribución17/pintura2718.
-CLI y repetición: GLB idéntico al OF11 aprobado;345 pruebas/73 archivos y15 checks de entrega correctos.
-[Auditoría blueprint](docs/evidence/oak-foliage/of11/blueprint-release.json); [uso](docs/uso-blueprints.md).
-24 grupos reasignados;192 y complementos OF10 intactos; protección inferior hasta7.44 m.
-[OF11](docs/evidence/oak-foliage/of11/informe.md):70 checks,seis pruebas geométricas,135 capturas/101 inspeccionadas.
-Galería `artifacts/oak-foliage/of11-maduro-03/index.html`; recetas históricas intactas.
-Para retomar: usar3.0.0 explícita; otras semillas se validan/rechazan, sin nuevos rangos o edades aprobados.
-Límites: grupos centrales parcialmente separados; siluetas lobuladas/cámara de juego y benchmark pendientes.
+**J3 joven con más cobertura/volumen aprobado**: `roble_copa_ancha@3.2.0`,5 m.
+Cuatro casos3100–3103: **4536/4817/4256/4842 tris**,264 grupos/dos materiales.
+[Informe J3](docs/evidence/roble-joven/j3/informe.md):35 checks,365 pruebas/77 archivos;
+cuatro GLB repetidos, madera/PNG exactos, todos los ejes cubiertos y dos regresiones.
+120 capturas Godot; [aprobación J3](docs/evidence/roble-joven/j3/user-acceptance.json).
+[J2 con cambios solicitados](docs/evidence/roble-joven/j2/user-review.json); J1 aprobado conservado.
+Galería `artifacts/roble-joven/j3-volumen-01/index.html`; sin nuevos benchmarks.
+**Roble3.0.0 maduro3100–3104 aprobado**,5745/6158/5447/6087/6006 tris/dos materiales;
+[aceptación](docs/evidence/roble-central/familia-01/user-acceptance.json), cinco GLB repetidos idénticos.
+[Entrega y uso](docs/evidence/oak-foliage/of11/informe.md); recetas históricas intactas.
+**Benchmark cerrado:**1/128/512, cuatro repeticiones,1080p/MSAA4/sombras/RTX5060:
+0.660/1.671/4.139 ms,1514/598/242 FPS. [Informe](docs/evidence/roble-central/rendimiento-01/informe.md).
+Decisión2026-11-04: no hacer más pruebas de rendimiento por ahora; sin nuevas mediciones.
 F4 aprobada: [aceptación](docs/evidence/f4/lenguaje-01/user-acceptance.json), [guía](docs/uso-lenguaje-natural.md).
 T6 cerrada: [entrega de transiciones](docs/entrega-transiciones.md), lote aprobado.
 - [T5 verificada](docs/evidence/estaciones/integracion-t5/informe.md): 194 pruebas, 2377 capturas más cuatro en copia limpia; cuatro casos 3132–6900 tris, dos materiales/tres texturas, 16 extremos Blender/Godot.
@@ -177,8 +179,7 @@ T6 cerrada: [entrega de transiciones](docs/entrega-transiciones.md), lote aproba
 - Abedul completo sigue pendiente de valoración artística; sin nuevas edades.
 - Roble 2.2.0 cerrado; usar `blueprints/roble_copa_ancha/2.2.0.json` y
   `presets/blueprints/roble-madera/`; galería `artifacts/roble-pintado/integracion-madera-01/index.html`.
-- Piloto aprobado; controles revisados por el agente. Sin benchmark de roble
-  ni garantía de rangos completos; posibles separaciones, cantos y costuras.
+- Roble2.2.0 sin benchmark ni garantía de rangos completos; posibles separaciones/cantos/costuras.
 Pino **2.3.0 aprobado y benchmark cerrado**; `artifacts/pino-pintado/pp4-cards-02/index.html`. Base geométrica 1.1.0 en `artifacts/blueprints/pine-v1.1-review-01/`, aceptación pendiente.
 RF5 cerrado con aprobación artística del lote completo. Matriz
 `configs/verification/rf5-v1.json`; galería
@@ -190,7 +191,7 @@ Límites: B4 solo ensaya columna de 12 m/cuatro semillas; intervalos completos y
 edades no garantizados. Caso 2 m/moldes 3 m técnicamente válido pero visualmente
 inadecuado. Extremo de 20 m completa 2021/2048 intentos, cerca del límite de trabajo.
 Conexiones superpuestas a Q3, sin soldar ni resolver todas las intersecciones;
-hojas angulosas/solapadas. FPS solo medidos para pinos; sin viento, LOD ni bosque.
+hojas angulosas/solapadas. FPS medidos para pino2.3.0 y roble3.0.0; sin viento, LOD ni bosque.
 Sin bloqueos técnicos fuera del sandbox. Dentro pueden fallar audio al cerrar
 Blender y sockets loopback; ejecución autorizada fuera. T5 captura por lotes acotados,
 bucle automático desactivado y dos dibujos explícitos por vista.

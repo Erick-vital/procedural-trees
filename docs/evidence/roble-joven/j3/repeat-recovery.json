@@ -1,0 +1,94 @@
+{
+  "version": "1.0.0",
+  "status": "completed",
+  "started_at": "2026-11-04T07:21:47.689670+00:00",
+  "request_sha256": "a770431c0f28b00dc3307e76526a57833bc8c59df97f5be13cf6e9274996c1e3",
+  "cases": [
+    {
+      "id": "joven-3100",
+      "status": "completed",
+      "instance": {
+        "schema_version": "1.8",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "3.2.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 3100,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "triangles": 4536,
+      "glb_sha256": "6ecb52ff307b7917ee688e6ff0a01233df2bf5cb112367f97e8688235653698d",
+      "materials": 2
+    },
+    {
+      "id": "joven-3101",
+      "status": "completed",
+      "instance": {
+        "schema_version": "1.8",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "3.2.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 3101,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "triangles": 4817,
+      "glb_sha256": "7a7ee506d97957e8ed41931b30df797d19fb8bf21cdc938c51b8607a53dfad4c",
+      "materials": 2
+    },
+    {
+      "id": "joven-3102",
+      "status": "completed",
+      "instance": {
+        "schema_version": "1.8",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "3.2.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 3102,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "triangles": 4256,
+      "glb_sha256": "f082b6612bacc63a3a95ebe3747e4dee51a8618122937a77fac8022aea8e5c45",
+      "materials": 2
+    },
+    {
+      "id": "joven-3103",
+      "status": "completed",
+      "instance": {
+        "schema_version": "1.8",
+        "blueprint_id": "roble_copa_ancha",
+        "blueprint_version": "3.2.0",
+        "profile": "joven",
+        "seeds": {
+          "base": 3103,
+          "canopy": 17,
+          "paint": 2718
+        },
+        "overrides": {}
+      },
+      "triangles": 4842,
+      "glb_sha256": "cf18e01a2181180027870c6519410c9d57034d65e9acae7aac329f7dccbccab5",
+      "materials": 2
+    }
+  ],
+  "triangle_limit": 6999,
+  "material_limit": 2,
+  "model_called": false,
+  "composition": "Completed cases from interrupted attempt plus recovered case; not one uninterrupted execution.",
+  "attempts": [
+    "../repeat-interrupted-01/batch.json",
+    "../repeat-recovery-01/batch.json"
+  ],
+  "recovery_plan": "../repeat-recovery-plan",
+  "interruption": "../repeat-interrupted-01/interruption.json"
+}

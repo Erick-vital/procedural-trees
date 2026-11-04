@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-04",
+  "status": "accepted",
+  "user_message": "si",
+  "response_to": "¿Apruebas la madera joven y esta rama para continuar?",
+  "scope": "Maderas jóvenes O5 de5 m presentadas (3100–3103) y rama piloto3100/p:0 con71 grupos,1046 tris/dos materiales,distribución17/pintura2718. Autoriza continuar con árbol completo, piloto y tres controles; no aprueba por adelantado el resultado completo.",
+  "approved_branch_glb_sha256": "1e169a2796d73c5f9040542951574fc194a772fa86ec6b30e933f0bf1d99b019",
+  "approved_bare_branch_glb_sha256": "3d2beb32d1cd9cb4aae950cfcb75af78602046835d24d7632e1b317565544a94",
+  "approved_wood_glbs_sha256": {
+    "joven-3100": "77343f1a804492c80726289e709e738b47525f37fea45551b18b320709e6beb8",
+    "joven-3101": "9b256273b431fb5b8db69068d89601a7d08373493d6f720e7892e6c22ea4aade",
+    "joven-3102": "2c3044ccc6e28de6e0723176b5d05e47b0e209495cc9b66126811bd2bca1e14f",
+    "joven-3103": "ae029c2ea0604d11213dd1df0d0b7269043da08635ba94e8452a11e63988eb35"
+  },
+  "evidence": "docs/evidence/roble-joven/j1/informe.md",
+  "approved_gallery": "artifacts/roble-joven/j1-rama-01/index.html",
+  "performance_tests": "No hacer nuevas pruebas de rendimiento.",
+  "approved_branch_groups_sha256": "9fd02f08abb35b1ea42dcfb1d7c3d9eedb70070c58fe8656df971121d7cdd44d"
+}

@@ -444,3 +444,30 @@ de13.374 m del piloto aprobado, sin recortar o normalizar las láminas.
 La aprobación es del piloto; otras semillas se validan o rechazan durante la
 generación, y no se afirman nuevos rangos/edades. Rutas1.0–1.6 y recetas previas
 permanecen disponibles con sus contratos. [Uso](uso-blueprints.md).
+
+## Contrato1.8 — roble joven O5
+
+Esquemas `schemas/tree-blueprint-young-oak.schema.json` y
+`schemas/tree-instance-young-oak.schema.json`; perfil `joven` fijo de5 m,
+`oak-growth-young@0.5.0`, sin overrides ni rangos nuevos. Dos alternativas
+compatibles del mismo contrato, con distribución/representación emparejadas:
+
+| Receta | Componentes chains/crossed | Grupos | span/H | radio núcleo/H | Cota tris |
+|---|---|---:|---:|---:|---:|
+|3.1.0 histórica|0.1.0/0.1.0|144|.10|.25|6279|
+|3.2.0 experimental|0.2.0/0.2.0|264|.16|0|6999|
+
+No se mezclan versiones ni parámetros entre alternativas; no se intercambian
+con los centrales1.7 ni recetas históricas. Madera O5 aprobada, seis tris por
+grupo, dos materiales y techo contractual6999.0.1.0 limita el reparto por
+capacidad y reasigna;0.2.0 garantiza cupo distal por eje, incluido líder, y
+reparte por longitud/vigor con capacidad acotada. Rechazar si falta capacidad,
+colocación válida o presupuesto. La regla nueva no altera la resolución3.1.0.
+
+Preparación en anfitrión con hashes de resolución/preset/geometría; exportación
+Blender y auditoría de caras/UV/contactos del GLB separadas. Registra cupos,
+fuentes y semillas independientes. La evidencia y aceptación artística se
+documentan aparte; recetas congeladas con metadato experimental. El lote J3
+3100–3103 de3.2.0 está [aprobado](evidence/roble-joven/j3/user-acceptance.json),
+sin extender la aceptación a otras semillas.3.2.0 responde
+a la petición de más follaje/volumen, sin modificar madera ni PNG aprobados.

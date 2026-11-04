@@ -94,13 +94,16 @@ def validate_result(directory):
         if manifest['canopy_spec'] != resolved['canopy_spec'] or manifest['base_seeds'] != resolved['base_seeds']:
             raise ValueError('Entradas de generación distintas del blueprint resuelto')
         triangle_limit = resolved['limits']['triangles']
-    height_materials = {'Painted_Bark'} if manifest.get('kind') == 'blueprint' and resolved['resolved_version'] in ('1.4', '1.5', '1.6', '1.7') else None
+    height_materials = {'Painted_Bark'} if manifest.get('kind') == 'blueprint' and resolved['resolved_version'] in ('1.4', '1.5', '1.6', '1.7', '1.8') else None
     report = validate_glb(directory / 'tree.glb', manifest['spec'], triangle_limit=triangle_limit, height_materials=height_materials)
     if manifest.get('kind') == 'blueprint':
         from .foliage_twigs_evaluation import inspect_twigs_glb
         roles = ({'wood_material': 'Pine_Bark', 'leaf_material': 'Pine_Needles'}
                  if resolved['base_spec']['algorithm'] == 'pine-whorls' else {})
-        if resolved['resolved_version'] == '1.7':
+        if resolved['resolved_version'] == '1.8':
+            from .oak_young_production import inspect_export
+            detailed = inspect_export(directory, manifest, resolved)
+        elif resolved['resolved_version'] == '1.7':
             from .oak_central_production import inspect_export
             detailed = inspect_export(directory, manifest, resolved)
         elif resolved['resolved_version'] == '1.6':

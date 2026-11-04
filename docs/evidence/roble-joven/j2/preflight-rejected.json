@@ -1,0 +1,26 @@
+{
+  "status": "rejected",
+  "stage": "full-canopy-preflight",
+  "inputs": {
+    "growth_preset": "presets/oak-growth/0.5.0/joven.json",
+    "seeds": [
+      3100,
+      3101,
+      3102,
+      3103
+    ],
+    "layout_seed": 17,
+    "paint_seed": 2718,
+    "tree_groups": 144,
+    "span_over_height": 0.1,
+    "core_radius_over_height": 0.25,
+    "distribution": "oak-foliage-sample-0.2.0/B"
+  },
+  "failure": {
+    "seed": 3102,
+    "branch": "p:4",
+    "quota": 2,
+    "error": "Segmentos elegibles insuficientes"
+  },
+  "action": "Componer copa joven con cupos limitados por capacidad real de candidatos; conservar el algoritmo y muestra hist\u00f3ricos."
+}

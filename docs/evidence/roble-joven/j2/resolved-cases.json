@@ -1,0 +1,66 @@
+[
+  {
+    "id": "joven-3100",
+    "instance": {
+      "schema_version": "1.8",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.1.0",
+      "profile": "joven",
+      "seeds": {
+        "base": 3100,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "b6840c838e4d5f25444872247d5e4dc5102f397ffdfa47b744426280f3f8211f"
+  },
+  {
+    "id": "joven-3101",
+    "instance": {
+      "schema_version": "1.8",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.1.0",
+      "profile": "joven",
+      "seeds": {
+        "base": 3101,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "9c74eace8adb934493138230e9b2beb100675e20ca82bbf14bde87755e837e60"
+  },
+  {
+    "id": "joven-3102",
+    "instance": {
+      "schema_version": "1.8",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.1.0",
+      "profile": "joven",
+      "seeds": {
+        "base": 3102,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "d789b548f3d197eb737a9eb56b5196a50ea609eeffa54fac515298e7e51ca7e9"
+  },
+  {
+    "id": "joven-3103",
+    "instance": {
+      "schema_version": "1.8",
+      "blueprint_id": "roble_copa_ancha",
+      "blueprint_version": "3.1.0",
+      "profile": "joven",
+      "seeds": {
+        "base": 3103,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "overrides": {}
+    },
+    "resolved_sha256": "ffd020b1ef0bca07607f1a11488639a606091571da9acd247fe435cdf6d35c41"
+  }
+]

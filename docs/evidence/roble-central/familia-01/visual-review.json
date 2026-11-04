@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-03",
+  "reviewer": "Codex, inspección visual de capturas reales Godot",
+  "status": "reviewed-with-limitations",
+  "artistic_acceptance": "pending-except-pilot-3100",
+  "contact_sheets_inspected": [
+    "maduro-3100.jpg",
+    "maduro-3101.jpg",
+    "maduro-3102.jpg",
+    "maduro-3103.jpg",
+    "maduro-3104.jpg"
+  ],
+  "distinct_captures_inspected_as_thumbnails": 115,
+  "native_resolution_captures_inspected": [
+    "maduro-3100--front.png",
+    "maduro-3101--front.png",
+    "maduro-3102--front.png",
+    "maduro-3103--front.png",
+    "maduro-3104--front.png",
+    "maduro-3102--top.png",
+    "maduro-3104--dark.png"
+  ],
+  "observations": {
+    "maduro-3100": "Piloto idéntico al aprobado; copa abierta y masas centrales parcialmente separadas; lectura radial superior persiste.",
+    "maduro-3101": "Porte más alto y poblado; brazo inferior derecho largo y grupo inferior izquierdo aislado visualmente; puntas de canto arriba.",
+    "maduro-3102": "Menor coste geométrico; copa extendida y huecos centrales amplios, masas superiores separadas; lectura radial clara desde arriba.",
+    "maduro-3103": "Mayor ocupación a la izquierda y grupo inferior derecho destacado; ápice abierto con madera expuesta; cambia de plenitud al girar.",
+    "maduro-3104": "Asimetría ascendente pronunciada en perspectiva; brazo derecho horizontal expuesto y región superior dominante; radialidad superior conservada."
+  },
+  "common_findings": [
+    "Variación visible de estructura y silueta, con lenguaje de pintura compartido. No se atribuye reconocimiento botánico universal.",
+    "Copa abierta; persisten separación entre macromasas y lectura radial desde arriba. No se declara plenitud uniforme en todos los giros.",
+    "Cantos y puntas finas de algunas láminas visibles al girar; sin grandes rectángulos opacos evidentes en las tomas inspeccionadas.",
+    "Anclajes aparentes sostenidos por madera en las vistas examinadas; la auditoría de puntos de contacto no certifica todas las uniones de cada hoja pintada ni malla soldada.",
+    "Madera estructural legible, con uniones solapadas y ramillas desnudas visibles.",
+    "A distancia lejana se conserva la silueta y se pierde detalle; no se estudió movimiento ni parpadeo subpíxel.",
+    "Sombras del follaje y madera presentes; extremo derecho recortado en tomas de sombra, por lo que no se certifica su proyección completa."
+  ],
+  "camera_status": "Perspectiva provisional elegida por el usuario; no acredita cámara definitiva del juego ni aceptación artística.",
+  "next_recommendation": "Revisión artística del lote por el usuario; decidir si la radialidad/separación observadas requieren otra regla general antes de ampliar semillas o edades."
+}

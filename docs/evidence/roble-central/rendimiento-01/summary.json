@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "smoke": false,
+  "config": {
+    "version": "oak-performance-1.0",
+    "blueprint": "roble_copa_ancha@3.0.0",
+    "counts": [
+      1,
+      128,
+      512
+    ],
+    "repetitions": 4,
+    "warmup_seconds": 3,
+    "measurement_seconds": 6,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "spacing_m": 18,
+    "shadows": true,
+    "shadow_distance_m": 1500,
+    "msaa": 4,
+    "renderer": "gl_compatibility",
+    "automatic_lod": false,
+    "vsync": false,
+    "max_fps": 0,
+    "seeds_base": [
+      3100,
+      3101,
+      3102,
+      3103,
+      3104
+    ],
+    "canopy_seed": 17,
+    "paint_seed": 2718,
+    "camera_projection": "orthogonal",
+    "camera_direction": [
+      0,
+      0.65,
+      1
+    ],
+    "camera_height_center_m": 7,
+    "single_camera_size_m": 26,
+    "camera_margin_m": 26,
+    "camera_far_m": 2000
+  },
+  "assets": {
+    "maduro-3100.glb": {
+      "sha256": "315943611b884005ea96122d005891b5ee83ca772132bda6c52c412916ad9fde",
+      "triangles": 5745,
+      "seeds": {
+        "base": 3100,
+        "canopy": 17,
+        "paint": 2718
+      }
+    },
+    "maduro-3101.glb": {
+      "sha256": "ec1a05deb9ee7211495f4683b36465a36114aac2ee3c494708867733f22d099c",
+      "triangles": 6158,
+      "seeds": {
+        "base": 3101,
+        "canopy": 17,
+        "paint": 2718
+      }
+    },
+    "maduro-3102.glb": {
+      "sha256": "3f9652e7f86ebb0ccea2dda94f2e8f68b4939074bb5c7aa9415961ef7d614cdb",
+      "triangles": 5447,
+      "seeds": {
+        "base": 3102,
+        "canopy": 17,
+        "paint": 2718
+      }
+    },
+    "maduro-3103.glb": {
+      "sha256": "e1c1741b29acc4cd5b08eb9290563766dde1afacec48883d3f8b5819ec779cd5",
+      "triangles": 6087,
+      "seeds": {
+        "base": 3103,
+        "canopy": 17,
+        "paint": 2718
+      }
+    },
+    "maduro-3104.glb": {
+      "sha256": "130efbda503eea126db14f2e6c6fc48e9423ec55504f9aa89a70e212d85d882b",
+      "triangles": 6006,
+      "seeds": {
+        "base": 3104,
+        "canopy": 17,
+        "paint": 2718
+      }
+    }
+  },
+  "asset_resources": {
+    "oak": [
+      "res://maduro-3100.glb",
+      "res://maduro-3101.glb",
+      "res://maduro-3102.glb",
+      "res://maduro-3103.glb",
+      "res://maduro-3104.glb"
+    ]
+  },
+  "counts": {
+    "1": {
+      "trials": [
+        {
+          "mesh_instances": 1,
+          "trial": 0,
+          "version": "oak",
+          "frames": 9080,
+          "elapsed_s": 6.000652,
+          "frame_mean_ms": 0.6608647577092511,
+          "frame_median_ms": 0.665,
+          "frame_p95_ms": 0.856,
+          "frame_p99_ms": 0.9652099999999991,
+          "fps": 1513.1689023126153,
+          "render_cpu_ms": 0.12115429527729354,
+          "render_gpu_ms": 0.4886790745944966,
+          "render_setup_cpu_ms": 0.001198568281938326,
+          "draw_calls": 5.0,
+          "primitives": 11492.0,
+          "objects": 5.0
+        },
+        {
+          "mesh_instances": 1,
+          "trial": 1,
+          "version": "oak",
+          "frames": 9047,
+          "elapsed_s": 6.00036,
+          "frame_mean_ms": 0.6632430639991157,
+          "frame_median_ms": 0.663,
+          "frame_p95_ms": 0.859,
+          "frame_p99_ms": 0.9745399999999991,
+          "fps": 1507.7428687612078,
+          "render_cpu_ms": 0.12222781044347544,
+          "render_gpu_ms": 0.4895424974535241,
+          "render_setup_cpu_ms": 0.0012299104675583066,
+          "draw_calls": 5.0,
+          "primitives": 11492.0,
+          "objects": 5.0
+        },
+        {
+          "mesh_instances": 1,
+          "trial": 2,
+          "version": "oak",
+          "frames": 9103,
+          "elapsed_s": 6.00033,
+          "frame_mean_ms": 0.6591596177084478,
+          "frame_median_ms": 0.655,
+          "frame_p95_ms": 0.863,
+          "frame_p99_ms": 1.0099799999999997,
+          "fps": 1517.0832270891767,
+          "render_cpu_ms": 0.13784038246424396,
+          "render_gpu_ms": 0.4792813359512466,
+          "render_setup_cpu_ms": 0.0013882236625288368,
+          "draw_calls": 5.0,
+          "primitives": 11492.0,
+          "objects": 5.0
+        },
+        {
+          "mesh_instances": 1,
+          "trial": 3,
+          "version": "oak",
+          "frames": 9091,
+          "elapsed_s": 6.000295,
+          "frame_mean_ms": 0.6600258497415026,
+          "frame_median_ms": 0.667,
+          "frame_p95_ms": 0.86,
+          "frame_p99_ms": 0.959,
+          "fps": 1515.0921746347472,
+          "render_cpu_ms": 0.11634649666782886,
+          "render_gpu_ms": 0.48983290940998486,
+          "render_setup_cpu_ms": 0.001143878561214388,
+          "draw_calls": 5.0,
+          "primitives": 11492.0,
+          "objects": 5.0
+        }
+      ],
+      "aggregate": {
+        "frame_mean_ms": 0.6604453037253768,
+        "frame_median_ms": 0.664,
+        "frame_p95_ms": 0.8594999999999999,
+        "frame_p99_ms": 0.9698749999999992,
+        "fps": 1514.130538473681,
+        "run_frame_mean_range_ms": [
+          0.6591596177084478,
+          0.6632430639991157
+        ],
+        "render_cpu_ms": 0.1216910528603845,
+        "render_gpu_ms": 0.48911078602401037,
+        "render_setup_cpu_ms": 0.0012142393747483163,
+        "draw_calls": 5.0,
+        "primitives": 11492.0,
+        "objects": 5.0
+      },
+      "raw_file_sha256": "c30a80dd1c7e3c20c6ead45f434e35e03b40ef510de01f876c37c04aa2692ea9"
+    },
+    "128": {
+      "trials": [
+        {
+          "mesh_instances": 128,
+          "trial": 0,
+          "version": "oak",
+          "frames": 3586,
+          "elapsed_s": 6.000416,
+          "frame_mean_ms": 1.6732894590072505,
+          "frame_median_ms": 1.669,
+          "frame_p95_ms": 1.956,
+          "frame_p99_ms": 2.11215,
+          "fps": 597.6252313172953,
+          "render_cpu_ms": 0.45495566089128026,
+          "render_gpu_ms": 1.576486335708918,
+          "render_setup_cpu_ms": 0.003469325153374233,
+          "draw_calls": 787.0,
+          "primitives": 2314048.0,
+          "objects": 787.0
+        },
+        {
+          "mesh_instances": 128,
+          "trial": 1,
+          "version": "oak",
+          "frames": 3596,
+          "elapsed_s": 6.000551000000001,
+          "frame_mean_ms": 1.668673804226919,
+          "frame_median_ms": 1.664,
+          "frame_p95_ms": 1.9412500000000001,
+          "frame_p99_ms": 2.1150500000000005,
+          "fps": 599.2782996094858,
+          "render_cpu_ms": 0.4894510567005935,
+          "render_gpu_ms": 1.5726651824488656,
+          "render_setup_cpu_ms": 0.0038946051167964408,
+          "draw_calls": 787.0,
+          "primitives": 2314048.0,
+          "objects": 787.0
+        },
+        {
+          "mesh_instances": 128,
+          "trial": 2,
+          "version": "oak",
+          "frames": 3547,
+          "elapsed_s": 6.000782,
+          "frame_mean_ms": 1.6917908091344798,
+          "frame_median_ms": 1.658,
+          "frame_p95_ms": 1.9546999999999999,
+          "frame_p99_ms": 2.8762199999999964,
+          "fps": 591.0896279851527,
+          "render_cpu_ms": 0.496052438301337,
+          "render_gpu_ms": 1.57142824766365,
+          "render_setup_cpu_ms": 0.004040315759797012,
+          "draw_calls": 787.0,
+          "primitives": 2314048.0,
+          "objects": 787.0
+        },
+        {
+          "mesh_instances": 128,
+          "trial": 3,
+          "version": "oak",
+          "frames": 3600,
+          "elapsed_s": 6.0007839999999995,
+          "frame_mean_ms": 1.6668844444444444,
+          "frame_median_ms": 1.658,
+          "frame_p95_ms": 1.9580499999999996,
+          "frame_p99_ms": 2.1210099999999996,
+          "fps": 599.9216102429283,
+          "render_cpu_ms": 0.4801916666328907,
+          "render_gpu_ms": 1.5728563879927,
+          "render_setup_cpu_ms": 0.0038419444444444447,
+          "draw_calls": 787.0,
+          "primitives": 2314048.0,
+          "objects": 787.0
+        }
+      ],
+      "aggregate": {
+        "frame_mean_ms": 1.6709816316170847,
+        "frame_median_ms": 1.661,
+        "frame_p95_ms": 1.95535,
+        "frame_p99_ms": 2.11803,
+        "fps": 598.4517654633905,
+        "run_frame_mean_range_ms": [
+          1.6668844444444444,
+          1.6917908091344798
+        ],
+        "render_cpu_ms": 0.4848213616667421,
+        "render_gpu_ms": 1.5727607852207828,
+        "render_setup_cpu_ms": 0.003868274780620443,
+        "draw_calls": 787.0,
+        "primitives": 2314048.0,
+        "objects": 787.0
+      },
+      "raw_file_sha256": "18290e0d77eafa4f97b90744f898f936a59231e19ece3fdafab4b0da26325c81"
+    },
+    "512": {
+      "trials": [
+        {
+          "mesh_instances": 512,
+          "trial": 0,
+          "version": "oak",
+          "frames": 1449,
+          "elapsed_s": 6.000948999999999,
+          "frame_mean_ms": 4.141441683919945,
+          "frame_median_ms": 4.159,
+          "frame_p95_ms": 4.7478,
+          "frame_p99_ms": 5.413719999999999,
+          "fps": 241.46180879057627,
+          "render_cpu_ms": 1.3135445134404449,
+          "render_gpu_ms": 4.029317451230899,
+          "render_setup_cpu_ms": 0.008690131124913734,
+          "draw_calls": 3073.0,
+          "primitives": 9045269.0,
+          "objects": 3073.0
+        },
+        {
+          "mesh_instances": 512,
+          "trial": 1,
+          "version": "oak",
+          "frames": 1458,
+          "elapsed_s": 6.00067,
+          "frame_mean_ms": 4.115685871056241,
+          "frame_median_ms": 4.088,
+          "frame_p95_ms": 4.676,
+          "frame_p99_ms": 4.892020000000001,
+          "fps": 242.97286802973667,
+          "render_cpu_ms": 1.2291495207242351,
+          "render_gpu_ms": 4.027466388069226,
+          "render_setup_cpu_ms": 0.007815500685871056,
+          "draw_calls": 3073.0,
+          "primitives": 9045269.0,
+          "objects": 3073.0
+        },
+        {
+          "mesh_instances": 512,
+          "trial": 2,
+          "version": "oak",
+          "frames": 1448,
+          "elapsed_s": 6.003798,
+          "frame_mean_ms": 4.146269337016575,
+          "frame_median_ms": 4.102,
+          "frame_p95_ms": 4.7676,
+          "frame_p99_ms": 5.150439999999999,
+          "fps": 241.18066597177318,
+          "render_cpu_ms": 1.5722886728153702,
+          "render_gpu_ms": 4.040687150388791,
+          "render_setup_cpu_ms": 0.009145718232044199,
+          "draw_calls": 3073.0,
+          "primitives": 9045269.0,
+          "objects": 3073.0
+        },
+        {
+          "mesh_instances": 512,
+          "trial": 3,
+          "version": "oak",
+          "frames": 1451,
+          "elapsed_s": 6.001516,
+          "frame_mean_ms": 4.136124052377671,
+          "frame_median_ms": 4.092,
+          "frame_p95_ms": 4.7445,
+          "frame_p99_ms": 4.9265,
+          "fps": 241.7722455459587,
+          "render_cpu_ms": 1.5130379048813465,
+          "render_gpu_ms": 4.0463397589985215,
+          "render_setup_cpu_ms": 0.007184011026878015,
+          "draw_calls": 3073.0,
+          "primitives": 9045269.0,
+          "objects": 3073.0
+        }
+      ],
+      "aggregate": {
+        "frame_mean_ms": 4.138782868148808,
+        "frame_median_ms": 4.0969999999999995,
+        "frame_p95_ms": 4.74615,
+        "frame_p99_ms": 5.038469999999999,
+        "fps": 241.6170271682675,
+        "run_frame_mean_range_ms": [
+          4.115685871056241,
+          4.146269337016575
+        ],
+        "render_cpu_ms": 1.4132912091608958,
+        "render_gpu_ms": 4.035002300809845,
+        "render_setup_cpu_ms": 0.008252815905392395,
+        "draw_calls": 3073.0,
+        "primitives": 9045269.0,
+        "objects": 3073.0
+      },
+      "raw_file_sha256": "48e8f9ec2d20b45fb30f333116e7ee8e3340cbeb9bb19271dd2ac669adfa2e35"
+    }
+  },
+  "input_sha256": {
+    "1": "e72fbfb49ce1a417ae4eb9fe2d7d297d1b94581248ead05dfe85465b6fc1b283",
+    "128": "96d5ea3e10dd1a92c4f7809c0f8a538f053925b3936b50070513033aa7307aa0",
+    "512": "48ea9d3704d771887f47af7f4663a5a91293f913c37e804935e832c6da886f4c"
+  },
+  "sources_sha256": {
+    "scripts/benchmark_painted_oak.py": "3c33ee61f47f20e1f7144825a03b58ecca70b8e301e8403aa34a47f302a70752",
+    "configs/verification/oak-performance-v1.json": "3a2949ce33153f48142c1b7349cf3944ce8578ff58128623770f009620ec4e35",
+    "docs/evidence/roble-central/familia-01/user-acceptance.json": "d5177ee23061da5b1d092e17728fd9b94413aefbcba04e95cd2691f17ee29324",
+    "godot/benchmark_painted_oak.gd": "83f00c67424e719c57a2348f15b191dde86178e8ed7803806b3199e2862aaa79",
+    "godot/painted_pine_asset.gd": "3c39d07732f1885c02c351b41261965e4193102b86906b4089cf788f93ae3cad",
+    "godot/project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+    "scripts/review_pine_painted.py": "bb387c56923b6841703cef8069867adc42cf06d064385e8fdd5c0e3f5e57080f",
+    "scripts/verify_foliage_unit.py": "c1a63768a43c736173f3f3a0e473874a67fff8e7ba1f793e59a6beab6d712831",
+    "scripts/benchmark_painted_pine.py": "b20a8c73364dc6cbb994662de0e01329546e913bc133cf61de4e4b33adc1bd21"
+  },
+  "runtime_sha256": {
+    "maduro-3100.glb": "315943611b884005ea96122d005891b5ee83ca772132bda6c52c412916ad9fde",
+    "maduro-3103.glb": "e1c1741b29acc4cd5b08eb9290563766dde1afacec48883d3f8b5819ec779cd5",
+    "maduro-3104.glb": "130efbda503eea126db14f2e6c6fc48e9423ec55504f9aa89a70e212d85d882b",
+    "project.godot": "1a4829bca7880a2f31fd1a993a09fff38fd1feb845d9de2b841396bf4c890712",
+    "painted_pine_asset.gd": "3c39d07732f1885c02c351b41261965e4193102b86906b4089cf788f93ae3cad",
+    "maduro-3101.glb": "ec1a05deb9ee7211495f4683b36465a36114aac2ee3c494708867733f22d099c",
+    "maduro-3102.glb": "3f9652e7f86ebb0ccea2dda94f2e8f68b4939074bb5c7aa9415961ef7d614cdb",
+    "benchmark_painted_oak.gd": "83f00c67424e719c57a2348f15b191dde86178e8ed7803806b3199e2862aaa79"
+  },
+  "study_type": "single-version-static-load; no optimization claim"
+}

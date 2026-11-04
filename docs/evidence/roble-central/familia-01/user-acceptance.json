@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "status": "accepted",
+  "user_message": "ok, lo apruebo, que sigue ?",
+  "scope": "Lote completo de cinco robles maduros roble_copa_ancha@3.0.0, estructura3100–3104, distribución17 y pintura2718, presentado en la galería familia-01. Aceptación artística limitada a estos casos y condiciones; no amplía edades ni certifica todas las semillas.",
+  "blueprint": "blueprints/roble_copa_ancha/3.0.0.json",
+  "approved_glbs_sha256": {
+    "maduro-3100": "315943611b884005ea96122d005891b5ee83ca772132bda6c52c412916ad9fde",
+    "maduro-3101": "ec1a05deb9ee7211495f4683b36465a36114aac2ee3c494708867733f22d099c",
+    "maduro-3102": "3f9652e7f86ebb0ccea2dda94f2e8f68b4939074bb5c7aa9415961ef7d614cdb",
+    "maduro-3103": "e1c1741b29acc4cd5b08eb9290563766dde1afacec48883d3f8b5819ec779cd5",
+    "maduro-3104": "130efbda503eea126db14f2e6c6fc48e9423ec55504f9aa89a70e212d85d882b"
+  },
+  "evidence": "docs/evidence/roble-central/familia-01/informe.md",
+  "approved_gallery": "artifacts/roble-central/familia-01/index.html",
+  "retained_limitations": "Radialidad superior, masas separadas y cantos registrados. La aprobación no elimina estos límites ni completa la revisión de sombras recortadas.",
+  "next_recommendation": "Benchmark acotado del roble3.0.0 en Godot; recomendado, todavía no autorizado ni iniciado."
+}

@@ -1,0 +1,4 @@
+{
+  "change": "Texto de procedencia del adaptador generalizado para ambas distribuciones0.1.0/0.2.0. Componentes, geometría y recursos no cambian.",
+  "action": "Conservar primera exportación y repetición; regenerar ambos lotes para que fuentes y manifiestos finales correspondan al adaptador definitivo. Capturas solo se reutilizan si los GLB son byte por byte idénticos."
+}

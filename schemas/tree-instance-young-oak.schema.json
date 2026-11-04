@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TreeInstance1.8: roble joven",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "blueprint_id",
+    "blueprint_version",
+    "seeds"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.8"
+    },
+    "blueprint_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "blueprint_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "maxLength": 32
+    },
+    "profile": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "seeds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "base",
+        "canopy",
+        "paint"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "canopy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483646
+        },
+        "paint": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483646
+        }
+      }
+    },
+    "overrides": {
+      "$ref": "#/$defs/overrides"
+    }
+  },
+  "$defs": {
+    "overrides": {
+      "type": "object",
+      "maxProperties": 0
+    }
+  }
+}

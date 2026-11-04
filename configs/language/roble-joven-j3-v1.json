@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "request": "El usuario solicita cubrir las ramas que quedaron sin follaje y dar más volumen a los jóvenes. Conservar madera/pintura,semillas3100–3103/distribución17/pintura2718; comparar con3.1.0,sin benchmarks.",
+  "origin": "codex-session",
+  "cases": [
+    {
+      "id": "joven-3100",
+      "seeds": {
+        "base": 3100,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "joven",
+        "changes": [],
+        "explanation": "Cubrir todos los ejes y líder con264 grupos más amplios, sin cambiar madera ni pintura; mismas semillas para comparar J2/J3."
+      }
+    },
+    {
+      "id": "joven-3101",
+      "seeds": {
+        "base": 3101,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "joven",
+        "changes": [],
+        "explanation": "Cubrir todos los ejes y líder con264 grupos más amplios, sin cambiar madera ni pintura; mismas semillas para comparar J2/J3."
+      }
+    },
+    {
+      "id": "joven-3102",
+      "seeds": {
+        "base": 3102,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "joven",
+        "changes": [],
+        "explanation": "Cubrir todos los ejes y líder con264 grupos más amplios, sin cambiar madera ni pintura; mismas semillas para comparar J2/J3."
+      }
+    },
+    {
+      "id": "joven-3103",
+      "seeds": {
+        "base": 3103,
+        "canopy": 17,
+        "paint": 2718
+      },
+      "proposal": {
+        "profile": "joven",
+        "changes": [],
+        "explanation": "Cubrir todos los ejes y líder con264 grupos más amplios, sin cambiar madera ni pintura; mismas semillas para comparar J2/J3."
+      }
+    }
+  ]
+}

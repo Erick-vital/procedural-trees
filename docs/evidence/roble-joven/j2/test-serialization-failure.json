@@ -1,0 +1,6 @@
+{
+  "status": "failed-test",
+  "test": "test_approved_pilot_branch_is_exact",
+  "reason": "Se compararon tuplas Python con listas JSON del layout guardado; coordenadas y valores id\u00e9nticos.",
+  "fix": "Comparaci\u00f3n can\u00f3nica JSON contra hash de grupos aprobados, sin retirar el requisito de identidad geom\u00e9trica."
+}

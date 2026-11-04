@@ -1,0 +1,583 @@
+{
+  "shots": [
+    {
+      "id": "front",
+      "camera": {
+        "location": [
+          1.105596,
+          -6.41043240760726,
+          3.323909208912871
+        ],
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.11914522061843064,
+            0.9928768384869221
+          ],
+          [
+            0.0,
+            -0.9928768384869221,
+            0.11914522061843064
+          ]
+        ],
+        "ortho_scale": 2.7677670999999995
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "side",
+      "camera": {
+        "location": [
+          8.27442690760726,
+          0.7583985,
+          3.323909208912871
+        ],
+        "basis_columns": [
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.11914522061843064,
+            0.0,
+            0.9928768384869221
+          ],
+          [
+            0.9928768384869221,
+            0.0,
+            0.11914522061843064
+          ]
+        ],
+        "ortho_scale": 2.7677670999999995
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "perspective",
+      "camera": {
+        "location": [
+          6.018362030335321,
+          -4.15436753033532,
+          4.428755912134128
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.19245008972987526,
+            0.19245008972987526,
+            0.9622504486493764
+          ],
+          [
+            0.6804138174397717,
+            -0.6804138174397717,
+            0.2721655269759087
+          ]
+        ],
+        "ortho_scale": 2.7677670999999995
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "back",
+      "camera": {
+        "location": [
+          -3.88876365830259,
+          5.752758158302591,
+          3.961957397490777
+        ],
+        "basis_columns": [
+          [
+            -0.7071067811865476,
+            -0.7071067811865476,
+            0.0
+          ],
+          [
+            0.14673479641335554,
+            -0.14673479641335554,
+            0.978231976089037
+          ],
+          [
+            -0.6917144638660746,
+            0.6917144638660746,
+            0.20751433915982237
+          ]
+        ],
+        "ortho_scale": 2.7677670999999995
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "top",
+      "camera": {
+        "location": [
+          1.105596,
+          0.7583985,
+          9.6839115
+        ],
+        "basis_columns": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "ortho_scale": 2.7677670999999995
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "below",
+      "camera": {
+        "location": [
+          5.681251124540368,
+          -3.8172566245403674,
+          -0.739309087178257
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            0.3136775004637546,
+            -0.3136775004637546,
+            0.8962214298964417
+          ],
+          [
+            0.6337242505244779,
+            -0.6337242505244779,
+            -0.4436069753671345
+          ]
+        ],
+        "ortho_scale": 2.7677670999999995
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "medium",
+      "camera": {
+        "location": [
+          6.018362030335321,
+          -4.15436753033532,
+          4.428755912134128
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.19245008972987526,
+            0.19245008972987526,
+            0.9622504486493764
+          ],
+          [
+            0.6804138174397717,
+            -0.6804138174397717,
+            0.2721655269759087
+          ]
+        ],
+        "ortho_scale": 5.2948588
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ],
+      "receiver": false
+    },
+    {
+      "id": "far",
+      "camera": {
+        "location": [
+          6.018362030335321,
+          -4.15436753033532,
+          4.428755912134128
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.19245008972987526,
+            0.19245008972987526,
+            0.9622504486493764
+          ],
+          [
+            0.6804138174397717,
+            -0.6804138174397717,
+            0.2721655269759087
+          ]
+        ],
+        "ortho_scale": 9.627016
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ],
+      "receiver": false
+    },
+    {
+      "id": "dark",
+      "camera": {
+        "location": [
+          6.018362030335321,
+          -4.15436753033532,
+          4.428755912134128
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.19245008972987526,
+            0.19245008972987526,
+            0.9622504486493764
+          ],
+          [
+            0.6804138174397717,
+            -0.6804138174397717,
+            0.2721655269759087
+          ]
+        ],
+        "ortho_scale": 2.7677670999999995
+      },
+      "background": "#252A28",
+      "light": [
+        -35,
+        -25,
+        0
+      ],
+      "receiver": false
+    },
+    {
+      "id": "alternate-light",
+      "camera": {
+        "location": [
+          6.018362030335321,
+          -4.15436753033532,
+          4.428755912134128
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.19245008972987526,
+            0.19245008972987526,
+            0.9622504486493764
+          ],
+          [
+            0.6804138174397717,
+            -0.6804138174397717,
+            0.2721655269759087
+          ]
+        ],
+        "ortho_scale": 2.7677670999999995
+      },
+      "background": "#EEE9DF",
+      "light": [
+        35,
+        120,
+        0
+      ],
+      "receiver": false
+    },
+    {
+      "id": "shadow_perspective",
+      "camera": {
+        "location": [
+          6.018362030335321,
+          -4.15436753033532,
+          4.428755912134128
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.19245008972987526,
+            0.19245008972987526,
+            0.9622504486493764
+          ],
+          [
+            0.6804138174397717,
+            -0.6804138174397717,
+            0.2721655269759087
+          ]
+        ],
+        "ortho_scale": 3.3694555999999998
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -75,
+        -25,
+        0
+      ],
+      "receiver": true
+    },
+    {
+      "id": "contact-close",
+      "camera": {
+        "location": [
+          3.764798389811216,
+          -1.4960491121844153,
+          3.256132259197079
+        ],
+        "basis_columns": [
+          [
+            0.7071067811865476,
+            0.7071067811865476,
+            -0.0
+          ],
+          [
+            -0.19245008972987526,
+            0.19245008972987526,
+            0.9622504486493764
+          ],
+          [
+            0.6804138174397717,
+            -0.6804138174397717,
+            0.2721655269759087
+          ]
+        ],
+        "ortho_scale": 1.0854987971201744
+      },
+      "background": "#EEE9DF",
+      "light": [
+        -35,
+        -25,
+        0
+      ]
+    }
+  ],
+  "godot": [
+    {
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "msaa": 2,
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "assets": {
+        "bare": {
+          "materials": [
+            {
+              "cull_mode": 2,
+              "cutoff": 0.5,
+              "imported_texture_filter": 3,
+              "mipmap_count": 10,
+              "mipmaps": true,
+              "name": "Painted_Bark",
+              "normal_map": false,
+              "review_texture_filter": 5,
+              "roughness": 0.949999988079071,
+              "shadow_casting": 2,
+              "texture_size": [
+                1254,
+                1254
+              ],
+              "transparency": 0
+            }
+          ],
+          "triangles": 620
+        }
+      }
+    },
+    {
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "msaa": 2,
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "assets": {
+        "painted": {
+          "materials": [
+            {
+              "cull_mode": 2,
+              "cutoff": 0.5,
+              "imported_texture_filter": 3,
+              "mipmap_count": 10,
+              "mipmaps": true,
+              "name": "Painted_Bark",
+              "normal_map": false,
+              "review_texture_filter": 5,
+              "roughness": 0.949999988079071,
+              "shadow_casting": 2,
+              "texture_size": [
+                1254,
+                1254
+              ],
+              "transparency": 0
+            },
+            {
+              "cull_mode": 2,
+              "cutoff": 0.5,
+              "imported_texture_filter": 3,
+              "mipmap_count": 10,
+              "mipmaps": true,
+              "name": "Painted_Foliage",
+              "normal_map": false,
+              "review_texture_filter": 5,
+              "roughness": 0.949999988079071,
+              "shadow_casting": 2,
+              "texture_size": [
+                2000,
+                2000
+              ],
+              "transparency": 2
+            }
+          ],
+          "triangles": 1046
+        }
+      }
+    },
+    {
+      "godot": {
+        "build": "official",
+        "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+        "hex": 263938,
+        "major": 4,
+        "minor": 7,
+        "patch": 2,
+        "status": "stable",
+        "string": "4.7.2-stable (official)",
+        "timestamp": 0
+      },
+      "renderer": "gl_compatibility",
+      "video_adapter": "NVIDIA GeForce RTX 5060",
+      "msaa": 2,
+      "environment": {
+        "ambient": 0.5,
+        "exposure": 1,
+        "shadow_bias": 0.100000001490116,
+        "shadow_normal_bias": 2.0,
+        "shadows": true,
+        "sun_energy": 1.2,
+        "tonemap": "linear"
+      },
+      "assets": {
+        "foliage": {
+          "materials": [
+            {
+              "cull_mode": 2,
+              "cutoff": 0.5,
+              "imported_texture_filter": 3,
+              "mipmap_count": 10,
+              "mipmaps": true,
+              "name": "Painted_Foliage",
+              "normal_map": false,
+              "review_texture_filter": 5,
+              "roughness": 0.949999988079071,
+              "shadow_casting": 2,
+              "texture_size": [
+                2000,
+                2000
+              ],
+              "transparency": 2
+            }
+          ],
+          "triangles": 426
+        }
+      }
+    }
+  ]
+}
