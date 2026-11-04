@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "request": "OF9 aún parece estrella desde arriba; expandir más las masas hacia huecos entre brazos, usar hasta700 tris adicionales, conservar216 grupos y bifurcaciones visibles.",
+  "baseline_version": "oak-foliage-canopy-0.9.0",
+  "baseline_triangles": 5136,
+  "maximum_additional_foliage_triangles": 700,
+  "maximum_complete_tree_triangles": 5836,
+  "fixed": [
+    "216 grupos",
+    "madera O5",
+    "atlas y pintura existente",
+    "máximo dos materiales",
+    "contactos sobre ramas reales"
+  ],
+  "experiment": "OF10, láminas inclinadas adicionales en abanico hacia interfaces seleccionadas, desde el mismo contacto de cada grupo; escala adicional explícita y sin mallas de macro-masa.",
+  "historical_reservation": "La autorización permite superar1584 tris de follaje si hiciera falta, sin alterar contratos históricos ni techo global.",
+  "artistic_acceptance": "pending_user"
+}

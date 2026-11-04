@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-03",
+  "user_message": "bien ahora vuelve a agregar el follaje",
+  "wood_status": "accepted_for_foliage_review",
+  "scope": "Estructura piloto OF11, tres ejes ascendentes; no aceptación artística de follaje ni promoción de receta.",
+  "foliage_status": "pending_user",
+  "delivery": "Se entrega la variante completa OF11 ya generada y verificada, con216 grupos y24 reasignados sobre soportes nuevos. No nueva generación ni cambios geométricos en esta entrega.",
+  "full_asset": "/home/tao/repos/procedural/arboles/artifacts/oak-foliage/of11-maduro-03/painted/tree.glb",
+  "full_glb_sha256": "315943611b884005ea96122d005891b5ee83ca772132bda6c52c412916ad9fde",
+  "triangles": 5745
+}

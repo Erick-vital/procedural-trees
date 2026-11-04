@@ -413,3 +413,188 @@ RF3–RF5 históricos conservan contratos y aceptación; esta muestra es otra ru
 sin promover recetas ni integrar copa. Alcance y resultados en
 [OF1 del plan de arquitectura](arquitectura-roble.md#of1--rama-o5-con-follaje-autorizado-2026-11-03).
 [Informe técnico y revisión pendiente](../docs/evidence/oak-foliage/of1/informe.md).
+
+### OF2: comparación de masas de rama, autorizada 2026-11-03
+
+OF1 recibe revisión con cambios pendientes: grupos pegados, efecto pompón y
+satélite inferior. Se comparan tres distribuciones con madera/pintura/presupuesto
+idénticos; la aceptación de rama sigue pendiente. No se reabren recetas RF3–RF5
+ni se integra copa. [OF2](../docs/evidence/oak-foliage/of2/informe.md).
+
+### OF3: B elegida y prueba completa, autorizada 2026-11-03
+
+El usuario elige B y solicita maduro 3100 completo con expansión lateral,
+equilibrio entre bifurcaciones y siluetas variadas. Este piloto reemplaza la
+restricción de solo rama de OF1/OF2 por autorización expresa; no reabre RF3–RF5.
+Implementado/verificado: 216 grupos, 5010 tris, dos materiales, pintura/madera
+conservadas y núcleo despejado. 293 pruebas, 48 checks y 46 capturas Godot
+inspeccionadas. Copa aún rala; aceptación artística pendiente.
+[Informe y reproducción OF3](../docs/evidence/oak-foliage/of3/informe.md).
+
+### OF4: llenado periférico con presupuesto fijo, autorizada 2026-11-03
+
+El usuario revisa OF3 como demasiado rala y pide más llenado/continuidad sin tocar
+madera, pintura, centro ni 5010 tris y sin retoques por semilla. OF4 independiente
+implementada/verificada: 216 grupos, dos materiales; 299 pruebas, 55 checks,
+46 capturas + ocho máscaras inspeccionadas, repetición exacta y referencias OF3
+conservadas. Mejora cobertura, con límites de continuidad superior y escala de
+hojas; aceptación artística pendiente. No modifica RF3–RF5 ni promueve receta.
+[Resultado y reproducción](../docs/evidence/oak-foliage/of4/informe.md).
+
+### OF5: refinamiento de OF4, revisión 2026-11-03
+
+El usuario valora cantidad/periferia/madera de OF4 y pide pocos puentes, menos
+capuchones/ruido interior y jerarquía mayor. Refinamiento 0.5.0: 18 reasignaciones,
+198 grupos geométricamente exactos; 216 grupos/5010 tris. Tres conjuntos espaciales
+dirigen puentes. 305 pruebas, 59 checks, repetición exacta, 46 capturas + ocho
+máscaras inspeccionadas. Densidad casi idéntica; macromasas más fuertes y mejora
+uniforme de continuidad no demostradas. OF4 conservada, OF5 pendiente del usuario.
+[Informe](../docs/evidence/oak-foliage/of5/informe.md); sin promoción ni edades nuevas.
+
+### OF6: volúmenes compartidos, autorizada 2026-11-03
+
+El usuario solicita leer volúmenes mayores de copa conservando 216 grupos/5010
+tris, madera, pintura y centro, sin retoques por semilla. OF6 conserva anclajes
+y proporciones de plantillas: eje común suave por conjunto y crecimiento uniforme
+en interfaces, puntas sin aumento y núcleo protegido. Primer ensayo anisótropo
+rechazado por tiras; final verificada con 310 pruebas, 59 checks, seis GLB repetidos
+exactos y 46 capturas + ocho máscaras inspeccionadas. Mejora unión frente/perspectiva,
+superior aún fragmentada y mayor área alfa. Arte pendiente; no promueve recetas
+ni edades. [OF6 y reproducción](../docs/evidence/oak-foliage/of6/informe.md).
+
+### OF7: continuidad superior y cantos, autorizada 2026-11-03
+
+El usuario valora el avance y pide unir mejor masas desde arriba/reducir cantos,
+con centro, 216 grupos/5010 tris, madera y pintura intactos, sin retoques por semilla.
+OF7 reorienta 63 grupos, conserva 153 exactos y no cambia tamaños, anclajes o área.
+316 pruebas, 61 checks, repetición exacta y 50 capturas + ocho máscaras inspeccionadas.
+Mejora arriba y reduce láminas casi verticales; algunas uniones frontales se separan.
+Arte pendiente; OF6 conservada, sin promover recetas/edades.
+[Resultado y reproducción](../docs/evidence/oak-foliage/of7/informe.md).
+
+### OF8: equilibrio frontal/superior con margen autorizado, 2026-11-03
+
+El usuario solicita recuperar frontal y permite un pequeño aumento necesario,
+con techo7k. OF8 añade63 planos inclinados a grupos existentes: **216 grupos,
+5136 tris (+126), dos materiales**, OF7 íntegra y núcleo/madera/pintura conservados.
+322 pruebas,69 checks, siete GLB repetidos exactos y63 capturas +12 máscaras
+inspeccionadas. Frontal comparable a OF6 y unión superior de OF7 mantenida;
+más área alfa, sin benchmark ni aceptación artística. No promueve recetas/edades.
+[Informe y registro de alcance](../docs/evidence/oak-foliage/of8/informe.md).
+
+
+### OF9: organización de regiones de copa, autorizada 2026-11-03
+
+OF8 queda como **base aprobada provisionalmente** por el usuario. OF9 mantiene
+216 grupos y láminas laterales; reorganiza soportes y orientaciones sobre madera
+real de cada brazo para ampliar transversalmente las masas, conectar algunas
+interfaces intermedias/exteriores y aliviar la proyección de follaje central.
+Regiones lógicas tridimensionales, sin mallas adicionales, relleno uniforme ni
+conexión obligatoria de todos los brazos. Cupos por longitud/vigor/exposición
+heredados; madera, pintura y recetas históricas conservadas.
+
+El usuario autoriza después **hasta +700 tris de follaje si hace falta**, siempre
+con techo6999 total. Primera candidata mantiene exactamente5136 tris OF8, sin
+ampliar tamaños ni añadir láminas. Reubicar contactos sobre tubos existentes
+está autorizado por esta organización espacial; no se permiten hojas flotantes.
+Comparar arriba/frente/perfil/perspectiva con cámaras y presupuesto comunes,
+rotación360° a distancia media explícita y controles geométricos3101–3103/layout18.
+La distancia habitual del juego no está especificada: no declarar aceptación
+a esa distancia por usar una escala de captura. Siluetas alternativas quedan
+pendientes; no repintar ahora. Aceptación artística OF9 pendiente.
+[Dirección y margen autorizados](../docs/evidence/oak-foliage/of9/user-direction.json).
+
+Resultado OF9: implementada/verificada en0.9.0, **216 grupos/5136 tris exactos**;
+siete regiones por brazo,177 contactos desplazados>1 cm. 65 checks, siete GLB
+repetidos idénticos;328 casos de prueba cubiertos mediante suite y repeticiones
+OF9/HTTP (la suite en sandbox falló solo por sockets).135 capturas Godot,101
+inspeccionadas y doce máscaras; giro24 azimuts. Perspectiva gana continuidad;
+arriba+7.94 % de área visible, sin resolver la estrella ni mejorar todas las
+regiones; conectividad frontal/perfil menor. OF8 permanece base provisional,
+OF9 pendiente del usuario; margen+700 sin usar. [Informe y límites](../docs/evidence/oak-foliage/of9/informe.md).
+
+
+### OF10: expansión hacia huecos entre brazos, autorizada 2026-11-03
+
+El usuario rechaza como resuelta la organización superior OF9: sigue pareciendo
+estrella. Pide expandir más las masas hacia huecos entre brazos y usar hasta
+**+700 tris de follaje respecto a5136**, manteniendo216 grupos y bifurcaciones
+visibles. No es autorización acumulativa por iteración: máximo5836 en este
+piloto y6999 en cualquier caso. OF8 permanece base provisional.
+
+Alternativa0.10.0 conserva OF9 íntegra y prueba láminas inclinadas en abanico,
+con la misma raíz opaca sobre el portador existente. Se permite más alcance
+en estas láminas, registrado como cambio de escala; atlas/pintura y madera
+intactos, sin nuevos grupos ni mallas de macro-masa. Interfaces seleccionadas
+entre regiones cercanas, manteniendo grandes separaciones y núcleo3.6 m.
+Verificar añadidos y contactos exportados, comparar OF8/OF9/OF10 arriba/frente/
+lado/perspectiva, giro y distancias; no declarar bifurcaciones despejadas solo
+por cumplir el cilindro central. Controles geométricos3101–3103/layout18.
+[Dirección autorizada](../docs/evidence/oak-foliage/of10/user-direction.json).
+
+Resultado OF10:0.10.0 verificada, **5270 tris (+134 de700),216 grupos/778 láminas**.
+67 láminas añadidas en46 grupos; OF9 íntegra, contactos opacos/madera/atlas
+conservados. Arriba+20.26 % de área, cinco→tres componentes; madera central
+visible≥99.54 % de OF9 en cuatro vistas.73 checks,seis pruebas nuevas,siete GLB
+repetidos exactos; referencias OF8/OF9/O5 exactas.135 capturas,101 inspeccionadas
+y24 máscaras; giro24 azimuts. Lectura radial parcial y hojas ampliadas persisten;
+OF8 provisional, OF10 pendiente de arte. [Informe y reproducción](../docs/evidence/oak-foliage/of10/informe.md).
+
+
+### OF11 / rama central: más soportes ascendentes, autorizada 2026-11-03
+
+El usuario identifica falta de ramas centrales y precisa que necesita varias
+ramas de dirección más vertical cerca de la copa. Cambio expreso: se permite
+añadir madera, congelada en OF8–OF10. Ensayar un eje central ascendente y dos
+brotes altos desde primarias, con bifurcaciones menores; conservar todos los
+ejes O5 exactos, atlas/pintura,216 grupos y máximo6999 tris. Reserva de madera
+nueva≤600 tris; no acumular otros700 de follaje por esta petición.
+
+Diagnóstico: el cilindro vacío0.30H se aplicaba a todas las alturas, impidiendo
+follaje central incluso junto a ramas altas. Proteger el cilindro solo hasta
+0.62H (7.44 m en piloto), manteniendo las horquillas inferiores legibles; permitir
+una copa interior alta con contactos reales. Reasignar24 grupos existentes a
+terminales de los tres ejes nuevos, conservando el resto y todos los complementos
+OF10. Es una nueva alternativa experimental, no modificación de recetas O5/OF10.
+
+Comparar madera antes/después y árbol completo, arriba/frente/perfil/perspectiva,
+giro y distancias en Godot. Auditar encajes, contactos exportados, protección
+inferior mediante caras recortadas en Z y presupuesto; repetir GLB y controles
+geométricos3101–3103. Arte pendiente; sin otras edades o promoción automática.
+[Dirección y alcance](../docs/evidence/oak-foliage/of11/user-direction.json).
+
+Resultado OF11: tres ejes ascendentes con bifurcaciones menores (21 piezas),
+**+475 tris de madera;5745 totales/216 grupos/778 láminas/dos materiales**. O5
+exacta como subconjunto;24 grupos trasladados a terminales nuevos y192 intactos.
+Protección inferior hasta7.44 m, centro superior habilitado; contactos y encajes
+exportados pasan.70 checks,seis pruebas nuevas,tres controles geométricos,
+siete GLB repetidos exactos y O5/OF10 históricos exactos.135 capturas,101
+inspeccionadas y8 máscaras. Desde arriba+13.53 % de área, pero tres→cinco
+componentes por los grupos centrales; no se declara unión superior resuelta.
+Madera aceptada para vestir y árbol completo aprobado posteriormente; ver registro3.0.0. [Informe y reproducción](../docs/evidence/oak-foliage/of11/informe.md).
+
+Revisión del usuario: «bien ahora vuelve a agregar el follaje». Se entrega la
+variante completa OF11 ya verificada, con216 grupos/5745 tris; sin nueva generación
+ni modificación geométrica. [Aceptación de madera y alcance](../docs/evidence/oak-foliage/of11/wood-acceptance.json).
+
+
+### Aprobación OF11 y registro como blueprint3.0.0 — 2026-11-03
+
+El usuario aprueba el árbol completo mostrado y pide guardar el blueprint,
+commit y push. Registrar `roble_copa_ancha@3.0.0`, contrato1.7, con perfil maduro
+fijo y semillas base/distribución/pintura explícitas. Componentes nuevos
+identifican O5 con extensión central, distribución OF11 y representación pintada
+conservada. Recetas previas y predeterminados históricos intactos. Aprobación
+artística limitada a3100/17/2718; otras semillas se validan o rechazan, sin ampliar
+edades o rangos de parámetros. [Aceptación](../docs/evidence/oak-foliage/of11/user-acceptance.json).
+
+Integración en el ejecutor/CLI/API compartidos: preparación geométrica derivada
+en Python anfitrión, exportador Blender sin dependencias adicionales y auditoría
+del GLB. CLI3.0.0 reproduce el GLB aprobado byte por byte (5745 tris); repetición
+sin renders idéntica. [Auditoría de entrega](../docs/evidence/oak-foliage/of11/blueprint-release.json).
+
+Entrega3.0.0 verificada: **345 pruebas en73 archivos y15 comprobaciones** de
+receta, resolución, exportación y repetición. CLI con nueve vistas23.607 s y
+repetición sin vistas15.073 s; GLB idéntico al piloto aprobado. Suite ejecutada
+por archivos con cota180 s, reanudada por lotes tras interrupción del coordinador;
+sin repetir archivos ya aprobados. Commit y push solicitados por el usuario.

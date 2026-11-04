@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-03",
+  "status": "B_selected_for_full_mature_trial",
+  "selected_reference": "OF2 B",
+  "scope": "maduro O5 3100 completo",
+  "requested_changes": [
+    "expansión lateral, arriba y abajo vinculada a ramas reales",
+    "reparto por vigor y exposición entre bifurcaciones",
+    "siluetas alargadas, anchas y puentes pequeños"
+  ],
+  "constraints": [
+    "madera y pintura actuales",
+    "centro despejado",
+    "mismo presupuesto"
+  ],
+  "full_tree_artistic_acceptance": false
+}

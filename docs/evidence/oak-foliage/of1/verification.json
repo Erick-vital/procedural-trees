@@ -3450,7 +3450,10 @@
     "foliage_only": 6,
     "observations": "Continuidad exterior con madera visible y huecos; pintura intacta y sombras recortadas visibles. Persisten agrupaciones compactas en algunas vistas y cruces de l\u00e1minas de canto en acercamiento. Aceptaci\u00f3n art\u00edstica pendiente."
   },
-  "artistic_acceptance": "pending_user",
+  "artistic_acceptance": {
+    "status": "reviewed_requires_revision",
+    "feedback": "docs/evidence/oak-foliage/of2/feedback-of1.json"
+  },
   "tree_foliage_integration": "not_started",
   "images_sha256": {
     "contacto.png": "15590ff18960303fe23f001ea4ce549cc90a45884caa05f46c8d8c0e8f0162b2",

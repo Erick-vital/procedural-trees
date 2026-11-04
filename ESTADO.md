@@ -4,9 +4,9 @@
 ## Situación actual
 
 [Sistema de blueprints](plans/sistema-blueprints.md): **B0–B5 cerrado técnicamente**.
-Dos tipos al cierre B5; catálogo actual: cinco tipos/dieciséis recetas, incluido sauce.
+Dos tipos al cierre B5; catálogo actual: cinco tipos/diecisiete recetas, incluido sauce.
 [F4 lenguaje natural](plans/f4-lenguaje-blueprints.md): **cerrado y aprobado por el usuario**.
-[Arquitectura O5](plans/arquitectura-roble.md): **madera desnuda aceptada**; rama de follaje OF1 pendiente de revisión. O1–O4/F5/R4 conservadas.
+[Arquitectura O5/OF11](plans/arquitectura-roble.md): **maduro3100 completo aprobado**; registrado como roble3.0.0 con tres ejes ascendentes. O1–O5/OF8–OF10 históricos conservados.
 [Sauce pintado](plans/sauce-pintado.md): **1.1.0 cerrado y aprobado; 1.0.0 rechazado artísticamente**.
 [Transiciones](plans/transiciones-estacionales.md): **T0–T6 cerradas y lote aprobado; entrega 0.1.0**.
 [Abedul](plans/abedul-pintado.md) 1.0.0 integrado/verificado; arte pendiente.
@@ -19,7 +19,7 @@ Base: [blueprint de pino](plans/blueprint-pino.md), implementado y revisado en
 [Guía de uso](docs/uso-blueprints.md), [cierre B5](docs/evidence/blueprints/b5/informe.md).
 Viejo-09 RF3 y perfiles joven/adulto/viejo de B3 revisada aprobados por el usuario.
 Aprobación B3 del 2026-10-23, incluida hoja joven .45 m: [decisión](docs/evidence/blueprints/b3-revision/user-acceptance.json).
-Copa columnar sigue experimental. **RF5 ejecutada y verificada: 30/30**, receta
+Copa columnar experimental. **RF5 ejecutada y verificada: 30/30**, receta
 1.2.0, diez por edad; **aprobación artística del lote registrada** el 2026-10-23.
 [Aceptación RF5](docs/evidence/rediseno-follaje/rf5/user-acceptance.json).
 [Informe y galería seleccionada](docs/evidence/rediseno-follaje/rf5/informe.md).
@@ -102,7 +102,7 @@ la familia ensayada**, como alternativa explícita a Q3.
   sobre GLB reimportados. 60 escenas Godot (30 copas/30 maderas), 360 capturas;
   láminas de todos los casos revisadas. Joven/adulto/viejo: 7324/9644/10572
   triángulos. Generación 2.584–3.994 s; receta y componentes intactos.
-  Lote completo aprobado por el usuario: conserva su identidad entre semillas.
+  Lote aprobado por el usuario.
   [RF5](docs/evidence/rediseno-follaje/rf5/informe.md).
 - Base previa: Q1b y Q2 aprobadas; Q2 normaliza solo Z desde madera y conserva
   X/Y/radios. Q3 aprobada; Q3b rechazada. Fusión/addons comparados, sin ganador
@@ -158,16 +158,17 @@ la familia ensayada**, como alternativa explícita a Q3.
   ocupación o silueta no acreditan naturalidad, rendimiento o aprobación estética.
 
 ## Siguiente paso y pendientes
-**Siguiente: revisar artísticamente la rama OF1** antes de integrar copa O5.
-[OF1](docs/evidence/oak-foliage/of1/informe.md): maduro3100/p:0, madera exacta646tris,
-64 grupos/192 láminas/384tris de follaje: **1030 tris/dos materiales**; pintura actual.
-Distribución en terciarias/terminales y secundarias exteriores; sin conectores nuevos.
-Cupo global216 grupos/1296tris; solo muestra materializada, proyección5010 del árbol.
-Reserva1584/máximo6999 conservados. 281 pruebas,32 checks, cuatro GLB repetidos exactos.
-Godot36 capturas,23 inspeccionadas; hay conjuntos compactos y cruces de láminas visibles.
-Galería `artifacts/oak-foliage/of1-rama-04/index.html`; [uso](docs/uso-follaje-o5.md).
-O5 desnuda sigue aceptada: [decisión](docs/evidence/oak-growth/o5/user-acceptance.json).
-[Arquitectura y límites O5](docs/evidence/oak-growth/o5/informe.md); copa completa/F6 sin iniciar.
+**Roble nuevo aprobado y guardado: `roble_copa_ancha@3.0.0`**, contrato1.7, perfil maduro fijo.
+Receta `blueprints/roble_copa_ancha/3.0.0.json`; ejemplar `presets/blueprints/roble-central/maduro-3100.json`.
+**5745 tris/216 grupos/778 láminas/dos materiales**, tres ejes ascendentes (+475 tris madera).
+[Árbol completo aprobado](docs/evidence/oak-foliage/of11/user-acceptance.json):3100/distribución17/pintura2718.
+CLI y repetición: GLB idéntico al OF11 aprobado;345 pruebas/73 archivos y15 checks de entrega correctos.
+[Auditoría blueprint](docs/evidence/oak-foliage/of11/blueprint-release.json); [uso](docs/uso-blueprints.md).
+24 grupos reasignados;192 y complementos OF10 intactos; protección inferior hasta7.44 m.
+[OF11](docs/evidence/oak-foliage/of11/informe.md):70 checks,seis pruebas geométricas,135 capturas/101 inspeccionadas.
+Galería `artifacts/oak-foliage/of11-maduro-03/index.html`; recetas históricas intactas.
+Para retomar: usar3.0.0 explícita; otras semillas se validan/rechazan, sin nuevos rangos o edades aprobados.
+Límites: grupos centrales parcialmente separados; siluetas lobuladas/cámara de juego y benchmark pendientes.
 F4 aprobada: [aceptación](docs/evidence/f4/lenguaje-01/user-acceptance.json), [guía](docs/uso-lenguaje-natural.md).
 T6 cerrada: [entrega de transiciones](docs/entrega-transiciones.md), lote aprobado.
 - [T5 verificada](docs/evidence/estaciones/integracion-t5/informe.md): 194 pruebas, 2377 capturas más cuatro en copia limpia; cuatro casos 3132–6900 tris, dos materiales/tres texturas, 16 extremos Blender/Godot.
@@ -178,9 +179,7 @@ T6 cerrada: [entrega de transiciones](docs/entrega-transiciones.md), lote aproba
   `presets/blueprints/roble-madera/`; galería `artifacts/roble-pintado/integracion-madera-01/index.html`.
 - Piloto aprobado; controles revisados por el agente. Sin benchmark de roble
   ni garantía de rangos completos; posibles separaciones, cantos y costuras.
-
 Pino **2.3.0 aprobado y benchmark cerrado**; `artifacts/pino-pintado/pp4-cards-02/index.html`. Base geométrica 1.1.0 en `artifacts/blueprints/pine-v1.1-review-01/`, aceptación pendiente.
-
 RF5 cerrado con aprobación artística del lote completo. Matriz
 `configs/verification/rf5-v1.json`; galería
 `artifacts/rediseno-follaje/rf5-lote-01/index.html`. RF3 aprobada como alternativa
@@ -192,7 +191,6 @@ edades no garantizados. Caso 2 m/moldes 3 m técnicamente válido pero visualmen
 inadecuado. Extremo de 20 m completa 2021/2048 intentos, cerca del límite de trabajo.
 Conexiones superpuestas a Q3, sin soldar ni resolver todas las intersecciones;
 hojas angulosas/solapadas. FPS solo medidos para pinos; sin viento, LOD ni bosque.
-
 Sin bloqueos técnicos fuera del sandbox. Dentro pueden fallar audio al cerrar
 Blender y sockets loopback; ejecución autorizada fuera. T5 captura por lotes acotados,
 bucle automático desactivado y dos dibujos explícitos por vista.

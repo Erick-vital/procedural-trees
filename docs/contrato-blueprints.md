@@ -422,3 +422,25 @@ Pintura 0.1.0 conservada y muestra de rama 0.2.0 seleccionada por delegación;
 árbol revisado aprobado artísticamente en el perfil/casos presentados;
 [aceptación](evidence/sauce-pintado/revision-01/user-acceptance.json).
 [Resultado y comparación](evidence/sauce-pintado/revision-01/informe.md).
+
+
+### Roble de copa libre3.0.0, contrato1.7
+
+`roble_copa_ancha@3.0.0` registra la versión OF11 aprobada, con componentes
+`oak-growth-central@0.1.0`, `oak-central-groups@0.11.0` y
+`oak-central-crossed@0.11.0`. Perfil maduro fijo:12 m nominales de madera,216
+grupos, atlas histórico de roble; los parámetros no son editables. Semillas
+explícitas base/distribución/pintura se conservan sin derivaciones nuevas.
+El piloto3100/17/2718 reproduce GLB OF11 exactamente:5745 tris/778 láminas/2 materiales.
+
+La preparación se ejecuta en Python anfitrión y escribe geometría derivada del
+blueprint resuelto, no un archivo de geometría externa elegido por el usuario.
+Se registra su hash y se comprueba antes de mallar en Blender; la validación
+reimporta GLB y verifica presupuesto, materiales, recursos, contactos pintados y
+protección del cilindro inferior hasta0.62H. Tiempo compartido≤120 s, máximo6999 tris.
+La altura nominal se verifica sobre madera; se conservan los bounds completos
+de13.374 m del piloto aprobado, sin recortar o normalizar las láminas.
+
+La aprobación es del piloto; otras semillas se validan o rechazan durante la
+generación, y no se afirman nuevos rangos/edades. Rutas1.0–1.6 y recetas previas
+permanecen disponibles con sus contratos. [Uso](uso-blueprints.md).

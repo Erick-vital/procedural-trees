@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.7",
+  "blueprint_id": "roble_copa_ancha",
+  "blueprint_version": "3.0.0",
+  "profile": "maduro",
+  "seeds": {
+    "base": 3100,
+    "canopy": 17,
+    "paint": 2718
+  },
+  "overrides": {}
+}

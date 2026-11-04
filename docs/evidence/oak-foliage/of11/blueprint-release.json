@@ -1,0 +1,750 @@
+{
+  "version": "oak-central-blueprint-release-1.0",
+  "date": "2026-11-03",
+  "passed": true,
+  "checks": {
+    "registered": true,
+    "approved": true,
+    "resolved": true,
+    "completed": true,
+    "exact-approved-glb": true,
+    "5745-triangles": true,
+    "216-groups": true,
+    "two-materials": true,
+    "export-audits": true,
+    "prepared-repeat": true,
+    "sources": true,
+    "bounded-time": true,
+    "all-tests": true,
+    "rendered-views": true,
+    "no-clipping": true
+  },
+  "blueprint": {
+    "path": "blueprints/roble_copa_ancha/3.0.0.json",
+    "file_sha256": "03ce6db780acfd7eec1d7e5b661a73ee66642afc4000d0f591af6a4ca07f018d",
+    "canonical_sha256": "bfa71b8ac6f1be37095ac748f17f775bdb35a6e34b501edaa6f40ee462511e6d"
+  },
+  "instance": {
+    "schema_version": "1.7",
+    "blueprint_id": "roble_copa_ancha",
+    "blueprint_version": "3.0.0",
+    "profile": "maduro",
+    "seeds": {
+      "base": 3100,
+      "canopy": 17,
+      "paint": 2718
+    },
+    "overrides": {}
+  },
+  "first": "/home/tao/repos/procedural/arboles/artifacts/oak-foliage/blueprint-3-cli-02",
+  "repeat": "/home/tao/repos/procedural/arboles/artifacts/oak-foliage/blueprint-3-cli-repeat-02",
+  "approved_glb_sha256": "315943611b884005ea96122d005891b5ee83ca772132bda6c52c412916ad9fde",
+  "first_duration_s": 23.607,
+  "repeat_duration_s": 15.073,
+  "export_validation": {
+    "triangles": 5745,
+    "materials": {
+      "Painted_Bark": 4189,
+      "Painted_Foliage": 1556
+    },
+    "bounds_gltf": [
+      [
+        -9.91547966003418,
+        0.0,
+        -10.26794147491455
+      ],
+      [
+        9.499015808105469,
+        13.374038696289062,
+        8.885713577270508
+      ]
+    ],
+    "dimensions_m": [
+      19.41449546813965,
+      13.374038696289062,
+      19.15365505218506
+    ],
+    "geometry_sha256": "e6072762d5fbb99368f73bb0dfe5a6aed43f151d5071d7233fd145ed1f47d949",
+    "glb_sha256": "315943611b884005ea96122d005891b5ee83ca772132bda6c52c412916ad9fde",
+    "checks": {
+      "triangles": true,
+      "two-materials": true,
+      "textures": true,
+      "alpha": true,
+      "double-sided": true,
+      "groups": true,
+      "central-groups": true,
+      "contacts": true,
+      "fan-contacts": true,
+      "lower-core": true
+    },
+    "group_count": 216,
+    "lower_core_radius_m": 3.6182659309889744,
+    "maximum_contact_error_m": 6.344672091087802e-07
+  },
+  "tests": {
+    "count": 345,
+    "files": [
+      {
+        "file": "tests/test_birch.py",
+        "exit_code": 0,
+        "duration_seconds": 0.666,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_birch.txt",
+        "passed": true,
+        "tests": 7,
+        "log_sha256": "745bbba0cf3d94ac2e1fc7c3dd0a4132332a884f53d054a71852201f028dfe03"
+      },
+      {
+        "file": "tests/test_birch_sample.py",
+        "exit_code": 0,
+        "duration_seconds": 0.065,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_birch_sample.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "edb4e2159c923ea45a32656078835cdf531c3d7b414c670dd786978875cb0678"
+      },
+      {
+        "file": "tests/test_blueprint_controls.py",
+        "exit_code": 0,
+        "duration_seconds": 0.215,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_blueprint_controls.txt",
+        "passed": true,
+        "tests": 7,
+        "log_sha256": "87578f2fe4d6902dff24988aed54087da09e87393d7135be492b1066cbaba89d"
+      },
+      {
+        "file": "tests/test_blueprint_execution.py",
+        "exit_code": 0,
+        "duration_seconds": 0.315,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_blueprint_execution.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "7508879d45a5044a12c6a1f4893369e84654d4586a3823c358a41978a48f9b07"
+      },
+      {
+        "file": "tests/test_blueprints.py",
+        "exit_code": 0,
+        "duration_seconds": 0.215,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_blueprints.txt",
+        "passed": true,
+        "tests": 13,
+        "log_sha256": "a08faa8927f402d7678e4510fe6fb0a4a8dd7d0b4218a81cfdfc89ce3966a9ad"
+      },
+      {
+        "file": "tests/test_branch_interior.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_branch_interior.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "30b7db73967acdb055ef826f6af2556d423ce2ebb08c1494e1a654e3b2b89a3a"
+      },
+      {
+        "file": "tests/test_branch_sample.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_branch_sample.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "24adda79e21044fef19cdc7f0606a9cd7770fc9a99c705a8622ee923c13bce5d"
+      },
+      {
+        "file": "tests/test_branch_space.py",
+        "exit_code": 0,
+        "duration_seconds": 0.515,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_branch_space.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "3b4a10abf1f7bcbdc43689ac1e0d25ee14d36d3293c8c6d9d2ef9966b9bd13e9"
+      },
+      {
+        "file": "tests/test_branch_tree.py",
+        "exit_code": 0,
+        "duration_seconds": 0.566,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_branch_tree.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "641c499917b615023af0e8240732be24f950ec85fbfb61b7af45e914b4d713e2"
+      },
+      {
+        "file": "tests/test_branch_visibility.py",
+        "exit_code": 0,
+        "duration_seconds": 0.065,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_branch_visibility.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "fe008aab760eb03ccac7578e2b84665b1b50b0d7f855b17a0c7a8d039435b658"
+      },
+      {
+        "file": "tests/test_canopy_normals.py",
+        "exit_code": 0,
+        "duration_seconds": 0.215,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_canopy_normals.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "157a98b66d422569e68b74b61a228086ab2f2972218c5d9c3bd87f6a2820902a"
+      },
+      {
+        "file": "tests/test_contracts.py",
+        "exit_code": 0,
+        "duration_seconds": 0.115,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_contracts.txt",
+        "passed": true,
+        "tests": 4,
+        "log_sha256": "af55efa5c3ceb122f8184c380aa405d3f3b4e7e0c1e892773d0eff31d0645c8a"
+      },
+      {
+        "file": "tests/test_crown.py",
+        "exit_code": 0,
+        "duration_seconds": 0.065,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_crown.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0"
+      },
+      {
+        "file": "tests/test_evaluation.py",
+        "exit_code": 0,
+        "duration_seconds": 0.215,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_evaluation.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "e01fd75b27c4acf9963cb63f68f9b174e9169895a3b5a993127002de9894d262"
+      },
+      {
+        "file": "tests/test_execution.py",
+        "exit_code": 0,
+        "duration_seconds": 0.716,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_execution.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "6b4db6b06a162df370bc1c403948150a663534ff6e2464693527a5784ec4c7c2"
+      },
+      {
+        "file": "tests/test_foliage.py",
+        "exit_code": 0,
+        "duration_seconds": 0.115,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage.txt",
+        "passed": true,
+        "tests": 4,
+        "log_sha256": "f162ac6d170f5295dee020e348bd8c6f1c333f7c4f78e23f15f6a84c1e8e703b"
+      },
+      {
+        "file": "tests/test_foliage_branch.py",
+        "exit_code": 0,
+        "duration_seconds": 0.164,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_branch.txt",
+        "passed": true,
+        "tests": 4,
+        "log_sha256": "cdd7c11fc7a4be8bad0438f1b3fb77c77848629c171490d56014f74a1502dff5"
+      },
+      {
+        "file": "tests/test_foliage_branch_export.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_branch_export.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "6f283ee6225d2cef4c0127d95456a6f954c45141c92b97dd89016cb1c630e8f4"
+      },
+      {
+        "file": "tests/test_foliage_canopy.py",
+        "exit_code": 0,
+        "duration_seconds": 0.265,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_canopy.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "e9888fc588f3ef66207de1b203d5c82ccec482781a4d3c4cf47d38552d82185c"
+      },
+      {
+        "file": "tests/test_foliage_export.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_export.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "fe008aab760eb03ccac7578e2b84665b1b50b0d7f855b17a0c7a8d039435b658"
+      },
+      {
+        "file": "tests/test_foliage_mold_density.py",
+        "exit_code": 0,
+        "duration_seconds": 0.164,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_mold_density.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "6b73fa95260702a7bfb7724a458669dd6d0ce0478e7ef69e00593f86279eecff"
+      },
+      {
+        "file": "tests/test_foliage_molds.py",
+        "exit_code": 0,
+        "duration_seconds": 0.365,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_molds.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "aa2aefdd8ffc2b6e3194024fb55c12af3c0117a2be41a21ec588e242381d57e1"
+      },
+      {
+        "file": "tests/test_foliage_molds_evaluation.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_molds_evaluation.txt",
+        "passed": true,
+        "tests": 1,
+        "log_sha256": "fb184ea57734512b1f088f9181209901b9cd46df3eb7eaa2500ea9e48dde20b5"
+      },
+      {
+        "file": "tests/test_foliage_twigs.py",
+        "exit_code": 0,
+        "duration_seconds": 1.417,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_twigs.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "5ede02f4d2dbe604fffe9f48655721909bd1eb53c3dcf7576f1d2000146d4311"
+      },
+      {
+        "file": "tests/test_foliage_twigs_export.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_foliage_twigs_export.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "fe008aab760eb03ccac7578e2b84665b1b50b0d7f855b17a0c7a8d039435b658"
+      },
+      {
+        "file": "tests/test_language.py",
+        "exit_code": 0,
+        "duration_seconds": 4.974,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_language.txt",
+        "passed": true,
+        "tests": 8,
+        "log_sha256": "b46e554d8bdb39885a966f9a5a03ffab50da7c745b646ae9c7d59d7af7cea4c7"
+      },
+      {
+        "file": "tests/test_oak_branching.py",
+        "exit_code": 0,
+        "duration_seconds": 18.452,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_branching.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "2ffa83477ca24ba4b7feca5c63b169590b91fde399e9ea8d3565645a1bb24fe3"
+      },
+      {
+        "file": "tests/test_oak_central_blueprint.py",
+        "exit_code": 0,
+        "duration_seconds": 0.615,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_central_blueprint.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "0b5f9b087d4e4e550064b592e1080399724ed139cc406450ea9dcf7032571b42"
+      },
+      {
+        "file": "tests/test_oak_crossed.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_crossed.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "fe008aab760eb03ccac7578e2b84665b1b50b0d7f855b17a0c7a8d039435b658"
+      },
+      {
+        "file": "tests/test_oak_crossed_production.py",
+        "exit_code": 0,
+        "duration_seconds": 1.367,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_crossed_production.txt",
+        "passed": true,
+        "tests": 4,
+        "log_sha256": "e4170079f58b02bad91bac294ac4fe4f5d0a1d13f85a98b57d1a1137b55290be"
+      },
+      {
+        "file": "tests/test_oak_crown.py",
+        "exit_code": 0,
+        "duration_seconds": 3.52,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_crown.txt",
+        "passed": true,
+        "tests": 8,
+        "log_sha256": "9f3d2c2b645e4fe2ed014254a616f2c0245e9d44aea574293d8b20ec9e572b31"
+      },
+      {
+        "file": "tests/test_oak_foliage_balance.py",
+        "exit_code": 0,
+        "duration_seconds": 19.802,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_balance.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "007be00474d44aca5874244b79216f45a273a0e9301b9bfa8fe71f2a00d86675"
+      },
+      {
+        "file": "tests/test_oak_foliage_canopy.py",
+        "exit_code": 0,
+        "duration_seconds": 2.319,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_canopy.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "ce38c287b1090f335331d521ac1d1bca6597132635fca67e5f20bd687e6d5dbd"
+      },
+      {
+        "file": "tests/test_oak_foliage_central.py",
+        "exit_code": 0,
+        "duration_seconds": 74.75,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_central.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "15fc94835fc5f60be7fbe063a66486603cdb885c51046b42e68acef17bf91c88"
+      },
+      {
+        "file": "tests/test_oak_foliage_chains.py",
+        "exit_code": 0,
+        "duration_seconds": 1.776,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_chains.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "6860ad527b6784bb477361d415ef6449b5331a2373345271b9f486850cf5ad30"
+      },
+      {
+        "file": "tests/test_oak_foliage_gaps.py",
+        "exit_code": 0,
+        "duration_seconds": 80.201,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_gaps.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "d565d1fc446250d29a17e09a10afecee57810271f588bdaba3628f5b2deb6922"
+      },
+      {
+        "file": "tests/test_oak_foliage_layout.py",
+        "exit_code": 0,
+        "duration_seconds": 1.517,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_layout.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "ac7192817973ced3cc959660941a52af52a55d238a04f2a9365201df573e7fe3"
+      },
+      {
+        "file": "tests/test_oak_foliage_macro.py",
+        "exit_code": 0,
+        "duration_seconds": 10.384,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_macro.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "026483b87bbdad6e0098b5f10a4c310fc28ea38643426410980624d418ed8ef1"
+      },
+      {
+        "file": "tests/test_oak_foliage_peripheral.py",
+        "exit_code": 0,
+        "duration_seconds": 8.882,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_peripheral.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "ee8401b9ebe1dba5305d5cd98533eaafa654436bd60bb5f1fdb3e974528969f5"
+      },
+      {
+        "file": "tests/test_oak_foliage_regions.py",
+        "exit_code": 0,
+        "duration_seconds": 50.768,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_regions.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "48c6f5b7b984c105da0d42682d1afd5feb099bb948ce9e919304ec756c8d1acb"
+      },
+      {
+        "file": "tests/test_oak_foliage_top.py",
+        "exit_code": 0,
+        "duration_seconds": 11.987,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_top.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "993194a872ff298998b4c23504ea5ed6e3c8064630773df33202a281e91c09fd"
+      },
+      {
+        "file": "tests/test_oak_foliage_volume.py",
+        "exit_code": 0,
+        "duration_seconds": 9.832,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_foliage_volume.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "f3b3372de521882614bf07baf74d9e9ab93152865b2bab9632993b771e9e3e7e"
+      },
+      {
+        "file": "tests/test_oak_growth.py",
+        "exit_code": 0,
+        "duration_seconds": 2.168,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_growth.txt",
+        "passed": true,
+        "tests": 10,
+        "log_sha256": "c9cfaeb0e93faa5bbf89bbe382b9151efc3a55a56d9d574a185502e0004b369e"
+      },
+      {
+        "file": "tests/test_oak_painted.py",
+        "exit_code": 0,
+        "duration_seconds": 0.164,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_painted.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "ae0cd2c0eb7cf51425051d66c1b173330dbd0067839eb7b86de042a8f8b9dcb8"
+      },
+      {
+        "file": "tests/test_oak_painted_sample.py",
+        "exit_code": 0,
+        "duration_seconds": 0.065,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_painted_sample.txt",
+        "passed": true,
+        "tests": 4,
+        "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6"
+      },
+      {
+        "file": "tests/test_oak_painted_tree.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_painted_tree.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "fe008aab760eb03ccac7578e2b84665b1b50b0d7f855b17a0c7a8d039435b658"
+      },
+      {
+        "file": "tests/test_oak_periphery.py",
+        "exit_code": 0,
+        "duration_seconds": 41.895,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_periphery.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "0ad400e9f74910dd2b8de80d86b81f11dc06039fcf4a0f2580d76cfaa3e228db"
+      },
+      {
+        "file": "tests/test_oak_volume.py",
+        "exit_code": 0,
+        "duration_seconds": 14.191,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_volume.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "1bb5adb7e40c6422ba0d29969de49755492797e74a6ead9cfdbdae487f7da124"
+      },
+      {
+        "file": "tests/test_oak_wood.py",
+        "exit_code": 0,
+        "duration_seconds": 0.065,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_oak_wood.txt",
+        "passed": true,
+        "tests": 4,
+        "log_sha256": "56e03afda220e7ba78bbcecf9a2e53a0149cfc3e311fa10bbd01b25e8e5ba671"
+      },
+      {
+        "file": "tests/test_pine.py",
+        "exit_code": 0,
+        "duration_seconds": 0.565,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "271b7c90a04ccd6111d085b439d17cdb64c85c15dbff8d3622dd38189284c7c3"
+      },
+      {
+        "file": "tests/test_pine_painted.py",
+        "exit_code": 0,
+        "duration_seconds": 0.716,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine_painted.txt",
+        "passed": true,
+        "tests": 9,
+        "log_sha256": "b6eef9130a7cf27152bd355d0c1e6ec5e6751e0687ced40b281af77cda560025"
+      },
+      {
+        "file": "tests/test_pine_painted_cards.py",
+        "exit_code": 0,
+        "duration_seconds": 1.618,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine_painted_cards.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "2c77ec6c32d5a3c24a9297e7974209e9b8216b5f12aed890c535d09603728d2b"
+      },
+      {
+        "file": "tests/test_pine_painted_review.py",
+        "exit_code": 0,
+        "duration_seconds": 0.165,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine_painted_review.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "6f283ee6225d2cef4c0127d95456a6f954c45141c92b97dd89016cb1c630e8f4"
+      },
+      {
+        "file": "tests/test_pine_painted_sample.py",
+        "exit_code": 0,
+        "duration_seconds": 0.214,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine_painted_sample.txt",
+        "passed": true,
+        "tests": 2,
+        "log_sha256": "4acf6b2e9e2bd80343b84c33c647137e0910aafd24805146e0189af930d268a2"
+      },
+      {
+        "file": "tests/test_pine_painted_volume.py",
+        "exit_code": 0,
+        "duration_seconds": 0.715,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine_painted_volume.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "d8482e140d3d6c03781ee7a07b17d1cc45d08a8131b9599cf5d8787781899811"
+      },
+      {
+        "file": "tests/test_pine_painted_wood.py",
+        "exit_code": 0,
+        "duration_seconds": 1.968,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine_painted_wood.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "1f0e8865d3e084e5f550a846402886b2fc0d22c4843ed660be40e017bd326ee0"
+      },
+      {
+        "file": "tests/test_pine_performance.py",
+        "exit_code": 0,
+        "duration_seconds": 0.165,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine_performance.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0"
+      },
+      {
+        "file": "tests/test_pine_revision.py",
+        "exit_code": 0,
+        "duration_seconds": 0.415,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_pine_revision.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "d8d4ecb2460c6b121f1582719c8a39a616efad7d8ec1152bbcd9bf4894b7db6a"
+      },
+      {
+        "file": "tests/test_quality.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_quality.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "33060fd73862c5e1af97335504d5b45211fce6d229657f556d8deceeadc52ce4"
+      },
+      {
+        "file": "tests/test_rf5.py",
+        "exit_code": 0,
+        "duration_seconds": 0.215,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_rf5.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "6888bf9b7f2122bfb47e6535ce9c1bed8439cb3f2b201057cc0e3a4388ed234a"
+      },
+      {
+        "file": "tests/test_season_atlas.py",
+        "exit_code": 0,
+        "duration_seconds": 0.12,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_season_atlas.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "baf49b59538192f3e136ca0404cac516ecb8dd2fe5ba1416604056f3080fa49c"
+      },
+      {
+        "file": "tests/test_season_bundle.py",
+        "exit_code": 0,
+        "duration_seconds": 0.369,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_season_bundle.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "606e2b4b327997bad20c032fcb674d7fb79477b44873942f4bba7fa6fe8d9e11"
+      },
+      {
+        "file": "tests/test_season_calendar.py",
+        "exit_code": 0,
+        "duration_seconds": 0.265,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_season_calendar.txt",
+        "passed": true,
+        "tests": 10,
+        "log_sha256": "a6e63d0943e8bea12a8329e3812f8011912860fd0129106f2ffc046f8ba52c96"
+      },
+      {
+        "file": "tests/test_season_calendar_glb.py",
+        "exit_code": 0,
+        "duration_seconds": 0.165,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_season_calendar_glb.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "01a9685662dd091542f57d04ab773327f3b73808b6e936ae22a8c54a52bb647c"
+      },
+      {
+        "file": "tests/test_season_transition.py",
+        "exit_code": 0,
+        "duration_seconds": 0.365,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_season_transition.txt",
+        "passed": true,
+        "tests": 4,
+        "log_sha256": "c84d32a07c529fc11b3fc71085a58efbe618ff08f1edd9f542147ea5ee44a2ed"
+      },
+      {
+        "file": "tests/test_seasonal_paint.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_seasonal_paint.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0"
+      },
+      {
+        "file": "tests/test_seasons.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_seasons.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0"
+      },
+      {
+        "file": "tests/test_second_blueprint.py",
+        "exit_code": 0,
+        "duration_seconds": 0.265,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_second_blueprint.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "7e7b518c62fd31b716bf236a1c7683595f443b08d4c0caf38bc7274fab8f302b"
+      },
+      {
+        "file": "tests/test_seeds.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_seeds.txt",
+        "passed": true,
+        "tests": 1,
+        "log_sha256": "fb184ea57734512b1f088f9181209901b9cd46df3eb7eaa2500ea9e48dde20b5"
+      },
+      {
+        "file": "tests/test_surface_evaluation.py",
+        "exit_code": 0,
+        "duration_seconds": 0.064,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_surface_evaluation.txt",
+        "passed": true,
+        "tests": 3,
+        "log_sha256": "33060fd73862c5e1af97335504d5b45211fce6d229657f556d8deceeadc52ce4"
+      },
+      {
+        "file": "tests/test_willow.py",
+        "exit_code": 0,
+        "duration_seconds": 0.665,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_willow.txt",
+        "passed": true,
+        "tests": 9,
+        "log_sha256": "49c3c2f702c814a28fb1a8f66619313057c2ba32f4a8edf63bc250f7ce24a49c"
+      },
+      {
+        "file": "tests/test_willow_sample.py",
+        "exit_code": 0,
+        "duration_seconds": 0.114,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_willow_sample.txt",
+        "passed": true,
+        "tests": 5,
+        "log_sha256": "aae2ede6a13ece0aa9b78816b166018b79291fffb53ce0c201e5691c216d798c"
+      },
+      {
+        "file": "tests/test_willow_v2.py",
+        "exit_code": 0,
+        "duration_seconds": 0.916,
+        "log": "artifacts/oak-foliage/blueprint-3-tests-01/test_willow_v2.txt",
+        "passed": true,
+        "tests": 6,
+        "log_sha256": "4134ab0645ee687a324d0e175cf758fddf4e7fc7f1d10685b423cd9a3a123c75"
+      }
+    ]
+  },
+  "render_review": "Nine Blender diagnostic views generated; perspective inspected. Approved Godot captures retained because the GLB is byte-identical.",
+  "scope": "Full-art approval only mature3100/layout17/paint2718; other seeds geometric controls, no new ages or parameter ranges.",
+  "analysis_source_sha256": "35a45eb84d5a5a19c70f31fe1f32bfeccabbb04588c8bb724b8da09f6b353be6"
+}

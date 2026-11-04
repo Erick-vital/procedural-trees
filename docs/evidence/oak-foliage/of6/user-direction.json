@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-03",
+  "request": "Continuar macromasas del maduro 3100 para leer volúmenes mayores de copa",
+  "constraints": [
+    "216 grupos",
+    "5010 tris totales",
+    "madera y pintura actuales",
+    "centro despejado",
+    "reglas generales sin retoques por semilla"
+  ],
+  "candidate": "oak-foliage-canopy-0.6.0",
+  "artistic_acceptance": "pending_user"
+}

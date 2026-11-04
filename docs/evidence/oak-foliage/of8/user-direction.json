@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-03",
+  "request": "Recuperar continuidad frontal sin perder mejora superior OF7",
+  "initial_constraints": [
+    "centro despejado",
+    "216 grupos",
+    "5010 tris",
+    "madera y pintura",
+    "reglas generales sin retoques por semilla"
+  ],
+  "scope_change": "El usuario permite un pequeño aumento de tris si es necesario, manteniendo techo global 7k (máximo6999 de la política).",
+  "decision": "Una lámina complementaria selectiva por grupo afectado, con coste real +126 tris; sin aumentar grupos ni madera.",
+  "candidate": "oak-foliage-canopy-0.8.0",
+  "artistic_acceptance": "pending_user"
+}

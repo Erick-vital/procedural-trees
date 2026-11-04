@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-03",
+  "baseline": "OF8 aprobada provisionalmente; no aprobación definitiva del follaje",
+  "request": "OF9: organización espacial de macro-masas asociadas a brazos; expansión transversal y conexiones selectivas; conservar huecos, anclaje biológico y lectura de bifurcaciones",
+  "fixed": [
+    "216 grupos",
+    "madera O5",
+    "pintura existente",
+    "estrategia de complementos laterales OF8",
+    "máximo global 6999 triángulos"
+  ],
+  "additional_authorization": "Hasta 700 triángulos adicionales de follaje si hacen falta; intentar primero presupuesto OF8 exacto (5136).",
+  "pending": [
+    "siluetas alternativas de láminas anchas/lobuladas",
+    "aceptación artística de OF9",
+    "distancia habitual de cámara de videojuego aún no especificada; usar distancia media explícita como prueba"
+  ],
+  "scope": "Solo piloto maduro3100; no promover recetas ni nuevas edades"
+}

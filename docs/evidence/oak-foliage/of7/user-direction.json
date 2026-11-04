@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-03",
+  "reviewed_version": "OF6",
+  "review": "Va mejor; refinar vista superior para unir masas y reducir cantos",
+  "constraints": [
+    "216 grupos/5010 tris",
+    "centro despejado",
+    "madera y pintura conservadas",
+    "sin retoques por semilla"
+  ],
+  "candidate": "oak-foliage-canopy-0.7.0",
+  "artistic_acceptance": "pending_user"
+}

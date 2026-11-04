@@ -288,3 +288,356 @@ GLB/layout/estructura idéntica, testigo O5 histórico exacto. Godot36 capturas,
 23 inspeccionadas; agrupaciones compactas/cruces visibles en algunas vistas.
 [Aceptación de rama pendiente](../docs/evidence/oak-foliage/of1/informe.md).
 No se integra la copa completa hasta la revisión solicitada por el usuario.
+
+## OF2 — cadenas de masas sobre la misma rama
+
+Petición del usuario mediante texto adjunto: OF1 sigue pareciendo grupos pegados,
+con puntas/nodos congestionados y un racimo inferior aislado. Comparar A terminal/
+lateral, B continuidad media y C fragmentada sobre la misma rama, conservando
+pintura y presupuesto. OF1 queda como ensayo revisado con cambios pendientes,
+sin aceptación de rama ni integración de copa.
+
+Congelar O5 maduro3100/p:0, semillas17/2718, madera646 tris, cupo64 grupos/384 tris
+(1030 totales), atlas idénticos. Nuevos candidatos por segmentos, preferencia
+terciarias/terminales vigorosas/secundarias exteriores y puentes intermedios;
+excluir desarrollo inferior aislado mediante regla geométrica general.
+Organizar candidatos en2–5 masas por brazo, con papeles terminal/lateral/puente,
+cadenas relacionadas y huecos. Orientaciones coherentes arriba/afuera, grupos
+más anchos y menos profundos. Misma secuencia de tamaños y plantillas en A/B/C
+para comparar distribución/orientación sin variar pintura, área ni tris.
+
+Contrato0.2.0 independiente; conservar OF1. Registrar masas, asignaciones,
+descartes y semillas. Validar presupuesto, superficies/UV/alfa, madera intacta,
+repetición y regresiones. Godot con cámaras/luz/escala comunes entre tres variantes,
+fondos, distancias, sombras y follaje aislado. Comparar continuidad, huecos y
+lectura de madera; métricas de máscara no sustituyen valoración artística.
+Solo muestra madura; reglas por madurez son preparatorias, otras etapas y copa
+completa sin certificar ni integrar en esta iteración.
+
+### Resultado OF2
+
+0.2.0 implementado/verificado: A/B/C sobre p:0 de maduro3100, tres/cuatro/cinco
+masas lógicas. Cada una1030 tris/dos materiales/64 grupos; madera, atlas, tamaños
+y secuencia de plantillas comunes. Candidato inferior aislado excluido por regla
+geométrica. 287 pruebas,99 checks, doce GLB/layouts repetidos idénticos y O5/OF1
+madera exacta. Godot68 capturas y20 máscaras;44+16 inspeccionadas. B enlaza mejor
+el recorrido, A concentra extremos y C deja huecos mayores; preferencia del agente
+por B sin aprobación del usuario. Persisten cruces y tarjetas de canto arriba.
+[Informe y comparación](../docs/evidence/oak-foliage/of2/informe.md).
+Muestra madura exclusivamente, sin integrar árbol completo ni promover receta.
+
+## OF3 — copa madura B revisada, autorizada 2026-11-03
+
+El usuario elige B y autoriza probarla en el maduro O5 3100 completo, conservando
+pintura, centro despejado y presupuesto. Solicita tres mejoras: expansión lateral,
+arriba/abajo del eje real; reparto entre bifurcaciones según vigor/exposición;
+masas alargadas, anchas y pequeñas de enlace. Esta autorización sustituye la
+restricción previa de solo rama para este piloto; otras edades y promoción de
+recetas siguen fuera del alcance. La elección de B no aprueba la copa resultante.
+
+OF3 independiente, conserva OF1/OF2: 216 grupos/1296 tris de follaje, madera O5
+3714 intacta y 5010 tris completos, dos materiales. Mantener cupos por primaria;
+repartir por subárbol secundario con longitud expuesta sublineal, vigor y exposición.
+Masas vinculadas a bifurcaciones reales, orientaciones coherentes por masa pero
+variadas entre masas; alternancia alrededor de ejes y tres proporciones. No añadir
+madera ni mover contactos para rellenar volumen. Excluir toda lámina del cilindro
+central de radio 0.30H, comprobando caras completas antes y después de exportar.
+Intentos acotados; rechazar entradas sin candidatos, nunca aumentar presupuesto.
+
+Comparar con B original aplicada al mismo árbol, misma cámara/luz/escala y pintura,
+y comparar la rama p:0 original/revisada. Validar GLB, madera/atlas históricos,
+contactos UV/alfa/superficies, topología, determinismo y presupuesto. Revisar Godot
+frente/perfil/arriba/abajo/perspectivas, fondos, distancias y sombras; registrar
+huecos, repetición y límites sin equiparar métricas a aceptación artística.
+
+### Resultado OF3
+
+0.3.0 implementado/verificado: maduro 3100 completo, 216 grupos y 5010 tris/dos
+materiales; madera O5 y pintura exactas. Reparto p:0 secundarias 26/38/0 →25/26/13;
+28 masas lógicas, proporciones anchas/alargadas/puentes y orientaciones variables.
+Cilindro de radio 3.6 m sin follaje, caras completas auditadas sobre GLB.
+293 pruebas, 48 checks, seis GLB/layout/estructura repetidos idénticos; testigos
+O5 completo y OF2 B de rama exactos. 46 capturas Godot inspeccionadas. Copa aún
+rala, algunas columnas y tarjetas de canto arriba: arte pendiente, sin promoción
+ni edades adicionales. [Informe](../docs/evidence/oak-foliage/of3/informe.md).
+
+## OF4 — llenado periférico con 5010 tris, autorizado 2026-11-03
+
+El usuario considera OF3 demasiado rala y solicita mayor llenado periférico y
+continuidad, con madera, pintura, centro despejado y 5010 tris intactos, sin
+retoques por semilla. Revisar reglas generales en versión independiente 0.4.0;
+conservar OF3 como comparación y registrar que requiere revisión artística.
+
+Redistribuir 216 grupos hacia ramas menos cubiertas, suavizar el peso de las
+primarias dominantes y desarrollar segmentos descendentes portantes: la altura
+de una primaria no debe excluir un subárbol periférico vigoroso entero. Descartar
+solo ramillas inferiores muy cortas, manteniendo contactos sobre madera real.
+Ampliar alcance de masas anchas/alargadas y orientar parte hacia sus vecinas;
+espaciado entre grupos de todo el brazo, no solo dentro de cada masa. Acotar
+extensión cerca del cilindro central 0.30H, sin invadirlo ni mover anclajes.
+Comparación OF3/OF4 con cámaras/luz/escala comunes, alfa, sombras y distancias;
+repetición GLB, madera/atlas exactos y presupuesto completo fijo. Esta revisión
+no promueve recetas ni amplía edades. Métricas de cobertura/continuidad 2D son
+diagnósticos; comprobar apariencia en Godot antes de describir mejoras.
+
+### Resultado OF4
+
+0.4.0 implementado/verificado: 216 grupos y 5010 tris/dos materiales, pintura y
+madera exactas. Reparto entre primarias menos concentrado, desarrollo de brazos
+periféricos descendentes y espaciado global por brazo; masas más extensas con
+límite junto al núcleo. Cilindro 3.6 m despejado en caras completas GLB.
+299 pruebas, 55 checks, seis GLB/layout/estructura repetidos exactos; OF3 anterior
+completa/rama y O5 históricos exactos. Tres controles geométricos 3101–3103 y
+semilla de distribución 18, sin arte/exportación de controles. 46 capturas y ocho
+máscaras inspeccionadas: follaje visible ~1.9–2.15 veces OF3 en cuatro vistas,
+continuidad local mejor frente/perfil pero no uniforme desde arriba. Mayor área
+de láminas/escala aparente de hojas, sin benchmark. Arte pendiente; huecos entre
+brazos, parches bajos y láminas de canto persisten. [Informe](../docs/evidence/oak-foliage/of4/informe.md).
+
+## OF5 — continuidad fina y macromasas, revisión del usuario 2026-11-03
+
+El usuario valora cantidad/periferia/lectura de madera de OF4 y solicita pocos
+puentes, menos capuchones, aliviar ruido interior y organizar masas en volúmenes
+mayores. Conservar OF4, 216 grupos/5010 tris, madera y pintura; sin retoques por
+semilla. Refinamiento independiente 0.5.0: agrupación espacial de masas en tres
+conjuntos, enlaces entre vecinas y reasignación de máximo 18 grupos existentes,
+hasta diez puentes pequeños sobre ramas reales próximas a huecos. Retrasar algunos
+anclajes terminales y mover redundancias interiores solo si no invaden el núcleo.
+No vaciar ni rellenar todo el centro; cilindro 0.30H conservado. Comparar OF4/OF5
+con cámaras comunes, misma pintura y tamaño del resto; validar contactos, GLB,
+repetición, continuidad y límites visuales. No implica aceptación final ni nuevas
+edades/recetas. Un agrupamiento lógico por sí solo no demuestra macromasas visibles.
+
+### Resultado OF5
+
+0.5.0 implementado/verificado: tres conjuntos espaciales de 10/12/8 masas dirigen
+la selección de enlaces. Dieciocho reasignaciones: diez puentes pequeños, seis
+retrocesos terminales y dos redundancias interiores hacia afuera; 198 grupos
+geométricamente exactos. Mantiene 216 grupos/5010 tris/dos materiales, madera,
+pintura y cilindro 3.6 m. Anclajes después de 0.82 del eje: 54→38.
+305 pruebas, 59 checks, seis GLB repetidos idénticos y referencias OF4/O5 exactas;
+controles geométricos 3101–3103 y distribución 18, sin nueva aprobación de rango.
+46 capturas + ocho máscaras inspeccionadas. Cobertura varía menos de 1.5 %, efecto
+visual discreto; continuidad uniforme y macromasas más fuertes no demostradas.
+OF4 permanece referencia valorada; OF5 candidata sin promover ni aprobar arte.
+[Informe, límites y reproducción](../docs/evidence/oak-foliage/of5/informe.md).
+
+## OF6 — volúmenes geométricos compartidos, autorizado 2026-11-03
+
+El usuario solicita que las macromasas se lean como volúmenes mayores en maduro
+3100, manteniendo 216 grupos/5010 tris, madera, pintura y núcleo despejado, sin
+retoques por semilla. OF5 conserva su función histórica; nueva ruta 0.6.0.
+La jerarquía debe modificar geometría: envolventes desde anclajes reales,
+orientaciones coherentes por conjunto y alcance mayor en interfaces entre masas.
+Conservar anclajes/plantillas/madera; ampliar selectivamente láminas existentes,
+no añadir grupos ni llenar el núcleo. Núcleo protegido prevalece sobre extensión;
+marcos fijos con intentos acotados y fallback a OF5. Evaluar transparencias/escala
+aparente/solapamiento además de tris. Comparar OF5/OF6 en Godot con cámaras comunes,
+varias vistas, distancias y sombras; comprobar contactos, repetición y controles
+geométricos, sin promover receta ni edades por esta prueba.
+
+Ajuste tras ensayo OF6-01: orientar el eje más largo hacia vecinas y estirarlo
+produjo tiras/penachos y perdió carácter de pintura. Se conserva como intento.
+La siguiente candidata mantiene proporciones de plantilla y marco mayoritariamente
+original: aumento uniforme moderado en interfaces, giro suave hacia el eje común
+y puntas sin aumento. Se conserva anclaje y el núcleo prevalece sobre escala.
+
+### Resultado OF6
+
+0.6.0 final: ejes comunes de tres conjuntos influyen suavemente en los marcos;
+63 grupos de interfaz ampliados uniformemente, 105 con escala moderada, 34 puntas
+sin aumentar y 14 limitados por núcleo. Proporciones de pintura, 216 anclajes,
+madera y atlas intactos; **216 grupos/5010 tris/dos materiales**, cilindro 3.6 m.
+310 pruebas, 59 checks; seis GLB/layout/estructura repetidos exactos, OF5/O5
+históricos reproducidos. Controles geométricos 3101–3103/distribución 18, sin
+exportaciones/revisión artística de controles. 46 capturas + ocho máscaras
+inspeccionadas: volúmenes más unidos frente/perspectiva (componente mayor
+0.422→0.642 / 0.280→0.452), superior aún fragmentada. Más área alfa y escala
+aparente de hojas; sin benchmark ni aceptación artística. Primer estiramiento
+anisótropo descartado por tiras/penachos; final conserva proporciones. OF4/OF5
+conservadas, sin promover receta/edades. [Informe](../docs/evidence/oak-foliage/of6/informe.md).
+
+## OF7 — continuidad superior y láminas de canto, autorizado 2026-11-03
+
+El usuario valora el avance y solicita mejorar unión de masas desde arriba y
+reducir cantos, manteniendo centro, 216 grupos/5010 tris, madera y pintura, sin
+retoques por semilla. Nueva ruta 0.7.0 conserva OF6 como referencia.
+Ensayar tríadas cruzadas inclinadas: ninguna lámina vertical de partida, marcos
+fijos guiados por vertical física y vecindad de masas, sin billboards ni cámara.
+Elegir entre ocho orientaciones por grupo mediante muestras opacas del PNG hacia
+huecos periféricos XY. Conservar tamaños/anclajes/UV/PNG/madera y rechazar marcos
+que invadan núcleo 0.30H; fallback a OF6. Comparar arriba y vistas oblicuas/Godot,
+además de frente/perfil/distancias/sombras para no aplanar copa o perder madera.
+Auditar contactos, presupuesto, área, marcos y determinismo; controles geométricos
+con reglas comunes. Sin nuevas edades ni promoción de receta por esta prueba.
+
+Ajuste tras OF7-02: la inclinación general mejora arriba pero fragmenta una unión
+frontal. Limitar nuevos marcos a grupos con normal casi horizontal (|Nz|<0.15),
+conservar marcos que ya aportan espesor y puntuar también centro opaco/continuidad
+3D previos. No introducir cámaras laterales en el algoritmo. Verificar arriba y
+oblicuas además del coste en frente/perfil, con muestras alfa UV correctas.
+
+Refinamiento final OF7: conservar también marcos de puentes y correcciones OF5,
+para no debilitar conexiones previas al corregir cantos de los grupos grandes.
+Añadir dos vistas superiores oblicuas comunes a OF6/OF7 al protocolo de revisión.
+
+### Resultado OF7
+
+0.7.0 final: reorienta 63 grupos con cantos pronunciados, conserva 153 grupos
+geométricamente exactos y todos los tamaños/anclajes/UV/PNG/madera. Protege puentes,
+marcos ya útiles y núcleo 3.6 m; 216 grupos/5010 tris/dos materiales, área constante.
+Muestreo alfa 16×16 por plano, ocho candidatos y puntuación XY/3D; 520 intentos.
+316 pruebas, 61 checks, seis GLB repetidos exactos y referencias OF6/O5 idénticas.
+Controles geométricos 3101–3103/distribución 18, sin revisión artística de controles.
+50 capturas + ocho máscaras inspeccionadas, incluidas dos superiores oblicuas.
+Láminas casi verticales 129→56; arriba componente mayor 0.205→0.277. **Coste frontal**:
+componente mayor 0.642→0.445 con área casi igual; no mejora uniforme. Arte pendiente,
+sin promover recetas/edades y con OF6 conservada. [Informe](../docs/evidence/oak-foliage/of7/informe.md).
+
+## OF8 — recuperar continuidad lateral, autorizado 2026-11-03
+
+El usuario pide recuperar frontal sin perder OF7 superior, conservando centro,
+216 grupos, madera/pintura y reglas generales. Después autoriza un pequeño aumento
+de tris si es necesario, con techo global 7k: aplicar máximo6999. Cambio de alcance
+expreso: 5010 deja de ser techo estricto; no gastar margen sin una mejora revisable.
+
+Ensayar una lámina complementaria inclinada en grupos OF7 que perdieron huella
+opaca lateral respecto a OF6. Medir ocho azimuts iguales, no una cámara/semilla;
+una lámina por grupo, máximo64/128tris extra, dentro de cada grupo existente.
+Conservar OF7 completo, tamaños, anclajes, atlas y madera; contacto pintado real,
+normal complementaria con componente vertical ≥0.24 y núcleo 0.30H protegido.
+Validar presupuesto real, transparencia, contactos y área añadida. Comparar OF6,
+OF7 y candidata con cámaras comunes, arriba/oblicuas y frontal/perfil/sombras.
+No promover recetas/edades ni inferir FPS por recuento geométrico.
+
+### Resultado OF8
+
+0.8.0 final: 63 complementarias inclinadas, una en cada grupo con pérdida lateral
+significativa en muestreo de ocho azimuts. OF7 íntegra como subconjunto geométrico
+exportado; 216 grupos/711 láminas/dos materiales. **5136 tris: +126 (+2.5 %)**,
+autorizado por el usuario; follaje1422 dentro de reserva1584 y máximo6999 intacto.
+Madera, pintura, tamaños/anclajes y núcleo3.6 m conservados. 322 pruebas,69 checks,
+siete GLB repetidos exactos; referencias OF6 completa/OF7 completa-rama/O5 exactas.
+63 capturas +12 máscaras inspeccionadas. Frontal mayor componente OF6/OF7/OF8:
+0.642/0.445/0.645; superior0.205/0.277/0.275, con OF7 preservada y área visible
+superior creciente. Sin nuevos planos casi verticales; aumenta área alfa13.2 %,
+sin benchmark ni aceptación artística. Reglas comunes en controles geométricos
+3101–3103/distribución18; sin promoción de receta/edades.
+[Informe, autorización y reproducción](../docs/evidence/oak-foliage/of8/informe.md).
+
+
+### OF9: organización de regiones de copa, autorizada 2026-11-03
+
+OF8 queda como **base aprobada provisionalmente** por el usuario. OF9 mantiene
+216 grupos y láminas laterales; reorganiza soportes y orientaciones sobre madera
+real de cada brazo para ampliar transversalmente las masas, conectar algunas
+interfaces intermedias/exteriores y aliviar la proyección de follaje central.
+Regiones lógicas tridimensionales, sin mallas adicionales, relleno uniforme ni
+conexión obligatoria de todos los brazos. Cupos por longitud/vigor/exposición
+heredados; madera, pintura y recetas históricas conservadas.
+
+El usuario autoriza después **hasta +700 tris de follaje si hace falta**, siempre
+con techo6999 total. Primera candidata mantiene exactamente5136 tris OF8, sin
+ampliar tamaños ni añadir láminas. Reubicar contactos sobre tubos existentes
+está autorizado por esta organización espacial; no se permiten hojas flotantes.
+Comparar arriba/frente/perfil/perspectiva con cámaras y presupuesto comunes,
+rotación360° a distancia media explícita y controles geométricos3101–3103/layout18.
+La distancia habitual del juego no está especificada: no declarar aceptación
+a esa distancia por usar una escala de captura. Siluetas alternativas quedan
+pendientes; no repintar ahora. Aceptación artística OF9 pendiente.
+[Dirección y margen autorizados](../docs/evidence/oak-foliage/of9/user-direction.json).
+
+Resultado OF9: implementada/verificada en0.9.0, **216 grupos/5136 tris exactos**;
+siete regiones por brazo,177 contactos desplazados>1 cm. 65 checks, siete GLB
+repetidos idénticos;328 casos de prueba cubiertos mediante suite y repeticiones
+OF9/HTTP (la suite en sandbox falló solo por sockets).135 capturas Godot,101
+inspeccionadas y doce máscaras; giro24 azimuts. Perspectiva gana continuidad;
+arriba+7.94 % de área visible, sin resolver la estrella ni mejorar todas las
+regiones; conectividad frontal/perfil menor. OF8 permanece base provisional,
+OF9 pendiente del usuario; margen+700 sin usar. [Informe y límites](../docs/evidence/oak-foliage/of9/informe.md).
+
+
+### OF10: expansión hacia huecos entre brazos, autorizada 2026-11-03
+
+El usuario rechaza como resuelta la organización superior OF9: sigue pareciendo
+estrella. Pide expandir más las masas hacia huecos entre brazos y usar hasta
+**+700 tris de follaje respecto a5136**, manteniendo216 grupos y bifurcaciones
+visibles. No es autorización acumulativa por iteración: máximo5836 en este
+piloto y6999 en cualquier caso. OF8 permanece base provisional.
+
+Alternativa0.10.0 conserva OF9 íntegra y prueba láminas inclinadas en abanico,
+con la misma raíz opaca sobre el portador existente. Se permite más alcance
+en estas láminas, registrado como cambio de escala; atlas/pintura y madera
+intactos, sin nuevos grupos ni mallas de macro-masa. Interfaces seleccionadas
+entre regiones cercanas, manteniendo grandes separaciones y núcleo3.6 m.
+Verificar añadidos y contactos exportados, comparar OF8/OF9/OF10 arriba/frente/
+lado/perspectiva, giro y distancias; no declarar bifurcaciones despejadas solo
+por cumplir el cilindro central. Controles geométricos3101–3103/layout18.
+[Dirección autorizada](../docs/evidence/oak-foliage/of10/user-direction.json).
+
+Resultado OF10:0.10.0 verificada, **5270 tris (+134 de700),216 grupos/778 láminas**.
+67 láminas añadidas en46 grupos; OF9 íntegra, contactos opacos/madera/atlas
+conservados. Arriba+20.26 % de área, cinco→tres componentes; madera central
+visible≥99.54 % de OF9 en cuatro vistas.73 checks,seis pruebas nuevas,siete GLB
+repetidos exactos; referencias OF8/OF9/O5 exactas.135 capturas,101 inspeccionadas
+y24 máscaras; giro24 azimuts. Lectura radial parcial y hojas ampliadas persisten;
+OF8 provisional, OF10 pendiente de arte. [Informe y reproducción](../docs/evidence/oak-foliage/of10/informe.md).
+
+
+### OF11 / rama central: más soportes ascendentes, autorizada 2026-11-03
+
+El usuario identifica falta de ramas centrales y precisa que necesita varias
+ramas de dirección más vertical cerca de la copa. Cambio expreso: se permite
+añadir madera, congelada en OF8–OF10. Ensayar un eje central ascendente y dos
+brotes altos desde primarias, con bifurcaciones menores; conservar todos los
+ejes O5 exactos, atlas/pintura,216 grupos y máximo6999 tris. Reserva de madera
+nueva≤600 tris; no acumular otros700 de follaje por esta petición.
+
+Diagnóstico: el cilindro vacío0.30H se aplicaba a todas las alturas, impidiendo
+follaje central incluso junto a ramas altas. Proteger el cilindro solo hasta
+0.62H (7.44 m en piloto), manteniendo las horquillas inferiores legibles; permitir
+una copa interior alta con contactos reales. Reasignar24 grupos existentes a
+terminales de los tres ejes nuevos, conservando el resto y todos los complementos
+OF10. Es una nueva alternativa experimental, no modificación de recetas O5/OF10.
+
+Comparar madera antes/después y árbol completo, arriba/frente/perfil/perspectiva,
+giro y distancias en Godot. Auditar encajes, contactos exportados, protección
+inferior mediante caras recortadas en Z y presupuesto; repetir GLB y controles
+geométricos3101–3103. Arte pendiente; sin otras edades o promoción automática.
+[Dirección y alcance](../docs/evidence/oak-foliage/of11/user-direction.json).
+
+Resultado OF11: tres ejes ascendentes con bifurcaciones menores (21 piezas),
+**+475 tris de madera;5745 totales/216 grupos/778 láminas/dos materiales**. O5
+exacta como subconjunto;24 grupos trasladados a terminales nuevos y192 intactos.
+Protección inferior hasta7.44 m, centro superior habilitado; contactos y encajes
+exportados pasan.70 checks,seis pruebas nuevas,tres controles geométricos,
+siete GLB repetidos exactos y O5/OF10 históricos exactos.135 capturas,101
+inspeccionadas y8 máscaras. Desde arriba+13.53 % de área, pero tres→cinco
+componentes por los grupos centrales; no se declara unión superior resuelta.
+Madera aceptada para vestir y árbol completo aprobado posteriormente; ver registro3.0.0. [Informe y reproducción](../docs/evidence/oak-foliage/of11/informe.md).
+
+Revisión del usuario: «bien ahora vuelve a agregar el follaje». Se entrega la
+variante completa OF11 ya verificada, con216 grupos/5745 tris; sin nueva generación
+ni modificación geométrica. [Aceptación de madera y alcance](../docs/evidence/oak-foliage/of11/wood-acceptance.json).
+
+
+### Aprobación OF11 y registro como blueprint3.0.0 — 2026-11-03
+
+El usuario aprueba el árbol completo mostrado y pide guardar el blueprint,
+commit y push. Registrar `roble_copa_ancha@3.0.0`, contrato1.7, con perfil maduro
+fijo y semillas base/distribución/pintura explícitas. Componentes nuevos
+identifican O5 con extensión central, distribución OF11 y representación pintada
+conservada. Recetas previas y predeterminados históricos intactos. Aprobación
+artística limitada a3100/17/2718; otras semillas se validan o rechazan, sin ampliar
+edades o rangos de parámetros. [Aceptación](../docs/evidence/oak-foliage/of11/user-acceptance.json).
+
+Integración en el ejecutor/CLI/API compartidos: preparación geométrica derivada
+en Python anfitrión, exportador Blender sin dependencias adicionales y auditoría
+del GLB. CLI3.0.0 reproduce el GLB aprobado byte por byte (5745 tris); repetición
+sin renders idéntica. [Auditoría de entrega](../docs/evidence/oak-foliage/of11/blueprint-release.json).
+
+Entrega3.0.0 verificada: **345 pruebas en73 archivos y15 comprobaciones** de
+receta, resolución, exportación y repetición. CLI con nueve vistas23.607 s y
+repetición sin vistas15.073 s; GLB idéntico al piloto aprobado. Suite ejecutada
+por archivos con cota180 s, reanudada por lotes tras interrupción del coordinador;
+sin repetir archivos ya aprobados. Commit y push solicitados por el usuario.

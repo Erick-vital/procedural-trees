@@ -1,0 +1,10 @@
+{
+  "version": "oak-foliage-canopy-0.3.0",
+  "preset": "presets/oak-growth/0.5.0/maduro.json",
+  "seed": 3100,
+  "layout_seed": 17,
+  "paint_seed": 2718,
+  "tree_groups": 216,
+  "span_over_height": 0.1,
+  "core_radius_over_height": 0.3
+}

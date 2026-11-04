@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-03",
+  "request": "El problema está principalmente en las ramas: al menos una central, ampliado después a un poco más de ramas verticales cerca de la copa.",
+  "scope_change": [
+    "Se autoriza madera nueva, antes congelada en OF8–OF10.",
+    "Probar un eje central y dos brotes ascendentes desde primarias existentes, con bifurcaciones menores.",
+    "Sustituir exclusión cilíndrica de follaje a toda altura por protección inferior hasta0.62H; permitir copa central superior anclada."
+  ],
+  "fixed": [
+    "216 grupos de follaje",
+    "atlas/pintura",
+    "madera O5 existente exacta",
+    "máximo6999 tris",
+    "bifurcaciones principales inferiores legibles"
+  ],
+  "prototype": "Tres ejes ascendentes y21 piezas de madera con hijos; redistribuir24 grupos existentes; sin aumentar cantidad de láminas.",
+  "budget": "Madera nueva≤600 tris; comprobar árbol completo antes y después de exportar. No se interpreta como otra autorización acumulativa de +700 follaje.",
+  "scope": "Piloto maduro3100; controles geométricos3101–3103; sin promover recetas ni nuevas edades.",
+  "artistic_acceptance": "pending_user"
+}

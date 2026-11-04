@@ -38,10 +38,20 @@ PYTHONPATH=src python3 -m treegen validate artifacts/blueprints/mi-roble
 igual. Omitirlo produce las vistas de inspección. Las capturas reales Godot
 pertenecen a los verificadores de cada fase.
 
+El roble nuevo aprobado se reproduce con receta y semillas explícitas:
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/roble_copa_ancha/3.0.0.json --instance presets/blueprints/roble-central/maduro-3100.json --output artifacts/blueprints/mi-roble3 --no-render
+```
+
+[OF11 aprobado y validación3.0.0](docs/evidence/oak-foliage/of11/blueprint-release.json).
+Las recetas y ejemplos históricos siguen disponibles.
+
 ## Tipos y versiones explícitas
 
 | Receta | Uso y estado |
 | --- | --- |
+| `roble_copa_ancha` 3.0.0 | Roble OF11 aprobado: tres ejes ascendentes,216 grupos/5745 tris/dos materiales; perfil maduro fijo |
 | `roble_copa_ancha` 1.0.0 | Referencia viejo-09 aprobada: 9 m, 10572 triángulos, 1584 hojas |
 | `roble_copa_ancha` 1.1.0 | Ensayo B3 inicial conservado, con fallo extremo registrado; no es la revisión recomendada |
 | `roble_copa_ancha` 1.2.0 | Perfiles B3 revisados aprobados; hoja joven .45 m. Receta histórica intacta |

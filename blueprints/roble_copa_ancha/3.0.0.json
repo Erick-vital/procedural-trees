@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.7",
+  "id": "roble_copa_ancha",
+  "version": "3.0.0",
+  "name": "Roble de copa libre con ramas ascendentes",
+  "description": "OF11 aprobado: madera O5 con eje central y dos brotes altos;216 grupos/778 láminas,5745 tris en maduro3100. Perfil de12 m nominales; altura total de láminas13.374 m. Aprobación artística limitada al piloto; otras semillas se validan o rechazan al generar.",
+  "components": {
+    "base": "oak-growth-central@0.1.0",
+    "distribution": "oak-central-groups@0.11.0",
+    "representation": "oak-central-crossed@0.11.0"
+  },
+  "parameters": {
+    "base": {
+      "height_m": 12,
+      "preset": "presets/oak-growth/0.5.0/maduro.json"
+    },
+    "canopy": {
+      "tree_groups": 216,
+      "span_over_height": 0.1,
+      "core_radius_over_height": 0.3
+    }
+  },
+  "appearance": {
+    "bark": {
+      "color_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "double_sided": true
+    },
+    "leaf": {
+      "color_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "double_sided": true
+    }
+  },
+  "editable_ranges": {},
+  "default_profile": "maduro",
+  "profiles": {
+    "maduro": {
+      "description": "Perfil OF11 fijo de12 m; piloto3100/distribución17/pintura2718 aprobado. Controles3101–3103 solo geométricos.",
+      "overrides": {},
+      "validation": {
+        "status": "verified_cases",
+        "evidence": [
+          "docs/evidence/oak-foliage/of11/informe.md",
+          "docs/evidence/oak-foliage/of11/user-acceptance.json"
+        ]
+      }
+    }
+  },
+  "limits": {
+    "triangles": 6999,
+    "materials": 2,
+    "generation_seconds": 120
+  },
+  "resources": {
+    "foliage": {
+      "path": "assets/roble-pintado/v0.3.0/foliage.png",
+      "sha256": "106959cc5497eeaaa03dc83ad238d1410d803deb3f54f7da4d2f118fb9d78af1"
+    },
+    "bark": {
+      "path": "assets/roble-pintado/v0.2.0/bark.png",
+      "sha256": "5ac6f45c53baa09bd5724560756bb9fa6439d167d4df45d1eb5b2cc45162543a"
+    },
+    "templates": {
+      "path": "assets/roble-pintado/v0.3.0/templates.json",
+      "sha256": "39d00e37cd1fa7ce3a2e8a4388b768c850e7455fa633032be1e65f0105c9006f"
+    },
+    "source_foliage": {
+      "path": "assets/roble-pintado/v0.2.0/foliage.png",
+      "sha256": "742fa095c8ba9d382afa4e73e35198b034632825a0e820942be75efbfcb0100d"
+    },
+    "source_layout": {
+      "path": "assets/roble-pintado/v0.2.0/manifest.json",
+      "sha256": "eae6bc4268a331ad7cd7984fd6ab8a8ec395659b8cbd3611bc3e2f05d901f250"
+    }
+  }
+}

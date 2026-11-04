@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "target": "oak-foliage-sample-0.1.0",
+  "status": "reviewed_requires_revision",
+  "source": "Texto adjunto aportado por el usuario en este chat",
+  "source_file": "/home/tao/.codex/attachments/e0ffe927-8f83-45f0-851a-388eb9bb30f4/Texto pegado.txt",
+  "source_sha256": "23c978ebad2f2ed6e37f56db5e45f4769a9747a0a4cead052dae0d6f461f3326",
+  "requested": [
+    "Segmentos candidatos de ramas reales y preferencia exterior",
+    "Cadenas de 2–5 masas por brazo, con huecos y funciones diferenciadas",
+    "Reducir efecto pompón, puntas/nodos congestionados y racimo inferior aislado",
+    "Masas más anchas, orientación coherente y madera estructural visible",
+    "Reutilizar pintura actual antes de cambiar siluetas o texturas",
+    "Comparar A terminal/lateral, B continuidad media y C fragmentada sobre la misma rama"
+  ],
+  "scope": "Tres variantes de rama, no copa completa ni validación de etapas nuevas",
+  "artistic_acceptance": false
+}

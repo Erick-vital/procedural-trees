@@ -16,9 +16,28 @@ PYTHONPATH=src python3 -m treegen blueprints
 
 La respuesta lista `id`, `version`, nombre, perfil predeterminado, ruta y hash
 canónico de cada receta registrada en `blueprints/<id>/<versión>.json`.
-Hay cinco tipos y dieciséis versiones registradas. No hay selección “latest”.
+Hay cinco tipos y diecisiete versiones registradas. No hay selección “latest”.
 El perfil predeterminado no elige el tipo: se aplica dentro de una receta
 seleccionada explícitamente.
+
+La versión de roble de copa libre aprobada es **`roble_copa_ancha@3.0.0`**,
+contrato1.7: O5 con tres ejes ascendentes y follaje central alto OF11. Piloto
+maduro3100: **5745 tris,216 grupos,778 láminas,dos materiales**. El perfil es fijo
+a12 m de madera nominal; las láminas alcanzan13.374 m. La aprobación artística
+corresponde a3100/distribución17/pintura2718, no a todas las semillas.
+
+```sh
+PYTHONPATH=src python3 -m treegen generate-blueprint blueprints/roble_copa_ancha/3.0.0.json --instance presets/blueprints/roble-central/maduro-3100.json --output artifacts/blueprints/roble-central --no-render
+PYTHONPATH=src python3 -m treegen validate artifacts/blueprints/roble-central
+```
+
+Se genera desde fuentes y recursos congelados sin necesitar los estudios OF11.
+El ejecutor prepara geometría derivada con Python/Pillow y Blender exporta;
+`prepared-canopy.json` queda registrado por hash y se validan contactos, alfa y
+protección inferior en el GLB. Otra semilla puede rechazarse por colocación o
+presupuesto; no se amplían edades/controles ni se alteran recetas anteriores.
+[Aprobación](evidence/oak-foliage/of11/user-acceptance.json),
+[validación de la receta](evidence/oak-foliage/of11/blueprint-release.json).
 
 El roble pintado aprobado usa `roble_copa_ancha@2.2.0`, contrato 1.4 y componente
 `oak-painted-crossed@0.2.0`: tres láminas por grupo, atlas y ocho plantillas fijos,
@@ -44,6 +63,7 @@ no atribuir garantía visual a todos sus rangos/semillas.
 
 | Objetivo | Receta | Ejemplar existente |
 | --- | --- | --- |
+| Roble de copa libre OF11 aprobado | `blueprints/roble_copa_ancha/3.0.0.json` | `presets/blueprints/roble-central/maduro-3100.json` |
 | Sauce colgante revisado aprobado | `blueprints/sauce_colgante/1.1.0.json` | `presets/blueprints/sauce-revision/pilot.json` |
 | Abedul pintado completo, arte pendiente de aprobación | `blueprints/abedul_pintado/1.0.0.json` | `presets/blueprints/abedul-pintado/pilot.json` |
 | Reproducir viejo-09 aprobado | `blueprints/roble_copa_ancha/1.0.0.json` | `presets/blueprints/roble-copa-ancha-viejo-09.json` |

@@ -26,6 +26,8 @@ PARAMETERS_VALIDATOR = StrictValidator(SCHEMA['$defs']['parameters'])
 
 
 def _schema(document):
+    if document.get('schema_version') == '1.7':
+        return json.loads((ROOT / 'schemas/tree-blueprint-central-oak.schema.json').read_text())
     if document.get('schema_version') == '1.6':
         return json.loads((ROOT / 'schemas/tree-blueprint-willow.schema.json').read_text())
     if document.get('schema_version') == '1.5':
@@ -40,6 +42,8 @@ def _schema(document):
 
 
 def _instance_validator(document):
+    if document.get('schema_version') == '1.7':
+        return StrictValidator(json.loads((ROOT / 'schemas/tree-instance-central-oak.schema.json').read_text()))
     if document.get('schema_version') == '1.6':
         return StrictValidator(json.loads((ROOT / 'schemas/tree-instance-willow.schema.json').read_text()))
     if document.get('schema_version') == '1.5':
@@ -54,9 +58,9 @@ def _instance_validator(document):
 
 # Identificadores de capacidades, no rutas de importación ni código desde JSON.
 COMPONENTS = MappingProxyType({
-    'base': ('oak_geometry_nodes@0.4.0', 'pine-whorls@0.1.0', 'pine-whorls@0.2.0', 'birch-crown@0.1.0', 'willow-weeping@0.1.0', 'willow-weeping@0.2.0'),
-    'distribution': ('foliage-canopy@0.1.0', 'foliage-canopy@0.1.1', 'pine-distal@0.1.0', 'pine-path-groups@0.1.0', 'pine-path-groups@0.2.0', 'birch-twig-groups@0.1.0', 'willow-hanging-groups@0.1.0', 'willow-hanging-groups@0.2.0'),
-    'representation': ('rf3-diamond-six@0.1.0', 'oak-painted-single@0.1.0', 'oak-painted-crossed@0.1.0', 'oak-painted-crossed@0.2.0', 'pine-needle-pairs@0.1.0', 'pine-painted-crossed@0.1.0', 'pine-painted-crossed@0.2.0', 'pine-painted-crossed@0.3.0', 'pine-painted-crossed@0.4.0', 'birch-painted-crossed@0.1.0', 'willow-painted-crossed@0.1.0', 'willow-painted-crossed@0.2.0'),
+    'base': ('oak-growth-central@0.1.0', 'oak_geometry_nodes@0.4.0', 'pine-whorls@0.1.0', 'pine-whorls@0.2.0', 'birch-crown@0.1.0', 'willow-weeping@0.1.0', 'willow-weeping@0.2.0'),
+    'distribution': ('oak-central-groups@0.11.0', 'foliage-canopy@0.1.0', 'foliage-canopy@0.1.1', 'pine-distal@0.1.0', 'pine-path-groups@0.1.0', 'pine-path-groups@0.2.0', 'birch-twig-groups@0.1.0', 'willow-hanging-groups@0.1.0', 'willow-hanging-groups@0.2.0'),
+    'representation': ('oak-central-crossed@0.11.0', 'rf3-diamond-six@0.1.0', 'oak-painted-single@0.1.0', 'oak-painted-crossed@0.1.0', 'oak-painted-crossed@0.2.0', 'pine-needle-pairs@0.1.0', 'pine-painted-crossed@0.1.0', 'pine-painted-crossed@0.2.0', 'pine-painted-crossed@0.3.0', 'pine-painted-crossed@0.4.0', 'birch-painted-crossed@0.1.0', 'willow-painted-crossed@0.1.0', 'willow-painted-crossed@0.2.0'),
 })
 
 
@@ -141,6 +145,10 @@ def _patch(parameters, overrides, ranges):
 
 
 def _check_parameters(parameters, blueprint):
+    if blueprint['schema_version'] == '1.7':
+        _validate(StrictValidator(_schema(blueprint)['$defs']['parameters']), parameters)
+        from .oak_central_production import check_parameters
+        return check_parameters(parameters, blueprint)
     if blueprint['schema_version'] == '1.6':
         _validate(StrictValidator(_schema(blueprint)['$defs']['parameters']), parameters)
         from .willow import budget, validate_resources
@@ -202,6 +210,8 @@ def validate_blueprint(blueprint):
     for role, identifier in blueprint['components'].items():
         if identifier not in COMPONENTS[role]:
             raise ValueError(f'Componente o versión no registrado: {role}={identifier}')
+    if blueprint['schema_version'] != '1.7' and any(v.startswith(('oak-growth-central@','oak-central-')) for v in blueprint['components'].values()):
+        raise ValueError('Componentes de roble central incompatibles con este contrato')
     if blueprint['schema_version'] != '1.5' and any(v.startswith('birch-') for v in blueprint['components'].values()):
         raise ValueError('Componentes de abedul incompatibles con este contrato')
     if blueprint['schema_version'] != '1.6' and any(v.startswith('willow-') for v in blueprint['components'].values()):
@@ -280,6 +290,9 @@ def resolve_blueprint(blueprint, instance):
     parameters = _patch(defaults, instance.get('overrides', {}), blueprint['editable_ranges'])
     budget = _check_parameters(parameters, blueprint)
     base_seed, canopy_seed = instance['seeds']['base'], instance['seeds']['canopy']
+    if blueprint['schema_version'] == '1.7':
+        from .oak_central_production import resolve
+        return resolve(blueprint, instance, name, profile, defaults, parameters, budget)
     if blueprint['schema_version'] == '1.6':
         from .willow import resolve
         return resolve(blueprint, instance, name, profile, defaults, parameters, budget)
